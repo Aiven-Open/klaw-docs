@@ -14,12 +14,9 @@ Contents:
 
    *
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   introduction
+   getting_started
+   features
+   trouble_shooting
+   usecases
 
