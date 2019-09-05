@@ -1,5 +1,5 @@
 ========
-History
+Started
 ========
 
 To use this template, simply update it::

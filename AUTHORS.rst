@@ -1,6 +1,0 @@
-Authors
--------
-
-* Muralidhar Basani
-
-
