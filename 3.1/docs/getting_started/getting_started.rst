@@ -54,5 +54,3 @@ License
 -------
 
 The project is licensed under the BSD license.
-
-include:: /installation.rst
