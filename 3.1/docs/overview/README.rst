@@ -8,7 +8,7 @@ System Design Considerations
 Hold for system design docs
 
 
-User Auth
+User Auth 
 ---------
 Place holder for User Auth documentation.
 `

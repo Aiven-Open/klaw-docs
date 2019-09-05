@@ -1,4 +1,0 @@
-Installation
-============
-
-This is installation.
