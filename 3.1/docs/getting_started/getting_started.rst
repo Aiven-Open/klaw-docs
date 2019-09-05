@@ -38,6 +38,15 @@ Install $project by running:
 
     install project
 
+version1
+~~~~~~~~
+This is a mini version
+
+version2
+~~~~~~~~
+This is a mini version2
+
+
 Contribute
 ----------
 
