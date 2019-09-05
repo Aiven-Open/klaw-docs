@@ -1,10 +1,10 @@
-Kafkawize
-=========
+Getting Started
+===============
 
 This could be a template for all the project documentation.
 
-System Design Considerations
-----------------------------
+Prerequisites
+-------------
 Hold for system design docs
 
 
@@ -54,3 +54,5 @@ License
 -------
 
 The project is licensed under the BSD license.
+
+include:: /installation.rst

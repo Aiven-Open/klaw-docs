@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Kafkawize documentation build configuration file, created by
-# sphinx-quickstart on Tue Aug 26 14:19:49 2014.
+# sphinx-quickstart on Tue Aug 26 14:19:49 2019.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Kafkawize'
-copyright = u'2014, Read the Docs'
+copyright = u'2018, Kafkawize'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -1,1 +1,0 @@
-.. include:: overview/AUTHORS.rst

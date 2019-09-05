@@ -1,0 +1,1 @@
+.. include:: getting_started/getting_started.rst

@@ -1,1 +1,0 @@
-.. include:: overview/installation.rst
