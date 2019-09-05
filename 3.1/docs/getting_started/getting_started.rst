@@ -31,9 +31,6 @@ Features
 - Be awesome
 - Make things faster
 
-Getting Started 2
-=================
-
 Installation
 ------------
 
