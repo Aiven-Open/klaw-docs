@@ -12,11 +12,18 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   *
+
 
    introduction
    getting_started
    features
    trouble_shooting
    usecases
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
