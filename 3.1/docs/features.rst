@@ -1,13 +1,1 @@
-Features
-========
-
-Security
---------
-Security ...
-
-Role Management
----------------
-
-Roles are defined....
-
-
+.. include:: features/features.rst

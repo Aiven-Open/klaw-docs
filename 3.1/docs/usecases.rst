@@ -1,9 +1,1 @@
-=========
-Use Cases
-=========
-
-Create Topics
--------------
-
-create topics
-
+.. include:: usecases/usecases.rst

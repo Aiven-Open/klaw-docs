@@ -8,58 +8,55 @@ Prerequisites
 Hold for system design docs
 
 
-User Auth 
----------
-Place holder for User Auth documentation.
-`
-code snippet
-`
-
-
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
-
-Features
---------
-
-- Be awesome
-- Make things faster
-
-Installation
-------------
+Kafkawize Cluster Api
+---------------------
 
 Install $project by running:
 
     install project
 
-version1
-~~~~~~~~
+Setup
+~~~~~
 This is a mini version
 
-version2
-~~~~~~~~
+Kafka connectivity
+~~~~~~~~~~~~~~~~~~
+This is a mini version2
+
+Kafkawize
+---------
+
+Install $project by running:
+
+    install project
+
+Setup
+~~~~~
+This is a mini version
+
+Cluster Api connectivity
+~~~~~~~~~~~~~~~~~~~~~~~~
 This is a mini version2
 
 
-Contribute
-----------
+Configuration
+-------------
 
 - Issue Tracker: github.com/$project/$project/issues
 - Source Code: github.com/$project/$project
 
-Support
--------
+Metastore Cassandra
+-------------------
 
 If you are having issues, please let us know.
 We have a mailing list located at: project@google-groups.com
 
-License
--------
+Metastore Rdbms
+---------------
+
+The project is licensed under the BSD license.
+
+Users setup
+-----------
 
 The project is licensed under the BSD license.

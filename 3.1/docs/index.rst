@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Kafkawize's documentation!
-==================================================
+Kafkawize - A self service topic management tool
+================================================
+Kafkawize ...
 
 Contents:
 
@@ -19,6 +20,7 @@ Contents:
    features
    trouble_shooting
    usecases
+   customize
 
 Indices and tables
 ==================
