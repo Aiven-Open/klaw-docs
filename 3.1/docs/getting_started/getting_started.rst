@@ -1,62 +1,167 @@
 Getting Started
 ===============
 
-This could be a template for all the project documentation.
+Lets start with setting up Kafkawize on your Windows/Linux/Unix systems.
 
 Prerequisites
 -------------
-Hold for system design docs
+-   Any IDE like IntelliJ/Netbeans or Eclipse to build the applications.
+-   Java installed machines to run the applications
+-   Rdbms (like Oracle/MySQL..) or Apache Cassandra
 
+1 Download Kafkawize
+--------------------
+Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Kafkawize Cluster Api
----------------------
+Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
-Install $project by running:
+OR
 
-    install project
+Download Kafkawize 3.1 bundle here :download:`Kafkawize_3.1 <_static/files/kafkawize-bundle-3.1.zip>`
 
-Setup
-~~~~~
-This is a mini version
+2 Download Metastore
+--------------------
 
-Kafka connectivity
-~~~~~~~~~~~~~~~~~~
-This is a mini version2
+Download Apache Cassandra
+~~~~~~~~~~~~~~~~~~~~~~~~~
+If Cassandra is used as metastore, you can download from http://cassandra.apache.org/download/
 
-Kafkawize
----------
+Download Rdbms
+~~~~~~~~~~~~~~
+If Rdbms is used as metastore, download
 
-Install $project by running:
+Mysql : https://dev.mysql.com/downloads/
 
-    install project
+Oracle : https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
 
-Setup
-~~~~~
-This is a mini version
+3 Build KW Cluster Api Application
+----------------------------------
+This Api does the below
 
-Cluster Api connectivity
-~~~~~~~~~~~~~~~~~~~~~~~~
-This is a mini version2
+-   Receives and responds to calls from UI Api
+-   Connects to Kafka Brokers with Kafka AdminClient Api
+-   There is no connection to any metastore
 
+Unzip kafkawizeclusterapi.zip and open in any IDE
 
-Configuration
--------------
+Configure the application properties (src/main/resources) if port has to be changed, else default port is 9343
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+ and run maven command to create a runnable jar::
+
+    mvn clean package
+
+This should create a jar (kafkawizeclusterapi-3.1.jar) in target dir.
+
+Run::
+
+ java -jar kafkawizeclusterapi-3.1.jar
+
+4 Metastore setup
+-----------------
 
 Metastore Cassandra
--------------------
+~~~~~~~~~~~~~~~~~~~
+-   Install and run Cassandra and create a keyspace 'kafkamanagementapi'
+-   Create tables and run insert scripts in Cassandra
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+    \kafkawize\kafkawize-web\src\main\resources\scripts\base\cassandra\createcassandra.sql
+
+    \kafkawize\kafkawize-web\src\main\resources\scripts\base\cassandra\insertdata.sql
+
+    (Scripts available in kafkawize.zip)
+
+-   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
 Metastore Rdbms
----------------
+~~~~~~~~~~~~~~~
+-   Install and run Mysql/Oracle and create a db schema or database
+-   Create tables and run insert scripts in Database
 
-The project is licensed under the BSD license.
+    \kafkawize\kafkawize-web\src\main\resources\scripts\base\rdbms\ddl-jdbc.sql
 
-Users setup
------------
+    \kafkawize\kafkawize-web\src\main\resources\scripts\base\rdbms\insertdata.sql
 
-The project is licensed under the BSD license.
+    (Scripts available in kafkawize.zip)
+
+-   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
+
+5 Build KW UI Api Application
+-----------------------------
+This Api does the below
+
+-   Users interact with interface with this Api
+-   All the end points in this application either connect to Metastore or Cluster Api or both
+
+Unzip kafkawize.zip and open in any IDE
+
+Configure application properties:
+
+    In kafkawize/kafkawize-conf/environments/{local/test/prod}/application.properties
+
+-   if port has to be changed, else default port is 9097::
+
+    server.port:9097
+
+If metastore is cassandra (from step 4)
+
+-   setstore type as cassandra::
+
+    db.storetype=cassandra
+
+-   configure cassandra host, port and keyspace::
+
+    cassandradb.keyspace:kafkamanagementapi
+    cassandradb.url:localhost
+    cassandradb.port:9042
+
+If metastore is rdbms (from step 4)
+
+-   setstore type as rdbms::
+
+    db.storetype=rdbms
+-   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
+-   configure db properties like below::
+
+    # Spring JPA properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/kafkametadb?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    spring.datasource.username=kafkauser
+    spring.datasource.password=kafkauser123
+    spring.datasource.driver.class=com.mysql.cj.jdbc.Driver
+
+
+Configure Cluster Api
+~~~~~~~~~~~~~~~~~~~~~
+-   configure cluster api host and port details::
+
+    clusterapi.url:http://localhost:9343
+-   ignore user/pwd of cluster api properties
+
+Build
+~~~~~
+Run maven command to create a runnable jar::
+
+    mvn clean package
+
+This should create a jar in target dir (\kafkawize\kafkawize-web\target\kafkawize-web-3.1.jar).
+
+Run::
+
+    java -jar spring.config.location=classpath:/application.properties -Dspring.profiles.active=[local/test/prod] kafkawizeclusterapi-3.1.jar
+
+If application is running, you can access UI from http://[host]:[port]/kafkawize
+
+5 Kafka Connectivity
+--------------------
+Cluster Api Application connects to Kafka brokers with Kafka AdminClient Api.
+
+-   If Acls are enabled on Kafka brokers, make sure Cluster Api application host is authorized to read topics (A read Acl is enough on the topic)
+-   If SASL/SSL is configured, make sure they right properties are configured in AdminClient properties in Cluster Api application.
+
+6 Final Check
+-------------
+-   Cluster Api is running
+-   Metastore is running and has tables and data
+-   UI Api is running
+-   Cluster Api is authorized to read topics information
+-   Access UI from http://[host]:[port]/kafkawize where host and port are UI Api application
+    Example : http://localhost:9097/kafkawize
