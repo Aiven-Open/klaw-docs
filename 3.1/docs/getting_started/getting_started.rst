@@ -22,12 +22,8 @@ Download Kafkawize 3.1 bundle here :download:`Kafkawize_3.1 <_static/files/kafka
 2 Download Metastore
 --------------------
 
-Download Apache Cassandra
-~~~~~~~~~~~~~~~~~~~~~~~~~
 If Cassandra is used as metastore, you can download from http://cassandra.apache.org/download/
 
-Download Rdbms
-~~~~~~~~~~~~~~
 If Rdbms is used as metastore, download
 
 Mysql : https://dev.mysql.com/downloads/
@@ -64,9 +60,9 @@ Metastore Cassandra
 -   Install and run Cassandra and create a keyspace 'kafkamanagementapi'
 -   Create tables and run insert scripts in Cassandra
 
-    \kafkawize\kafkawize-web\src\main\resources\scripts\base\cassandra\createcassandra.sql
+    /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/createcassandra.sql
 
-    \kafkawize\kafkawize-web\src\main\resources\scripts\base\cassandra\insertdata.sql
+    /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
     (Scripts available in kafkawize.zip)
 
@@ -98,17 +94,17 @@ Configure application properties:
 
     In kafkawize/kafkawize-conf/environments/{local/test/prod}/application.properties
 
--   if port has to be changed, else default port is 9097::
+default port is 9097, if port has to be changed, else ::
 
     server.port:9097
 
 If metastore is cassandra (from step 4)
 
--   setstore type as cassandra::
+setstore type as cassandra::
 
     db.storetype=cassandra
 
--   configure cassandra host, port and keyspace::
+configure cassandra host, port and keyspace::
 
     cassandradb.keyspace:kafkamanagementapi
     cassandradb.url:localhost
@@ -116,11 +112,11 @@ If metastore is cassandra (from step 4)
 
 If metastore is rdbms (from step 4)
 
--   setstore type as rdbms::
+setstore type as rdbms::
 
     db.storetype=rdbms
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
--   configure db properties like below::
+configure db properties like below::
 
     # Spring JPA properties
     spring.datasource.url=jdbc:mysql://localhost:3306/kafkametadb?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
@@ -131,7 +127,7 @@ If metastore is rdbms (from step 4)
 
 Configure Cluster Api
 ~~~~~~~~~~~~~~~~~~~~~
--   configure cluster api host and port details::
+configure cluster api host and port details::
 
     clusterapi.url:http://localhost:9343
 -   ignore user/pwd of cluster api properties
