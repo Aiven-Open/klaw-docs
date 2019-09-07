@@ -37,6 +37,7 @@ This Api does the below
 -   Receives and responds to calls from UI Api
 -   Connects to Kafka Brokers with Kafka AdminClient Api
 -   There is no connection to any metastore
+-   Swagger enabled
 
 Unzip kafkawizeclusterapi.zip and open in any IDE
 
@@ -73,9 +74,9 @@ Metastore Rdbms
 -   Install and run Mysql/Oracle and create a db schema or database
 -   Create tables and run insert scripts in Database
 
-    \kafkawize\kafkawize-web\src\main\resources\scripts\base\rdbms\ddl-jdbc.sql
+    /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/ddl-jdbc.sql
 
-    \kafkawize\kafkawize-web\src\main\resources\scripts\base\rdbms\insertdata.sql
+    /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
     (Scripts available in kafkawize.zip)
 
@@ -146,14 +147,14 @@ Run::
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
-5 Kafka Connectivity
+6 Kafka Connectivity
 --------------------
 Cluster Api Application connects to Kafka brokers with Kafka AdminClient Api.
 
 -   If Acls are enabled on Kafka brokers, make sure Cluster Api application host is authorized to read topics (A read Acl is enough on the topic)
 -   If SASL/SSL is configured, make sure they right properties are configured in AdminClient properties in Cluster Api application.
 
-6 Final Check
+7 Final Check
 -------------
 -   Cluster Api is running
 -   Metastore is running and has tables and data
