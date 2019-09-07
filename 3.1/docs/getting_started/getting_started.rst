@@ -9,8 +9,8 @@ Prerequisites
 -   Java installed machines to run the applications
 -   Rdbms (like Oracle/MySQL..) or Apache Cassandra
 
-1 Download Kafkawize
---------------------
+1 Download Kafkawize 3.1
+------------------------
 Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
 Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
@@ -29,6 +29,8 @@ If Rdbms is used as metastore, download
 Mysql : https://dev.mysql.com/downloads/
 
 Oracle : https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
+
+Or any other Rdbms is ok.
 
 3 Build KW Cluster Api Application
 ----------------------------------

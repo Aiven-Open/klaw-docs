@@ -1,46 +1,14 @@
 Functonalities
 ==============
 
-This could be a template for all the project documentation.
-
-Create Topics
--------------
-Hold for system design docs
-
-
-Create Acls
------------
-
-Install $project by running:
-
-    install project
-
-Create Schemas
---------------
-Hold for system design docs
-
-
-Browse Topics
--------------
-
-Install $project by running:
-
-Browse Acls
------------
-Hold for system design docs
-
-
-Search Producers
-----------------
-
-Install $project by running:
-
-Search Consumers
-----------------
-Hold for system design docs
-
-
-Synchronize metadata with cluster
----------------------------------
-
-Install $project by running:
+-   Create Topics on Kafka Clusters Automated (Request and Approve)
+-   Create Acls Automated (Request and Approve)
+-   Register Avro schemas Automated (Request and Approve)
+-   Search Topics with a USer Interface
+-   Search Acls with a User Interfaces
+-   Search Producer and Consumer Teams
+-   Synchronize Kafka topics with Teams
+-   Synchronize Kafka acls with Teams
+-   Users, Teams and Roles based authorizations on features
+-   Audit of activities performed by users
+-   Login and Logout
