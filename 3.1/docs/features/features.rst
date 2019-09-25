@@ -123,13 +123,13 @@ To request for a topic, all the mandatory parameters need to be provided.
     :width: 500px
     :align: center
 
-Topic name, partitions, producer acls, owning team, application name, and if any remarks. On submission you can view your requests in Audit/My Requests., and it can be deleted if required.
+Topic name, partitions, owning team, application name, and if any remarks. On submission you can view your requests in Audit/My Requests., and it can be deleted if required.
 
 Acls
 ~~~~
 To request for a acl, all the mandatory parameters need to be provided.
 
-.. image:: _static/images/RequestAcl.JPG
+.. image:: _static/images/RequestACL.JPG
     :width: 500px
     :align: center
 
