@@ -17,7 +17,9 @@ Download the latest version (3.2) or clone from the git repo. https://github.com
 
 OR
 
-Download Kafkawize 3.2 bundle here :download:`Kafkawize_3.2 <_static/files/kafkawize-bundle-3.2.zip>`
+Download Kafkawize 3.2 bundle here :download:`Kafkawize_3.2 <_static/files/kafkawize-bundle-3.2.rar>`
+
+Previous version 3.1 https://kafkawize.readthedocs.io/en/stable/getting_started.html
 
 2 Download Metastore
 --------------------
