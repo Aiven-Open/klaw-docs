@@ -1,14 +1,10 @@
 Release Notes
 =============
 
-Kafkawize 3.1 has several enhancements.
+Kafkawize 3.2 has several enhancements.
 
--   Search option added in almost all screens
-
--   Delete Users, teams, clusters
-
--   Pagination on few end points
+-   Delete teams
 
 -   Bug fixes and code enhancements
 
--   Updated Unit tests
+-   SSL connectivity to kafka cluster

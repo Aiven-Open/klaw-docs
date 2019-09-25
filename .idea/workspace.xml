@@ -24,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="84" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -196,9 +196,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\features" />
     </key>
@@ -277,6 +277,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -287,10 +288,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29943502" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29943502" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -484,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="84" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
