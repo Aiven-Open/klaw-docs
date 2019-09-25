@@ -9,15 +9,15 @@ Prerequisites
 -   Java installed machines to run the applications
 -   Rdbms (like Oracle/MySQL..) or Apache Cassandra
 
-1 Download Kafkawize 3.1
-------------------------
-Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawize
+1 Download Kafkawize
+--------------------
+Download the latest version (3.2) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Download the latest version (3.1) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
+Download the latest version (3.2) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 3.1 bundle here :download:`Kafkawize_3.1 <_static/files/kafkawize-bundle-3.1.zip>`
+Download Kafkawize 3.2 bundle here :download:`Kafkawize_3.2 <_static/files/kafkawize-bundle-3.2.zip>`
 
 2 Download Metastore
 --------------------
@@ -49,11 +49,14 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-3.1.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-3.2.jar) in target dir.
+
+Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
+configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
 
 Run::
 
- java -jar kafkawizeclusterapi-3.1.jar
+ java -jar kafkawizeclusterapi-3.2.jar
 
 4 Metastore setup
 -----------------
@@ -118,7 +121,9 @@ If metastore is rdbms (from step 4)
 setstore type as rdbms::
 
     db.storetype=rdbms
+
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
+
 configure db properties like below::
 
     # Spring JPA properties
@@ -133,6 +138,7 @@ Configure Cluster Api
 configure cluster api host and port details::
 
     clusterapi.url:http://localhost:9343
+
 -   ignore user/pwd of cluster api properties
 
 Build
@@ -141,19 +147,30 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (\kafkawize\kafkawize-web\target\kafkawize-web-3.1.jar).
+This should create a jar in target dir (/kafkawize/kafkawize-web/target/kafkawize-web-3.2.jar).
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties -Dspring.profiles.active=[local/test/prod] kafkawizeclusterapi-3.1.jar
+    java -jar spring.config.location=classpath:/application.properties -Dspring.profiles.active=[local/test/prod] kafkawize-web-3.2.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
 6 Kafka Connectivity
 --------------------
-Cluster Api Application connects to Kafka brokers with Kafka AdminClient Api.
+Cluster Api Application connects to Kafka brokers with Kafka AdminClient Api., and needs Describe access on all topics through the cluster.
+Hence the below wildcard acl has to be executed.
 
--   If Acls are enabled on Kafka brokers, make sure Cluster Api application host is authorized to read topics (A read Acl is enough on the topic)
+-   If Acls are enabled on Kafka brokers, make sure "Cluster Api" application host is authorized to read topics (A read Acl is enough on the topic)
+
+    Examples SSL Based Acl::
+
+    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"CN=MO,OU=MO,O=WA,L=WA,ST=WA,C=HO" --operation All --topic "*" --cluster
+
+    Examples IP Based Acl::
+
+    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster
+
+
 -   If SASL/SSL is configured, make sure they right properties are configured in AdminClient properties in Cluster Api application.
 
 7 Final Check
