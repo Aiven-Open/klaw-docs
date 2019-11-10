@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="" />
+    <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/files/kafkawize-bundle-3.2.rar" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/files/kafkawize-bundle-3.3.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/roadmap.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/roadmap.rst" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,29 +22,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="features.rst" pinned="false" current-in-tab="false">
+      <file leaf-file-name="features.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3.1/docs/features/features.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
+            <state relative-caret-position="335">
+              <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getting_started.rst" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
+      <file leaf-file-name="index.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="46">
+              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getting_started.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started.rst">
+      <file leaf-file-name="introduction.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/introduction.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="make.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/make.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="31" lean-forward="true" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="releasenotes.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/releasenotes.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="review.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/review.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roadmap.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/roadmap.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trouble_shooting.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/trouble_shooting.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="96" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="44" selection-start-column="44" selection-end-column="44" />
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -48,6 +122,8 @@
       <find>Acl.J</find>
       <find>.JPG</find>
       <find>3.1</find>
+      <find>3.2</find>
+      <find>3.3</find>
     </findStrings>
     <replaceStrings>
       <replace>3.2</replace>
@@ -79,7 +155,6 @@
         <option value="$PROJECT_DIR$/3.1/docs/source/index.rst" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/3.1/docs/overview/AUTHORS.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/conf.py" />
         <option value="$PROJECT_DIR$/3.1/docs/introduction/kafkawize.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/introduction.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/getting_started.rst" />
@@ -87,8 +162,6 @@
         <option value="$PROJECT_DIR$/3.1/docs/getting_started/index.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/features.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/usecases.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/releasenotes.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/roadmap.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/usecases/usecases.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/trouble_shooting.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/customize.rst" />
@@ -96,8 +169,11 @@
         <option value="$PROJECT_DIR$/3.1/docs/contactme.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/index.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/features/features.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/conf.py" />
         <option value="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/releasenotes.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/roadmap.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/features/features.rst" />
       </list>
     </option>
   </component>
@@ -150,14 +226,6 @@
               <item name="kafkawizedocs" type="462c0819:PsiDirectoryNode" />
               <item name="3.1" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="_static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafkawizedocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafkawizedocs" type="462c0819:PsiDirectoryNode" />
-              <item name="3.1" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,16 +263,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\features" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,41 +356,22 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29943502" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29943502" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -356,37 +405,9 @@
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/conf.py" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/getting_started/getting_started.rst" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/installation.rst" />
-    <entry file="file://$PROJECT_DIR$/3.1/docs/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/readme.rst" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/usage.rst" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/source/index.rst" />
-    <entry file="file://$PROJECT_DIR$/3.1/docs/make.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="31" lean-forward="true" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/AUTHORS.rst" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/contributing.rst" />
     <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/index.rst" />
@@ -398,45 +419,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/usecases/usecases.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/releasenotes.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/roadmap.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/trouble_shooting.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="96" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -454,24 +440,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/review.rst">
+    <entry file="file://$PROJECT_DIR$/3.1/docs/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="159" column="20" lean-forward="true" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/introduction/intro.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="-651">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
+    <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state>
+          <caret selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -482,17 +475,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
+    <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="46">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/make.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="31" lean-forward="true" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/releasenotes.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/review.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/roadmap.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/trouble_shooting.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="96" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/features/features.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="118" column="6" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
+        <state relative-caret-position="335">
+          <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
         </state>
       </provider>
     </entry>

@@ -2,5 +2,5 @@ Roadmap
 =======
 
 -   Topic promotion
--   Delete Team
+-   Email notifications
 -   Few issues raised by customers

@@ -161,7 +161,7 @@ New clusters can be added by Superusers only.
     :width: 500px
     :align: center
 
-A cluster can be deleted by any user (bug, will be fixed in 3.2 version)
+A cluster can be deleted by any Admin user or super user.
 
 Audit
 -----
@@ -185,12 +185,12 @@ All the requests requested and approved can be viewed. Users login/logout are no
     :width: 500px
     :align: center
 
-Approve
--------
+Approve Or Decline
+------------------
 
-Topic Requests can be approved by Admins or Super users from the same team.
+Topic Requests can be approved or declined by Admins or Super users from the same team.
 
-Acl Requests can be approved by Admins or Super users who belong to Topic Owner's team.
+Acl Requests can be approved/declined by Admins or Super users who belong to Topic Owner's team.
 
 Schema Requests can be approved by Admins or Super users from the same team.
 
@@ -198,7 +198,7 @@ Notifications are visible on the top right side of the portal.
 
 Topics
 ~~~~~~
-If a topic is requested by 'user1' from 'Team1', it can be approved by 'user2' from 'Team1' only., provided 'user2' has Admin/Super role.
+If a topic is requested by 'user1' from 'Team1', it can be approved/declined by 'user2' from 'Team1' only., provided 'user2' has Admin/Super role.
 
 .. image:: _static/images/ApproveTopics.JPG
     :width: 500px
@@ -206,7 +206,7 @@ If a topic is requested by 'user1' from 'Team1', it can be approved by 'user2' f
 
 Acls
 ~~~~
-If a acl is requested by 'user1' on topic which is owned by 'Team2', it can be approved by 'user2' from 'Team2' only., provided 'user2' has Admin/Super role.
+If a acl is requested by 'user1' on topic which is owned by 'Team2', it can be approved/declined by 'user2' from 'Team2' only., provided 'user2' has Admin/Super role.
 
 .. image:: _static/images/ApproveACL.JPG
     :width: 500px
@@ -241,7 +241,7 @@ With this form a new user can be added.
 Teams
 -----
 
-All the teams are visible to any logged in user. A new team can be added by only Super users.
+All the teams are visible to any logged in user. A new team can be added, or a team can be deleted by only Super users.
 
 View Teams
 ~~~~~~~~~~
@@ -259,7 +259,6 @@ With this form a new team can be added.
     :width: 500px
     :align: center
 
-Deleting a team will be available in 3.2 version.
 
 Synchronize Metadata
 --------------------

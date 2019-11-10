@@ -11,15 +11,15 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (3.2) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (3.3) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
 Download the latest version (3.2) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 3.2 bundle here :download:`Kafkawize_3.2 <_static/files/kafkawize-bundle-3.2.rar>`
+Download Kafkawize 3.3 bundle here :download:`Kafkawize_3.3 <_static/files/kafkawize-bundle-3.3.rar>`
 
-Previous version 3.1 https://kafkawize.readthedocs.io/en/stable/getting_started.html
+Previous version 3.2 https://kafkawize.readthedocs.io/en/stable/getting_started.html
 
 2 Download Metastore
 --------------------
@@ -100,7 +100,7 @@ Unzip kafkawize.zip and open in any IDE
 
 Configure application properties:
 
-    In kafkawize/kafkawize-conf/environments/{local/test/prod}/application.properties
+    In  kafkawize/src/main/resources/application.properties
 
 default port is 9097, if port has to be changed, else ::
 
@@ -149,11 +149,11 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/kafkawize-web/target/kafkawize-web-3.2.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-3.3.jar).
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties -Dspring.profiles.active=[local/test/prod] kafkawize-web-3.2.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-3.3.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
