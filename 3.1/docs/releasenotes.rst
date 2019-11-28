@@ -1,15 +1,10 @@
 Release Notes
 =============
 
-Kafkawize 3.3 has several enhancements.
+Kafkawize 3.4 has few enhancements.
 
 Changes :
 
-New functionality Decline Topic requests
-New functionality Decline Acl requests
-Bug fix in creating topic request
-Vulnerability fix
-Removed modules. It is a simple spring boot application now.
-Notifications on the top bar for acls and topics
-Pom changes for upgrading certain dependencies
-Validations on Request Acls.
+1. New page (Admin-ServerConfig) to display server configuration - application properties
+2. Default replication factor, default partitions and default max partitions can be configured from Clusters page.
+3. Couple of minor bug fixes

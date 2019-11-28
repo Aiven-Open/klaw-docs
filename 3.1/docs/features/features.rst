@@ -125,6 +125,8 @@ To request for a topic, all the mandatory parameters need to be provided.
 
 Topic name, partitions, owning team, application name, and if any remarks. On submission you can view your requests in Audit/My Requests., and it can be deleted if required.
 
+Default partitions size, maximum partitions size and default replication factor can be configured per environment in Clusters page.
+
 Acls
 ~~~~
 To request for a acl, all the mandatory parameters need to be provided.
@@ -138,6 +140,8 @@ After a user selects an environment, topics are loaded, and topic has to be sele
 Acl type Producer or Consumer.
 
 IP Addresses or SSL DN name should be provided for authorizations.
+
+Only one IP Address or one SSL should be filled.
 
 On submission you can view your requests in Audit/My Requests., and it can be deleted if required.
 
@@ -155,7 +159,7 @@ All the clusters are of type 'kafka' or 'schemaregistry'.
     :width: 500px
     :align: center
 
-New clusters can be added by Superusers only.
+New clusters can be added by Superusers only. There is a other parameters field added, into which default partitions, max partitions size and replication factor can be added.
 
 .. image:: _static/images/AddCluster.JPG
     :width: 500px
@@ -282,6 +286,15 @@ After a environment is selected, Consumer Acls are displayed, and a team can be 
 .. image:: _static/images/SynchronizeAcls.JPG
     :width: 500px
     :align: center
+
+
+Admin
+-----
+
+Server Config
+~~~~~~~~~~~~~
+
+All the Server configuration including custom properties (application properties can be viewed)
 
 Profile
 -------

@@ -10,5 +10,6 @@ Functonalities
 -   Synchronize Kafka topics with Teams
 -   Synchronize Kafka acls with Teams
 -   Users, Teams and Roles based authorizations on features
+-   View server configuration (application properties)
 -   Audit of activities performed by users
 -   Login and Logout
