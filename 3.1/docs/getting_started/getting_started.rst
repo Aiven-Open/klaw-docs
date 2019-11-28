@@ -11,15 +11,13 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (3.3) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (3.4) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Download the latest version (3.2) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
+Download the latest version (3.3) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 3.3 bundle here :download:`Kafkawize_3.3 <_static/files/kafkawize-bundle-3.3.rar>`
-
-Previous version 3.2 https://kafkawize.readthedocs.io/en/stable/getting_started.html
+Download Kafkawize 3.4 bundle here :download:`Kafkawize_3.4 <_static/files/kafkawize-bundle-3.4.rar>`
 
 2 Download Metastore
 --------------------
@@ -51,14 +49,14 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-3.2.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-3.3.jar) in target dir.
 
 Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
 configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
 
 Run::
 
- java -jar kafkawizeclusterapi-3.2.jar
+ java -jar kafkawizeclusterapi-3.3.jar
 
 4 Metastore setup
 -----------------
@@ -70,9 +68,11 @@ Metastore Cassandra
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/createcassandra.sql
 
+    If you are migrating from previous version, execute /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/3.4_updates/alter.sql
+
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
-    (Scripts available in kafkawize.zip)
+    (Scripts available in kafkawize-3.4.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -83,9 +83,11 @@ Metastore Rdbms
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/ddl-jdbc.sql
 
+    If you are migrating from previous version, execute /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/3.4_updates/alter.sql
+
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
-    (Scripts available in kafkawize.zip)
+    (Scripts available in kafkawize-3.4.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -96,7 +98,7 @@ This Api does the below
 -   Users interact with interface with this Api
 -   All the end points in this application either connect to Metastore or Cluster Api or both
 
-Unzip kafkawize.zip and open in any IDE
+Unzip kafkawize-(version).zip and open in any IDE
 
 Configure application properties:
 
@@ -110,19 +112,19 @@ If metastore is cassandra (from step 4)
 
 setstore type as cassandra::
 
-    db.storetype=cassandra
+    custom.db.storetype=cassandra
 
 configure cassandra host, port and keyspace::
 
-    cassandradb.keyspace:kafkamanagementapi
-    cassandradb.url:localhost
-    cassandradb.port:9042
+    custom.cassandradb.keyspace:kafkamanagementapi
+    custom.cassandradb.url:localhost
+    custom.cassandradb.port:9042
 
 If metastore is rdbms (from step 4)
 
 setstore type as rdbms::
 
-    db.storetype=rdbms
+    custom.db.storetype=rdbms
 
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
 
@@ -139,7 +141,7 @@ Configure Cluster Api
 ~~~~~~~~~~~~~~~~~~~~~
 configure cluster api host and port details::
 
-    clusterapi.url:http://localhost:9343
+    custom.clusterapi.url:http://localhost:9343
 
 -   ignore user/pwd of cluster api properties
 
@@ -149,11 +151,11 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/target/kafkawize-3.3.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-3.4.jar).
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-3.3.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-3.4.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
