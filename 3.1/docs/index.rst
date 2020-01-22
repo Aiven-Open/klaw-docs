@@ -18,6 +18,7 @@ Contents:
 
    introduction
    getting_started
+   migrate
    features
    usecases
    customize
