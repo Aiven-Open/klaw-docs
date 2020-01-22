@@ -10,7 +10,7 @@ Kafkawize is built with the key features as below:
 
 Security
 --------
-There is no security applied on Cluster Api. End points are exposed to anyone who can reach the host., and swagger is enabled too. Users can directly post/get requests to this application.
+There are two main applications of Kafkawize. UiApi and ClusterApi. There is no security applied on Cluster Api. End points are exposed to anyone who can reach the host., and swagger is enabled too. Users can directly post/get requests to this application.
 
 On the UI Api, Spring security is enabled. As the application boots, it loads all the users from database/cassandra into its memory and would be referred to it.
 
@@ -55,6 +55,10 @@ After a user is logged in , he/she will be redirected to homepage.
     :width: 500px
     :align: center
 
+.. image:: _static/images/Dashboard_toggled.JPG
+    :width: 500px
+    :align: center
+
 Browse
 ------
 
@@ -76,11 +80,9 @@ Acls
 ~~~~
 Acl - Access Controls
 
-A user is allowed to a select an environment, and the acls are loaded.
+From the Browse topics screen, user can select and clicking on a topic displays all the available acls of that topic.
 
-A filter option is also provided and users can search for specific acls based on topic names.
-
-.. image:: _static/images/BrowseAcls.JPG
+.. image:: _static/images/ViewAcls.JPG
     :width: 500px
     :align: center
 
@@ -90,20 +92,13 @@ Acls are either IP Address based or SSL based. If IP based, you should see the I
 
 Every Acl should be owned by a team. If no team is assigned to an Acl, it can be assigned by Synchronize Acl option, but by a Super user.
 
-Producers - Consumers
-~~~~~~~~~~~~~~~~~~~~~
-A user is allowed to a select an environment, and the Producer and Consumer Teams are loaded.
+There can be multiple producers and multiple consumers for a topic owning by different teams.
 
-.. image:: _static/images/ProducersConsumers.JPG
-    :width: 500px
-    :align: center
+Unknown team is displayed in case of that acl is not owned by any team.
 
-A filter option is also provided and users can search based on topic names.
-
-There can be multiple producer teams and multiple consumer teams for a topic.
 
 Requests
----------
+--------
 
 All the users can request for topics, acls or avro schemas.
 
