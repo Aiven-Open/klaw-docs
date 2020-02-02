@@ -8,6 +8,28 @@ A Self service Apache Kafka Topic Management tool/portal. A Web application whic
 
 .. embedded-video:: KOjdpRtRhEY 480
 
+.. raw:: html
+
+        <object width="480" height="385"><param name="movie"
+        value="https://youtu.be/KOjdpRtRhEY"></param><param
+        name="allowFullScreen" value="true"></param><param
+        name="allowscriptaccess" value="always"></param><embed
+        src="https://youtu.be/KOjdpRtRhEY"
+        type="application/x-shockwave-flash" allowscriptaccess="always"
+        allowfullscreen="true" width="480"
+        height="385"></embed></object>
+
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://youtu.be/KOjdpRtRhEY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://youtu.be/KOjdpRtRhEY" frameborder="0" allowfullscreen></iframe>
 
 Background
 ----------
