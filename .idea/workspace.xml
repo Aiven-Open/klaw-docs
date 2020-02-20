@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard_toggled.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ViewAcls.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/files/kafkawize-bundle-3.4.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Environments.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Environments.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeAcls.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeAcls.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/login.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/login.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/roadmap.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/roadmap.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,17 +14,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="features.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customize.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/customize.rst">
+      <file leaf-file-name="intro.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/introduction/intro.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
@@ -49,38 +23,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="roadmap.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/roadmap.rst">
+      <file leaf-file-name="index.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="review.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/review.rst">
+      <file leaf-file-name="getting_started.rst" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="478">
+              <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trouble_shooting.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/trouble_shooting.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="96" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usecases.rst" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3.1/docs/usecases.rst">
+      <file leaf-file-name="features.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <caret selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -98,6 +63,7 @@
       <find>3.3</find>
       <find>3.2</find>
       <find>3.4</find>
+      <find>3.5.r</find>
     </findStrings>
     <replaceStrings>
       <replace>3.2</replace>
@@ -140,15 +106,15 @@
         <option value="$PROJECT_DIR$/3.1/docs/customize.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/review.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/contactme.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/usecases/usecases.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/features/features.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/conf.py" />
         <option value="$PROJECT_DIR$/3.1/docs/releasenotes.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" />
-        <option value="$PROJECT_DIR$/3.1/docs/index.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/migrate.rst" />
         <option value="$PROJECT_DIR$/3.1/docs/roadmap.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/index.rst" />
+        <option value="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" />
       </list>
     </option>
   </component>
@@ -164,6 +130,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,19 +163,34 @@
               <item name="3.1" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="_static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafkawizedocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafkawizedocs" type="462c0819:PsiDirectoryNode" />
+              <item name="3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="getting_started" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafkawizedocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafkawizedocs" type="462c0819:PsiDirectoryNode" />
+              <item name="3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="introduction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../template-master" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -215,9 +198,9 @@
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\features" />
     </key>
@@ -303,11 +286,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27259886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23728813" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23020135" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -319,6 +301,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -397,38 +380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction/intro.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-632">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -453,13 +408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -494,16 +442,122 @@
     <entry file="file://$PROJECT_DIR$/3.1/docs/usecases.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/introduction/intro.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/features.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>kafkawizedocs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
