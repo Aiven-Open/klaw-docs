@@ -228,3 +228,11 @@ Hence the below wildcard acl has to be executed.
 -   Cluster Api is authorized to read topics and acls on topics information(Acls should be configured)
 -   Access UI from http://[host]:[port]/kafkawize where host and port are UI Api application
     Example : http://localhost:9097/kafkawize
+
+    Default users, passwords and roles::
+
+    uiuser1/user    USER
+    uiuser2/user    USER
+    uiuser3/user    USER
+    uiuser4/user    ADMIN
+    uiuser5/user    ADMIN
