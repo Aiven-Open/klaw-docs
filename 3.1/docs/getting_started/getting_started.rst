@@ -232,7 +232,11 @@ Hence the below wildcard acl has to be executed.
     Default users, passwords and roles::
 
     uiuser1/user    USER
+
     uiuser2/user    USER
+
     uiuser3/user    USER
+
     uiuser4/user    ADMIN
+
     uiuser5/user    ADMIN
