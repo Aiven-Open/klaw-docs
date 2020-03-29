@@ -1,12 +1,14 @@
 Features
 ========
 
-Kafkawize is built with the key features as below:
+Kafkawize is built with the key features as below::
 
--   4 eyed principle – Requesting and Approving topics/acls/schemas
--   Browse Acls,  Producers and Consumers
--   Synchronize Source of truth with Meta store
--   Support for Cassandra or an Rdbms
+   -    4 eyed principle – Requesting and Approving topics/acls/schemas
+   -    Spring based security
+   -    Fully automated
+   -    Browse Acls,  Producers and Consumers
+   -    Synchronize Source of truth with Meta store
+   -    Support for Cassandra or an Rdbms
 
 Security
 --------
@@ -19,11 +21,11 @@ Security on the Kafka Broker is out of scope for Kafkawize., and it should be ha
 Teams and Role Management
 -------------------------
 
-Kafkawize comes with 3 mains roles
+Kafkawize comes with 3 mains roles::
 
--   USER
--   ADMIN
--   SUPERUSER
+    -   USER
+    -   ADMIN
+    -   SUPERUSER
 
 'User' has the rights to request and browse data
 
@@ -55,9 +57,6 @@ After a user is logged in , he/she will be redirected to homepage.
     :width: 500px
     :align: center
 
-.. image:: _static/images/Dashboard_toggled.JPG
-    :width: 500px
-    :align: center
 
 Browse
 ------
@@ -145,6 +144,10 @@ Avro Schemas
 
 An Avro schema can also be requested for a particular subject (topic).
 
+.. image:: _static/images/RequestSchema.JPG
+    :width: 500px
+    :align: center
+
 Clusters
 --------
 
@@ -167,12 +170,20 @@ Audit
 
 All the requests from users are audited and can be viewed.
 
-My Requests
-~~~~~~~~~~~
+My Topic Requests
+~~~~~~~~~~~~~~~~~
 Requests (Topics/Acls/Schemas) from their own team can be viewed and deleted.
 
-.. image:: _static/images/MyRequests.JPG
+.. image:: _static/images/MyTopicRequests.JPG
     :width: 500px
+    :align: center
+
+My Acl Requests
+~~~~~~~~~~~~~~~
+Requests (Topics/Acls/Schemas) from their own team can be viewed and deleted.
+
+.. image:: _static/images/MyAclRequests.JPG
+:width: 500px
     :align: center
 
 Activity Log

@@ -3,7 +3,7 @@ Introduction
 
 What is Kafkawize?
 ------------------
-A Self service Apache Kafka Topic Management tool/portal. A Web application which automates the process of creating and browsing Kafka topics, acls, schemas by introducing roles/authorizations to users of various teams of an organization.
+Kafkawize is a Self service Apache Kafka Topic Management tool/portal. It is a web application which automates the process of creating and browsing Kafka topics, acls, schemas by introducing roles/authorizations to users of various teams of an organization.
 
 
 .. raw:: html
@@ -22,10 +22,31 @@ Apart from that, this meta data (Kafka topics, acls) which is stored in ZK could
 
 Hence I saw the need of Kafkawize – a self service topic management tool., to keep ZERO interaction by other Teams with Kafka team for topics, acls or schemas creation by introducing roles and authorizations to users of teams. It is developed with a simple front end, and backend with Spring boot. It saves time and effort, governs information, avoids risk in kafka config loss, avoids manual activities and mistakes, maintains up to date SOT (source of truth). Current User Interface is not so great but it serves the purpose for now. It would be updated with Angular 7 material design soon.
 
+
+Key features
+------------
+::
+
+   -    4 eyed principle – Requesting and Approving topics/acls/schemas
+   -    Spring based security
+   -    Fully automated
+   -    Browse Acls,  Producers and Consumers
+   -    Synchronize Source of truth with Meta store
+   -    Support for Cassandra or an Rdbms
+
+
+4.0 glimpse
+-----------
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nUnJJC6pDTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 How is it developed
 -------------------
-Simple technologies have been used to develop Kafkawize. Front end is developed with HTML, CSS, Octopus bootstrap theme and Javascript.
-Backend with Java, Kafka Admin client libraries and Spring frameworks.
+Simple technologies have been used to develop Kafkawize. Front end with Angular, HTML, CSS, MaterialView bootstrap theme and Javascript.
+Backend with Java, Kafka Admin client libraries, Spring boot and Spring security frameworks.
 First version of Kafkawize has been released in Sep 2018 with basic features., and gradually enhanced it.
 
 Architecture
@@ -68,9 +89,9 @@ LinkedIn    :   https://www.linkedin.com/in/muralibasani/
 Web         :   https://kafkawize.com
 
 
-Demo
-----
+4.0 glimpse
+-----------
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6i7CzBsLH14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nUnJJC6pDTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
