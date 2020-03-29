@@ -20,7 +20,7 @@ There have been few topic management tools in the market which provide automatio
 
 Apart from that, this meta data (Kafka topics, acls) which is stored in ZK could be easily stored in a good readable format and can be used as source of truth.
 
-Hence I saw the need of Kafkawize – a self service topic management tool., to keep ZERO interaction by other Teams with Kafka team for topics, acls or schemas creation by introducing roles and authorizations to users of teams. It is developed with a simple front end, and backend with Spring boot. It saves time and effort, governs information, avoids risk in kafka config loss, avoids manual activities and mistakes, maintains up to date SOT (source of truth). Current User Interface is not so great but it serves the purpose for now. It would be updated with Angular 7 material design soon.
+Hence I saw the need of Kafkawize – a self service topic management tool., to keep ZERO interaction by other Teams with Kafka team for topics, acls or schemas creation by introducing roles and authorizations to users of teams. It is developed with a simple front end, and backend with Spring boot. It saves time and effort, governs information, avoids risk in kafka config loss, avoids manual activities and mistakes, maintains up to date SOT (source of truth).
 
 
 Key features
@@ -88,10 +88,3 @@ LinkedIn    :   https://www.linkedin.com/in/muralibasani/
 
 Web         :   https://kafkawize.com
 
-
-4.0 glimpse
------------
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nUnJJC6pDTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
