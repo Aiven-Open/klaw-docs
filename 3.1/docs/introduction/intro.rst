@@ -35,7 +35,7 @@ Key features
    -    Support for Cassandra or an Rdbms
 
 
-4.0 glimpse
+4.1 glimpse
 -----------
 
 .. raw:: html
