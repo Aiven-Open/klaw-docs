@@ -40,9 +40,9 @@ Oracle : https://www.oracle.com/database/technologies/oracle-database-software-d
 
 Or any other Rdbms is ok.
 
-3 License Key (not required)
-----------------------------
-License key is not required fom 4.1 version.
+3 License Key
+-------------
+License key is not required from 4.1 version.
 
 4 Build KW Cluster Api Application
 ----------------------------------
