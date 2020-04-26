@@ -1,5 +1,5 @@
-Functonalities
-==============
+Functionalities
+===============
 
 -   Create Topics on Kafka Clusters Automated (Request and Approve)
 -   Create Acls Automated (Request and Approve)

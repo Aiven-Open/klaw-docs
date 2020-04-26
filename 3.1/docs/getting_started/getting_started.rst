@@ -19,13 +19,13 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.0) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (4.1) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Download the latest version (4.0) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
+Download the latest version (4.1) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 4.0 bundle here :download:`Kafkawize_4.0 <_static/files/kafkawize-bundle-4.0.rar>`
+Download Kafkawize 4.1 bundle here :download:`Kafkawize_4.1 <_static/files/kafkawize-bundle-4.1.rar>`
 
 2 Download Metastore
 --------------------
@@ -40,15 +40,9 @@ Oracle : https://www.oracle.com/database/technologies/oracle-database-software-d
 
 Or any other Rdbms is ok.
 
-3 License Key
--------------
-
-To request for a FREE license key, go to the following page https://kafkawize.com/request-for-license-key/ and submit the request. You would receive a alphanumeric key. You need to add them to application properties.
-
-Configure License key in application properties::
-
-    custom.license.key = <Your license key>
-    custom.org.name = <Your company name> mentioned in email domain
+3 License Key (not required)
+----------------------------
+License key is not required fom 4.1 version.
 
 4 Build KW Cluster Api Application
 ----------------------------------
@@ -67,7 +61,7 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-4.0.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-4.1.jar) in target dir.
 
 Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
 configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
@@ -153,7 +147,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
-    (Scripts available in kafkawize-4.0.zip)
+    (Scripts available in kafkawize-4.1.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -180,7 +174,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
-    (Scripts available in kafkawize-4.0.zip)
+    (Scripts available in kafkawize-4.1.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -188,19 +182,19 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/target/kafkawize-4.0.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-4.1.jar).
 
 7 Run KW and KWClusterApi
 -------------------------
 
 Run::
 
- java -jar kafkawizeclusterapi-4.0.jar
+ java -jar kafkawizeclusterapi-4.1.jar
 
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-4.0.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-4.1.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
@@ -225,7 +219,6 @@ Hence the below wildcard acl has to be executed.
 
 9 Final Check
 -------------
--   License key is configured
 -   Cluster Api is running
 -   Metastore (Cassandra or Rdbms) is running and has tables and data
 -   UI Api is running
