@@ -1,8 +1,12 @@
 Release Notes
 =============
 
-Kafkawize 4.1 release notes
+Kafkawize 4.2 release notes
 
 Changes include
-1. Critical bug fix - concurrent user access
-2. Removed license check.
+1. Ability to have environments DEV, TST, ACC and PRD
+2. Ability to request for topics in DTAP environments
+3. Ability to view topic overview and subscriptions in one page
+4. Ability to view topic partitions and replication factor of all environments in topic overview page
+5. Ability to view topics and their existence in all environments
+6. Updated dashboard to view your team topics

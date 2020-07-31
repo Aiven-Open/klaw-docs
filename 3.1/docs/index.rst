@@ -6,6 +6,7 @@
 Kafkawize - A self service topic management tool
 ================================================
 Kafkawize is a Self service Apache Kafka Topic Management tool/portal. It is a web application which automates the process of creating and browsing Kafka topics, acls, schemas by introducing roles/authorizations to users of various teams of an organization.
+It is Open source.
 `Read more.. <introduction.html>`__.
 
 .. raw:: html

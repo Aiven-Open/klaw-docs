@@ -5,8 +5,8 @@ Functionalities
 -   Create Acls Automated (Request and Approve)
 -   Register Avro schemas Automated (Request and Approve)
 -   Search Topics with a User Interface
--   Search Acls with a User Interfaces
--   Search Producer and Consumer Teams
+-   View Acls of a topic
+-   View Producer and Consumer Teams of a topic
 -   Synchronize Kafka topics with Teams
 -   Synchronize Kafka acls with Teams
 -   Users, Teams and Roles based authorizations on features

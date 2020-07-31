@@ -1,11 +1,10 @@
-Migration Kafkawize from 3.5 to 4.0
+Migration Kafkawize from 4.1 to 4.2
 ===================================
 
-1   Follow the instructions in getting started page and download both Kw and KwClusterApi
-2   Set the below properties::
+There are few major changes in 4.2 which requires database table changes and hence
 
-    custom.dbscripts.execution = manual
-    custom.dbscripts.dropall_recreate = false
-4   Make sure to update the other required config for application properties::
+1   Set the below properties::
 
-    custom.kafkawize.version=<4.1> copy from the new downloaded zip
+    custom.dbscripts.dropall_recreate = true
+
+this will drop all the tables and data and recreate them.
