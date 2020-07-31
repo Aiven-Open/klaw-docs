@@ -73,13 +73,17 @@ A filter option is also provided and users can search for specific topics.
     :width: 500px
     :align: center
 
+Every topic has a topic overview page, which displays topic partitions, replication factor in all available environments.
+
+Every topic has a topic overview page, which displays topic subscriptions in all available environments.
+
 Note : Make sure kafkawize has access to read topics (Acl is required if acls are enabled on the cluster)
 
 Acls
 ~~~~
 Acl - Access Controls
 
-From the Browse topics screen, user can select and clicking on a topic displays all the available acls of that topic.
+From the Browse topics screen, user can select and clicking on a topic displays all the available subscriptions of that topic.
 
 .. image:: _static/images/ViewAcls.JPG
     :width: 500px
@@ -93,17 +97,14 @@ Every Acl should be owned by a team. If no team is assigned to an Acl, it can be
 
 There can be multiple producers and multiple consumers for a topic owning by different teams.
 
-Unknown team is displayed in case of that acl is not owned by any team.
-
-
 Requests
 --------
 
-All the users can request for topics, acls or avro schemas.
+All the users can request for topics, acls or avro schemas in any environment.
 
 Topic Requests can be approved by Admins or Super users from the same team.
 
-Acl Requests can be approved by Admins or Super users who belong to Topic Owner's team.
+Acl(Subscription) Requests can be approved by Admins or Super users who belong to Topic Owner's team.
 
 Schema Requests can be approved by Admins or Super users from the same team.
 
@@ -121,6 +122,8 @@ Topic name, partitions, owning team, application name, and if any remarks. On su
 
 Default partitions size, maximum partitions size and default replication factor can be configured per environment in Clusters page.
 
+To request for a topic in higher environments, it is required for the topic to exist in Base Sync cluster (DEV). This can be configured with property custom.syncdata.cluster
+
 Acls
 ~~~~
 To request for a acl, all the mandatory parameters need to be provided.
@@ -129,7 +132,9 @@ To request for a acl, all the mandatory parameters need to be provided.
     :width: 500px
     :align: center
 
-After a user selects an environment, topics are loaded, and topic has to be selected.
+After a user clicks on a topic, user can view all the subscriptions and a button to subscribe to the topic.
+
+The below fields are required.
 
 Acl type Producer or Consumer.
 
@@ -198,9 +203,9 @@ All the requests requested and approved can be viewed. Users login/logout are no
 Approve Or Decline
 ------------------
 
-Topic Requests can be approved or declined by Admins or Super users from the same team.
+Topic Requests can be approved or declined by Admins or Super users from the same team. After approval of a topic, it is created on the cluster, how ever no acls are assigned to it yet.
 
-Acl Requests can be approved/declined by Admins or Super users who belong to Topic Owner's team.
+Acl Requests can be approved/declined by Admins or Super users who belong to Topic Owner's team. After approval, acls are created on the cluster.
 
 Schema Requests can be approved by Admins or Super users from the same team.
 
@@ -242,7 +247,7 @@ From this page all the users can be seen and also be deleted.
 
 Add User
 ~~~~~~~~
-With this form a new user can be added.
+With this form a new user can be added by a SuperUser.
 
 .. image:: _static/images/AddUser.JPG
     :width: 500px
@@ -263,7 +268,7 @@ From this page all the users can be seen.
 
 Add Team
 ~~~~~~~~
-With this form a new team can be added.
+With this form a new team can be added by a SuperUser.
 
 .. image:: _static/images/AddTeam.JPG
     :width: 500px
@@ -273,7 +278,7 @@ With this form a new team can be added.
 Synchronize Metadata
 --------------------
 
-A situation where Kafka cluster already exists and would like to adapt Kafkawize in your organization, all the topics and acls need to have their owners.
+A situation where Kafka cluster already exists and would like to adapt Kafkawize in your organization, all the topics and acls need to have their teams/owners.
 
 This feature is possible with Synchronization of Topics or Acls.
 
@@ -285,9 +290,11 @@ After a environment is selected, topics are displayed, and a team can be assigne
     :width: 500px
     :align: center
 
+It is required to synchronize the topic team first with Base sync cluster first. Base sync cluster can be configured with property custom.syncdata.cluster in application properties.
+
 Acls
 ~~~~
-After a environment is selected, Consumer Acls are displayed, and a team can be assigned to it. And this action, team becomes the Owner of the acl.
+After a environment is selected, Producer and Consumer Acls are displayed, and a team can be assigned to it. After this action, team becomes the Owner of that subscription (producer or consumer).
 
 .. image:: _static/images/SynchronizeAcls.JPG
     :width: 500px

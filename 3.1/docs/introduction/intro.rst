@@ -4,12 +4,15 @@ Introduction
 What is Kafkawize?
 ------------------
 Kafkawize is a Self service Apache Kafka Topic Management tool/portal. It is a web application which automates the process of creating and browsing Kafka topics, acls, schemas by introducing roles/authorizations to users of various teams of an organization.
+It is Open Source. Below here are couple of screen shots of Dashboard and Topics pages.
 
+.. image:: _static/images/Dashboard.JPG
+    :width: 500px
+    :align: center
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KOjdpRtRhEY" frameborder="0" allowfullscreen></iframe>
-
+.. image:: _static/images/BrowseTopics.JPG
+    :width: 500px
+    :align: center
 
 Background
 ----------
@@ -33,15 +36,6 @@ Key features
    -    Browse Acls,  Producers and Consumers
    -    Synchronize Source of truth with Meta store
    -    Support for Cassandra or an Rdbms
-
-
-4.1 glimpse
------------
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nUnJJC6pDTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 How is it developed
 -------------------
@@ -75,7 +69,7 @@ On the backend side, Spring Security, Spring Boot frameworks, Hibernate are used
 Git Repositories
 ----------------
 
-UI Api      :   https://github.com/muralibasani/kafkawize
+UserInterface Api      :   https://github.com/muralibasani/kafkawize
 
 Cluster Api :   https://github.com/muralibasani/kafkawizeclusterapi
 
@@ -87,4 +81,6 @@ Muralidhar Basani
 LinkedIn    :   https://www.linkedin.com/in/muralibasani/
 
 Web         :   https://kafkawize.com
+
+Email       :   kafkawize@gmail.com
 

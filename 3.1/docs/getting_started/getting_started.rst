@@ -1,8 +1,9 @@
 Getting Started
 ===============
 
-Demo
-----
+Demo 4.1
+--------
+Note: This is previous version.
 
 .. raw:: html
 
@@ -19,13 +20,13 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.1) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (4.2) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Download the latest version (4.1) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
+Download the latest version (4.2) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 4.1 bundle here :download:`Kafkawize_4.1 <_static/files/kafkawize-bundle-4.1.rar>`
+Download Kafkawize 4.2 bundle here :download:`Kafkawize_4.2 <_static/files/kafkawize-bundle-4.2.rar>`
 
 2 Download Metastore
 --------------------
@@ -61,7 +62,7 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-4.1.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-4.2.jar) in target dir.
 
 Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
 configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
@@ -147,7 +148,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
-    (Scripts available in kafkawize-4.1.zip)
+    (Scripts available in kafkawize-4.2.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -174,7 +175,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
-    (Scripts available in kafkawize-4.1.zip)
+    (Scripts available in kafkawize-4.2.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -182,19 +183,19 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/target/kafkawize-4.1.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-4.2.jar).
 
 7 Run KW and KWClusterApi
 -------------------------
 
 Run::
 
- java -jar kafkawizeclusterapi-4.1.jar
+ java -jar kafkawizeclusterapi-4.2.jar
 
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-4.1.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-4.2.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
@@ -205,14 +206,13 @@ Hence the below wildcard acl has to be executed.
 
 -   If Acls are enabled on Kafka brokers, make sure "Cluster Api" application host is authorized to read topics (A read Acl is enough on the topic)
 
-
     Examples SSL Based Acl (Note of double quotes in the below command if copied properly)::
 
-    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:CN=MO,OU=MO,O=WA,L=WA,ST=WA,C=HO" --operation All --topic "*" --cluster
+    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:CN=MO,OU=MO,O=WA,L=WA,ST=WA,C=HO" --operation All --topic "*" --cluster  Cluster:kafka-cluster
 
     Examples IP Based Acl::
 
-    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster
+    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster  Cluster:kafka-cluster
 
 
 -   If SASL/SSL is configured, make sure they right properties are configured in AdminClient properties in Cluster Api application.
