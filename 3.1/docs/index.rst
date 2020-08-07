@@ -27,6 +27,7 @@ Contents:
    migrate
    features
    usecases
+   docker
    customize
    trouble_shooting
    releasenotes
