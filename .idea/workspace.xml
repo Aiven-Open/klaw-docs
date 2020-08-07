@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/3.1/docs/docker.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/files/kafkawize-bundle-4.1.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/MyTopicRequests.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/MyTopicRequests.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeAcls.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeAcls.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ViewAcls.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ViewAcls.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/arch.png" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/arch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/customize.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/customize.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/migrate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/migrate.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/roadmap.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/roadmap.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/trouble_shooting.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/trouble_shooting.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/usecases/usecases.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/usecases/usecases.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +24,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/3.1/docs/_static/files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/3.1/docs/docker" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\features" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\docker" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
     </key>
   </component>
   <component name="RunManager">

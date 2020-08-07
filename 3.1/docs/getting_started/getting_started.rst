@@ -228,15 +228,15 @@ Hence the below wildcard acl has to be executed.
 
     Default users, passwords and roles::
 
-    uiuser1/user    USER
+    uiuser1/user    USER    Team1
 
-    uiuser2/user    USER
+    uiuser2/user    USER    Team2
 
-    uiuser3/user    USER
+    uiuser3/user    USER    Team3
 
-    uiuser4/user    ADMIN
+    uiuser4/user    ADMIN   Team1
 
-    uiuser5/user    ADMIN
+    uiuser5/user    ADMIN   Team2
 
-    superuser/user  SUPERUSER
+    superuser/user  SUPERUSER   Team2
 
