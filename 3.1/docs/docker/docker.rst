@@ -3,12 +3,12 @@ On Docker
 
 Kafkawize can be run with Docker from version 4.2. You can download the docker images from https://hub.docker.com/u/kafkawize
 
-Step 1
-------
+Step 1 (Docker installation)
+----------------------------
 Make sure docker is installed on your system.
 
-Step 2
-------
+Step 2 (Docker-compose Kafkawize)
+---------------------------------
 Create a docker compose file(kafkawize_docker_compose.yml) like below which contains images, properties of Kafkawize ClusterApi and Kafkawize UserInterface Api applications.
 
 .. code-block:: yaml
@@ -40,8 +40,9 @@ Create a docker compose file(kafkawize_docker_compose.yml) like below which cont
          kafka:
 
 
-Step 3
-------
+Step 3 (Docker-compose Cassandra)
+---------------------------------
+In this example I used Cassandra, but you can also connect it with any RDBMS
 
 Create a cassandra_docker_compose.yml with the below content which contains docker image of Apache Cassandra
 
@@ -60,31 +61,28 @@ Create a cassandra_docker_compose.yml with the below content which contains dock
      networks:
          kafka:
 
-Step 4
-------
-
-Start Cassandra
+Step 4 (Start Cassandra)
+------------------------
 
 To run the docker compose file, run the below command where the above file is saved ::
 
     docker-compose -f .\cassandra_docker_compose.yml up
 
-Step 5
-------
-
-Start Kafkawize ::
+Step 5 (Start Kafkawize)
+------------------------
+::
 
     docker-compose -f .\kafkawize_docker_compose.yml up
 
-Step 6
-------
+Step 6 (Verify processes)
+-------------------------
 
 Verify docker processes ::
 
     docker ps
 
-Step 7
-------
+Step 7 (Access Kafkawize)
+-------------------------
 
 Access Kafkawize from the below url::
 
