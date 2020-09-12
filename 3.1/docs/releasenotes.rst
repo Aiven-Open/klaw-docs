@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Kafkawize 4.2 release notes
+Kafkawize 4.3 release notes
 
 Changes include
 1. Ability to have environments DEV, TST, ACC and PRD
