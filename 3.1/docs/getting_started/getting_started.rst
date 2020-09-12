@@ -103,6 +103,15 @@ setstore type as rdbms::
 
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
 
+other params::
+
+    # default cluster to synchronize data
+    custom.syncdata.cluster=DEV
+
+    # order of envs
+    custom.envs.order=DEV,TST,ACC,PRD
+    custom.request.topics.envs=DEV,TST,ACC,PRD
+
 configure db properties like below::
 
     # Spring JPA properties

@@ -18,3 +18,5 @@ custom.request.topics.envs=DEV,TST,ACC,PRD
 partition parameter value changed from default.paritions to default.partitions.
 
 3. superuser cannot submit new topic requests and acl/subscription requests.
+
+4. clusterapi is updated. Make sure you clone the latest clusterapi https://github.com/muralibasani/kafkawizeclusterapi
