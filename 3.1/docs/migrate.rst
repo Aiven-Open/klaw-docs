@@ -1,10 +1,22 @@
-Migration Kafkawize from 4.1 to 4.2
+Migration Kafkawize from 4.2 to 4.3
 ===================================
 
-There are few major changes in 4.2 which requires database table changes and hence
+There are few major changes in 4.3 which you need to look at.
 
-1   Set the below properties::
+1. application.properties includes couple of new parameters.
 
-    custom.dbscripts.dropall_recreate = true
+# default cluster to synchronize data
+custom.syncdata.cluster=DEV
 
-this will drop all the tables and data and recreate them.
+# order of envs
+custom.envs.order=DEV,TST,ACC,PRD
+custom.request.topics.envs=DEV,TST,ACC,PRD
+
+
+2.insertdata.sql is updated.
+
+partition parameter value changed from default.paritions to default.partitions.
+
+3. superuser cannot submit new topic requests and acl/subscription requests.
+
+4. clusterapi is updated. Make sure you clone the latest clusterapi https://github.com/muralibasani/kafkawizeclusterapi

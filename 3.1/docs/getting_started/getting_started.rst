@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Demo 4.2
+Demo 4.3
 --------
 
 .. raw:: html
@@ -19,13 +19,13 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.2) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (4.3) or clone from the git repo. https://github.com/muralibasani/kafkawize
 
-Download the latest version (4.2) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
+Download the latest version (4.3) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
 
 OR
 
-Download Kafkawize 4.2 bundle here :download:`Kafkawize_4.2 <_static/files/kafkawize-bundle-4.2.rar>`
+Download Kafkawize 4.3 bundle here :download:`Kafkawize_4.3 <_static/files/kafkawize-bundle-4.3.rar>`
 
 2 Download Metastore
 --------------------
@@ -61,7 +61,7 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-4.2.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-4.3.jar) in target dir.
 
 Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
 configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
@@ -102,6 +102,15 @@ setstore type as rdbms::
     custom.db.storetype=rdbms
 
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
+
+other params::
+
+    # default cluster to synchronize data
+    custom.syncdata.cluster=DEV
+
+    # order of envs
+    custom.envs.order=DEV,TST,ACC,PRD
+    custom.request.topics.envs=DEV,TST,ACC,PRD
 
 configure db properties like below::
 
@@ -147,7 +156,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
-    (Scripts available in kafkawize-4.2.zip)
+    (Scripts available in kafkawize-4.3.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -174,7 +183,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
-    (Scripts available in kafkawize-4.2.zip)
+    (Scripts available in kafkawize-4.3.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -182,19 +191,19 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/target/kafkawize-4.2.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-4.3.jar).
 
 7 Run KW and KWClusterApi
 -------------------------
 
 Run::
 
- java -jar kafkawizeclusterapi-4.2.jar
+ java -jar kafkawizeclusterapi-4.3.jar
 
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-4.2.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-4.3.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 

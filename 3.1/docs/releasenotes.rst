@@ -1,12 +1,6 @@
 Release Notes
 =============
 
-Kafkawize 4.2 release notes
+Kafkawize 4.3 release notes
 
-Changes include
-1. Ability to have environments DEV, TST, ACC and PRD
-2. Ability to request for topics in DTAP environments
-3. Ability to view topic overview and subscriptions in one page
-4. Ability to view topic partitions and replication factor of all environments in topic overview page
-5. Ability to view topics and their existence in all environments
-6. Updated dashboard to view your team topics
+Changes include UI and BE code improvements.
