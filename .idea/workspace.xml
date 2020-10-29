@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/migrate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/migrate.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,23 +21,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/3.1/docs/docker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/3.1/docs" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\docker" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\docker" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\files" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\_static\images" />
       <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs\usecases" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1\docs" />
+      <recent name="C:\murali\IdeaProjects\kafkawizedocs\3.1" />
     </key>
   </component>
   <component name="RunManager">
