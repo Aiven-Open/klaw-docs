@@ -1,4 +1,4 @@
-Pro Features
+PRO Features
 ============
 
 The Professional version of Kafkawize is developed with several brilliant features. It is easy to request for a demo of
@@ -11,7 +11,7 @@ Promote Topics
 
 If a topic exists in Dev environment, it can be requested for promotion to the next higher environment (TST). If topic exists in Dev and Tst environments,
 promotion can be requested for Acceptance environment, with the same topic name. This way it restricts users to create topics in adhoc way
- and at the same time maintains data integrity. This feature provides an easy way to request for topics in higher environments, keeping
+and at the same time maintains data integrity. This feature provides an easy way to request for topics in higher environments, keeping
 partitions, replication factor parameters specific to those environments. This deletion request can be triggered only by Topic owner teams.
 Please note, it follows the same request/approval process.
 
