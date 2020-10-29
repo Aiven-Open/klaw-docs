@@ -26,6 +26,7 @@ Contents:
    getting_started
    migrate
    features
+   profeatures
    usecases
    docker
    customize
