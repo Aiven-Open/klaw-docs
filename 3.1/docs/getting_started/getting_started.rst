@@ -19,13 +19,9 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.3) or clone from the git repo. https://github.com/muralibasani/kafkawize
+Download the latest version (4.3). https://kafkawize.com/download/
 
-Download the latest version (4.3) or clone from the git repo. https://github.com/muralibasani/kafkawizeclusterapi
-
-OR
-
-Download Kafkawize 4.3 bundle here :download:`Kafkawize_4.3 <_static/files/kafkawize-bundle-4.3.rar>`
+This bundle includes customized packages of both the apis kafkawizeuapi and kafkawizeclusterapi
 
 2 Download Metastore
 --------------------
