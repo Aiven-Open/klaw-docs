@@ -19,7 +19,7 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.3). https://kafkawize.com/download/
+Download the latest version (4.4). https://kafkawize.com/download/
 
 This bundle includes customized packages of both the apis kafkawizeuapi and kafkawizeclusterapi
 
@@ -57,7 +57,7 @@ Configure the application properties (src/main/resources) if port has to be chan
 
     mvn clean package
 
-This should create a jar (kafkawizeclusterapi-4.3.jar) in target dir.
+This should create a jar (kafkawizeclusterapi-4.4.jar) in target dir.
 
 Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
 configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
@@ -152,7 +152,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
 
-    (Scripts available in kafkawize-4.3.zip)
+    (Scripts available in kafkawize-4.4.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -179,7 +179,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
     /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
 
-    (Scripts available in kafkawize-4.3.zip)
+    (Scripts available in kafkawize-4.4.zip)
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -187,19 +187,19 @@ Run maven command to create a runnable jar::
 
     mvn clean package
 
-This should create a jar in target dir (/kafkawize/target/kafkawize-4.3.jar).
+This should create a jar in target dir (/kafkawize/target/kafkawize-4.4.jar).
 
 7 Run KW and KWClusterApi
 -------------------------
 
 Run::
 
- java -jar kafkawizeclusterapi-4.3.jar
+ java -jar kafkawizeclusterapi-4.4.jar
 
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-4.3.jar
+    java -jar spring.config.location=classpath:/application.properties kafkawize-4.4.jar
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 

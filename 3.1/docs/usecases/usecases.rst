@@ -7,8 +7,6 @@ Functionalities
 -   Search Topics with a User Interface
 -   View Acls of a topic
 -   View Producer and Consumer Teams of a topic
--   Synchronize Kafka topics with Teams
--   Synchronize Kafka acls with Teams
 -   Users, Teams and Roles based authorizations on features
 -   View server configuration (application properties)
 -   Audit of activities performed by users

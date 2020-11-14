@@ -1,7 +1,7 @@
 On Docker
 =========
 
-Kafkawize can be run with Docker from version 4.3. You can download the docker images from https://hub.docker.com/u/kafkawize
+Kafkawize can be run with Docker from version 4.4. You can download the docker images from https://hub.docker.com/u/kafkawize
 
 Step 1 (Docker installation)
 ----------------------------
