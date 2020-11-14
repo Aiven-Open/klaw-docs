@@ -1,8 +1,8 @@
 Getting Started
 ===============
 
-Demo 4.3
---------
+Demo 4.2 (Prev)
+--------------
 
 .. raw:: html
 
@@ -21,7 +21,7 @@ Prerequisites
 --------------------
 Download the latest version (4.4). https://kafkawize.com/download/
 
-This bundle includes customized packages of both the apis kafkawizeuapi and kafkawizeclusterapi
+This bundle includes the libraries of kafkawizeuapi and kafkawizeclusterapi
 
 2 Download Metastore
 --------------------
@@ -38,9 +38,9 @@ Or any other Rdbms is ok.
 
 3 License Key
 -------------
-License key is not required from 4.1 version.
+You will receive it from Kafkawize.
 
-4 Build KW Cluster Api Application
+4 KW Cluster Api Application
 ----------------------------------
 This Api does the below
 
@@ -49,18 +49,7 @@ This Api does the below
 -   There is no connection to any metastore
 -   Swagger enabled
 
-Unzip kafkawizeclusterapi.zip and open in any IDE
-
-Configure the application properties (src/main/resources) if port has to be changed, else default port is 9343
-
- and run maven command to create a runnable jar::
-
-    mvn clean package
-
-This should create a jar (kafkawizeclusterapi-4.4.jar) in target dir.
-
-Kafka connectivity between ClusterApi application and Kafka cluster, if SSL connection needs to be configured,
-configure "environment".connect_with_ssl_kafkacluster in application properties to true and configure the other keystore properties even.
+The jar (kafkawizeclusterapi-4.4.jar) is available in the downloaded bundle.
 
 5 Configure Kafkawize UI Api Application
 ----------------------------------------
@@ -69,11 +58,9 @@ This Api does the below
 -   Users interact with interface with this Api
 -   All the end points in this application either connect to Metastore or Cluster Api or both
 
-Unzip kafkawize-(version).zip and open in any IDE
-
 Configure application properties:
 
-    In  kafkawize/src/main/resources/application.properties
+    In application.properties
 
 default port is 9097, if port has to be changed, else ::
 
@@ -132,7 +119,7 @@ configure cluster api host and port details::
 Metastore Cassandra
 ~~~~~~~~~~~~~~~~~~~
 
-In application.properties (kafkawize/src/main/resources/application.properties) configure custom.dbscripts.execution=auto or manual to get the required database scripts executed.
+In application.properties (application_kafkawize.properties) configure custom.dbscripts.execution=auto or manual to get the required database scripts executed.
 
 Configure custom.dbscripts.dropall_recreate=false or true to drop all the metadata scripts and recreate. This property is only valid if the above property is set to auto
 
@@ -148,11 +135,9 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 -   Install and run Cassandra and create a keyspace 'kafkamanagementapi'
 -   Create tables and run insert scripts in Cassandra
 
-    /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/createcassandra.sql
+    /scripts/base/cassandra/createcassandra.sql
 
-    /kafkawize/kafkawize-web/src/main/resources/scripts/base/cassandra/insertdata.sql
-
-    (Scripts available in kafkawize-4.4.zip)
+    /scripts/base/cassandra/insertdata.sql
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
@@ -175,31 +160,32 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 -   Install and run Mysql/Oracle and create a db schema or database
 -   Create tables and run insert scripts in Database
 
-    /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/ddl-jdbc.sql
+    /scripts/base/rdbms/ddl-jdbc.sql
 
-    /kafkawize/kafkawize-web/src/main/resources/scripts/base/rdbms/insertdata.sql
-
-    (Scripts available in kafkawize-4.4.zip)
+    /scripts/base/rdbms/insertdata.sql
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
-Run maven command to create a runnable jar::
-
-    mvn clean package
-
-This should create a jar in target dir (/kafkawize/target/kafkawize-4.4.jar).
+The jar (kafkawize-4.4.jar) is available in the downloaded bundle.
 
 7 Run KW and KWClusterApi
 -------------------------
 
+Run the script to start the application.
+
+Windows : start-kafkawize.bat
+Linux/Unix : start-kafkawize.sh
+
+Or
+
 Run::
 
- java -jar kafkawizeclusterapi-4.4.jar
+ java -jar kafkawizeclusterapi-4.4.jar --spring.config.location=classpath:/application.properties
 
 
 Run::
 
-    java -jar spring.config.location=classpath:/application.properties kafkawize-4.4.jar
+    java -jar kafkawize-4.4.jar --spring.config.location=classpath:/application.properties
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
