@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Demo 4.2 (Old)
+Demo 4.2 (Prev)
 --------------
 
 .. raw:: html
