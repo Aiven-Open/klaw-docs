@@ -1,7 +1,7 @@
 On Docker
 =========
 
-Kafkawize can be run with Docker from version 4.4. You can download the docker images from https://hub.docker.com/u/kafkawize
+Kafkawize can be run with Docker from version 4.5. You can download the docker images from https://hub.docker.com/u/kafkawize
 
 Step 1 (Docker installation)
 ----------------------------
@@ -29,9 +29,22 @@ Create a docker compose file(kafkawize_docker_compose.yml) like below which cont
          networks:
            - kafka
          environment:
-           CUSTOM_DB_STORETYPE: cassandra
-           CUSTOM_CASSANDRADB_URL: cassandra-1
-           CUSTOM_CLUSTERAPI_URL: http://clusterapi-1:9343
+           KAFKAWIZE_DB_STORETYPE: rdbms
+           KAFKAWIZE_LICENSE_KEY:
+           KAFKAWIZE_ORG_NAME: MyOrganization
+           KAFKAWIZE_VERSION: 4.5
+           KAFKAWIZE_INVALIDKEY_MSG: Invalid License !! Please request from https://kafkawize.com for a license key.
+
+           # Database settings My sql
+           SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/kafkametadbpro?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+           SPRING_DATASOURCE_USERNAME: kafkauser
+           SPRING_DATASOURCE_PASSWORD: kafkauser123
+           SPRING_DATASOURCE_DRIVER_CLASS: com.mysql.cj.jdbc.Driver
+           SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQLDialect
+           SPRING_JPA_HIBERNATE_SHOW_SQL: "false"
+           SPRING_JPA_HIBERNATE_GENERATE-DDL: "false"
+
+           KAFKAWIZE_CLUSTERAPI_URL: http://clusterapi-1:9343
          ports:
          -   "9097:9097"
          extra_hosts:
@@ -40,18 +53,18 @@ Create a docker compose file(kafkawize_docker_compose.yml) like below which cont
          kafka:
 
 
-Step 3 (Docker-compose Cassandra)
+Step 3 (Docker-compose Mysql)
 ---------------------------------
-In this example I used Cassandra, but you can also connect it with any RDBMS
+In this example I used Mysql, but you can also connect it with any RDBMS like postgres
 
-Create a cassandra_docker_compose.yml with the below content which contains docker image of Apache Cassandra
+Create a mysql_docker_compose.yml with the below content which contains docker image of Mysql
 
 .. code-block:: yaml
 
     version: '2'
      services:
-       cassandra-1:
-         image: cassandra:latest
+       mysql-1:
+         image: mysql:latest
          ports:
          -   "9042:9042"
          networks:
@@ -61,12 +74,12 @@ Create a cassandra_docker_compose.yml with the below content which contains dock
      networks:
          kafka:
 
-Step 4 (Start Cassandra)
+Step 4 (Start Mysql)
 ------------------------
 
 To run the docker compose file, run the below command where the above file is saved ::
 
-    docker-compose -f .\cassandra_docker_compose.yml up
+    docker-compose -f .\mysql_docker_compose.yml up
 
 Step 5 (Start Kafkawize)
 ------------------------
@@ -90,19 +103,22 @@ Access Kafkawize from the below url::
 
 Credentials
 ~~~~~~~~~~~
+
 Default Credentials available to access Kafkawize::
 
-    uiuser1/user USER Team1
-    uiuser2/user USER Team2
-    uiuser3/user USER Team3
-    uiuser4/user ADMIN Team1
-    uiuser5/user ADMIN Team2
-    uiuser6/user ADMIN Team3
-    superuser/user SUPERUSER Team2
+    gary/user USER Octopus
+    will/user USER Seahorses
+    john/user USER Starfish
+    cris/user ADMIN Octopus
+    noah/user ADMIN Seahorses
+    alex/user ADMIN Starfish
+    superuser/user SUPERUSER Seahorses
 
 
 Docker shell
 ~~~~~~~~~~~~
+
 You can login into the docker container shell with the below command::
 
     docker exec -ti <docker_container_id> /bin/bash
+

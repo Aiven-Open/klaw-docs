@@ -8,13 +8,13 @@ Kafkawize is built with the key features as below::
    -    Fully automated
    -    Browse Acls,  Producers and Consumers
    -    Synchronize Source of truth with Meta store
-   -    Support for Cassandra or an Rdbms
+   -    Support for an Rdbms or file system as metastore
 
 Security
 --------
 There are two main applications of Kafkawize. UiApi and ClusterApi. There is no security applied on Cluster Api. End points are exposed to anyone who can reach the host., and swagger is enabled too. Users can directly post/get requests to this application.
 
-On the UI Api, Spring security is enabled. As the application boots, it loads all the users from database/cassandra into its memory and would be referred to it.
+On the UI Api, Spring security is enabled. As the application boots, it loads all the users from database into its memory and would be referred to it.
 
 Security on the Kafka Broker is out of scope for Kafkawize., and it should be handled by you., however for Kafkawize to connect to Kafka broker, Acls/AdminClient properties need to be provided to avoid authorization issues.
 

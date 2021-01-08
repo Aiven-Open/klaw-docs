@@ -6,6 +6,9 @@ the Pro version from here: https://kafkawize.com/request-for-demo/
 
 You can also reach us out at https://kafkawize.com/contact-us/
 
+Pro version features in detail https://kafkawize.com/features
+
+
 Promote Topics
 --------------
 
@@ -29,18 +32,14 @@ It is possible to delete particular Producer or Consumer subscriptions of a topi
 triggered by that Acl owner teams. No other teams can request for other's acl deletion. So all the subscriptions are secure this way.
 
 
-Ldap Authentication
--------------------
+Ldap Authentication/Active Directory
+------------------------------------
 
-Users can be authenticated against Ldap while users login to Kafkawize.
+Users can be authenticated against Ldap/Active Directory while users login to Kafkawize.
 
 If you do not want to create/use a different password for Kafkawize users, rather authenticate from an existing Ldap server of your
 organization, it is easy to integrate now. Application properties have properties like baseDN, userDNPattern, passwordAttributes etc
 to configure your Ldap server and connect.  The below property enables ldap authentication::
-
-    # possible values 'ldap' or 'db'
-    kafkawize.login.authentication.type=ldap
-
 
 Cluster Connect Protocols
 -------------------------
@@ -124,6 +123,35 @@ After a environment is selected, Producer and Consumer Acls are displayed, and a
     :width: 500px
     :align: center
 
+Restore Config
+--------------
+
+Configuration of topics and acls from metastore can be restored back on any selected Kafka cluster.
+
+Multi Tenancy
+-------------
+
+Each tenant can manage their topics with their own teams in isolation.
+Every tenant can have their own set of Kafka environments, and users of one tenant cannot view/access topics, acls
+or any from other tenants.
+It provides an isolation avoiding any security breach.
+
+Analytics
+---------
+
+Several charts are introduced to give an overview of Clusters and usages by teams.
+Topics, Acls and Partitions per team
+Topics, Acls and Partitions per environments
+Activity log per team and per environments
+
+Configurable Roles & Permissions
+--------------------------------
+
+Any new roles can be added and associate different kind of permissions
+Permissions
+A whole bunch of permissions can be assigned to roles from User interface, making it very flexible.
+With immediate effect, users will be able to see the changes.
+Ex: A permission to request topics, or approve or add users, environments, clusters etc.
 
 
 User Registration

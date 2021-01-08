@@ -15,24 +15,24 @@ Prerequisites
 -------------
 -   Any IDE like IntelliJ/Netbeans or Eclipse to build the applications.
 -   Java installed machines to run the applications
--   Rdbms (like Oracle/MySQL..) or Apache Cassandra
+-   Rdbms (like Oracle/MySQL..) or File based
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.4). https://kafkawize.com/download/
+Download the latest version (4.5). https://kafkawize.com/download/
 
 This bundle includes the libraries of kafkawizeuapi and kafkawizeclusterapi
 
 2 Download Metastore
 --------------------
 
-If Cassandra is used as metastore, you can download from http://cassandra.apache.org/download/
-
 If Rdbms is used as metastore, download
 
 Mysql : https://dev.mysql.com/downloads/
 
 Oracle : https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
+
+of file based/
 
 Or any other Rdbms is ok.
 
@@ -49,7 +49,7 @@ This Api does the below
 -   There is no connection to any metastore
 -   Swagger enabled
 
-The jar (kafkawizeclusterapi-4.4.jar) is available in the downloaded bundle.
+The jar (kafkawizeclusterapi-4.5.jar) is available in the downloaded bundle.
 
 5 Configure Kafkawize UI Api Application
 ----------------------------------------
@@ -66,34 +66,21 @@ default port is 9097, if port has to be changed, else ::
 
     server.port:9097
 
-If metastore is cassandra (from step 4)
 
-setstore type as cassandra::
+Set metastore to rdbms (from step 4)::
 
-    custom.db.storetype=cassandra
-
-configure cassandra host, port and keyspace::
-
-    custom.cassandradb.keyspace:kafkamanagementapi
-    custom.cassandradb.url:localhost
-    custom.cassandradb.port:9042
-
-If metastore is rdbms (from step 4)
-
-setstore type as rdbms::
-
-    custom.db.storetype=rdbms
+    kafkawize.db.storetype=rdbms
 
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
 
 other params::
 
     # default cluster to synchronize data
-    custom.syncdata.cluster=DEV
+    kafkawize.syncdata.cluster=DEV
 
     # order of envs
-    custom.envs.order=DEV,TST,ACC,PRD
-    custom.request.topics.envs=DEV,TST,ACC,PRD
+    kafkawize.envs.order=DEV,TST,ACC,PRD
+    kafkawize.request.topics.envs=DEV,TST,ACC,PRD
 
 configure db properties like below::
 
@@ -102,44 +89,29 @@ configure db properties like below::
     spring.datasource.username=kafkauser
     spring.datasource.password=kafkauser123
     spring.datasource.driver.class=com.mysql.cj.jdbc.Driver
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+configure db properties for file based like below::
+
+    # Spring JPA properties
+    spring.datasource.url=jdbc:h2:file:C:/Software/KafkaWize/H2Filedb/kafkawizedbos;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;
+    spring.datasource.username=kafkauser
+    spring.datasource.password=kafkauser123
+    spring.datasource.driver.class=org.h2.Driver
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
 
 
 Configure Cluster Api
 ~~~~~~~~~~~~~~~~~~~~~
 configure cluster api host and port details::
 
-    custom.clusterapi.url:http://localhost:9343
+    kafkawize.clusterapi.url:http://localhost:9343
 
 -   ignore user/pwd of cluster api properties
 
 
 6 Metastore setup
 -----------------
-
-Metastore Cassandra
-~~~~~~~~~~~~~~~~~~~
-
-In application.properties (application_kafkawize.properties) configure custom.dbscripts.execution=auto or manual to get the required database scripts executed.
-
-Configure custom.dbscripts.dropall_recreate=false or true to drop all the metadata scripts and recreate. This property is only valid if the above property is set to auto
-
-Configure in application properties::
-
-    custom.dbscripts.execution = auto or manual
-    custom.dbscripts.dropall_recreate = false or true
-
-If the custom.dbscripts.execution property is set to auto, all the scripts will be executed automatically.
-
-If the custom.dbscripts.execution property is set to manual, all the scripts should be executed manually.
-
--   Install and run Cassandra and create a keyspace 'kafkamanagementapi'
--   Create tables and run insert scripts in Cassandra
-
-    /scripts/base/cassandra/createcassandra.sql
-
-    /scripts/base/cassandra/insertdata.sql
-
--   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
 Metastore Rdbms
 ~~~~~~~~~~~~~~~
@@ -149,13 +121,18 @@ In application.properties configure custom.dbscripts.execution=auto or manual to
 Configure custom.dbscripts.dropall_recreate=false or true to drop all the metadata scripts and recreate. This property is only valid if the above property is set to auto
 
 Configure in application properties::
+# Database settings
+# To create all the required tables of Kafkawize. Need grants to create and alter. Values true/false::
 
-    custom.dbscripts.execution = auto or manual
-    custom.dbscripts.dropall_recreate = false or true
+    kafkawize.dbscripts.create.tables=false
 
-If the custom.dbscripts.execution property is set to auto, all the scripts will be executed automatically.
+# db scripts execution 'auto' or 'manual'. If set to manual, user has to execute the scripts from resources dir manually::
 
-If the custom.dbscripts.execution property is set to manual, all the scripts should be executed manually.
+    kafkawize.dbscripts.insert.basicdata=false
+
+# Location of db scripts for insert or create::
+
+    kafkawize.dbscripts.location=./scripts/base/rdbms/
 
 -   Install and run Mysql/Oracle and create a db schema or database
 -   Create tables and run insert scripts in Database
@@ -166,7 +143,7 @@ If the custom.dbscripts.execution property is set to manual, all the scripts sho
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
-The jar (kafkawize-4.4.jar) is available in the downloaded bundle.
+The jar (kafkawize-4.5.jar) is available in the downloaded bundle.
 
 7 Run KW and KWClusterApi
 -------------------------
@@ -180,12 +157,12 @@ Or
 
 Run::
 
- java -jar kafkawizeclusterapi-4.4.jar --spring.config.location=classpath:/application.properties
+ java -jar kafkawizeclusterapi-4.5.jar --spring.config.location=classpath:/application.properties
 
 
 Run::
 
-    java -jar kafkawize-4.4.jar --spring.config.location=classpath:/application.properties
+    java -jar kafkawize-4.5.jar --spring.config.location=classpath:/application.properties
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
@@ -205,12 +182,10 @@ Hence the below wildcard acl has to be executed.
     bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster  Cluster:kafka-cluster
 
 
--   If SASL/SSL is configured, make sure they right properties are configured in AdminClient properties in Cluster Api application.
-
 9 Final Check
 -------------
 -   Cluster Api is running
--   Metastore (Cassandra or Rdbms) is running and has tables and data
+-   Metastore (Rdbms or file system) is running and has tables and data
 -   UI Api is running
 -   Cluster Api is authorized to read topics and acls on topics information(Acls should be configured)
 -   Access UI from http://[host]:[port]/kafkawize where host and port are UI Api application
@@ -218,15 +193,11 @@ Hence the below wildcard acl has to be executed.
 
     Default users, passwords and roles::
 
-    uiuser1/user    USER    Team1
-
-    uiuser2/user    USER    Team2
-
-    uiuser3/user    USER    Team3
-
-    uiuser4/user    ADMIN   Team1
-
-    uiuser5/user    ADMIN   Team2
-
-    superuser/user  SUPERUSER   Team2
+    gary/user USER Octopus
+    will/user USER Seahorses
+    john/user USER Starfish
+    cris/user ADMIN Octopus
+    noah/user ADMIN Seahorses
+    alex/user ADMIN Starfish
+    superuser/user SUPERUSER Seahorses
 
