@@ -35,7 +35,7 @@ Key features
    -    Fully automated
    -    Browse Acls,  Producers and Consumers
    -    Synchronize Source of truth with Meta store
-   -    Support for Cassandra or an Rdbms
+   -    Support for an Rdbms or File system
 
 How is it developed
 -------------------
@@ -60,7 +60,7 @@ Cluster API acts as middle layer between Kafka brokers and UserInterface API.
 
 Cluster API creates Kafka Admin Client and executes the requests for Topic, Acls or Schema registry. Kafka Admin client libraries are used to create the client.
 
-Apache Cassandra Or RDBMS(MySql for ex) datastore stores all the meta information like users, teams, topicRequests, request and execution data from all the users., and to maintain source of truth.
+File database (H2 - Mysql style) Or RDBMS(MySql for ex) datastore stores all the meta information like users, teams, topicRequests, request and execution data from all the users., and to maintain source of truth.
 
 Requests from users are directed to cluster api., and also data is stored metastore.
 
