@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kafkawizedocs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kafkawizedocs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ActivityLog.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ActivityLog.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/AddCluster.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/AddCluster.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/AddTeam.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/AddTeam.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/AddUser.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/AddUser.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ApproveTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/BrowseTopics.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Dashboard.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Environments.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Environments.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/Logout.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/Logout.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/MyAclRequests.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/MyAclRequests.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/MyTopicRequests.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/MyTopicRequests.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestSchema.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestSchema.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestTopic.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ServerConfig.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ServerConfig.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeAcls.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/SynchronizeTopics.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ViewAcls.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ViewAcls.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ViewTeams.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ViewTeams.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/ViewUsers.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/ViewUsers.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/arch.png" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/arch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/login.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/login.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/introduction/intro.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/migrate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/migrate.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/profeatures/profeatures.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/profeatures/profeatures.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/trouble_shooting.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/trouble_shooting.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

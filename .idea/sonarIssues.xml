@@ -3,7 +3,27 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/../kafkawize/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../kafkawize/ReleaseNotes.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/Acl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/AclRequests.java">
           <value>
             <set />
           </value>
@@ -13,7 +33,57 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/Env.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/MessageSchema.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/ProductDetails.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/SchemaRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/Team.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/Topic.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/TopicRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/dao/UserInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/helpers/db/rdbms/LoadDbJdbc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/repository/ActivityLogRepo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/java/com/kafkamgt/uiapi/repository/TopicRepo.java">
           <value>
             <set />
           </value>
@@ -24,6 +94,61 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/scripts/base/rdbms/ddl-jdbc.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/scripts/base/rdbms/dropjdbc.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/scripts/base/rdbms/insertdata.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/static/js/manageUsers.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/static/js/requestAcls.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/static/js/requestAvroSchemaUpload.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/templates/requestSchema.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/templates/showTeams.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/main/resources/templates/showUsers.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/test/java/com/kafkamgt/integrationtests/cassandra/TopicAclControllerIT.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/test/java/com/kafkamgt/integrationtests/rdbms/TopicAclControllerIT.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/test/java/com/kafkamgt/uiapi/UtilMethods.java">
           <value>
             <set />
           </value>
@@ -43,7 +168,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/test/resources/scripts/base/cassandra/insertdata.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../kafkawize/src/test/resources/scripts/base/rdbms/ddl-jdbc.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kafkawize/src/test/resources/scripts/base/rdbms/insertdata.sql">
           <value>
             <set />
           </value>
@@ -139,6 +274,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../kwclients/src/com/opensource/docker/compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kwclients/src/com/opensource/dummdata.sql">
           <value>
             <set />
           </value>
