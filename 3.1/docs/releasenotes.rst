@@ -1,5 +1,16 @@
 Release Notes
 =============
+Kafkawize 4.5.1
+
+Kafkawize 4.5.1 is a minor release having minor improvements
+
+1. Updated datasource to Hikari
+2. Connection parameters now have few caching related parameters for prepared statements.
+3. Few code enhancements
+4. Removed Cassandra datasource and related dependencies
+5. Upgrade of kafka client version in cluster api to 2.6.1
+
+----------------------------------------------------------------
 
 Kafkawize 4.5
 

@@ -1,105 +1,100 @@
-On Docker
-=========
+On Docker/Azure Cloud
+=====================
 
-Kafkawize can be run with Docker from version 4.5. You can download the docker images from https://hub.docker.com/u/kafkawize
+Kafkawize can be run with Docker from version 4.5.1 You can download the docker images from https://hub.docker.com/u/kafkawize
 
 Step 1 (Docker installation)
 ----------------------------
 Make sure docker is installed on your system.
 
-Step 2 (Docker-compose Kafkawize)
----------------------------------
-Create a docker compose file(kafkawize_docker_compose.yml) like below which contains images, properties of Kafkawize ClusterApi and Kafkawize UserInterface Api applications.
+Step 2 (Docker-compose Kafkawize - uiapi)
+-----------------------------------------
+Create a docker compose file(kafkawize_docker_compose_uiapi.yml) like below which contains images, properties of Kafkawize UserInterface Api applications.
+
+For Azure, make sure images are correctly defined.
 
 .. code-block:: yaml
 
+    ---
     version: '2'
-     services:
-       clusterapi-1:
-         image: kafkawize/kw_clusterapi:latest
-         ports:
-         -   "9343:9343"
-         networks:
-           - kafka
-         extra_hosts:
-           - "moby:127.0.0.1"
-       uiapi-1:
-         image: kafkawize/kw_uiapi:latest
-         hostname: localhost
-         networks:
-           - kafka
-         environment:
-           KAFKAWIZE_DB_STORETYPE: rdbms
-           KAFKAWIZE_LICENSE_KEY:
-           KAFKAWIZE_ORG_NAME: MyOrganization
-           KAFKAWIZE_VERSION: 4.5
-           KAFKAWIZE_INVALIDKEY_MSG: Invalid License !! Please request from https://kafkawize.com for a license key.
+    services:
+      uiapi:
+        image: kafkawize/kw_uiapi:4.5.1
+        hostname: localhost
+        environment:
+          KAFKAWIZE_DB_STORETYPE: rdbms
+          # Authentication type. Possible values : db
+          KAFKAWIZE_LOGIN_AUTHENTICATION_TYPE: db
+          KAFKAWIZE_DBSCRIPTS_CREATE_TABLES: "true"
+          KAFKAWIZE_DBSCRIPTS_INSERT_BASICDATA: "true"
 
-           # Database settings My sql
-           SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/kafkametadbpro?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-           SPRING_DATASOURCE_USERNAME: kafkauser
-           SPRING_DATASOURCE_PASSWORD: kafkauser123
-           SPRING_DATASOURCE_DRIVER_CLASS: com.mysql.cj.jdbc.Driver
-           SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQLDialect
-           SPRING_JPA_HIBERNATE_SHOW_SQL: "false"
-           SPRING_JPA_HIBERNATE_GENERATE-DDL: "false"
+          # License key settings
+          KAFKAWIZE_LICENSE_KEY: <key-to-be-filled>
+          KAFKAWIZE_ORG_NAME: MyOrganization
+          KAFKAWIZE_VERSION: 4.5.1
+          KAFKAWIZE_INVALIDKEY_MSG: Invalid License !! Please request from https://kafkawize.com for a license key.
 
-           KAFKAWIZE_CLUSTERAPI_URL: http://clusterapi-1:9343
-         ports:
-         -   "9097:9097"
-         extra_hosts:
-           - "moby:127.0.0.1"
-     networks:
-         kafka:
+          # Database settings
+          SPRING_DATASOURCE_URL: jdbc:h2:file:./kafkawizedbos;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;
+          SPRING_DATASOURCE_USERNAME: kafkauser
+          SPRING_DATASOURCE_PASSWORD: kafkauser123
+          SPRING_DATASOURCE_DRIVER_CLASS: org.h2.Driver
+          SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.H2Dialect
+          SPRING_JPA_HIBERNATE_SHOW_SQL: "false"
+          SPRING_JPA_HIBERNATE_GENERATE-DDL: "false"
+
+          # Logging settings
+          LOGGING_LEVEL_ORG_HIBERNATE_SQL: info
+          LOGGING_LEVEL_ROOT: info
+          LOGGING_FILE: kafkawize_uiapi.log
+        ports:
+          -   "9097:9097"
+        extra_hosts:
+          - "moby:127.0.0.1"
+        network_mode: "host"
 
 
-Step 3 (Docker-compose Mysql)
----------------------------------
-In this example I used Mysql, but you can also connect it with any RDBMS like postgres
-
-Create a mysql_docker_compose.yml with the below content which contains docker image of Mysql
+Step 3 (Docker-compose Kafkawize - clusterapi)
+-----------------------------------------
+Create a docker compose file(kafkawize_docker_compose_clusterapi.yml) like below which contains images, properties of Kafkawize ClusterApi Api applications.
 
 .. code-block:: yaml
 
+
+    ---
     version: '2'
-     services:
-       mysql-1:
-         image: mysql:latest
-         ports:
-         -   "9042:9042"
-         networks:
-           - kafka
-         extra_hosts:
-           - "moby:127.0.0.1"
-     networks:
-         kafka:
+    services:
+      clusterapi:
+        image: kafkawize/kw_clusterapi:4.5.1
+        environment:
+          LOGGING_FILE: kw_clusterapi.log
+        ports:
+          -   "9343:9343"
+        extra_hosts:
+          - "moby:127.0.0.1"
+        network_mode: "host"
 
-Step 4 (Start Mysql)
-------------------------
 
-To run the docker compose file, run the below command where the above file is saved ::
-
-    docker-compose -f .\mysql_docker_compose.yml up
-
-Step 5 (Start Kafkawize)
+Step 4 (Start Kafkawize)
 ------------------------
 ::
 
-    docker-compose -f .\kafkawize_docker_compose.yml up
+    docker-compose -f .\kafkawize_docker_compose_uiapi.yml up
+    docker-compose -f .\kafkawize_docker_compose_clusterapi.yml up
 
-Step 6 (Verify processes)
+Step 5 (Verify processes)
 -------------------------
 
 Verify docker processes ::
 
     docker ps
 
-Step 7 (Access Kafkawize)
+Step 6 (Access Kafkawize)
 -------------------------
 
 Access Kafkawize from the below url::
 
-    http://localhost:9097/kafkawize
+    http://<dockerhost>:9097/kafkawize
 
 Credentials
 ~~~~~~~~~~~
