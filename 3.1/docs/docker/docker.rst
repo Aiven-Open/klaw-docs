@@ -1,7 +1,7 @@
 On Docker/Azure Cloud
 =====================
 
-Kafkawize can be run with Docker from version 4.5.1 You can download the docker images from https://hub.docker.com/u/kafkawize
+Kafkawize can be run with Docker from version 5.0.0 You can download the docker images from https://hub.docker.com/u/kafkawize
 
 Step 1 (Docker installation)
 ----------------------------
@@ -19,7 +19,7 @@ For Azure, make sure images are correctly defined.
     version: '2'
     services:
       uiapi:
-        image: kafkawize/kw_uiapi:4.5.1
+        image: kafkawize/kw_uiapi:5.0.0
         hostname: localhost
         environment:
           KAFKAWIZE_DB_STORETYPE: rdbms
@@ -28,11 +28,9 @@ For Azure, make sure images are correctly defined.
           KAFKAWIZE_DBSCRIPTS_CREATE_TABLES: "true"
           KAFKAWIZE_DBSCRIPTS_INSERT_BASICDATA: "true"
 
-          # License key settings
-          KAFKAWIZE_LICENSE_KEY: <key-to-be-filled>
+          # Other settings
           KAFKAWIZE_ORG_NAME: MyOrganization
-          KAFKAWIZE_VERSION: 4.5.1
-          KAFKAWIZE_INVALIDKEY_MSG: Invalid License !! Please request from https://kafkawize.com for a license key.
+          KAFKAWIZE_VERSION: 5.0.0
 
           # Database settings
           SPRING_DATASOURCE_URL: jdbc:h2:file:./kafkawizedbos;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;
@@ -65,7 +63,7 @@ Create a docker compose file(kafkawize_docker_compose_clusterapi.yml) like below
     version: '2'
     services:
       clusterapi:
-        image: kafkawize/kw_clusterapi:4.5.1
+        image: kafkawize/kw_clusterapi:5.0.0
         environment:
           LOGGING_FILE: kw_clusterapi.log
         ports:
@@ -101,13 +99,7 @@ Credentials
 
 Default Credentials available to access Kafkawize::
 
-    gary/user USER Octopus
-    will/user USER Seahorses
-    john/user USER Starfish
-    cris/user ADMIN Octopus
-    noah/user ADMIN Seahorses
-    alex/user ADMIN Starfish
-    superuser/user SUPERUSER Seahorses
+    superadmin/kwsuperadmin123$$
 
 
 Docker shell

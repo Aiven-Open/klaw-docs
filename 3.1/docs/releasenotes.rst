@@ -1,5 +1,77 @@
 Release Notes
 =============
+
+Kafkawize 5.0.0
+
+Topics (approval): Create, Update, Delete, Promote
+Acls (approval):  Create
+Connectors (approval): Create
+Avro Schemas (approval): Create
+Topic Overview :
+    Topic Config
+    Promote
+    Literal and Prefixed subscriptions
+    Topic documentation
+    Consumer offsets/ lag
+    View topic contents
+View created, completed, declined, all Topic requests
+View created, completed, declined, all Acl requests
+View created, completed, declined, all Connector requests
+View created, completed, declined, all Avro schema requests
+
+Synchronization from and to kafka clusters
+Reconciliation and email notifications on differences between Kafkawize and Clusters
+Restore configuration (topics, acls)
+
+Login :
+    Active directory integration
+    Single Sign-on (OAuth2)
+
+Clusters and Environments
+    Clusters can be created connecting to Kafka clusters. (Cluster Management Api should be configured)
+    Environments are wrappers over clusters, enforcing flexible configs like prefix, suffix etc
+
+Users, Teams & Authorizations
+    Configurable users, teams
+    More than 35 permissions
+    Configurable roles (Roles can be pulled from AD for authorization)
+
+Topic naming conventions
+    Enforce prefix and suffixes per environment
+
+Excel report (for your team and all teams, depending on the role)
+    Topics per cluster (for teams)
+    Partitions per cluster
+    Overall topics in all clusters
+    Acls per cluster (for teams)
+    Producer Acls  (for teams)
+    Consumer Acls  (for teams)
+    Consumer groups of all environments
+    Requests per day
+
+Analytics
+    View charts of topics, partitions, acls, requests
+
+Multi tenancy
+    Each tenant can manage their topics with their own teams in isolation.
+    Every tenant can have their own set of Kafka environments, and users
+    of one tenant cannot view/access topics, acls or any from other tenants.
+    It provides an isolation avoiding any security breach.
+
+Kafka Connectivity
+    PLAINTEXT, SSL, SASL
+
+Audit
+    All topic, acl, schema and connector requests
+
+Email notifications when
+    requests are created, approved, declined
+    users are created, approved
+
+Help Wizard to setup Kafkawize
+
+-----------------------------------------------------------------
+
 Kafkawize 4.5.1
 
 Kafkawize 4.5.1 is a minor release having minor improvements

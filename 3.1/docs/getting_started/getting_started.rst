@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Demo 4.2 (Prev)
+Demo 5.0.0 (Prev)
 --------------
 
 .. raw:: html
@@ -19,7 +19,11 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (4.5.1). https://kafkawize.com/download/
+Download the latest version (5.0.0) from github
+
+https://github.com/muralibasani/kafkawize
+
+https://github.com/muralibasani/kafkawizeclusterapi
 
 This bundle includes the libraries of kafkawizeuapi and kafkawizeclusterapi
 
@@ -36,11 +40,7 @@ of file based/
 
 Or any other Rdbms is ok.
 
-3 License Key
--------------
-You will receive it from Kafkawize.
-
-4 KW Cluster Api Application
+3 KW Cluster Api Application
 ----------------------------------
 This Api does the below
 
@@ -49,14 +49,19 @@ This Api does the below
 -   There is no connection to any metastore
 -   Swagger enabled
 
-The jar (kafkawizeclusterapi-4.5.1.jar) is available in the downloaded bundle.
+run
+mvn clean install
+generates the jar (kafkawizeclusterapi-5.0.0.jar)
 
 5 Configure Kafkawize UI Api Application
 ----------------------------------------
 This Api does the below
 
--   Users interact with interface with this Api
+-   Users interact with UI interface with this Api
 -   All the end points in this application either connect to Metastore or Cluster Api or both
+
+Build
+mvn clean install
 
 Configure application properties:
 
@@ -73,52 +78,17 @@ Set metastore to rdbms (from step 4)::
 
 -   Install and run Rdbms (like Mysql/Oracle) and create a db schema or database
 
-other params::
-
-    # default cluster to synchronize data
-    kafkawize.syncdata.cluster=DEV
-
-    # order of envs
-    kafkawize.envs.order=DEV,TST,ACC,PRD
-    kafkawize.request.topics.envs=DEV,TST,ACC,PRD
-
-configure db properties like below::
-
-    # Spring JPA properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/kafkametadb?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    spring.datasource.username=kafkauser
-    spring.datasource.password=kafkauser123
-    spring.datasource.driver.class=com.mysql.cj.jdbc.Driver
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
-
-configure db properties for file based like below::
-
-    # Spring JPA properties
-    spring.datasource.url=jdbc:h2:file:C:/Software/KafkaWize/H2Filedb/kafkawizedbos;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;
-    spring.datasource.username=kafkauser
-    spring.datasource.password=kafkauser123
-    spring.datasource.driver.class=org.h2.Driver
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
-
-
 Configure Cluster Api
 ~~~~~~~~~~~~~~~~~~~~~
 configure cluster api host and port details::
 
     kafkawize.clusterapi.url:http://localhost:9343
 
--   ignore user/pwd of cluster api properties
-
-
 6 Metastore setup
 -----------------
 
 Metastore Rdbms
 ~~~~~~~~~~~~~~~
-
-In application.properties configure custom.dbscripts.execution=auto or manual to get the required database scripts executed.
-
-Configure custom.dbscripts.dropall_recreate=false or true to drop all the metadata scripts and recreate. This property is only valid if the above property is set to auto
 
 Configure in application properties::
 # Database settings
@@ -143,26 +113,19 @@ Configure in application properties::
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
-The jar (kafkawize-4.5.1.jar) is available in the downloaded bundle.
+The jar (kafkawize-5.0.0.jar) is available in the downloaded bundle.
 
 7 Run KW and KWClusterApi
 -------------------------
 
-Run the script to start the application.
-
-Windows : start-kafkawize.bat
-Linux/Unix : start-kafkawize.sh
-
-Or
-
 Run::
 
- java -jar kafkawizeclusterapi-4.5.1.jar --spring.config.location=classpath:/application.properties
+ java -jar kafkawizeclusterapi-5.0.0.jar --spring.config.location=classpath:/application.properties
 
 
 Run::
 
-    java -jar kafkawize-4.5.1.jar --spring.config.location=classpath:/application.properties
+    java -jar kafkawize-5.0.0.jar --spring.config.location=classpath:/application.properties
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 
@@ -193,11 +156,5 @@ Hence the below wildcard acl has to be executed.
 
     Default users, passwords and roles::
 
-    gary/user USER Octopus
-    will/user USER Seahorses
-    john/user USER Starfish
-    cris/user ADMIN Octopus
-    noah/user ADMIN Seahorses
-    alex/user ADMIN Starfish
-    superuser/user SUPERUSER Seahorses
+    superadmin/kwsuperadmin123$$    (also configured in application.properties)
 
