@@ -1,1 +1,4 @@
 *build*
+.idea/*
+kafkawise_docs.egg-info
+
