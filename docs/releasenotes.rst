@@ -17,21 +17,31 @@ Release Notes
 -----------------------------------------------------------------------------------
 
 Kafkawize 5.0.0
+---------------
 
 Topics (approval): Create, Update, Delete, Promote
+
 Acls (approval):  Create
+
 Connectors (approval): Create
+
 Avro Schemas (approval): Create
+
 Topic Overview :
-    Topic Config
-    Promote
-    Literal and Prefixed subscriptions
-    Topic documentation
-    Consumer offsets/ lag
-    View topic contents
+
+ * Topic Config
+ * Promote
+ * Literal and Prefixed subscriptions
+ * Topic documentation
+ * Consumer offsets/ lag
+ * View topic contents
+
 View created, completed, declined, all Topic requests
+
 View created, completed, declined, all Acl requests
+
 View created, completed, declined, all Connector requests
+
 View created, completed, declined, all Avro schema requests
 
 Synchronization from and to kafka clusters
@@ -88,6 +98,7 @@ Help Wizard to setup Kafkawize
 -----------------------------------------------------------------
 
 Kafkawize 4.5.1
+---------------
 
 Kafkawize 4.5.1 is a minor release having minor improvements
 
@@ -100,6 +111,7 @@ Kafkawize 4.5.1 is a minor release having minor improvements
 ----------------------------------------------------------------
 
 Kafkawize 4.5
+-------------
 
 Kafkawize 4.5 has several changes including the below.
 
@@ -131,6 +143,7 @@ Kafkawize 4.5 has several changes including the below.
 ----------------------------------------------------------------
 
 Kafkawize 4.4
+-------------
 
 1. Changes include improved User interface and few bug fixes.
 2. Metadata Synchronize option has been removed
@@ -145,6 +158,7 @@ Kafkawize 4.4
 ----------------------------------------------------------------
 
 Kafkawize 4.3
+-------------
 
 Changes include improved User interface and few bug fixes.
 
@@ -152,6 +166,7 @@ Changes include improved User interface and few bug fixes.
 
 
 Kafkawize 4.2
+-------------
 
 Changes include
 1. Critical bug fix - concurrent user access
@@ -165,6 +180,7 @@ Changes include
 ----------------------------------------------------------------
 
 Kafkawize 4.1
+-------------
 
 Changes include
 1. New Bootstrap 4 User interface with new appealing look and feel
@@ -175,6 +191,7 @@ Changes include
 ----------------------------------------------------------------
 
 Kafkawize 4.0
+-------------
 
 
 Changes include
@@ -198,6 +215,7 @@ There are several other changes and upgraded dependencies which improved the cod
 ----------------------------------------------------------------
 
 Kafkawize 3.5
+-------------
 
 Changes include
 1. New page (Admin-ServerConfig) to display server configuration - application properties
@@ -220,6 +238,7 @@ There are several other changes and upgraded dependencies which improved the cod
 ----------------------------------------------------------------
 
 Kafkawize 3.4
+-------------
 
 Changes include
 
@@ -234,6 +253,7 @@ Changes include
 ----------------------------------------------------------------
 
 Kafkawize 3.3
+-------------
 
 Changes include search features in almost all screens, bug fixes and code improvements.
 Changes include
@@ -244,12 +264,14 @@ Changes include
 ----------------------------------------------------------------
 
 Kafkawize 3.2
+-------------
 
 Changes include search features in almost all screens, bug fixes and code improvements.
 
 ----------------------------------------------------------------
 
 Kafkawize 3.1
+-------------
 
 New features:
 1. Support for RDBMS store like MySql to store meta information. 1.0 only supports Apache Cassandra. It is one of the important feature which will support many customers who already have an SQL based solution.
@@ -264,6 +286,7 @@ Changes include search features in almost all screens, bug fixes and code improv
 ----------------------------------------------------------------
 
 Kafkawize 2.0
+-------------
 
 Kafkawize is a Kafka Topic management tool (A Web application) which automates the process of creating and browsing Kafka components, by introducing  roles/authorizations to users of various teams of an organization
 
