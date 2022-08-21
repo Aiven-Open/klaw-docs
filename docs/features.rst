@@ -390,19 +390,11 @@ Topics
 ~~~~~~
 After a environment is selected, topics are displayed, and a team can be assigned to it. And this action, team becomes the Owner team.
 
-.. image:: _static/images/SynchronizeTopics.JPG
-    :width: 500px
-    :align: center
-
 It is required to synchronize the topic team first with Base sync cluster first. Base sync cluster can be configured with property custom.syncdata.cluster in application properties.
 
 Acls
 ~~~~
 After a environment is selected, Producer and Consumer Acls are displayed, and a team can be assigned to it. After this action, team becomes the Owner of that subscription (producer or consumer).
-
-.. image:: _static/images/SynchronizeAcls.JPG
-    :width: 500px
-    :align: center
 
 Restore Config
 --------------
