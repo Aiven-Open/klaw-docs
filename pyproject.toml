@@ -1,0 +1,6 @@
+[project]
+name = 'kafkawise-docs'
+version = "5.0.0"
+dependencies = [
+    "sphinx>=5.1"
+]
