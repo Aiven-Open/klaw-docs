@@ -1,6 +1,21 @@
 Release Notes
 =============
 
+- The below changes are part of release 5.0.3
+
+- ACLs can be added based on Usernames (plain text principles). Ex : alice, john
+    On kafka cluster, Producer acls reflects like below for user 'alice' for a topic.
+    (principal=User:alice, host=*, operation=WRITE, permissionType=ALLOW)
+    (principal=User:alice, host=*, operation=WRITE, permissionType=ALLOW)
+
+-----------------------------------------------------------------------------------
+- The below changes are part of release 5.0.2
+
+- Introducing Liquibase for all database migrations
+- Recaptcha validation can be disabled if running in saas mode
+
+-----------------------------------------------------------------------------------
+
 Kafkawize 5.0.0
 
 Topics (approval): Create, Update, Delete, Promote
