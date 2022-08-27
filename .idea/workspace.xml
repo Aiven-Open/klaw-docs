@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d447d331-3e02-4f53-a5de-895627341d06" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/_static/images/RequestACL.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.1/docs/migrate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/migrate.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
