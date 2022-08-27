@@ -5,14 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/docker/docker.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/features/features.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/features/features.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/getting_started/getting_started.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/migrate.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/migrate.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/profeatures.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/profeatures/profeatures.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/releasenotes.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.1/docs/review.rst" beforeDir="false" afterPath="$PROJECT_DIR$/3.1/docs/review.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

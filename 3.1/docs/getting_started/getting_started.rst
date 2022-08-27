@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Demo 5.0.0 (Prev)
+Demo 5.0.3 (Prev)
 --------------
 
 .. raw:: html
@@ -19,7 +19,7 @@ Prerequisites
 
 1 Download Kafkawize
 --------------------
-Download the latest version (5.0.0) from github
+Download the latest version (5.0.3) from github
 
 https://github.com/muralibasani/kafkawize
 
@@ -51,7 +51,7 @@ This Api does the below
 
 run
 mvn clean install
-generates the jar (kafkawizeclusterapi-5.0.0.jar)
+generates the jar (kafkawizeclusterapi-5.0.3.jar)
 
 5 Configure Kafkawize UI Api Application
 ----------------------------------------
@@ -113,19 +113,19 @@ Configure in application properties::
 
 -   Above scripts will create tables and insert initial set of Environments, Teams and Users which you can delete anytime from UI.
 
-The jar (kafkawize-5.0.0.jar) is available in the downloaded bundle.
+The jar (kafkawize-5.0.3.jar) is available in the downloaded bundle.
 
 7 Run KW and KWClusterApi
 -------------------------
 
 Run::
 
- java -jar kafkawizeclusterapi-5.0.0.jar --spring.config.location=classpath:/application.properties
+ java -jar kafkawizeclusterapi-5.0.3.jar --spring.config.location=classpath:/application.properties
 
 
 Run::
 
-    java -jar kafkawize-5.0.0.jar --spring.config.location=classpath:/application.properties
+    java -jar kafkawize-5.0.3.jar --spring.config.location=classpath:/application.properties
 
 If application is running, you can access UI from http://[host]:[port]/kafkawize
 

@@ -134,9 +134,9 @@ The below fields are required.
 
 Acl type Producer or Consumer.
 
-IP Addresses or SSL DN name should be provided for authorizations.
+IP Addresses or SSL DN name, or username should be provided for authorizations.
 
-Only one IP Address or one SSL should be filled.
+Multiple IP addresses, or principles or usernames can be filled at once
 
 On submission you can view your requests in Audit/My Requests., and it can be deleted if required.
 
