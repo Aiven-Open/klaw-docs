@@ -9,6 +9,7 @@ Release Notes
     (principal=User:alice, host=*, operation=WRITE, permissionType=ALLOW)
 
 -----------------------------------------------------------------------------------
+
 - The below changes are part of release 5.0.2
 
 - Introducing Liquibase for all database migrations
@@ -245,9 +246,9 @@ Changes include
 1. Decline Topic requests
 2. Decline Acl requests
 3. Bug fix in creating topic request
-1. New page (Admin-ServerConfig) to display server configuration - application properties
-2. Default replication factor, default partitions and default max partitions can be configured from Clusters page.
-3. Couple of minor bug fixes
+4. New page (Admin-ServerConfig) to display server configuration - application properties
+5. Default replication factor, default partitions and default max partitions can be configured from Clusters page.
+6. Couple of minor bug fixes
 
 
 ----------------------------------------------------------------
