@@ -53,7 +53,7 @@ For Azure, make sure images are correctly defined.
 
 
 Step 3 (Docker-compose Kafkawize - clusterapi)
------------------------------------------
+----------------------------------------------
 Create a docker compose file(kafkawize_docker_compose_clusterapi.yml) like below which contains images, properties of Kafkawize ClusterApi Api applications.
 
 .. code-block:: yaml

@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 Demo 5.0.3 (Prev)
---------------
+-----------------
 
 .. raw:: html
 
@@ -138,15 +138,16 @@ Hence the below wildcard acl has to be executed.
 
     Examples SSL Based Acl (Note of double quotes in the below command if copied properly)::
 
-    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:CN=MO,OU=MO,O=WA,L=WA,ST=WA,C=HO" --operation All --topic "*" --cluster  Cluster:kafka-cluster
+        bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:CN=MO,OU=MO,O=WA,L=WA,ST=WA,C=HO" --operation All --topic "*" --cluster  Cluster:kafka-cluster
 
     Examples IP Based Acl::
 
-    bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster  Cluster:kafka-cluster
+        bin/kafka-acls --authorizer-properties zookeeper.connect=localhost:2181 --add --allow-principal User:"*" --allow-host 127.0.0.1 --operation All --topic "*" --cluster  Cluster:kafka-cluster
 
 
 9 Final Check
 -------------
+
 -   Cluster Api is running
 -   Metastore (Rdbms or file system) is running and has tables and data
 -   UI Api is running
@@ -156,5 +157,7 @@ Hence the below wildcard acl has to be executed.
 
     Default users, passwords and roles::
 
-    superadmin/kwsuperadmin123$$    (also configured in application.properties)
+        superadmin/kwsuperadmin123$$
+        
+    (also configurable in application.properties)
 

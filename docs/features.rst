@@ -1,24 +1,19 @@
 Features
 ========
 
-Kafkawize is built with the key features as below::
+Kafkawize is built with the key features as below:
 
-   -    4 eyed principle – Requesting and Approving topics/acls/schemas
-   -    Spring based security
-   -    Fully automated
-   -    Browse Topics, Acls, Schemas, Connectors,  Producers and Consumers
-   -    Synchronize Source of truth with Meta store, Restore config
-   -    Support for an Rdbms or file system as metastore
-
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LOqjwARmbBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
++    4 eyed principle – Requesting and Approving topics/acls/schemas
++    Spring based security
++    Fully automated
++    Browse Topics, Acls, Schemas, Connectors,  Producers and Consumers
++    Synchronize Source of truth with Meta store, Restore config
++    Support for an Rdbms or file system as metastore
 
 
 Security
 --------
+
 There are two main applications of Kafkawize. UiApi and ClusterApi. There is a security applied on Cluster Api. End points are exposed to anyone who can reach the host and has access., and swagger is enabled too. Users can directly post/get requests to this application.
 
 On the UI Api, Spring security is enabled. As the application boots, it loads all the users from database into its memory and would be referred to it.
@@ -28,7 +23,7 @@ Security on the Kafka Broker is out of scope for Kafkawize., , however for Kafka
 Teams and Role Management
 -------------------------
 
-Kafkawize can be configured with any number of roles and permissions::
+Kafkawize can be configured with any number of roles and permissions:
 
 By default 'USER' roles can request and approve topic/acl/schema/connector requests.
 
@@ -184,7 +179,7 @@ My Acl Requests
 Requests (Topics/Acls/Schemas) from their own team can be viewed and deleted.
 
 .. image:: _static/images/MyAclRequests.JPG
-:width: 500px
+    :width: 500px
     :align: center
 
 Activity Log
@@ -325,7 +320,7 @@ Users can be authenticated against Ldap/Active Directory while users login to Ka
 
 If you do not want to create/use a different password for Kafkawize users, rather authenticate from an existing Ldap server of your
 organization, it is easy to integrate now. Application properties have properties like baseDN, userDNPattern, passwordAttributes etc
-to configure your Ldap server and connect.  The below property enables ldap authentication::
+to configure your Ldap server and connect.
 
 Cluster Connect Protocols
 -------------------------
@@ -395,19 +390,11 @@ Topics
 ~~~~~~
 After a environment is selected, topics are displayed, and a team can be assigned to it. And this action, team becomes the Owner team.
 
-.. image:: _static/images/SynchronizeTopics.JPG
-    :width: 500px
-    :align: center
-
 It is required to synchronize the topic team first with Base sync cluster first. Base sync cluster can be configured with property custom.syncdata.cluster in application properties.
 
 Acls
 ~~~~
 After a environment is selected, Producer and Consumer Acls are displayed, and a team can be assigned to it. After this action, team becomes the Owner of that subscription (producer or consumer).
-
-.. image:: _static/images/SynchronizeAcls.JPG
-    :width: 500px
-    :align: center
 
 Restore Config
 --------------
