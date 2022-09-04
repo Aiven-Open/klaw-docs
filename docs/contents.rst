@@ -21,19 +21,13 @@ Contents:
    :glob:
 
 
-
    introduction
+   Docs <docs>
    getting_started
-   migrate
    features
    usecases
-   docker
-   customize
    trouble_shooting
    releasenotes
-   roadmap
-   contactme
-   review
 
 
 Indices and tables
