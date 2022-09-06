@@ -32,3 +32,4 @@ Generate HTML
 -------------
 
 To generate HTML, run ``make html`` from the ``docs/`` directory. The output will be in ``_build/``.
+To automatically build and live reload changes, run ``sphinx-autobuild docs docs/_build/html`` from the root directory.
