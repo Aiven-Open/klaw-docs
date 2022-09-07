@@ -1,31 +1,22 @@
-Configuration
-=============
+Advanced configuration
+======================
 
-To configure the API component of Klaw, supply an ``application.properties`` file when starting the service.
+To configure the API component of Klaw, supply an ``application.properties`` file when starting the service. We have included some examples below to get you started.
 
-Configure the tenant cluster to sync
-------------------------------------
+Configure logging for Klaw
+--------------------------
 
-Once the clusters are configured, it is necessary to set up the tenant configuration so that Klaw understands how your environments are laid out. This can be found under **Settings** as the ``tenant.config`` setting.
+You can change the logging level and log file location by adding or editing the relevant lines in the ``application.properties`` file and supplying this to the API component at run time::
 
-An example value for a simple ``DEV`` environment might look something like this::
+    logging.level.root=info
+    logging.file.name=./../logs/klaw-api.log
 
-    {
-      "tenantModel" : {
-        "tenantName" : "default",
-        "baseSyncEnvironment" : "DEV",
-        "orderOfTopicPromotionEnvsList" : [ "DEV" ],
-        "requestTopicsEnvironmentsList" : [ "DEV" ],
-        "baseSyncKafkaConnectCluster" : null,
-        "orderOfConnectorsPromotionEnvsList" : null,
-        "requestConnectorsEnvironmentsList" : null
-      }
-    }
+.. note:: You can pass any properties file, but it must use the ``.properties`` file extension and be in standard properties file format.
 
 Use Klaw with Aiven for Apache Kafka
 ------------------------------------
 
-To more easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
+Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, key stores and trust stores. To more easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
 
 1. Start or navigate to your Aiven for Apache Kafka service. If you're doing this for the first time, you can find more information `in the Aiven documentation <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 
