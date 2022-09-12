@@ -1,0 +1,264 @@
+{% extends "layout.html" %}{% block extrahead %} {{ super() }}
+<!-- TailwindCSS config, colors are copied from Figma file: https://www.figma.com/file/aL4zvd3mPNAGbvWuHhbigv/Klaw-page -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "grey-0": "#EDEDF0",
+          "grey-5": "#EDEDF0",
+          "grey-30": "#B4B4BB",
+          "grey-70": "#4A4B57",
+          "grey-80": "#3A3A44",
+          "grey-100": "#19191D",
+          "blue-5": "#EFFAFF",
+          "blue-30": "#7FD1F7",
+          "blue-100": "#02569A",
+        },
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
+    },
+  };
+</script>
+<style type="text/tailwindcss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    /* Sphinx RTD theme specific overrides below. */
+    /* These can be omitted once we switch away from that theme. */
+    .wy-nav-side,
+    .wy-nav-content-wrap,
+    .wy-grid-for-nav {
+      display: none;
+    }
+
+    a {
+      @apply visited:text-grey-100 hover:text-grey-100;
+    }
+
+    @media (max-width: 640px) {
+      .sm-hidden {
+        display: none !important;
+      }
+    }
+
+    /* End Sphinx RTD theme overrides. */
+
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-grey-100;
+      font-family: Inter;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-bold;
+    }
+
+    h1 {
+      @apply text-5xl;
+    }
+
+    h2 {
+      @apply text-4xl;
+    }
+
+    h3 {
+      @apply text-3xl;
+    }
+
+    h4 {
+      @apply text-2xl;
+    }
+
+    h5 {
+      @apply text-xl;
+    }
+
+    h6 {
+      @apply text-lg;
+    }
+
+    section {
+      @apply my-8 sm:my-24;
+    }
+
+    /* TODO: Add border colors on focus, using `focus:border focus:border-blue-30` won't work. */
+    button,
+    a.button {
+      @apply flex py-2 px-4 rounded;
+    }
+  }
+
+  @layer utilities {
+    .btn-primary {
+      @apply bg-grey-100 text-white hover:bg-grey-80 hover:text-white;
+    }
+
+    .btn-secondary {
+      @apply hover:bg-blue-5;
+    }
+
+    .btn-outline {
+      @apply bg-white text-grey-100 border border-grey-100;
+    }
+
+    .feature-card {
+      @apply py-4 flex flex-col gap-4;
+    }
+
+    .feature-card-border {
+      @apply border-t-2 border-blue-100;
+      @apply border-[#02569A];
+    }
+  }
+</style>
+{% endblock %} {% block navigation %} {% endblock %}{% block extrabody %}
+<div class="min-h-screen flex flex-col">
+  {% include 'header.html' %}
+  <main class="container max-w-6xl grow">
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+      <div class="flex flex-col gap-8">
+        <h1>Klaw</h1>
+        <p>
+          Klaw is an open source data governance tool for Apache Kafka®.
+          <br />
+          It provides a self-service web interface for Kafka topics, ACLs and
+          schemas.
+        </p>
+        <div class="flex gap-4">
+          <button class="btn-primary">
+            {% include 'github-ribbon.html' %} Get started
+          </button>
+          <button class="btn-outline">
+            <a class="unstyled" href="{{ pathto('contents') }}">Docs</a>
+          </button>
+        </div>
+      </div>
+      <div>{% include 'mockup.html' %}</div>
+    </section>
+    <section>
+      <h3 class="text-center">Key features</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+        <div class="feature-card">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="48" height="48" fill="#EFFAFF" />
+            <path
+              d="M24 27.5H19.5C18.1044 27.5 17.4067 27.5 16.8389 27.6722C15.5605 28.06 14.56 29.0605 14.1722 30.3389C14 30.9067 14 31.6044 14 33M28 30L30 32L34 28M26.5 19.5C26.5 21.9853 24.4853 24 22 24C19.5147 24 17.5 21.9853 17.5 19.5C17.5 17.0147 19.5147 15 22 15C24.4853 15 26.5 17.0147 26.5 19.5Z"
+              stroke="#02569A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>User management</h4>
+          <p>
+            Authenticate and authorize the users based on the roles. It also
+            sends email notifications on approval requests. You can also
+            integrate with LDAP.
+          </p>
+        </div>
+        <div class="feature-card">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="48" height="48" fill="#EFFAFF" />
+            <path
+              d="M16 30V29.8C16 28.1198 16 27.2798 16.327 26.638C16.6146 26.0735 17.0735 25.6146 17.638 25.327C18.2798 25 19.1198 25 20.8 25H27.2C28.8802 25 29.7202 25 30.362 25.327C30.9265 25.6146 31.3854 26.0735 31.673 26.638C32 27.2798 32 28.1198 32 29.8V30M16 30C14.8954 30 14 30.8954 14 32C14 33.1046 14.8954 34 16 34C17.1046 34 18 33.1046 18 32C18 30.8954 17.1046 30 16 30ZM32 30C30.8954 30 30 30.8954 30 32C30 33.1046 30.8954 34 32 34C33.1046 34 34 33.1046 34 32C34 30.8954 33.1046 30 32 30ZM24 30C22.8954 30 22 30.8954 22 32C22 33.1046 22.8954 34 24 34C25.1046 34 26 33.1046 26 32C26 30.8954 25.1046 30 24 30ZM24 30V20M18 20H30C30.9319 20 31.3978 20 31.7654 19.8478C32.2554 19.6448 32.6448 19.2554 32.8478 18.7654C33 18.3978 33 17.9319 33 17C33 16.0681 33 15.6022 32.8478 15.2346C32.6448 14.7446 32.2554 14.3552 31.7654 14.1522C31.3978 14 30.9319 14 30 14H18C17.0681 14 16.6022 14 16.2346 14.1522C15.7446 14.3552 15.3552 14.7446 15.1522 15.2346C15 15.6022 15 16.0681 15 17C15 17.9319 15 18.3978 15.1522 18.7654C15.3552 19.2554 15.7446 19.6448 16.2346 19.8478C16.6022 20 17.0681 20 18 20Z"
+              stroke="#02569A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>Data governance</h4>
+          <p>
+            From a web based UI, users can create and promote Kafka topics,
+            connectors and consumer/subscription.
+          </p>
+        </div>
+        <div class="feature-card">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="48" height="48" fill="#EFFAFF" />
+            <path
+              d="M26 14H20.8C19.1198 14 18.2798 14 17.638 14.327C17.0735 14.6146 16.6146 15.0735 16.327 15.638C16 16.2798 16 17.1198 16 18.8V29.2C16 30.8802 16 31.7202 16.327 32.362C16.6146 32.9265 17.0735 33.3854 17.638 33.673C18.2798 34 19.1198 34 20.8 34H27.2C28.8802 34 29.7202 34 30.362 33.673C30.9265 33.3854 31.3854 32.9265 31.673 32.362C32 31.7202 32 30.8802 32 29.2V20M26 14L32 20M26 14V20H32M24 30C24 30 27 28.5701 27 26.4252V23.9229L24.8124 23.1412C24.2868 22.9529 23.712 22.9529 23.1864 23.1412L21 23.9229V26.4252C21 28.5701 24 30 24 30Z"
+              stroke="#02569A"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>Security</h4>
+          <p>
+            All topics and acls metadata is stored in Zookeeper. Also, they
+            provide automated backup on all configurations
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3 class="text-center">Use cases</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+        <div class="feature-card feature-card-border">
+          <h4>Make better decision</h4>
+          <p>
+            With right governance in place, you can make a consistent, confident
+            business decisions based on the trustworthy data.
+          </p>
+        </div>
+        <div class="feature-card feature-card-border">
+          <h4>Enhance regulatory compliance and audit</h4>
+          <p>
+            Kafka environment moves critical data throughout your organizations.
+            Using proper user management and policy with Klaw, you can avoid
+            risks associated with noncompliance while proactively anticipating
+            new regulations.
+          </p>
+        </div>
+        <div class="feature-card feature-card-border">
+          <h4>Optimize efficiency</h4>
+          <p>
+            Klaw provides an easy to use UI to manage all the Kafka topics with
+            different levels of user management. Developers no longer need to
+            spend hours managing and synchronizing config files between
+            different teams and owners.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include "footer.html" %}
+</div>
+{% endblock %}
