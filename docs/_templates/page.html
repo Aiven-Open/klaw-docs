@@ -1,0 +1,24 @@
+{% extends '!page.html' %} {% block extrahead %}
+<style>
+  #custom-header .container {
+    max-width: 100% !important;
+  }
+
+  #custom-header a:not(.button) {
+    width: calc(50% - 18.5em);
+    text-align: right;
+  }
+
+  @media (min-width: 1328px) {
+    #custom-header a:not(.button) {
+      width: calc(50% - 26em);
+    }
+  }
+
+  @media (max-width: 640px) {
+    #custom-header {
+      display: none !important;
+    }
+  }
+</style>
+{% endblock %} {% block footer %} {% include "footer.html" %} {% endblock %}

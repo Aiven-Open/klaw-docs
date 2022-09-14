@@ -1,4 +1,5 @@
 *build*
 .idea/*
 kafkawise_docs.egg-info
-
+node_modules
+aiven.min.css

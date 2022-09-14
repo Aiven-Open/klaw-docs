@@ -98,12 +98,37 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
+
+# Same ones as TailwindCSS variables defined in `base.html`.
+_color_definitions = {
+  "grey-5": "#EDEDF0",
+  "grey-80": "#3A3A44"
+}
+
+light_css_variables = {
+  "color-foreground-primary": _color_definitions["grey-80"],
+  "color-background-primary": "white",
+  "color-background-secondary": "white",
+  "color-background-hover": _color_definitions["grey-5"], # Affects items hover.
+  "color-background-hover--transparent": _color_definitions["grey-5"], # Affects sidebar items.
+  "color-background-border": _color_definitions["grey-5"],
+  "color-brand-primary": _color_definitions["grey-80"],
+  "color-brand-content": _color_definitions["grey-80"],
+  "color-sidebar-item-background--current": _color_definitions["grey-5"],
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+  "light_css_variables": light_css_variables,
+  "dark_css_variables": light_css_variables, # Same as light theme on purpose.
+  "navigation_with_keys": True,
+  "sidebar_hide_name": True,
+}
+
+pygments_style = "monokai"
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -128,7 +153,7 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_css_files = ['css/aiven.css']
+html_css_files = ['css/aiven.min.css']
 html_js_files = ['js/snowplow.js']
 
 # Add any extra paths that contain custom files (such as robots.txt or
@@ -145,7 +170,13 @@ html_js_files = ['js/snowplow.js']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+  "**": [
+      "sidebar/scroll-start.html",
+      "sidebar/navigation.html",
+      "sidebar/scroll-end.html",
+  ]
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

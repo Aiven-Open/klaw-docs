@@ -49,7 +49,14 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/*
 
+tailwind-watch:
+	npm run tailwind:watch
+
+tailwind-build:
+	npm run tailwind:build
+
 html:
+	make tailwind-build
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
@@ -177,4 +184,5 @@ pseudoxml:
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
 livehtml:
+	make tailwind-build
 	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
