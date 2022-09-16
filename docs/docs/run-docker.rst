@@ -16,6 +16,8 @@ Before you start, make sure you have `Docker Compose <https://docs.docker.com/co
           - "9343:9343"
         network_mode: "host"
 
+.. note:: For Mac users, the ``network_mode`` setting isn't suported; you will need to remove this line.
+
 2. The second component, the UI, also needs a docker compose file. Create ``klaw_docker_compose_ui.yml`` and add the following::
 
     ---
@@ -54,6 +56,8 @@ Before you start, make sure you have `Docker Compose <https://docs.docker.com/co
 
 
   Both files are templates to get you started; feel free to adjust to suit the needs of your application.
+
+.. note:: As with the earlier example if you are using a Mac, the ``network_mode`` setting isn't suported; you will need to remove this line.
 
 3. Start the services using the ``docker-compose`` command::
 

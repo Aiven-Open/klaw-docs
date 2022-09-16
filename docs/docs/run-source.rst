@@ -10,7 +10,7 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
 
   .. tip:: You can also clone both repositories to use the "bleeding edge" version if you wish.
 
-2. Build both projects by running ``mvn clean install`` from the top level of each project directory. This will build a JAR file in the ``target/`` directory of each project.
+2. Build both projects by running ``mvn clean package`` from the top level of each project directory. This will build a JAR file in the ``target/`` directory of each project.
 
 3. Start the API component by running its JAR file::
 
