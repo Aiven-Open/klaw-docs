@@ -13,6 +13,11 @@ You can change the logging level and log file location by adding or editing the 
 
 .. note:: You can pass any properties file, but it must use the ``.properties`` file extension and be in standard properties file format.
 
+Configure metastore properties
+------------------------------
+
+The :doc:`metastore` is a configurable database that holds Klaw's data. You can configure it by setting the ``spring.datasource.*`` config values in your ``application.properties`` file.
+
 Use Klaw with Aiven for Apache Kafka
 ------------------------------------
 
