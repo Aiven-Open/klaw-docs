@@ -50,5 +50,5 @@ When creating and configuring roles, these are the available permissions:
 ``UPDATE_SERVERCONFIG``
 ``VIEW_EDIT_ALL_ENVS_CLUSTERS_TENANTS``
 ``FULL_ACCESS_USERS_TEAMS_ROLES``
-``SHUTDOWN_KAFKAWIZE``
+``SHUTDOWN_KLAW``
 ``ALL_TEAMS_REPORTS``
