@@ -23,11 +23,6 @@ Contents:
 
    introduction
    Docs <docs>
-   features
-   usecases
-   trouble_shooting
-   releasenotes
-
 
 Indices and tables
 ==================
