@@ -23,7 +23,6 @@ Contents:
 
    introduction
    Docs <docs>
-   getting_started
    features
    usecases
    trouble_shooting
