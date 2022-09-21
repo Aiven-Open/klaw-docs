@@ -13,4 +13,4 @@ If you would prefer to use another RDBMS, such as `MySQL
 <https://www.mysql.com/>`_, you can do this too.  Check the :doc:`config`
 documentation for information about working with configuration files.
 
-Scripts are included in the source code repository to create the database structure and insert some starter data. You will find these in the `scripts/base/rdbms/` directory.
+Scripts are included in the source code repository to create the database structure and insert some starter data. You will find these in the ``scripts/base/rdbms/`` directory.

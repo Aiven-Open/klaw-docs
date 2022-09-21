@@ -33,7 +33,7 @@ Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, 
 
    .. tip:: Learn more about this command in the `Aiven CLI documentation <https://docs.aiven.io/docs/tools/cli/service/user.html#avn-service-user-kafka-java-creds>`_.
 
-4.  In the `certs` folder, open the ``client.properties`` file that the previous command created, and copy the SSL configuration lines.
+4.  In the ``certs`` folder, open the ``client.properties`` file that the previous command created, and copy the SSL configuration lines.
 
 5. Paste the lines into the Klaw ``application.properties`` file, but please note that the following changes are needed:
 
