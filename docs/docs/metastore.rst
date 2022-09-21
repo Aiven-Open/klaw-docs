@@ -2,7 +2,7 @@ Metastore holds additional data
 ===============================
 
 Klaw holds additional data about your Kafka installation, such as the topics
-requestsed, and information about the configuration of the environments. This
+requested, and information about the configuration of the environments. This
 is held in the **metastore** - a database of additional information.
 
 By default, Klaw will use `H2 <https://www.h2database.com/html/main.html>`_ as
