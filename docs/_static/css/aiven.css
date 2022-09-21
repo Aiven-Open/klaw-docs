@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter-Regular.ttf);
@@ -16,4 +20,79 @@
 @font-face {
   font-family: Inter-Bold;
   src: url(../fonts/Inter-Bold.ttf);
+}
+
+/* Furo theme overrides */
+
+.sidebar-drawer {
+  @apply bg-white;
+}
+
+.sidebar-container {
+  @apply bg-grey-0;
+}
+
+.sidebar-search-container {
+  @apply mt-0;
+}
+
+.sidebar-search {
+  border: 1px solid black !important;
+  @apply rounded;
+}
+
+.content-icon-container,
+.theme-toggle-container {
+  @apply hidden;
+}
+
+a {
+  @apply decoration-grey-80 hover:decoration-grey-80;
+}
+
+@media (max-width: 640px) {
+  .sm-hidden {
+    display: none !important;
+  }
+}
+
+/* End Furo theme overrides. */
+
+@layer utilities {
+  #custom-header {
+    @apply min-h-[92px] flex items-center border-b-[1px] border-grey-5;
+    border-bottom-style: solid;
+  }
+
+  footer {
+    @apply border-t-[1px] border-grey-5 mt-0;
+    border-top-style: solid;
+  }
+
+  /* TODO: Add border colors on focus, using `focus:border focus:border-blue-30` won't work. */
+  button,
+  a.button {
+    @apply flex items-center py-2 px-4 rounded no-underline cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-grey-100 text-white hover:bg-grey-80 hover:text-white border-0;
+  }
+
+  .btn-secondary {
+    @apply hover:bg-blue-5;
+  }
+
+  .btn-outline {
+    @apply bg-white text-grey-100 hover:text-grey-100 border-solid border-[1px] border-grey-100;
+  }
+
+  .feature-card {
+    @apply py-4 flex flex-col gap-4;
+  }
+
+  .feature-card-border {
+    @apply border-t-2 border-blue-100;
+    border-style: solid none none none;
+  }
 }
