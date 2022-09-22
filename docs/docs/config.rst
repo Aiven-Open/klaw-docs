@@ -13,10 +13,15 @@ You can change the logging level and log file location by adding or editing the 
 
 .. note:: You can pass any properties file, but it must use the ``.properties`` file extension and be in standard properties file format.
 
-Use Klaw with Aiven for Apache Kafka
-------------------------------------
+Configure metastore properties
+------------------------------
 
-Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, key stores and trust stores. To more easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
+The :doc:`metastore` is a configurable database that holds Klaw's data. You can configure it by setting the ``spring.datasource.*`` config values in your ``application.properties`` file.
+
+Connect to Apache Kafka over SSL
+--------------------------------
+
+Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, key stores and trust stores. As an example, here's how to easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
 
 1. Start or navigate to your Aiven for Apache Kafka service. If you're doing this for the first time, you can find more information `in the Aiven documentation <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 
@@ -28,7 +33,7 @@ Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, 
 
    .. tip:: Learn more about this command in the `Aiven CLI documentation <https://docs.aiven.io/docs/tools/cli/service/user.html#avn-service-user-kafka-java-creds>`_.
 
-4.  In the `certs` folder, open the ``client.properties`` file that the previous command created, and copy the SSL configuration lines.
+4.  In the ``certs`` folder, open the ``client.properties`` file that the previous command created, and copy the SSL configuration lines.
 
 5. Paste the lines into the Klaw ``application.properties`` file, but please note that the following changes are needed:
 
