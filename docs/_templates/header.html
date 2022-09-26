@@ -32,7 +32,7 @@
     </a>
     <nav class="flex items-center gap-4">
       {% if pagename == "index" %}
-      <a class="button btn-secondary" href="mailto:contact@aiven.io"
+      <a class="button btn-secondary" href="mailto:info@klaw-project.io"
         >Contact us
         <svg
           width="12"
@@ -54,7 +54,11 @@
         >Docs</a
       >
       {% else %} {% include 'sidebar/search.html' %} {% endif %}
-      <a class="button btn-primary sm-hidden" href="#">Download</a>
+      <a
+        class="button btn-primary sm-hidden"
+        href="https://github.com/aiven/klaw"
+        >See GitHub</a
+      >
     </nav>
   </div>
 </header>
