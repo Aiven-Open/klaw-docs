@@ -3,6 +3,7 @@
    :glob:
 
 
+   Home <index>
    Docs <docs>
 
 
