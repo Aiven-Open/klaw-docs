@@ -1,7 +1,7 @@
-Get started with Klaw and Apache Kafka
-======================================
+Get started with Klaw and Apache Kafka®
+=======================================
 
-Once Klaw is up and running, the next step is to connect it to your Apache Kafka service. Whether you are running this locally, or using a hosted service, the steps below will get you started.
+Once Klaw is up and running, the next step is to connect it to your Apache Kafka® service. Whether you are running this locally, or using a hosted service, the steps below will get you started.
 
 Add a cluster
 -------------

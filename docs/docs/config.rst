@@ -18,10 +18,10 @@ Configure metastore properties
 
 The :doc:`metastore` is a configurable database that holds Klaw's data. You can configure it by setting the ``spring.datasource.*`` config values in your ``application.properties`` file.
 
-Connect to Apache Kafka over SSL
+Connect to Apache Kafka® over SSL
 --------------------------------
 
-Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, key stores and trust stores. As an example, here's how to easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
+Configuring Klaw with Apache Kafka® and SSL requires you to set up certificates, key stores and trust stores. As an example, here's how to easily configure Klaw for use with an Aiven for Apache Kafka service, first install the `Aiven client <https://github.com/aiven/aiven-client>`_ CLI tool.
 
 1. Start or navigate to your Aiven for Apache Kafka service. If you're doing this for the first time, you can find more information `in the Aiven documentation <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 

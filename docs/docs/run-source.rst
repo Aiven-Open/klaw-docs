@@ -26,6 +26,6 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
 
 6. Log in as the admin user to get started.
 
-   * **username:** superadmin
-   * **password:** kwsuperadmin123$$
+   * **username:** ``superadmin``
+   * **password:** ``kwsuperadmin123$$``
 
