@@ -14,13 +14,13 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
 
 3. Start the API component by running its JAR file::
 
-        java -jar kafkawizeclusterapipro-5.0.3.jar
+        java -jar klawclusterapi-1.0.0.jar
 
    .. note:: to pass additional configuration, pass an additional parameter like ``--spring.config.location=classes/application.properties``
 
 4. Start the web UI by running its JAR file::
 
-        java -jar kafkawize.5.0.3.jar
+        java -jar klaw-1.0.0.jar
 
 5. Navigate to the web interface http://localhost:9097/
 
