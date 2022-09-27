@@ -8,7 +8,7 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
    * https://github.com/aiven/klaw
    * https://github.com/aiven/klaw-cluster-api
 
-  .. tip:: You can also clone both repositories to use the "bleeding edge" version if you wish.
+   .. tip:: You can also clone both repositories to use the "bleeding edge" version if you wish.
 
 2. Build both projects by running ``mvn clean package`` from the top level of each project directory. This will build a JAR file in the ``target/`` directory of each project.
 
@@ -22,10 +22,10 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
 
         java -jar klaw-1.0.0.jar
 
-5. Navigate to the web interface http://localhost:9097/
+5. Navigate to the web interface ``http://localhost:9097/``
 
 6. Log in as the admin user to get started.
 
-   * **username:** superadmin
-   * **password:** kwsuperadmin123$$
+   * **username:** ``superadmin``
+   * **password:** ``kwsuperadmin123$$``
 

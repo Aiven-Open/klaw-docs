@@ -1,7 +1,7 @@
-Synchronize Metadata
+Synchronize metadata
 ====================
 
-Klaw supports synchronization to and from Klaw and the Apache Kafka and other clusters. This is found under the **Synchronize** menu item.
+Klaw supports synchronization to and from Klaw and the Apache Kafka® and other clusters. This is found under the **Synchronize** menu item.
 
 * Synchronize either topics or ACLs **from** the cluster to Klaw if you have a new Klaw setup with existing data platforms.
 

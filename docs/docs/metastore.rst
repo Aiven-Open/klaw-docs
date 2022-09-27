@@ -1,7 +1,7 @@
 Metastore holds additional data
 ===============================
 
-Klaw holds additional data about your Kafka installation, such as the topics
+Klaw holds additional data about your Apache Kafka® installation, such as the topics
 requested, and information about the configuration of the environments. This
 is held in the **metastore** - a database of additional information.
 

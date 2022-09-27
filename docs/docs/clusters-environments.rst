@@ -1,7 +1,7 @@
-Clusters and Environments
+Clusters and environments
 =========================
 
-The Klaw concept of Cluster maps neatly to your Apache Kafka clusters; a "cluster" in Klaw is an Apache Kafka server or cluster. Add the clusters you want Klaw to work with.
+The Klaw concept of cluster maps neatly to your Apache Kafka® clusters; a "cluster" in Klaw is an Apache Kafka server or cluster. Add the clusters you want Klaw to work with.
 
 .. tip:: More detailed information about connecting over SSL is in the :doc:`config` section.
 
