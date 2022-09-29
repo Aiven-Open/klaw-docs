@@ -3,7 +3,7 @@ Run Klaw from source
 
 Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ installed to run this project from source.
 
-1. Download the latest releases from both repositories:
+1. Download the latest code from both repositories:
 
    * https://github.com/aiven/klaw
    * https://github.com/aiven/klaw-cluster-api
@@ -14,7 +14,7 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
 
 3. Start the API component by running its JAR file::
 
-        java -jar klawclusterapi-1.0.0.jar
+        java -jar klaw-clusterapi-1.0.0.jar
 
    .. note:: to pass additional configuration, pass an additional parameter like ``--spring.config.location=classes/application.properties``
 
