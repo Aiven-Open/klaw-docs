@@ -37,9 +37,9 @@ Configuring Klaw with Apache Kafka® and SSL requires you to set up certificates
 
 5. Paste the lines into the Klaw ``application.properties`` file, but please note that the following changes are needed:
 
-       - Replace ``ssl.*`` with ``klaw.kafkassl.*``.
+       - Replace ``ssl.*`` with ``klawssl.kafkassl.*``.
        - For SSL authentication, also replace keys named ``password`` with ``pwd``.
-         
+
    There is an example below to illustrate the general shape of the configuration::
 
         klawssl.kafkassl.protocol=TLS
