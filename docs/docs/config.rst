@@ -37,18 +37,20 @@ Configuring Klaw with Apache Kafka® and SSL requires you to set up certificates
 
 5. Paste the lines into the Klaw ``application.properties`` file, but please note that the following changes are needed:
 
-       - Replace ``ssl.*`` with ``klaw.kafkassl.*``.
+       - Get the identification of cluster from user interface, in the clusters page, with the copy option.
+       - Replace ``ssl.*`` with ``dev1.kafkassl.*``. `dev1` is an example of the copied cluster identification from above step.
        - For SSL authentication, also replace keys named ``password`` with ``pwd``.
          
    There is an example below to illustrate the general shape of the configuration::
 
-        klawssl.kafkassl.protocol=TLS
-        klawssl.kafkassl.key.pwd=trustme
-        klawssl.kafkassl.keystore.location=/srv/certs/client.keystore.p12
-        klawssl.kafkassl.keystore.pwd=trustme
-        klawssl.kafkassl.keystore.type=PKCS12
-        klawssl.kafkassl.truststore.location=/srv/certs/client.truststore.jks
-        klawssl.kafkassl.truststore.pwd=trustme
-        klawssl.kafkassl.truststore.type=JKS
+        dev1.kafkassl.protocol=TLS
+        dev1.kafkassl.key.pwd=trustme
+        dev1.kafkassl.keystore.location=/srv/certs/client.keystore.p12
+        dev1.kafkassl.keystore.pwd=trustme
+        dev1.kafkassl.keystore.type=PKCS12
+        dev1.kafkassl.truststore.location=/srv/certs/client.truststore.jks
+        dev1.kafkassl.truststore.pwd=trustme
+        dev1.kafkassl.truststore.type=JKS
 
+    To add multiple SSL configurations, simply copy paste the above lines by prefixing with the required cluster identification and relevant certificates.
 
