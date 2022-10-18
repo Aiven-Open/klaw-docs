@@ -7,6 +7,8 @@ The Klaw concept of cluster maps neatly to your Apache Kafka® clusters; a "clus
 
 Clusters can be associated with environments, such as ``DEV``, ``TST`` or ``PRD`` to represent your development, testing and production platforms.
 
+Supported protocols include PLAINTEXT, SSL, SASL PLAIN, SASL SSL, SASL SSL (GSSAPI / Kerberos), SASL_SSL (SCRAM SHA 256/512)
+
 Ordering environments
 ---------------------
 
