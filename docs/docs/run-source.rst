@@ -13,7 +13,7 @@ Klaw is a Java project, you will need `Maven <https://maven.apache.org/>`_ insta
     - Configure the property ``klaw.clusterapi.access.base64.secret`` with a base64 string in module 'core' (application.properties)
     - Configure the property ``klaw.clusterapi.access.base64.secret`` with the above base64 string in cluster-api (application.properties) module as well.
 
-2. Build the project by running ``./mvnw clean package`` from the top level of the project directory. This will build JAR files in the ``target/`` directories of each modules 'core' and 'cluster-api'.
+2. Build the project by running ``./mvnw clean package`` for Linux(bash) Or ``mvnw clean package`` for Windows, from the top level of the project directory. This will build JAR files in the ``target/`` directories of each modules 'core' and 'cluster-api'.
 
 3. Start the API component by running its JAR file::
 
