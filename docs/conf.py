@@ -116,6 +116,7 @@ light_css_variables = {
   "color-brand-primary": _color_definitions["grey-80"],
   "color-brand-content": _color_definitions["grey-80"],
   "color-sidebar-item-background--current": _color_definitions["grey-5"],
+  "color-admonition-background": "white",
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
