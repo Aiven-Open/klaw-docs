@@ -5,5 +5,6 @@
 
    Home <index>
    Docs <docs>
+   Releases <releases>
 
 
