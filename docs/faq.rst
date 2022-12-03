@@ -1,15 +1,5 @@
-Klaw Documentation
-==================
-
-.. toctree::
-   :maxdepth: 4
-   :hidden:
-   :glob:
-
-
-   Get started<docs/get-started-kafka>
-   Concepts <docs/concepts>
-   How To <docs/howto>
+FAQ
+===
 
 
 Klaw consists of two components:
