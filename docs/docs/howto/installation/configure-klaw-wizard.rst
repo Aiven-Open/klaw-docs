@@ -1,17 +1,17 @@
 Configure Klaw with Wizard
 ==========================
 
-When Klaw is installed for the first time, it prompts the Administrators with a Wizard to configure and make it available for the users.
+The first time you log in to Klaw as an administrator, you will see the Klaw configuration wizard that guides you through the steps required to configure the Klaw cluster. 
 
-.. note::  Wizard is accessible at : `https://<host>:<port>/helpwizard`
+.. note::  For subsequent logins, you access the Klaw configuration wizard using URL: `https://<host>:<port>/helpwizard`
 
 .. image:: /../../../_static/images/KlawWizard.png
 
-1. Configure Kafka clusters and update Klaw Cluster Api properties with relevant config
+1. Configure Kafka clusters
 
-You can add any number of clusters. Only users with SUPERADMIN roles(or check allowed permission) can add.
+The first step is to configure your Kafka cluster. You can add any number of clusters. Only users with SUPERADMIN roles (or check allowed permission) can add clusters. 
 
-After adding the cluster, if you have selected SSL or any other protocol, make sure Cluster Api properties are configured.
+After adding the cluster, based on the protocol selected (SSL or any other protocol), ensure the Klaw Cluster API's ``application.properties`` files include the relevant configurations. 
 
 Example ::
 
@@ -24,24 +24,22 @@ Example ::
     dev1.kafkassl.truststore.pwd=trustme
     dev1.kafkassl.truststore.type=JKS
 
+
 2. Configure Environments
 
-Environments are wrappers over your kafka clusters. You can have multiple environments connected to one Kafka cluster with different settings
-
-You can add any number of environments. Only users with SUPERADMIN roles (or check allowed permission) can add by default.
-
-You can configure min max partitions, replication factors, prefix or suffix for topic names.
+Environments are wrappers over your Kafka clusters. You can add any number of environments and have multiple environments connected to one Kafka cluster with different settings. Only users with SUPERADMIN roles (or check allowed permission) can add environments by default.
+Additionally, you can configure the partitions, replication factors, topic prefixes, and suffixes for your Kafka topics under Kafka environments. 
 
 3. Test Kafka connectivity
 
-After configuring environments, you may test the connectivity by clicking the validate button.
+After configuring environments, you can test the connection by clicking the validate button.
 
 
 .. image:: /../../../_static/images/EnvStatus.png
 
-3. Configure Tenant and Environment hierarchy
+4. Configure Tenant and Environment hierarchy
 
-Under Settings, configure property `klaw.tenant.config`
+Klaw is multi-tenant by default. Every tenant has its own set of Kafka environments, and users of one tenant cannot view/access topics, or acls from other tenants. To configure tenants, navigate to **Dashboard -> Settings**, and look for `klaw.tenant.config`. 
 
 Example ::
 
@@ -59,29 +57,24 @@ Example ::
 
 
 
-5. For existing Kafka clusters, migrate Topics and Acls to Klaw.
+5. Synchronize Topics and ACls
 
-If there is an existing Kafka cluster, where topics and subscriptions have to be migrated to Klaw, follow these steps.
-
-As a SUPERADMIN, by default there are permissions to synchronize. Select an environment, and assign teams to topics or Acls.
-
-Either you can select individually or with bulk option, assign all at a time to one team.
+If you already have a Kafka cluster, you can easily migrate topics and acls to Klaw using the **Synchronize** option.
+As a SUPERADMIN, you can synchronize topics and ACLs by default. Navigate to **Synchronize** menu and select **Topics from cluster** or **ACLs from cluster** to synchronize the topics or ACLs. You also can synchronize topics individually or with a bulk option, assigning all at a time to one team. Users can synchronize topics from cluster to Klaw with ``SYNC_TOPICS`` permission. 
 
 .. image:: /../../../_static/images/SyncTopicsFromCluster.png
 
-Required permission to Synchronize topics from cluster to Klaw ``SYNC_TOPICS``
-
 6. Create Teams
 
-After adding clusters and environments, Teams can be created. Required permission to add teams : ``ADD_EDIT_DELETE_TEAMS``
+After adding clusters and environments, you can create **Teams**. A team owns topics and is also a collection of users. A user can manage teams with ``ADD_EDIT_DELETE_TEAMS`` permission.
 
 7. Create Users
 
-Users can be created and assign to the newly created teams. Required permission to add users : ``ADD_EDIT_DELETE_USERS``
+**Users** can be created and assigned to the newly created teams. A user with ``ADD_EDIT_DELETE_USERS`` permission or the SUPERADMIN role can add users.
 
 8. Create any other Roles and Permissions (Optional)
 
-If your organization needs more roles and permissions, start with adding a role. Required permission to add roles : ``ADD_EDIT_DELETE_ROLES``
+A **role** is a collection of permissions defining the tasks a user can perform. Add roles and assign permissions to the added roles. A SUPERADMIN can add roles by default. Other users can add roles with ``ADD_EDIT_DELETE_ROLES`` permission. 
 
 
-You can now share Klaw with your teams.
+You are all set now. Your team members can request topics or ACLs and approve requests. 
