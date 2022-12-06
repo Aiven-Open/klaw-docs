@@ -1,2 +1,0 @@
-Add Schema Registry Cluster
-===========================

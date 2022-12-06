@@ -1,2 +1,0 @@
-Tenant Configuration
-====================

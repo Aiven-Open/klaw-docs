@@ -1,3 +1,0 @@
-Add Schema Registry Environment
-===============================
-

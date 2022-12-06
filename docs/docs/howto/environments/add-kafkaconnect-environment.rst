@@ -1,3 +1,0 @@
-Add Kafka Connect Environment
-=============================
-

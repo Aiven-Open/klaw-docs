@@ -1,3 +1,0 @@
-Approve Connector Request
-=========================
-
