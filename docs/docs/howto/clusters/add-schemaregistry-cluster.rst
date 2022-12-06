@@ -1,2 +1,2 @@
-Configure Tenant
-================
+Add Schema Registry Cluster
+===========================

@@ -1,3 +1,3 @@
-Configure Klaw Wizard
-=====================
+Add Schema Registry Environment
+===============================
 

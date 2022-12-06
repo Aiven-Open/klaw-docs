@@ -1,3 +1,3 @@
-Configure Klaw Wizard
-=====================
+Delete Environment
+==================
 

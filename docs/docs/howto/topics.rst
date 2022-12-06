@@ -7,7 +7,7 @@ Topics
 
 
    New Topic<topics/new-topic-request>
-   Edit Topic<topics/edit-topic-request>
+   Edit Topic<topics/edit-topic>
    Promote Topic<topics/promote-topic-request>
    Delete Topic<topics/delete-topic>
    Claim Topic<topics/claim-topic>

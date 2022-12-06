@@ -1,2 +1,2 @@
-Configure Tenant
-================
+Delete Cluster
+==============

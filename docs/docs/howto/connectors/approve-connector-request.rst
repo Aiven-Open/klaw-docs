@@ -1,3 +1,3 @@
-Configure Klaw Wizard
-=====================
+Approve Connector Request
+=========================
 
