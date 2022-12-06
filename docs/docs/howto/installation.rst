@@ -10,4 +10,4 @@ Klaw Installation
    Run From Docker<installation/run-docker>
    Configure Klaw Wizard<installation/configure-klaw-wizard>
 
-How to install and configure Klaw...
+How to install and configure Klaw.

@@ -48,7 +48,7 @@ To add a property, for example:
 ``klaw.login.authentication.type=db`` should be configured as ``KLAW_LOGIN_AUTHENTICATION_TYPE: db``
 
   .. note::  
-    Please update the property ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` with new base64 encoded secret
+    Please update the property ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` with a new base64 encoded secret
 
 2. Run docker compose
 
@@ -64,9 +64,7 @@ To add a property, for example:
   ``http://<dockerhost>:9097/``
 
 5. Login with the following default credentials to access Klaw.
-   .. note::  Recommend you to change the default credentials in your application.
+   .. note::  We recommend you to change the default credentials in your application, before running it.
 
 * ``KLAW_SUPERADMIN_DEFAULT_USERNAME=superadmin``
 * ``KLAW_SUPERADMIN_DEFAULT_PASSWORD=kwsuperadmin123$$``
-
-  .. note::  We recommend you to change the default credentials in your application.

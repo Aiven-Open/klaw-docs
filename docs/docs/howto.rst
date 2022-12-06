@@ -7,6 +7,7 @@ Klaw How to do things
 
 
    Installation<howto/installation>
+   Klaw Connectivity<howto/clusterconnectivity>
 
 
 How to install and configure Klaw.
