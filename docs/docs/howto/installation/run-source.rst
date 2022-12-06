@@ -23,7 +23,7 @@ Klaw is a Java project, and you need `Maven <https://maven.apache.org/>`_ instal
 
         java -jar klaw-<version>.jar
 
-5. Navigate to the web interface ``http://localhost:9097/``.
+5. Access the web interface using the URL: ``http://localhost:9097/``.
 
 6. Log in as the admin user to get started.
 
