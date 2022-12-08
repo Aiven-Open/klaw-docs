@@ -6,6 +6,7 @@ Klaw Connectivity to Clusters
    :hidden:
 
 
+   Klaw Core Api connectivity with Cluster Api<clusterconnectivity/klaw-core-with-clusterapi.rst>
    Kafka with SSL protocol<clusterconnectivity/kafka-cluster-ssl-protocol>
    Kafka with SASL_SSL protocol<clusterconnectivity/kafka-cluster-sasl-ssl-protocol>
    Schema Registry with SSL<clusterconnectivity/sr-cluster-ssl-protocol>
