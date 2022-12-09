@@ -19,7 +19,7 @@ Configure Klaw ``application.properties`` file
 
 2. Configure the SSL protocols
    
-   You need to configure the following SSL settings for Klaw to run on HTTPS. These settings must be configured in the ``application.properties`` files for Klaw's ``core`` and ``cluster-api`` modules to communicate securely over HTTPS.
+   You need to configure the following SSL settings for Klaw to run on HTTPS. These settings must be configured in the ``application.properties`` files for Klaw's ``core`` and ``cluster-api`` modules to communicate securely over HTTPS::
 
         server.ssl.key-store=client.keystore.p12
         server.ssl.trust-store=client.truststore.jks

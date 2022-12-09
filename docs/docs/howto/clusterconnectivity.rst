@@ -6,6 +6,7 @@ Manage Klaw connections
    :hidden:
 
 
+   Klaw Database connectivity<clusterconnectivity/klaw-db-connection.rst>
    Klaw Core Api connectivity with Cluster Api<clusterconnectivity/klaw-core-with-clusterapi.rst>
    Kafka with SSL protocol<clusterconnectivity/kafka-cluster-ssl-protocol>
    Kafka with SASL_SSL protocol<clusterconnectivity/kafka-cluster-sasl-ssl-protocol>
