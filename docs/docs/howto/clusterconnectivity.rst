@@ -1,5 +1,5 @@
-Klaw Connectivity to Clusters
-=============================
+Manage Klaw connections
+=======================
 
 .. toctree::
    :maxdepth: 3
