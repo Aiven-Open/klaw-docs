@@ -1,5 +1,5 @@
-Connect with Aiven For Apache Kafka® cluster using SASL_SSL protocol
-====================================================================
+Connect with Aiven For Apache Kafka® cluster using SASL protocol
+================================================================
 
 This section provides you with information on how to connect Aiven for Apache Kafka® cluster with Klaw using SASL_SSL authentication protocol. 
 
@@ -10,7 +10,7 @@ Prerequisite
 * A running Aiven for Apache Kafka® service. See `Getting started with Aiven for Apache Kafka for more information <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 * Configured `Java keystore and truststore containing the service SSL certificates <https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html>`_ to access Apache Kafka.  
 
-Configure SSL protocol
+Configure SASL protocol
 ----------------------
 Follow the steps below to configure and connect to an Aiven for Apache Kafka® and Klaw using SSL protocol:
 
@@ -33,8 +33,8 @@ Follow the steps below to configure and connect to an Aiven for Apache Kafka® a
 8. Copy the **Cluster ID** from the **Clusters** page using the copy icon.
 9. Open the ``application.properties`` file located in the `klaw/cluster-api/src/main/resources` directory.
 10. Depending on the SASL mechanism you are using, copy one of the below properties, replace ``klawsasl`` with the copied cluster id, and save the ``application.properties`` file. 
-
 ::
+
    klawsasl.kafkasasl.jaasconfig.plain=org.apache.kafka.common.security.plain.PlainLoginModule required username='kwuser' password='kwuser-secret';
    klawsasl.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule required username='kwuser' password='kwuser-secret';
    klawsasl.kafkasasl.jaasconfig.gssapi=com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true keyTab="/location/kafka_client.keytab" principal="kafkaclient1@EXAMPLE.COM";

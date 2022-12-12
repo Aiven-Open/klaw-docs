@@ -28,8 +28,8 @@ Follow the steps below to configure and connect to a Karapace schema registry cl
 6. In the **Schema Registry Environments** section, click **Add Environment** and enter the details to add your schema registry environment. Click **Save**. 
 7. Open the ``application.properties`` file for `core`` (klaw/core/src/main/resources) and `cluster-api` (klaw/cluster-api/src/main/resources) modules. 
 8. Configure the SSL properties to connect to Schema Registry cluster by copying and editing the following lines. 
+::    
 
-    ::    
         klawssl.kafkassl.keystore.location=client.keystore.p12
         klawssl.kafkassl.keystore.pwd=klaw1234
         klawssl.kafkassl.key.pwd=klaw1234
@@ -44,35 +44,4 @@ Follow the steps below to configure and connect to a Karapace schema registry cl
 - Save the ``application.properties`` file.
 
 9. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Kafka cluster using SSL protocol.
-
-
-
-
-
-
-
-
-
-
-
-
-
-Klaw connects to Aiven Karapace over REST protocol.
-
-1. Setup Klaw Core Api to Klaw Cluster Api connection.
-   Configure ``klaw.clusterapi.url`` in Klaw UI, Dashboard -> Settings and test the connectivity
-
-2. Create a kafka Schema registry cluster (flavor : Aiven for Apache Kafka) in Klaw with SSL protocol
-
-3. For Klaw to connect to Karapace schema registry over HTTPS, make sure Klaw Cluster API is running over HTTPS.
-
-4. Import Karapace public certificate to truststore of Klaw. (or both certificates are signed by same CA)
-
-5. Configure Karapace credentials copied from Aiven console::
-
-    klaw.aiven.karapace.credentials=username:password
-
-6. Restart Cluster Api.
-
-That should be it.
 

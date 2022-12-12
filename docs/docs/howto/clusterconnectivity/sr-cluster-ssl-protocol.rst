@@ -28,8 +28,8 @@ Follow the steps below to configure and connect to a Schema Registry cluster wit
 6. In the **Schema Registry Environments** section, click **Add Environment** and enter the details to add your schema registry environment. Click **Save**. 
 7. Open the ``application.properties`` file for `core`` (klaw/core/src/main/resources) and `cluster-api` (klaw/cluster-api/src/main/resources) modules. 
 8. Configure the SSL properties to connect to Schema Registry cluster by copying and editing the following lines. 
-
-    ::    
+::    
+    
         klawssl.kafkassl.keystore.location=client.keystore.p12
         klawssl.kafkassl.keystore.pwd=klaw1234
         klawssl.kafkassl.key.pwd=klaw1234

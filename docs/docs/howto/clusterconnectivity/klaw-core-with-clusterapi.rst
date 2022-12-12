@@ -11,11 +11,12 @@ Configure Klaw ``application.properties`` file
 
 1. Configure the secret key
 
-   The secret key is a base64-encoded string configured in the ``application.properties`` files for Klaw's ``core`` and ``cluster-api`` modules. An example secret key is as follows:
+   The secret key is a base64-encoded string configured in the ``application.properties`` files for Klaw's ``core`` and ``cluster-api`` modules. An example secret key is as follows::
 
-   ::
       klaw.clusterapi.access.base64.secret
-      Example : ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
+
+      Example: ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
+
 
 2. Configure the SSL protocols
    
@@ -35,10 +36,10 @@ Configure Klaw ``application.properties`` file
 
 3. Verify the successful connection
 
-   In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example, 
+   In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
    
-   ::
-   https://localhost:9343
+   
+      https://localhost:9343
    
 
    Save the change and click **Test connection**.
