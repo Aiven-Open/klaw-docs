@@ -1,7 +1,7 @@
 Run Klaw from source
 ====================
 
-Klaw is a Java project, and you need `Maven <https://maven.apache.org/>`_ installed to run this project from the source.
+Klaw is a Java project. Follow the below steps to run this project from the source.
 
 1. Download the latest code from the `Klaw <https://github.com/aiven/klaw>`_ GitHub repository.
 
