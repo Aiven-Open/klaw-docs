@@ -15,7 +15,8 @@ The configuration for the default file-based database in Klaw is specified in th
     spring.h2.console.enabled=true
     
 
-For large implementations of Klaw, a file-based database is not suitable, as it may not be able to scale well and for various other reasons. In these cases, we recommend configuring Klaw to use a different database management system, such as MySQL,Oracle, or PostgreSQL.  
+.. tip:: 
+    For large implementations of Klaw, a file-based database is not suitable, as it may not be able to scale well and for various other reasons. In these cases, we recommend configuring Klaw to use a different database management system, such as MySQL,Oracle, or PostgreSQL.  
 
 
 RDBMS Configuration
