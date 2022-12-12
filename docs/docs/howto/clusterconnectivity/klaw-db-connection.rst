@@ -1,7 +1,10 @@
 Configure database connection for Klaw
 ======================================
 
-Klaw uses a database to store all the meta information like users, teams, owners etc. With default installation, there is a file based database configured like below ::
+Klaw uses a database to store metadata, such as information about users, teams, and owners. This allows the system to track and manage access to resources within an organization/team. By default, Klaw uses a file-based database. However, you can also configure Klaw to use various RDBMS, such as MySQL, Oracle, or PostgreSQL. 
+
+The configuration for the default file-based database in Klaw is specified in the ``application.properties`` file in the core (klaw/core/src/main/resources) module. For example, your configuration might look something similar to this:
+::
 
     # Spring JPA properties filedb
     spring.datasource.url=jdbc:h2:file:./klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
@@ -10,16 +13,18 @@ Klaw uses a database to store all the meta information like users, teams, owners
     spring.datasource.password=klaw
     spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
     spring.h2.console.enabled=true
+    
 
+For large implementations of Klaw, a file-based database is not suitable, as it may not be able to scale well and for various other reasons. In these cases, we recommend configuring Klaw to use a different database management system, such as MySQL,Oracle, or PostgreSQL.  
 
-For large implementations, this file based db does not scale well and for various other reasons.
 
 RDBMS Configuration
 -------------------
 
-Configure the below to connect to any rdbms like Postgres, Oracle, Mysql etc.
+To configure a connection to a relational database management system (RDBMS) such as Postgres, Oracle, or MySQL, you need to edit the ``application.properties`` file location in the core(klaw/core/src/main/resources) module, with the connection details for your database. 
 
-Below sample config for Mysql ::
+
+Below is a sample config for Mysql ::
 
     # Spring JPA properties mysql
     #spring.datasource.url=jdbc:mysql://localhost:3306/kafkametadbpro?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&cachePrepStmts=true&useServerPrepStmts=true&rewriteBatchedStatements=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
@@ -29,7 +34,7 @@ Below sample config for Mysql ::
     #spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
     #spring.datasource.platform=mysql
 
-Below sample config for Postgres ::
+Below is a sample config for Postgres ::
 
     # Spring JPA properties postgresql
     #spring.datasource.url=jdbc:postgresql://localhost:5432/klaw?cachePrepStmts=true&useServerPrepStmts=true&rewriteBatchedStatements=true

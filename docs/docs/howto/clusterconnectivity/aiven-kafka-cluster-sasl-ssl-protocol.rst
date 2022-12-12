@@ -10,8 +10,8 @@ Prerequisite
 * A running Aiven for Apache Kafka® service. See `Getting started with Aiven for Apache Kafka for more information <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 * Configured `Java keystore and truststore containing the service SSL certificates <https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html>`_ to access Apache Kafka.  
 
-Configure SASL protocol
-----------------------
+Configure and connect using SASL protocol
+-----------------------------------------
 Follow the steps below to configure and connect to an Aiven for Apache Kafka® and Klaw using SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click **Clusters**. 

@@ -7,8 +7,8 @@ Prerequisite
 ------------
 * Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
 
-Configure SASL_SSL protocol
----------------------------
+Configure and connect using SASL protocol
+-----------------------------------------
 
 Follow the steps below to configure and connect to an Apache Kafka® cluster in Klaw using SASL_SSL protocol:
 

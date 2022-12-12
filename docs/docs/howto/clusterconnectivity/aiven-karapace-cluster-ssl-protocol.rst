@@ -7,8 +7,8 @@ Prerequisite
 * Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
 * Import the Karapce scehma registry public certificate to truststore of Klaw. For more information, see `Java keystore and truststore containing the service SSL certificates <https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html>`_.
 
-Configure SSL protocol
-----------------------
+Configure and connect SSL protocol
+----------------------------------
 Follow the steps below to configure and connect to a Karapace schema registry cluster with Klaw using SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click **Clusters**. 

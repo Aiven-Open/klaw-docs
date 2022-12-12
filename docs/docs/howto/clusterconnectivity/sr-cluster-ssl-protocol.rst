@@ -42,5 +42,4 @@ Follow the steps below to configure and connect to a Schema Registry cluster wit
 - Replace ``client.keystore.p12`` with the path for the keystore and ``klaw1234`` with the password configured for the keystore file.
 - Replace ``client.truststore.jks`` with the path for the truststore and ``klaw1234`` with the password configured for the truststore file.
 - Save the ``application.properties`` file.
-
 9. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Kafka cluster using SSL protocol.
