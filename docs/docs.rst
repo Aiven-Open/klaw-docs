@@ -2,19 +2,14 @@ Klaw Documentation
 ==================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :hidden:
+   :glob:
 
 
-   Run from source<docs/run-source>
    Get started<docs/get-started-kafka>
-   docs/users-teams
-   docs/clusters-environments
-   docs/requests
-   docs/synchronize
-   Metastore data<docs/metastore>
-   Advanced configuration<docs/config>
-
+   Concepts <docs/concepts>
+   How To <docs/howto>
 
 
 Klaw consists of two components:
