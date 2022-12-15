@@ -42,7 +42,7 @@ Below is a screenshot of the redesigned UI
 
 Support for Azure AD Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Klaw now supports Azure Active Directory (Azure AD) authenticatio. Azure AD is an identity and access management service provided by Microsoft. It allows organizations to manage user access to applications and resources securely. By using Azure AD authentication, organizations can leverage their existing Azure AD infrastructure to manage access to Klaw.
+Klaw now supports Azure Active Directory (Azure AD) authentication. Azure AD is an identity and access management service provided by Microsoft. It allows organizations to manage user access to applications and resources securely. By using Azure AD authentication, organizations can leverage their existing Azure AD infrastructure to manage access to Klaw.
 
 To enable Azure AD authentication for a Klaw user, configure the ``spring.cloud. Azure.active-directory.*`` properties in the ``application.properties`` file on the Klaw **core** module with the Azure AD properties. This configuration allows Klaw to integrate with Azure AD authentication enabling users to log in to Klaw using their Azure AD credentials. 
 
