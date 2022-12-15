@@ -31,9 +31,11 @@ With the switch to React for UI, this release also introduces the redesigned use
 To preview the new Klaw user user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to true: 
 ::
     # Enable new Klaw user interface
-    klaw.coral.enabled=false
+    klaw.coral.enabled=true
 
-Login to Klaw and under Topics, click the banner with the preview link. 
+Login to Klaw and under Topics, click the banner with the preview link.
+
+Below is a screenshot of the redesigned UI
 
 .. image:: /../../../_static/images/NewInterfaceTopics.png
 
