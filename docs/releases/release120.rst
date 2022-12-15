@@ -17,7 +17,7 @@ New features
     Moving to React for Klaw's UI provides numerous benefits in terms of performance, scalability, and ease of development. We've tested React with our current interface, and it looks amazing - we're excited to start this new journey.
 
 - New look and feel for Browse topics:
-    This release introduces the redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier and more efficient. This new look and feel is achieved by switching to React.
+    This release introduces the redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier, more efficient and accessible. This new look and feel is achieved by switching to React.
 
 - Klaw now supports Azure AD Authentication:
     Azure Active Directory (Azure AD) is an identity and access management service provided by Microsoft. It allows organizations to manage user access to applications and resources securely. By using Azure AD authentication, organizations can leverage their existing Azure AD infrastructure to manage access to Klaw.

@@ -8,9 +8,7 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
    .. tip:: You can also clone repository to use the "bleeding edge" version if you wish.
 
 2. Experimental UI Configuration
-   A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling,
-   and overall appearance of the interface, as well as improvements to make browsing and working topics easier and more efficient. This new look and feel
-   is achieved by switching to React.
+   A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier, more efficient and accessible. This new look and feel is achieved by switching to React.
 
     - Configure the property ``klaw.coral.enabled`` in the ``application.properties`` file to `true` in the module: core.
 
