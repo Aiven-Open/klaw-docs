@@ -19,7 +19,7 @@ snowplow('newTracker', 'at', 'dc.aiven.io', {
     discoverRootDomain: true,
     cookieSameSite: 'Lax',
     anonymousTracking: { withServerAnonymisation: true },
-    postPath: '/aiven/dc',
+    postPath: '/aiven/dc2',
     crossDomainLinker: function (linkElement) {
         return linkElement.id === 'crossDomainLink';
     },
