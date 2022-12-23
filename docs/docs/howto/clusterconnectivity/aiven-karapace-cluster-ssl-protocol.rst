@@ -30,18 +30,25 @@ Follow the steps below to configure and connect to a Karapace schema registry cl
 8. Configure the SSL properties to connect to Schema Registry cluster by copying and editing the following lines. 
 ::    
 
-        klawssl.kafkassl.keystore.location=client.keystore.p12
-        klawssl.kafkassl.keystore.pwd=klaw1234
-        klawssl.kafkassl.key.pwd=klaw1234
-        klawssl.kafkassl.truststore.location=client.truststore.jks
-        klawssl.kafkassl.truststore.pwd=klaw1234
-        klawssl.kafkassl.keystore.type=pkcs12
-        klawssl.kafkassl.truststore.type=JKS
+        clusterid.kafkassl.keystore.location=client.keystore.p12
+        clusterid.kafkassl.keystore.pwd=klaw1234
+        clusterid.kafkassl.key.pwd=klaw1234
+        clusterid.kafkassl.truststore.location=client.truststore.jks
+        clusterid.kafkassl.truststore.pwd=klaw1234
+        clusterid.kafkassl.keystore.type=pkcs12
+        clusterid.kafkassl.truststore.type=JKS
     
-- For the lines starting with ``klawssl``, replace ``klawssl`` with the Klaw Cluster ID.
+- For the lines starting with ``clusterid``, replace ``clusterid`` with the Klaw Cluster ID.
 - Replace ``client.keystore.p12`` with the path for the keystore and ``klaw1234`` with the password configured for the keystore file.
 - Replace ``client.truststore.jks`` with the path for the truststore and ``klaw1234`` with the password configured for the truststore file.
 - Save the ``application.properties`` file.
 
-9. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Kafka cluster using SSL protocol.
+9. Additionally, in the `cluster-api` (klaw/cluster-api/src/main/resources) module, configure Karapace credentials copied from Aiven console::
+::
+
+    clusterid.klaw.schemaregistry.credentials=username:password
+
+Replace clusterid with Klaw cluster Id copied from Klaw UI.
+
+10. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Kafka cluster using SSL protocol.
 
