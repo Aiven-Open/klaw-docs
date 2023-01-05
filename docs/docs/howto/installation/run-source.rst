@@ -19,6 +19,10 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
 4. Build the project by running ``./mvnw clean package`` for Linux(bash) or ``mvnw clean package`` for Windows, from the top level of the project directory. This will build JAR files in the ``target/`` directories of each modules: core and cluster-api.
     .. note:: node, npm and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 
+   If the build runs into an error while installing node/npm/pnpm, you can
+    - Disable the execution plugins (for node/npm/pnpm) in module core/pom.xml
+    - Manually install node/npm/pnpm and copy assets by following the procedure here. `Manual installation of React <https://github.com/aiven/klaw/blob/main/coral/README.md>`_
+
 5. Start the API component by running its JAR file::
 
         java -jar klaw-clusterapi-<version>.jar

@@ -32,11 +32,11 @@ Follow the steps below to configure and connect to an Aiven for Apache Kafka® a
 7. Enter an environment name, set the cluster you added from the drop-down list, and configure partitions and replication factor, and tenat (set to default). 
 8. Copy the **Cluster ID** from the **Clusters** page using the copy icon.
 9. Open the ``application.properties`` file located in the `klaw/cluster-api/src/main/resources` directory.
-10. Depending on the SASL mechanism you are using, copy one of the below properties, replace ``klawsasl`` with the copied cluster id, and save the ``application.properties`` file. 
+10. Depending on the SASL mechanism you are using, copy one of the below properties, replace ``clusterid`` with the copied cluster id, and save the ``application.properties`` file.
 ::
 
-   klawsasl.kafkasasl.jaasconfig.plain=org.apache.kafka.common.security.plain.PlainLoginModule required username='kwuser' password='kwuser-secret';
-   klawsasl.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule required username='kwuser' password='kwuser-secret';
-   klawsasl.kafkasasl.jaasconfig.gssapi=com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true keyTab="/location/kafka_client.keytab" principal="kafkaclient1@EXAMPLE.COM";
+   clusterid.kafkasasl.jaasconfig.plain=org.apache.kafka.common.security.plain.PlainLoginModule required username='kwuser' password='kwuser-secret';
+   clusterid.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule required username='kwuser' password='kwuser-secret';
+   clusterid.kafkasasl.jaasconfig.gssapi=com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true keyTab="/location/kafka_client.keytab" principal="kafkaclient1@EXAMPLE.COM";
 
 11. Save the ``application.properties`` file. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL protocol.
