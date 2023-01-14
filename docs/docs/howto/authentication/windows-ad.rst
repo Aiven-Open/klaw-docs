@@ -22,11 +22,11 @@ Users can login with their windows credentials configured in Windows Active dire
 
 If the user is already signed up before, then user is directed to Klaw home page.
 
-.. image:: /../../../_static/images/login.png
+.. image:: /../../../_static/images/authentication/login.png
 
 * Sign Up
 
 For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
 to approve or decline.
 
-.. image:: /../../../_static/images/OAuthSignupForm.png
+.. image:: /../../../_static/images/authentication/OAuthSignupForm.png

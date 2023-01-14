@@ -5,7 +5,7 @@ The first time you log in to Klaw as an administrator, you will see the Klaw con
 
 .. note::  For subsequent logins, you access the Klaw configuration wizard using URL: `https://<host>:<port>/helpwizard`
 
-.. image:: /../../../_static/images/KlawWizard.png
+.. image:: /../../../_static/images/general/KlawWizard.png
 
 1. Configure Kafka clusters
 
@@ -35,7 +35,7 @@ Additionally, you can configure the partitions, replication factors, topic prefi
 After configuring environments, you can test the connection by clicking the validate button.
 
 
-.. image:: /../../../_static/images/EnvStatus.png
+.. image:: /../../../_static/images/general/EnvStatus.png
 
 4. Configure Tenant and Environment hierarchy
 
@@ -62,7 +62,7 @@ Example ::
 If you already have a Kafka cluster, you can easily migrate topics and acls to Klaw using the **Synchronize** option.
 As a SUPERADMIN, you can synchronize topics and ACLs by default. Navigate to **Synchronize** menu and select **Topics from cluster** or **ACLs from cluster** to synchronize the topics or ACLs. You also can synchronize topics individually or with a bulk option, assigning all at a time to one team. Users can synchronize topics from cluster to Klaw with ``SYNC_TOPICS`` permission. 
 
-.. image:: /../../../_static/images/SyncTopicsFromCluster.png
+.. image:: /../../../_static/images/topic/SyncTopicsFromCluster.png
 
 6. Create Teams
 

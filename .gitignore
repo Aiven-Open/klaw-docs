@@ -3,3 +3,7 @@
 kafkawise_docs.egg-info
 node_modules
 aiven.min.css
+
+package-lock.json
+node*
+*DS_Store*

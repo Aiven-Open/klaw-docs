@@ -42,15 +42,15 @@ ClientId, Client secret, and Tenant Id can be retrieved from Azure portal and up
 
 If the user is already signed up before, then user is directed to Klaw home page.
 
-.. image:: /../../../_static/images/OAuthLogin.png
+.. image:: /../../../_static/images/authentication/OAuthLogin.png
 
 Provide your credentials :
 
-.. image:: /../../../_static/images/AzureLogin.png
+.. image:: /../../../_static/images/authentication/AzureLogin.png
 
 * Sign Up
 
 For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
 to approve or decline.
 
-.. image:: /../../../_static/images/OAuthSignupForm.png
+.. image:: /../../../_static/images/authentication/OAuthSignupForm.png

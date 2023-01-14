@@ -28,7 +28,7 @@ After clicking on the login button, user is provided with an Google account pop 
     #spring.security.oauth2.client.registration.google.redirect-uri=https://localhost:9097/login/oauth2/code/google
     #spring.security.oauth2.client.registration.google.scope=profile, email
 
-ClientId, Client secret, and Tenant Id can be retrieved from Azure portal, and update the relevant redirect-uri.
+ClientId, Client secret can be retrieved from Google account Admin portal, and update the relevant redirect-uri.
 
 5. Default Super Admin configuration to approve users
 
@@ -40,15 +40,15 @@ ClientId, Client secret, and Tenant Id can be retrieved from Azure portal, and u
 
 If the user is already signed up before, then user is directed to Klaw home page.
 
-.. image:: /../../../_static/images/OAuthLogin.png
+.. image:: /../../../_static/images/authentication/OAuthLogin.png
 
 Provide your credentials :
 
-.. image:: /../../../_static/images/GoogleLogin.png
+.. image:: /../../../_static/images/authentication/GoogleLogin.png
 
 * Sign Up
 
 For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
 to approve or decline.
 
-.. image:: /../../../_static/images/OAuthSignupForm.png
+.. image:: /../../../_static/images/authentication/OAuthSignupForm.png

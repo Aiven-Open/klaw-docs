@@ -1,5 +1,5 @@
-Login with username password
-============================
+Simple Db Login
+===============
 
 Users can login with username and password which are stored in the database (encrypted).
 
