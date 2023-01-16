@@ -3,7 +3,7 @@ Simple Db Login
 
 Users can login with username and password which are stored in the database (encrypted).
 
-* Configuration
+* Configuration in application.properties
 The following property enables users authentication with database ::
 
     klaw.login.authentication.type=db

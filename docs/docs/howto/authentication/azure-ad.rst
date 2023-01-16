@@ -5,7 +5,7 @@ Users can login with their credentials configured in Azure Active directory. On 
 
 After clicking on the login button, user is provided with an Azure pop up window with options to provide his/her credentials or select an Azure account.
 
-* Configuration
+* Configuration in application.properties
 
 1. Make sure Klaw is running in secure mode::
 
@@ -20,7 +20,7 @@ After clicking on the login button, user is provided with an Azure pop up window
 
     klaw.enable.sso=true
 
-4. The below configuration in application.properties is required to enable Azure AD based authentication ::
+4. The below configuration is required to enable Azure AD based authentication ::
 
     # Uncomment the below OAuth2 configuration to enable Azure AD based authentication
     #spring.security.oauth2.client.registration.azure.client-id=

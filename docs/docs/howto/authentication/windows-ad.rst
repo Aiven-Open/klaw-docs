@@ -3,7 +3,7 @@ Login with username password
 
 Users can login with their windows credentials configured in Windows Active directory.
 
-* Configuration
+* Configuration in application.properties
 
 1. Configure authentication type ::
 

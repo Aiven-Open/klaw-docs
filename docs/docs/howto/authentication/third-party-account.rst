@@ -5,7 +5,7 @@ Users can login with any other third party account.
 
 After clicking on the login button, user is provided with an third party account pop up window with options to provide his/her credentials or select a relevant account.
 
-* Configuration
+* Configuration in application.properties
 
 1. Make sure Klaw is running in secure mode::
 
@@ -20,7 +20,7 @@ After clicking on the login button, user is provided with an third party account
 
     klaw.enable.sso=true
 
-4. The below configuration in application.properties is required to enable Azure AD based authentication
+4. The below configuration is required to enable Azure AD based authentication
 
     Find the registration of the third party account like 'github' or 'twitter' or any other and replace registrationid with that id below. ::
 
