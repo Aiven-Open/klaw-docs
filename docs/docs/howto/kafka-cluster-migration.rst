@@ -12,8 +12,9 @@ Klaw Installation
    Synchronize Acls from Cluster<kafka-cluster-migration/sync-acls-from-cluster>
    Synchronize Acls to Cluster<kafka-cluster-migration/sync-acls-to-cluster>
 
-Klaw supports synchronization to and from Klaw and the Apache Kafka® and other clusters. This is found under the Synchronize menu item.
 
-Synchronize either topics or ACLs from the cluster to Klaw if you have a new Klaw setup with existing data platforms.
+Klaw supports data synchronization between Klaw and Apache Kafka® and other clusters. This can be accessed through the Synchronize menu option.
 
-Synchronize to the clusters if your Klaw setup is in place (for example, restored from backup, or unaffected by a cluster outage), this will reinstate the topics and/or ACLs on the clusters.
+If you have a new Klaw setup and already have data on other clusters, you can synchronize the topics and ACLs from those clusters to Klaw.
+
+If your Klaw setup is already in place, for example, if it has been restored from a backup or was not affected by a cluster outage, you can use the Synchronize option to reinstate topics and/or ACLs on the clusters.

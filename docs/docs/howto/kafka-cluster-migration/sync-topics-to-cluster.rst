@@ -1,19 +1,16 @@
-Synchronize Topics to Cluster
+Synchronize Topics to cluster
 =============================
 
-If topics from Klaw have to be synchronized to a Kafka cluster, then follow the below procedure. This procedure involves displaying the topics in Klaw and creating them on the Kafka cluster.
+To synchronize topics from Klaw to an Apache Kafka cluster, follow the below steps, which involve displaying the topics in Klaw and creating them on the Apache Kafka cluster. 
 
 
-1. Make sure Environments and  ``klaw.tenant.config`` property is configured as described under :doc:`tenant-config`
+1. Configure Environments and the ``klaw.tenant.config`` property as outlined in the :doc:`tenant-config` documentation.
+2. Log in as a SUPERADMIN or user with the ``SYNC_BACK_TOPICS`` permission.
 
-2. Login as SUPERADMIN, or with role who has permission ``SYNC_BACK_TOPICS``
+3. Navigate to the Synchronize menu and select **Topics to Cluster**.
 
-3. Go to menu Synchronize -> Topics to Cluster
-
-4. Topics can be synchronized with two options
-
-    Select source environment (Klaw metadata with topics) and target environment (kafka cluster where topics have to be created)
+4. To synchronize topics, select the source environment (Klaw metadata with topics) and target environment (kafka cluster where topics have to be created).
 
 .. image:: /../../../_static/images/sync/SyncTopicsToCluster.png
 
-This way topics can be created on any kafka cluster. If a topic already exists, you would notice an 'TopicAlreadyExistsException', and proceed with others.
+If a topic already exists, you will see a ``TopicAlreadyExistsException``, which can be ignored, and you can proceed with the other topics.

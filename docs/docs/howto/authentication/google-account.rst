@@ -1,26 +1,25 @@
-Google Account Login
-====================
+Login with Google account 
+=========================
 
-Users can login with their Google account credentials. On the login screen user, is prompted with a login option for Google account.
+You can log in to Klaw using your Google account credentials. On the login screen, you'll see an option to log in with a Google account. Click the login button, and a pop-up window will appear, allowing you to enter your credentials or select an Azure account.
 
-After clicking on the login button, user is provided with an Google account pop up window with options to provide his/her credentials or select a Google account.
+Before using Google account credentials to log in to Klaw, you need to make the following configurations in the ``application.properties`` file in the Klaw-core module to enable the use of Google account login.
 
-* Configuration in application.properties
-
-1. Make sure Klaw is running in secure mode::
-
+1. Make sure Klaw is running in a secure mode. You will find the following configuration: 
+::
     server.ssl.key-store.*
 
-2. Configure authentication type ::
-
-    # Possible values "db" or "ad". If SSO config or Active directory is enabled below, this value should be "ad"
+2.  Configure the authentication type by setting the value to "ad" in the following property:
+::
     klaw.login.authentication.type=ad
 
-3. Enable SSO ::
+3. Enable SSO by setting the value to `true` in the following property: 
+::
 
     klaw.enable.sso=true
 
-4. The below configuration is required to enable Azure AD based authentication ::
+4. To enable Google account authentication, uncomment the following properties and provide the appropriate values for ClientId, Client secret, and Tenant Id:
+::
 
     # Uncomment the below OAuth2 configuration to enable Google based authentication
     #spring.security.oauth2.client.registration.google.client-id=
@@ -28,27 +27,17 @@ After clicking on the login button, user is provided with an Google account pop 
     #spring.security.oauth2.client.registration.google.redirect-uri=https://localhost:9097/login/oauth2/code/google
     #spring.security.oauth2.client.registration.google.scope=profile, email
 
-ClientId, Client secret can be retrieved from Google account Admin portal, and update the relevant redirect-uri.
-
-5. Default Super Admin configuration to approve users
-
-    # In case of AD or Azure AD or SSO, configure an existing SUPERADMIN user from AD in the below config for username. Ex : superadmin@domain.
+5. Configure an existing SUPERADMIN user from AD to approve new users in the following property for username:  
+::
     klaw.superadmin.default.username=superadmin@company.com
 
-
-* Sign in
-
-If the user is already signed up before, then user is directed to Klaw home page.
-
+6. If you have already signed up, you will be directed to the Klaw home page. 
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
-Provide your credentials :
+    Enter your credentials in the Google login window.
 
 .. image:: /../../../_static/images/authentication/GoogleLogin.png
 
-* Sign Up
-
-For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
-to approve or decline.
+7. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
 
 .. image:: /../../../_static/images/authentication/OAuthSignupForm.png

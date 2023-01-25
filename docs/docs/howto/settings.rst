@@ -1,39 +1,22 @@
-Settings
-========
+Klaw settings
+=============
 
-Klaw Settings for various Klaw functionalities like Email notification templates, roles, etc can be configured under Dashboard -> Settings
+You can configure Klaw for various Klaw functionalities, such as Email notification templates and roles, under **Dashboard -> Settings**.
 
-- Email Notification templates : Email notifications are sent out to people involved when a request is raised or approved/declined.
-  There are several emails which can be configured. The properties start with ``klaw.mail.*``
+- Email Notification templates:  Email notifications are sent out to users involved when a request is raised or approved/declined. You can configure multiple email addresses. The properties start with ``klaw.mail.*``.
 
+- Roles when adding users: When adding users manually from the Users menu, only the USER role is available. However, you can edit this by updating the property ``klaw.adduser.roles``.
 
-- Roles when adding users : When a new user is being added manually from Users menu, only USER role is available.
-  This can be edited by updating the property ``klaw.adduser.roles``
+- Tenant Configuration: A tenant is an isolated environment that has its own set of clusters, environments, users, teams, and topics For more information, see :doc:`tenant-config` documentation. You can change the hierarchy of environments and a few other configurations by updating the property ``klaw.tenant.config``.
 
+- Environment names: When adding a new Environment, predefined names will be presented to you. If you can modify these names by updating the property ``klaw.envs.standardnames``.
 
-- Tenant Configuration : This is described in detail at :doc:`tenant-config`
-  Hierarchy of environments, and few other are configured by updating the property ``klaw.tenant.config``
+- Reports location: You can download reports for a team or tenant on the usage of Klaw. The default location is configured by updating the property ``klaw.reports.location``.
 
+- Klaw portal Announcements : During maintenance on Klaw or upgrades or downtimes, or when there is a need for announcements to be sent to Klaw users, you can inform them by broadcasting a message. This can be done by updating the property ``klaw.broadcast.text``. If you leave it empty, broadcasting will stop.
 
-- Environment names : When adding a new Environment, predefined names are presented to the user.
-  These names can be modified by updating the property ``klaw.envs.standardnames``
+- Schemas Retrieval :Every Kafka implementation may not have Schema Registries; hence, it may not be required to query a schema registry server when a request is made. You can enable this by updating the property ``klaw.getschemas.enable``. By default, it is false.
 
+- Cluster API connectivity : When installing Klaw, it is important to establish the connectivity between Core API and Cluster API. You can test this connectivity by updating the property ``klaw.clusterapi.url``.
 
-- Reports location : Reports can be downloaded for a team, tenant on the usage of Klaw.
-  The default location is configured by updating the property ``klaw.reports.location``
-
-
-- Klaw portal Announcements : During maintenance on Klaw or upgrades or downtimes or when there is a need for announcements to be sent to Klaw users, they can be informed by broadcasting a message.
-  This can be done by updating the property ``klaw.broadcast.text`` Leaving it empty will stop broadcasting.
-
-
-- Schemas Retrieval : Every Kafka implementation may not have Schema Registries, and hence it is not required to query a schema registry server when a request is made in that case.
-  This can be enabled by updating the property ``klaw.getschemas.enable`` By default it is false.
-
-
-- Cluster Api connectivity : When Klaw is installed, it is important to establish the connectivity between Core Api and Cluster Api.
-  This connectivity can be tested by updating the property ``klaw.clusterapi.url``
-
-
-- Stop Core api : It is possible to stop the Core Api by clicking the Stop button. It would be the Administrator's responsibility to start it again if required.
-
+- Stop Core API : You can stop the Core API by clicking the Stop button. However, it will be your responsibility as an Administrator to start it again if required.

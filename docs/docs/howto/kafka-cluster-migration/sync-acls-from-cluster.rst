@@ -1,21 +1,20 @@
-Synchronize Acls from Cluster
+Synchronize ACLs from cluster
 =============================
 
+To synchronize ACLs from an Apache Kafka cluster with Klaw metadata, use this procedure, which entails retrieving the Acls (Producers & Consumers) from an existing Kafka cluster and assigning them to a team in Klaw.
 
-If acls from a kafka cluster have to be synchronized with Klaw metadata, then follow the below procedure. This procedure involves retrieving the Acls (Producers & Consumers) from an existing kafka cluster, and assigning to a team in Klaw.
 
+1. Configure Environments and the `klaw.tenant.config`` property is configured as described in the :doc:`tenant-config` documentation. 
 
-1. Make sure Environments and  ``klaw.tenant.config`` property is configured as described under :doc:`tenant-config`
+2. Log in as a SUPERADMIN or user with the ``SYNC_SUBSCRIPTIONS`` permission.
 
-2. Login as SUPERADMIN, or with role who has permission ``SYNC_SUBSCRIPTIONS``
+3. Navigate to the **Synchronize** menu and select **ACLs from Cluster**.
 
-3. Go to menu Synchronize -> Acls from Cluster
-
-4. You may select one or more Acls, and select a team and save. The acls(s) then appear in the topic overview page, assigned to a team.
+4. Select one or more ACLs, choose a team, and save. The selected ACLs will now appear in the topic overview page, assigned to the chosen team.
 
 .. image:: /../../../_static/images/sync/SyncAclsFromCluster.png
 
-5. There is also an option to view all the acls and assign those acls to a different team.
-   Select ``Show All`` option, displays all the kafka acls (which are assigned and not assigned to any team.)
+5. You can view all existing ACLs and reassign them to different teams by selecting the **Show All** option. This will display all Kafka ACLs, both assigned and unassigned to any teams.
 
-This way Acls from a Kafka cluster can be synchronized with Klaw.
+
+Following the above steps, you can synchronize ACLs from an Apache Kafka cluster with Klaw metadata.

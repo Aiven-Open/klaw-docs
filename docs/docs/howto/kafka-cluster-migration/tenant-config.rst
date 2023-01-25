@@ -1,48 +1,43 @@
-Tenant Configuration
+Tenant configuration
 ====================
 
-A Tenant in klaw terminology is an isolated klaw environment which has its own set of clusters, environments, users, teams, topics etc.
-Users of one tenants are totally isolated from other tenants. They cannot view topics or any information of other tenants, even thought they share the same klaw instance.
+A Tenant, in Klaw terminology, is an isolated Klaw environment with its own clusters, environments, users, teams, topics, etc.
+Users of one tenant are isolated from other tenants. They cannot view topics or any information of other tenants, even though they share the same Klaw instance.
 
-Every installation of klaw comes with a single (default) tenant.
+Every installation of Klaw comes with a single (default) tenant.
 
-The following can be configured in a tenant.
+You can configure the following in a tenant: 
 
 - Base sync environment
-    This is the base kafka environment in a hierarchy of environments. Make sure this environment already exists under
-    Environments (kafka).
+    This is the base Apache Kafka environment in a hierarchy of environments. Make sure this environment already exists under
+    Environments (Kafka).
 
-    Field : baseSyncEnvironment
+    Field: baseSyncEnvironment
 
 - Order of Kafka Topics promotion environments
-    Define a set of environments in order for promotion of a kafka topic. Ex : ["DEV", "TST"]. Make sure this
-    environment already exists under Environments (kafka)
+    Define a set of environments in order for the promotion of a Kafka topic. Ex : ["DEV", "TST"]. Make sure this environment already exists under Environments (Kafka)
 
-    Field : orderOfTopicPromotionEnvsList
+    Field: orderOfTopicPromotionEnvsList
 
 - Request Topics Environments List
-    Define a set of environments on which kafka topics can be requested for directly. Other environments cannot be
-    requested directly, and topics can only be promoted to them.
+    Define a set of environments for which kafka topics can be requested directly. Other environments cannot be requested directly, and topics can only be promoted to them.
 
-    Field : requestTopicsEnvironmentsList
+    Field: requestTopicsEnvironmentsList
 
 - Base sync environment Kafka Connector
-    This is the base kafka connect environment in a hierarchy of environments. Make sure this environment already exists under
-    Environments (kafka connect).
+    This is the base Kafka connect environment in a hierarchy of environments. Make sure this environment already exists under Environments (Kafka connect).
 
-    Field : baseSyncKafkaConnectCluster
+    Field: baseSyncKafkaConnectCluster
 
 - Order of Kafka Connect promotion environments
-    Define a set of environments in order for promotion of a kafka connector. Ex : ["DEV", "TST"]. Make sure this
-    environment already exists under Environments (kafka connect)
+    Define a set of environments in order for the promotion of a Kafka connector. Ex : ["DEV", "TST"]. Make sure this environment already exists under Environments (Kafka connect)
 
-    Field : orderOfConnectorsPromotionEnvsList
+    Field: orderOfConnectorsPromotionEnvsList
 
 - Request Connectors Environments List
-    Define a set of environments on which kafka connectors can be requested for directly. Other environments cannot be
-    requested directly, and connectors can only be promoted to them.
+    Define a set of environments for which Kafka connectors can be requested directly. Other environments cannot be requested directly, and connectors can only be promoted to them.
 
-    Field : requestConnectorsEnvironmentsList
+    Field: requestConnectorsEnvironmentsList
 
 Sample Tenant configuration for Property : ``klaw.tenant.config``::
 
@@ -57,4 +52,4 @@ Sample Tenant configuration for Property : ``klaw.tenant.config``::
         }
     }
 
-The above configuration can be configured under Dashboard -> Settings with a SUPERADMIN role or permission ``UPDATE_SERVERCONFIG``
+You can configure the above configurations under **Dashboard** -> **Settings** with a SUPERADMIN role or a user with the ``UPDATE_SERVERCONFIG`` permission. 

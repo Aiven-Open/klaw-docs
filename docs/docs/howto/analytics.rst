@@ -1,13 +1,9 @@
 Analytics
 =========
 
-It is important to get an overview of your teams/tenants requests, activity log, cluster status etc.
+The Analytics screen on Klaw lets you track important information about your teams, tenants, and cluster status. From the Analytics screen, you can view various charts that provide information on requests from your teams, topics, consumer groups, and ACL ownership.
 
-From the Analytics screen, you can view few charts about requests from your teams, topics, consumer groups and acl ownership etc.
-
-These statistics differ if you login as a USER role or SUPERADMIN (tenant overview) role.
+The data available will vary depending on whether you are logged in as a USER or a SUPERADMIN (tenant overview) role. Additionally, you have the option to download a detailed report of the statistics.
 
 .. image:: /../../_static/images/Analytics.png
 
-
-A detailed report can be downloaded on the above statistics.

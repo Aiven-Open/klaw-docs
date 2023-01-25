@@ -1,27 +1,25 @@
-Synchronize Topics from Cluster
+Synchronize Topics from cluster
 ===============================
 
-If topics from a kafka cluster have to be synchronized with Klaw metadata, then follow the below procedure. This procedure involves retrieving the topics from an existing kafka cluster, and assigning to a team in Klaw.
+To synchronize topics from an Apache Kafka cluster with Klaw, follow the below procedure, which involves retrieving the topics from an existing Apache Kafka cluster and assigning them to a team in Klaw.
 
 
-1. Make sure Environments and  ``klaw.tenant.config`` property is configured as described under :doc:`tenant-config`
+1. Configure Environments and the ``klaw.tenant.config`` property as outlined in the :doc:`tenant-config` documentation.
 
-2. Login as SUPERADMIN, or with role who has permission ``SYNC_TOPICS``
+2. Log in as a SUPERADMIN or user with the ``SYNC_TOPICS`` permission.
 
-3. Go to menu Synchronize -> Topics from Cluster
+3. Navigate to the Synchronize menu and select **Topics from Cluster**.
 
-4. Topics can be synchronized with two options
+4.Synchronize topics with eithe of following two options:
 
-    - `Individual Options` you may select one or more topics, and select a team and save. The topic(s) then appear in the 'Topics' menu assigned to a team.
-
-    - `Bulk Options` tab, all the topics from the kafka cluster would be selected in one go. Select a team and save. The topic(s) then appear in the 'Topics' menu assigned to a team.
+    - `Individual Options`: Select one or more topics individually, choose a team, and save. The selected topics will now appear in the **Topics** menu, assigned to the chosen team.
+    
+    - `Bulk Options` tab: Select all topics from the Kafka cluster at once, choose a team, and save. The selected topics will now appear in the **Topics** menu, assigned to the chosen team.
 
 .. image:: /../../../_static/images/sync/SyncTopicsFromCluster.png
 
-5. There is also an option to view all the topics and assign topics to a different team.
-   Select ``Show All`` option, displays all the kafka topics (which are assigned and not assigned to any team.)
+5. You can view all the topics and assign topics to a different team by selecting the **Show All** option. This displays all the Apache Kafka topics, both assigned and unassigned to any team.
 
-If a topic is deleted on cluster and exists in Klaw metadata, you may remove it from Klaw.
-You can notice this at the end of the record.
+f a topic is deleted on the cluster but still exists in Klaw metadata, you can remove it from Klaw. You will notice this at the end of the record.
 
-This way Topics from a Kafka cluster can be synchronized with Klaw.
+By following these steps, you can synchronize topics from a Apache Kafka cluster with Klaw metadata.

@@ -1,15 +1,17 @@
-Login with username password
-============================
+Login with Windows active directory
+===================================
 
-Users can login with their windows credentials configured in Windows Active directory.
+You can log in to Klaw using the Windows credentials configured in the Windows active directory.
 
-* Configuration in application.properties
+Before you can proceed with using your Windows Active directory credentials, you need to make the following configurations in the ``application.properties`` file in the Klaw-core module.
 
-1. Configure authentication type ::
+1. Configure the authentication type by setting the value to "ad" in the following property:
+::
 
     klaw.login.authentication.type=ad
 
-2. The below configuration in application.properties is required to enable Active Directory based authentication ::
+2. To enable active directory-based authentication, uncomment the following properties and provide the appropriate values for your Active Directory configuration:
+::
 
     # Uncomment the below ActiveDirectory properties for Users to login with their active directory credentials.
     #spring.ad.domain=
@@ -18,15 +20,10 @@ Users can login with their windows credentials configured in Windows Active dire
     #spring.ad.filter=
 
 
-* Sign in
-
-If the user is already signed up before, then user is directed to Klaw home page.
+3. If you have already signed up, you will be directed to the Klaw home page.
 
 .. image:: /../../../_static/images/authentication/login.png
 
-* Sign Up
-
-For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
-to approve or decline.
+4. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
 
 .. image:: /../../../_static/images/authentication/OAuthSignupForm.png

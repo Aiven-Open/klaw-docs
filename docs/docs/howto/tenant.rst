@@ -1,23 +1,22 @@
 Tenant
 ======
 
-A Tenant in klaw terminology is an isolated klaw environment which has its own set of clusters, environments, users, teams, topics etc.
-Users of one tenants are totally isolated from other tenants. They cannot view topics or any information of other tenants, even thought they share the same klaw instance.
+In Klaw, a tenant is an isolated Klaw environment with its own clusters, environments, users, teams, and topics. Users within one tenant are entirely separate from other tenants and cannot view topics or information from other tenants, even if they share the same Klaw instance.
 
-Every installation of klaw comes with a single (default) tenant.
+Each Klaw installation comes with a single default tenant.
 
 .. image:: /../../_static/images/Tenants.png
 
-New tenant
-----------
+Add new tenant
+--------------
 
-A new tenant can be added by a superadmin or with role which has permission ``ADD_TENANT`` under menu Environments -> Tenants
+To add a new tenant, a superadmin or user with the ``ADD_TENANT`` permission can do so under the **Environments -> Tenants** menu.
 
-.. note:: If the application should be limited to only one tenant, it can be configured with the below property in application.properties.
+.. note:: 
+    If the application should be limited to only one tenant, you can configure it with thee below property in ``application.properties`` file.
+    ::
 
-::
-
-    #maximum tenants can be created
-    klaw.max.tenants=200
+        #maximum tenants can be created
+        klaw.max.tenants=200
 
 

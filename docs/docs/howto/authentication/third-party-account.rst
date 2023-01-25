@@ -1,29 +1,27 @@
-Third party Login
-=================
+Login with Third-party accounts
+===============================
 
-Users can login with any other third party account.
+You have the option to configure any third-party login account to access Klaw. 
 
-After clicking on the login button, user is provided with an third party account pop up window with options to provide his/her credentials or select a relevant account.
+To enable third-party login accounts,  you need to make the following configurations in the ``application.properties`` file in the Klaw-core module. 
 
-* Configuration in application.properties
-
-1. Make sure Klaw is running in secure mode::
+1. Make sure Klaw is running in a secure mode. You will find the following configuration: 
+::
 
     server.ssl.key-store.*
 
-2. Configure authentication type ::
+2. Configure the authentication type by setting the value to "ad" in the following property:
+::
 
-    # Possible values "db" or "ad". If SSO config or Active directory is enabled below, this value should be "ad"
     klaw.login.authentication.type=ad
 
-3. Enable SSO ::
+3. Enable SSO by setting the value to `true` in the following property: 
 
     klaw.enable.sso=true
 
-4. The below configuration is required to enable Azure AD based authentication
-
-    Find the registration of the third party account like 'github' or 'twitter' or any other and replace registrationid with that id below. ::
-
+4. To enable third-party account-based authentication, find the registration of the third-party account like `github `or `twitter`` or any other and replace ``registrationid`` with the third-party account ID in the following properties. Additionally,  provide the appropriate values for ClientId, Client secret, and Tenant Id:
+::
+    
     # Uncomment the below OAuth2 configuration to enable Google based authentication
     #spring.security.oauth2.client.registration.registrationid.client-id=
     #spring.security.oauth2.client.registration.registrationid.client-secret=
@@ -31,27 +29,21 @@ After clicking on the login button, user is provided with an third party account
     #spring.security.oauth2.client.registration.registrationid.scope=profile, email
     #klaw.sso.server.loginurl.registrationid=/oauth2/authorization/registrationid
 
-ClientId, Client secret, and Tenant Id can be retrieved from the third party account portal, and update the relevant redirect-uri.
 
-5. Default Super Admin configuration to approve users
+5. Configure an existing SUPERADMIN user from AD to approve new users in the following property for username:  
+::
 
-    # In case of AD or Azure AD or SSO, configure an existing SUPERADMIN user from AD in the below config for username. Ex : superadmin@domain.
     klaw.superadmin.default.username=superadmin@company.com
 
 
-* Sign in
-
-If the user is already signed up before, then user is directed to Klaw home page.
+6. If you have already signed up, you will be directed to the Klaw home page.
 
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
-Provide your credentials of the third party account.
+    Enter the credentials for the third party account.
 
 .. note:: Login page for third party account is not fully updated.
 
-* Sign Up
-
-For the first time login, user is presented with a signup form to fill in. On submission, a request is created for Klaw Administrator
-to approve or decline.
+7. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
 
 .. image:: /../../../_static/images/authentication/OAuthSignupForm.png
