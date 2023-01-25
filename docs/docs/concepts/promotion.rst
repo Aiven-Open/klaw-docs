@@ -18,7 +18,7 @@ Configure environment promotion
       Found under **Dashboard -> Settings**, the Superadmin user has the ability to define the ``Tenant Model``, which configures which environments promote to the next environment in your organization.
       Each resource Topic/Schema must already be created by the superadmin under ``Environments`` before being added to the ``Tenant Model`` or the server will reject the configuration.
       Below in the example we can see that the Kafka Topic environments have been defined as 'Dev' & 'TST' the order is also specified which is the order that will be enforced in the promotion of topics.
-      Similarily the Schema Registry environments have all been defined and placed in order.
+      Similarly, the Schema Registry environments have all been defined and placed in order.
 ```
 {
   "tenantModel":
