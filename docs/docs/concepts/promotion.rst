@@ -61,7 +61,7 @@ Configure environment promotion
         3. Select the **Schema** tab under the main Topic section.
         4. A button is available to promote a schema to a higher environment where a higher environment has been configured. ``Promote to [Next Environment]``
         5. Select the version of the Schema you wish to promote to the higher environment, this Schema will be available for the team to review when approving or declining the request.
-        6. Optionally if the Schema you wish to promote is not compatible with the existing schemas on that topic ``Force Register Schema`` can be used to register the Schema.
+        6. Optionally, if the Schema you wish to promote is not compatible with the existing schemas on that topic, ``Force Register Schema`` can be used to register the Schema.
         7. Confirm the promotion to the next environment by selecting ``Submit Promotion to [Next Environment]``
         8. A schema request is now created for team members to review and approve under Approvals.
 
