@@ -6,10 +6,10 @@ Authentication
    :hidden:
 
 
-   Login with username password<authentication/userpwd-db>
+   Klaw database account<authentication/userpwd-db>
    Windows AD<authentication/windows-ad>
    Azure AD<authentication/azure-ad>
-   Google Account<authentication/google-account>
-   Third party account<authentication/third-party-account>
+   Google account<authentication/google-account>
+   Third party accounts<authentication/third-party-account>
 
 How to Authenticate an user in Klaw.
