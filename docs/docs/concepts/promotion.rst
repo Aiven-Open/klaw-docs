@@ -54,7 +54,8 @@ Configure environment promotion
       The requester can select a particular version of the schema to promote from the lower environment to the higher environment.
 
 
-        How to Promote a Schema
+        How to Promote a Schema:
+        
         1. Select *Topics* on the navigation bar.
         2. Select the specific Kafka Topic you wish to promote a Schema to the higher environment.
         3. Select the **Schema** tab under the main Topic section.
