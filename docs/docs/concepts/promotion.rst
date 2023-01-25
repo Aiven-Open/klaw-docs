@@ -49,7 +49,7 @@ Configure environment promotion
         6. A Topic request is now created for team members to review and approve under Approvals.
 
     Schema Promotion
-      Under the ``Topic Overview`` the schema can be requested and viewed for an individual topic and as of Release 2.0.0 the ability to promote existing schemas to higher level environments is also available.
+      Under the ``Topic Overview``, the schema can be requested and viewed for an individual topic. As of Release 2.0.0, the ability to promote existing schemas to higher-level environments is also available. The requester can select a particular version of the schema to promote from the lower environment to the higher environment.
       The requester can select a particular version of the schema to promote from the lower environment to the higher environment.
 
 
