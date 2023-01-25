@@ -26,20 +26,20 @@ Before using Azure AD  to log in with Klaw, you need to make the following confi
     #spring.security.oauth2.client.registration.azure.scope=openid, profile, email
     #spring.security.oauth2.client.provider.azure-active-directory.issuer-uri=https://login.microsoftonline.com/{tenantid}/v2.0
 
+
 5. Configure an existing SUPERADMIN user from AD to approve new users in the following property for username:  
-
 ::
-    klaw.superadmin.default.username=superadmin@company.com
 
+    klaw.superadmin.default.username=superadmin@company.com
 
 6.  If you have already signed up, you will be directed to the Klaw home page. 
 
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
-    Enter your credentials in the Azure login window.
+Enter your credentials in the Azure login window.
 
 .. image:: /../../../_static/images/authentication/AzureLogin.png
 
 7. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
 
-    .. image:: /../../../_static/images/authentication/OAuthSignupForm.png
+.. image:: /../../../_static/images/authentication/OAuthSignupForm.png

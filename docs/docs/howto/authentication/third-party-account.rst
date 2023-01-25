@@ -16,7 +16,7 @@ To enable third-party login accounts,  you need to make the following configurat
     klaw.login.authentication.type=ad
 
 3. Enable SSO by setting the value to `true` in the following property: 
-
+::
     klaw.enable.sso=true
 
 4. To enable third-party account-based authentication, find the registration of the third-party account like `github `or `twitter`` or any other and replace ``registrationid`` with the third-party account ID in the following properties. Additionally,  provide the appropriate values for ClientId, Client secret, and Tenant Id:

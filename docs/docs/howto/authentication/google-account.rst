@@ -32,9 +32,10 @@ Before using Google account credentials to log in to Klaw, you need to make the 
     klaw.superadmin.default.username=superadmin@company.com
 
 6. If you have already signed up, you will be directed to the Klaw home page. 
+
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
-    Enter your credentials in the Google login window.
+Enter your credentials in the Google login window.
 
 .. image:: /../../../_static/images/authentication/GoogleLogin.png
 
