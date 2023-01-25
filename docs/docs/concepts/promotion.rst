@@ -2,7 +2,7 @@ Promotion
 =========
 
 
-Klaw allows users to control the creation of resources in their Kafka environment through a concept of promotion.
+Klaw allows users to control the creation of resources in their Kafka environment through the concept of promotion.
 
 - This adds an extra layer of security avoiding risk of manually duplicating entries across environments.
 - The requests are properly reviewed and verified by another pair of eyes, maintaining sanity of the application.
