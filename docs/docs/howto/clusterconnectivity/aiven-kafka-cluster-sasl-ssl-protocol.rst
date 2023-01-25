@@ -6,7 +6,7 @@ This section provides you with information on how to connect Aiven for Apache Ka
 Prerequisite
 ------------
 
-* Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
+* Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
 * A running Aiven for Apache Kafka® service. See `Getting started with Aiven for Apache Kafka for more information <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 * Configured `Java keystore and truststore containing the service SSL certificates <https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html>`_ to access Apache Kafka.  
 
@@ -30,7 +30,7 @@ Follow the steps below to configure and connect to an Aiven for Apache Kafka® a
 5. Add the cluster to the preferred environment. Click **Environments** from the **Environments** drop-down menu.
 6. Click **Add Environment** and enter the details to add your Kafka environment. 
 7. Enter an environment name, set the cluster you added from the drop-down list, and configure partitions and replication factor, and tenat (set to default). 
-8. Copy the **Cluster ID** from the **Clusters** page using the copy icon.
+8. Copy the **Cluster ID** from the **Clusters** page using the copy icon that is available on the right hand side of the each cluster row.
 9. Open the ``application.properties`` file located in the `klaw/cluster-api/src/main/resources` directory.
 10. Depending on the SASL mechanism you are using, copy one of the below properties, replace ``clusterid`` with the copied cluster id, and save the ``application.properties`` file.
 ::
