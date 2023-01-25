@@ -6,7 +6,7 @@ This section provides you with information on how to connect Aiven for Apache Ka
 Prerequisite
 ------------
 
-* Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
+* Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
 * A running Aiven for Apache Kafka® service. See `Getting started with Aiven for Apache Kafka for more information <https://docs.aiven.io/docs/products/kafka/getting-started.html>`_.
 * Configured `Java keystore and truststore containing the service SSL certificates <https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html>`_ to access Apache Kafka.  
 
