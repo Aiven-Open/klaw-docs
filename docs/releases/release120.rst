@@ -37,7 +37,7 @@ Login to Klaw and under Topics, click the banner with the preview link.
 
 Below is a screenshot of the redesigned UI
 
-.. image:: /../../../_static/images/NewInterfaceTopics.png
+.. image:: /../../../_static/images/topic/NewInterfaceTopics.png
 
 .. note:: 
     We are taking an incremental, feedback-driven approach in rolling out the new Klaw interfaces. By providing the feature flag to preview user interfaces, we would like you to share your valuable `feedback <https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md>`_. 
@@ -63,6 +63,6 @@ The **Request new topic** function in Klaw now includes an advanced topic config
 
 From the advanced topic configuration section, you can specify additional configuration options for Kafka topics, such as the cleanup policy, retention period, flush interval, and more.
 
-.. image:: /../../../_static/images/Requestnewtopic.png
+.. image:: /../../../_static/images/topic/Requestnewtopic.png
 
 .. seealso:: For a complete list of improvements, changelog, and to download the release, see `<https://github.com/aiven/klaw/releases/tag/v1.2.0>`_
