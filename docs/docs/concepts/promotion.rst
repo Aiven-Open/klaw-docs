@@ -10,7 +10,7 @@ Klaw allows users to control the creation of resources in their Kafka environmen
 - By maintaining a history of applied changes, easy track back on the evolution of a configuration.
 
 
-Promotion of resources are administered by the resource owners, each team has the ability to promote a topic, schema or connector from one environment to the next.
+The resource owners administer promotion of resources, and each team can promote a topic, schema or connector from one environment to the next.
 
 Configure environment promotion
 -------------------------------
