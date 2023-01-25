@@ -38,7 +38,7 @@ Configure environment promotion
 
     Topic Promotion
       Once a topic is created in the base environment it is then possible to promote this to the next environment.
-      This will create a promotion request that can be reviewed and approved or declined by the requesters team mates. Each created environment is able to be seen in the same ``Topic Overview`` where the topic can be promoted.
+      This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates. Each created environment can be seen in the same ``Topic Overview`` where the topic can be promoted.
 
         How to Promote a Topic
         1. Select *Topics* on the navigation bar.
