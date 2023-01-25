@@ -66,7 +66,7 @@ Configure environment promotion
         8. A schema request is now created for team members to review and approve under Approvals.
 
     How does Force Register work?
-        The ``Force Register Schema`` option, for use when a schema needs to be promoted to the higher environment but which does not meet the compatibility of the previous schemas.
+        When promoting a schema to a higher environment, the ``Force Register`` Schema option allows registration even if it is not compatible with previous schemas.
         If this option is selected, then klaw will change the compatibility of the topic to ``NONE``, register the new schema and then revert to the previous topic compatibility.
         If the topic compatibility is not set it will fall back to the global compatibility however Klaw will not change the global compatibility.
 
