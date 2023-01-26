@@ -7,7 +7,7 @@ This section provides you with information on how to connect Apache Kafka cluste
 
 Prerequisite
 ------------
-* Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
+* Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
 
 
 Configure and connect using SSL protocol
@@ -28,7 +28,7 @@ Follow the steps below to configure and connect to an Apache Kafka® cluster in 
 5. Add the cluster to the preferred environment. Click **Environments** from the **Environments** drop-down menu.
 6. Click **Add Environment** and enter the details to add your Kafka environment. 
 7. Enter an environment name, set the cluster you added from the drop-down list, and configure partitions and replication factor, and tenat (set to default).ß
-8. Copy the **Cluster ID** from the **Clusters** page using the copy icon.
+8. Copy the **Cluster ID** from the **Clusters** page using the copy icon that is available on the right hand side of the each cluster row.
 9. Open the ``application.properties`` file located in the `klaw/cluster-api/src/main/resources` directory.
 10. Configure the SSL properties to connect to Apache Kafka clusters by copying and editing the following lines:
 ::
