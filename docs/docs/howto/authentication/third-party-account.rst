@@ -38,12 +38,9 @@ To enable third-party login accounts,  you need to make the following configurat
 
 6. To add the login button to the third party provider please update application.properties with the following three entries.
 ::
-    # The login Url
-    klaw.sso.server.loginurl.provider.url=/oauth2/authorization/provider
-    # A URI https or local image, this is optional but can help users identify the correct provider.
-    klaw.sso.server.loginurl.provider.imageURI=
-    # The name of the provider, this simply allows users to easily identify the provider they wish to select.
-    klaw.sso.server.loginurl.github.ssoProvider=MyProvider
+    # A https link or local image location, this is optional but can help users identify the correct provider. where {provider} is your thirdparty vendor e.g. github or okta
+    spring.security.oauth2.client.registration.{provider}.imageURI=
+
 
 7. If you have already signed up, you will be directed to the Klaw home page.
 
