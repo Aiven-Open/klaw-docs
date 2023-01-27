@@ -34,11 +34,9 @@ Configure environment promotion
 
 ```
 
-
-
     Topic Promotion
-      Once a topic is created in the base environment it is then possible to promote this to the next environment.
-      This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates. Each created environment can be seen in the same ``Topic Overview`` where the topic can be promoted.
+      Once a topic is created in the base environment it is then possible to promote this to the next higher level environment.
+      This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates.``Topic Overview`` view where the topic can be promoted will show all of the environments the topic is now configured on.
 
         How to Promote a Topic:
         
@@ -67,8 +65,8 @@ Configure environment promotion
 
     How does Force Register work?
         When promoting a schema to a higher environment, the ``Force Register`` Schema option allows registration even if it is not compatible with previous schemas.
-        If this option is selected, then Klaw will change the compatibility of the topic to ``NONE``, register the new schema and then revert to the previous topic compatibility.
-        If the topic compatibility is not set, it will fall back to the global compatibility. However, Klaw will not change the global compatibility.
+        If this option is selected, then Klaw will change the compatibility of the subject (topic) to ``NONE``, register the new schema and then revert to the previous subject compatibility.
+        If the subject compatibility is not set, it will fall back to the global compatibility. However, Klaw will not change the global compatibility.
 
 
 Note that any request raised cannot be approved by the same user, rather it has to be a different user from the same team.

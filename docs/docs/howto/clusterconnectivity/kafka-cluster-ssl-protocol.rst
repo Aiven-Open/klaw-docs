@@ -7,7 +7,7 @@ This section provides you with information on how to connect Apache Kafka cluste
 
 Prerequisite
 ------------
-* Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
+* Set up the connection between the Klaw APIs (Core API and Cluster API), see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate.
 
 
 Configure and connect using SSL protocol
