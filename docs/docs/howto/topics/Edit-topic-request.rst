@@ -10,7 +10,7 @@ Edit a Topic
     2. Select the specific Kafka Topic you wish to edit.
     3. Select the edit button on the topic. It exists on the right hand side of the Topic by Environment view. An edit icon will exist on the lowest environment only. You will be brought to a new 'Edit Topic' view.
     4. In this view the topic can be edited to have additional advanced configuration, or the number of Partitions and Replication factor can be changed.
-      a)  See all advanced Topic configuration options in `Apaches documentation<https://kafka.apache.org/documentation/#topicconfigs>`_
+      a) See all advanced Topic configuration options in `Apaches documentation<https://kafka.apache.org/documentation/#topicconfigs>`_
       b) Select the 'i' button beside an advanced configuration entry to be taken directly to that entry in the Apache documentation.
     5. Make all the changes to existing configuration and/or add additional configuration.
     6. Submit the configuration update request by selecting 'Submit Update'.
