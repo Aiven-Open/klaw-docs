@@ -8,6 +8,7 @@ Once a topic is created in the base environment it is then possible to delete th
 1. Select *Topics* on the navigation bar.
 2. Select the specific Kafka Topic you wish to delete.
 3. Select the red X on the right hand side of the topic by environment table at the top of the page.
+
 .. note::
    Klaw enforces the deletion of the environments from highest to lowest so the highest level environment only will be available for deletion.
 
