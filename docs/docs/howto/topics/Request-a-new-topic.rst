@@ -18,7 +18,7 @@ Making A Request
 2. Select the environment, this is the kafka environment to which the topic will be created in.
 
 .. note::
-In most cases you will want to start with the lowest environment and use the promotion feature to higher environments.
+   In most cases you will want to start with the lowest environment and use the promotion feature to higher environments.
 
 3. Name your topic, if your organization has naming conventions follow them otherwise Klaw will just enforce a minimum 5 character name.
 4. Select the number of Topic Partitions you would like for your topic. Learn more about `partitions <https://kafka.apache.org/intro#intro_concepts_and_terms>`_

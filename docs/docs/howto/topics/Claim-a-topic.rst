@@ -12,7 +12,7 @@ Claim a topic
 3. A 'Claim Topic' button will be available on the top right of the Topic by Environment view.
 
 .. note::
-This option will only be available on topics for which your team does not already own.
+   This option will only be available on topics for which your team does not already own.
 
 4. Confirm you wish to claim the topic.
 5. This will create a single request to claim the topic across all environments

@@ -13,7 +13,7 @@ Filtering the Requests
 For easy navigation use the dropdown to filter the requests which you are viewing by the status of the request.
 
 - all
- View all requests that you have created.
+   View all requests that you have created.
 - created
  View all requests that have been created but are yet to be reviewed and approved or declined.
  These are your active requests which have yet to be actioned.
