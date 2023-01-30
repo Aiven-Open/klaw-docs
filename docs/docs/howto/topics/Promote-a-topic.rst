@@ -6,12 +6,13 @@ It ensures a topic can be created in the lowest environment and then promoted to
 
 Prerequisites
 --------------
-The Superadmin must ensure all prerequisites are met before this functionality is used see :doc:`promotion`
+The Superadmin must ensure all prerequisites are met before this functionality is used see :doc:`../concepts/promotion`
 
 
 Promoting a topic
 -----------------------------
 Topic Promotion
+
 Once a topic is created in the base environment it is then possible to promote this to the next environment.
 This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates. Each created environment can be seen in the same ``Topic Overview`` where the topic can be promoted.
 

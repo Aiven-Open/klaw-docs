@@ -1,14 +1,15 @@
 Reuest A New Topic
 ==================
 
-Request a new topic to be created in Kafka is a simple and speedy process.
+Requesting a new topic to be created in Kafka is a simple and speedy process.
 
 The team that requests a topic will automatically become the owner of that topic and have the ability to approve or deny any Kafka Connector, Schemas or Access Control List requests which are made against the topic.
 
 Prerequisetes
 -----------------------------------------
-The Superadmin must configure the environment within klaw see :doc:`clusters-environments` for the steps to configure the environments.
-The Superadmin must also update the Server Config to include the environments see :doc:`configure-klaw-wizard` for the steps to configure the server settings..
+- The Superadmin must configure the environment within klaw see :doc:`../concepts/clusters-environments` for the steps to configure the environments.
+
+- The Superadmin must also update the Server Config to include the environments see :doc:`../installation/configure-klaw-wizard` for the steps to configure the server settings.
 
 
 Making A Request
