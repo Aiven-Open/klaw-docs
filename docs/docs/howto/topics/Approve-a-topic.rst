@@ -61,6 +61,6 @@ The Status will show the current state of the request
  - declined
  - deleted
 - Approving Info
- This lists the team and the team members who can approve the request. 
+ This lists the team and the team members who can approve the request.
 .. note::
    Note that if you create a request you can never approve your own request and so you will not be listed as an approvier.
