@@ -13,6 +13,7 @@ Klaw How to do things
    Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>
+   Topics<howto/topics>
    Others<howto/others>
 
 
