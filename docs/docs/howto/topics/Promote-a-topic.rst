@@ -16,7 +16,7 @@ Once a topic is created in the base environment it is then possible to promote t
 This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates. Each created environment can be seen in the same ``Topic Overview`` where the topic can be promoted.
 
 How to Promote a Topic:
-::
+
     1. Select *Topics* on the navigation bar.
     2. Select the specific Kafka Topic you wish to promote to the higher environment.
     3. A button is available to promote the topic to the next environment where a higher environment has been configured. ``Promote to [Next Environment]``
