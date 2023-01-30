@@ -15,8 +15,8 @@ The resource owners administer promotion of resources, and each team can promote
 Configure environment promotion
 -------------------------------
 Server Configuration
-Found under **Dashboard -> Settings**, the Superadmin user has the ability to define the ``Tenant Model``, which configures which environments promote to the next environment in your organization.
-Each resource Topic/Schema must already be created by the superadmin under ``Environments`` before being added to the ``Tenant Model`` or the server will reject the configuration.
+Found under **Dashboard -> Settings**, the Superadmin user has the ability to define the **Tenant Model**, which configures which environments promote to the next environment in your organization.
+Each resource Topic/Schema must already be created by the superadmin under **Environments** before being added to the **Tenant Model** or the server will reject the configuration.
 The below example defines the Kafka Topic environments as 'Dev' & 'TST' and specifies the order that will be enforced in the promotion of topics.
 Similarly, the Schema Registry environments have all been defined and placed in order.
 ::
@@ -34,11 +34,9 @@ Similarly, the Schema Registry environments have all been defined and placed in 
 
 Topic Promotion
 Once a topic is created in the base environment it is then possible to promote this to the next higher level environment.
-This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates.``Topic Overview`` view where the topic can be promoted will show all of the environments the topic is now configured on.
+This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates.**Topic Overview** view where the topic can be promoted will show all of the environments the topic is now configured on.
 
     How to Promote a Topic:
-::
-
         1. Select *Topics* on the navigation bar.
         2. Select the specific Kafka Topic you wish to promote to the higher environment.
         3. A button is available to promote the topic to the next environment where a higher environment has been configured. **Promote to [Next Environment]**
@@ -52,8 +50,6 @@ This will create a promotion request that can be reviewed, approved, or declined
 
 
     How to Promote a Schema:
-::
-
         1. Select *Topics* on the navigation bar.
         2. Select the specific Kafka Topic you wish to promote a Schema to the higher environment.
         3. Select the **Schema** tab under the main Topic section.
@@ -64,7 +60,6 @@ This will create a promotion request that can be reviewed, approved, or declined
         8. A schema request is now created for team members to review and approve under Approvals.
 
     How does Force Register work?
-::
         When promoting a schema to a higher environment, the **Force Register** Schema option allows registration even if it is not compatible with previous schemas.
         If this option is selected, then Klaw will change the compatibility of the subject (topic) to **NONE**, register the new schema and then revert to the previous subject compatibility.
         If the subject compatibility is not set, it will fall back to the global compatibility. However, Klaw will not change the global compatibility.
