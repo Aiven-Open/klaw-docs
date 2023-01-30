@@ -65,15 +65,15 @@ The request contains a number of fields to help the approver make an informed de
 - Description
    This will include details provided by the topic creator.
 
--  Remmarks
-   - This is any remarks on the request by the request creator.
+- Remarks
+   This is any remarks on the request by the request creator.
 
 - Status
    The Status will show the current state of the request
-   - created
-   - approved
-   - declined
-   - deleted
+   created
+   approved
+   declined
+   deleted
 
 - Approving Info
    This lists the team and the team members who can approve the request.
