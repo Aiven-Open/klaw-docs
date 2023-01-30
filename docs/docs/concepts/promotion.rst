@@ -35,7 +35,7 @@ Similarly, the Schema Registry environments have all been defined and placed in 
 Topic Promotion
 Once a topic is created in the base environment it is then possible to promote this to the next higher level environment.
 This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates.``Topic Overview`` view where the topic can be promoted will show all of the environments the topic is now configured on.
-.. glossary::
+::
     How to Promote a Topic:
 
         1. Select *Topics* on the navigation bar.
