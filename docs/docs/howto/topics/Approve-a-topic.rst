@@ -14,6 +14,7 @@ Approve the request
 .. note::
 In the event of any issue in the creation of the topic, the request will stay in the approvals view so that it may be re-approved and provisioned when the issue is resolved.
 
+
 Declining a Request
 -------------------
 
@@ -28,39 +29,39 @@ Reviewing the Request
 
 The request contains a number of fields to help the approver make an informed decision and also keeping an audit record of the request and the topic details within Klaw.
 
-- Cluster
-Establishes the cluster environment for which the request is being made.
-- Partitions
-The number of Partitions this topic has in this environment.
-- Replication Factor
+#. Cluster
+   #. Establishes the cluster environment for which the request is being made.
+#. Partitions
+   #. The number of Partitions this topic has in this environment.
+#. Replication Factor
 The replication factor set for this topic in this environment.
-- Requestor
+#. Requestor
 The person who has raised this request, in most cases this will be a fellow team member but in the case of a 'claim topic' request it would be a person from another team.
-- Team
+#. Team
 The team who has raised this request, in most cases this will be a your team but in the case of a 'claim topic' request it would be another team.
-- Request Type
+#. Request Type
 The type of request being requested these take the form of an action.
-- Create
+#. Create
 Create a new topic Request is in this category.
-- Delete
+#. Delete
 Delete a topic request is in this category.
-- Update
+#. Update
 Claim a topic and edit a topic are both in this category.
-- Date Requested
+#. Date Requested
 This is a timestamp of when the request was created
--  Other Topic Configs
+#.  Other Topic Configs
 Advanced configuration will appear in this space such as those described here in `Apaches documentation <https://kafka.apache.org/documentation/#topicconfigs>`_
--  Description
+#.  Description
 This will include details provided by the topic creator.
--  Remmarks
-This is any remarks on the request by the request creator.
-- Status
+#.  Remmarks
+   #. This is any remarks on the request by the request creator.
+#. Status
 The Status will show the current state of the request
- - created
- - approved
- - declined
- - deleted
-- Approving Info
+   #. created
+   #. approved
+   #. declined
+   #. deleted
+#. Approving Info
  This lists the team and the team members who can approve the request.
 .. note::
    Note that if you create a request you can never approve your own request and so you will not be listed as an approvier.
