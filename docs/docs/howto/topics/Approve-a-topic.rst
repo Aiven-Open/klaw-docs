@@ -10,6 +10,7 @@ Approve the request
 1. On login a pop up will appear to let you know their are 'Pending Requests' you can view them directly from selecting 'Yes, show me!' or select the 'Approve' navigation item and select topic requests.
 2. Once you are viewing the topic requests that are pending approval, the approver can view all of the information associated with the topic and select the tick button to approve a request.
 3. If you approve the request it will immediately attempt to provision the topic.
+
 .. note::
 In the event of any issue in the creation of the topic, the request will stay in the approvals view so that it may be re-approved and provisioned when the issue is resolved.
 
@@ -48,7 +49,7 @@ Claim a topic and edit a topic are both in this category.
 - Date Requested
 This is a timestamp of when the request was created
 -  Other Topic Configs
-Advanced configuration will appear in this space such as those described here in `Apaches documentation<https://kafka.apache.org/documentation/#topicconfigs>_ `
+Advanced configuration will appear in this space such as those described here in `Apaches documentation <https://kafka.apache.org/documentation/#topicconfigs>`_
 -  Description
 This will include details provided by the topic creator.
 -  Remmarks
@@ -60,6 +61,6 @@ The Status will show the current state of the request
  - declined
  - deleted
 - Approving Info
- This lists the team and the team members who can approve the request.
+ This lists the team and the team members who can approve the request. 
 .. note::
    Note that if you create a request you can never approve your own request and so you will not be listed as an approvier.
