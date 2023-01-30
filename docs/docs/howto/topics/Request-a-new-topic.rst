@@ -7,7 +7,7 @@ The team that requests a topic will automatically become the owner of that topic
 
 Prerequisetes
 -----------------------------------------
-- The Superadmin must configure the environment within klaw see :doc:`Environments <../concepts/clusters-environments>` for the steps to configure the environments.
+- The Superadmin must configure the environment within klaw see :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
 
 - The Superadmin must also update the Server Config to include the environments see :doc:`Configure Klaw <../installation/configure-klaw-wizard>` for the steps to configure the server settings.
 
