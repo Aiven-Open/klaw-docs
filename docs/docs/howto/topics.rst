@@ -6,8 +6,10 @@ Topics are a fundamental part of Kafka eco system and the management of topics a
 Request a new topic<topics/Request-a-new-topic>
 Approve a topic<topics/Approve-a-topic>
 Promote a topic<topics/Promote-a-topic>
-
-
+Claim a topic<topics/Clain-a-topic>
+Edit a Topic<topics/Edit-a-topic>
+Delete a topic<topics/Delete-a-topic>
+My Topic Requests<topics/my-topic-requests>
 
 What is a topic?
 --------------
