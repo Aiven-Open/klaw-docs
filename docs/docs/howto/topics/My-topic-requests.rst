@@ -10,7 +10,7 @@ Filtering the Requests
 -----------------------
 
 For easy navigation use the dropdown to filter the requests which you are viewing by the status of the request.
-.. glossary::
+::
     - all
         View all requests that you have created.
     - created

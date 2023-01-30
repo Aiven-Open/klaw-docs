@@ -13,7 +13,7 @@ The Superadmin must also update the Server Config to include the environments se
 
 Making A Request
 -----------------------------------------
-.. glossary::
+::
     1. On the navigation bar select 'My Requests' and in the drop down select 'Request Topic'
     2. Select the environment, this is the kafka environment to which the topic will be created in.
     i. In most cases you will want to start with the lowest environment and use the promotion feature to higher environments.

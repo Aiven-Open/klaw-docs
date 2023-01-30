@@ -25,10 +25,9 @@ Reviewing the Request
 ---------------------
 
 The request contains a number of fields to help the approver make an informed decision and also keeping an audit record of the request and the topic details within Klaw.
-.. glossary::
+::
     - Cluster
         Establishes the cluster environment for which the request is being made.
-
     - Partitions
         The number of Partitions this topic has in this environment.
     - Replication Factor
@@ -61,5 +60,5 @@ The request contains a number of fields to help the approver make an informed de
             - deleted
             - Approving Info
     This lists the team and the team members who can approve the request.
-     .. note::
+.. note::
        Note that if you create a request you can never approve your own request and so you will not be listed as an approvier.
