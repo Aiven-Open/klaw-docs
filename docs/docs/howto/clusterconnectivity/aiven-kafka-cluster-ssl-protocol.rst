@@ -42,7 +42,9 @@ Follow the steps below to configure and connect to an Aiven for Apache Kafka® a
         clusterid.kafkassl.truststore.pwd=klaw1234
         clusterid.kafkassl.keystore.type=pkcs12
         clusterid.kafkassl.truststore.type=JKS
-    
+
+.. note::
+      It is possible to configure JKS, PKCS12 and PEM certificate types.
 
 - For the lines starting with ``clusterid``, replace ``clusterid`` with the Klaw Cluster ID.
 - Replace ``client.keystore.p12`` with the path for the keystore and ``klaw1234`` with the password configured for the keystore file.
