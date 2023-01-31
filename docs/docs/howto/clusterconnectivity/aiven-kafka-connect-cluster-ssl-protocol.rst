@@ -3,6 +3,7 @@ Connect with Aiven for Apache Kafka® Connect service
 Aiven for Apache Kafka® Connect is a fully managed distributed Apache Kafka® integration component, deployable in the cloud of your choice. Apache Kafka Connect lets you integrate your existing data sources and sinks with Apache Kafka.
 
 This section provides you with information on how to connect Aiven for Apache Kafka Connect service with Klaw using SSL protocol. 
+
 Prerequisite
 ------------
 * Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
