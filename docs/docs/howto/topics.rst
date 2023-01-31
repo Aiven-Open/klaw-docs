@@ -16,7 +16,7 @@ Topics are a fundamental part of the Kafka ecosystem, and the management of topi
     Delete a topic<topics/Delete-a-topic>
     My Topic Requests<topics/My-topic-requests>
 
-Concept of Topics in Kafka
+Topics in Kafka
 ---------------------------
 
 Kafka uses topics as a core concept, as a grouping mechanism to organize and store messages or events.
