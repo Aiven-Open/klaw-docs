@@ -36,7 +36,13 @@ To enable third-party login accounts,  you need to make the following configurat
     klaw.superadmin.default.username=superadmin@company.com
 
 
-6. If you have already signed up, you will be directed to the Klaw home page.
+6. To add the login button to the third party provider please update application.properties with the following three entries.
+::
+    # A https link or local image location, this is optional but can help users identify the correct provider. where {provider} is your thirdparty vendor e.g. github or okta
+    spring.security.oauth2.client.registration.{provider}.imageURI=
+
+
+7. If you have already signed up, you will be directed to the Klaw home page.
 
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
@@ -44,6 +50,6 @@ To enable third-party login accounts,  you need to make the following configurat
 
 .. note:: Login page for third party account is not fully updated.
 
-7. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
+8. If this is your first time logging in, you will be presented with a signup form to fill in. On submission, a request will be created for the Klaw Administrator to approve or decline.
 
 .. image:: /../../../_static/images/authentication/OAuthSignupForm.png
