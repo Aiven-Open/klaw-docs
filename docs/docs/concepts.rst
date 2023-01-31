@@ -12,5 +12,6 @@ Klaw Concepts
    Synchronize<concepts/synchronize>
    Metastore data<concepts/metastore>
    Advanced configuration<concepts/config>
+   Promotion<concepts/promotion>
 
 Klaw concepts ..
