@@ -1,7 +1,7 @@
 Topics
 ======
 
-Topics are a fundamental part of Kafka eco system and the management of topics are one of the core and richest features available in Klaw.
+Topics are a fundamental part of the Kafka ecosystem, and the management of topics is one of the core and richest features available in Klaw.
 
 .. toctree::
    :maxdepth: 3
@@ -16,28 +16,25 @@ Topics are a fundamental part of Kafka eco system and the management of topics a
     Delete a topic<topics/Delete-a-topic>
     My Topic Requests<topics/My-topic-requests>
 
-What is a topic?
---------------
+Concept of Topics in Kafka
+---------------------------
 
-A topic is a core concept of Kafka and works as a grouping mechanism for messages or events to order and store those messages.
-For a deeper understanding of what a topic is we recommend reading `Kafka Main Concepts and Terminology <https://kafka.apache.org/intro#intro_concepts_and_terms>`_
-
-
-Why should we manage topics?
-----------------------------
-
-Topics allow the producers to create events which can be then read by consumers. Using Kafka this is done in an incredibly fast, secure and durable way.
-Due to the nature of Kafka it also means that if a producer or a consumer is unable to operate for a period of time (maintenance,faults or other unexpected reasons) it is decoupled from the wider environment and does not impact the entire system.
-A consumer can still consume messages if there is a backlog of events to be processed or a producer can still create events if a consumer is not currently operating and that consumer can pick up from the last message it successfully processed.
-
-This is an incredibly powerful capability, however there needs to be structure to the messages and the producer should be able to ensure the producers have the right to process messages for PII or other sensitive reasons.
-As such Access Control Lists and Schema Registries are tools that have been created to ensure that the Kafka environment can be used securely and with proper governance to ensure data privacy and data fidelity.
-At the core of all this functionality is the 'Topic' and assigning proper ownership of the topic is crucial to ensuring it is used correctly.
+Kafka uses topics as a core concept, as a grouping mechanism to organize and store messages or events.
+For a deeper understanding of topics, see `Kafka Main Concepts and Terminology <https://kafka.apache.org/intro#intro_concepts_and_terms>`_
 
 
-How does Klaw manage topics?
------------------------------
+Topic management in Kafka
+---------------------------
 
-Klaw uses the concept of a 'team' in the ownership structure. This team creates the request to create the topic in the development environment and has the ability to promote that topic through each of the various environments up to and including production.
-Any requests against this topic are then made to the team, for example another team may want to consume events from the topic and a request is made and must be approved or declined by the team that owns the topic.
-Similarly if the team wants to enforce a schema on this topic it must be requested and reviewed by another team member and approved or declined by the team member.
+Topics allow the producers to create events that consumers can then read. Using Kafka, this is done in an incredibly fast, secure, and durable way. Due to the nature of Kafka, it also means that if a producer or consumer cannot operate for a period of time (maintenance, faults or other unexpected reasons), it is decoupled from the wider environment and does not impact the entire system. 
+A consumer can still read messages even if there is a backlog of events waiting to be processed, and a producer can still generate events even if the consumer is temporarily inactive. The consumer can easily resume the last processed message once it starts operating again.
+
+This capability is incredibly powerful. However, it is essential to implement proper governance and security measures to ensure that the messages are correctly structured and the producers have the necessary rights to process sensitive information like PII. This is where Access Control Lists and Schema Registries come into play. They help secure the Kafka environment and ensure that data privacy and fidelity are maintained. The key to ensuring all these security measures are effective is properly assigning ownership of the topic, which serves as the central point for all the functionality in the Kafka ecosystem.
+
+
+Topic management in Klaw
+-------------------------
+
+Klaw uses the concept of a **Team** for topic ownership and management. The team creates the request to create a topic in the development environment and has the ability to promote it to other environments, including production. 
+For any requests related to a topic, the team that owns the topic is responsible for making the final decision, such as approving or declining a request from another team to consume events from the topic. 
+Similarly, if the team wants to enforce a schema on the topic, the team submits a request, and another team member reviews and approves or declines it.

@@ -1,6 +1,6 @@
-Promote A Topic
+Promote a Topic
 ===============
-Promotion is one of the core tenants of Klaw and allows better governance, administration and control of topics.
+Promotion is one of the core tenants of Klaw and allows better governance, administration, and control of topics.
 It ensures a topic can be created in the lowest environment and then promoted to higher environments as required.
 
 
@@ -9,18 +9,17 @@ Prerequisites
 The Superadmin must ensure all prerequisites are met before this functionality is used see :doc:`Promotion <../../concepts/promotion>`
 
 
-Promoting a topic
------------------------------
 Topic Promotion
+----------------
 
-Once a topic is created in the base environment it is then possible to promote this to the next environment.
-This will create a promotion request that can be reviewed, approved, or declined by the requester's teammates. Each created environment can be seen in the same ``Topic Overview`` where the topic can be promoted.
+Once a topic is created in the base environment, it is possible to promote this to the next environment.
+This will create a promotion request that the requester's teammates can review, approve, or decline. Each created environment can be seen in the same **Topic Overview** where the topic can be promoted.
 
-How to Promote a Topic:
+To promote a topic, follow these steps: 
 
-1. Select *Topics* on the navigation bar.
+1. In Klaw, select **Topics** on the navigation bar.
 2. Select the specific Kafka Topic you wish to promote to the higher environment.
-3. A button is available to promote the topic to the next environment where a higher environment has been configured. ``Promote to [Next Environment]``
-4. Configure the number of Partitions and Replication Factor for the higher environment in the drop downs provided.
-5. Confirm the promotion to the next environment by selecting ``Submit Promotion to [Next Environment]``
-6. A Topic request is now created for team members to review and approve under Approvals.
+3. Click the **Promote to [Next Environment]** button to promote the topic to the next environment. 
+4. Configure the number of Partitions and Replication Factor for the higher environment in the drop-downs provided.
+6. Click **Submit Promotion to [Next Environment]** to confirm the promotion to the next environment. 
+7. A topic request is now created for team members to review and approve under **Approvals** view.
