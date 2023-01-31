@@ -69,10 +69,10 @@ The request contains various fields to help the approver make an informed decisi
 
 - Status
    The Status will show the current state of the request
-   created
-   approved
-   declined
-   deleted
+    - created
+    - approved
+    - declined
+    - deleted
 
 - Approving Info
    This lists the team and the team members who can approve the request.

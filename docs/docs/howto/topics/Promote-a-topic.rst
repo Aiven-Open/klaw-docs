@@ -21,5 +21,5 @@ To promote a topic, follow these steps:
 2. Select the specific Kafka Topic you wish to promote to the higher environment.
 3. Click the **Promote to [Next Environment]** button to promote the topic to the next environment. 
 4. Configure the number of Partitions and Replication Factor for the higher environment in the drop-downs provided.
-6. Click **Submit Promotion to [Next Environment]** to confirm the promotion to the next environment. 
-7. A topic request is now created for team members to review and approve under **Approvals** view.
+5. Click **Submit Promotion to [Next Environment]** to confirm the promotion to the next environment.
+6. A topic request is now created for team members to review and approve under **Approvals** view.
