@@ -1,12 +1,12 @@
 Authorization
 =============
 
-Klaw users have roles defined within klaw like 'USER' or 'SUPERADMIN' which come by default. When a new user is added, a role is assigned to the user.
-Each role has a bunch of permissions associated to it.
+In Klaw, users are assigned default roles such as **USER** or **SUPERADMIN** when they are added to the system. Each role has specific permissions associated to it.
 
-- Roles in AD
+Retrive roles in AD
+--------------------
 
-For users defined in Azure Active directory/third party SSO provider, it is possible to retrieve the roles from the provider.
+For users defined in Azure Active Directory or third-party SSO providers, roles can be retrieved from the provider by setting the relevant configurations in the ``application.properties`` file.
 
 Relevant configuration::
 
@@ -16,4 +16,4 @@ Relevant configuration::
     # and looks for matching role in Klaw. Make sure only one matching role exists. If nothing exists, user is denied login.
     klaw.enable.authorization.ad=true
 
-After the above configuration is done, make sure your AD/SSO provider has configured roles like 'ROLE_USER' or 'APPROLE_USER' etc, where the actual role matches after the '_', with klaw roles.
+After the configuration is completed, ensure that the AD/SSO provider has set up roles such as **ROLE_USER** or **APPROLE_USER**, where the actual role is indicated after the "_". This should match the Klaw roles.
