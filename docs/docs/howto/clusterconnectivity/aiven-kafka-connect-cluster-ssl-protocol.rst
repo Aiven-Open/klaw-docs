@@ -3,6 +3,7 @@ Connect with Aiven for Apache Kafka® Connect service
 Aiven for Apache Kafka® Connect is a fully managed distributed Apache Kafka® integration component, deployable in the cloud of your choice. Apache Kafka Connect lets you integrate your existing data sources and sinks with Apache Kafka.
 
 This section provides you with information on how to connect Aiven for Apache Kafka Connect service with Klaw using SSL protocol. 
+
 Prerequisite
 ------------
 * Set up the connection between the Klaw APIs (Core API and Cluster API) to use secure SSL, see :doc:`klaw-core-with-clusterapi`. This involves configuring the ``klaw.clusterapi.url`` setting in the Klaw UI and testing the connectivity to ensure the two APIs can communicate over https.
@@ -29,28 +30,12 @@ Follow the steps below to configure and connect an Aiven for Apache Kafka Connec
 4. Click **Save**. 
 5. Add the cluster to the preferred environment. Click **Environments** from the **Environments** drop-down menu.
 6. In the **Kafka Connect Environments** section, click **Add Environment** and enter the details to add your schema registry environment. Click **Save**. 
-7. Open the ``application.properties`` file for `core`` (klaw/core/src/main/resources) and `cluster-api` (klaw/cluster-api/src/main/resources) modules.
-8. Copy the **Cluster ID** from the **Clusters** page using the copy icon that is available on the right hand side of the each cluster row.
-9. Configure the SSL properties to connect to Schema Registry cluster by copying and editing the following lines. Where the **clusterid** should be replaced by the value copied in step 8.
-::    
-    
-        clusterid.kafkassl.keystore.location=client.keystore.p12
-        clusterid.kafkassl.keystore.pwd=klaw1234
-        clusterid.kafkassl.key.pwd=klaw1234
-        clusterid.kafkassl.truststore.location=client.truststore.jks
-        clusterid.kafkassl.truststore.pwd=klaw1234
-        clusterid.kafkassl.keystore.type=pkcs12
-        clusterid.kafkassl.truststore.type=JKS
-    
-- For the lines starting with ``clusterid``, replace ``clusterid`` with the Klaw Cluster ID.
-- Replace ``client.keystore.p12`` with the path for the keystore and ``klaw1234`` with the password configured for the keystore file.
-- Replace ``client.truststore.jks`` with the path for the truststore and ``klaw1234`` with the password configured for the truststore file.
-- Save the ``application.properties`` file.
-10. Additionally, in the `cluster-api` (klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console::
+7. Copy the **Cluster ID** from the **Clusters** page using the copy icon that is available on the right hand side of the each cluster row.
+8. In the ``application.properties`` file for `cluster-api` (klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console::
 ::
     
     clusterid.klaw.kafkaconnect.credentials=username:password
 
 Replace clusterid with Klaw cluster Id copied from Klaw UI.
 
-11. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Aiven for Apache Kafka Connect service using SSL protocol.
+9. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to the Aiven for Apache Kafka Connect service using SSL protocol.
