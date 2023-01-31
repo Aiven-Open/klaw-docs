@@ -38,7 +38,7 @@ The request contains various fields to help the approver make an informed decisi
    The replication factor set for this topic in this environment.
 
 - Requestor
-   T The person who has raised this request. In most cases, this will be a fellow team member, but in the case of a *claim topic* request, it would be a person from another team.
+   The person who has raised this request. In most cases, this will be a fellow team member, but in the case of a *claim topic* request, it would be a person from another team.
 
 - Team
    The team who has raised this request. In most cases will be your team, but in the case of a *claim topic* request, it would be another team.
