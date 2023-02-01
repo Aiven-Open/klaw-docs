@@ -49,7 +49,7 @@ With this release, users can now be authorized through an OAuth2 Provider or Act
 
 For more information, see `Authorization <https://www.klaw-project.io/docs/howto/authorization>`_.
 
-To enable the authorization feature, set the below property to value ``true`` in the application.properties file:
+To enable the authorization feature, set the below property to value ``true`` in the ``application.properties`` file:
 ::
 
   klaw.enable.authorization.ad = true
