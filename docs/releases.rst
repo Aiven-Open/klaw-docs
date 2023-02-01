@@ -6,6 +6,7 @@ Klaw Releases
    :hidden:
 
 
+   Release 2.0.0<releases/release200>
    Release 1.2.0<releases/release120>
    Release 1.1.0<releases/release110>
    Release 1.0.0<releases/release100>
@@ -13,6 +14,7 @@ Klaw Releases
 
 Klaw team intends to release once in every two months. It could be patch, minor or a major release.
 
+- :doc:`/releases/release200`
 - :doc:`/releases/release120`
 - :doc:`/releases/release110`
 - :doc:`/releases/release100`
