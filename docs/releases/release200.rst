@@ -29,7 +29,7 @@ With the switch to React, this release features a redesign of the following user
 
 .. image:: /../../../_static/images/topic/RequestTopic-react.png
 
-To preview the new Klaw user user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to true:
+To preview the new Klaw user user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
 ::
     # Enable new Klaw user interface
     klaw.coral.enabled=true
@@ -49,7 +49,7 @@ With this release, users can now be authorized through an OAuth2 Provider or Act
 
 For more information, see `Authorization <https://www.klaw-project.io/docs/howto/authorization>`_.
 
-To enable the authorization feature, set the below property to value "true" in the application.properties file:
+To enable the authorization feature, set the below property to value ``true`` in the application.properties file:
 ::
 
   klaw.enable.authorization.ad = true
