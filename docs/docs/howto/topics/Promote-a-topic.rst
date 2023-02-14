@@ -1,6 +1,6 @@
 Promote a Topic
 ===============
-Promotion is one of the core tenants of Klaw and allows better governance, administration, and control of topics.
+Promotion is one of the core features of Klaw and allows better governance, administration, and control of topics.
 It ensures a topic can be created in the lowest environment and then promoted to higher environments as required.
 
 

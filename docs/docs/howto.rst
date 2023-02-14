@@ -12,6 +12,8 @@ Klaw How to do things
    Authorization<howto/authorization>
    Kafka Cluster Migration<howto/kafka-cluster-migration>
    Topics<howto/topics>
+   Subscriptions<howto/subscriptions>
+   Schemas<howto/schemas>
    Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>

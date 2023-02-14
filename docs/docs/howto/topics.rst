@@ -17,14 +17,14 @@ Topics are a fundamental part of the Kafka ecosystem, and the management of topi
     My Topic Requests<topics/My-topic-requests>
 
 Topics in Kafka
----------------------------
+---------------
 
 Kafka uses topics as a core concept, as a grouping mechanism to organize and store messages or events.
 For a deeper understanding of topics, see `Kafka Main Concepts and Terminology <https://kafka.apache.org/intro#intro_concepts_and_terms>`_
 
 
 Topic management in Kafka
----------------------------
+-------------------------
 
 Topics allow the producers to create events that consumers can then read. Using Kafka, this is done in an incredibly fast, secure, and durable way. Due to the nature of Kafka, it also means that if a producer or consumer cannot operate for a period of time (maintenance, faults or other unexpected reasons), it is decoupled from the wider environment and does not impact the entire system. 
 A consumer can still read messages even if there is a backlog of events waiting to be processed, and a producer can still generate events even if the consumer is temporarily inactive. The consumer can easily resume the last processed message once it starts operating again.

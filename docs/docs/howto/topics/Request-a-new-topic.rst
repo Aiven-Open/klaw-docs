@@ -6,14 +6,14 @@ The process of requesting a new topic to be created in Kafka is simple and speed
 The team that requests a topic will automatically become the topic owner and can approve or deny any Kafka Connector, Schemas, or Access Control List requests made against the topic.
 
 Prerequisites
------------------
+-------------
 - The Superadmin must configure the environment within Klaw,  see :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
 
 - The Superadmin must also update the Server Config to include the environments, see :doc:`Configure Klaw <../installation/configure-klaw-wizard>` for the steps to configure the server settings.
 
 
 Make a request
----------------
+--------------
 
 1. In Klaw, select **My Requests** on the navigation bar, and then select **Request Topic** in the drop-down.
 2. Select the environment. This is the Kafka environment in which the topic will be created.
