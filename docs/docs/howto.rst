@@ -14,6 +14,7 @@ Klaw How to do things
    Topics<howto/topics>
    Subscriptions<howto/subscriptions>
    Schemas<howto/schemas>
+   Connectors<howto/connectors>
    Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>

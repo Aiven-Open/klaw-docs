@@ -15,7 +15,7 @@ Prerequisites
 Make a request
 --------------
 
-1. In Klaw, select **My Requests** on the navigation bar, and then select **Request Topic** in the drop-down.
+1. In Klaw, select **Requests** on the navigation bar, and then select **Request Topic** in the drop-down.
 2. Select the environment. This is the Kafka environment in which the topic will be created.
 
 .. note::
