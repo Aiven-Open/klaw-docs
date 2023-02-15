@@ -9,16 +9,15 @@ For more info `Kafka Connect <https://kafka.apache.org/documentation/#connect>`_
    :hidden:
 
 
-    Request a new Connector<topics/Request-a-new-connector>
-    Approve a Connector<topics/Approve-a-connector>
-    My Connector Requests<topics/My-connector-requests>
+    Request a new Connector<connectors/Request-a-new-connector>
+    Approve a Connector<connectors/Approve-a-connector>
+    My Connector Requests<connectors/My-connector-requests>
 
 Connectors in Kafka
 -------------------
 
 It makes it simple to quickly define connectors that move large collections of data into and out of Kafka. Kafka Connect can ingest entire databases
 or collect metrics from all your application servers into Kafka topics, making the data available for stream processing with low latency.
-
 
 Kafka Connect management
 ------------------------
