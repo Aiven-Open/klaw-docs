@@ -1,26 +1,24 @@
-Request a new Connector
+Request a new connector
 =======================
 
-The process of requesting a new Connector to be created in Kafka is simple and speedy.
-
-The team that requests a connector will automatically become the connector owner and can approve or deny any Kafka Connector.
+You can request a new connector to be created in Kafka quickly and easily using Klaw. The team that requests the connector automatically becomes the connector owner, with the ability to approve or deny any Kafka Connector.
 
 Prerequisites
 -------------
-- The Superadmin must configure the environment within Klaw,  see :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
+- The Superadmin must configure the environment within Klaw. See :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
 
 
-Make a request
---------------
+Make a connector request
+------------------------
 
-1. In Klaw, select **Requests** on the navigation bar, and then select **Request Connector** in the drop-down.
-2. Select the environment. This is the Kafka connect environment in which the Connector will be created.
+1. From the navigation bar in Klaw, select **Requests** and then click on **Request Connector** from the drop-down menu
+2. In the **Connect create request** screen, select the Kafka Connect environment where the connector will be created.
 
 .. note::
    In most cases, you must start with the lowest environment and use the promotion feature for higher environments.
 
-3. Enter the name of your Connector based on your organization's naming conventions, or Klaw will enforce a minimum 5-character name.
-4. Add connector configuration (valid json) in the configuration field.
-7. Add a connector description. This information will stay with the connector for the duration of its lifecycle.
-8. Add any remarks, this will inform the reviewer whether they should approve or decline the request.
-9. Submit the request and a team member will be able to review and approve or decline the request based on the request made.
+3. Enter a name for the connector based on your organization's naming conventions. Ensure that the name is at least 5 characters long to comply with Klaw's minimum requirements.
+4. Add the connector configuration in valid JSON format in the configuration field.
+5. Add a description for the connector, which will be associated with the connector throughout its lifecycle.
+6. Include any remarks that can help the reviewer make an informed decision to approve or decline the request.
+7. Submit the request, and a team member will review it and approve or decline the request based on the request details.

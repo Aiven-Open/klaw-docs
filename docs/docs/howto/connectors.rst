@@ -1,8 +1,11 @@
 Connectors
-==========
+=================
+Kafka Connect is a tool that allows scalable and reliable data streaming between Apache Kafka and other systems. For more information, see `Kafka Connect <https://kafka.apache.org/documentation/#connect>`_. 
+
+Kafka connectors simplify the process of quickly defining connectors that move large collections of data into and out of Kafka. With Kafka Connect, it is possible to ingest entire databases or collect metrics from all application servers into Kafka topics, thus making the data available for low-latency stream processing.
 
 Kafka Connect is a tool for scalably and reliably streaming data between Apache Kafka and other systems.
-For more info `Kafka Connect <https://kafka.apache.org/documentation/#connect>`_
+For more information, see `Kafka Connect <https://kafka.apache.org/documentation/#connect>`_
 
 .. toctree::
    :maxdepth: 3
@@ -13,19 +16,13 @@ For more info `Kafka Connect <https://kafka.apache.org/documentation/#connect>`_
     Approve a Connector<connectors/Approve-a-connector>
     My Connector Requests<connectors/My-connector-requests>
 
-Connectors in Kafka
--------------------
 
-It makes it simple to quickly define connectors that move large collections of data into and out of Kafka. Kafka Connect can ingest entire databases
-or collect metrics from all your application servers into Kafka topics, making the data available for stream processing with low latency.
+Maange Kafka Connect 
+--------------------
 
-Kafka Connect management
-------------------------
-
-Kafka connect provides a REST Api for managing connectors. This REST API is available in both standalone and distributed mode.
+Kafka Connect provides a REST API for managing connectors, which is available in both standalone and distributed modes. 
 
 Connectors management in Klaw
 -----------------------------
 
-Klaw uses the concept of a **Team** for Connector ownership and management. The team creates the request to create a connector in the development environment and has the ability to promote it to other environments, including production.
-For any requests related to a connector, the team that owns the connector is responsible for making the final decision, such as approving or declining the request.
+Klaw manages connectors through a designated **Team** that takes ownership and management. The team initiates requests to create connectors in the development environment and has the ability to promote them to other environments, including production. The team that owns the connector is responsible for making the final decision related to any requests, such as approving or declining them.

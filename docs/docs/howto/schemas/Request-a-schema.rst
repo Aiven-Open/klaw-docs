@@ -1,29 +1,27 @@
-Request a new Schema
+Request a new schema
 ====================
 
-The process of requesting a new schema to be created in Kafka is simple and speedy.
-
-The team that owns a topic will automatically become the schema owner too. Any schema request can be created/approved/declined by topic owner team.
+You can request a new schema to be created in Kafka quickly and easily using Klaw. If you own a topic, you will automatically become the schema owner. As the topic owner, you have the ability to create, approve, or decline any schema request.
 
 Prerequisites
 -------------
-- The Superadmin must configure the environment within Klaw,  see :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
+- The Superadmin must configure the environment within Klaw. See :doc:`Environments <../../concepts/clusters-environments>` for the steps to configure the environments.
 
-Make a request
---------------
+Make a schema request
+---------------------
 
-1. In Klaw, from the Topics menu, select a topic, on which schema has to be requested for.
-2. Click the Schemas tab, and **Request Schema** button would be available in the bottom right.
-2. Select the environment. This is the Schema environment in which the schema will be created.
+1. Navigate to the **Topics** menu in Klaw and select the topic for which you want to request a schema.
+2. Select the **Schemas** tab, and **Request Schema** button in the bottom right corner.
+3. Select the schema environment in which you want the schema to be created.
 
-.. note::
+  .. note::
    In most cases, you must start with the lowest environment and use the promotion feature for higher environments.
 
-3. Select a topic if it's not selected already, on which schema would be registered. (as per TopicNameStrategy, schema is created on subject-value, where subject is topic name)
+4. If not already selected, choose the topic on which the schema will be registered. Keep in mind that, as per the ``TopicNameStrategy``, the schema is created on the subject-value, where the subject is the topic name. 
 
-.. note::
-   Registering schemas on subject-key is not possible in Klaw.  Klaw enforces TopicNameStrategy strategy, and it uses the topic name to determine the subject to be used for schema lookups. This strategy enforces to follow only one schema per topic.
+  .. note::
+   Registering schemas on subject-key is not possible in Klaw.  Klaw enforces ``TopicNameStrategy`` strategy, and it uses the topic name to determine the subject to be used for schema lookups. This strategy enforces following only one schema per topic.
 
-3. Upload the schema (avro) you like to register on this subject. Make sure its a valid json.
-4. Add any remarks, this will inform the reviewer whether they should approve or decline the request.
-5. Submit the request and a team member will be able to review and approve or decline the request based on the request made.
+5. Upload the schema (avro) that you wish to register on this subject. Make sure it is a valid JSON.
+6. Add any remarks that will help the reviewer decide whether to approve or decline the request.
+7. Submit the request. A team member will review the request and approve or decline it based on the request made.

@@ -1,8 +1,8 @@
 Schemas
 =======
 
-Events produced on to a kafka topic can adhere to a schema, so it is known to the producers/consumers what to expect from an event.
-This structure of the data format is important to define. It could be a Json/Avro/Protobuf etc, and without them, it could disrupt the flows between producers and consumers.
+Defining a schema for events sent to a Kafka topic is essential to provide clarity to both producers and consumers regarding the contents of each event. This schema outlines the structure of the data format, which could be in various formats, including JSON, Avro, or Protobuf.  A defined schema ensures smooth communication between producers and consumers.
+
 
 .. toctree::
    :maxdepth: 3
@@ -17,13 +17,15 @@ This structure of the data format is important to define. It could be a Json/Avr
 Schema management
 -----------------
 
-Aiven's Karapace and Confluent's Schema registry are two popular products where schemas can be managed outside a kafka cluster.
-For more info : `Aiven Karapace <https://karapace.io>`_  `Confluent Schema registry <https://docs.confluent.io/platform/current/schema-registry/index.html>`_
+Aiven's Karapace and Confluent's Schema Registry are two highly popular products that enable the management of schemas outside of a Kafka cluster. 
+For more infomation, see `Aiven Karapace <https://karapace.io>`_ and  `Confluent Schema registry <https://docs.confluent.io/platform/current/schema-registry/index.html>`_. 
 
 Schema management in Klaw
 -------------------------
+Schema management in Klaw is structured around the following:
 
-- Klaw uses the concept of a **Team** for schema ownership and management. It's a topic owner team requests a schema on the topic.
+- Klaw uses the concept of a **Team** for schema ownership and management, where the topic owner team requests a schema for a specific topic
+- The team that owns the topic is responsible for making the final decision on any schema-related requests, such as approving or declining the request.
 - For any requests related to a schema, the team that owns the topic is responsible for making the final decision, such as approving or declining the request.
-- Klaw enforces TopicNameStrategy strategy, and it uses the topic name to determine the subject to be used for schema lookups. This strategy enforces to follow only one schema per topic.
+- Klaw enforces the ``TopicNameStrategy`` strategy to ensure only one schema is applied per topic, which uses the topic name to identify the schema subject used for schema lookups.
 - Klaw supports Aiven's Karapace and Confluent Schema registry.
