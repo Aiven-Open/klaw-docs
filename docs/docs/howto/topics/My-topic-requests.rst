@@ -11,7 +11,7 @@ Filtering the requests
 For easy navigation use the dropdown to filter the requests which you are viewing by the status of the request.
 
 - all
-   View all requests that your team have created.
+   View all requests that your team has created.
 - created
    View all requests that have been created but are yet to be reviewed, approved, or declined.
    These are your active requests which have yet to be actioned.
