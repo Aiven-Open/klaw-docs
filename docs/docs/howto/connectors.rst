@@ -22,7 +22,7 @@ Maange Kafka Connect
 
 Kafka Connect provides a REST API for managing connectors, which is available in both standalone and distributed modes. 
 
-Connectors management in Klaw
+Manage connectores in Klaw
 -----------------------------
 
 Klaw manages connectors through a designated **Team** that takes ownership and management. The team initiates requests to create connectors in the development environment and has the ability to promote them to other environments, including production. The team that owns the connector is responsible for making the final decision related to any requests, such as approving or declining them.

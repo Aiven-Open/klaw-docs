@@ -14,13 +14,13 @@ Defining a schema for events sent to a Kafka topic is essential to provide clari
     Approve a schema<schemas/Approve-a-schema>
     My Schema Requests<schemas/My-schema-requests>
 
-Schema management
+Manage schema
 -----------------
 
 Aiven's Karapace and Confluent's Schema Registry are two highly popular products that enable the management of schemas outside of a Kafka cluster. 
 For more infomation, see `Aiven Karapace <https://karapace.io>`_ and  `Confluent Schema registry <https://docs.confluent.io/platform/current/schema-registry/index.html>`_. 
 
-Schema management in Klaw
+Manage schema in Klaw
 -------------------------
 Schema management in Klaw is structured around the following:
 
