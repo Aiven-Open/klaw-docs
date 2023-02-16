@@ -46,7 +46,7 @@ To enable third-party login accounts,  you need to make the following configurat
 
 .. image:: /../../../_static/images/authentication/OAuthLogin.png
 
-    Enter the credentials for the third party account.
+Enter the credentials for the third party account.
 
 .. note:: Login page for third party account is not fully updated.
 

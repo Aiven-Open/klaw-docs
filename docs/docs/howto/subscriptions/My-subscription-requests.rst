@@ -1,12 +1,12 @@
-My Topic Requests
-=================
+My Subscription Requests
+========================
 
-The **My Topic Requests** page can be accessed through the **Requests -> My Topic Requests** navigation bar. You can view all requests created by you here. This page also provides an audit log and a history of the topics and configuration requests created by you.
+To access the  **My Acl Requests** page,  navgiate to the **Requests -> My Acl Requests**. On this page, you can see all the requests created by you or your team, along with an audit log and the history of your subscription requests.
 
-The Requests are displayed in chronological order by 'Date Requested' with the most recent request at the top and the oldest request at the bottom. Additionally, on this page, you can find any request you and your team have made and its current status.
+The requests are displayed in chronological order by *Date Requested*, with the most recent request at the top and the oldest request at the bottom. Additionally, you can check the current status of any request you and your team have made on this page.
 
 Filtering the requests
------------------------
+----------------------
 
 For easy navigation use the dropdown to filter the requests which you are viewing by the status of the request.
 
@@ -14,7 +14,7 @@ For easy navigation use the dropdown to filter the requests which you are viewin
    View all requests that your team has created.
 - created
    View all requests that have been created but are yet to be reviewed, approved, or declined.
-   These are your active requests which have yet to be actioned.
+   These are your active requests which are yet to be actioned.
 - deleted
    View all the requests which you have deleted. These are the requests which have been withdrawn from review and which will never be actioned.
 - declined

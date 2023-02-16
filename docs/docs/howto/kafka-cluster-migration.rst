@@ -11,6 +11,7 @@ Klaw Installation
    Synchronize topics to cluster<kafka-cluster-migration/sync-topics-to-cluster>
    Synchronize ACLs from cluster<kafka-cluster-migration/sync-acls-from-cluster>
    Synchronize ACLs to cluster<kafka-cluster-migration/sync-acls-to-cluster>
+   Synchronize connectors from cluster<kafka-cluster-migration/sync-connectors-from-cluster>
 
 
 Klaw supports data synchronization between Klaw and Apache Kafka® and other clusters. This can be accessed through the Synchronize menu option.
