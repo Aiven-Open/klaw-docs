@@ -13,5 +13,15 @@ Klaw Concepts
    Metastore data<concepts/metastore>
    Advanced configuration<concepts/config>
    Promotion<concepts/promotion>
+   Switch Teams<concepts/switch-teams>
 
 Klaw concepts ..
+
+- :doc:`concepts/workflows`
+- :doc:`concepts/users-teams`
+- :doc:`concepts/switch-teams`
+- :doc:`concepts/clusters-environments`
+- :doc:`concepts/synchronize`
+- :doc:`concepts/metastore`
+- :doc:`concepts/config`
+- :doc:`concepts/promotion`

@@ -27,7 +27,7 @@ Follow the steps below to configure and connect to an Apache Kafka® cluster in 
 4. Click **Save**. 
 5. Add the cluster to the preferred environment. Click **Environments** from the **Environments** drop-down menu.
 6. Click **Add Environment** and enter the details to add your Kafka environment. 
-7. Enter an environment name, set the cluster you added from the drop-down list, and configure partitions and replication factor, and tenat (set to default).ß
+7. Enter an environment name, set the cluster you added from the drop-down list, and configure partitions and replication factor, and tenant (set to default).ß
 8. Copy the **Cluster ID** from the **Clusters** page using the copy icon that is available on the right hand side of the each cluster row.
 9. Open the ``application.properties`` file located in the `klaw/cluster-api/src/main/resources` directory.
 10. Configure the SSL properties to connect to Apache Kafka clusters by copying and editing the following lines:

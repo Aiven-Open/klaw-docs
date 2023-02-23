@@ -11,3 +11,7 @@ Klaw Installation
    Configure Klaw Wizard<installation/configure-klaw-wizard>
 
 How to install and configure Klaw.
+
+- :doc:`installation/run-source`
+- :doc:`installation/run-docker`
+- :doc:`installation/configure-klaw-wizard`

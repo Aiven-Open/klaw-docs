@@ -29,3 +29,8 @@ Schema management in Klaw is structured around the following:
 - For any requests related to a schema, the team that owns the topic is responsible for making the final decision, such as approving or declining the request.
 - Klaw enforces the ``TopicNameStrategy`` strategy to ensure only one schema is applied per topic, which uses the topic name to identify the schema subject used for schema lookups.
 - Klaw supports Aiven's Karapace and Confluent Schema registry.
+
+- :doc:`schemas/Request-a-schema`
+- :doc:`schemas/Promote-a-schema`
+- :doc:`schemas/Approve-a-schema`
+- :doc:`schemas/My-schema-requests`
