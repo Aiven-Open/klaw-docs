@@ -16,9 +16,25 @@ Klaw How to do things
    Schemas<howto/schemas>
    Connectors<howto/connectors>
    Tenants<howto/tenant>
+   Teams<howto/teams>
    Analytics<howto/analytics>
    Settings<howto/settings>
    Others<howto/others>
 
 
 How to install and configure Klaw.
+
+- :doc:`howto/installation`
+- :doc:`howto/clusterconnectivity`
+- :doc:`howto/authentication`
+- :doc:`howto/authorization`
+- :doc:`howto/kafka-cluster-migration`
+- :doc:`howto/topics`
+- :doc:`howto/subscriptions`
+- :doc:`howto/schemas`
+- :doc:`howto/connectors`
+- :doc:`howto/tenant`
+- :doc:`howto/teams`
+- :doc:`howto/analytics`
+- :doc:`howto/settings`
+- :doc:`howto/others`

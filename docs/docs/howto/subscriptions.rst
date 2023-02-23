@@ -29,3 +29,8 @@ Manage subscriptions in Klaw
 
 Klaw uses the concept of a **Team** for subscription ownership and management. A team creates the request to subscribe (produce or consumer) from a topic in an environment.
 For any requests related to a subscription, the team that owns the topic is responsible for making the final decision, such as approving or declining a request from the same team or another team to produce/consume events from the topic.
+
+- :doc:`subscriptions/Request-a-subscription`
+- :doc:`subscriptions/Approve-a-subscription`
+- :doc:`subscriptions/Delete-a-subscription`
+- :doc:`subscriptions/My-subscription-requests`

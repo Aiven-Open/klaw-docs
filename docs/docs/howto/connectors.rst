@@ -26,3 +26,7 @@ Manage connectores in Klaw
 -----------------------------
 
 Klaw manages connectors through a designated **Team** that takes ownership and management. The team initiates requests to create connectors in the development environment and has the ability to promote them to other environments, including production. The team that owns the connector is responsible for making the final decision related to any requests, such as approving or declining them.
+
+- :doc:`connectors/Request-a-new-connector`
+- :doc:`connectors/Approve-a-connector`
+- :doc:`connectors/My-connector-requests`

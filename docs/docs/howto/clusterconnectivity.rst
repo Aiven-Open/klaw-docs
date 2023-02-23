@@ -15,5 +15,24 @@ Manage Klaw connections
    Connect with Aiven For Apache Kafka® cluster using SASL protocol<clusterconnectivity/aiven-kafka-cluster-sasl-ssl-protocol>
    Connect to Karapace schema registry<clusterconnectivity/aiven-karapace-cluster-ssl-protocol>
    Aiven For Apache Kafka Connect Cluster <clusterconnectivity/aiven-kafka-connect-cluster-ssl-protocol>
+   Connect with Confluent Cloud Kafka® Cluster using SSL protocol<clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol>
 
 Manage Klaw connectivities with various type of kafka clusters.
+
+- :doc:`clusterconnectivity/klaw-db-connection`
+- :doc:`clusterconnectivity/klaw-core-with-clusterapi`
+- :doc:`clusterconnectivity/kafka-cluster-ssl-protocol`
+- :doc:`clusterconnectivity/kafka-cluster-sasl-ssl-protocol`
+- :doc:`clusterconnectivity/sr-cluster-ssl-protocol`
+- :doc:`clusterconnectivity/aiven-kafka-cluster-ssl-protocol`
+- :doc:`clusterconnectivity/aiven-kafka-cluster-sasl-ssl-protocol`
+- :doc:`clusterconnectivity/aiven-karapace-cluster-ssl-protocol`
+- :doc:`clusterconnectivity/aiven-kafka-connect-cluster-ssl-protocol`
+- :doc:`clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol`
+
+The below kafka flavors are supported by Klaw:
+
+- Apache Kafka
+- Aiven for Apache Kafka
+- Confluent
+- Confluent Cloud
