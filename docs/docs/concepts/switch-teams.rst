@@ -1,15 +1,14 @@
 Switch Teams
 ============
 
-Klaw allows users to switch between teams.
+In Klaw, users can easily switch between teams, enhancing collaboration and flexibility on the platform. Switching teams provide users access to various dashboards, analytics, activity logs, and other relevant views, thereby increasing productivity. Additionally, users can switch between teams as needed, improving their ability to work effectively within the Klaw platform, particularly when creating or approving requests.
 
-- User profile always has a base team, and a list of teams which can be switched to.
-- Switch teams list should always contain the base team
-- User can switch teams with a drop down provided in the Klaw portal - header section.
-- Switching to a different team, updates the base team of the profile.
-- This provides users some flexibility to users when creating or approving requests by switching team
-- Get a different Dashboard/Analytics/ActivityLog and more relevant views-
-- Only a superadmin with 'ADD_EDIT_DELETE_USERS' permission can enable a user profile to switch teams
+To switch between teams in Klaw,
+
+* Users must have the switch teams option enabled in their profile. A user's profile must also include the user's base team and a list of available teams for switching. To learn how to enable switch teams, see :doc:`Enable and use Switch Teams in Klaw <../howto/howto/teams/switch-teams>`. 
+* Only superadmin or a user with ``ADD_EDIT_DELETE_USERS`` permission can enable a user profile to switch teams,
+* Once the option to switch teams is enabled, users can easily switch between teams using the dropdown menu located in the header section of the Klaw portal. 
 
 .. note::
-   Any request raised cannot be approved by the same user in Klaw.
+   A user who raises a request cannot approve the same request.
+
