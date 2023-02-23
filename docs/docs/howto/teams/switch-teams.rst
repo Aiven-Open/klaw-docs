@@ -18,7 +18,7 @@ To enable the switch teams functionality for a user profile, follow these steps:
 1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_USERS`` permission.
 2. Go to **Users**, and select the **Edit** option for the user whose profile you want to modify. 
 3. Check the **Enable Switching Teams** checkbox.
-4. Select at least two teams from the **Switch between Teams** dropdown.
+4. Select at least two teams from the **Switch between Teams** multiple select listbox.
 5. Click **Save** to save your changes.
 
 .. image:: /../../../_static/images/teams/SwitchTeams.png
