@@ -5,7 +5,7 @@ In Klaw, users can easily switch between teams, enhancing collaboration and flex
 
 To switch between teams in Klaw,
 
-* Users must have the switch teams option enabled in their profile. A user's profile must also include the user's base team and a list of available teams for switching. To learn how to enable switch teams, see :doc:`Enable and use Switch Teams in Klaw <../howto/howto/teams/switch-teams>`. 
+* Users must have the switch teams option enabled in their profile. A user's profile must also include the user's base team and a list of available teams for switching. To learn how to enable switch teams, see :doc:`Enable and use Switch Teams in Klaw </docs/howto/howto/teams/switch-teams>`. 
 * Only superadmin or a user with ``ADD_EDIT_DELETE_USERS`` permission can enable a user profile to switch teams,
 * Once the option to switch teams is enabled, users can easily switch between teams using the dropdown menu located in the header section of the Klaw portal. 
 
