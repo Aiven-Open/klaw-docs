@@ -24,7 +24,7 @@ With the switch to React, this release features a redesign of the following user
 
 .. image:: /../../../_static/images/topic/ApprovalRequestTopic-react.png
 
-To preview the new Klaw user user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
+To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
 ::
     # Enable new Klaw user interface
     klaw.coral.enabled=true
@@ -34,16 +34,16 @@ To preview the new Klaw user user interface, open the ``application.properties``
 
 Confluent Cloud Kafka
 `````````````````````
-Klaw now supports Confluent Cloud kafka Topics, Acls.
-Apis implemented :
+Klaw now offers Confluent Cloud Kafka Topics and ACLs support, expanding its capabilities to interact with Confluent Cloud Kafka. This release includes the implementation of the following APIs:
 https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)
 https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)
 
 For more information, see `Confluent Cloud <https://www.klaw-project.io/docs/howto/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol>`_.
 
-Switching Teams
-```````````````
-With this release, users now have the ability to be a member of multiple teams and switch between those teams without logging out and logging back in. Allowing a single user to have proper auditable capabilities while also working across multiple teams.
+Switch Teams
+````````````
+Klaw now allows users to be members of multiple teams and easily switch between them without needing to log out and back in. With this new functionality, a single user can now have proper auditable capabilities while working across multiple teams.
+Additionally, users will benefit from increased flexibility and efficiency when working within the Klaw platform, particularly when creating or approving requests.
 
 For more information, see `Switch Teams <https://www.klaw-project.io/docs/concepts/switch-teams>`_.
 
