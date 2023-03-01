@@ -16,11 +16,11 @@ Redesigned Request screens with React UI
 `````````````````````````````````````````
 With the switch to React, this release features a redesign of the following user interfaces:
 
-- **Approve & Reject Topic Requests**:  Users can now approve or reject topic requests using the new UI.
+- **Approve and Reject Topic Requests**: Users can now approve or reject topic requests using the new UI.
 
-- **Approve & Reject Subscription Requests** (Producer/Consumer): Users can now approve or reject ACL requests for both producers and consumers using the new UI.
+- **Approve and Reject Subscription Requests** (Producer/Consumer): Users can now approve or reject ACL requests for both producers and consumers using the new UI.
 
-- **Approve & Reject Schema Requests**: Users can now approve or reject schema requests using the new UI.
+- **Approve and Reject Schema Requests**: Users can now approve or reject schema requests using the new UI.
 
 .. image:: /../../../_static/images/ApprovalRequestTopic-react.png
 
@@ -35,8 +35,9 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 Confluent Cloud Kafka
 `````````````````````
 Klaw now offers Confluent Cloud Kafka Topics and ACLs support, expanding its capabilities to interact with Confluent Cloud Kafka. This release includes the implementation of the following APIs:
-https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)
-https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)
+
+-  `Topic (v3) <https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>`_
+-  `ACL <https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>`_
 
 For more information, see `Confluent Cloud <https://www.klaw-project.io/docs/howto/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol>`_.
 
