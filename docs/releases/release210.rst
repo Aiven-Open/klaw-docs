@@ -37,7 +37,7 @@ Confluent Cloud Kafka
 Klaw now offers Confluent Cloud Kafka Topics and ACLs support, expanding its capabilities to interact with Confluent Cloud Kafka. This release includes the implementation of the following APIs:
 
 -  `Topic (v3) <https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>`_
--  `ACL <https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>`_
+-  `ACL (v3) <https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>`_
 
 For more information, see `Confluent Cloud <https://www.klaw-project.io/docs/howto/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol>`_.
 
