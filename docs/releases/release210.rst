@@ -22,7 +22,7 @@ With the switch to React, this release features a redesign of the following user
 
 - **Approve & Reject Schema Requests**: Users can now approve or reject schema requests using the new UI.
 
-.. image:: /../../../_static/images/topic/ApprovalRequestTopic-react.png
+.. image:: /../../../_static/images/ApprovalRequestTopic-react.png
 
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
 ::
