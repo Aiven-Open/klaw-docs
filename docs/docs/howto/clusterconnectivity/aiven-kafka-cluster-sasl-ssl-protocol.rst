@@ -39,4 +39,6 @@ Follow the steps below to configure and connect to an Aiven for Apache Kafka® a
    clusterid.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule required username='kwuser' password='kwuser-secret';
    clusterid.kafkasasl.jaasconfig.gssapi=com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true keyTab="/location/kafka_client.keytab" principal="kafkaclient1@EXAMPLE.COM";
 
-11. Save the ``application.properties`` file. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL protocol.
+11. For Acls authorization, copy the Authorization token from Aiven Console and configure ``klaw.clusters.accesstoken``
+
+12. Save the ``application.properties`` file. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL protocol.
