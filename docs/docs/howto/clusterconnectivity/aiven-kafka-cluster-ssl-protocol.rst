@@ -62,6 +62,7 @@ The following is an example of an application.properties file configured with Kl
     demo_cluster.kafkassl.keystore.type=pkcs12
     demo_cluster.kafkassl.truststore.type=JK
     
-11. For Acls authorization, copy the Authorization token from Aiven Console and configure ``klaw.clusters.accesstoken``
+11. To enable ACLs authorization,  copy the Authorization token from Aiven Console and configure ``klaw.clusters.accesstoken`` with the copied authorization token.
 
-12.  Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL protocol.
+12. Re-deploy the Cluster API with the updated configuration. This will apply the changes and enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL protocol.
+

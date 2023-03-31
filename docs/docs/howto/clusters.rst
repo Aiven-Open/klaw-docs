@@ -1,64 +1,78 @@
-Clusters
-========
+Manage clusters
+================
 
+In Klaw, clusters are used to store the connectivity information of servers. There are three types of clusters that you can define in Klaw: 
 
-Clusters hold the connectivity information of servers. There can be 3 types of clusters defined in Klaw.
 - Kafka
 - Schema Registry
 - Kafka Connect
 
-  Configurations like protocol, bootstrap servers, rest api urls, kafka flavors can be provided.
+Depending on the type of cluster, you can need to configure various settings, such as protocol, bootstrap servers, REST API URLs, and Kafka flavors.
 
-New Cluster
------------
+Prerequisite
+-------------
+To manage clusters in Klaw, including adding, deleting, or updating, you need to log in using a SUPERADMIN account or an account with the ``ADD_EDIT_DELETE_CLUSTERS`` permission.
 
-This section provides information on adding a new cluster.
+Add new cluster
+-----------------
 
-* Any user with a permission ``ADD_EDIT_DELETE_CLUSTERS`` can add a new cluster. By default, a users with SUPERADMIN role have the permission.
+To add a new cluster in Klaw, follow these steps: 
 
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Clusters**.
+3. On the **Clusters** screen, select **Add Cluster**.
+4. On the **Add Kafka Cluster** screen, provide the following information: 
 
-To add a new cluster, follow these steps:
+ * **Cluster type**: Choose a cluster type from the dropdown menu (Kafka, Schema Registry, or Kafka Connect). Based on the cluster type, you need to include additional information.  
+ * **Cluster name**: Enter a name for the cluster, for example, Dev_cluster.
+ * **Kafka flavor**: Select a Kafka flavor from the dropdown list.
 
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_CLUSTERS`` permission.
-2. Go to **Clusters**, and click the **Add Cluster** button.
-4. Select a cluster type, and provide the relevant details
-5. Click **Save** to save your changes.
+ Provide the additional information required based on the cluster type:
+
+ * If you are adding a Kafka cluster, you need to enter the following:
+    
+   * **Protocol**: Select either plaintext or SSL.
+   * **RestAPI servers**: Enter the URL of the REST API servers, for example, https://server:12695.
+   * **Bootstrap servers**: Enter the comma-separated list of bootstrap servers, for example, server1:9092,server2:9092,server3:9092.
+
+ * If you are adding a Schema Registry cluster, you need to enter the following:
+
+   * **Protocol**: Select either plaintext or SSL.
+   * **Bootstrap servers**: Enter the comma-separated list of bootstrap servers.
+
+ * If you are adding a Kafka Connect cluster, you need to enter the following:
+
+   * **Protocol**: Select either plaintext or SSL.
+   * **Kafka Connect servers**: Enter the URL of the Kafka Connect servers, for example, server1:8083.
+
+5. Select **Save** to create the new cluster. A new cluster is now created.
 
 .. image:: /../../_static/images/clusters/NewCluster.png
 
-This creates a new cluster.
 
-Update Cluster
+Update cluster
 --------------
+To update a cluster, follow these steps:
 
-This section provides information on modifying an existing cluster.
-
-* Any user with a permission ``ADD_EDIT_DELETE_CLUSTERS`` can update a cluster. By default, a users with SUPERADMIN role have the permission.
-
-To update an existing cluster, follow these steps:
-
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_CLUSTERS`` permission.
-2. Go to **Clusters**, and choose the team to update and click the **Modify Cluster** button.
-4. Update with relevant details
-5. Click **Save** to save your changes.
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Clusters**.
+3. Click the **Edit** icon in the **Actions** column for the cluster you want to update.
+4. Modify the necessary details.
+5. Select **Save** to confirm your changes. The cluster is updated with the new information.
 
 .. image:: /../../_static/images/clusters/UpdateCluster.png
 
-This updates an existing cluster.
-
 Delete Cluster
 --------------
+To delete a cluster, follow these steps:
 
-This section provides information on deleting an existing cluster.
+1. Log in to Klaw. 
+2. Navigate to the **Environments** tab and select **Clusters**.
+3. Click the **Delete** icon in the **Actions** column for the cluster you want to delete.
+    
+  .. note:: 
+    You can only delete clusters that are not associated with any environment. If a cluster is associated with any environment, you must remove the environment association before deleting the cluster.
 
-* Any user with a permission ``ADD_EDIT_DELETE_CLUSTERS`` can update a cluster. By default, a users with SUPERADMIN role have the permission.
-
-To delete an existing cluster, follow these steps:
-
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_CLUSTERS`` permission.
-2. Go to **Clusters**, and choose the cluster to update and click the **Delete Cluster** button.
-3. A cluster can only be deleted if there are no associated environments for the cluster.
+4. On the confirmation screen, select **delete** to confirm deletion of the cluster. The selected cluster is deleted. 
 
 .. image:: /../../_static/images/clusters/Clusters.png
-
-This deletes an existing cluster.

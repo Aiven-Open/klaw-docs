@@ -1,63 +1,77 @@
-Environments
-============
+Manage environments
+=====================
 
+Environments in Klaw are similar to application environments that act as a wrapper over clusters. Each environment in Klaw is associated with a cluster, and there are three types of environments available: 
 
-In Klaw, Environments are comparable to application environments, which are wrappers over clusters.
-Every environment is associated to a cluster. There can be 3 types of environments defined in Klaw.
 - Kafka
 - Schema Registry
-- Kafka Connect
+- Kafka Connect 
 
-New Environment
----------------
-
-This section provides information on adding a new environment.
-
-* Any user with a permission ``ADD_EDIT_DELETE_ENVS`` can add a new cluster. By default, a users with SUPERADMIN role have the permission.
+Prerequisite
+-------------
+To manage environments in Klaw, including adding, deleting, or updating, you need to log in using a SUPERADMIN account or an account with the ``ADD_EDIT_DELETE_ENVS`` permission.
 
 
-To add a new environment, follow these steps:
+Add new environment
+----------------------
+To add a new environment in Klaw, follow these steps:
 
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_ENVS`` permission.
-2. Go to **Environments**, and click the **Add Environment** button.
-4. Select an environment type, and provide the relevant details
-5. Click **Save** to save your changes.
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Environments**. 
+3. Select **Add Environment**. 
+4. Select Add Environment for the type of environment you want to add. 
+
+   * To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
+       * **Environment name**: Choose an environment from the available dropdown list.
+       * **Select cluster**: Choose the Kafka cluster you want to associate with this environment from the dropdown list.
+       * **Default partitions**: Set the default number of partitions new topics should have in this environment.
+       * **Maximum partitions**: Set the maximum number of partitions that a topic can have in this environment. 
+       * **Default replication factor**: Set the default replication factor for new topics in this environment.
+       * **Max replication factor**: Set the maximum replication factor for topics in this environment.
+       * **Topic prefix (optional)**: If you want to add a prefix to your topics' names, enter it here.
+       * **Topic suffix (optional)**: If you want to add a suffix to your topics' names, enter it here.
+       * **Tenant**: Set to default.
+   * Select **Save** to add a new Kafka environment. 
+
+   * To add a **Schema Registry environment**, enter the following details in the **Add Schema Registry Environment** screen:
+       * **Environment name**: Choose an environment from the available dropdown list.
+       * **Select cluster**: Choose the Kafka cluster you want to associate with this environment from the dropdown list.
+       * **Tenant**: Set the tenant to default.
+       * **Select Associated Kafka Environment**: Choose a schema environment from the dropdown list.
+   * Select **Save** to add a Schema Registry environment. 
+
+   * To add a **KafkaConnect environment**, enter the following details in the **Add KafkaConnect Environment**  screen:
+       * **Environment name**: Choose an environment from the available dropdown list.
+       * **Select cluster**: Choose the Kafka cluster you want to associate with this environment from the dropdown list.
+       * **Tenant**: Set the tenant to default.
+   * Select **Save** to add a new KafkaConnect environment. 
 
 .. image:: /../../_static/images/environments/NewEnvironment.png
 
-This creates a new environment.
-
-Update Environment
+Update environment
 ------------------
+To update/modify an existing environment in Klaw, follow these steps:
 
-This section provides information on modifying an existing environment.
-
-* Any user with a permission ``ADD_EDIT_DELETE_ENVS`` can update a environment. By default, a users with SUPERADMIN role have the permission.
-
-To update an existing environment, follow these steps:
-
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_ENVS`` permission.
-2. Go to **Environments**, and choose the team to update and click the **Modify Environment** button.
-4. Update with relevant details
-5. Click **Save** to save your changes.
+1. Log in to Klaw. 
+2. Navigate to the **Environments** tab and select **Environments**.
+3. Choose the environment you want to update and Select on the **Edit/Modify** icon located in the **Actions** column.
+4. Update the relevant details.
+5. Select **Save** to apply your changes.
+.. note:: 
+    To modify the **Bootstrap servers** and **Protocol** details, you must edit them in the corresponding clusters.
 
 .. image:: /../../_static/images/environments/UpdateEnvironment.png
 
-This updates an existing environment.
-
-Delete Environment
+Delete environment
 ------------------
 
-This section provides information on deleting an existing environment.
+To delete an existing environment in Klaw, follow these steps:
 
-* Any user with a permission ``ADD_EDIT_DELETE_ENVS`` can update a environment. By default, a users with SUPERADMIN role have the permission.
-
-To delete an existing environment, follow these steps:
-
-1. Log in to Klaw as a superadmin or a user with the ``ADD_EDIT_DELETE_ENVS`` permission.
-2. Go to **Environments**, and choose the environment to update and click the **Delete Environment** button.
-3. An environment can only be deleted if there are no associated topics or acls or requests associated for the environment.
+1. Log in to Klaw. 
+2. Navigate to the **Environments** tab and select **Environments**.
+3. Select the **delete** icon next to the environment you want to remove.
+4. On the Confirmation screen, select **delete** to confirm the deletion of the environment. Once confirmed, the selected environment will be deleted.
 
 .. image:: /../../_static/images/environments/Environments.png
 
-This deletes an existing environment.
+
