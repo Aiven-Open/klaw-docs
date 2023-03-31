@@ -2,21 +2,21 @@ Users, roles and teams
 ======================
 
 
-Klaw has concepts of users, roles and teams.
+Klaw has three core concepts to manage access and authorization: users, roles, and teams.
 
 .. glossary::
 
     User
-      An individual with a login. Each user can belong to one team and hold one role. Users can be added by a user with ``ADD_EDIT_DELETE_USERS`` permission or the ``SUPERADMIN`` role.
-
+      A user is an individual with a login account in Klaw. Each user can belong to one or more teams and can be assigned specific roles with corresponding permissions. A user with ``ADD_EDIT_DELETE_USERS`` permission or SUPERADMIN role can create a new user account in Klaw.
+    
     Team
-      A collection of users. Teams also "own" topics and when one user in a team makes a request, a peer from the same team is expected to approve. Teams can be managed by a user with ``ADD_EDIT_DELETE_TEAMS`` permission.
+      A team is a group of users responsible for managing specific Kafka topics. Teams take **ownership** of topics, and when a team member makes a request related to a topic, another member of the same team is required to approve the request. A user with ``ADD_EDIT_DELETE_TEAMS`` permission or SUPERADMIN role can create a new user account in Klaw.
 
     Role
-      The type of user, can be ``USER`` or ``SUPERADMIN``. Further roles can be added and configured in the **Roles - Permissions** section by users with ``ADD_EDIT_DELETE_ROLES`` permission.
+      A role defines a set of permissions and access levels for a user. While the default roles available are **USER** and **SUPERADMIN**, users with the ``ADD_EDIT_DELETE_ROLES`` permission or SUPERADMIN role can create additional roles as per their requirements from the **Roles - Permissions** tab. 
 
     Superadmin
-      With this role, the user can manage the clusters and environments in the Klaw installation. They can also manage users and teams.
+      A user with the SUPERADMIN role in Klaw has complete control over the entire Klaw platform. This role enables users to manage clusters, environments, users, and teams. 
 
 
 Users can request to create or promote topics, schemas and connectors for their team. Other users in the same team can check and approve the requests.

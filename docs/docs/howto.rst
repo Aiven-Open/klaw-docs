@@ -15,8 +15,10 @@ Klaw How to do things
    Subscriptions<howto/subscriptions>
    Schemas<howto/schemas>
    Connectors<howto/connectors>
-   Tenants<howto/tenant>
    Teams<howto/teams>
+   Clusters<howto/clusters>
+   Environments<howto/environments>
+   Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>
    Others<howto/others>

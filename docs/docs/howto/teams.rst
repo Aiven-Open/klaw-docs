@@ -15,6 +15,8 @@ Klaw has concepts of users, roles and teams.
    :hidden:
 
    Switch Teams<teams/switch-teams>
+   Manage Teams<teams/manage-teams>
 
 
 - :doc:`teams/switch-teams`
+- :doc:`teams/manage-teams`
