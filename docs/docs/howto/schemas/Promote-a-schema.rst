@@ -33,3 +33,22 @@ When promoting a schema to a higher environment in Klaw, you have the option to 
 
 .. note::
    The user who raised a request cannot approve it. Instead, a different user from the same team must approve the request.
+
+
+
+
+Schema Validation
+-----------------
+When making a Schema Request the Schema will be validated against the appropriate Schema Registry.
+
+Failure messages returned by Klaw.
+Schema is not compatible.
+    This is returned when a Schema does not meet the Schema Compatibility set on the schema registry.
+    Review your schema and see what is breaking the compatibility.
+
+Unable to validate Schema Compatibility.
+    This is returned when the Schema submitted is invalid and missing the correct Schema definition fields. It is also returned if the Schema Registry is unreachable or there is another error in communicating to the Schema Registry.
+    Review your Schema and if it is correctly defined contact your administrator to resolve the issue with communicating with the Schema Registry.
+
+.. note::
+   Using forceRegister will bypass the Schema Validation as you will be overriding the compatibility on provisioning.
