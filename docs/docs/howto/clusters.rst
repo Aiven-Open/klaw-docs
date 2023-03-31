@@ -35,17 +35,17 @@ To add a new cluster in Klaw, follow these steps:
       * **RestAPI servers**: Enter the URL of the REST API servers, for example, https://server:12695.
       * **Bootstrap servers**: Enter the comma-separated list of bootstrap servers, for example, server1:9092,server2:9092,server3:9092.
 
-  * If you are adding a **Schema Registry cluster**, enter the following:
+    * If you are adding a **Schema Registry cluster**, enter the following:
 
-     * **Protocol**: Select either plaintext or SSL.
-     * **Bootstrap servers**: Enter the comma-separated list of bootstrap servers.
+      * **Protocol**: Select either plaintext or SSL.
+      * **Bootstrap servers**: Enter the comma-separated list of bootstrap servers.
 
-  * If you are adding a **Kafka Connect cluster**, enter the following:
+    * If you are adding a **Kafka Connect cluster**, enter the following:
 
-     * **Protocol**: Select either plaintext or SSL.
-     * **Kafka Connect servers**: Enter the URL of the Kafka Connect servers, for example, server1:8083.
+      * **Protocol**: Select either plaintext or SSL.
+      * **Kafka Connect servers**: Enter the URL of the Kafka Connect servers, for example, server1:8083.
 
-1. Select **Save** to create the new cluster. A new cluster is now created.
+5. Select **Save** to create the new cluster. A new cluster is now created.
 
 .. image:: /../../_static/images/clusters/NewCluster.png
 
