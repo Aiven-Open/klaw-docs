@@ -25,10 +25,14 @@ Similarly, the Schema Registry environments have all been defined and placed in 
       "baseSyncEnvironment": "DEV",
       "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
       "requestTopicsEnvironmentsList": ["DEV"],
-      "orderOfSchemaPromotionEnvsList" : [ "DEV_SCH", "TST_SCH" ],
-      "requestSchemaEnvironmentsList" : [ "DEV_SCH"]
+      "requestSchemaEnvironmentsList" : [ "DEV_SCH"],
+      "orderOfConnectorsPromotionEnvsList" : [],
+      "requestConnectorsEnvironmentsList" : []
      }
   }
+
+..  note::
+    ```orderOfSchemaPromotionEnvsList``` was removed in 2.2.0 and replaced with a feature enhancement to associate a schema registry with a Kafka Environment in the Schema Environment addition and modify pages and thus also matching the order of promotion defined in ```orderOfTopicPromotionEnvsList```
 
 Topic Promotion
 ---------------

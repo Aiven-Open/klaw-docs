@@ -13,3 +13,9 @@ Ordering environments
 ---------------------
 
 Since every setup is different, it is necessary to configure the order of your environments. This allows topics to be created for the "lowest" environment, and then "promoted" with a request/review cycle to the next one "up" when required.
+
+Associating Schema Environments
+-------------------------------
+As of release 2.2.0 it is now possible to associate a Schema Registry environment to a Kafka Environment meaning that you no longer need to duplicate the promotion ordering for both Topics and for Schema Registries.
+.. note::
+   A Schema Registry can only be associated with one Kafka Environment at a time.

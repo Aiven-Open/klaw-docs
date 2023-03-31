@@ -6,7 +6,6 @@ Prerequisites
 --------------
 Before using this functionality, the Superadmin must ensure that all prerequisites are met. For more information, see :doc:`Promotion <../../concepts/promotion>`.
 
-
 Schema promotion
 ----------------
 
@@ -33,9 +32,6 @@ When promoting a schema to a higher environment in Klaw, you have the option to 
 
 .. note::
    The user who raised a request cannot approve it. Instead, a different user from the same team must approve the request.
-
-
-
 
 Schema Validation
 -----------------
