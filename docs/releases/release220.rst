@@ -1,7 +1,7 @@
 Release 2.2.0
 =============
 
-Date: 3rd of April, 2023
+Date: 5th of April, 2023
 
 Overview
 --------
