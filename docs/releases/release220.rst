@@ -32,16 +32,16 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 
 Pre Validation of Schema Compatibility
 ``````````````````````````````````````
-Klaw will now check all Schema compatibility against the Schema Registry before creating the Schema Creation requests. This feature will only be bypassed used when forceRegister is in use.
+Klaw will now check all Schema compatibility against the Schema Registry before creating the Schema Creation requests. This feature will only be bypassed during promotion when the 'force register schema' option is selected.
 
 ACL information is now masked
 `````````````````````````````
-Klaw now masks IP Address's and Service Account names from all users except the ACL owner, ensuring better security for users.
+Klaw now masks IP Addresses, certificates and Service Account credentials from all users except the ACL owner team, ensuring better security for users.
 
 Export Data to JSON
 `````````````````````````````
 Klaw now allows administrators to export the database configuration and data in three parts, admin data, requests data and core data, providing additional back up and recovery options to administrators.
 
-
+For more information, see `Export Klaw data <https://www.klaw-project.io/docs/howto/exportdata>`_.
 
 .. seealso:: For a complete list of improvements, changelog, and to download the release, see `<https://github.com/aiven/klaw/releases/tag/v2.2.0>`_
