@@ -21,6 +21,7 @@ Klaw How to do things
    Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>
+   Export Klaw data<howto/exportdata>
    Others<howto/others>
 
 
