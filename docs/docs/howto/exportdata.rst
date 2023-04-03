@@ -1,6 +1,7 @@
 Export Klaw data
 ================
 
+Klaw now allows Administrators to export the database configuration and data in three parts, admin data, requests data and core data, providing additional back up and recovery options to administrators.
 
 What data can be exported ?
 ---------------------------
@@ -22,7 +23,6 @@ Klaw data is classified into the below 3 types.
     - Subscription requests
     - Schema requests
     - Connector requests
-    - Activity log
 
 - Core configuration comprises of the below
     - Topics
