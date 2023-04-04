@@ -30,13 +30,8 @@ Make a schema request
 
 Schema Validation
 -----------------
-When making a Schema Request the Schema will be validated against the appropriate Schema Registry.
+When you submit a Schema Request, the Schema will be checked for validation against the Schema Registry.
 
-Failure messages returned by Klaw.
-Schema is not compatible.
-    This is returned when a Schema does not meet the Schema Compatibility set on the schema registry.
-    Review your schema and see what is breaking the compatibility.
-
-Unable to validate Schema Compatibility.
-    This is returned when the Schema submitted is invalid and missing the correct Schema definition fields. It is also returned if the Schema Registry is unreachable or there is another error in communicating to the Schema Registry.
-    Review your Schema and if it is correctly defined contact your administrator to resolve the issue with communicating with the Schema Registry.
+In case of errors, Klaw provides the following failure messages:
+* **Schema is not compatible**: This message indicates that the submitted Schema fails to comply with the Schema Compatibility set on the schema registry. To fix this issue, review the Schema to see what is causing the compatibility problem.
+* **Unable to validate Schema Compatibility**:  It indicates that the submitted Schema may be invalid or missing the required Schema definition fields. It could also occur if there is a problem with communication to the Schema Registry, such as if it is not reachable. To fix this issue, review your Schema to ensure it is correctly defined. If it is, contact your administrator to resolve the issue with communication to the Schema Registry.

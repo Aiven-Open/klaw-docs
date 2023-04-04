@@ -32,7 +32,7 @@ Similarly, the Schema Registry environments have all been defined and placed in 
   }
 
 ..  note::
-    ```orderOfSchemaPromotionEnvsList``` was removed in 2.2.0 and replaced with a feature enhancement to associate a schema registry with a Kafka Environment in the Schema Environment addition and modify pages and thus also matching the order of promotion defined in ```orderOfTopicPromotionEnvsList```
+    In Klaw version 2.2.0, the ``orderOfSchemaPromotionEnvsList`` has been replaced with an enhanced feature that allows users to associate a schema registry with a Kafka environment in the Add/modify Schema Environment pages. Thereby matching the order of promotion defined in ``orderOfTopicPromotionEnvsList``.
 
 Topic Promotion
 ---------------
