@@ -39,7 +39,7 @@ ACL information is now masked
 `````````````````````````````
 To enhance security, Klaw now masks IP Addresses, certificates, and Service Account credentials from all users except the ACL owner team. This enhancement ensures that sensitive information is only visible to authorized personnel, improving overall security.
 
-Export Data to JSON
+Export data to JSON
 `````````````````````````````
 Klaw now allows administrators to export the database configuration and data in three parts - admin data, requests data, and core data. This feature provides administrators with additional backup and recovery options, enabling them to manage the system more effectively.
 
