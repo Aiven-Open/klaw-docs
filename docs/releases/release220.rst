@@ -35,7 +35,7 @@ Pre Validation of Schema Compatibility
 ``````````````````````````````````````
 Klaw will now check all Schema compatibility against the Schema Registry before creating the Schema Creation requests. This feature will only be bypassed during promotion when the 'force register schema' option is selected.
 
-ACL information is now masked
+Masking of ACL information for enhanced security
 `````````````````````````````
 To enhance security, Klaw now masks IP Addresses, certificates, and Service Account credentials from all users except the ACL owner team. This enhancement ensures that sensitive information is only visible to authorized personnel, improving overall security.
 
