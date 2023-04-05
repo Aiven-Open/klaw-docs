@@ -33,7 +33,7 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 
 Pre-validation of schema compatibility
 ``````````````````````````````````````
-Klaw will now check all Schema compatibility against the Schema Registry before creating the Schema Creation requests. This feature will only be bypassed during promotion when the 'force register schema' option is selected.
+Klaw will now check all schema compatibility against the Schema Registry before creating the schema creation requests. This feature will only be bypassed during promotion when the 'force register schema' option is selected.
 
 Masking of ACL information for enhanced security
 `````````````````````````````
