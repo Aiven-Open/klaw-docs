@@ -31,7 +31,7 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 .. note::
     We are taking an incremental, feedback-driven approach in rolling out the new Klaw interfaces. By providing the feature flag to preview user interfaces, we would like you to share your valuable `feedback <https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md>`_.
 
-Pre Validation of Schema Compatibility
+Pre-validation of schema compatibility
 ``````````````````````````````````````
 Klaw will now check all Schema compatibility against the Schema Registry before creating the Schema Creation requests. This feature will only be bypassed during promotion when the 'force register schema' option is selected.
 
