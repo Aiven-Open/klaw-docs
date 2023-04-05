@@ -6,8 +6,7 @@ Date: 5th of April, 2023
 Overview
 --------
 
-Klaw version 2.2.0 is a minor release with several new features and improvements. Key highlights of this release include redesigned My Team's Requests page, pre-validation of schema requests, sensitive ACL data is now masked unless you are the owner and unified Kafka & Schema cluster administration .
-
+Klaw version 2.2.0 is a minor release with several new features and improvements. Key highlights of this release include redesigned My Team's Requests page, pre-validation of schema requests, sensitive ACL data is now masked unless you are the owner and unified Kafka & Schema cluster administration.
 
 What's new in Klaw 2.2.0
 ------------------------
@@ -22,7 +21,7 @@ With the switch to React, this release features a redesign of the following user
 
 - **My Team's Schema Requests**:  Users can now view all of their team's schema requests using the new UI.
 
-.. image:: /../../../_static/images/ApprovalRequestTopic-react.png
+.. image:: /../../../_static/images/release-220-react-ui.png
 
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
 ::
@@ -38,11 +37,11 @@ Klaw will now check all Schema compatibility against the Schema Registry before 
 
 ACL information is now masked
 `````````````````````````````
-Klaw now masks IP Addresses, certificates and Service Account credentials from all users except the ACL owner team, ensuring better security for users.
+To enhance security, Klaw now masks IP Addresses, certificates, and Service Account credentials from all users except the ACL owner team. This enhancement ensures that sensitive information is only visible to authorized personnel, improving overall security.
 
 Export Data to JSON
 `````````````````````````````
-Klaw now allows administrators to export the database configuration and data in three parts, admin data, requests data and core data, providing additional back up and recovery options to administrators.
+Klaw now allows administrators to export the database configuration and data in three parts - admin data, requests data, and core data. This feature provides administrators with additional backup and recovery options, enabling them to manage the system more effectively.
 
 For more information, see `Export Klaw data <https://www.klaw-project.io/docs/howto/exportdata>`_.
 
