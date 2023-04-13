@@ -13,34 +13,33 @@ Follow the steps below to run Klaw in docker:
 
 For a quick start, below here is a sample docker compose file.
 
-  ::
+ ::
 
-      version: '3'
-      services:
-        klaw-core:
-          image: aivenoy/klaw-core:latest
-          environment:
-            KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
-          ports:
-          -   "9097:9097"
-          networks:
-            - klaw
-          extra_hosts:
-            - "moby:127.0.0.1"
-
-        klaw-cluster-api:
-          image: aivenoy/klaw-cluster-api:latest
-          hostname: localhost
-          networks:
-            - klaw
-          environment:
-            KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
-          ports:
-          -   "9343:9343"
-          extra_hosts:
-            - "moby:127.0.0.1"
-      networks:
-          klaw:
+    version: '3'
+    services:
+      klaw-core:
+        image: aivenoy/klaw-core:latest
+        environment:
+          KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
+        ports:
+        -   "9097:9097"
+        networks:
+          - klaw
+        extra_hosts:
+          - "moby:127.0.0.1"
+       klaw-cluster-api:
+        image: aivenoy/klaw-cluster-api:latest
+        hostname: localhost
+        networks:
+          - klaw
+        environment:
+          KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
+        ports:
+        -   "9343:9343"
+        extra_hosts:
+          - "moby:127.0.0.1"
+    networks:
+        klaw:
 
 
 To add a property, for example:
@@ -52,16 +51,16 @@ To add a property, for example:
 
 2. Run docker compose
 
-  ``docker-compose -f .\dockerpcompose.yml up``
+``docker-compose -f .\dockerpcompose.yml up``
 
 
 3. Verify docker process
 
-  ``docker ps``
+ ``docker ps``
 
 4. Access the web interface using the following URL: 
 
-  ``http://<dockerhost>:9097/``
+ ``http://<dockerhost>:9097/``
 
 5. Login with the following default credentials to access Klaw.
    .. note::  We recommend you to change the default credentials in your application, before running it.
@@ -103,8 +102,8 @@ Once the Keystores have been copied to the Klaw docker volume the keystore locat
 
 This can be configured in two ways.
 
-1. Configure the application.properties as normal and execute ```./klaw-docker.sh --all``` that will build and redeploy Klaw with the updated configuration settings
-2. Configure the docker-compose-klaw.yaml environment variables to add to the environment settings and execute ```./klaw-docker.sh --deploy``` to redeploy the environmental changes and restart Klaw.
+1. Configure the application.properties as normal and execute ``./klaw-docker.sh --all`` that will build and redeploy Klaw with the updated configuration settings
+2. Configure the docker-compose-klaw.yaml environment variables to add to the environment settings and execute ``./klaw-docker.sh --deploy`` to redeploy the environmental changes and restart Klaw.
 Here is an example of updating the docker-compose-klaw.yaml
 
 ::
