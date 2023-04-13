@@ -101,8 +101,9 @@ This can be configured in two ways.
 1. Configure the application.properties as normal and execute ```./klaw-docker.sh --all``` that will build and redeploy Klaw with the updated configuration settings
 2. Configure the docker-compose-klaw.yaml environment variables to add to the environment settings and execute ```./klaw-docker.sh --deploy``` to redeploy the environmental changes and restart Klaw
  i. Here is an example of updating the docker-compose-klaw.yaml
-    ::
-    environment:
+::
+
+ environment:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
       DEV1_KAFKASSL_KEYSTORE_LOCATION: "/klaw/client.keystore.p12"
@@ -122,11 +123,12 @@ This can be configured in two ways.
 3. You can also externalize the application.properties to the volume and set the environment value in the docker-compose for it to use the local copy of application.properties.
    i. Ensure that the klaw.version property is updated correctly on the version copied over to the volume as this is normally updated during the build to keep the api versions in line with the pom version.
       Also ensure that the application.properties is renamed to a unique properties file name so you don't accidentally copy over the Core properties with the cluster properties and vice versa.
-  ::
-    environment:
-      KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
-      SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
-      SPRING_CONFIG_LOCATION: "/klaw/klaw-application.properties"
+::
+
+ environment:
+    KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
+    SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+    SPRING_CONFIG_LOCATION: "/klaw/klaw-application.properties"
 
 
 How to use an existing H2 Database
