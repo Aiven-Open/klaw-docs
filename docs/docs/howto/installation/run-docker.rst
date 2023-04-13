@@ -81,16 +81,20 @@ The keystore and truststore should be copied to the klaw data volume so that it 
 
 Where to find the Klaw docker volume
 ------------------------------------
-Run the following command with your containerId to find the location of your mount. ``docker inspect -f '{{ .Mounts }}' containerid``
+Run the following command with your containerId to find the location of your mount.
+
+``docker inspect -f '{{ .Mounts }}' containerid``
 
 Linux
 -----
 linux volumes are normally in the same location.
-``/var/lib/docker/volumes/docker-scripts_klaw_data/_data```
-#Windows
+
+``/var/lib/docker/volumes/docker-scripts_klaw_data/_data``
+Windows
 --------
 Windows locations are also normally in the same location.
-``\\wsl$\docker-desktop-data\data\docker\volumes\docker-scripts_klaw_data\_data```
+
+``\\wsl$\docker-desktop-data\data\docker\volumes\docker-scripts_klaw_data\_data``
 
 How to configure the docker images
 ----------------------------------
@@ -100,7 +104,7 @@ This can be configured in two ways.
 
 1. Configure the application.properties as normal and execute ```./klaw-docker.sh --all``` that will build and redeploy Klaw with the updated configuration settings
 2. Configure the docker-compose-klaw.yaml environment variables to add to the environment settings and execute ```./klaw-docker.sh --deploy``` to redeploy the environmental changes and restart Klaw
- i. Here is an example of updating the docker-compose-klaw.yaml
+ * Here is an example of updating the docker-compose-klaw.yaml
 ::
 
  environment:
@@ -121,7 +125,7 @@ This can be configured in two ways.
       SERVER_SSL_KEYSTORETYPE: "pkcs12"
 
 3. You can also externalize the application.properties to the volume and set the environment value in the docker-compose for it to use the local copy of application.properties.
-   i. Ensure that the klaw.version property is updated correctly on the version copied over to the volume as this is normally updated during the build to keep the api versions in line with the pom version.
+ * Ensure that the klaw.version property is updated correctly on the version copied over to the volume as this is normally updated during the build to keep the api versions in line with the pom version.
       Also ensure that the application.properties is renamed to a unique properties file name so you don't accidentally copy over the Core properties with the cluster properties and vice versa.
 ::
 
