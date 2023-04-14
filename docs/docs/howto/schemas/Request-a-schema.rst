@@ -19,7 +19,7 @@ Make a schema request
 
 4. If not already selected, choose the topic on which the schema will be registered. Keep in mind that, as per the ``TopicNameStrategy``, the schema is created on the subject-value, where the subject is the topic name. 
 
-  .. note::
+.. note::
   Registering schemas on subject-key is not possible in Klaw.  Klaw enforces ``TopicNameStrategy`` strategy, and it uses the topic name to determine the subject to be used for schema lookups. This strategy enforces following only one schema per topic.
 
 5. Upload the schema (avro) that you wish to register on this subject. Make sure it is a valid JSON.
