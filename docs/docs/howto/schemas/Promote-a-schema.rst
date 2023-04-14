@@ -6,7 +6,6 @@ Prerequisites
 --------------
 Before using this functionality, the Superadmin must ensure that all prerequisites are met. For more information, see :doc:`Promotion <../../concepts/promotion>`.
 
-
 Schema promotion
 ----------------
 
@@ -28,8 +27,18 @@ To promote a schema to a higher environment, follow these steps:
 
 How does Force Register work
 ''''''''''''''''''''''''''''''
-
-When promoting a schema to a higher environment in Klaw, you have the option to use the **Force Register Schema** feature. This allows the registration of a schema, even if it is not compatible with previous schemas. By selecting this option, Klaw changes the compatibility of the subject (topic) to **NONE**, registers the new schema, and then reverts to the previous subject compatibility. If the subject compatibility is not set, it falls back to the global compatibility. Klaw will not change the global compatibility.
+When promoting a schema to a higher environment in Klaw, you can use the **Force Register Schema** option, which enables you to register a schema that may not be compatible with previous schemas. By selecting this option, Klaw changes the compatibility of the subject (topic) to **NONE**, registers the new schema, and then reverts to the previous subject compatibility. If the subject compatibility is not set, it falls back to the global compatibility. Klaw will not change the global compatibility.
 
 .. note::
    The user who raised a request cannot approve it. Instead, a different user from the same team must approve the request.
+
+Schema validation
+-----------------
+When you submit a Schema Request, the Schema will be checked for validation against the Schema Registry.
+
+In case of errors, Klaw provides the following failure messages:
+* **Schema is not compatible**: This message indicates that the submitted Schema fails to comply with the Schema Compatibility set on the schema registry. To fix this issue, review the Schema to see what is causing the compatibility problem.
+* **Unable to validate Schema Compatibility**:  It indicates that the submitted Schema may be invalid or missing the required Schema definition fields. It could also occur if there is a problem with communication to the Schema Registry, such as if it is not reachable. To fix this issue, review your Schema to ensure it is correctly defined. If it is, contact your administrator to resolve the issue with communication to the Schema Registry.
+
+.. note::
+   Using forceRegister will bypass the Schema Validation as you will be overriding the compatibility on provisioning.
