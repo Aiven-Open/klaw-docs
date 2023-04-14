@@ -28,7 +28,7 @@ Make a schema request
 
 
 
-Schema Validation
+Schema validation
 -----------------
 When you submit a Schema Request, the Schema will be checked for validation against the Schema Registry.
 
