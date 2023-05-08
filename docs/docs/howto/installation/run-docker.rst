@@ -1,19 +1,19 @@
 Run Klaw in Docker
 ==================
 
-Klaw provides docker images using, which you can Klaw run in docker.
+Klaw provides Docker images that allow you to run Klaw inside Docker containers. There are two Docker images available:
 
- * Core Api : https://hub.docker.com/r/aivenoy/klaw-core
+* Core API : https://hub.docker.com/r/aivenoy/klaw-core
 
- * Cluster Api : https://hub.docker.com/r/aivenoy/klaw-cluster-api
+* Cluster API : https://hub.docker.com/r/aivenoy/klaw-cluster-api
 
-Follow the steps below to run Klaw in docker: 
+Follow the steps below to run Klaw in Docker: 
 
-1. Create docker compose file
+1. Create Docker Compose file
 
-For a quick start, below here is a sample docker compose file.
+For a quick start, you can use the following sample Docker Compose file:
 
- ::
+::
 
     version: '3'
     services:
@@ -42,73 +42,85 @@ For a quick start, below here is a sample docker compose file.
         klaw:
 
 
-To add a property, for example:
+To configure a property, for example, ``klaw.login.authentication.type=db``, set it up as ``KLAW_LOGIN_AUTHENTICATION_TYPE: db``.
 
-``klaw.login.authentication.type=db`` should be configured as ``KLAW_LOGIN_AUTHENTICATION_TYPE: db``
+.. note::  
 
-  .. note::  
-    Please update the property ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` with a new base64 encoded secret
+  It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
-2. Run docker compose
+2. Run Docker Compose
 
-``docker-compose -f .\dockerpcompose.yml up``
+Run the following command to start the containers defined in the Docker Compose file:
+
+::
+  
+  ``docker-compose -f .\dockerpcompose.yml up``
 
 
-3. Verify docker process
+3. Verify Docker process
+Check the status of the containers using the following command:
 
- ``docker ps``
+::
 
-4. Access the web interface using the following URL: 
+  ``docker ps``
 
- ``http://<dockerhost>:9097/``
+4. Access the web interface 
 
-5. Login with the following default credentials to access Klaw.
-   .. note::  We recommend you to change the default credentials in your application, before running it.
+Access the Klaw web interface using this URL:   ``http://<dockerhost>:9097/``
 
-* ``KLAW_SUPERADMIN_DEFAULT_USERNAME=superadmin``
-* ``KLAW_SUPERADMIN_DEFAULT_PASSWORD=kwsuperadmin123$$``
+5. Login with default credentials
+
+To access Klaw, use the following default credentials for the superadmin account:
+
+* **Username**: superadmin
+* **Password**: kwsuperadmin123$$
+
+.. note:: 
+  Recommend you change the default credentials before running Klaw in your application.
 
 Klaw Docker Scripts
 -------------------
-Klaw does come with some docker scripts which can be downloaded with the source of the project from GitHub and comes complete with a README file to show how to build and deploy the latest bleeding edge version of Klaw.
-Available here : https://github.com/aiven/klaw/tree/main/docker-scripts
+Klaw also provides Docker scripts that can be downloaded from the project's GitHub repository. These scripts include a README file that explains how to build and deploy the latest version of Klaw. You can find these scripts at https://github.com/aiven/klaw/tree/main/docker-scripts.
 
 Enabling HTTPS
---------------
-A volume is created to store Klaw data this is where you can store your keystore and truststore for both enabling https but also for enabling secure connections between Klaw and Kafka.
-The keystore and truststore should be copied to the klaw data volume so that it may be accessed at run time.
+----------------
+A Docker volume is created to store Klaw data to enable HTTPS and secure connections between Klaw and Kafka. You can store your keystore and truststore in this volume. Make sure to copy the keystore and truststore to the Klaw data volume so that they can be accessed at runtime.
 
-Where to find the Klaw docker volume
-------------------------------------
-Run the following command with your containerId to find the location of your mount.
+Find Klaw Docker volume location
+---------------------------------
+To find the location of the Klaw Docker volume, run the following command with your container ID:
 
-``docker inspect -f '{{ .Mounts }}' containerid``
+::
+  
+  docker inspect -f '{{ .Mounts }}' containerid
+
 
 Linux
------
-linux volumes are normally in the same location.
+```````
+On Linux, Docker volumes are typically located in the following directory:
 
 ``/var/lib/docker/volumes/docker-scripts_klaw_data/_data``
 
 Windows
---------
-Windows locations are also normally in the same location.
+`````````
+On Windows, Docker volumes are typically located in the following directory:
 
 ``\\wsl$\docker-desktop-data\data\docker\volumes\docker-scripts_klaw_data\_data``
 
-How to configure the docker images
+Configure Docker images
 ----------------------------------
-Once the Keystores have been copied to the Klaw docker volume the keystore location is simply set to /klaw/client.keystore.p12 and /klaw/client.truststore.jks
+After copying the Keystores to the Klaw docker volume, you can set the keystore location by simply specifying ``/klaw/client.keystore.p12`` and ``/klaw/client.truststore.jks``.
 
-This can be configured in two ways.
+There are two ways to configure this:
 
-1. Configure the application.properties as normal and execute ``./klaw-docker.sh --all`` that will build and redeploy Klaw with the updated configuration settings
-2. Configure the docker-compose-klaw.yaml environment variables to add to the environment settings and execute ``./klaw-docker.sh --deploy`` to redeploy the environmental changes and restart Klaw.
-Here is an example of updating the docker-compose-klaw.yaml
+1. Configure the ``application.properties`` file as usual and run ``./klaw-docker.sh --all`` to build and redeploy Klaw with the updated configuration settings.
+2. Add environment variables to the ``docker-compose-klaw.yaml`` file and execute ``./klaw-docker.sh --deploy`` to redeploy environmental changes and restart Klaw. 
+
+Here is an example of how to update the ``docker-compose-klaw.yaml`` file:
 
 ::
 
- environment:
+  environment:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
       DEV1_KAFKASSL_KEYSTORE_LOCATION: "/klaw/client.keystore.p12"
@@ -125,15 +137,15 @@ Here is an example of updating the docker-compose-klaw.yaml
       SERVER_SSL_TRUSTSTOREPASSWORD: "klaw1234"
       SERVER_SSL_KEYSTORETYPE: "pkcs12"
 
-3. You can also externalize the application.properties to the volume and set the environment value in the docker-compose for it to use the local copy of application.properties.
+3. Another option is to externalize the ``application.properties`` file to the volume, and then set the environment value in the ``docker-compose`` file so that it uses the local copy of the ``application.properties`` file.
 
 .. note::
-    Ensure that the klaw.version property is updated correctly on the version copied over to the volume as this is normally updated during the build to keep the api versions in line with the pom version.
-    Also ensure that the application.properties is renamed to a unique properties file name so you don't accidentally copy over the Core properties with the cluster properties and vice versa.
+    * Ensure that the ``klaw.version`` property is updated correctly on the version copied over to the volume as this is usually updated during the build to keep the API versions in line with the pom version.
+    * Also, ensure that the ``application.properties`` is renamed to a unique properties file name so you don't accidentally copy over the Core properties with the cluster properties and vice versa.
 
 ::
 
- environment:
+  environment:
     KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
     SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
     SPRING_CONFIG_LOCATION: "/klaw/klaw-application.properties"
@@ -141,5 +153,5 @@ Here is an example of updating the docker-compose-klaw.yaml
 
 How to use an existing H2 Database
 ----------------------------------
-If you already have a configured environment with users etc those can also be transferred over to the docker image by copying the klawprodb files into the docker volume.
-It is recommended that any existing prodb files in the docker volume be backed up in case of any need to revert in the future.
+If you already have a configured environment with users, etc., you can transfer them to the docker image by copying the ``klawprodb`` files into the docker volume. 
+It is recommended that you back up any existing ``prodb`` files in the docker volume in case you need to revert to them in the future.
