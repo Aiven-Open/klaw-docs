@@ -1,12 +1,12 @@
-Manage Roles & Permissions
-==========================
+Manage Roles and permissions
+==============================
 
-A user is authorized to perform various actions in Klaw based on the role he/she is assigned to and the permissions associated to the role.
+In Klaw, user permissions are determined by the roles they are assigned. Each role corresponds to a set of specific actions a user is authorized to perform within the system. 
 
-By default Klaw comes with 2 roles. USER and SUPERADMIN
+Klaw provides two default roles: **USER** and **SUPERADMIN**. 
 
-USER role has a default set of permissions like requesting topics, acls, schemas connectors and approving them.
+    * The **USER** role is given a set of default permissions, which include the ability to request and approve topics, ACLS, and schema connectors.
+    * The **SUPERADMIN** role comes with default permissions that enable adding teams, users, clusters, and environments and performing all administrative operations within the system.
 
-SUPERADMIN role has a default set of permissions like adding teams, users, clusters, environments, and all admin operations.
 
-A SUPERADMIN role can add/modify any of the roles and associate permissions.
+In addition, a SUPERADMIN has the authority to modify or add any role and its associated permissions, providing greater flexibility in managing roles and permissions within Klaw.

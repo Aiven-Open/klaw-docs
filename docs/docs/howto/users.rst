@@ -1,32 +1,34 @@
 Manage users
 ============
 
-Klaw maintains users stored in its metadata. However, :doc:`authentication <./authentication>` can be different based on configuration.
-Every user is associated to a team, and a role. User can switch between multiple teams, if 'switch teams' flag is enabled for the user.
+Klaw stores user information in its metadata, and the method of :doc:`authentication <./authentication>` may vary depending on the configuration. Each user is associated with a team and a role, and if the **Switch teams** flag is enabled, they can switch between multiple teams.
 
-User Signup
+
+User signup
 -----------
-
-In the home page of Klaw, there is an option for a user to signup.
+To sign up for a user account in Klaw, you can access the option on the homepage.
 
 .. image:: /../../_static/images/users/SignUp.png
 
-1. Fill in the necessary fields and submit.
-2. A request is created for Admins to approve.
-3. On approval, user is assigned to 'STAGING TEAM', which can be changed later.
+To complete the sign-up process, follow these steps:
+
+1. Fill out all the required fields.
+2. Submit your information.
+3. After submitting your information, a request will be created for the administrators to approve.
+4. Once approved, you will be assigned to the **STAGING TEAM**, which can be changed later.
 
 Profile update
 --------------
 
-After logging in, a user can update his profile from My Profile menu. User's email id and Name can be updated.
+After logging in, you can update your profile information, including your email address and name, from the **My Profile** menu.
 
 Change password
 ---------------
 
-A user can change his/her password from the Change Password menu.
+You can change your password from the **Change Password** menu.
 
 Update other users
 ------------------
 
-As an Administrator (with permission ADD_EDIT_DELETE_USERS), other user's attributes (team, role, name, email id, switch teams) can be updated.
+Administrators who have been granted the ``ADD_EDIT_DELETE_USERS`` permission can modify the attributes of other users, including their team, role, name, email address, and ability to switch teams.
 
