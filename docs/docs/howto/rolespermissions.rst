@@ -1,4 +1,4 @@
-Manage Roles and permissions
+Manage roles and permissions
 ==============================
 
 In Klaw, user permissions are determined by the roles they are assigned. Each role corresponds to a set of specific actions a user is authorized to perform within the system. 
