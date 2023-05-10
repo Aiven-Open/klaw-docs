@@ -43,4 +43,8 @@ Topic Overview
 ``````````````
 The Klaw Topic Overview has now been enchanced to display one environment at a time for better readability & useability. A simple drop down allows users to switch between environments.
 
+Regex support on topics
+```````````````````````
+Topic name in a topic request can now be validated based on a regex pattern. Earlier it used to be only prefix or suffix.
+
 .. seealso:: For a complete list of improvements, changelog, and to download the release, see `<https://github.com/aiven/klaw/releases/tag/v2.3.0>`_
