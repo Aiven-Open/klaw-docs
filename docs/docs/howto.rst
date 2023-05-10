@@ -16,6 +16,8 @@ Klaw How to do things
    Schemas<howto/schemas>
    Connectors<howto/connectors>
    Teams<howto/teams>
+   Users<howto/users>
+   Roles Permissions<howto/rolespermissions>
    Clusters<howto/clusters>
    Environments<howto/environments>
    Tenants<howto/tenant>
