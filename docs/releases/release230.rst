@@ -11,19 +11,19 @@ Klaw version 2.3.0 is a minor release with several new features and improvements
 What's new in Klaw 2.3.0
 ------------------------
 
-Redesigned My Team's Request screens with React UI
+Redesigned screens with React UI
 `````````````````````````````````````````
-With the switch to React, this release features a redesign of the following user interfaces:
+In this release, we have redesigned some key user interfaces using React to enhance user experience and provide a more intuitive design:
 
-- **Browse Connectors**: Users now can use the redesigned user interface for Browse Connectors, providing a more user-friendly and intuitive interface..
+- **Browse Connectors**: With the redesigned user interface for Connectors, you can now explore and filter the available connectors with a more intuitive and user-friendly interface.
 
-- **Connectors request**: Users can submit topic requests using the new UI.
+- **Request new Connector**: With the updated user interface, users can now easily submit a request for a new connector.
 
-- **Approve Connectors requests**: Users can approve or reject Connector requests using our new UI.
+- **Approve Connectors requests**: The new user interface makes approving or rejecting Connector requests easy. Access the *Approve requests - connectors* screen to quickly and effortlessly approve or reject requests.
 
-- **My team’s Connectors requests**: Users can see an overview over their team’s Connector requests using the new UI. They also can delete their own requests in this view.
+- **My team’s Connectors requests**: In addition to viewing all connectors from the Connectors screen, you can now access an overview of your team's connector requests using our newly designed "My team's requests" interface. You can also quickly delete your own requests from this interface.
 
-- **Improved usability in forms**: Submit buttons in forms are always enabled now. When users click submit while required fields are missing or don’t have valid input, they will see messages on all fields with errors. This gives users more autonomy. Additionally it improves the experience for users with assistive technology.
+- **Improved usability in forms**: We have improved our form submission process by always enabling the Submit buttons. If users click submit while required fields are incomplete or contain invalid inputs, error messages are displayed on all problematic fields. This improvement gives users more autonomy and improves the experience of those using assistive technologies.
 
 .. image:: /../../../_static/images/release-230-react-ui.png
 
@@ -39,14 +39,14 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 
 Group ACls
 ``````````
-ACLs can be grouped by Team to show all ACL information in a more succinct user friendly manner.
+You can now group Access Control Lists (ACLs) by Team, making it easier to view and manage all ACL information in a more concise and user-friendly way. 
 
 Topic Overview
 ``````````````
-The Klaw Topic Overview has now been enchanced to display one environment at a time for better readability & useability. A simple drop down allows users to switch between environments.
+The Klaw Topic overview has now been enchanced to display one environment at a time for better readability and useability. A simple drop-down allows users to switch between environments.
 
 Regex support on topics
 ```````````````````````
-Topic name in a topic request can now be validated based on a regex pattern. Earlier it used to be only prefix or suffix.
+You can now validate the topic name in your topic request using a regex pattern. Previously, only prefix or suffix validation was available. 
 
 .. seealso:: For a complete list of improvements, changelog, and to download the release, see `<https://github.com/aiven/klaw/releases/tag/v2.3.0>`_
