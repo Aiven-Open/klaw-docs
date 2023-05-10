@@ -27,6 +27,8 @@ With the switch to React, this release features a redesign of the following user
 
 .. image:: /../../../_static/images/release-230-react-ui.png
 
+.. image:: /../../../_static/images/release-230-react-ui-approvals.png
+
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true``:
 ::
     # Enable new Klaw user interface
