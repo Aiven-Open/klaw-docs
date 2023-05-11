@@ -1,7 +1,9 @@
 Post list
 =========
 
-.. postlist::
-   :date: %d %B %Y
-   :format: {date} - {title}
-   :list-style: disk
+.. toctree::
+   :maxdepth: 4
+   :glob:
+
+
+   First post<blog/first-post>

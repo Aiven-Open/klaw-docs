@@ -29,7 +29,7 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-"ablog",
+# "ablog",
 "sphinx.ext.intersphinx"
 ]
 
