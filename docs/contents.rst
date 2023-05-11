@@ -6,7 +6,6 @@
    Home <index>
    Docs <docs>
    Releases <releases>
-   Blog <blog>
    Faq <faq>
 
 
