@@ -28,7 +28,10 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+"ablog",
+"sphinx.ext.intersphinx"
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -98,7 +101,8 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'furo'
+# html_theme = 'furo'
+html_theme = 'alabaster'
 
 # Same ones as TailwindCSS variables defined in `base.html`.
 _color_definitions = {
@@ -172,11 +176,23 @@ html_js_files = ['js/snowplow.js']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
+# html_sidebars = {
+#   "**": [
+#       "sidebar/scroll-start.html",
+#               "sidebar/brand.html",
+#               "sidebar/search.html",
+#               "sidebar/navigation.html",
+#               "sidebar/ethical-ads.html",
+#               "sidebar/scroll-end.html",
+#   ]
+# }
+
 html_sidebars = {
   "**": [
-      "sidebar/scroll-start.html",
-      "sidebar/navigation.html",
-      "sidebar/scroll-end.html",
+
+      'navigation.html',
+      'relations.html',
+      'searchbox.html',
   ]
 }
 
