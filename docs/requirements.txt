@@ -26,9 +26,8 @@ sphinxcontrib-serializinghtml==1.1.5
 tornado==6.2
 urllib3==1.26.11
 zipp==3.8.1
-ablog>=0.11.0rc2
+ablog>=0.10.33
 docutils
-MyST-Parser
 pydata-sphinx-theme>=0.13.0rc1
 rich
 sphinx
@@ -36,6 +35,3 @@ sphinx-autobuild
 sphinx-copybutton
 sphinx-design
 sphinx-examples
-sphinxcontrib-bibtex
-sphinxext-opengraph
-sphinxext-rediraffe
