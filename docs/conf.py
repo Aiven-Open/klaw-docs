@@ -198,9 +198,8 @@ html_js_files = ['js/snowplow.js']
 # }
 
 html_sidebars = {
-    "blog": ["archives.html"],
-#     "blog": ["ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
-#     "blog/**": ["ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "blog": ["categories.html", "tagcloud.html", "archives.html"],
+    "blog/**": ["postcard.html", "recentposts.html", "archives.html"],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
