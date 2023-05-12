@@ -128,11 +128,33 @@ light_css_variables = {
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
+# html_theme_options = {
+#   "light_css_variables": light_css_variables,
+#   "dark_css_variables": light_css_variables, # Same as light theme on purpose.
+#   "navigation_with_keys": True,
+#   "sidebar_hide_name": True,
+# }
 html_theme_options = {
-  "light_css_variables": light_css_variables,
-  "dark_css_variables": light_css_variables, # Same as light theme on purpose.
-  "navigation_with_keys": True,
-  "sidebar_hide_name": True,
+    "external_links": [
+        {"name": "Contact us", "url": "mailto:info@klaw-project.io"},
+    ],
+    "icon_links": [
+        {
+            # Label for this link
+            "name": "See GitHub",
+            # URL where the link will redirect
+            "url": "https://github.com/aiven/klaw",  # required
+            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
+            "icon": "fab fa-github-square",
+            # The type of image to be used (see below for details)
+            "type": "fontawesome",
+        }
+    ],
+    "icon_links_label": "Quick Links",
+    "logo": {
+        "image_light": "_static/images/logo-light.png",
+        "image_dark": "_static/images/logo-dark.png",
+    }
 }
 
 pygments_style = "monokai"
@@ -150,6 +172,7 @@ html_title = "Klaw"
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 # html_logo = '_static/images/logo.png'
+# html_logo = "https://github.com/aiven/klaw/blob/main/core/src/main/resources/static/assets/images/klaw_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -313,3 +336,8 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+html_context = {
+    "github_repo": "https://github.com/aiven/klaw",
+    "github_version": "2.3.0"
+}
