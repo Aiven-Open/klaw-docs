@@ -152,8 +152,9 @@ html_theme_options = {
     ],
     "icon_links_label": "Quick Links",
     "logo": {
-        "image_light": "_static/images/logo-light.png",
-        "image_dark": "_static/images/logo-dark.png",
+        "image_light": "_static/images/logo-dark.png",
+        "image_dark": "_static/images/logo-light.png",
+        "link": "index",
     }
 }
 
@@ -172,7 +173,6 @@ html_title = "Klaw"
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 # html_logo = '_static/images/logo.png'
-# html_logo = "https://github.com/aiven/klaw/blob/main/core/src/main/resources/static/assets/images/klaw_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -200,25 +200,6 @@ html_js_files = ['js/snowplow.js']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-# html_sidebars = {
-#   "**": [
-#       "sidebar/scroll-start.html",
-#               "sidebar/brand.html",
-#               "sidebar/search.html",
-#               "sidebar/navigation.html",
-#               "sidebar/ethical-ads.html",
-#               "sidebar/scroll-end.html",
-#   ]
-# }
-
-# html_sidebars = {
-#   "**": [
-#       'about.html',
-#       'navigation.html',
-#       'relations.html',
-#       'searchbox.html',
-#   ]
-# }
 
 html_sidebars = {
     "blog": ["categories.html", "tagcloud.html", "archives.html"],
