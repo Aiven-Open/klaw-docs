@@ -102,7 +102,8 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 # html_theme = 'furo'
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
+html_theme = 'pydata_sphinx_theme'
 
 # Same ones as TailwindCSS variables defined in `base.html`.
 _color_definitions = {
@@ -187,13 +188,19 @@ html_js_files = ['js/snowplow.js']
 #   ]
 # }
 
+# html_sidebars = {
+#   "**": [
+#       'about.html',
+#       'navigation.html',
+#       'relations.html',
+#       'searchbox.html',
+#   ]
+# }
+
 html_sidebars = {
-  "**": [
-      'about.html',
-      'navigation.html',
-      'relations.html',
-      'searchbox.html',
-  ]
+    "index": ["hello.html"],
+    "blog": ["ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
+    "blog/**": ["ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
