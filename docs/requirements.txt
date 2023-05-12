@@ -37,6 +37,3 @@ sphinx-autobuild
 sphinx-copybutton
 sphinx-design
 sphinx-examples
-sphinxcontrib-bibtex
-sphinxext-opengraph
-sphinxext-rediraffe
