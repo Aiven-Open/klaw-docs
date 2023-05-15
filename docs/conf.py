@@ -140,14 +140,9 @@ html_theme_options = {
     ],
     "icon_links": [
         {
-            # Label for this link
-            "name": "See GitHub",
-            # URL where the link will redirect
-            "url": "https://github.com/aiven/klaw",  # required
-            # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
-            "icon": "fab fa-github-square",
-            # The type of image to be used (see below for details)
-            "type": "fontawesome",
+            "name": "GitHub",
+            "url": "https://github.com/aiven/klaw",
+            "icon": "fa-brands fa-github",
         }
     ],
     "icon_links_label": "Quick Links",

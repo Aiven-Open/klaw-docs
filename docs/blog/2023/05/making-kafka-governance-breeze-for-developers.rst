@@ -31,8 +31,10 @@ Some important considerations when managing Kafka topics include:
 - How to increase visibility and awareness of topics within the organization?
 
 
-While it is manageable to have a couple of hundred kafka topics, but as they keep growing together with applications
-and teams, it would certainly become hard to manage. There could be a need to isolate a bunch of topics from other teams.
+While a small number of topics may be manageable, as the use of Kafka grows along side additional applications and
+teams, it becomes harder to manage effectively and efficiently. Along with additional considerations of isolating
+sensitive topics that may contain GDPR, HIPPA or other sensitive data to only the applications that should have access
+to them.
 
 Typical Challenges
 ------------------
