@@ -15,17 +15,18 @@ In today's ever-evolving technological landscape, organizations worldwide have A
 .. code-block:: bash
 
     A common challenge companies face is the inability to effectively govern 
-    and manage access permissions for the numerous topics created, often numbering in the hundreds or even thousands.
+    and manage access permissions for the numerous topics created, 
+    often numbering in the hundreds or even thousands.
 
 
 
 Managing Kafka topics poses significant challenges for companies, often leading to struggles executing the task effectively. Several crucial considerations arise when undertaking this endeavor:
 
-* Authorization and ownershi: Determining who has the rights to produce and consume messages on a specific topic and establishing clear ownership are crucial aspects to address.
-* Configuration backup and restoration: Establishing robust strategies for backing up and restoring Kafka's configuration is essential to ensure prompt recovery in the face of failures or system disruptions.
-* Security measures: Ensuring the proper enforcement of security measures through subscriptions and access controls is paramount to safeguarding sensitive data and preventing unauthorized access.
-* Topic promotion: Navigating the process of smoothly promoting topics with thoroughly tested configurations from lower environments to production requires careful planning and coordination.
-* Enhancing visibility and awareness: Increasing the visibility and awareness of topics within the organization facilitates better collaboration and knowledge sharing among teams.
+* **Authorization and ownership**: Determining who has the rights to produce and consume messages on a specific topic and establishing clear ownership are crucial aspects to address.
+* **Configuration backup and restoration**: Establishing robust strategies for backing up and restoring Kafka's configuration is essential to ensure prompt recovery in the face of failures or system disruptions.
+* **Security measures**: Ensuring the proper enforcement of security measures through subscriptions and access controls is paramount to safeguarding sensitive data and preventing unauthorized access.
+* **Topic promotion**: Navigating the process of smoothly promoting topics with thoroughly tested configurations from lower environments to production requires careful planning and coordination.
+* **Enhancing visibility and awareness**: Increasing the visibility and awareness of topics within the organization facilitates better collaboration and knowledge sharing among teams.
 
 
 Managing a small number of Kafka topics may seem manageable at first. However, as Kafka usage grows and more applications and teams are added, effective and efficient management can become increasingly challenging. This includes the important task of isolating sensitive topics containing GDPR, HIPAA, or other types of sensitive data. It is essential to ensure that only authorized applications can access these topics to maintain data security and regulatory compliance.
@@ -35,7 +36,7 @@ Typical challenges
 
 The current system faces several challenges that impede efficiency and effectiveness, posing risks and hindering productivity. Identifying and addressing these typical challenges can enhance operations and optimize overall performance. 
 
-Let's explore the fundamental challenges that must be addressed: 
+Let's explore the key challenges that need to be addressed: 
 
 - Manual activities
     Creating, accessing, and promoting a topic to a higher environment requires extensive email communication, involving approximately 10 emails. This manual approach consumes valuable time and increases potential errors and miscommunication.
@@ -52,13 +53,14 @@ Let's explore the fundamental challenges that must be addressed:
 
 .. image:: ../../../_static/images/blogimages/kafka-clusters.png
    :scale: 40%
+   :align: center
 
 Navigating Kafka system failures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inevitably, failures occur across all systems, and Kafka applications are no exception. These failures can occur at the client level, such as when event deserialization results in issues for consumers or at the infrastructure level, leading to the loss of zookeeper/Kafka configurations.
+Failures are an inevitable part of any system, and Kafka applications are no different. These failures can occur at different levels, including client-side issues where event deserialization creates problems for consumers, as well as infrastructure-related issues that result in the loss of zookeeper/Kafka configurations.
 
-Focusing on infrastructure issues, let's consider a scenario with 1000 topics, each possessing a unique configuration stored in a zookeeper. During disaster recovery, suppose the zookeeper crashes and fails to recover. The key question becomes: how swiftly can you retrieve the information and reboot your server? It's not just about having ways to store information but also about the strategic implementation of information storage and retrieval.
+In the context of infrastructure failures, let's consider a scenario with 1000 topics, each possessing a unique configuration stored in a zookeeper. Now, imagine a situation where a disaster strikes, causing the zookeeper to crash and be unable to recover. This raises a critical question: how swiftly can you retrieve the information and reboot your server? It's not just about having methods to store information but also about strategically implementing storage and retrieval processes for efficient recovery.
 
 How to mitigate these problems?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
