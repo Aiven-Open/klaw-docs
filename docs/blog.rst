@@ -6,4 +6,8 @@ Post list
    :glob:
 
 
-   First post<blog/first-post>
+   .. postlist:: 10
+   :date: %Y-%m-%d
+   :format: {date} - {title}
+   :list-style: none
+   :excerpts:
