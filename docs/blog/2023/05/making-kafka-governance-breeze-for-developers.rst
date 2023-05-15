@@ -10,10 +10,17 @@ Making Kafka Governance a Breeze for Developers
 Background
 ----------
 
-    Kafka is widely adopted around the world due to its scalability and unique features that set it apart from traditional
-messaging. Many organizations are now using Kafka as part of their technology stack. However, one common challenge that
-companies face is properly governing the hundreds or even thousands of topics that are created and managing their
-access permissions. This can be a difficult task, and companies often struggle to do it well.
+Kafka is widely adopted around the world due to its scalability and unique features that set it apart from traditional
+messaging. Many organizations are now using Kafka as part of their technology stack.
+
+.. code-block:: bash
+
+    A common challenge that companies face is inability to govern the hundreds
+    or even thousands of topics that are created and managing their access
+    permissions.
+
+
+This can be a difficult task, and companies often struggle to do it well.
 
 Some important considerations when managing Kafka topics include:
 
@@ -24,7 +31,7 @@ Some important considerations when managing Kafka topics include:
 - How to increase visibility and awareness of topics within the organization?
 
 
-    While it is manageable to have a couple of hundred kafka topics, but as they keep growing together with applications
+While it is manageable to have a couple of hundred kafka topics, but as they keep growing together with applications
 and teams, it would certainly become hard to manage. There could be a need to isolate a bunch of topics from other teams.
 
 Typical Challenges
@@ -49,7 +56,7 @@ Typical Challenges
 Kafka failures
 ~~~~~~~~~~~~~~
 
-    Failures are sometimes un-avoidable. It can also happen for Kafka applications. There could be client level failures
+Failures are sometimes un-avoidable. It can also happen for Kafka applications. There could be client level failures
 where an event deserialization leads to consumer problems, and infrastructure issues leading to zookeeper/kafka
 configuration loss. Let's focus on infra issues: Imagine there are a 1000 topics, and topics have configuration which is
 stored in zookeeper. In terms of disaster recovery, what if a zookeeper is crashed, and unable to come back. How quickly
@@ -69,12 +76,12 @@ A governance platform to
 
 Klaw
 ----
-    Klaw is a toolkit that addresses the critical questions faced by any Kafka developer. It provides solutions for
+Klaw is a toolkit that addresses the critical questions faced by any Kafka developer. It provides solutions for
 compliance and audit issues, data security and release management among others. Built from the ground up as an open
 tool, Klaw gives back to the streaming community by enabling developers to take advantage of modern governance, control,
 and security approaches.
 
-    Built from the ground up as an open tool, Klaw gives back to the streaming community by enabling developers to take
+Built from the ground up as an open tool, Klaw gives back to the streaming community by enabling developers to take
 advantage of modern governance, control, and security standards when developing Kafka applications.
 
 Features
@@ -85,6 +92,7 @@ Klaw is based on 4 fundamental principles.
 ``Governance`` - ``Self-service`` - ``Security`` - ``Automation``
 
 .. image:: ../../../_static/images/blogimages/klaw-features.png
+
 
 
 - Reducing dependency on Infra team, and assigning responsibilities to developer teams, gives the power to learn to execute. Implicitly saves time, cost and effort. With full self service enabled, its a ZERO risk of manual errors, saving costs on time and effort.
@@ -109,7 +117,10 @@ Documentation : https://www.klaw-project.io/docs
 Conclusion
 ----------
 
-    Every organization is coming up with their own ways to solve this problem of growing number of kafka topics, schemas
+Every organization is coming up with their own ways to solve this problem of growing number of kafka topics, schemas
 and issues in managing them. Few of them could be addressed by maintaining parts of the data in Excel, Confluence,
 Gitops etc, but to make developer and admin lives easier, Klaw would be your one stop solution.
-It's free and opensource.
+
+.. code-block:: bash
+
+    It's free and opensource.

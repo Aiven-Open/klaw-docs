@@ -158,6 +158,11 @@ html_theme_options = {
     }
 }
 
+# blog_baseurl = "https://klaw-project.io/"
+# blog_path = "blog"
+# blog_post_pattern = "blog/*/*"
+# disqus_shortname = "klawproject"
+
 pygments_style = "monokai"
 
 # Add any paths that contain custom themes here, relative to this directory.
