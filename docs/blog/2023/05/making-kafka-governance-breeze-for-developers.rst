@@ -92,7 +92,7 @@ Klaw is built upon four essential pillars, which serve as the foundation for its
 
 - **Governance**: Ensures accountability and consistency with approvals, audit trails, naming conventions, clear ownership, and a single source of truth.
 - **Self-service**: Empowers developers with search, customizable dashboard, reporting, and multi-tenancy for efficient resource management and data integrity.
-- **Robust security**: Offers SSO/AD authentication, RBAC, Kafka Security protocols, audit trails, and multi-tenancy to address diverse security needs.
+- **Security**: Offers SSO/AD authentication, RBAC, Kafka Security protocols, audit trails, and multi-tenancy to address diverse security needs.
 - **Automation**: Streamlines tasks like resource provisioning, topic promotion, metadata sync, backup/restore, and notifications for time and cost savings.
 
 Benefits of Klaw
@@ -100,7 +100,7 @@ Benefits of Klaw
 
 - **Reduced dependency**: By reducing dependency on infrastructure teams and empowering developer teams, Klaw enables faster execution and decision-making, saving time, cost, and effort.
 - **Zero risk of manual errors**: With full self-service capabilities, Klaw eliminates the risk of manual errors, ensuring data accuracy and cost savings.
-- **Continuous integration**: Klaw enables continuous integration by seamlessly promoting topics and schemas to higher environments, ensuring consistency throughout the development pipeline.
+- **Continuous integration**: Klaw enables continuous integration by promoting topics and schemas to higher environments, ensuring consistency throughout the development pipeline.
 - **Secure authentication**: Klaw authenticates users based on an organization's single sign-on (SSO) or Active Directory (AD), providing a secure access control mechanism.
 - **Tailored security features**: Klaw offers robust security features that cater to the specific needs of different types of organizations, ensuring data protection and compliance.
 
