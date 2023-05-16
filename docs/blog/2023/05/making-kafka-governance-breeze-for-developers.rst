@@ -9,13 +9,13 @@ Making Kafka Governance a Breeze for Developers
 
 Background
 ----------
-In today's ever-evolving technological landscape, organizations worldwide have Apache Kafka for its unparalleled scalability and exceptional features, leading to a paradigm shift in how messaging systems are handled. As more and more organizations adopt Kafka as a vital component of their technology stacks, the need for effective Kafka governance becomes paramount.
+In today's ever-evolving technological landscape, organizations worldwide have adopted Apache Kafka® for its unparalleled scalability and exceptional features, leading to a paradigm shift in how messaging systems are handled. As more and more organizations adopt Kafka as a vital component of their technology stacks, the need for effective Kafka governance becomes paramount.
 
 
 .. code-block:: bash
 
     A common challenge companies face is the inability to effectively govern 
-    and manage access permissions for the numerous topics created, 
+    and manage access permissions for the numerous topics created,
     often numbering in the hundreds or even thousands.
 
 
