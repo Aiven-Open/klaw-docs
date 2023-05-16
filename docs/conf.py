@@ -18,7 +18,7 @@ import os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
@@ -28,7 +28,10 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+"ablog",
+"sphinx.ext.intersphinx"
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -44,7 +47,7 @@ master_doc = 'contents'
 
 # General information about the project.
 project = u'Klaw'
-copyright = u'2022, Aiven'
+copyright = u'2023, Aiven'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -98,7 +101,9 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'furo'
+# html_theme = 'furo'
+# html_theme = 'alabaster'
+html_theme = 'pydata_sphinx_theme'
 
 # Same ones as TailwindCSS variables defined in `base.html`.
 _color_definitions = {
@@ -123,12 +128,35 @@ light_css_variables = {
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
+# html_theme_options = {
+#   "light_css_variables": light_css_variables,
+#   "dark_css_variables": light_css_variables, # Same as light theme on purpose.
+#   "navigation_with_keys": True,
+#   "sidebar_hide_name": True,
+# }
 html_theme_options = {
-  "light_css_variables": light_css_variables,
-  "dark_css_variables": light_css_variables, # Same as light theme on purpose.
-  "navigation_with_keys": True,
-  "sidebar_hide_name": True,
+    "external_links": [
+        {"name": "Contact us", "url": "mailto:info@klaw-project.io"},
+    ],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/aiven/klaw",
+            "icon": "fa-brands fa-github",
+        }
+    ],
+    "icon_links_label": "Quick Links",
+    "logo": {
+        "image_light": "_static/images/logo-dark.png",
+        "image_dark": "_static/images/logo-light.png",
+        "link": "index",
+    }
 }
+
+# blog_baseurl = "https://klaw-project.io/"
+# blog_path = "blog"
+# blog_post_pattern = "blog/*/*"
+# disqus_shortname = "klawproject"
 
 pygments_style = "monokai"
 
@@ -172,12 +200,10 @@ html_js_files = ['js/snowplow.js']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
+
 html_sidebars = {
-  "**": [
-      "sidebar/scroll-start.html",
-      "sidebar/navigation.html",
-      "sidebar/scroll-end.html",
-  ]
+    "blog": ["categories.html", "tagcloud.html", "archives.html"],
+    "blog/**": ["postcard.html", "recentposts.html", "archives.html"],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
@@ -291,3 +317,8 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+html_context = {
+    "github_repo": "https://github.com/aiven/klaw",
+    "github_version": "2.3.0"
+}

@@ -3,9 +3,7 @@
    :glob:
 
 
-   Home <index>
    Docs <docs>
    Releases <releases>
-   Faq <faq>
-
+   Blog <blog>
 
