@@ -1,6 +1,6 @@
 
-Making Kafka Governance a Breeze for Developers
-===============================================
+Effortless Kafka Governance: Making Life Easier for Developers
+==============================================================
 
 .. post:: May 15, 2023
    :tags: kafka,governance,topics,acls,klaw
