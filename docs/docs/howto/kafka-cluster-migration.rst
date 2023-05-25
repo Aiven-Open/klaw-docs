@@ -1,4 +1,4 @@
-Klaw Installation
+Kafka Cluster Migration
 =================
 
 .. toctree::
