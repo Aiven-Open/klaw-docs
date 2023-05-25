@@ -7,8 +7,7 @@ Skip to see all notifications sent and to which users: :ref:`Email matrix`
 
 Configure email notifications
 -----------------------------
-Email can be configured in the Klaw-core's appplication.properties, follow your email providers documentation to configure email notifications.
-The ``host``, ``username`` and ``password`` will be required to send emails from Klaw.
+You can configure email notifications in the ``application.properties`` file of Klaw-core. Refer to the documentation provided by your email service provider for instructions on how to configure email notifications. Additionally, make sure you have the ``host``, ``username``, and ``password`` details as you will need to provide this information to enable email notifications in Klaw.
 
 ..  code-block:: text
     :caption: Klaw email properties
@@ -28,9 +27,12 @@ The ``host``, ``username`` and ``password`` will be required to send emails from
 
 Customize email templates
 -------------------------
-The Superadmin can access all the email templates using the navigation bar to go to Dashboard -> Settings.
+
+The Superadmin can access all the email templates through the navigation bar by going to Dashboard -> Settings.
 Within settings all email templates are prefixed with ``klaw.mail`` and is suffixed by the notifactiontype and ``.content``
-This can be edited to local languages to reword emails and add additional information.
+These templates can be modified to suit local languages, allowing for the rewording of emails and including any additional information.
+
+
 
 .. _Email matrix:
 
