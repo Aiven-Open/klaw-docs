@@ -18,6 +18,7 @@ Klaw How to do things
    Teams<howto/teams>
    Users<howto/users>
    Roles Permissions<howto/rolespermissions>
+   Notifications<howto/notifications>
    Clusters<howto/clusters>
    Environments<howto/environments>
    Tenants<howto/tenant>

@@ -24,4 +24,4 @@ Klaw team intends to release once in every two months. It could be patch, minor 
 - :doc:`/releases/release110`
 - :doc:`/releases/release100`
 
-.. seealso::  Roadmap https://github.com/orgs/aiven/projects/18
+.. seealso::  Roadmap https://github.com/orgs/aiven/projects
