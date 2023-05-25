@@ -39,6 +39,7 @@ How to install and configure Klaw.
 - :doc:`howto/subscriptions`
 - :doc:`howto/schemas`
 - :doc:`howto/connectors`
+- :doc:`howto/notifications`
 - :doc:`howto/tenant`
 - :doc:`howto/teams`
 - :doc:`howto/analytics`
