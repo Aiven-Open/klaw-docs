@@ -35,7 +35,7 @@ Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw i
 
 
 Create Docker Compose file
-###################################
+````````````````````````````````````
 
 To begin, create a Docker Compose file that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
 
@@ -79,7 +79,7 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
   It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
 Run Docker Compose
-############################
+``````````````````````````
 
 Once you have created the Docker Compose file, run the following command to start the containers defined in the file:
 
@@ -89,7 +89,7 @@ Once you have created the Docker Compose file, run the following command to star
 
 
 Verify Docker process
-###############################
+````````````````````````
 
 To ensure that the containers are running successfully, use the following command to check their status:
 
@@ -100,12 +100,12 @@ To ensure that the containers are running successfully, use the following comman
      docker ps
 
 Access the web interface
-###################################
+```````````````````````````
 
 Access the Klaw web interface using this URL:   ``http://localhost:9097/``
 
 Verify the installation
-################################
+```````````````````````````
 
 To verify the installation and access Klaw, follow the steps below:
 
@@ -125,7 +125,7 @@ To verify the installation and access Klaw, follow the steps below:
 
 
 Next Steps
-##########
+````````````````
 
 After successfully verifying your installation, recommend you to follow the documentation in :doc:`configure-klaw-wizard`.
 
