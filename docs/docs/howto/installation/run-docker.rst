@@ -7,6 +7,8 @@ Klaw provides Docker images that allow you to run Klaw inside Docker containers.
 
 * Cluster API : https://hub.docker.com/r/aivenoy/klaw-cluster-api
 
+Klaw Docker QuickStart
+----------------------
 Follow the steps below to run Klaw in Docker: 
 
 1. Prerequisites
@@ -30,7 +32,8 @@ Follow the steps below to run Klaw in Docker:
        VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 
 
-2. Create Docker Compose file
+Create Docker Compose file
+##########################
 
 For a quick start, you can use the following sample Docker Compose file:
 It will deploy the latest release of Klaw, use the localhosts networking for easy setup of communication between the containers and use a local h2 database to get up and running.
@@ -73,7 +76,8 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
 
   It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
-3. Run Docker Compose
+Run Docker Compose
+##################
 
 Run the following command to start the containers defined in the Docker Compose file:
 
@@ -82,26 +86,40 @@ Run the following command to start the containers defined in the Docker Compose 
   ``docker-compose -f .\dockerpcompose.yml up``
 
 
-4. Verify Docker process
+Verify Docker process
+#####################
+
 Check the status of the containers using the following command:
 
-::
+..  code-block:: bash
+    :caption: Verify docker is running
 
-  ``docker ps``
+     #See if both klaw-core and klaw-cluster-api are running
+     docker ps
 
 5. Access the web interface
 
-Access the Klaw web interface using this URL:   ``http://<dockerhost>:9097/``
+Access the Klaw web interface using this URL:   ``http://localhost:9097/``
 
-6. Login with default credentials
+Verify the Install
+##################
+
+Login with default credentials
 
 To access Klaw, use the following default credentials for the superadmin account:
 
 * **Username:** ``superadmin``
 * **Password:** ``kwsuperadmin123$$``
 
-.. note:: 
+.. note::
   Recommend you change the default credentials before running Klaw in your application.
+
+
+In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
+
+  http://localhost:9343
+
+Click **Test connection**.
 
 Klaw Docker Scripts
 -------------------
