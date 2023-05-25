@@ -38,7 +38,6 @@ These templates can be modified to suit local languages, allowing for the reword
 
 
 .. list-table:: Email notification matrix
-   :widths: 50 50 50 50 50 50 50
    :header-rows: 1
    :class: no-scroll
 
@@ -47,8 +46,8 @@ These templates can be modified to suit local languages, allowing for the reword
      - Approver
      - Requestor Team
      - Approver Team
-     - APPROVE_ALL_REQUESTS_TEAMS
-     - Administrator
+     - All Approvals*
+     - Admin
    * - User Registration Request
      - cc
      -
@@ -161,3 +160,7 @@ These templates can be modified to suit local languages, allowing for the reword
      -
      -
      -
+
+
+.. note::
+  'All Approvals' are Users assigned the permission APPROVE_ALL_REQUESTS_TEAMS, this permission allows users to approve any Topic, Schema, ACL or Connector request from any team.
