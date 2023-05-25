@@ -7,17 +7,14 @@ Klaw provides Docker images that allow you to run Klaw inside Docker containers.
 
 * Cluster API : https://hub.docker.com/r/aivenoy/klaw-cluster-api
 
-Klaw Docker QuickStart
-----------------------
-Follow the steps below to run Klaw in Docker: 
+Prerequisites
+--------------
 
-1. Prerequisites
+Before running Klaw in Docker, ensure that you have the following prerequisites:
 
-* Docker Installed
-
+* Docker installed
 * Docker Compose installed
-
-* Generate a minimum 32 character KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET
+* Generate a minimum 32 character ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET``
 
   ..  code-block:: bash
       :caption: Bash Generation Example
@@ -32,13 +29,17 @@ Follow the steps below to run Klaw in Docker:
        VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 
 
-Create Docker Compose file
-##########################
+Klaw Docker QuickStart
+----------------------
+Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw instances. Follow the steps below to quickly get Klaw up and running in Docker.
 
-For a quick start, you can use the following sample Docker Compose file:
-It will deploy the latest release of Klaw, use the localhosts networking for easy setup of communication between the containers and use a local h2 database to get up and running.
 
-Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated value in docker compose below.
+Step 1:Create Docker Compose file
+###################################
+
+To begin, create a Docker Compose file that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
+
+Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generated value in docker compose below:
 
 ..  code-block:: yaml
     :caption: Deploy latest Klaw release with docker compose
@@ -77,20 +78,20 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
 
   It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
-Run Docker Compose
-##################
+Step 2: Run Docker Compose
+############################
 
-Run the following command to start the containers defined in the Docker Compose file:
+Once you have created the Docker Compose file, run the following command to start the containers defined in the file:
 
 ::
   
   docker-compose -f .\dockerpcompose.yml up
 
 
-Verify Docker process
-#####################
+Step 3: Verify Docker process
+###############################
 
-Check the status of the containers using the following command:
+To ensure that the containers are running successfully, use the following command to check their status:
 
 ..  code-block:: bash
     :caption: Verify docker is running
@@ -98,35 +99,35 @@ Check the status of the containers using the following command:
      #See if both klaw-core and klaw-cluster-api are running
      docker ps
 
-Access the web interface
-#######################
+Step 4: Access the web interface
+###################################
 
 Access the Klaw web interface using this URL:   ``http://localhost:9097/``
 
-Verify the Install
-##################
+Step 5: Verify the installation
+################################
 
-Login with default credentials
+To verify the installation and access Klaw, follow the steps below:
 
-To access Klaw, use the following default credentials for the superadmin account:
-
-* **Username:** ``superadmin``
-* **Password:** ``kwsuperadmin123$$``
+1. Access Klaw using the below default credentials for the superadmin account:
+  
+  * **Username:** ``superadmin``
+  * **Password:** ``kwsuperadmin123$$``
 
 .. note::
   Recommend you change the default credentials before running Klaw in your application.
 
-
-In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
+2. In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
 
   http://localhost:9343
 
-Click **Test connection**.
+3. Click **Test connection**.
+
 
 Next Steps
 ##########
 
-Once you have finished verifying your install we recommend you follow the documentation in :doc:`configure-klaw-wizard`
+After successfully verifying your installation, recommend you to follow the documentation in :doc:`configure-klaw-wizard`.
 
 Klaw Docker Scripts
 -------------------
