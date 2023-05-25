@@ -114,7 +114,7 @@ To verify the installation and access Klaw, follow the steps below:
    * **Username:** ``superadmin``
    * **Password:** ``kwsuperadmin123$$``
 
-  .. note::
+   .. note::
     Recommend you change the default credentials before running Klaw in your application.
 
 2. In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
