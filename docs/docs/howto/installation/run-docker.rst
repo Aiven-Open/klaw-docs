@@ -84,7 +84,7 @@ Run the following command to start the containers defined in the Docker Compose 
 
 ::
   
-  ``docker-compose -f .\dockerpcompose.yml up``
+  docker-compose -f .\dockerpcompose.yml up
 
 
 Verify Docker process
@@ -98,7 +98,8 @@ Check the status of the containers using the following command:
      #See if both klaw-core and klaw-cluster-api are running
      docker ps
 
-5. Access the web interface
+Access the web interface
+#######################
 
 Access the Klaw web interface using this URL:   ``http://localhost:9097/``
 
