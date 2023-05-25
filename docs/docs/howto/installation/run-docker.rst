@@ -17,7 +17,7 @@ Follow the steps below to run Klaw in Docker:
 
 * Docker Compose installed
 
-* Generate a 32 character KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET
+* Generate a minimum 32 character KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET
 
   ..  code-block:: bash
       :caption: Bash Generation Example
