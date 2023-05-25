@@ -37,6 +37,7 @@ Create Docker Compose file
 
 For a quick start, you can use the following sample Docker Compose file:
 It will deploy the latest release of Klaw, use the localhosts networking for easy setup of communication between the containers and use a local h2 database to get up and running.
+
 Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated value in docker compose below.
 
 ..  code-block:: yaml
@@ -121,6 +122,11 @@ In the Klaw user interface, go to the **Dashboard -> Settings** page, and look f
 
 Click **Test connection**.
 
+Next Steps
+##########
+
+Once you have finished verifying your install we recommend you follow the documentation in :doc:`configure-klaw-wizard`
+
 Klaw Docker Scripts
 -------------------
 Klaw also provides Docker scripts that can be downloaded from the project's GitHub repository. These scripts include a README file that explains how to build and deploy the latest version of Klaw. You can find these scripts at https://github.com/aiven/klaw/tree/main/docker-scripts.
@@ -139,19 +145,21 @@ To find the location of the Klaw Docker volume, run the following command with y
 
 
 Linux
-```````
+#####
+
 On Linux, Docker volumes are typically located in the following directory:
 
 ``/var/lib/docker/volumes/docker-scripts_klaw_data/_data``
 
 Windows
-`````````
+#######
+
 On Windows, Docker volumes are typically located in the following directory:
 
 ``\\wsl$\docker-desktop-data\data\docker\volumes\docker-scripts_klaw_data\_data``
 
 Configure Docker images
-----------------------------------
+-----------------------
 After copying the Keystores to the Klaw docker volume, you can set the keystore location by simply specifying ``/klaw/client.keystore.p12`` and ``/klaw/client.truststore.jks``.
 
 There are two ways to configure this:
