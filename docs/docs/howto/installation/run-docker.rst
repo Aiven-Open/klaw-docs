@@ -34,7 +34,7 @@ Klaw Docker QuickStart
 Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw instances. Follow the steps below to quickly get Klaw up and running in Docker.
 
 
-Create Docker Compose file
+1. Create Docker Compose file
 ````````````````````````````````````
 
 To begin, create a Docker Compose file that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
@@ -78,7 +78,7 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
 
   It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
-Run Docker Compose
+2. Run Docker Compose
 ``````````````````````````
 
 Once you have created the Docker Compose file, run the following command to start the containers defined in the file:
@@ -88,7 +88,7 @@ Once you have created the Docker Compose file, run the following command to star
   docker-compose -f .\dockerpcompose.yml up
 
 
-Verify Docker process
+3. Verify Docker process
 ````````````````````````
 
 To ensure that the containers are running successfully, use the following command to check their status:
@@ -99,32 +99,32 @@ To ensure that the containers are running successfully, use the following comman
      #See if both klaw-core and klaw-cluster-api are running
      docker ps
 
-Access the web interface
+4. Access the web interface
 ```````````````````````````
 
 Access the Klaw web interface using this URL:   ``http://localhost:9097/``
 
-Verify the installation
+5. Verify the installation
 ```````````````````````````
 
 To verify the installation and access Klaw, follow the steps below:
 
 1. Access Klaw using the below default credentials for the superadmin account:
   
-  * **Username:** ``superadmin``
-  * **Password:** ``kwsuperadmin123$$``
+   * **Username:** ``superadmin``
+   * **Password:** ``kwsuperadmin123$$``
 
-.. note::
-  Recommend you change the default credentials before running Klaw in your application.
+  .. note::
+    Recommend you change the default credentials before running Klaw in your application.
 
 2. In the Klaw user interface, go to the **Dashboard -> Settings** page, and look for the ``klaw.clusterapi.url`` configuration. To use a secure connection, update the URL to HTTPS, for example::
 
-  http://localhost:9343
+    http://localhost:9343
 
 3. Click **Test connection**.
 
 
-Next Steps
+5. Next Steps
 ````````````````
 
 After successfully verifying your installation, recommend you to follow the documentation in :doc:`configure-klaw-wizard`.
