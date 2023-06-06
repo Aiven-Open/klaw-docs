@@ -15,6 +15,10 @@ As schemas are owned by Topic Owners, this functionality allows you to select to
 
     - `Individual Options`: Select one or more topics individually, choose a team, and save. The selected schemas will now appear in the **Schemas** tab in **TopicOverview** menu.
 
+.. note::  Klaw caches all this schema information, and refreshes once in a day, or whenever there are schema changes.
+            However when someone adds/deletes a schema manually, directly on the schema registry server, a manual cache reset can be done with the button provided in the page.
+
+
 .. image:: /../../../_static/images/sync/SyncSchemasFromCluster.png
 
 .. note::  **ShowAll** Option shows also the topics and associated schemas which are already in sync with the schema registry cluster. No action is required on these topics. These can be noticed with a green icon.
