@@ -1,35 +1,238 @@
-Workflows
-=========
+Workflows in Klaw
+=================
 
 
-Klaw has defined workflows to apply configuration on Kafka clusters. A concept of raising a request and approving it, instead of directly creating a configuration on the cluster.
-
-- This adds an extra layer of security avoiding risk of manual entries.
-- The requests are properly reviewed and verified by another pair of eyes, maintaining sanity of the application.
-- Information is audited. Who is raising the request, when it has been created, and who approved and when. Helps in identifying problems during unexpected behaviour of system.
-- By maintaining a history of applied changes, easy track back on the evolution of a configuration.
+Klaw has defined workflows for applying configurations to Kafka clusters. Instead of directly creating configurations on the cluster, Klaw follows the `Four Eyes Principle` concept. This approach entails raising a request and obtaining approval before implementing any changes.
 
 
-Workflows are administered by defining ownerships, roles, permissions and authorizations in Klaw. Below here are certain concepts of owners in Klaw.
+Benefits of workflows:
+
+- It provides an additional layer of security by mitigating risks associated with manual entries.
+- Ensures a thorough review and verification of requests by another person, ensuring the sanity of the application.
+- Comprehensive information auditing, including request origin, creation time, approval details, and timestamps, enables problem identification during unexpected system behavior.
+- Easy tracking of configuration changes history, allowing for a quick overview of configuration evolution.
+
+Workflows in Klaw are managed by defining ownerships, roles, permissions, and authorizations. In the following section, you will find an overview of the key concepts related to ownership in Klaw.
 
 .. glossary::
 
-    Request and approval
-      One of the biggest benefits of working with Klaw is that it adds governance to your Apache Kafka® landscape as it grows.  When a new topic, schema, ACL or connector is needed, developers **request** that item themselves.  Another member of the same team can then **approve** the request, and the item will be created.
-        .. note::
-            Only holders of the ``USER`` role can make requests; users with the ``SUPERADMIN`` role cannot make requests, but can manage users and teams. This is the default configuration.
+  Request and approval
+    One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka® landscape. Developers can **request** new topics, schemas, ACLs, or connectors themselves. The request is then reviewed and **approved** by another member of the same team. 
 
-    Topic Owner
-      Kafka has topics, and in Klaw every topic has an owner which is a Team. So all the team members would be the owners of the topic. Any request which directly or indirectly changes its configuration is coming to this team for approval. They have the right to approve or deny. This team can be producers, consumers or both or none.
-      Note that this team would be the owners of the topic (same name) in all environments. Only this team has the right to delete the topic.
+    .. note::
+      This is the default configuration. The default configuration permits only users with the  ``USER`` role to make requests. Users with the ``SUPERADMIN`` role cannot request but can manage users and teams.
 
-    Subscription Owner
-      To provide security on kafka topics, subscriptions(acls) are defined. And in Klaw, every team whoever would like to produce or consume from the topic would become the subscription owner. A team can raise a subscription request (producer/consumer) on a topic, and request is sent to Topic Owner team for approval. Only this team has the right to delete the subscription, view consumer offsets, topic contents, or subscription related credentials if applicable.
+.. note::
+   A user who raises a request cannot approve it. Instead, a different user must approve.
 
-    Schema Owner
-      Klaw can integrate with Karapace or Schema registry and define schemas on a topic. Currently topic owner team can raise a schema request, and they would become the owners of the schema and its evolution.
+Approval process
+------------------
 
-    Connectors Owner
-      Klaw can integrate with Kafka Connect and define various types of connectors. Any team can request for a particular connector and they would become the owners of it.
+In Klaw, the approval process plays an essential role in managing workflows. This process entails verifying and accepting proposed changes, making it a crucial step toward enhancing the security and governance of the system.
 
-Note that any request raised cannot be approved by the same user, rather it has to be a different user.
+Roles in approval process
+``````````````````````````
+
+Within this approval process, different roles come into play, each with its unique responsibilities and permissions. These roles include:
+
+#. **Resource Owners Team** : When transferring ownership between teams, the current resource owner provides the necessary approval.
+#. **Requestors Team** : Usually, a fellow team member reviews and either approves or declines a request.
+#. **All Approvers** : Users assigned the ``APPROVE_ALL_REQUESTS_TEAMS`` permission can approve any request from any team.
+#. **Admin** : Admin users manage Klaw, primarily reviewing and approving user requests unless they also assinged the ``APPROVE_ALL_REQUESTS_TEAMS`` permission.
+
+User Requests
+--------------
+
+The table below outlines the roles responsible for approving user registration requests:
+
+.. list-table:: New User Approver matrix
+   :header-rows: 1
+   :class: no-scroll
+
+   * - Operation Type
+     - Resource Owners Team
+     - Requestors Team
+     - All Approvers
+     - Admin
+   * - User Registration Request
+     -
+     -
+     -
+     - ✅
+
+Topic owner
+---------------
+
+In Klaw, each Kafka topic is owned by a team, and all team members are considered owners. Any requests to modify the topic's configuration, whether direct or indirect, are sent to the team for approval. The team has the authority to approve or deny these requests. The team can consist of producers, consumers, or both or have no specific roles assigned.
+
+  
+.. note:: 
+  The team remains the owner of the topic across all environments. Only this team has the right to delete the topic.
+
+Topic request approvals
+`````````````````````````
+The table below outlines the roles responsible for approving various topic-related requests:
+
+
+.. list-table:: Topic Approver matrix
+   :header-rows: 1
+   :class: no-scroll
+
+   * - Operation Type
+     - Resource Owners Team
+     - Requestors Team
+     - All Approvers
+     - Admin
+   * - New Topic Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Update Topic Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Delete Topic Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Claim Topic Request
+     - ✅
+     -
+     - ✅
+     -
+   * - Promote Topic Request
+     -
+     - ✅
+     - ✅
+     -
+
+Connector owner
+---------------------
+
+Klaw can integrate with Kafka Connect and define various types of connectors. Any team can request a specific connector, and they will become the owners of that connector.
+
+
+Connector request approvals
+`````````````````````````````
+The table below outlines the roles responsible for approving various connector-related requests:
+
+.. list-table:: Connector Approver matrix
+   :header-rows: 1
+   :class: no-scroll
+
+   * - Operation Type
+     - Resource Owners Team
+     - Requestors Team
+     - All Approvers
+     - Admin
+   * - New Connector Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Update Connector Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Delete Connector Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Claim Connector Request
+     - ✅
+     -
+     - ✅
+     -
+   * - Promote Connector Request
+     -
+     - ✅
+     - ✅
+     -
+
+Schema owner
+---------------
+
+Schema Owner
+  Klaw can integrate with Karapace or Schema registry and define schemas on a topic. Currently, the topic owner team can raise a schema request, and they become the owners of the schema and its evolution.
+
+
+Schema request approvals
+``````````````````````````
+
+The table below outlines the roles responsible for approving various schema-related requests:
+
+.. list-table:: Schema Approver matrix
+   :header-rows: 1
+   :class: no-scroll
+
+   * - Operation Type
+     - Resource Owners Team
+     - Requestors Team
+     - All Approvers
+     - Admin
+   * - New Schema Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Delete Schema Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Promote Schema Request
+     -
+     - ✅
+     - ✅
+     -
+
+
+.. note::
+   With Schemas there is no `Claim Schema` as it is assigned to a topic and so the Topic owner owns the Schema. Likewise there is no `Update Schema` as existing Schemas are kept and a new Schema with an incremented version is added instead.
+
+Subscription owner
+----------------------
+
+Subscription Owner
+  In Klaw, subscriptions (ACLs) are defined to secure Kafka topics. Each team that wants to produce or consume from a topic becomes the subscription owner. Teams can submit subscription requests for a specific topic (either as a producer or consumer), which are then reviewed by the Topic Owner team for approval. The Topic Owner team alone can access consumer offsets, view topic contents, and manage any relevant subscription credentials, if applicable. The Subscription owner alone has the ability to delete their subscription.
+
+Subscription request approvals
+````````````````````````````````
+The table below outlines the roles responsible for approving various subscription-related requests:
+
+
+.. list-table:: Subscription Approver matrix
+   :header-rows: 1
+   :class: no-scroll
+
+   * - Operation Type
+     - Resource Owners Team
+     - Requestors Team
+     - All Approvers
+     - Admin
+   * - New Subscription Request
+     -
+     - ✅
+     - ✅
+     -
+   * - Delete Subscription Request
+     - ✅
+     -
+     - ✅
+     -
+   * - Claim Subscription Request
+     - ✅
+     -
+     - ✅
+     -
+
+
+.. note::
+   When claiming a Subscription, if the Subscription is owned by a team that does not own the corresponding topic, then two approvals are required: 
+    - Approval by the team that owns the Subscription.
+    - Approval by the team that owns the topic.
