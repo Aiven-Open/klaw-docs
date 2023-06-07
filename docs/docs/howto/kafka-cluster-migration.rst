@@ -12,6 +12,8 @@ Kafka Cluster Migration
    Synchronize ACLs from cluster<kafka-cluster-migration/sync-acls-from-cluster>
    Synchronize ACLs to cluster<kafka-cluster-migration/sync-acls-to-cluster>
    Synchronize connectors from cluster<kafka-cluster-migration/sync-connectors-from-cluster>
+   Synchronize schemas from cluster<kafka-cluster-migration/sync-schemas-from-cluster>
+   Synchronize schemas to cluster<kafka-cluster-migration/sync-schemas-to-cluster>
 
 
 Klaw supports data synchronization between Klaw and Apache Kafka® and other clusters. This can be accessed through the Synchronize menu option.
@@ -26,3 +28,5 @@ If your Klaw setup is already in place, for example, if it has been restored fro
 - :doc:`kafka-cluster-migration/sync-acls-from-cluster`
 - :doc:`kafka-cluster-migration/sync-acls-to-cluster`
 - :doc:`kafka-cluster-migration/sync-connectors-from-cluster`
+- :doc:`kafka-cluster-migration/sync-schemas-from-cluster`
+- :doc:`kafka-cluster-migration/sync-schemas-to-cluster`
