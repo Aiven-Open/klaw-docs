@@ -123,7 +123,7 @@ In the same directory that you created the `docker-compose.yaml` file, run the f
 
 ::
   
-  docker-compose up
+  docker-compose up -d
 
 
 3. Verify Docker process
