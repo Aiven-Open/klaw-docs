@@ -38,12 +38,10 @@ Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw i
 
 To begin, create a Docker Compose file called ``docker-compose.yml`` that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
 
-Jump to :ref:`linux<Linux docker compose>`
-Jump to :ref:`Windows Mac<Linux docker compose>`
-
 Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generated value in docker compose below:
 
-.. _linux:
+Linux docker compose
+********************
 
 ..  code-block:: yaml
     :caption: Deploy latest Klaw release with docker compose on Linux
@@ -74,7 +72,8 @@ Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generat
       klaw_data:
         driver: local
 
-.. _Windows Mac:
+Windows & Mac docker compose
+****************************
 
 ..  code-block:: yaml
     :caption: Deploy latest Klaw release with docker compose on Windows or Mac
