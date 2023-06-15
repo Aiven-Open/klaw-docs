@@ -159,11 +159,11 @@ To verify the installation and access Klaw, follow the steps below:
 
     http://localhost:9343
 
-2.1  Or if using a windows or linux machine ensure you update the url to use the container name, for example::
+3.  Or if using a windows or linux machine ensure you update the url to use the container name, for example::
 
     http://klaw-cluster-api:9343
 
-3. Click **Test connection**.
+4. Click **Test connection**.
 
 5. Next Steps
 ````````````````
