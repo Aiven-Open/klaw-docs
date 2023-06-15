@@ -157,6 +157,7 @@ To verify the installation and access Klaw, follow the steps below:
 
 3. Click **Test connection**.
 
+4. If this fails a common issue seen is that the address localhost has been resolved to the machines ip address. Try updating from localhost to `http://127.0.0.1:9343` and select  **Test connection** again.
 
 5. Next Steps
 ````````````````
