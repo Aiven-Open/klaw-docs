@@ -28,9 +28,6 @@ In this release, we have redesigned some key user interfaces using React to enha
 
 - **Manage Kafka Connectors**: View kafka connectors and tasks status and ability to restart them
 
-.. image:: /../../../_static/images/release-240-react-ui.png
-
-.. image:: /../../../_static/images/release-230-react-ui-approvals.png
 
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true`` (Effective this version, it is true by default):
 ::
