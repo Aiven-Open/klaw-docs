@@ -38,6 +38,7 @@ Create Docker Compose file
 For a quick start, you can use the following sample Docker Compose file:
 It will deploy the latest release of Klaw, use the localhosts networking for easy setup of communication between the containers and use a local h2 database to get up and running.
 
+Create a new yaml file called `docker-compose.yml`
 Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated value in docker compose below.
 
 ..  code-block:: yaml
@@ -47,7 +48,7 @@ Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated v
     version: '3'
     services:
       klaw-core:
-        image: klaw-core:latest
+        image: aivenoy/klaw-core:latest
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
           SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
@@ -56,9 +57,10 @@ Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated v
           - "klaw_data:/klaw"
         extra_hosts:
           - "moby:127.0.0.1"
-
+        ports:
+         - 9097:9097
       klaw-cluster-api:
-        image: klaw-cluster-api:latest
+        image: aivenoy/klaw-cluster-api:latest
         network_mode: "host"
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
@@ -66,6 +68,8 @@ Replace the KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET value with your own generated v
           - "klaw_data:/klaw"
         extra_hosts:
           - "moby:127.0.0.1"
+        ports:
+         - 9097:9097
     volumes:
       klaw_data:
         driver: local
@@ -80,11 +84,11 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
 Run Docker Compose
 ##################
 
-Run the following command to start the containers defined in the Docker Compose file:
+In the same directory that you created the `docker-compose.yaml` file, run the following command to start the containers defined in the Docker Compose file:
 
 ::
   
-  docker-compose -f .\dockerpcompose.yml up
+  docker-compose up
 
 
 Verify Docker process
