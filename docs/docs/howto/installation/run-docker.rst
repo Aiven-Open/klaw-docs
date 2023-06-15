@@ -51,6 +51,7 @@ Linux docker compose
     services:
       klaw-core:
         image: aivenoy/klaw-core:latest
+        container_name: klaw-core
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
           SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
@@ -83,6 +84,7 @@ Windows & Mac docker compose
     services:
       klaw-core:
         image: aivenoy/klaw-core:latest
+        container_name: klaw-cluster-api
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
           SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
@@ -155,9 +157,11 @@ To verify the installation and access Klaw, follow the steps below:
 
     http://localhost:9343
 
-3. Click **Test connection**.
+2.1  Or if using a windows or linux machine ensure you update the url to use the container name, for example::
 
-4. If this fails a common issue seen is that the address localhost has been resolved to the machines ip address. Try updating from localhost to `http://127.0.0.1:9343` and select  **Test connection** again.
+    http://klaw-cluster-api:9343
+
+3. Click **Test connection**.
 
 5. Next Steps
 ````````````````
