@@ -62,6 +62,7 @@ Linux docker compose
           - "moby:127.0.0.1"
       klaw-cluster-api:
         image: aivenoy/klaw-cluster-api:latest
+        container_name: klaw-cluster-api
         network_mode: "host"
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
@@ -84,7 +85,7 @@ Windows & Mac docker compose
     services:
       klaw-core:
         image: aivenoy/klaw-core:latest
-        container_name: klaw-cluster-api
+        container_name: klaw-core
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
           SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
@@ -96,6 +97,7 @@ Windows & Mac docker compose
          - 9097:9097
       klaw-cluster-api:
         image: aivenoy/klaw-cluster-api:latest
+        container_name: klaw-cluster-api
         environment:
           KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
         volumes:
