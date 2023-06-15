@@ -33,17 +33,16 @@ Klaw Docker QuickStart
 ----------------------
 Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw instances. Follow the steps below to quickly get Klaw up and running in Docker.
 
-=======
 1. Create Docker Compose file
 ````````````````````````````````````
 
-To begin, create a Docker Compose file called `docker-compose.yml` that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
+To begin, create a Docker Compose file called ``docker-compose.yml`` that defines the configuration for running Klaw. For a quick start, you can use the following sample Docker Compose file. This configuration deploys the latest release of Klaw, utilizes localhost networking for easy communication between containers, and sets up a local h2 database for quick setup.
 
 Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generated value in docker compose below:
 
 
 ..  code-block:: yaml
-    :caption: Deploy latest Klaw release with docker compose
+    :caption: Deploy latest Klaw release with docker compose on Linux
 
     ---
     version: '3'
@@ -58,8 +57,6 @@ Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generat
           - "klaw_data:/klaw"
         extra_hosts:
           - "moby:127.0.0.1"
-        ports:
-         - 9097:9097
       klaw-cluster-api:
         image: aivenoy/klaw-cluster-api:latest
         network_mode: "host"
@@ -69,12 +66,41 @@ Replace the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` value with your own generat
           - "klaw_data:/klaw"
         extra_hosts:
           - "moby:127.0.0.1"
-        ports:
-         - 9097:9097
     volumes:
       klaw_data:
         driver: local
 
+
+..  code-block:: yaml
+    :caption: Deploy latest Klaw release with docker compose on Windows or Mac
+
+    ---
+    version: '3'
+    services:
+      klaw-core:
+        image: aivenoy/klaw-core:latest
+        environment:
+          KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
+          SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+        volumes:
+          - "klaw_data:/klaw"
+        extra_hosts:
+          - "moby:127.0.0.1"
+        ports:
+         - 9097:9097
+      klaw-cluster-api:
+        image: aivenoy/klaw-cluster-api:latest
+        environment:
+          KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
+        volumes:
+          - "klaw_data:/klaw"
+        extra_hosts:
+          - "moby:127.0.0.1"
+        ports:
+         - 9343:9343
+    volumes:
+      klaw_data:
+        driver: local
 
 To configure a property, for example, ``klaw.login.authentication.type=db``, set it up as ``KLAW_LOGIN_AUTHENTICATION_TYPE: db``.
 
@@ -83,11 +109,9 @@ To configure a property, for example, ``klaw.login.authentication.type=db``, set
   It is important to update the ``KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`` property with a new base64-encoded secret.
 
 2. Run Docker Compose
-``````````````````````````
+`````````````````````
 
 In the same directory that you created the `docker-compose.yaml` file, run the following command to start the containers defined in the Docker Compose file:
-=======
-Once you have created the Docker Compose file, run the following command to start the containers defined in the file:
 
 ::
   
