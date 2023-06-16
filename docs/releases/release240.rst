@@ -24,15 +24,15 @@ In this release, we have redesigned some key user interfaces using React to enha
   * *SwitchTeams*: Easily switch between teams within the Coral interface, allowing smoother navigation and collaboration.
 
 - **Schema Synchronization**
-    Introducing the Schema synchronization feature that allows for seamless synchronization of schemas. 
+  Introducing the Schema synchronization feature that allows for seamless synchronization of schemas. 
 
    * *Cluster to Klaw schema synchronization*: With this feature, you can effortlessly synchronize all schemas from a schema registry cluster to Klaw, including their versions. 
    * *Klaw to Cluster schema synchronization*: With this feature, you can synchronize schemas, along with their versions, from Klaw to a schema registry cluster. 
 
 - **Enhanced Kafka Connector management**
 
-   * *Kafka connector status monitoring*: Gain visibility into the status of Kafka connectors and tasks, allowing you to track their progress and performance efficiently.
-   * *Connector restart capability*: Introducing the ability to restart Kafka connectors and their associated tasks, enabling efficient management and troubleshooting.
+  * *Kafka connector status monitoring*: Gain visibility into the status of Kafka connectors and tasks, allowing you to track their progress and performance efficiently.
+  * *Connector restart capability*: Introducing the ability to restart Kafka connectors and their associated tasks, enabling efficient management and troubleshooting.
 
 
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true`` (Effective this version, it is true by default):
@@ -49,7 +49,7 @@ This release introduces an email-based password reset feature, allowing users to
 
 Enhanced email notifications
 `````````````````````````````````
-This release introduces significant improvements to the email notifications functionality. Emails are now sent in accordance with the defined email matrix, ensuring consistency. For more detailed information, refer to the :doc:`Workflows <../workflows>` documentation. 
+This release introduces significant improvements to the email notifications functionality. Emails are now sent in accordance with the defined email matrix, ensuring consistency. For more detailed information, refer to the :doc:`Workflows <./workflows>` documentation. 
 
 Improved error responses to UI
 ````````````````````````````````
