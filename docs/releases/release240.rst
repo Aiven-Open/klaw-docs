@@ -48,7 +48,7 @@ This release introduces an email-based password reset feature, allowing users to
 
 Enhanced email notifications
 `````````````````````````````````
-This release introduces significant improvements to the email notifications functionality. Emails are now sent in accordance with the defined email matrix, ensuring consistency. For more detailed information, refer to the :doc:`Workflows <./concepts/workflows>` documentation. 
+This release introduces significant improvements to the email notifications functionality. Emails are now sent in accordance with the defined email matrix, ensuring consistency. For more detailed information, refer to the :doc:`Workflows <../../concepts/workflows>` documentation. 
 
 Improved error responses to UI
 ````````````````````````````````
