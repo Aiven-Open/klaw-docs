@@ -17,16 +17,22 @@ In this release, we have redesigned some key user interfaces using React to enha
 
 - **Browse Connectors**: With the redesigned user interface for Connectors, you can now explore and filter the available connectors with a more intuitive and user-friendly interface.
 
-- **React UI**: With the switch to React, this release features a redesign of the following user interfaces:
-    - Coral UI by default: New UI is enabled by default. If users can build react/npm based assets, users can view the new frontend.
-    - Klaw Theme: New a specific Klaw Theme has been introduced to use the same blue colour scheme across Coral.
-    - SwitchTeams: SwitchTeams from within Coral
+- **Enhanced React UI**: With the switch to React, this release features a redesign of the following user interfaces:
+    - *Coral UI by default*: The new UI is now enabled by default, providing users an enhanced frontend experience. Users who can build React/npm-based assets will automatically see the new interface.
+    - *Klaw theme*: A new Klaw Theme has been introduced, unifying the visual appearance of Coral with a consistent blue color scheme.
+    - SwitchTeams: Easily switch between teams within the Coral interface, allowing smoother navigation and collaboration.
 
-- **Synchronise Schema from Cluster to Klaw**: Feature to migrate all schemas(with versions) from schema registry cluster to Klaw
+- **Schema Synchronization**
+Introducing the Schema synchronization feature that allows for seamless synchronization of schemas. 
 
-- **Synchronise Schemas from Klaw to Cluster**: Feature to migrate all schemas (with versions) from Klaw to a schema registry cluster
+    * *Cluster to Klaw schema synchronization*: With this feature, you can effortlessly synchronize all schemas from a schema registry cluster to Klaw, including their versions. 
+    * *Klaw to Cluster schema synchronization*: With this feature, you can synchronize schemas, along with their versions, from Klaw to a schema registry cluster. 
 
-- **Manage Kafka Connectors**: View kafka connectors and tasks status and ability to restart them
+- **Enhanced Kafka Connector Management**
+
+    * *Kafka connector status monitoring*: Gain visibility into the status of Kafka connectors and tasks, allowing you to track their progress and performance efficiently.
+    * *Connector restart capability*: Introducing the ability to restart Kafka connectors and their associated tasks, enabling efficient management and troubleshooting.
+
 
 
 To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true`` (Effective this version, it is true by default):
@@ -37,16 +43,16 @@ To preview the new Klaw user interface, open the ``application.properties`` file
 .. note::
     We are taking an incremental, feedback-driven approach in rolling out the new Klaw interfaces. By providing the feature flag to preview user interfaces, we would like you to share your valuable `feedback <https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md>`_.
 
-Password Reset With Token
+Password reset with token
 `````````````````````````
-This change now sends an email with a password reset token that can then be used to update your password. The token has by default a ten minute expiry.
+This release introduces an email-based password reset feature, allowing users to request a password reset via email. A password reset token is sent to the user's registered email address upon request. The password reset token has a default expiry period of ten minutes, ensuring improved security and prompting users to update their passwords promptly.
 
-Well designed email notifications
+Enhanced email notifications
 `````````````````````````````````
-Ensure all emails are sent correctly in the email matrix.
+This release introduces significant improvements to the email notifications functionality. Emails are now sent in accordance with the defined email matrix, ensuring consistency. For more detailed information, refer to the :doc:`Workflows<../concepts/workflows>` documentation. 
 
-Better error responses to UI
-````````````````````````````
-Api calls have been redesigned to send better error responses to Frontend.
+Improved error responses to UI
+````````````````````````````````
+This release focuses on enhancing the error-handling mechanism by redesigning API calls to provide improved error responses to the frontend.
 
 .. seealso:: For a complete list of improvements, changelog, and to download the release, see `<https://github.com/aiven/klaw/releases/tag/v2.4.0>`_
