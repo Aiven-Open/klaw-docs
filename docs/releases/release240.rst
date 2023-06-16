@@ -23,11 +23,10 @@ In this release, we have redesigned some key user interfaces using React to enha
   * *Klaw theme*: A new Klaw Theme has been introduced, unifying the visual appearance of Coral with a consistent blue color scheme.
   * *SwitchTeams*: Easily switch between teams within the Coral interface, allowing smoother navigation and collaboration.
 
-- **Schema Synchronization**
-  Introducing the Schema synchronization feature that allows for seamless synchronization of schemas. 
+- **Schema Synchronization**: Introducing the Schema synchronization feature that allows for seamless synchronization of schemas. 
 
-   * *Cluster to Klaw schema synchronization*: With this feature, you can effortlessly synchronize all schemas from a schema registry cluster to Klaw, including their versions. 
-   * *Klaw to Cluster schema synchronization*: With this feature, you can synchronize schemas, along with their versions, from Klaw to a schema registry cluster. 
+  * *Cluster to Klaw schema synchronization*: With this feature, you can effortlessly synchronize all schemas from a schema registry cluster to Klaw, including their versions. 
+  * *Klaw to Cluster schema synchronization*: With this feature, you can synchronize schemas, along with their versions, from Klaw to a schema registry cluster. 
 
 - **Enhanced Kafka Connector management**
 
