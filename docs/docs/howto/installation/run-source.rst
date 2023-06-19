@@ -13,8 +13,7 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
    The redesigned UI is enabled by default since Release 2.4.0. If you want to use Klaw without the preview for now,
    you can disabled it:
 
-    - Configure the property ``klaw.coral.enabled`` in the ``application.properties`` file to `false` in the module:
-    core.
+   - Configure the property ``klaw.coral.enabled`` in the ``application.properties`` file to ``false`` in the module: core. 
 
 3. Configure Cluster Api access
     - Configure the property ``klaw.clusterapi.access.base64.secret`` in the ``application.properties`` file with a base64 string in the module: core. 
