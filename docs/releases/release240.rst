@@ -34,10 +34,12 @@ In this release, we have redesigned some key user interfaces using React to enha
   * *Connector restart capability*: Introducing the ability to restart Kafka connectors and their associated tasks, enabling efficient management and troubleshooting.
 
 
-To preview the new Klaw user interface, open the ``application.properties`` file on the Klaw **core** module, and set the value of the following property to ``true`` (Effective this version, it is true by default):
+To disabled the preview for the new Klaw user interface, open the ``application.properties`` file on the Klaw
+**core** module, and set the value of the following property to ``false`` (Effective this version, it is true by
+default):
 ::
     # Enable new Klaw user interface
-    klaw.coral.enabled=true
+    klaw.coral.enabled=false
 
 .. note::
     We are taking an incremental, feedback-driven approach in rolling out the new Klaw interfaces. By providing the feature flag to preview user interfaces, we would like you to share your valuable `feedback <https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md>`_.
