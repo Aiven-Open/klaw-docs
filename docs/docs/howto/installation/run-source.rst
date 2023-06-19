@@ -14,7 +14,19 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
 
 3. Configure Cluster Api access
     - Configure the property ``klaw.clusterapi.access.base64.secret`` in the ``application.properties`` file with a base64 string in the module: core. 
-    - Configure the property ``klaw.clusterapi.access.base64.secret`` in the ``application.properties`` file with the above base64 string in the module: cluster-api. 
+    - Configure the property ``klaw.clusterapi.access.base64.secret`` in the ``application.properties`` file with the above base64 string in the module: cluster-api.
+
+..  code-block:: bash
+    :caption: Bash Generation Example
+
+     echo "ThisIsExactlyA32CharStringSecret" | base64
+     VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
+
+..  code-block:: bash
+    :caption: Powershell Generation Example
+
+     [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("ThisIsExactlyA32CharStringSecret"))
+     VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 
 4. Build the project by running ``./mvnw clean package`` for Linux(bash) or ``mvnw clean package`` for Windows, from the top level of the project directory. This will build JAR files in the ``target/`` directories of each modules: core and cluster-api.
     .. note:: node, npm and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
@@ -40,3 +52,7 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
    * **Username:** ``superadmin``
    * **Password:** ``kwsuperadmin123$$``
 
+Next Steps
+##########
+
+Once you have finished verifying your install we recommend you follow the documentation in :doc:`configure-klaw-wizard`
