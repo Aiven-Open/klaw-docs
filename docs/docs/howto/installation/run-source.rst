@@ -11,7 +11,7 @@ Klaw is a Java project. Follow the below steps to run this project from the sour
    A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier, more efficient and accessible. This new look and feel is achieved by switching to React.
 
    The redesigned UI is enabled by default since Release 2.4.0. If you want to use Klaw without the preview for now,
-   you can disabled it:
+   you can disable it:
 
    - Configure the property ``klaw.coral.enabled`` in the ``application.properties`` file to ``false`` in the module: core. 
 
