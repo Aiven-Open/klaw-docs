@@ -34,7 +34,7 @@ In this release, we have redesigned some key user interfaces using React to enha
   * *Connector restart capability*: Introducing the ability to restart Kafka connectors and their associated tasks, enabling efficient management and troubleshooting.
 
 
-To disabled the preview for the new Klaw user interface, open the ``application.properties`` file on the Klaw
+To disable the preview for the new Klaw user interface, open the ``application.properties`` file on the Klaw
 **core** module, and set the value of the following property to ``false`` (Effective this version, it is true by
 default):
 ::
