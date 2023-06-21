@@ -14,6 +14,7 @@ Klaw Concepts
    Advanced configuration<concepts/config>
    Promotion<concepts/promotion>
    Switch Teams<concepts/switch-teams>
+   High Availability<concepts/high-availability.rst>
 
 Klaw concepts ..
 
@@ -25,3 +26,4 @@ Klaw concepts ..
 - :doc:`concepts/metastore`
 - :doc:`concepts/config`
 - :doc:`concepts/promotion`
+- :doc:`concepts/high-availability`
