@@ -24,7 +24,7 @@ Klaw How to do things
    Tenants<howto/tenant>
    Analytics<howto/analytics>
    Settings<howto/settings>
-   Export Klaw data<howto/exportdata>
+   Export Import Klaw data<howto/exportimport>
    Others<howto/others>
 
 
@@ -44,4 +44,5 @@ How to install and configure Klaw.
 - :doc:`howto/teams`
 - :doc:`howto/analytics`
 - :doc:`howto/settings`
+- :doc:`howto/exportimport`
 - :doc:`howto/others`

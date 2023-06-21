@@ -18,17 +18,17 @@ Klaw data is classified into the below 3 types.
     - Users
     - Properties
 
-- Requests data comprises of the below
-    - Topic requests
-    - Subscription requests
-    - Schema requests
-    - Connector requests
-
 - Core configuration comprises of the below
     - Topics
     - Subscriptions
     - Schemas
     - Connectors
+
+- Requests data comprises of the below
+    - Topic requests
+    - Subscription requests
+    - Schema requests
+    - Connector requests
 
 How data can be exported ?
 --------------------------
