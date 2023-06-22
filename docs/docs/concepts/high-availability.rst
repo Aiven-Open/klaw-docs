@@ -3,6 +3,9 @@ High Availability in Klaw
 
 It is important to deploy every application in high availability mode in production environment, which assures either no downtime and/or balanced processing of requests.
 
+Klaw is a Java based web application can be deployed in High available mode. Klaw takes care of resetting cache in all running instances whenever there are changes requested by users or admins.
+
+
 Why is High Availability Important?
 -----------------------------------
 
@@ -18,9 +21,10 @@ While it is undoubtedly crucial for systems to handle higher workloads and subst
 How High Availability Works
 ---------------------------
 
+In Klaw core module, configure the property, which is a comma separated list of klaw instances.
+::
+    klaw.uiapi.servers=https://klawhost1:9097,https://klawhost2:9097
 
-
-Cache data in Klaw
-------------------
+This configuration will make sure of any cache which has to be reset on the instances.
 
 
