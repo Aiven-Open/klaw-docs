@@ -11,5 +11,5 @@ View/Restart Connectors status
 3. Here in this page you will view the connectors status and their task status.
 4. You can restart a Connector with all tasks included or only failed tasks included.
 
-.. image:: ../../_static/images/sync/ConnectorStatus.png
+.. image:: ../../../_static/images/sync/ConnectorStatus.png
 
