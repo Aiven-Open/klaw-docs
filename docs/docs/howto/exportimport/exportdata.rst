@@ -1,7 +1,7 @@
 Export Klaw data
 ================
 
-Klaw Administrators can export the database configuration and data in three parts: admin data, requests data, and core data, providing administrators with additional backup and recovery options.
+Klaw administrators can export the database configuration and data in three parts: admin data, requests data, and core data, providing administrators with additional backup and recovery options.
 
 What data can be exported ?
 ---------------------------
