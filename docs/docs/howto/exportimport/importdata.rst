@@ -46,7 +46,8 @@ To import data, follow these steps:
 1. In the core module of the application properties, enable data import by setting ``klaw.import.enable`` to true.
 2. Configure the specific import settings as shown below:
 
-::
+:: 
+
     klaw.import.adminconfig.enable=false
     klaw.import.adminconfig.file.path=kwmetadata-admin_config-2023-....json
     klaw.import.kwdata.enable=false
