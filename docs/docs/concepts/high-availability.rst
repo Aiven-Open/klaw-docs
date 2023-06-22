@@ -1,27 +1,27 @@
 High Availability in Klaw
 =========================
 
-It is important to deploy every application in high availability mode in production environment, which assures either no downtime and/or balanced processing of requests.
+Ensuring high availability is crucial when deploying any application in a production environment. High availability mode guarantees minimal or no downtime and balanced processing of requests.
 
-Klaw is a Java based web application can be deployed in High available mode. Klaw takes care of resetting cache in all running instances whenever there are changes requested by users or admins.
+Klaw, a Java-based web application, can be deployed in high availability mode. A key feature of Klaw is its ability to reset the cache in all running instances whenever users or administrators request changes. 
 
 
 Why is High Availability Important?
 -----------------------------------
 
-Being prepared for unforeseen events that can cause server failures is crucial in order to minimize interruptions and downtime. Even the most reliable software and systems can be brought down by emergencies. By implementing highly available systems, the impact of such events can be reduced, and these systems are often capable of automatically recovering from failures in components or servers.
+To minimize interruptions and downtime, it is crucial to prepare for unforeseen events that can cause server failures. Emergencies can potentially bring down even the most reliable software and systems. Implementing highly available systems can reduce the impact of such events, as these systems often can automatically recover from failures in components or servers.
 
 High Availability Architecture
 ------------------------------
 
-While it is undoubtedly crucial for systems to handle higher workloads and substantial traffic, it is equally vital to identify potential failure points and minimize downtime. A highly available load balancer plays a significant role in achieving this goal. It is a scalable infrastructure design that can adapt to increased traffic demands. This often involves employing a software architecture that surpasses hardware limitations.
+Ensuring systems can handle higher workloads and substantial traffic is undeniably vital. However, it is equally important to identify potential failure points and minimize downtime. A key component in achieving this goal is a highly available load balancer, which plays a significant role. It involves implementing a scalable infrastructure design that adapts to increased traffic demands. This often involves employing a software architecture that surpasses hardware limitations.
 
 .. image:: ../../_static/images/HA_Klaw.png
 
 How High Availability Works
 ---------------------------
 
-In Klaw core module, configure the property, which is a comma separated list of klaw instances.
+In Klaw core module, configure the below property, which is a comma-separated list of Klaw instances.
 ::
     klaw.uiapi.servers=https://klawhost1:9097,https://klawhost2:9097
 

@@ -1,7 +1,7 @@
 Export Klaw data
 ================
 
-Klaw now allows Administrators to export the database configuration and data in three parts, admin data, requests data and core data, providing additional back up and recovery options to administrators.
+Klaw Administrators can export the database configuration and data in three parts: admin data, requests data, and core data, providing administrators with additional backup and recovery options.
 
 What data can be exported ?
 ---------------------------
@@ -33,18 +33,17 @@ Klaw data is classified into the below 3 types.
 How data can be exported ?
 --------------------------
 
-Scheduler configuration : In core module, application properties,
+To export data, follow these steps:
 
-- set ``klaw.export.scheduler.enable`` to true
-- mention a directory to where the data files to be exported here ``klaw.export.file.path``
-- Add a pattern (cron expression) for scheduler to run at a particular interval. Ex : '0 0 0 * * ?' runs at 12 am everyday
-
-After updating the above, restart the application.
+1. In the core module of the application properties, enable the data export scheduler by setting ``klaw.export.scheduler.enable`` to true.
+2. Specify the directory where the data files should be exported by setting ``klaw.export.file.path`` to the desired location.
+3. Configure a pattern (cron expression) for the scheduler to run at a specific interval. For example, to run the scheduler at 12 am every day, use the expression '0 0 0 * * ?'.
+4. Once you have updated the above settings, restart the application for the changes to take effect.
 
 What files are exported ?
 -------------------------
 
-Example files in the configured export directory:
+The exported files typically include the following examples in the configured export directory:
 
 - kwmetadata-admin_config-2023-04-03-09-42-00501.json
 

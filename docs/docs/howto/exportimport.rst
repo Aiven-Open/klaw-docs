@@ -8,8 +8,7 @@ Export Import Klaw Data
     Export Klaw data<exportimport/exportdata>
     Import Klaw data<exportimport/importdata>
 
-It is important to take backups of klaw metadata, and also importing klaw metadata into another Klaw instance.
-Klaw introduced these features for disaster recovery and migrations.
+Taking backups of Klaw metadata and importing it into another Klaw instance are important operations. These features provided by Klaw serve the purpose of disaster recovery and migrations, ensuring data security and smooth transitions.
 
 - :doc:`exportimport/exportdata`
 - :doc:`exportimport/importdata`
