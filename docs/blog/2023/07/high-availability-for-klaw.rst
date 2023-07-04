@@ -52,7 +52,8 @@ High availability architecture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Ensuring systems can handle higher workloads and substantial traffic is undeniably vital. However, it is equally essential to identify potential failure points and minimize downtime. A key component in achieving this goal is a highly available load balancer, which plays a significant role. It involves implementing a scalable infrastructure design that adapts to increased traffic demands. This often consists of employing a software architecture that surpasses hardware limitations.
 
-.. image:: ../../../_static/images/blogimages/KlawHighAvailability.png
+.. image:: ../../../_static/images/blogimages/HA_Klaw.png
+   :scale: 50%
    :align: center
 
 Load balancing involves automatically distributing workloads across system resources, such as assigning various data requests to different servers.
