@@ -11,8 +11,6 @@ Background
 ----------
 In today's dynamic and ever-changing digital landscape, maintaining the uninterrupted operation of applications is of the highest importance. This article explores how to configure Klaw for high availability in production environments, enhancing reliability and delivering a seamless user experience.
 
-In our ever-connected world, the uninterrupted operation of applications is of utmost importance, primarily when they govern critical systems.
-
 In this blog post, we will dive deep into Klaw—an Java-based application explicitly created for Kafka governance. We will focus on exploring the configuration process for achieving high availability (HA) in production environments. By implementing these measures, we can ensure continuous operation, bolster reliability, and deliver a seamless user experience, even in unexpected failures.
 
 **Why High Availability matters**
@@ -68,7 +66,7 @@ This section provides an in-depth overview of Klaw’s architecture, the inner w
 Klaw architecture
 ~~~~~~~~~~~~~~~~~
 
-Klaw is a web application developed using Java, compatible with JDK 17/19. The application's front end is initially built using AngularJS, but an upgrade to React JS is underway. The backend development is carried out using Spring Boot. Klaw relies on an RDBMS-based data store for managing metadata. In its default configuration, Klaw employs an internal H2 database for storing metadata.
+Klaw is a web application developed using Java, compatible with JDK 17/19. The application's front end is initially built using AngularJS, but an upgrade to React JS is underway. The backend development is carried out using Spring Boot. Klaw relies on an RDBMS-based data store for managing metadata. In its default configuration, Klaw employs a file based H2 database for storing metadata.
 
 .. image:: ../../../_static/images/blogimages/arch.png
    :scale: 90%
@@ -108,7 +106,7 @@ Klaw organizes data in the database into three categories:
     Requests data: Comprises requests of Topics, ACLs, Schemas and Connectors.
 
 - Cache
-Klaw stores most authorization-related data in the cache to avoid humongous database calls. This effectively reduces latency and gives users immediate response from the application. However, this cache is reset whenever changes are requested.
+Klaw stores most frequently queried data in a local cache to for improved performance and user experience. This effectively reduces latency and gives users immediate response from the application. However, this cache is reset whenever changes are requested.
 Deploying Klaw in different environments like Development, Testing, Acceptance, and Production is essential to streamline the developer experience.
 
 .. image:: ../../../_static/images/blogimages/KlawCache.png
