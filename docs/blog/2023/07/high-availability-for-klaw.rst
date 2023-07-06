@@ -2,7 +2,7 @@
 High availability for Klaw
 ==========================
 
-.. post:: July 4, 2023
+.. post:: July 6, 2023
    :tags: kafka,governance,topics,acls,klaw, high availability, fault tolerance
    :category: klaw
    :author: Murali Basani
@@ -15,16 +15,21 @@ In our ever-connected world, the uninterrupted operation of applications is of u
 
 In this blog post, we will dive deep into Klaw—an Java-based application explicitly created for Kafka governance. We will focus on exploring the configuration process for achieving high availability (HA) in production environments. By implementing these measures, we can ensure continuous operation, bolster reliability, and deliver a seamless user experience, even in unexpected failures.
 
-**Why High Availability matters**
+Understanding High Availability
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-High availability (HA) is a design principle to ensure operational continuity over a given period. For Klaw, being an essential tool in managing and monitoring Kafka clusters, the application must be resilient to potential system failures. Achieving high availability for Klaw means eliminating single points of failure and ensuring minimal or no downtime, thereby leading to a more reliable Kafka governance.
-Unforeseen events and emergencies can cause server failures, affecting even the most robust systems. By supporting high availability, Klaw is equipped to automatically recover from component failures, thereby reducing the impact of these events and providing users with a seamless experience.
+High availability (HA) is a design principle that ensures operational continuity during a specified period. It prioritizes the application's continuous availability, even if critical components like servers fail. Essentially, it eradicates any single point of failure and aims for minimal or no downtime. Unforeseen events and emergencies can cause server failures, affecting even the most robust systems. However, HA systems are designed to recover automatically from such failures, thereby lessening the impact of these incidents.
 
+Why High Availability matters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Importance of High Availability in Klaw**
+Deploying applications with high availability in production environments is critical for minimizing or eliminating downtime. In essence, high availability is about resilience in the face of potential system failures. This resilience means that applications are equipped to automatically recover from component failures, offering users a seamless experience even in challenging circumstances.
 
-Kafka clusters can be complex and substantial, making effective management and monitoring crucial. A failure in these operations can lead to significant issues. By configuring Klaw with high availability, it becomes a reliable Kafka governance tool that ensures uninterrupted operations, even in the face of underlying system failures. Deploying Klaw with high availability minimizes or eliminates downtime and provides continuous support for Kafka cluster management, enhancing overall system reliability.
-With this understanding of high availability and its critical role in Klaw, let's explore the architectural design that supports it, the internal components of Klaw, and how to configure Klaw for high availability.
+Significance of High Availability in Klaw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For Klaw, a key tool in managing and monitoring Kafka clusters, the adoption of high availability is particularly significant. With Kafka clusters often being complex and extensive, effective management and monitoring are vital. Any failure in these operations can cause substantial issues. Therefore, configuring Klaw with high availability ensures that it becomes a dependable tool for Kafka governance, capable of maintaining uninterrupted operations even when underlying systems fail. This approach results in minimal or no downtime and continuous support for Kafka cluster management, ultimately enhancing overall system reliability.
+
 
 
 **What Problem Does High Availability for Klaw Solve?**
@@ -40,14 +45,6 @@ Before diving into what High Availability is, let's understand why it's crucial 
 -   Service continuity: In the event of a disaster or system failure, HA ensures that there is no interruption in service and the operations continue without a hitch.
 
 -   Enhanced user experience: Constant availability and reliability improve user experience, which is vital for customer satisfaction and retention.
-
-
-What is high availability?
---------------------------
-
-High availability (HA) is a design approach that guarantees a certain degree of operational continuity during a given measurement period. It's about ensuring that applications remain available even if a critical component, such as a server, fails. Essentially, high availability eliminates any single point of failure and ensures minimal or no downtime.
-Why is high availability important?
-Deploying applications with high availability in production environments is essential for minimizing or eliminating downtime. Unforeseen events and emergencies can cause server failures, affecting even the most robust systems. HA systems are designed to automatically recover from component failures, reducing the impact of these events.
 
 
 High availability architecture
