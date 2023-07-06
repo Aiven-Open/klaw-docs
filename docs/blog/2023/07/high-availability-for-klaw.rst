@@ -19,7 +19,7 @@ Understanding High Availability
 High availability (HA) is a design principle that ensures operational continuity during a specified period. It prioritizes the application's continuous availability, even if critical components like servers fail. Essentially, it eradicates any single point of failure and aims for minimal or no downtime. Unforeseen events and emergencies can cause server failures, affecting even the most robust systems. However, HA systems are designed to recover automatically from such failures, thereby lessening the impact of these incidents.
 
 Why High Availability matters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deploying applications with high availability in production environments is critical for minimizing or eliminating downtime. In essence, high availability is about resilience in the face of potential system failures. This resilience means that applications are equipped to automatically recover from component failures, offering users a seamless experience even in challenging circumstances.
 
@@ -29,8 +29,8 @@ Significance of High Availability in Klaw
 For Klaw, a key tool in managing and monitoring Kafka clusters, the adoption of high availability is particularly significant. With Kafka clusters often being complex and extensive, effective management and monitoring are vital. Any failure in these operations can cause substantial issues. Therefore, configuring Klaw with high availability ensures that it becomes a dependable tool for Kafka governance, capable of maintaining uninterrupted operations even when underlying systems fail. This approach results in minimal or no downtime and continuous support for Kafka cluster management, ultimately enhancing overall system reliability.
 
 
-
-**What Problem Does High Availability for Klaw Solve?**
+What Problem Does HA for Klaw Solve?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before diving into what High Availability is, let's understand why it's crucial for Klaw. As Klaw is essential in managing and monitoring Kafka clusters, ensuring its resilience against potential failures is paramount. Downtime can have dire consequences ranging from slight inconveniences to lost revenue and a damaged reputation. High Availability for Klaw addresses these critical issues:
 
@@ -247,20 +247,20 @@ This configuration ensures all requests are directed to the various Klaw instanc
 
 **Other Load Balancers**
 
-Spring Cloud Load Balancer: Allows client-side load balancing. For more information, see the official guide.
+Spring Cloud Load Balancer: Allows client-side load balancing. For more information, see the `official guide <https://spring.io/guides/gs/spring-cloud-loadbalancer/>`_ .
 
-Netflix Ribbon: Provides client-side load balancing for Spring Boot applications. See the GitHub repository for more details.
+Netflix Ribbon: Provides client-side load balancing for Spring Boot applications. See the `GitHub repository <https://github.com/Netflix/ribbon>`_ for more details.
 
-AWS Load Balancer: AWS offers a variety of load balancers based on network, containers, applications, and target groups. Choose the appropriate one based on your requirements. Learn more on the official AWS page.
+AWS Load Balancer: AWS offers a variety of load balancers based on network, containers, applications, and target groups. Choose the appropriate one based on your requirements. Learn more on the official `AWS page <https://aws.amazon.com/elasticloadbalancing/>`_.
 
 **Useful links**
 
-Klaw GitHub Repository
+`Klaw GitHub Repository <https://github.com/aiven/klaw>`_
 
-Klaw documentation
+`Klaw documentation <https://www.klaw-project.io/>`_
 
-Community forum
+`Community forum <https://aiven.io/community/forum/tag/klaw>`_
 
-Klaw Core Docker Image | Klaw Cluster API Docker Image
+`Klaw Core Docker Image <https://hub.docker.com/r/aivenoy/klaw-core>`_ | `Klaw Cluster API Docker Image <https://hub.docker.com/r/aivenoy/klaw-cluster-api>`_
 
 For any questions or discussions, please open an issue on GitHub or participate in our Community forum.
