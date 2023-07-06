@@ -79,29 +79,29 @@ Klaw is composed of two primary Java applications: the Governance Layer and the 
 
 The governance layer is an integral part of Klaw, responsible for handling user interfaces and APIs.
 
-    User interface components: Allows users to interact with Klaw’s features through a web interface.
-    APIs and Authorization: The APIs in the governance layer are responsible for authorizing requests and interacting with the metastore (database). Upon approval, the application communicates with the Cluster API application.
+**User interface components** Allows users to interact with Klaw’s features through a web interface.
+APIs and Authorization: The APIs in the governance layer are responsible for authorizing requests and interacting with the metastore (database). Upon approval, the application communicates with the Cluster API application.
 
-    Security: The communication between APIs in the Governance Layer and the Cluster Layer is highly secure. JWT token-based authentication is used to ensure that no external user can interact directly with it.
+**Security** The communication between APIs in the Governance Layer and the Cluster Layer is highly secure. JWT token-based authentication is used to ensure that no external user can interact directly with it.
 
-    User Roles and Permissions: Every user in Klaw is associated with a role and a set of permissions. Additionally, users can be part of multiple teams and have the flexibility to switch between them.
+**User Roles and Permissions** Every user in Klaw is associated with a role and a set of permissions. Additionally, users can be part of multiple teams and have the flexibility to switch between them.
 
 
 - Cluster layer
 The Cluster Layer is the second Java application within Klaw.
 
-    Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
+**Communication** This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
 
-    User interface switch: By default, users are logged into the AngularJS-based interface. However, they have the option to switch to the React JS interface. Building React assets requires npm, pnpm, and node.
+**User interface switch** By default, users are logged into the AngularJS-based interface. However, they have the option to switch to the React JS interface. Building React assets requires npm, pnpm, and node.
 
 - Metastore
 Klaw organizes data in the database into three categories:
 
-    Admin data: Comprises users, roles, permissions, teams, tenants, clusters, environments, properties and other product related details.
+**Admin data** Comprises users, roles, permissions, teams, tenants, clusters, environments, properties and other product related details.
 
-    Core data: Comprises Topics, ACLs, Schemas and Connector configurations.
+**Core data** Comprises Topics, ACLs, Schemas and Connector configurations.
 
-    Requests data: Comprises requests of Topics, ACLs, Schemas and Connectors.
+**Requests data** Comprises requests of Topics, ACLs, Schemas and Connectors.
 
 - Cache
 Klaw stores most frequently queried data in a local cache to for improved performance and user experience. This effectively reduces latency and gives users immediate response from the application. However, this cache is reset whenever changes are requested.
