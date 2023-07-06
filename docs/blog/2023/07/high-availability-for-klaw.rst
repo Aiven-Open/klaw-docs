@@ -34,15 +34,15 @@ What Problem Does HA for Klaw Solve?
 
 Before diving into what High Availability is, let's understand why it's crucial for Klaw. As Klaw is essential in managing and monitoring Kafka clusters, ensuring its resilience against potential failures is paramount. Downtime can have dire consequences ranging from slight inconveniences to lost revenue and a damaged reputation. High Availability for Klaw addresses these critical issues:
 
--   Minimizing downtime: By eliminating single points of failure and ensuring redundancy in the system, HA for Klaw minimizes or eliminates downtime.
+-  **Minimizing downtime:** By eliminating single points of failure and ensuring redundancy in the system, HA for Klaw minimizes or eliminates downtime.
 
--   Scalability: As the workload increases, Klaw can handle a higher number of requests, catering to a growing user base, thanks to the HA configuration.
+-   **Scalability:** As the workload increases, Klaw can handle a higher number of requests, catering to a growing user base, thanks to the HA configuration.
 
--   Data availability: Ensuring that the data is always available, even in the case of component failures, is crucial. HA ensures the data is replicated across different servers, safeguarding against data loss.
+-   **Data availability:** Ensuring that the data is always available, even in the case of component failures, is crucial. HA ensures the data is replicated across different servers, safeguarding against data loss.
 
--   Service continuity: In the event of a disaster or system failure, HA ensures that there is no interruption in service and the operations continue without a hitch.
+-   **Service continuity:** In the event of a disaster or system failure, HA ensures that there is no interruption in service and the operations continue without a hitch.
 
--   Enhanced user experience: Constant availability and reliability improve user experience, which is vital for customer satisfaction and retention.
+-   **Enhanced user experience:** Constant availability and reliability improve user experience, which is vital for customer satisfaction and retention.
 
 
 High availability architecture
@@ -75,35 +75,39 @@ Klaw internal components
 
 Klaw is composed of two primary Java applications: the Governance Layer and the Cluster Layer.
 
-- Governance layer
+Governance layer
+""""""""""""""""""
 
 The governance layer is an integral part of Klaw, responsible for handling user interfaces and APIs.
 
-**User interface components** Allows users to interact with Klaw’s features through a web interface.
+* **User interface components** Allows users to interact with Klaw’s features through a web interface.
 APIs and Authorization: The APIs in the governance layer are responsible for authorizing requests and interacting with the metastore (database). Upon approval, the application communicates with the Cluster API application.
 
-**Security** The communication between APIs in the Governance Layer and the Cluster Layer is highly secure. JWT token-based authentication is used to ensure that no external user can interact directly with it.
+* **Security** The communication between APIs in the Governance Layer and the Cluster Layer is highly secure. JWT token-based authentication is used to ensure that no external user can interact directly with it.
 
-**User Roles and Permissions** Every user in Klaw is associated with a role and a set of permissions. Additionally, users can be part of multiple teams and have the flexibility to switch between them.
+* **User Roles and Permissions** Every user in Klaw is associated with a role and a set of permissions. Additionally, users can be part of multiple teams and have the flexibility to switch between them.
 
 
-- Cluster layer
+Cluster layer
+"""""""""""""""
 The Cluster Layer is the second Java application within Klaw.
 
-**Communication** This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
+* **Communication** This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
 
-**User interface switch** By default, users are logged into the AngularJS-based interface. However, they have the option to switch to the React JS interface. Building React assets requires npm, pnpm, and node.
+* **User interface switch** By default, users are logged into the AngularJS-based interface. However, they have the option to switch to the React JS interface. Building React assets requires npm, pnpm, and node.
 
-- Metastore
+Metastore
+""""""""""
 Klaw organizes data in the database into three categories:
 
-**Admin data** Comprises users, roles, permissions, teams, tenants, clusters, environments, properties and other product related details.
+* **Admin data** Comprises users, roles, permissions, teams, tenants, clusters, environments, properties and other product related details.
 
-**Core data** Comprises Topics, ACLs, Schemas and Connector configurations.
+* **Core data** Comprises Topics, ACLs, Schemas and Connector configurations.
 
-**Requests data** Comprises requests of Topics, ACLs, Schemas and Connectors.
+* **Requests data** Comprises requests of Topics, ACLs, Schemas and Connectors.
 
-- Cache
+Cache
+""""""""
 Klaw stores most frequently queried data in a local cache to for improved performance and user experience. This effectively reduces latency and gives users immediate response from the application. However, this cache is reset whenever changes are requested.
 Deploying Klaw in different environments like Development, Testing, Acceptance, and Production is essential to streamline the developer experience.
 
@@ -139,7 +143,8 @@ Database management system
 
 For the RDBMS, Klaw is compatible with various database management systems such as PostgreSQL, MySQL, and others.
 
-Note: While the above configurations have been tested and proven to work effectively, there are no guarantees that they will suit every use case. The actual performance and suitability depend on various factors, including the operating system, CPU utilization, and other processes running on the virtual machines.
+.. note:: 
+   While the above configurations have been tested and proven to work effectively, there are no guarantees that they will suit every use case. The actual performance and suitability depend on various factors, including the operating system, CPU utilization, and other processes running on the virtual machines.
 
 Deployment model
 ~~~~~~~~~~~~~~~~
@@ -159,9 +164,9 @@ Load balancer methods
 
 Nginx supports three types of load balancing methods:
 
-- Round-robin: Requests are distributed among the application servers in a cyclic manner.
-- Least-connected: The next request is directed to the server with the fewest active connections.
-- IP-hash: A hash-function based on the client's IP address is used to determine the server to which the next request should be sent.
+- **Round-robin:** Requests are distributed among the application servers in a cyclic manner.
+- **Least-connected:** The next request is directed to the server with the fewest active connections.
+- **IP-hash:** A hash-function based on the client's IP address is used to determine the server to which the next request should be sent.
 
 Detailed information can be found on the official Nginx documentation.
 
@@ -196,7 +201,9 @@ Below is an example of Nginx configuration using the IP-Hash method:
 
 
 Using IP-Hash method, sessions are maintained by tracking the client's IP address.
+
 Single Sign-On (SSO) authentication in Klaw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 For SSO authentication, configure Klaw by setting `klaw.login.authentication.type: ad` in the core mode application properties. When SSO is enabled, either Round-Robin or Least-Connected load balancing methods can be used.
 
 Below is an example Nginx configuration using Round-Robin load balancing:
@@ -240,12 +247,15 @@ While Klaw stores all metadata in a database, most of this data is usually cache
 
 To ensure proper cache reset across Klaw instances, you must configure the following property with the comma-separated list of instance hosts:
 
-    klaw.uiapi.servers=https://klawhost1:port,https:klawhost2:port..
+::
+
+   klaw.uiapi.servers=https://klawhost1:port,https:klawhost2:port..
 
 
 This configuration ensures all requests are directed to the various Klaw instances using the Nginx load-balancing configuration.
 
-**Other Load Balancers**
+Other Load Balancers
+---------------------
 
 Spring Cloud Load Balancer: Allows client-side load balancing. For more information, see the `official guide <https://spring.io/guides/gs/spring-cloud-loadbalancer/>`_ .
 
@@ -253,14 +263,12 @@ Netflix Ribbon: Provides client-side load balancing for Spring Boot applications
 
 AWS Load Balancer: AWS offers a variety of load balancers based on network, containers, applications, and target groups. Choose the appropriate one based on your requirements. Learn more on the official `AWS page <https://aws.amazon.com/elasticloadbalancing/>`_.
 
-**Useful links**
+Useful links
+-------------
 
-`Klaw GitHub Repository <https://github.com/aiven/klaw>`_
-
-`Klaw documentation <https://www.klaw-project.io/>`_
-
-`Community forum <https://aiven.io/community/forum/tag/klaw>`_
-
-`Klaw Core Docker Image <https://hub.docker.com/r/aivenoy/klaw-core>`_ | `Klaw Cluster API Docker Image <https://hub.docker.com/r/aivenoy/klaw-cluster-api>`_
+* `Klaw GitHub Repository <https://github.com/aiven/klaw>`_
+* `Klaw documentation <https://www.klaw-project.io/>`_
+* `Community forum <https://aiven.io/community/forum/tag/klaw>`_
+* `Klaw Core Docker Image <https://hub.docker.com/r/aivenoy/klaw-core>`_ | `Klaw Cluster API Docker Image <https://hub.docker.com/r/aivenoy/klaw-cluster-api>`_
 
 For any questions or discussions, please open an issue on GitHub or participate in our Community forum.
