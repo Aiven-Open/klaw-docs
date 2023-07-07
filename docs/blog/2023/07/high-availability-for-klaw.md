@@ -95,7 +95,7 @@ role. It involves implementing a scalable infrastructure design that
 adapts to increased traffic demands. This often consists of employing a
 software architecture that surpasses hardware limitations.
 
-![image](../../../_static/images/blogimages/HA_Klaw.png){.align-center}
+![image](../../../static/images/blogimages/HA_Klaw.png){.align-center}
 
 Load balancing involves automatically distributing workloads across
 system resources, such as assigning various data requests to different
@@ -125,7 +125,7 @@ carried out using Spring Boot. Klaw relies on an RDBMS-based data store
 for managing metadata. In its default configuration, Klaw employs a file
 based H2 database for storing metadata.
 
-![image](../../../_static/images/blogimages/arch.png){.align-center}
+![image](../../../static/images/blogimages/arch.png){.align-center}
 
 ### Klaw internal components
 
@@ -181,7 +181,7 @@ However, this cache is reset whenever changes are requested. Deploying
 Klaw in different environments like Development, Testing, Acceptance,
 and Production is essential to streamline the developer experience.
 
-![image](../../../_static/images/blogimages/KlawCache.png){.align-center}
+![image](../../../static/images/blogimages/KlawCache.png){.align-center}
 
 ### System requirements
 

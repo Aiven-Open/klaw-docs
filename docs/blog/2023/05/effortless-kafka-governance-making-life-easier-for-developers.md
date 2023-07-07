@@ -111,7 +111,7 @@ Let\'s explore the key challenges that need to be addressed:
         errors. These errors can cause system outages, leading to
         disruptions in service and impacting user experience.
 
-![image](../../../_static/images/blogimages/kafka-clusters.png){.align-center}
+![image](../../../static/images/blogimages/kafka-clusters.png){.align-center}
 
 ### Navigating Kafka system failures
 
@@ -164,7 +164,7 @@ for its capabilities.
 
 `Governance` - `Self-service` - `Security` - `Automation`
 
-![image](../../../_static/images/blogimages/klaw-features.png)
+![image](../../../static/images/blogimages/klaw-features.png)
 
 -   **Governance**: Ensures accountability and consistency with
     approvals, audit trails, naming conventions, clear ownership, and a
