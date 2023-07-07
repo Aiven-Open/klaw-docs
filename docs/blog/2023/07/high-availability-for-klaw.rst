@@ -107,7 +107,7 @@ Klaw organizes data in the database into three categories:
 * **Requests data** Comprises requests of Topics, ACLs, Schemas and Connectors.
 
 Cache
-""""""""
+"""""
 Klaw stores most frequently queried data in a local cache to for improved performance and user experience. This effectively reduces latency and gives users immediate response from the application. However, this cache is reset whenever changes are requested.
 Deploying Klaw in different environments like Development, Testing, Acceptance, and Production is essential to streamline the developer experience.
 
@@ -238,8 +238,10 @@ Klaw deployment model in high availability (HA) mode
 In the high availability mode, Nginx routes the requests to Klaw instances which are connected to a common data store such as Postgres. Each Klaw instance comprises both the Governance and Cluster API applications. You may choose to deploy these applications on separate machines for increased robustness.
 Below is the deployment model of Klaw in HA mode.
 
-
 Klaw in HA mode with Nginx Load balancer
+
+.. image:: ../../../_static/images/blogimages/nginxproxy.png
+   :align: center
 
 Klaw configuration
 ~~~~~~~~~~~~~~~~~~
