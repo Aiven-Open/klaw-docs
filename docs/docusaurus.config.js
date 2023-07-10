@@ -86,22 +86,22 @@ const config = {
                 label: 'Docs',
                 to: '/docs/intro',
               },
+              {
+                label: 'Faq',
+                to: '/docs/faq',
+              },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Forum',
+                href: 'https://aiven.io/community/forum/tag/klaw',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Contact Us',
+                href: 'mailto:info@klaw-project.io',
               },
             ],
           },
@@ -114,12 +114,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/aiven/klaw',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Aiven. Apache Kafka® is either a registered trademark or a trademark of the Apache Software Foundation in the United States and/or other countries.`,
       },
       prism: {
         theme: lightCodeTheme,

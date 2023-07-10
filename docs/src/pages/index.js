@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Go to Documentation
+            to="/docs/getstarted">
+            Get started
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Apache Kafka governance toolkit <head />">
+      description="Apache Kafka Governance toolkit <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

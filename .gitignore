@@ -7,3 +7,6 @@ aiven.min.css
 package-lock.json
 node*
 *DS_Store*
+
+.docusaurus
+_website

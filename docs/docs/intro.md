@@ -9,7 +9,6 @@ Klaw consists of two components:
 ## Quickstart
 
 1.  Get the source code and run the project:
-    `Run from Java source<docs/run-source>`{.interpreted-text
-    role="doc"}
+    `Run from Java source <HowTo/installation/run-source>`
 2.  Once you are up and running, use the guide for next steps:
-    `docs/get-started-kafka`{.interpreted-text role="doc"}
+    `get-started-kafka`
