@@ -6,23 +6,23 @@ Date: 5th of April, 2023
 
 Klaw version 2.2.0 is a minor release with several new features and
 improvements. Key highlights of this release include redesigned My
-Team\'s Requests page, pre-validation of schema requests, sensitive ACL
+Team's Requests page, pre-validation of schema requests, sensitive ACL
 data is now masked unless you are the owner and unified Kafka & Schema
 cluster administration.
 
-## What\'s new in Klaw 2.2.0
+## What's new in Klaw 2.2.0
 
-Redesigned My Team\'s Request screens with React UI
+Redesigned My Team's Request screens with React UI
 ````````````````````\` With the switch to React, this release features a
 redesign of the following user interfaces:
 
--   **My Team\'s Topic Requests**: Users can now view all of their
-    team\'s topic requests using the new UI.
--   **My Team\'s Subscription Requests** (Producer/Consumer): Users can
-    now view all of their team\'s ACL requests for both producers and
+-   **My Team's Topic Requests**: Users can now view all of their
+    team's topic requests using the new UI.
+-   **My Team's Subscription Requests** (Producer/Consumer): Users can
+    now view all of their team's ACL requests for both producers and
     consumers using the new UI.
--   **My Team\'s Schema Requests**: Users can now view all of their
-    team\'s schema requests using the new UI.
+-   **My Team's Schema Requests**: Users can now view all of their
+    team's schema requests using the new UI.
 
 ![image](../../static/images/release-220-react-ui.png)
 
@@ -46,7 +46,7 @@ interfaces, we would like you to share your valuable
 
 Klaw will now check all schema compatibility against the Schema Registry
 before creating the schema creation requests. This feature will only be
-bypassed during promotion when the \'force register schema\' option is
+bypassed during promotion when the 'force register schema' option is
 selected.
 
 Masking of ACL information for enhanced security ``````````````\` To

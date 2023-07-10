@@ -33,7 +33,7 @@ In most cases, you must start with the lowest environment and use the
 promotion feature for higher environments.
 :::
 
-3.  Enter the name of your topic based on your organization\'s naming
+3.  Enter the name of your topic based on your organization's naming
     conventions, or Klaw will enforce a minimum 5-character name.
 4.  Select the number of Topic Partitions you would like for your topic.
     To learn more, see
@@ -42,7 +42,7 @@ promotion feature for higher environments.
     event is written to a broker. To learn more, see
     [replication](https://kafka.apache.org/intro#intro_concepts_and_terms).
 6.  Add any advanced topic configuration settings. To learn more, see
-    Kafka\'s [Topic configuration
+    Kafka's [Topic configuration
     guide](https://kafka.apache.org/documentation/#topicconfigs).
 7.  Add a topic description. This information will stay with the topic
     for the duration of its lifecycle.

@@ -10,7 +10,7 @@ and decline screens in the React UI, Confluent Cloud support, The
 ability to switch between teams, codebase optimizations, and additional
 enhancements.
 
-## What\'s new in Klaw 2.1.0
+## What's new in Klaw 2.1.0
 
 ### Redesigned Request screens with React UI
 

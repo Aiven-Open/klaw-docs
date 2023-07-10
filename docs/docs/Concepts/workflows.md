@@ -88,7 +88,7 @@ registration requests:
 ## Topic owner
 
 In Klaw, each Kafka topic is owned by a team, and all team members are
-considered owners. Any requests to modify the topic\'s configuration,
+considered owners. Any requests to modify the topic's configuration,
 whether direct or indirect, are sent to the team for approval. The team
 has the authority to approve or deny these requests. The team can
 consist of producers, consumers, or both or have no specific roles

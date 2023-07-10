@@ -188,7 +188,7 @@ role="doc"}.
 ## Klaw Docker Scripts
 
 Klaw also provides Docker scripts that can be downloaded from the
-project\'s GitHub repository. These scripts include a README file that
+project's GitHub repository. These scripts include a README file that
 explains how to build and deploy the latest version of Klaw. You can
 find these scripts at
 <https://github.com/aiven/klaw/tree/main/docker-scripts>.
@@ -271,7 +271,7 @@ Note
 version copied over to the volume as this is usually updated during the
 build to keep the API versions in line with the pom version. \* Also,
 ensure that the `application.properties` is renamed to a unique
-properties file name so you don\'t accidentally copy over the Core
+properties file name so you don't accidentally copy over the Core
 properties with the cluster properties and vice versa.
 :::
 

@@ -13,13 +13,13 @@ introduction of React UI, a more user-friendly and intuitive interface
 for browsing and working with topics in Klaw, support for Azure AD
 authentication, enhancements to the codebase, and more.
 
-## What\'s new in Klaw 1.2.0
+## What's new in Klaw 1.2.0
 
 ### Introducing React for UI
 
 React is a popular open-source JavaScript library that simplifies the
 development of front-end applications and provides a great alternative
-to large, complex front-end frameworks like AngularJS. Klaw\'s current
+to large, complex front-end frameworks like AngularJS. Klaw's current
 user interface is built with AngularJS, which is no longer officially
 supported by Google. As an older framework, it does not leverage modern
 or component-based development.
@@ -29,10 +29,10 @@ making it easier to design reusable components and scale an application.
 Furthermore, React makes it easier to create consistent and cohesive
 user experiences.
 
-Moving to React for Klaw\'s UI provides numerous benefits in terms of
+Moving to React for Klaw's UI provides numerous benefits in terms of
 performance, scalability, ease of development, and support by a large
-community of developers. We\'ve tested React with our current interface,
-and it looks amazing - we\'re excited to start this new journey.
+community of developers. We've tested React with our current interface,
+and it looks amazing - we're excited to start this new journey.
 
 ### New look and feel for Browse topics
 

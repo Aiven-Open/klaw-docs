@@ -3,7 +3,7 @@
 This section provides information on enabling the switch teams option
 for user profiles in Klaw and key considerations to keep in mind.
 
--   You can enable the switch team option in a user\'s profile by
+-   You can enable the switch team option in a user's profile by
     logging in as a superadmin or a user with `ADD_EDIT_DELETE_USERS`
     permissions.
 -   To switch between teams, users must have a list of available teams
@@ -49,7 +49,7 @@ To switch between teams, follow these steps:
     Klaw portal.
 3.  Select a different team from the list of available teams in the
     dropdown.
-4.  The base team of the user\'s profile will be updated automatically
+4.  The base team of the user's profile will be updated automatically
     to reflect the selected team.
 
 When you switch between teams, you can access various dashboards,

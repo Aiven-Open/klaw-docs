@@ -27,9 +27,9 @@ In most cases, you must start with the lowest environment and use the
 promotion feature for higher environments.
 :::
 
-3.  Enter a name for the connector based on your organization\'s naming
+3.  Enter a name for the connector based on your organization's naming
     conventions. Ensure that the name is at least 5 characters long to
-    comply with Klaw\'s minimum requirements.
+    comply with Klaw's minimum requirements.
 4.  Add the connector configuration in valid JSON format in the
     configuration field.
 5.  Add a description for the connector, which will be associated with

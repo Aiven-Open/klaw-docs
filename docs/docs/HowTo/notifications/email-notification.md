@@ -67,7 +67,7 @@ additional information.
 Note
 :::
 
-\'All Approvals\' are Users assigned the permission
+'All Approvals' are Users assigned the permission
 APPROVE_ALL_REQUESTS_TEAMS, this permission allows users to approve any
 Topic, Schema, ACL or Connector request from any team.
 :::

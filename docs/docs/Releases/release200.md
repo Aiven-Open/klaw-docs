@@ -14,7 +14,7 @@ additional enhancements.
 Java 11 Support discontinued: Klaw will no longer support Java 11.
 Instead, Klaw now supports Java 17 (LTS) and Java 19 (latest).
 
-## What\'s new in Klaw 2.0.0
+## What's new in Klaw 2.0.0
 
 ### Redesigned Request screens with React UI
 

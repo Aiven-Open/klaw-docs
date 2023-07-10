@@ -16,7 +16,7 @@ Requests\<schemas/My-schema-requests\>
 
 ## Manage schema
 
-Aiven\'s Karapace and Confluent\'s Schema Registry are two highly
+Aiven's Karapace and Confluent's Schema Registry are two highly
 popular products that enable the management of schemas outside of a
 Kafka cluster. For more infomation, see [Aiven
 Karapace](https://karapace.io) and [Confluent Schema
@@ -38,7 +38,7 @@ Schema management in Klaw is structured around the following:
 -   Klaw enforces the `TopicNameStrategy` strategy to ensure only one
     schema is applied per topic, which uses the topic name to identify
     the schema subject used for schema lookups.
--   Klaw supports Aiven\'s Karapace and Confluent Schema registry.
+-   Klaw supports Aiven's Karapace and Confluent Schema registry.
 -   `schemas/Request-a-schema`{.interpreted-text role="doc"}
 -   `schemas/Promote-a-schema`{.interpreted-text role="doc"}
 -   `schemas/Approve-a-schema`{.interpreted-text role="doc"}

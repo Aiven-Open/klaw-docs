@@ -10,7 +10,7 @@ Klaw platform, particularly when creating or approving requests.
 To switch between teams in Klaw,
 
 -   Users must have the switch teams option enabled in their profile. A
-    user\'s profile must also include the user\'s base team and a list
+    user's profile must also include the user's base team and a list
     of available teams for switching. To learn how to enable switch
     teams, see `../howto/teams/switch-teams`{.interpreted-text
     role="doc"}.

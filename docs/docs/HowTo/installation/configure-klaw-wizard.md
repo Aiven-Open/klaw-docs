@@ -22,7 +22,7 @@ number of clusters. Only users with SUPERADMIN roles (or check allowed
 permission) can add clusters.
 
 After adding the cluster, based on the protocol selected (SSL or any
-other protocol), ensure the Klaw Cluster API\'s `application.properties`
+other protocol), ensure the Klaw Cluster API's `application.properties`
 files include the relevant configurations.
 
 Example :

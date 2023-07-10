@@ -25,7 +25,7 @@ Topics allow the producers to create events that consumers can read
 quickly, securely, and durable manner. Furthermore, Kafka is designed so
 that if a producer or consumer becomes inactive due to maintenance,
 faults, or other unexpected issues, it stays decoupled from the wider
-environment and doesn\'t disrupt the entire system. A consumer can
+environment and doesn't disrupt the entire system. A consumer can
 continue to read messages even if there is a backlog of events waiting
 to be processed. A producer can continue to generate events even if the
 consumer is temporarily inactive. When the consumer becomes active

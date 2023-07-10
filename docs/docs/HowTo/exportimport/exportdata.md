@@ -49,7 +49,7 @@ To export data, follow these steps:
     setting `klaw.export.file.path` to the desired location.
 3.  Configure a pattern (cron expression) for the scheduler to run at a
     specific interval. For example, to run the scheduler at 12 am every
-    day, use the expression \'0 0 0 \* \* ?\'.
+    day, use the expression '0 0 0 \* \* ?'.
 4.  Once you have updated the above settings, restart the application
     for the changes to take effect.
 

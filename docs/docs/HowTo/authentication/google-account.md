@@ -1,7 +1,7 @@
 # Login with Google account
 
 You can log in to Klaw using your Google account credentials. On the
-login screen, you\'ll see an option to log in with a Google account.
+login screen, you'll see an option to log in with a Google account.
 Click the login button, and a pop-up window will appear, allowing you to
 enter your credentials or select an Azure account.
 

@@ -13,7 +13,7 @@ During this process, all existing schemas for the subject in the target
 environment are deleted, and new schemas are created based on Klaw
 metadata. For example, if version 1 already exists in the target
 cluster, it will be deleted, and new schemas will be created starting
-with \'2\' as the new version. The schemas will be registered in
+with '2' as the new version. The schemas will be registered in
 ascending order of versions. In case of compatibility failure, schemas
 will be force registered based on the force register selection.
 :::

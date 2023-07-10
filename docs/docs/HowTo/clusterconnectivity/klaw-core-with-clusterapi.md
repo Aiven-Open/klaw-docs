@@ -15,7 +15,7 @@ the application.properties file located in the following paths:
 1.  Configure the secret key
 
     The secret key is a base64-encoded string configured in the
-    `application.properties` files for Klaw\'s `core` and `cluster-api`
+    `application.properties` files for Klaw's `core` and `cluster-api`
     modules. An example secret key is as follows:
 
         klaw.clusterapi.access.base64.secret
@@ -26,7 +26,7 @@ the application.properties file located in the following paths:
 
     You need to configure the following SSL settings for Klaw to run on
     HTTPS. These settings must be configured in the
-    `application.properties` files for Klaw\'s `core` and `cluster-api`
+    `application.properties` files for Klaw's `core` and `cluster-api`
     modules to communicate securely over HTTPS:
 
         server.ssl.key-store=client.keystore.p12
@@ -50,7 +50,7 @@ the application.properties file located in the following paths:
 
     Make sure that the certificates used in the keystore and truststore
     are signed by the same CA, or the public keys of both stores must be
-    imported into each other\'s trust stores.
+    imported into each other's trust stores.
     :::
 
 3.  Verify the successful connection

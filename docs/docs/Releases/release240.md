@@ -8,7 +8,7 @@ Klaw version 2.4.0 is a minor release with several new features and
 improvements. Key highlights of this release include ability to migrate
 schemas from schema registry to Klaw, and vice versa.
 
-## What\'s new in Klaw 2.4.0
+## What's new in Klaw 2.4.0
 
 ### Redesigned screens with React UI
 
@@ -65,7 +65,7 @@ interfaces, we would like you to share your valuable
 
 This release introduces an email-based password reset feature, allowing
 users to request a password reset via email. A password reset token is
-sent to the user\'s registered email address upon request. The password
+sent to the user's registered email address upon request. The password
 reset token has a default expiry period of ten minutes, ensuring
 improved security and prompting users to update their passwords
 promptly.

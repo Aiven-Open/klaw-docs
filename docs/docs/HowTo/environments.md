@@ -39,9 +39,9 @@ To add a new environment in Klaw, follow these steps:
             -   **Max replication factor**: Set the maximum replication
                 factor for topics in this environment.
             -   **Topic prefix (optional)**: If you want to add a prefix
-                to your topics\' names, enter it here.
+                to your topics' names, enter it here.
             -   **Topic suffix (optional)**: If you want to add a suffix
-                to your topics\' names, enter it here.
+                to your topics' names, enter it here.
             -   **Tenant**: Set to default.
 
     -   Select **Save** to add a new Kafka environment.
