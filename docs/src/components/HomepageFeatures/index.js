@@ -68,10 +68,20 @@ const Support = [
         Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
         description: (
             <>
-                - Apache Kafka
-                - Aiven for Apache Kafka
-                - Confluent
-                - Confluent Cloud
+                <ul>
+                    <li>
+                        Apache Kafka
+                    </li>
+                    <li>
+                        Aiven for Apache Kafka
+                    </li>
+                    <li>
+                        Confluent
+                    </li>
+                    <li>
+                        Confluent Cloud
+                    </li>
+                </ul>
             </>
         ),
     },
@@ -80,12 +90,26 @@ const Support = [
         Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>
-                - PLAINTEXT
-                - SSL
-                - SASL-PLAIN
-                - SASL-SSL/PLAIN
-                - SASL-SSL/GSSAPI
-                - SASL-SSL/SCRAM
+                <ul>
+                    <li>
+                        PLAINTEXT
+                    </li>
+                    <li>
+                        SSL
+                    </li>
+                    <li>
+                        SASL-PLAIN
+                    </li>
+                    <li>
+                        SASL-SSL/PLAIN
+                    </li>
+                    <li>
+                        SASL-SSL/GSSAPI
+                    </li>
+                    <li>
+                        SASL-SSL/SCRAM
+                    </li>
+                </ul>
             </>
         ),
     },
@@ -94,11 +118,23 @@ const Support = [
         Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
-                - Windows Active directory
-                - Azure Active directory (AAD)
-                - Google
-                - Any third party (ex: Github)
-                - Database
+             <ul>
+                 <li>
+                     Windows Active directory
+                 </li>
+                 <li>
+                     Azure Active directory (AAD)
+                 </li>
+                 <li>
+                     Google
+                 </li>
+                 <li>
+                     Any third party (ex: Github)
+                 </li>
+                 <li>
+                     Database
+                 </li>
+             </ul>
             </>
         ),
     },

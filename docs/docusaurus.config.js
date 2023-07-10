@@ -69,6 +69,7 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/Releases/release100', label: 'Releases', position: 'left'},
           {
             href: 'https://github.com/aiven/klaw',
             label: 'GitHub',
