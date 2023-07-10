@@ -5,7 +5,7 @@ below procedure, which involves retrieving the topics from an existing
 Apache Kafka cluster and assigning them to a team in Klaw.
 
 1.  Configure Environments and the `klaw.tenant.config` property as
-    outlined in the `tenant-config`{.interpreted-text role="doc"}
+    outlined in the `tenant-config`
     documentation.
 
 2.  Log in as a SUPERADMIN or user with the `SYNC_TOPICS` permission.
@@ -18,7 +18,7 @@ Apache Kafka cluster and assigning them to a team in Klaw.
     >     individually, choose a team, and save. The selected topics
     >     will now appear in the **Topics** menu, assigned to the chosen
     >     team.
-    > -   [Bulk Options]{.title-ref} tab: Select all topics from the
+    > -   [Bulk Options] tab: Select all topics from the
     >     Kafka cluster at once, choose a team, and save. The selected
     >     topics will now appear in the **Topics** menu, assigned to the
     >     chosen team.

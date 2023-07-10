@@ -17,13 +17,13 @@ the following property: :
 
     klaw.login.authentication.type=ad
 
-3\. Enable SSO by setting the value to [true]{.title-ref} in the
+3\. Enable SSO by setting the value to [true] in the
 following property: :: klaw.enable.sso=true
 
 4\. To enable third-party account-based authentication, find the
 registration of the third-party account like [github \`or
-\`twitter]{.title-ref}[ or any other and replace
-]{.title-ref}[registrationid]{.title-ref}\` with the third-party account
+\`twitter][ or any other and replace
+][registrationid]\` with the third-party account
 ID in the following properties. Additionally, provide the appropriate
 values for ClientId, Client secret, and Tenant Id: :
 

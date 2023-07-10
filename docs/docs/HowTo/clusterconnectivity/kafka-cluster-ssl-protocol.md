@@ -10,7 +10,7 @@ Kafka cluster to Klaw using SSL protocol.
 ## Prerequisite
 
 -   Set up the connection between the Klaw APIs (Core API and Cluster
-    API), see `klaw-core-with-clusterapi`{.interpreted-text role="doc"}.
+    API), see `klaw-core-with-clusterapi`.
     This involves configuring the `klaw.clusterapi.url` setting in the
     Klaw UI and testing the connectivity to ensure the two APIs can
     communicate.
@@ -44,7 +44,7 @@ cluster in Klaw using SSL protocol:
     icon that is available on the right hand side of the each cluster
     row.
 9.  Open the `application.properties` file located in the
-    [klaw/cluster-api/src/main/resources]{.title-ref} directory.
+    [klaw/cluster-api/src/main/resources] directory.
 
 10\. Configure the SSL properties to connect to Apache Kafka clusters by
 copying and editing the following lines: :

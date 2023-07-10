@@ -1,4 +1,4 @@
-# Clusters and environments
+# Clusters and Environments
 
 In Klaw, the concept of **cluster** corresponds directly to Apache
 Kafka® clusters. When you come across a cluster in Klaw, it refers to an
@@ -38,11 +38,5 @@ environment to a Kafka Environment meaning that you no longer need to
 duplicate the promotion ordering for both Topics and for Schema
 Registries.
 
-::: note
-::: title
-Note
-:::
-
-A Schema Registry can only be associated with one Kafka environment at a
-time.
-:::
+:::note
+A Schema Registry can only be associated with one Kafka environment at a time.

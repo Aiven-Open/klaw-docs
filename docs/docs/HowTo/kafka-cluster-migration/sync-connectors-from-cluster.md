@@ -6,7 +6,7 @@ connectors from an existing Apache Kafka Connect cluster and assigning
 them to a team in Klaw.
 
 1.  Configure the environments and the `klaw.tenant.config` property as
-    specified in the `tenant-config`{.interpreted-text role="doc"}
+    specified in the `tenant-config`
     documentation.
 
 2.  Log in as a **SUPERADMIN** or user with the `SYNC_CONNECTORS`

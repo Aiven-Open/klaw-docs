@@ -50,8 +50,8 @@ subscription, the team that owns the topic is responsible for making the
 final decision, such as approving or declining a request from the same
 team or another team to produce/consume events from the topic.
 
--   `subscriptions/Request-a-subscription`{.interpreted-text role="doc"}
--   `subscriptions/Approve-a-subscription`{.interpreted-text role="doc"}
--   `subscriptions/Delete-a-subscription`{.interpreted-text role="doc"}
+-   `subscriptions/Request-a-subscription`
+-   `subscriptions/Approve-a-subscription`
+-   `subscriptions/Delete-a-subscription`
 -   `subscriptions/My-subscription-requests`{.interpreted-text
     role="doc"}

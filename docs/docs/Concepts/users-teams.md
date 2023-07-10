@@ -3,38 +3,37 @@
 Klaw has three core concepts to manage access and authorization: users,
 roles, and teams.
 
-::: glossary
 
-User
+### User
 
-:   A user is an individual with a login account in Klaw. Each user can
+A user is an individual with a login account in Klaw. Each user can
     belong to one or more teams and can be assigned specific roles with
     corresponding permissions. A user with `ADD_EDIT_DELETE_USERS`
     permission or SUPERADMIN role can create a new user account in Klaw.
 
-Team
+### Team
 
-:   A team is a group of users responsible for managing specific Kafka
+A team is a group of users responsible for managing specific Kafka
     topics. Teams take **ownership** of topics, and when a team member
     makes a request related to a topic, another member of the same team
     is required to approve the request. A user with
     `ADD_EDIT_DELETE_TEAMS` permission or SUPERADMIN role can create a
     new user account in Klaw.
 
-Role
+### Role
 
-:   A role defines a set of permissions and access levels for a user.
+A role defines a set of permissions and access levels for a user.
     While the default roles available are **USER** and **SUPERADMIN**,
     users with the `ADD_EDIT_DELETE_ROLES` permission or SUPERADMIN role
     can create additional roles as per their requirements from the
     **Roles - Permissions** tab.
 
-Superadmin
+### Superadmin
 
-:   A user with the SUPERADMIN role in Klaw has complete control over
+A user with the SUPERADMIN role in Klaw has complete control over
     the entire Klaw platform. This role enables users to manage
     clusters, environments, users, and teams.
-:::
+
 
 Users can request to create or promote topics, schemas and connectors
 for their team. Other users in the same team can check and approve the

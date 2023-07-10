@@ -15,7 +15,7 @@ following configuration: :: server.ssl.key-store.\*
 2\. Configure the authentication type by setting the value to \"ad\" in
 the following property: :: klaw.login.authentication.type=ad
 
-3\. Enable SSO by setting the value to [true]{.title-ref} in the
+3\. Enable SSO by setting the value to [true] in the
 following property: :
 
     klaw.enable.sso=true

@@ -8,7 +8,7 @@ the REST protocol.
 
 -   Set up the connection between the Klaw APIs (Core API and Cluster
     API) to use secure SSL, see
-    `klaw-core-with-clusterapi`{.interpreted-text role="doc"}. This
+    `klaw-core-with-clusterapi`. This
     involves configuring the `klaw.clusterapi.url` setting in the Klaw
     UI and testing the connectivity to ensure the two APIs can
     communicate over https.
@@ -39,8 +39,8 @@ cluster with Klaw using SSL protocol:
 6.  In the **Schema Registry Environments** section, click **Add
     Environment** and enter the details to add your schema registry
     environment. Click **Save**.
-7.  Open the `application.properties` file for [core]{.title-ref}[
-    (klaw/core/src/main/resources) and \`cluster-api]{.title-ref}
+7.  Open the `application.properties` file for [core][
+    (klaw/core/src/main/resources) and \`cluster-api]
     (klaw/cluster-api/src/main/resources) modules.
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
     icon that is available on the right hand side of the each cluster

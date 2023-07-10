@@ -8,6 +8,6 @@ Wizard\<installation/configure-klaw-wizard\>
 
 How to install and configure Klaw.
 
--   `installation/run-source`{.interpreted-text role="doc"}
--   `installation/run-docker`{.interpreted-text role="doc"}
--   `installation/configure-klaw-wizard`{.interpreted-text role="doc"}
+-   `installation/run-source`
+-   `installation/run-docker`
+-   `installation/configure-klaw-wizard`

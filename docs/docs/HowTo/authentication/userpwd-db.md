@@ -5,7 +5,7 @@ securely stored in the database (encrypted).
 
 Configurations for the database login, including authentication type,
 encryption key, and password decryption code, can be found in the
-[application.properties]{.title-ref} file.
+[application.properties] file.
 
 Follow these to enable authentication with Klaw database:
 

@@ -9,7 +9,7 @@ higher environments as needed.
 
 Before using this functionality, the Superadmin must ensure that all
 prerequisites are met. For more information, see
-`Promotion <../../concepts/promotion>`{.interpreted-text role="doc"}.
+`Promotion <../../concepts/promotion>`.
 
 ## Schema promotion
 

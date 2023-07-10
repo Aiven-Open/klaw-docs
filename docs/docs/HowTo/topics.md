@@ -54,10 +54,10 @@ from the topic. Similarly, if the team wants to enforce a schema on the
 topic, the team submits a request, and another team member reviews and
 approves or declines it.
 
--   `topics/Request-a-new-topic`{.interpreted-text role="doc"}
--   `topics/Approve-a-topic`{.interpreted-text role="doc"}
--   `topics/Promote-a-topic`{.interpreted-text role="doc"}
--   `topics/Claim-a-topic`{.interpreted-text role="doc"}
--   `topics/Edit-topic-request`{.interpreted-text role="doc"}
--   `topics/Delete-a-topic`{.interpreted-text role="doc"}
--   `topics/My-topic-requests`{.interpreted-text role="doc"}
+-   `topics/Request-a-new-topic`
+-   `topics/Approve-a-topic`
+-   `topics/Promote-a-topic`
+-   `topics/Claim-a-topic`
+-   `topics/Edit-topic-request`
+-   `topics/Delete-a-topic`
+-   `topics/My-topic-requests`

@@ -10,7 +10,7 @@ Note
 :::
 
 For subsequent logins, you access the Klaw configuration wizard using
-URL: [https://\<host\>:\<port\>/helpwizard]{.title-ref}
+URL: [https://\<host\>:\<port\>/helpwizard]
 :::
 
 ![image](../../../static/images/general/KlawWizard.png)
@@ -58,7 +58,7 @@ the validate button.
 Klaw is multi-tenant by default. Every tenant has its own set of Kafka
 environments, and users of one tenant cannot view/access topics, or acls
 from other tenants. To configure tenants, navigate to **Dashboard -\>
-Settings**, and look for [klaw.tenant.config]{.title-ref}.
+Settings**, and look for [klaw.tenant.config].
 
 Example :
 

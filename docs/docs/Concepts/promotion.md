@@ -27,24 +27,26 @@ Model** or the server will reject the configuration. The below example
 defines the Kafka Topic environments as 'Dev' & 'TST' and specifies
 the order that will be enforced in the promotion of topics. Similarly,
 the Schema Registry environments have all been defined and placed in
-order. :: { \"tenantModel\": { \"tenantName\": \"default\",
-\"baseSyncEnvironment\": \"DEV\", \"orderOfTopicPromotionEnvsList\":
-\[\"DEV\", \"TST\"\], \"requestTopicsEnvironmentsList\": \[\"DEV\"\],
-\"requestSchemaEnvironmentsList\" : \[ \"DEV_SCH\"\],
-\"orderOfConnectorsPromotionEnvsList\" : \[\],
-\"requestConnectorsEnvironmentsList\" : \[\] } }
+order.
 
-::: note
-::: title
-Note
-:::
+```
+{
+ "tenantModel":
+    {
+    "tenantName": "default",
+    "baseSyncEnvironment": "DEV",
+    "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+    "requestTopicsEnvironmentsList": ["DEV"],
+    "requestSchemaEnvironmentsList" : [ "DEV_SCH"],
+    "orderOfConnectorsPromotionEnvsList" : [],
+    "requestConnectorsEnvironmentsList" : []
+   }
+}
+```
+ 
+> In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a
+schema registry with a Kafka environment in the Add/modify Schema Environment pages. Thereby matching the order of promotion defined in `orderOfTopicPromotionEnvsList`.
 
-In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been
-replaced with an enhanced feature that allows users to associate a
-schema registry with a Kafka environment in the Add/modify Schema
-Environment pages. Thereby matching the order of promotion defined in
-`orderOfTopicPromotionEnvsList`.
-:::
 
 ## Topic promotion
 
@@ -115,11 +117,6 @@ subject compatibility. If the subject compatibility is not set, it will
 fall back to the global compatibility. However, Klaw will not change the
 global compatibility.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 Any request raised cannot be approved by the same user, rather it has to
 be a different user from the same team.
-:::

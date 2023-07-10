@@ -9,8 +9,8 @@ accounts\<authentication/third-party-account\>
 
 How to Authenticate an user in Klaw.
 
--   `authentication/userpwd-db`{.interpreted-text role="doc"}
--   `authentication/windows-ad`{.interpreted-text role="doc"}
--   `authentication/azure-ad`{.interpreted-text role="doc"}
--   `authentication/google-account`{.interpreted-text role="doc"}
--   `authentication/third-party-account`{.interpreted-text role="doc"}
+-   `authentication/userpwd-db`
+-   `authentication/windows-ad`
+-   `authentication/azure-ad`
+-   `authentication/google-account`
+-   `authentication/third-party-account`

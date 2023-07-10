@@ -2,7 +2,7 @@
 
 Klaw has defined workflows for applying configurations to Kafka
 clusters. Instead of directly creating configurations on the cluster,
-Klaw follows the [Four Eyes Principle]{.title-ref} concept. This
+Klaw follows the [Four Eyes Principle] concept. This
 approach entails raising a request and obtaining approval before
 implementing any changes.
 
@@ -22,35 +22,23 @@ Workflows in Klaw are managed by defining ownerships, roles,
 permissions, and authorizations. In the following section, you will find
 an overview of the key concepts related to ownership in Klaw.
 
-::: glossary
-
 Request and approval
 
-:   One of the primary advantages of using Klaw is the governance it
+One of the primary advantages of using Klaw is the governance it
     adds to the growing Apache Kafka® landscape. Developers can
     **request** new topics, schemas, ACLs, or connectors themselves. The
     request is then reviewed and **approved** by another member of the
     same team.
 
-    ::: note
-    ::: title
-    Note
-    :::
 
-    This is the default configuration. The default configuration permits
-    only users with the `USER` role to make requests. Users with the
-    `SUPERADMIN` role cannot request but can manage users and teams.
-    :::
-:::
+> This is the default configuration. The default configuration permits
+only users with the `USER` role to make requests. Users with the
+`SUPERADMIN` role cannot request but can manage users and teams.
 
-::: note
-::: title
-Note
-:::
 
-A user who raises a request cannot approve it. Instead, a different user
+> A user who raises a request cannot approve it. Instead, a different user
 must approve.
-:::
+
 
 ## Approval process
 
@@ -79,11 +67,11 @@ its unique responsibilities and permissions. These roles include:
 The table below outlines the roles responsible for approving user
 registration requests:
 
-  Operation Type              Resource Owners Team   Requestors Team   All Approvers   Admin
-  --------------------------- ---------------------- ----------------- --------------- -------
-  User Registration Request                                                            ✅
+New User Approver matrix
 
-  : New User Approver matrix
+  Operation Type              | Resource Owners Team  | Requestors Team  | All Approvers  | Admin
+  --------------------------- | ----------------------| -----------------| ---------------| -------
+  User Registration Request   |                       |                  |                |      ✅
 
 ## Topic owner
 
@@ -94,29 +82,24 @@ has the authority to approve or deny these requests. The team can
 consist of producers, consumers, or both or have no specific roles
 assigned.
 
-::: note
-::: title
-Note
-:::
-
-The team remains the owner of the topic across all environments. Only
+> The team remains the owner of the topic across all environments. Only
 this team has the right to delete the topic.
-:::
+
 
 ### Topic request approvals
 
 The table below outlines the roles responsible for approving various
 topic-related requests:
 
-  Operation Type          Resource Owners Team   Requestors Team   All Approvers   Admin
-  ----------------------- ---------------------- ----------------- --------------- -------
-  New Topic Request                              ✅                ✅              
-  Update Topic Request                           ✅                ✅              
-  Delete Topic Request                           ✅                ✅              
-  Claim Topic Request     ✅                                       ✅              
-  Promote Topic Request                          ✅                ✅              
+Topic Approver matrix
 
-  : Topic Approver matrix
+  Operation Type         | Resource Owners Team |  Requestors Team |  All Approvers |  Admin
+  -----------------------| ---------------------| -----------------| ---------------| -------
+  New Topic Request      |                      |  ✅              |  ✅            |  
+  Update Topic Request   |                      |  ✅              |  ✅            |  
+  Delete Topic Request   |                      |  ✅              |  ✅            |  
+  Claim Topic Request    | ✅                   |                  |  ✅            |  
+  Promote Topic Request  |                      |  ✅              |  ✅            |  
 
 ## Connector owner
 
@@ -129,21 +112,22 @@ become the owners of that connector.
 The table below outlines the roles responsible for approving various
 connector-related requests:
 
-  Operation Type              Resource Owners Team   Requestors Team   All Approvers   Admin
-  --------------------------- ---------------------- ----------------- --------------- -------
-  New Connector Request                              ✅                ✅              
-  Update Connector Request                           ✅                ✅              
-  Delete Connector Request                           ✅                ✅              
-  Claim Connector Request     ✅                                       ✅              
-  Promote Connector Request                          ✅                ✅              
+Connector Approver matrix
 
-  : Connector Approver matrix
+  Operation Type             | Resource Owners Team |  Requestors Team |  All Approvers |  Admin
+  ---------------------------| ---------------------| -----------------| ---------------| -------
+  New Connector Request      |                      |  ✅              |  ✅            |  
+  Update Connector Request   |                      |  ✅              |  ✅            |  
+  Delete Connector Request   |                      |  ✅              |  ✅            |  
+  Claim Connector Request    | ✅                   |                  |  ✅            |  
+  Promote Connector Request  |                      |  ✅              |  ✅            |  
+
 
 ## Schema owner
 
 Schema Owner
 
-:   Klaw can integrate with Karapace or Schema registry and define
+Klaw can integrate with Karapace or Schema registry and define
     schemas on a topic. Currently, the topic owner team can raise a
     schema request, and they become the owners of the schema and its
     evolution.
@@ -153,30 +137,26 @@ Schema Owner
 The table below outlines the roles responsible for approving various
 schema-related requests:
 
-  Operation Type           Resource Owners Team   Requestors Team   All Approvers   Admin
-  ------------------------ ---------------------- ----------------- --------------- -------
-  New Schema Request                              ✅                ✅              
-  Delete Schema Request                           ✅                ✅              
-  Promote Schema Request                          ✅                ✅              
+Schema Approver matrix
 
-  : Schema Approver matrix
+  Operation Type          | Resource Owners Team  | Requestors Team  | All Approvers  | Admin
+  ------------------------| ----------------------| -----------------| ---------------| -------
+  New Schema Request      |                       | ✅               | ✅             | 
+  Delete Schema Request   |                       | ✅               | ✅             | 
+  Promote Schema Request  |                       | ✅               | ✅             | 
 
-::: note
-::: title
-Note
-:::
 
-With Schemas there is no [Claim Schema]{.title-ref} as it is assigned to
+>With Schemas there is no [Claim Schema] as it is assigned to
 a topic and so the Topic owner owns the Schema. Likewise there is no
-[Update Schema]{.title-ref} as existing Schemas are kept and a new
+[Update Schema] as existing Schemas are kept and a new
 Schema with an incremented version is added instead.
-:::
+
 
 ## Subscription owner
 
 Subscription Owner
 
-:   In Klaw, subscriptions (ACLs) are defined to secure Kafka topics.
+In Klaw, subscriptions (ACLs) are defined to secure Kafka topics.
     Each team that wants to produce or consume from a topic becomes the
     subscription owner. Teams can submit subscription requests for a
     specific topic (either as a producer or consumer), which are then
@@ -191,21 +171,18 @@ Subscription Owner
 The table below outlines the roles responsible for approving various
 subscription-related requests:
 
-  Operation Type                Resource Owners Team   Requestors Team   All Approvers   Admin
-  ----------------------------- ---------------------- ----------------- --------------- -------
-  New Subscription Request                             ✅                ✅              
-  Delete Subscription Request   ✅                                       ✅              
-  Claim Subscription Request    ✅                                       ✅              
+Subscription Approver matrix
 
-  : Subscription Approver matrix
+  Operation Type                |Resource Owners Team  | Requestors Team  | All Approvers  | Admin
+  ----------------------------- |----------------------| -----------------| ---------------| -------
+  New Subscription Request      |                      | ✅               | ✅             | 
+  Delete Subscription Request   |✅                    |                  | ✅             | 
+  Claim Subscription Request    |✅                    |                  | ✅             |
 
-::: note
-::: title
-Note
-:::
 
+:::tip
 When claiming a Subscription, if the Subscription is owned by a team
 that does not own the corresponding topic, then two approvals are
 required: - Approval by the team that owns the Subscription. - Approval
 by the team that owns the topic.
-:::
+

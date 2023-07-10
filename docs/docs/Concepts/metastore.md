@@ -12,9 +12,8 @@ project.
 
 If you would prefer to use another RDBMS, such as
 [MySQL](https://www.mysql.com/), you can do this too. Check the
-`config`{.interpreted-text role="doc"} documentation for information
+`config` documentation for information
 about working with configuration files.
 
-Scripts are included in the source code repository to create the
-database structure and insert some starter data. You will find these in
-the `scripts/base/rdbms/` directory.
+:::tip
+Klaw will create the required tables during the application startup.

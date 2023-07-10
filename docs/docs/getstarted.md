@@ -18,7 +18,7 @@ needed to add them all.
 3.  Add your server details into **Bootstrap servers** (any port range
     is permitted).
 4.  Select the **Protocol** that is needed to connect. Check the
-    `config`{.interpreted-text role="doc"} information for how to supply
+    `config` information for how to supply
     additional information such as certificates.
 5.  Save your new cluster and you should see it in the list of clusters.
 

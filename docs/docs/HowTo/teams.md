@@ -13,5 +13,5 @@ permission.
 Switch Teams\<teams/switch-teams\> Manage Teams\<teams/manage-teams\>
 :::
 
--   `teams/switch-teams`{.interpreted-text role="doc"}
--   `teams/manage-teams`{.interpreted-text role="doc"}
+-   `teams/switch-teams`
+-   `teams/manage-teams`

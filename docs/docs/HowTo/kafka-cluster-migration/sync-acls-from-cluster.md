@@ -5,9 +5,9 @@ this procedure, which entails retrieving the Acls (Producers &
 Consumers) from an existing Kafka cluster and assigning them to a team
 in Klaw.
 
-1.  Configure Environments and the [klaw.tenant.config]{.title-ref}[
+1.  Configure Environments and the [klaw.tenant.config][
     property is configured as described in the
-    :doc:\`tenant-config]{.title-ref} documentation.
+    :doc:\`tenant-config] documentation.
 2.  Log in as a SUPERADMIN or user with the `SYNC_SUBSCRIPTIONS`
     permission.
 3.  Navigate to the **Synchronize** menu and select **ACLs from

@@ -39,7 +39,7 @@ Schema management in Klaw is structured around the following:
     schema is applied per topic, which uses the topic name to identify
     the schema subject used for schema lookups.
 -   Klaw supports Aiven's Karapace and Confluent Schema registry.
--   `schemas/Request-a-schema`{.interpreted-text role="doc"}
--   `schemas/Promote-a-schema`{.interpreted-text role="doc"}
--   `schemas/Approve-a-schema`{.interpreted-text role="doc"}
--   `schemas/My-schema-requests`{.interpreted-text role="doc"}
+-   `schemas/Request-a-schema`
+-   `schemas/Promote-a-schema`
+-   `schemas/Approve-a-schema`
+-   `schemas/My-schema-requests`

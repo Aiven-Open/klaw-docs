@@ -128,7 +128,7 @@ property with a new base64-encoded secret.
 ### 2. Run Docker Compose
 
 In the same directory that you created the
-[docker-compose.yaml]{.title-ref} file, run the following command to
+[docker-compose.yaml] file, run the following command to
 start the containers defined in the Docker Compose file:
 
     docker-compose up -d

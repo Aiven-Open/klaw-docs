@@ -10,5 +10,5 @@ instance are important operations. These features provided by Klaw serve
 the purpose of disaster recovery and migrations, ensuring data security
 and smooth transitions.
 
--   `exportimport/exportdata`{.interpreted-text role="doc"}
--   `exportimport/importdata`{.interpreted-text role="doc"}
+-   `exportimport/exportdata`
+-   `exportimport/importdata`

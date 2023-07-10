@@ -12,7 +12,7 @@ Apache Kafka Connect service with Klaw using SSL protocol.
 
 -   Set up the connection between the Klaw APIs (Core API and Cluster
     API) to use secure SSL, see
-    `klaw-core-with-clusterapi`{.interpreted-text role="doc"}. This
+    `klaw-core-with-clusterapi`. This
     involves configuring the `klaw.clusterapi.url` setting in the Klaw
     UI and testing the connectivity to ensure the two APIs can
     communicate over https.
@@ -62,7 +62,7 @@ and enter the details to add your schema registry environment. Click
 **Save**. 7. Copy the **Cluster ID** from the **Clusters** page using
 the copy icon that is available on the right hand side of the each
 cluster row. 8. In the `application.properties` file for
-[cluster-api]{.title-ref} (klaw/cluster-api/src/main/resources) module,
+[cluster-api] (klaw/cluster-api/src/main/resources) module,
 configure Aiven for Apache Kafka Connect credentials copied from Aiven
 console:: :
 

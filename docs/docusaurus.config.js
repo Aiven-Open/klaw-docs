@@ -89,7 +89,7 @@ const config = {
               },
               {
                 label: 'Faq',
-                to: '/docs/faq',
+                to: '/docs/zfaq',
               },
             ],
           },

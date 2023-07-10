@@ -35,7 +35,7 @@ them to other environments, including production. The team that owns the
 connector is responsible for making the final decision related to any
 requests, such as approving or declining them.
 
--   `connectors/Request-a-new-connector`{.interpreted-text role="doc"}
--   `connectors/Approve-a-connector`{.interpreted-text role="doc"}
--   `connectors/My-connector-requests`{.interpreted-text role="doc"}
--   `connectors/manage-connectors`{.interpreted-text role="doc"}
+-   `connectors/Request-a-new-connector`
+-   `connectors/Approve-a-connector`
+-   `connectors/My-connector-requests`
+-   `connectors/manage-connectors`
