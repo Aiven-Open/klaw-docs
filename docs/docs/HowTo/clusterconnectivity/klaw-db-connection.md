@@ -19,17 +19,11 @@ might look something similar to this: :
     spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
     spring.h2.console.enabled=true
 
-::: tip
-::: title
-Tip
-:::
-
-For large implementations of Klaw, a file-based database is not
-suitable, as it may not be able to scale well and for various other
-reasons. In these cases, we recommend configuring Klaw to use a
-different database management system, such as MySQL,Oracle, or
-PostgreSQL.
-:::
+    For large implementations of Klaw, a file-based database is not
+    suitable, as it may not be able to scale well and for various other
+    reasons. In these cases, we recommend configuring Klaw to use a
+    different database management system, such as MySQL,Oracle, or
+    PostgreSQL.
 
 ## RDBMS Configuration
 

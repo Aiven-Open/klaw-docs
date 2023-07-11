@@ -3,15 +3,6 @@
 Topics are a fundamental part of the Kafka ecosystem, and the management
 of topics is one of the core and richest features available in Klaw.
 
-::: {.toctree maxdepth="3" hidden=""}
-Request a new topic\<topics/Request-a-new-topic\> Approve a
-topic\<topics/Approve-a-topic\> Promote a
-topic\<topics/Promote-a-topic\> Claim a topic\<topics/Claim-a-topic\>
-Edit Topic Request\<topics/Edit-topic-request\> Delete a
-topic\<topics/Delete-a-topic\> My Topic
-Requests\<topics/My-topic-requests\>
-:::
-
 ## Topics in Kafka
 
 Kafka uses topics as a core concept, as a grouping mechanism to organize
@@ -54,10 +45,16 @@ from the topic. Similarly, if the team wants to enforce a schema on the
 topic, the team submits a request, and another team member reviews and
 approves or declines it.
 
--   `topics/Request-a-new-topic`
--   `topics/Approve-a-topic`
--   `topics/Promote-a-topic`
--   `topics/Claim-a-topic`
--   `topics/Edit-topic-request`
--   `topics/Delete-a-topic`
--   `topics/My-topic-requests`
+- [Request a new topic](Request-a-new-topic)
+
+- [Approve a topic](Approve-a-topic)
+
+- [Promote a topic](Promote-a-topic)
+
+- [Claim a topic](Claim-a-topic)
+
+- [Edit Topic Request](Edit-topic-request)
+
+- [Delete a topic](Delete-a-topic)
+
+- [My Topic Requests](My-topic-requests)

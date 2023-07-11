@@ -23,7 +23,7 @@ Klaw data is classified into the below 3 types.
 
     Admin configuration comprises of the below entities
 
-    :   -   Tenants
+        -   Tenants
         -   Clusters
         -   Environments
         -   Roles
@@ -36,7 +36,7 @@ Klaw data is classified into the below 3 types.
 
     Core configuration comprises of the below
 
-    :   -   Topics
+        -   Topics
         -   Subscriptions
         -   Schemas
         -   Connectors
@@ -45,7 +45,7 @@ Klaw data is classified into the below 3 types.
 
     Requests data comprises of the below
 
-    :   -   Topic requests
+        -   Topic requests
         -   Subscription requests
         -   Schema requests
         -   Connector requests

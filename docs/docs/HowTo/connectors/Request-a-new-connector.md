@@ -8,8 +8,7 @@ Kafka Connector.
 ## Prerequisites
 
 -   The Superadmin must configure the environment within Klaw. See
-    `Environments <../../concepts/clusters-environments>`{.interpreted-text
-    role="doc"} for the steps to configure the environments.
+    [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
 
 ## Make a connector request
 
@@ -18,14 +17,10 @@ Kafka Connector.
 2.  In the **Connect create request** screen, select the Kafka Connect
     environment where the connector will be created.
 
-::: note
-::: title
-Note
-:::
 
-In most cases, you must start with the lowest environment and use the
-promotion feature for higher environments.
-:::
+    In most cases, you must start with the lowest environment and use the
+    promotion feature for higher environments.
+
 
 3.  Enter a name for the connector based on your organization's naming
     conventions. Ensure that the name is at least 5 characters long to

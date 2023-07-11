@@ -24,7 +24,6 @@ improvements.
     .kafkassl.\*. You can find the cluster-id from the user interface
     under the Clusters page.
 
-::: seealso
+:::note
 Read more or Download the release
 <https://github.com/aiven/klaw/releases/tag/v1.1.0>
-:::

@@ -10,12 +10,12 @@ List requests made against the topic.
 ## Prerequisites
 
 -   The Superadmin must configure the environment within Klaw, see
-    `Environments <../../concepts/clusters-environments>`{.interpreted-text
-    role="doc"} for the steps to configure the environments.
+    [Environments](../../Concepts/clusters-environments)
+    for the steps to configure the environments.
 -   The Superadmin must also update the Server Config to include the
     environments, see
-    `Configure Klaw <../installation/configure-klaw-wizard>`{.interpreted-text
-    role="doc"} for the steps to configure the server settings.
+    [Configure Klaw](../installation/configure-klaw-wizard)
+     for the steps to configure the server settings.
 
 ## Make a request
 
@@ -24,14 +24,9 @@ List requests made against the topic.
 2.  Select the environment. This is the Kafka environment in which the
     topic will be created.
 
-::: note
-::: title
-Note
-:::
-
-In most cases, you must start with the lowest environment and use the
+> In most cases, you must start with the lowest environment and use the
 promotion feature for higher environments.
-:::
+
 
 3.  Enter the name of your topic based on your organization's naming
     conventions, or Klaw will enforce a minimum 5-character name.

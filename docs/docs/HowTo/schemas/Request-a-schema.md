@@ -8,8 +8,7 @@ decline any schema request.
 ## Prerequisites
 
 -   The Superadmin must configure the environment within Klaw. See
-    `Environments <../../concepts/clusters-environments>`{.interpreted-text
-    role="doc"} for the steps to configure the environments.
+    [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
 
 ## Make a schema request
 
@@ -20,30 +19,19 @@ decline any schema request.
 3.  Select the schema environment in which you want the schema to be
     created.
 
-::: note
-::: title
-Note
-:::
-
-In most cases, you must start with the lowest environment and use the
+>In most cases, you must start with the lowest environment and use the
 promotion feature for higher environments.
-:::
 
 4.  If not already selected, choose the topic on which the schema will
     be registered. Keep in mind that, as per the `TopicNameStrategy`,
     the schema is created on the subject-value, where the subject is the
     topic name.
 
-::: note
-::: title
-Note
-:::
-
-Registering schemas on subject-key is not possible in Klaw. Klaw
+>Registering schemas on subject-key is not possible in Klaw. Klaw
 enforces `TopicNameStrategy` strategy, and it uses the topic name to
 determine the subject to be used for schema lookups. This strategy
 enforces following only one schema per topic.
-:::
+
 
 5.  Upload the schema (avro) that you wish to register on this subject.
     Make sure it is a valid JSON.

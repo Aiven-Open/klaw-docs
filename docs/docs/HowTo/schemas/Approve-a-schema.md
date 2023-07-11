@@ -13,14 +13,9 @@ only be submitted by the topic owner team and approved by the same team.
     selecting the tick button while viewing the pending schema requests.
 3.  The schema will immediately attempt to be provisioned on approval.
 
-::: note
-::: title
-Note
-:::
-
-If there is any issue with the schema creation, the request will remain
+> If there is any issue with the schema creation, the request will remain
 in the approvals view until the issue is resolved.
-:::
+
 
 ## Decline a schema request
 
@@ -39,11 +34,7 @@ When reviewing a schema request, various fields help the approver make
 an informed decision and keep an audit record of the request and the
 schema details within Klaw.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 The request creator cannot approve their own request and will not be
 listed as an approver.
-:::
+

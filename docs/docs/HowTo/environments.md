@@ -22,55 +22,55 @@ To add a new environment in Klaw, follow these steps:
 2.  Navigate to the **Environments** tab and select **Environments**.
 3.  Select **Add Environment**.
 4.  Select Add Environment for the type of environment you want to add.
-    -   
+    
 
-        To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
+To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
 
-        :   -   **Environment name**: Choose an environment from the
-                available dropdown list.
-            -   **Select cluster**: Choose the Kafka cluster you want to
-                associate with this environment from the dropdown list.
-            -   **Default partitions**: Set the default number of
-                partitions new topics should have in this environment.
-            -   **Maximum partitions**: Set the maximum number of
-                partitions that a topic can have in this environment.
-            -   **Default replication factor**: Set the default
-                replication factor for new topics in this environment.
-            -   **Max replication factor**: Set the maximum replication
-                factor for topics in this environment.
-            -   **Topic prefix (optional)**: If you want to add a prefix
-                to your topics' names, enter it here.
-            -   **Topic suffix (optional)**: If you want to add a suffix
-                to your topics' names, enter it here.
-            -   **Tenant**: Set to default.
+        -   Environment name : Choose an environment from the
+            available dropdown list.
+        -   Select cluster: Choose the Kafka cluster you want to
+            associate with this environment from the dropdown list.
+        -   Default partitions: Set the default number of
+            partitions new topics should have in this environment.
+        -   Maximum partitions: Set the maximum number of
+            partitions that a topic can have in this environment.
+        -   Default replication factor: Set the default
+            replication factor for new topics in this environment.
+        -   Max replication factor: Set the maximum replication
+            factor for topics in this environment.
+        -   Topic prefix (optional): If you want to add a prefix
+            to your topics' names, enter it here.
+        -   Topic suffix (optional): If you want to add a suffix
+            to your topics' names, enter it here.
+        -   Tenant: Set to default.
 
-    -   Select **Save** to add a new Kafka environment.
+-   Select **Save** to add a new Kafka environment.
 
-    -   
+-   
 
-        To add a **Schema Registry environment**, enter the following details in the **Add Schema Registry Environment** screen:
+    To add a **Schema Registry environment**, enter the following details in the **Add Schema Registry Environment** screen:
 
-        :   -   **Environment name**: Choose an environment from the
-                available dropdown list.
-            -   **Select cluster**: Choose the Kafka cluster you want to
-                associate with this environment from the dropdown list.
-            -   **Tenant**: Set the tenant to default.
-            -   **Select Associated Kafka Environment**: Choose a schema
-                environment from the dropdown list.
+        -   Environment name: Choose an environment from the
+            available dropdown list.
+        -   Select cluster: Choose the Kafka cluster you want to
+            associate with this environment from the dropdown list.
+        -   Tenant: Set the tenant to default.
+        -   Select Associated Kafka Environment: Choose a schema
+            environment from the dropdown list.
 
-    -   Select **Save** to add a Schema Registry environment.
+-   Select **Save** to add a Schema Registry environment.
 
-    -   
+-   
 
-        To add a **KafkaConnect environment**, enter the following details in the **Add KafkaConnect Environment** screen:
+    To add a **KafkaConnect environment**, enter the following details in the **Add KafkaConnect Environment** screen:
 
-        :   -   **Environment name**: Choose an environment from the
-                available dropdown list.
-            -   **Select cluster**: Choose the Kafka cluster you want to
-                associate with this environment from the dropdown list.
-            -   **Tenant**: Set the tenant to default.
+        -   Environment name: Choose an environment from the
+            available dropdown list.
+        -   Select cluster: Choose the Kafka cluster you want to
+            associate with this environment from the dropdown list.
+        -   Tenant: Set the tenant to default.
 
-    -   Select **Save** to add a new KafkaConnect environment.
+-   Select **Save** to add a new KafkaConnect environment.
 
 ![image](../../static/images/environments/NewEnvironment.png)
 
@@ -85,14 +85,10 @@ To update/modify an existing environment in Klaw, follow these steps:
 4.  Update the relevant details.
 5.  Select **Save** to apply your changes.
 
-::: note
-::: title
-Note
-:::
 
-To modify the **Bootstrap servers** and **Protocol** details, you must
+> To modify the **Bootstrap servers** and **Protocol** details, you must
 edit them in the corresponding clusters.
-:::
+
 
 ![image](../../static/images/environments/UpdateEnvironment.png)
 

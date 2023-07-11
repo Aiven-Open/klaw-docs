@@ -5,7 +5,7 @@ below steps, which involve displaying the topics in Klaw and creating
 them on the Apache Kafka cluster.
 
 1.  Configure Environments and the `klaw.tenant.config` property as
-    outlined in the `tenant-config`
+    outlined in the [tenant-config](tenant-config)
     documentation.
 2.  Log in as a SUPERADMIN or user with the `SYNC_BACK_TOPICS`
     permission.

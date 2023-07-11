@@ -2,9 +2,10 @@
 
 ## With Klaw and Apache Kafka®
 
+If you have not setup Klaw, see [Klaw installation](HowTo/installation).
 Once Klaw is up and running, the next step is to connect it to your
 Apache Kafka® service. Whether you are running this locally, or using a
-hosted service, the steps below will get you started.
+hosted service, the steps below will get you started. 
 
 ## Add a cluster
 

@@ -17,7 +17,7 @@ Klaw version 1.0.0 is a first major release.
     Kafka clusters)
 -   Few code enhancements
 
-::: seealso
+:::note
 Read more or Download the release
 <https://github.com/aiven/klaw/releases/tag/1.0.0>
-:::
+

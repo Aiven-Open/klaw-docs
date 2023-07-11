@@ -5,8 +5,7 @@ procedure below, which involves displaying the ACLs in Klaw and creating
 them on the Apache Kafka cluster.
 
 1.  Configure Environments and the `klaw.tenant.config` property as
-    outlined in the `tenant-config`{.interpreted-text role=":doc"}
-    documentation.
+    outlined in the [tenant-config](tenant-config).
 2.  Log in as a SUPERADMIN or user with the `SYNC_BACK_SUBSCRIPTIONS`
     permission.
 3.  Navigate to the **Synchronize** menu and select **ACLs to Cluster**.

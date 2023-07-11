@@ -20,5 +20,5 @@ Relevant configuration:
 
 After the configuration is completed, ensure that the AD/SSO provider
 has set up roles such as **ROLE_USER** or **APPROLE_USER**, where the
-actual role is indicated after the \"\_\". This should match the Klaw
+actual role is indicated after the \_\. This should match the Klaw
 roles.

@@ -116,14 +116,10 @@ To configure a property, for example,
 `klaw.login.authentication.type=db`, set it up as
 `KLAW_LOGIN_AUTHENTICATION_TYPE: db`.
 
-::: note
-::: title
-Note
-:::
 
-It is important to update the `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`
-property with a new base64-encoded secret.
-:::
+    It is important to update the `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`
+    property with a new base64-encoded secret.
+
 
 ### 2. Run Docker Compose
 
@@ -157,14 +153,11 @@ To verify the installation and access Klaw, follow the steps below:
     -   **Username:** `superadmin`
     -   **Password:** `kwsuperadmin123$$`
 
-    ::: note
-    ::: title
-    Note
-    :::
+
 
     Recommend you change the default credentials before running Klaw in
     your application.
-    :::
+
 
 2.  In the Klaw user interface, go to the **Dashboard -\> Settings**
     page, and look for the `klaw.clusterapi.url` configuration. To use a
@@ -262,18 +255,14 @@ environment:
     `docker-compose` file so that it uses the local copy of the
     `application.properties` file.
 
-::: note
-::: title
-Note
-:::
 
-\* Ensure that the `klaw.version` property is updated correctly on the
+- Ensure that the `klaw.version` property is updated correctly on the
 version copied over to the volume as this is usually updated during the
 build to keep the API versions in line with the pom version. \* Also,
 ensure that the `application.properties` is renamed to a unique
 properties file name so you don't accidentally copy over the Core
 properties with the cluster properties and vice versa.
-:::
+
 
     environment:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==

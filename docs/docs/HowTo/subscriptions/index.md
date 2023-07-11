@@ -7,13 +7,6 @@ crucial to govern subscriptions to prevent misuse. Kafka clients can
 request permission to perform operations, such as read or write, and
 access will be granted based on the request.
 
-::: {.toctree maxdepth="3" hidden=""}
-Request a subscription\<subscriptions/Request-a-subscription\> Approve a
-subscription\<subscriptions/Approve-a-subscription\> Delete a
-subscription\<subscriptions/Delete-a-subscription\> My Subscription
-Requests\<subscriptions/My-subscription-requests\>
-:::
-
 ## Manage subscriptions in Kafka
 
 Apache Kafka ships with a pluggable authorization framework. Kafka
@@ -50,8 +43,10 @@ subscription, the team that owns the topic is responsible for making the
 final decision, such as approving or declining a request from the same
 team or another team to produce/consume events from the topic.
 
--   `subscriptions/Request-a-subscription`
--   `subscriptions/Approve-a-subscription`
--   `subscriptions/Delete-a-subscription`
--   `subscriptions/My-subscription-requests`{.interpreted-text
-    role="doc"}
+- [Request a subscription](Request-a-subscription)
+
+- [Approve a subscription](Approve-a-subscription)
+
+- [Delete a subscription](Delete-a-subscription)
+
+- [My Subscription Requests](My-subscription-requests)

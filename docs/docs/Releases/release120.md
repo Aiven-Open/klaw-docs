@@ -54,16 +54,12 @@ Below is a screenshot of the redesigned UI
 
 ![image](../../static/images/topic/NewInterfaceTopics.png)
 
-::: note
-::: title
-Note
-:::
 
-We are taking an incremental, feedback-driven approach in rolling out
+>We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-:::
+
 
 ### Support for Azure AD Authentication
 
@@ -102,7 +98,7 @@ policy, retention period, flush interval, and more.
 
 ![image](../../static/images/topic/Requestnewtopic.png)
 
-::: seealso
+:::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v1.2.0>
-:::
+

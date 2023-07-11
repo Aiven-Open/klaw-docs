@@ -7,12 +7,6 @@ which could be in various formats, including JSON, Avro, or Protobuf. A
 defined schema ensures smooth communication between producers and
 consumers.
 
-::: {.toctree maxdepth="3" hidden=""}
-Request a schema\<schemas/Request-a-schema\> Promote a
-schema\<schemas/Promote-a-schema\> Approve a
-schema\<schemas/Approve-a-schema\> My Schema
-Requests\<schemas/My-schema-requests\>
-:::
 
 ## Manage schema
 
@@ -39,7 +33,11 @@ Schema management in Klaw is structured around the following:
     schema is applied per topic, which uses the topic name to identify
     the schema subject used for schema lookups.
 -   Klaw supports Aiven's Karapace and Confluent Schema registry.
--   `schemas/Request-a-schema`
--   `schemas/Promote-a-schema`
--   `schemas/Approve-a-schema`
--   `schemas/My-schema-requests`
+
+- [Request a schema](Request-a-schema)
+
+- [Promote a schema](Promote-a-schema)
+
+- [Approve a schema](Approve-a-schema)
+
+- [My Schema Requests](My-schema-requests)

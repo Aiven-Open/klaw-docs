@@ -7,8 +7,7 @@ responsible for approving or declining subscription requests.
 ## Prerequisites
 
 -   The Superadmin must configure the environment within Klaw. See
-    `Environments <../../concepts/clusters-environments>`{.interpreted-text
-    role="doc"} for the steps to configure the environments.
+    [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
 
 ## Make a subscription request
 

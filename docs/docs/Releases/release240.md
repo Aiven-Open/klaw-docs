@@ -50,16 +50,11 @@ value of the following property to `false` (Effective this version, it
 is true by default): :: \# Enable new Klaw user interface
 klaw.coral.enabled=false
 
-::: note
-::: title
-Note
-:::
-
-We are taking an incremental, feedback-driven approach in rolling out
+>We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-:::
+
 
 ### Password reset with token
 
@@ -85,7 +80,7 @@ This release focuses on enhancing the error-handling mechanism by
 redesigning API calls to provide improved error responses to the
 frontend.
 
-::: seealso
+:::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.4.0>
-:::
+

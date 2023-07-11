@@ -35,16 +35,10 @@ To preview the new Klaw user user interface, open the
 value of the following property to `true`: :: \# Enable new Klaw user
 interface klaw.coral.enabled=true
 
-::: note
-::: title
-Note
-:::
-
-We are taking an incremental, feedback-driven approach in rolling out
+> We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-:::
 
 ### Schema Promotion
 
@@ -73,7 +67,7 @@ To enable the authorization feature, set the below property to value
 
     klaw.enable.authorization.ad = true
 
-::: seealso
+:::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.0.0>
-:::
+

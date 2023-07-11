@@ -16,14 +16,9 @@ the final decision.
 3.  The subscription will immediately attempt to be provisioned on
     approval.
 
-::: note
-::: title
-Note
-:::
 
-If there are any issue in the subscription creation, the request will
+> If there are any issue in the subscription creation, the request will
 remain in the approvals view for re-approval once the issue is resolved.
-:::
 
 ## Decline a subscription request
 
@@ -42,11 +37,6 @@ When reviewing a subscription request, various fields are available to
 help the approver make an informed decision and to keep an audit record
 of the request and the subscription details in Klaw.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 The request creator cannot approve their own request and will not be
 listed as an approver.
-:::

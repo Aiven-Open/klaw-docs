@@ -12,17 +12,13 @@ of the request, can review and either approve or decline it.
 2.  Review all information related to the connector request and approve
     it by selecting the tick button while viewing the pending connector
     requests.
-3.  The connector will immediately attempt to be provisioned on
+ 
+3. The connector will immediately attempt to be provisioned on
     approval.
 
-::: note
-::: title
-Note
-:::
 
-If there are any issue during the connector creation, the request will
-stay in the approvals view for re-approval once the problem is resolved.
-:::
+    If there are any issue during the connector creation, the request will
+    stay in the approvals view for re-approval once the problem is resolved.
 
 ## Decline a connector request
 
@@ -42,11 +38,7 @@ The connector request includes various fields that help the approver
 make an informed decision and keep an audit record of the request and
 the connector details in Klaw.
 
-::: note
-::: title
-Note
-:::
-
+:::tip
 The request creator cannot approve their own request and will not be
 listed as an approver.
-:::
+

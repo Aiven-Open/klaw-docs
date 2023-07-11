@@ -13,14 +13,9 @@ creator can review and approve or decline the request.
     clicking the tick button while viewing the pending topic requests.
 3.  The topic will immediately attempt to be provisioned upon approval.
 
-::: note
-::: title
-Note
-:::
-
-In the event of any issue in the topic creation, the request will remain
+>In the event of any issue in the topic creation, the request will remain
 in the approvals view for re-approval once the issue is resolved.
-:::
+
 
 ## Declining a request
 
@@ -134,7 +129,7 @@ details within Klaw.
 
         The Status will show the current state of the request
 
-        :   -   created
+            -   created
             -   approved
             -   declined
             -   deleted
@@ -146,11 +141,7 @@ details within Klaw.
     :   This lists the team and the team members who can approve the
         request.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 The request creator cannot approve their own request and will not be
 listed as an approver.
-:::
+

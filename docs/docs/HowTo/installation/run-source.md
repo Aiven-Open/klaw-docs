@@ -6,14 +6,10 @@ the source.
 1.  Download the latest code from the
     [Klaw](https://github.com/aiven/klaw) GitHub repository.
 
-    ::: tip
-    ::: title
-    Tip
-    :::
 
     You can also clone repository to use the \"bleeding edge\" version
     if you wish.
-    :::
+
 
 2.  Experimental UI Configuration A redesigned user interface for Browse
     topics, providing a new look and feel for managing Kafka topics. It
@@ -32,7 +28,7 @@ the source.
 
     Configure Cluster Api access
 
-    :   -   Configure the property
+        -   Configure the property
             `klaw.clusterapi.access.base64.secret` in the
             `application.properties` file with a base64 string in the
             module: core.
@@ -55,18 +51,14 @@ VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 
     Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top level of the project directory. This will build JAR files in the `target/` directories of each modules: core and cluster-api.
 
-    :   ::: note
-        ::: title
-        Note
-        :::
 
         node, npm and pnpm are also installed locally (required for
         React UI assets) through maven execution plugins.
-        :::
 
-    If the build runs into an error while installing node/npm/pnpm, you can
 
-    :   -   Disable the execution plugins (for node/npm/pnpm) in module
+ If the build runs into an error while installing node/npm/pnpm, you can
+
+        -   Disable the execution plugins (for node/npm/pnpm) in module
             core/pom.xml
         -   Manually install node/npm/pnpm and copy assets by following
             the procedure here. [Manual installation of
@@ -76,14 +68,10 @@ VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 
         java -jar klaw-clusterapi-<version>.jar
 
-    ::: note
-    ::: title
-    Note
-    :::
 
     To pass additional configuration, pass an additional parameter like
     `--spring.config.location=classes/application.properties`
-    :::
+
 
 6.  Start the web UI by running its JAR file:
 
@@ -99,5 +87,4 @@ VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
 ## Next Steps
 
 Once you have finished verifying your install we recommend you follow
-the documentation in `configure-klaw-wizard`{.interpreted-text
-role="doc"}
+the documentation in [configure-klaw-wizard](configure-klaw-wizard)

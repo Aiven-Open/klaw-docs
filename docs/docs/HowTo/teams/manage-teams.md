@@ -44,14 +44,9 @@ To delete an existing team, follow these steps:
 3.  Find the team you want to delete and select the delete icon next to
     it.
 
-::: note
-::: title
-Note
-:::
 
-A team can only be deleted if there are no associated requests for that
+> A team can only be deleted if there are no associated requests for that
 team.
-:::
 
 4.  On the confirmation screen, select **delete** to confirm deletion of
     the team. The selected team is deleted.

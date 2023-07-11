@@ -13,13 +13,8 @@ for user profiles in Klaw and key considerations to keep in mind.
     between teams using the dropdown menu located in the header section
     of the Klaw portal.
 
-::: note
-::: title
-Note
-:::
 
-A user who raises a request cannot approve the same request.
-:::
+> A user who raises a request cannot approve the same request.
 
 ## Enable switch Teams for a user
 
@@ -57,12 +52,8 @@ analytics, activity logs, and other relevant views associated with the
 selected team. This enhances your flexibility when creating or approving
 requests on Klaw.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 Even after switching teams, the behavior of requests for topics, ACLs,
 schemas, and connectors remains the same. Additionally, users are not
 allowed to approve their own requests at any point.
-:::
+

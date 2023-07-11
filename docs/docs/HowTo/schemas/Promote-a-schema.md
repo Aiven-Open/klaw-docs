@@ -9,7 +9,7 @@ higher environments as needed.
 
 Before using this functionality, the Superadmin must ensure that all
 prerequisites are met. For more information, see
-`Promotion <../../concepts/promotion>`.
+[Promotion](../../Concepts/promotion).
 
 ## Schema promotion
 
@@ -52,14 +52,9 @@ subject compatibility. If the subject compatibility is not set, it falls
 back to the global compatibility. Klaw will not change the global
 compatibility.
 
-::: note
-::: title
-Note
-:::
-
-The user who raised a request cannot approve it. Instead, a different
+>The user who raised a request cannot approve it. Instead, a different
 user from the same team must approve the request.
-:::
+
 
 ## Schema validation
 
@@ -78,11 +73,7 @@ it is not reachable. To fix this issue, review your Schema to ensure it
 is correctly defined. If it is, contact your administrator to resolve
 the issue with communication to the Schema Registry.
 
-::: note
-::: title
-Note
-:::
-
+:::note
 Using forceRegister will bypass the Schema Validation as you will be
 overriding the compatibility on provisioning.
-:::
+

@@ -56,7 +56,9 @@ Kafka® and Klaw using SSL protocol:
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.
 10. Configure the SSL properties to connect to Aiven for Apache Kafka®
-    clusters by copying and editing the following lines. ::
+    clusters by copying and editing the following lines.
+
+
     clusterid.kafkassl.keystore.location=client.keystore.p12
     clusterid.kafkassl.keystore.pwd=klaw1234
     clusterid.kafkassl.key.pwd=klaw1234
@@ -65,13 +67,9 @@ Kafka® and Klaw using SSL protocol:
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
 
-::: note
-::: title
-Note
-:::
 
 It is possible to configure JKS, PKCS12 and PEM certificate types.
-:::
+
 
 -   For the lines starting with `clusterid`, replace `clusterid` with
     the Klaw Cluster ID.

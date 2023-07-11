@@ -81,15 +81,11 @@ To delete a cluster, follow these steps:
 3.  Click the **Delete** icon in the **Actions** column for the cluster
     you want to delete.
 
-::: note
-::: title
-Note
-:::
 
-You can only delete clusters that are not associated with any
-environment. If a cluster is associated with any environment, you must
-remove the environment association before deleting the cluster.
-:::
+    You can only delete clusters that are not associated with any
+    environment. If a cluster is associated with any environment, you must
+    remove the environment association before deleting the cluster.
+
 
 4.  On the confirmation screen, select **delete** to confirm deletion of
     the cluster. The selected cluster is deleted.

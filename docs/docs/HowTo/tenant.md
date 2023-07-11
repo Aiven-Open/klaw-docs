@@ -15,16 +15,11 @@ Each Klaw installation comes with a single default tenant.
 To add a new tenant, a superadmin or user with the `ADD_TENANT`
 permission can do so under the **Environments -\> Tenants** menu.
 
-::: note
-::: title
-Note
-:::
-
-If the application should be limited to only one tenant, you can
+>If the application should be limited to only one tenant, you can
 configure it with thee below property in `application.properties` file.
-:
+
 
     #maximum tenants can be created
 
-klaw.max.tenants=200
-:::
+    klaw.max.tenants=200
+

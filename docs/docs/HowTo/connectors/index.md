@@ -14,13 +14,6 @@ Kafka Connect is a tool for scalably and reliably streaming data between
 Apache Kafka and other systems. For more information, see [Kafka
 Connect](https://kafka.apache.org/documentation/#connect)
 
-::: {.toctree maxdepth="3" hidden=""}
-Request a new Connector\<connectors/Request-a-new-connector\> Approve a
-Connector\<connectors/Approve-a-connector\> My Connector
-Requests\<connectors/My-connector-requests\> Manage
-Connectors\<connectors/manage-connectors\>
-:::
-
 ## Manage Kafka Connect
 
 Kafka Connect provides a REST API for managing connectors, which is
@@ -35,7 +28,10 @@ them to other environments, including production. The team that owns the
 connector is responsible for making the final decision related to any
 requests, such as approving or declining them.
 
--   `connectors/Request-a-new-connector`
--   `connectors/Approve-a-connector`
--   `connectors/My-connector-requests`
--   `connectors/manage-connectors`
+- [Request a new Connector](Request-a-new-connector)
+
+- [Approve a Connector](Approve-a-connector)
+
+- [My Connector Requests](My-connector-requests)
+
+- [Manage Connectors](manage-connectors)

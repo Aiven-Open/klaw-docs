@@ -10,17 +10,22 @@ Before using Azure AD to log in with Klaw, you need to make the
 following configurations in the `application.properties` file in
 Klaw-core module to enable Azure AD.
 
-1\. Make sure Klaw is running in a secure mode. You will find the
-following configuration: :: server.ssl.key-store.\* 2. Configure the
-authentication type by setting the value to \"ad\" in the following
-property: :: klaw.login.authentication.type=ad
+1. Make sure Klaw is running in a secure mode. You will find the
+following configuration: `server.ssl.key-store.`
 
-3\. Enable SSO by setting the value to \"true\" in the following
-property: :: klaw.enable.sso=true
+2. Configure the
+authentication type by setting the value to `ad` in the following
+property: `klaw.login.authentication.type=ad`
 
-4\. To enable Azure AD-based authentication, uncomment the following
+3. Enable SSO by setting the value to `true` in the following
+property: `klaw.enable.sso=true`
+
+4. To enable Azure AD-based authentication, uncomment the following
 properties and provide the appropriate values for ClientId, Client
-secret, and Tenant Id: :: \# Uncomment the below OAuth2 configuration to
+secret, and Tenant Id: 
+
+```
+\# Uncomment the below OAuth2 configuration to
 enable Azure AD based authentication
 #spring.security.oauth2.client.registration.azure.client-id=
 #spring.security.oauth2.client.registration.azure.client-secret=
@@ -29,9 +34,10 @@ enable Azure AD based authentication
 #spring.security.oauth2.client.registration.azure.scope=openid, profile,
 email
 #spring.security.oauth2.client.provider.azure-active-directory.issuer-uri=https://login.microsoftonline.com/{tenantid}/v2.0
+```
 
-5\. Configure an existing SUPERADMIN user from AD to approve new users
-in the following property for username: :
+5. Configure an existing SUPERADMIN user from AD to approve new users
+in the following property for username:
 
     klaw.superadmin.default.username=superadmin@company.com
 
