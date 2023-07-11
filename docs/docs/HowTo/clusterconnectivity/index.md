@@ -10,9 +10,9 @@ The below kafka flavors are supported by Klaw:
 -   Confluent Cloud
 
 
-- [Klaw Database connectivity](klaw-db-connection.rst)
+- [Klaw Database connectivity](klaw-db-connection)
 
-- [Connect Klaw Core and Klaw Cluster APIs](klaw-core-with-clusterapi.rst)
+- [Connect Klaw Core and Klaw Cluster APIs](klaw-core-with-clusterapi)
  
 - [Connect to Apache Kafka cluster using SSL protocol](kafka-cluster-ssl-protocol)
 

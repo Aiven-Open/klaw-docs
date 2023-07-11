@@ -22,4 +22,4 @@ How to install and configure Klaw.
 - [Analytics](analytics)
 - [Settings](settings)
 - [Export Import Klaw data](exportimport)
-- [Others](others)
+- [Others](zothers)
