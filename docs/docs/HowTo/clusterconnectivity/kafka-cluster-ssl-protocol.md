@@ -46,9 +46,9 @@ cluster in Klaw using SSL protocol:
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.
 
-10\. Configure the SSL properties to connect to Apache Kafka clusters by
-copying and editing the following lines: :
+10. Configure the SSL properties to connect to Apache Kafka clusters by copying and editing the following lines:
 
+    ```
     clusterid.kafkassl.keystore.location=client.keystore.p12
     clusterid.kafkassl.keystore.pwd=klaw1234
     clusterid.kafkassl.key.pwd=klaw1234
@@ -56,14 +56,9 @@ copying and editing the following lines: :
     clusterid.kafkassl.truststore.pwd=klaw1234
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
+    ```
 
-::: note
-::: title
-Note
-:::
-
-It is possible to configure JKS, PKCS12 and PEM certificate types.
-:::
+    > It is possible to configure JKS, PKCS12 and PEM certificate types.
 
 -   For the lines starting with `clusterid`, replace `clusterid` with
     the Klaw Cluster ID.
@@ -73,9 +68,10 @@ It is possible to configure JKS, PKCS12 and PEM certificate types.
     `klaw1234` with the password configured for the truststore file.
 -   Save the `application.properties` file.
 
-The following is an example of an application.properties file configured
-with Klaw cluster ID: :
+    The following is an example of an application.properties file configured
+    with Klaw cluster ID:
 
+    ```
     demo_cluster1.kafkassl.keystore.location=/Users/demo.user/Documents/Klaw/demo-certs/client.keystore.p12
     demo_cluster1.kafkassl.keystore.pwd=Aiventest123!
     demo_cluster1.kafkassl.key.pwd=Aiventest123!
@@ -83,16 +79,16 @@ with Klaw cluster ID: :
     demo_cluster1.kafkassl.truststore.pwd=Aiventest123!
     demo_cluster1.kafkassl.keystore.type=pkcs12
     demo_cluster1.kafkassl.truststore.type=JKS
+    ```
 
-11\. Add relevant ACLs on the Kafka cluster (IP/Principal based) to
-authorize Klaw to create topics and ACLs. This can be done using :
+11. Add relevant ACLs on the Kafka cluster (IP/Principal based) to authorize Klaw to create topics and ACLs. This can be done using :
 
+    ```
     --operation All --clusterCluster:kafka-cluster --topic "*"
+    ```
 
 12. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster
     using SSL protocol.
 
-Once the above steps are completed, you should be able to connect a
-Kafka cluster to Klaw using the SSL protocol and perform the necessary
-operations on the cluster.
+Once the above steps are completed, you should be able to connect a Kafka cluster to Klaw using the SSL protocol and perform the necessary operations on the cluster.

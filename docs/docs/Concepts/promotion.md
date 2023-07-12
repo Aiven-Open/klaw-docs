@@ -12,6 +12,7 @@ environment through the concept of promotion.
     during unexpected behaviour of system.
 -   By maintaining a history of applied changes, easy track back on the
     evolution of a configuration.
+-   Preloading requests with the advanced configuration of the lower environment to help ensure developers don't miss any important configuration.
 
 The resource owners administer promotion of resources, and each team can
 promote a topic, schema or connector from one environment to the next.

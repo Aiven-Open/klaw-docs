@@ -19,7 +19,6 @@ permission can do so under the **Environments -\> Tenants** menu.
 configure it with thee below property in `application.properties` file.
 
 
-    #maximum tenants can be created
-
-    klaw.max.tenants=200
+     #maximum tenants can be created
+     klaw.max.tenants=200
 

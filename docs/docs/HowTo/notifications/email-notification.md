@@ -3,7 +3,7 @@
 Email notifications can be sent to users when actions are performed in
 Klaw that require their attention.
 
-Skip to see all notifications sent and to which users `Email matrix` below
+Skip to see all notifications sent and to which users [Email Matrix](#email-matrix) below
 
 ## Configure email notifications
 
@@ -38,7 +38,7 @@ notificationtype and `.content` These templates can be modified to suit
 local languages, allowing for the rewording of emails and including any
 additional information.
 
-  Email matrix
+  ### Email matrix
 
   Notification Type           | Requestor  | Approver | Requestor Team | Approver Team | All Approvals   | Admin
   ----------------------------|------------|----------|----------------|---------------|-----------------|-------

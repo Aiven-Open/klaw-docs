@@ -13,8 +13,7 @@ for user profiles in Klaw and key considerations to keep in mind.
     between teams using the dropdown menu located in the header section
     of the Klaw portal.
 
-
-> A user who raises a request cannot approve the same request.
+    > A user who raises a request cannot approve the same request.
 
 ## Enable switch Teams for a user
 

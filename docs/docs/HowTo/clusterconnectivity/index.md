@@ -2,13 +2,6 @@
 
 Manage Klaw connectivities with various type of kafka clusters.
 
-The below kafka flavors are supported by Klaw:
-
--   Apache Kafka
--   Aiven for Apache Kafka
--   Confluent
--   Confluent Cloud
-
 
 - [Klaw Database connectivity](klaw-db-connection)
 
@@ -30,3 +23,10 @@ The below kafka flavors are supported by Klaw:
 
 - [Connect with Confluent Cloud Kafka® Cluster using SSL protocol](confluent-cloud-kafka-cluster-ssl-protocol)
 
+
+The below kafka flavors are supported by Klaw:
+
+-   Apache Kafka
+-   Aiven for Apache Kafka
+-   Confluent
+-   Confluent Cloud

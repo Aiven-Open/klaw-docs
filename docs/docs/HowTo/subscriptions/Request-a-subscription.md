@@ -20,10 +20,10 @@ responsible for approving or declining subscription requests.
 
     Select the environment where the Kafka topic is located and available for subscription creation.
 
-    :   -   Based on kafka flavor of the environment, the fields
+    -   Based on kafka flavor of the environment, the fields
             displayed will vary.
-        -   For Aiven for Apache Kafka environment, there are no
-            consumer groups but a Service account has to be specified.
+    -   For Aiven for Apache Kafka environment, there are no
+   consumer groups but a Service account has to be specified.
 
 4.  Select the ACL type : Producer (write access on the topic) or
     Consumer (read access on the topic).
@@ -32,24 +32,24 @@ responsible for approving or declining subscription requests.
 
     For the ACL type : Producer
 
-    :   -   Select Pattern type LITERAL (on one topic) or PREFIXED (on
+    -   Select Pattern type LITERAL (on one topic) or PREFIXED (on
             all topics with the same prefix).
-        -   Provide a transaction ID(optional). This is required for
+    -   Provide a transaction ID(optional). This is required for
             exactly-once semantics.
 
 6.  
 
     For the ACL type : Consumer
 
-    :   -   A consumer group is mandatory.
+    -   A consumer group is mandatory.
 
 7.  
 
     Select ACL IP (host based) or Principal based
 
-    :   -   IP : add one or more IP addresses (IPv4 / IPv6).
-        -   Principal : add one or more Principals (SSL DN strings or
-            usernames).
+    -   IP : add one or more IP addresses (IPv4 / IPv6).
+    -   Principal : add one or more Principals (SSL DN strings or
+    usernames).
 
 8.  Add any remarks that will help the reviewer make an informed
     decision on whether to approve or decline the request.

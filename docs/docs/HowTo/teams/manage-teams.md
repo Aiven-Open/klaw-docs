@@ -14,7 +14,7 @@ need to log in using a SUPERADMIN account or an account with the
 To create a new team, follow these steps:
 
 1.  Log in to Klaw.
-2.  Navigate to the \"**Users - Teams** tab and select **Teams**.
+2.  Navigate to the **Users - Teams** tab and select **Teams**.
 3.  Select **Add team** and provide the necessary details in the **Add
     team** screen.
 4.  Select **Save** to save the information and create the new team
@@ -40,7 +40,7 @@ To update an existing team, follow these steps:
 To delete an existing team, follow these steps:
 
 1.  Log in to Klaw.
-2.  Navigate to the \"**Users - Teams** tab and select **Teams**.
+2.  Navigate to the **Users - Teams** tab and select **Teams**.
 3.  Find the team you want to delete and select the delete icon next to
     it.
 

@@ -34,10 +34,12 @@ Schema management in Klaw is structured around the following:
     the schema subject used for schema lookups.
 -   Klaw supports Aiven's Karapace and Confluent Schema registry.
 
+## Learn how to
+
 - [Request a schema](Request-a-schema)
 
 - [Promote a schema](Promote-a-schema)
 
-- [Approve a schema](Approve-a-schema)
+- [Approve a schema](manage-schemas)
 
 - [My Schema Requests](My-schema-requests)

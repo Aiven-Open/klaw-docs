@@ -31,8 +31,7 @@ registry cluster with Klaw using SSL protocol:
 -   **Cluster Name:** Provide a name for the cluster
 -   **Protocol:** Select SSL protocol for your cluster
 -   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
--   **Project Name:** Select the project name defined in the [Aiven
-    Console](https://console.aiven.io/)
+-   **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/)
 -   **Bootstrap server:** Enter the Service URI for your Apache Kafka
     service. You can find the service URI in the Connection information
     page of your service in Aiven Console.
@@ -52,14 +51,14 @@ registry cluster with Klaw using SSL protocol:
     icon that is available on the right hand side of the each cluster
     row.
 
-9\. In the `application.properties` file for [cluster-api]
-(klaw/cluster-api/src/main/resources) module, configure Karapace
-credentials copied from Aiven console:: :
+9. In the `application.properties` file for [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties) module, configure Karapace credentials copied from Aiven console
 
+    ```
     clusterid.klaw.schemaregistry.credentials=username:password
+    ```
 
-Replace clusterid with Klaw cluster Id copied from Klaw UI.
+    Replace clusterid with Klaw cluster Id copied from Klaw UI.
 
-11. Re-deploy the Cluster API with the updated configuration. This will
+10. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster
     using SSL protocol.

@@ -40,10 +40,12 @@ cluster in Klaw using SASL_SSL protocol:
     icon that is available on the right hand side of the each cluster
     row.
 9.  Open the `application.properties` file located in the
-    [klaw/cluster-api/src/main/resources] directory.
+    [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources) directory.
 10. Depending on the SASL mechanism you are using, copy one of the below
     properties, replace `clusterid` with the copied cluster id, and save
-    the `application.properties` file. ::
+    the `application.properties` file.
+
+    ```
     clusterid.kafkasasl.jaasconfig.plain=org.apache.kafka.common.security.plain.PlainLoginModule
     required username='kwuser' password='kwuser-secret';
     clusterid.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule
@@ -52,11 +54,13 @@ cluster in Klaw using SASL_SSL protocol:
     required useKeyTab=true storeKey=true
     keyTab=\"/location/kafka_client.keytab\"
     <principal=%22kafkaclient1@EXAMPLE.COM>\";
+    ```
 
-11\. Add relevant ACLs on the Kafka cluster (IP/Principal based) to
-authorize Klaw to create topics and ACLs. This can be done using: :
-
-    --operation All --clusterCluster:kafka-cluster --topic "*"
+11. Add relevant ACLs on the Kafka cluster (IP/Principal based) to authorize Klaw to create topics and ACLs. This can be done using: :
+   
+   ```
+   --operation All --clusterCluster:kafka-cluster --topic "*"
+   ```
 
 12. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster

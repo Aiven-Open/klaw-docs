@@ -52,21 +52,22 @@ subject compatibility. If the subject compatibility is not set, it falls
 back to the global compatibility. Klaw will not change the global
 compatibility.
 
->The user who raised a request cannot approve it. Instead, a different
-user from the same team must approve the request.
-
+    The user who raised a request cannot approve it. Instead, a different
+    user from the same team must approve the request.
 
 ## Schema validation
 
 When you submit a Schema Request, the Schema will be checked for
 validation against the Schema Registry.
 
-In case of errors, Klaw provides the following failure messages: \*
-**Schema is not compatible**: This message indicates that the submitted
+In case of errors, Klaw provides the following failure messages: 
+
+- **Schema is not compatible**: This message indicates that the submitted
 Schema fails to comply with the Schema Compatibility set on the schema
 registry. To fix this issue, review the Schema to see what is causing
-the compatibility problem. \* **Unable to validate Schema
-Compatibility**: It indicates that the submitted Schema may be invalid
+the compatibility problem. 
+
+- **Unable to validate Schema Compatibility**: It indicates that the submitted Schema may be invalid
 or missing the required Schema definition fields. It could also occur if
 there is a problem with communication to the Schema Registry, such as if
 it is not reachable. To fix this issue, review your Schema to ensure it

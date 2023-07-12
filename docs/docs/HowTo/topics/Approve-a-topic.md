@@ -13,8 +13,8 @@ creator can review and approve or decline the request.
     clicking the tick button while viewing the pending topic requests.
 3.  The topic will immediately attempt to be provisioned upon approval.
 
->In the event of any issue in the topic creation, the request will remain
-in the approvals view for re-approval once the issue is resolved.
+    >In the event of any issue in the topic creation, the request will remain
+    in the approvals view for re-approval once the issue is resolved.
 
 
 ## Declining a request
@@ -39,26 +39,26 @@ details within Klaw.
 
     Cluster
 
-    :   Establishes the cluster environment for which the request is
+    Establishes the cluster environment for which the request is
         being made.
 
 -   
 
     Partitions
 
-    :   The number of Partitions this topic has in this environment.
+    The number of Partitions this topic has in this environment.
 
 -   
 
     Replication Factor
 
-    :   The replication factor set for this topic in this environment.
+    The replication factor set for this topic in this environment.
 
 -   
 
     Requestor
 
-    :   The person who has raised this request. In most cases, this will
+    The person who has raised this request. In most cases, this will
         be a fellow team member, but in the case of a *claim topic*
         request, it would be a person from another team.
 
@@ -66,7 +66,7 @@ details within Klaw.
 
     Team
 
-    :   The team who has raised this request. In most cases will be your
+    The team who has raised this request. In most cases will be your
         team, but in the case of a *claim topic* request, it would be
         another team.
 
@@ -74,38 +74,38 @@ details within Klaw.
 
     Request Type
 
-    :   The type of request being requested, these can take the form of
+    The type of request being requested, these can take the form of
         an action.
 
 -   
 
     Create
 
-    :   Create a new topic Request is in this category.
+    Create a new topic Request is in this category.
 
 -   
 
     Delete
 
-    :   Delete a topic request is in this category.
+    Delete a topic request is in this category.
 
 -   
 
     Update
 
-    :   Claim a topic and edit a topic are both in this category.
+    Claim a topic and edit a topic are both in this category.
 
 -   
 
     Date Requested
 
-    :   This is a timestamp of when the request was created.
+    This is a timestamp of when the request was created.
 
 -   
 
     Other Topic Configs
 
-    :   The advanced configuration will appear in this space, such as
+    The advanced configuration will appear in this space, such as
         those described in [Apaches
         documentation](https://kafka.apache.org/documentation/#topicconfigs)
 
@@ -113,21 +113,19 @@ details within Klaw.
 
     Description
 
-    :   This will include details provided by the topic creator.
+    This will include details provided by the topic creator.
 
 -   
 
     Remarks
 
-    :   This is any remarks on the request by the request creator.
+    This is any remarks on the request by the request creator.
 
 -   
 
     Status
 
-    :   
-
-        The Status will show the current state of the request
+    The Status will show the current state of the request
 
             -   created
             -   approved
@@ -138,7 +136,7 @@ details within Klaw.
 
     Approving Info
 
-    :   This lists the team and the team members who can approve the
+    This lists the team and the team members who can approve the
         request.
 
 :::note

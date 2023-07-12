@@ -46,10 +46,11 @@ cluster with Klaw using SSL protocol:
     icon that is available on the right hand side of the each cluster
     row.
 
-9\. Configure the SSL properties to connect to Schema Registry cluster
+9. Configure the SSL properties to connect to Schema Registry cluster
 by copying and editing the following lines. Where the **clusterid**
 should be replaced by the value copied in step 8. :
 
+    ```
     clusterid.kafkassl.keystore.location=client.keystore.p12
     clusterid.kafkassl.keystore.pwd=klaw1234
     clusterid.kafkassl.key.pwd=klaw1234
@@ -57,6 +58,8 @@ should be replaced by the value copied in step 8. :
     clusterid.kafkassl.truststore.pwd=klaw1234
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
+    ```
+    
 
 -   For the lines starting with `clusterid`, replace `clusterid` with
     the Klaw Cluster ID.
@@ -65,6 +68,6 @@ should be replaced by the value copied in step 8. :
 -   Replace `client.truststore.jks` with the path for the truststore and
     `klaw1234` with the password configured for the truststore file.
 
-\- Save the `application.properties` file. 10. Re-deploy the Cluster API
+- Save the `application.properties` file. 10. Re-deploy the Cluster API
 with the updated configuration. This will apply the changes and enable
 Klaw to connect to the Kafka cluster using SSL protocol.

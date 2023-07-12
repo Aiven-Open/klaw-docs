@@ -1,6 +1,6 @@
 # Clusters and Environments
 
-In Klaw, the concept of **cluster** corresponds directly to Apache
+In Klaw, the concept of a **cluster** corresponds directly to Apache
 Kafka® clusters. When you come across a cluster in Klaw, it refers to an
 Apache Kafka server or cluster. As a user, you can easily add the
 clusters you want Klaw to work with.

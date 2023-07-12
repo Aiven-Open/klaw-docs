@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-          All topic and ACL metadata, topic/acl/schema/connector team ownerships, team and user info are stored in a database.
+          Fine grained permissions to access resources, combined with the "Four Eyes" approval principal ensure that your kafka cluster is protected from incorrect or malicious changes.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-          Authenticate and authorize the users based on their assigned roles. Integrate with AD/SSO/third party providers like Google/Microsoft.
+          Easily authenticate and authorize users with assigned roles and teams. Ability to Integrate directly with AD/SSO/third party providers like Google/Microsoft.
       </>
     ),
   },
@@ -56,7 +56,7 @@ const UseCases = [
         Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>
-                Klaw provides an easy to use web UI to manage Kafka topics with different levels of user management. Developers no longer need to spend hours managing and synchronizing config files between different teams and owners.
+                Klaw provides an intuitive and easy to use web UI to manage Apache Kafka topics and connectors, allowing developers to maintain velocity without needing to know kafka specific knowledge while conforming to an organizations governance standards.
             </>
         ),
     },
@@ -69,18 +69,16 @@ const Support = [
         description: (
             <>
                 <ul>
-                    <li>
-                        Apache Kafka
-                    </li>
-                    <li>
-                        Aiven for Apache Kafka
-                    </li>
-                    <li>
-                        Confluent
-                    </li>
-                    <li>
-                        Confluent Cloud
-                    </li>
+                    Apache Kafka
+                </ul>
+                <ul>
+                    Aiven for Apache Kafka
+                </ul>
+                <ul>
+                    Confluent
+                </ul>
+                <ul>
+                    Confluent Cloud
                 </ul>
             </>
         ),
@@ -91,24 +89,22 @@ const Support = [
         description: (
             <>
                 <ul>
-                    <li>
                         PLAINTEXT
-                    </li>
-                    <li>
-                        SSL
-                    </li>
-                    <li>
-                        SASL-PLAIN
-                    </li>
-                    <li>
-                        SASL-SSL/PLAIN
-                    </li>
-                    <li>
-                        SASL-SSL/GSSAPI
-                    </li>
-                    <li>
-                        SASL-SSL/SCRAM
-                    </li>
+                </ul>
+                <ul>
+                    SSL
+                </ul>
+                <ul>
+                    SASL-PLAIN
+                </ul>
+                <ul>
+                    SASL-SSL/PLAIN
+                </ul>
+                <ul>
+                    SASL-SSL/GSSAPI
+                </ul>
+                <ul>
+                    SASL-SSL/SCRAM
                 </ul>
             </>
         ),
@@ -119,21 +115,19 @@ const Support = [
         description: (
             <>
              <ul>
-                 <li>
-                     Windows Active directory
-                 </li>
-                 <li>
-                     Azure Active directory (AAD)
-                 </li>
-                 <li>
-                     Google
-                 </li>
-                 <li>
-                     Any third party (ex: Github)
-                 </li>
-                 <li>
-                     Database
-                 </li>
+                 Windows Active directory
+             </ul>
+             <ul>
+                 Azure Active directory (AAD)
+             </ul>
+             <ul>
+                 Google
+             </ul>
+             <ul>
+                 Third party providers (ex: Github)
+             </ul>
+             <ul>
+                 Database
              </ul>
             </>
         ),

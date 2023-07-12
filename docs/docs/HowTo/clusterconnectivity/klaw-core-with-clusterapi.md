@@ -10,7 +10,7 @@ the application.properties file located in the following paths:
 -   Core: [klaw/core/src/main/resources]
 -   Cluster-api: [klaw/cluter-api/src/main/resources]
 
-## Configure Klaw `application.properties` file
+## Configure Klaw application.properties file
 
 1.  Configure the secret key
 
@@ -18,9 +18,11 @@ the application.properties file located in the following paths:
     `application.properties` files for Klaw's `core` and `cluster-api`
     modules. An example secret key is as follows:
 
-        klaw.clusterapi.access.base64.secret
+    ```
+    klaw.clusterapi.access.base64.secret
 
-        Example: ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
+    Example: ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
+    ```
 
 2.  Configure the SSL protocols
 
@@ -29,12 +31,14 @@ the application.properties file located in the following paths:
     `application.properties` files for Klaw's `core` and `cluster-api`
     modules to communicate securely over HTTPS:
 
-        server.ssl.key-store=client.keystore.p12
-        server.ssl.trust-store=client.truststore.jks
-        server.ssl.key-store-password=klaw1234
-        server.ssl.key-password=klaw1234
-        server.ssl.trust-store-password=klaw1234
-        server.ssl.key-store-type=pkcs12
+    ```
+    server.ssl.key-store=client.keystore.p12
+    server.ssl.trust-store=client.truststore.jks
+    server.ssl.key-store-password=klaw1234
+    server.ssl.key-password=klaw1234
+    server.ssl.trust-store-password=klaw1234
+    server.ssl.key-store-type=pkcs12
+    ```
 
     The `key-store` and `trust-store` settings specify the location of
     the keystore and truststore files, respectively, while the
@@ -43,15 +47,10 @@ the application.properties file located in the following paths:
     `key-store-type` setting specifies the type of keystore that is
     being used, which in this case is `pkcs12`.
 
-    ::: note
-    ::: title
-    Note
-    :::
-
-    Make sure that the certificates used in the keystore and truststore
-    are signed by the same CA, or the public keys of both stores must be
-    imported into each other's trust stores.
-    :::
+>    Make sure that the certificates used in the keystore and truststore
+     are signed by the same CA, or the public keys of both stores must be
+     imported into each other's trust stores.
+    
 
 3.  Verify the successful connection
 
@@ -63,7 +62,4 @@ the application.properties file located in the following paths:
 
     Save the change and click **Test connection**.
 
-If everything is configured correctly, you should be able to perform all
-the necessary operations with Klaw. If you encounter any issues, you
-should check the logs or troubleshoot the configuration to ensure
-everything is set up correctly.
+If everything is configured correctly, you should be able to perform all the necessary operations with Klaw. If you encounter any issues, you should check the logs or troubleshoot the configuration to ensure everything is set up correctly.

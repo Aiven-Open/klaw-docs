@@ -58,15 +58,14 @@ To import data, follow these steps:
     by setting `klaw.import.enable` to true.
 2.  Configure the specific import settings as shown below:
 
-```{=html}
-<!-- -->
-```
+    ```
     klaw.import.adminconfig.enable=false
     klaw.import.adminconfig.file.path=kwmetadata-admin_config-2023-....json
     klaw.import.kwdata.enable=false
     klaw.import.kwdata.file.path=kwmetadata-kwdata-2023-....json
     klaw.import.kwrequestsdata.enable=false
     klaw.import.kwrequestsdata.file.path=kwmetadata-kwrequests_data-2023-....json
+    ```
 
 3.  Make sure to disable this configuration for the next restart of the
     application.

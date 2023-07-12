@@ -3,13 +3,10 @@
 Klaw is a Java project. Follow the below steps to run this project from
 the source.
 
-1.  Download the latest code from the
-    [Klaw](https://github.com/aiven/klaw) GitHub repository.
+1.  Download the latest code from the [Klaw](https://github.com/aiven/klaw) GitHub repository.
 
-
-    You can also clone repository to use the \"bleeding edge\" version
+    >You can also clone repository to use the "bleeding edge" version
     if you wish.
-
 
 2.  Experimental UI Configuration A redesigned user interface for Browse
     topics, providing a new look and feel for managing Kafka topics. It

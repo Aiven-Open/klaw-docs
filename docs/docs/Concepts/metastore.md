@@ -1,9 +1,6 @@
-# Metastore holds additional data
+# Metastore data
 
-Klaw holds additional data about your Apache Kafka® installation, such
-as the topics requested, and information about the configuration of the
-environments. This is held in the **metastore** - a database of
-additional information.
+The Klaw metastore holds important audit and governance data related to the management and governance of your Kafka ecosystem. This data includes Topic, Schema, ACL and Connector requests and audit trails.
 
 By default, Klaw will use
 [H2](https://www.h2database.com/html/main.html) as the metastore; this

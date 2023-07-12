@@ -19,8 +19,8 @@ decline any schema request.
 3.  Select the schema environment in which you want the schema to be
     created.
 
->In most cases, you must start with the lowest environment and use the
-promotion feature for higher environments.
+    >In most cases, you must start with the lowest environment and use the
+    promotion feature for higher environments.
 
 4.  If not already selected, choose the topic on which the schema will
     be registered. Keep in mind that, as per the `TopicNameStrategy`,
@@ -46,11 +46,14 @@ enforces following only one schema per topic.
 When you submit a Schema Request, the Schema will be checked for
 validation against the Schema Registry.
 
-In case of errors, Klaw provides the following failure messages: \*
-**Schema is not compatible**: This message indicates that the submitted
+In case of errors, Klaw provides the following failure messages: 
+
+- **Schema is not compatible**: This message indicates that the submitted
 Schema fails to comply with the Schema Compatibility set on the schema
 registry. To fix this issue, review the Schema to see what is causing
-the compatibility problem. \* **Unable to validate Schema
+the compatibility problem. 
+
+- **Unable to validate Schema
 Compatibility**: It indicates that the submitted Schema may be invalid
 or missing the required Schema definition fields. It could also occur if
 there is a problem with communication to the Schema Registry, such as if
