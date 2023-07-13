@@ -9,11 +9,12 @@ As schemas are owned by Topic Owners, this functionality allows you to
 select topics with schemas and synchronize them with Klaw metadata.
 
 
->A schema can have multiple versions. During this process, any existing
+:::note
+A schema can have multiple versions. During this process, any existing
     schema (including all versions) in Klaw for the selected topic will be
     deleted and replaced with the schema (including all versions) available
     in the Schema Registry server.
-
+:::
 
 1.  Log in as a SUPERADMIN or user with the `SYNC_SCHEMAS` permission.
 2.  Navigate to the Synchronize menu and select **Schemas from
@@ -30,7 +31,9 @@ select topics with schemas and synchronize them with Klaw metadata.
     
     ![image](../../../static/images/sync/SyncSchemasFromCluster.png)
 
-    > The **Show All** option displays the topics and their associated schemas that have already synchronized with the Schema Registry cluster. These topics require no further action as they can be identified by a green icon.
+    :::note
+    The **Show All** option displays the topics and their associated schemas that have already synchronized with the Schema Registry cluster. These topics require no further action as they can be identified by a green icon.
+    :::
 
 By following these steps, you can synchronize schemas from a Schema
 Registry cluster to Klaw metadata.

@@ -15,9 +15,10 @@ logging.level.root=info
 logging.file.name=./../logs/klaw-api.log
 ```
 
- 
-> You can pass any properties file, but it must use the `.properties` file extension and be in standard properties file format.
 
+:::note 
+You can pass any properties file, but it must use the `.properties` file extension and be in standard properties file format.
+:::
 
 ## Configure metastore properties
 The `metastore` is a configurable database that holds Klaw's data. You can configure it by setting the `spring.datasource.*` config values in your `application.properties` file.
@@ -33,12 +34,15 @@ first install the [Aiven client](https://github.com/aiven/aiven-client) CLI tool
 
 3. The Aiven CLI gives us a helper command that will set up the configuration and certificates required to connect to Aiven for Apache Kafka from Klaw. Replace the `SERVICE_NAME` with your own,
     and if you wish to use a different user, change that too. It is strongly recommended to choose a better password than `trustme`:
-```
- avn service user-kafka-java-creds SERVICE_NAME -d ./certs --password trustme --username avnadmin
-```
-    
->   Learn more about this command in the [Aiven CLI documentation](https://docs.aiven.io/docs/tools/cli/service/user.html#avn-service-user-kafka-java-creds).
-    
+
+    ```
+    avn service user-kafka-java-creds SERVICE_NAME -d ./certs --password trustme --username avnadmin
+    ```
+
+    :::tip    
+    Learn more about this command in the [Aiven CLI documentation](https://docs.aiven.io/docs/tools/cli/service/user.html#avn-service-user-kafka-java-creds).
+    :::
+
 4. In the `certs` folder, open the `client.properties` file that the previous command created, and copy the SSL configuration lines.
 
 5. Paste the lines into the Klaw `application.properties` file, but please note that the following changes are needed:

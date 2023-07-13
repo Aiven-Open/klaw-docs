@@ -13,9 +13,10 @@ creator can review and approve or decline the request.
     clicking the tick button while viewing the pending topic requests.
 3.  The topic will immediately attempt to be provisioned upon approval.
 
-    >In the event of any issue in the topic creation, the request will remain
+    :::note
+    In the event of any issue in the topic creation, the request will remain
     in the approvals view for re-approval once the issue is resolved.
-
+    :::
 
 ## Declining a request
 

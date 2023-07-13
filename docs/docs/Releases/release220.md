@@ -31,11 +31,12 @@ To preview the new Klaw user interface, open the
 value of the following property to `true`: :: \# Enable new Klaw user
 interface klaw.coral.enabled=true
 
-> We are taking an incremental, feedback-driven approach in rolling out
+:::note
+We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-
+:::
 
 ### Pre-validation of schema compatibility
 

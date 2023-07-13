@@ -14,8 +14,10 @@ delete the subscription from the environment.
 3.  Select the red **X** on the right-hand side of the topic by the
     environment table at the top of the page.
 
->This request can be raised by subscription team owners and approved by
+:::note
+This request can be raised by subscription team owners and approved by
 the same team.
+:::
 
 4.  Confirm that you are sure you wish to delete the topic from the
     environment.

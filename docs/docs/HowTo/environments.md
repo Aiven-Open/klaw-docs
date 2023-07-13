@@ -84,10 +84,11 @@ To update/modify an existing environment in Klaw, follow these steps:
     **Edit/Modify** icon located in the **Actions** column.
 4.  Update the relevant details.
 5.  Select **Save** to apply your changes.
-
-    > To modify the **Bootstrap servers** and **Protocol** details, you must
+   
+    :::note
+    To modify the **Bootstrap servers** and **Protocol** details, you must
     edit them in the corresponding clusters.
-
+    :::
 
 ![image](../../static/images/environments/UpdateEnvironment.png)
 

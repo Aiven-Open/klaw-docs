@@ -13,9 +13,10 @@ only be submitted by the topic owner team and approved by the same team.
     selecting the tick button while viewing the pending schema requests.
 3.  The schema will immediately attempt to be provisioned on approval.
 
-    > If there is any issue with the schema creation, the request will remain
+    :::note
+    If there is any issue with the schema creation, the request will remain
     in the approvals view until the issue is resolved.
-
+    :::
 
 ## Decline a schema request
 

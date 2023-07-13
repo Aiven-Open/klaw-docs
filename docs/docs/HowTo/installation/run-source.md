@@ -5,8 +5,10 @@ the source.
 
 1.  Download the latest code from the [Klaw](https://github.com/aiven/klaw) GitHub repository.
 
-    >You can also clone repository to use the "bleeding edge" version
+    :::tip
+    You can also clone repository to use the "bleeding edge" version
     if you wish.
+    :::
 
 2.  Experimental UI Configuration A redesigned user interface for Browse
     topics, providing a new look and feel for managing Kafka topics. It

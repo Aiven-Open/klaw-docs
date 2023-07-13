@@ -16,9 +16,10 @@ the final decision.
 3.  The subscription will immediately attempt to be provisioned on
     approval.
 
-
-> If there are any issue in the subscription creation, the request will
+:::note
+If there are any issue in the subscription creation, the request will
 remain in the approvals view for re-approval once the issue is resolved.
+:::
 
 ## Decline a subscription request
 

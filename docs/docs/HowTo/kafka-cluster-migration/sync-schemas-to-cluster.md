@@ -4,14 +4,15 @@ To synchronize schemas from Klaw to a Schema Registry cluster, follow
 the below steps, which involve displaying the topics and schema versions
 in Klaw and creating them on the Schema Registry cluster.
 
-> During this process, all existing schemas for the subject in the target
+:::note
+During this process, all existing schemas for the subject in the target
 environment are deleted, and new schemas are created based on Klaw
 metadata. For example, if version 1 already exists in the target
 cluster, it will be deleted, and new schemas will be created starting
 with '2' as the new version. The schemas will be registered in
 ascending order of versions. In case of compatibility failure, schemas
 will be force registered based on the force register selection.
-
+:::
 
 1.  Log in as a SUPERADMIN or user with the `SYNC_BACK_SCHEMAS`
     permission.

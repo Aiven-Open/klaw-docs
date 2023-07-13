@@ -45,8 +45,10 @@ order.
 }
 ```
  
-> In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a
+:::note
+In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a
 schema registry with a Kafka environment in the Add/modify Schema Environment pages. Thereby matching the order of promotion defined in `orderOfTopicPromotionEnvsList`.
+:::
 
 
 ## Topic promotion

@@ -54,12 +54,12 @@ Below is a screenshot of the redesigned UI
 
 ![image](../../static/images/topic/NewInterfaceTopics.png)
 
-
->We are taking an incremental, feedback-driven approach in rolling out
+:::note
+We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-
+:::
 
 ### Support for Azure AD Authentication
 
@@ -78,11 +78,15 @@ authentication enabling users to log in to Klaw using their Azure AD
 credentials.
 
 A sample configuration of Azure AD based authentication for Klaw is as
-shown below: :: klaw.sso.server.loginurl=/oauth2/authorization/azure
+shown below: 
+
+```
+klaw.sso.server.loginurl=/oauth2/authorization/azure
 spring.cloud.azure.active-directory.enabled=true
 spring.cloud.azure.active-directory.profile.tenant-id=tenantid
 spring.cloud.azure.active-directory.credential.client-id=clientid
 spring.cloud.azure.active-directory.credential.client-secret=client-secret
+```
 
 ### Advanced configurations for topics
 

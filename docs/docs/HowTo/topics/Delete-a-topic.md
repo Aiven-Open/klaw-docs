@@ -13,9 +13,10 @@ environment.
 3.  Select the red **X** on the right-hand side of the topic by
     environment table at the top of the page.
 
->Klaw enforces the deletion of the environments from highest to lowest,
+:::note
+Klaw enforces the deletion of the environments from highest to lowest,
 so the highest level environment only will be available for deletion.
-
+:::
 
 4.  Confirm that you are sure you wish to delete the topic from the
     environment.

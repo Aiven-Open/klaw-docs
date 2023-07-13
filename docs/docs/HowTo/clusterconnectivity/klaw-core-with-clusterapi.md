@@ -47,10 +47,11 @@ the application.properties file located in the following paths:
     `key-store-type` setting specifies the type of keystore that is
     being used, which in this case is `pkcs12`.
 
->    Make sure that the certificates used in the keystore and truststore
-     are signed by the same CA, or the public keys of both stores must be
-     imported into each other's trust stores.
-    
+    :::note
+    Make sure that the certificates used in the keystore and truststore
+    are signed by the same CA, or the public keys of both stores must be
+    imported into each other's trust stores.
+    :::
 
 3.  Verify the successful connection
 

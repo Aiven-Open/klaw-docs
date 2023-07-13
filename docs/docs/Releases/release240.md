@@ -50,11 +50,12 @@ value of the following property to `false` (Effective this version, it
 is true by default): :: \# Enable new Klaw user interface
 klaw.coral.enabled=false
 
->We are taking an incremental, feedback-driven approach in rolling out
+:::note
+We are taking an incremental, feedback-driven approach in rolling out
 the new Klaw interfaces. By providing the feature flag to preview user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
-
+:::
 
 ### Password reset with token
 

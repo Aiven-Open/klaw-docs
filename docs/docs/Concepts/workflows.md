@@ -24,21 +24,18 @@ an overview of the key concepts related to ownership in Klaw.
 
 Request and approval
 
-One of the primary advantages of using Klaw is the governance it
-    adds to the growing Apache Kafka® landscape. Developers can
-    **request** new topics, schemas, ACLs, or connectors themselves. The
-    request is then reviewed and **approved** by another member of the
-    same team.
+  One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka® landscape. Developers can **request** new topics, schemas, ACLs, or connectors themselves. The request is then reviewed and **approved** by another member of the same team.
 
-
-> This is the default configuration. The default configuration permits
+:::note
+This is the default configuration. The default configuration permits
 only users with the `USER` role to make requests. Users with the
 `SUPERADMIN` role cannot request but can manage users and teams.
+:::
 
-
-> A user who raises a request cannot approve it. Instead, a different user
+:::note
+A user who raises a request cannot approve it. Instead, a different user
 must approve.
-
+:::
 
 ## Approval process
 
@@ -82,9 +79,10 @@ has the authority to approve or deny these requests. The team can
 consist of producers, consumers, or both or have no specific roles
 assigned.
 
-> The team remains the owner of the topic across all environments. Only
+:::note
+The team remains the owner of the topic across all environments. Only
 this team has the right to delete the topic.
-
+:::
 
 ### Topic request approvals
 
@@ -146,11 +144,12 @@ Schema Approver matrix
   Promote Schema Request  |                       | ✅               | ✅             | 
 
 
->With Schemas there is no [Claim Schema] as it is assigned to
+:::note
+With Schemas there is no [Claim Schema] as it is assigned to
 a topic and so the Topic owner owns the Schema. Likewise there is no
 [Update Schema] as existing Schemas are kept and a new
 Schema with an incremented version is added instead.
-
+:::
 
 ## Subscription owner
 
@@ -185,4 +184,4 @@ When claiming a Subscription, if the Subscription is owned by a team
 that does not own the corresponding topic, then two approvals are
 required: - Approval by the team that owns the Subscription. - Approval
 by the team that owns the topic.
-
+:::

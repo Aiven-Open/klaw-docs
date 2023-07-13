@@ -57,8 +57,10 @@ cluster in Klaw using SSL protocol:
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
     ```
-
-    > It is possible to configure JKS, PKCS12 and PEM certificate types.
+    
+    :::note
+    It is possible to configure JKS, PKCS12 and PEM certificate types.
+    :::
 
 -   For the lines starting with `clusterid`, replace `clusterid` with
     the Klaw Cluster ID.

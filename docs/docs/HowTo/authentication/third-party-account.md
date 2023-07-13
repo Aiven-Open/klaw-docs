@@ -54,8 +54,9 @@ module.
 
     Enter the credentials for the third party account.
 
-    >Login page for third party account is not fully updated.
-
+    :::note
+    Login page for third party account is not fully updated.
+    :::
 
 8.  If this is your first time logging in, you will be presented with a
     signup form to fill in. On submission, a request will be created for

@@ -4,8 +4,10 @@ The first time you log in to Klaw as an administrator, you will see the
 Klaw configuration wizard that guides you through the steps required to
 configure the Klaw cluster.
 
-> For subsequent logins, you access the Klaw configuration wizard using
-URL: [https://\<host\>:\<port\>/helpwizard]
+:::note
+For subsequent logins, you access the Klaw configuration wizard using
+URL: [https://host:port/helpwizard]
+:::
 
 ![image](../../../static/images/general/KlawWizard.png)
 
