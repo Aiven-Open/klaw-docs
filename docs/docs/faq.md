@@ -1,3 +1,7 @@
+---
+sidebar_position: 6.0
+---
+
 # Faq
 
 1\. Is Klaw Opensource ? Yes, Klaw is fully opensource, and it remains

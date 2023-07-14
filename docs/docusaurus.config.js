@@ -85,11 +85,11 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/index',
+                to: '/docs/',
               },
               {
                 label: 'Faq',
-                to: '/docs/zfaq',
+                to: '/docs/faq',
               },
             ],
           },

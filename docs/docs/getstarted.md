@@ -1,3 +1,7 @@
+---
+sidebar_position: 1.0
+---
+
 # Get started
 
 ## With Klaw and Apache Kafka®
