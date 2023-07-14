@@ -47,8 +47,10 @@ to enhance user experience and provide a more intuitive design:
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
 value of the following property to `false` (Effective this version, it
-is true by default): :: \# Enable new Klaw user interface
-klaw.coral.enabled=false
+is true by default): 
+
+    #Enable new Klaw user interface
+    klaw.coral.enabled=false
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out

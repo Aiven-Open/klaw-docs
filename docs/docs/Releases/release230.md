@@ -42,8 +42,10 @@ to enhance user experience and provide a more intuitive design:
 
 To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
-value of the following property to `true`: :: \# Enable new Klaw user
-interface klaw.coral.enabled=true
+value of the following property to `true`:
+
+    # Enable new Klaw user interface
+    klaw.coral.enabled=true
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out

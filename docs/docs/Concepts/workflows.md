@@ -145,9 +145,9 @@ Schema Approver matrix
 
 
 :::note
-With Schemas there is no [Claim Schema] as it is assigned to
+With Schemas there is no Claim Schema as it is assigned to
 a topic and so the Topic owner owns the Schema. Likewise there is no
-[Update Schema] as existing Schemas are kept and a new
+Update Schema as existing Schemas are kept and a new
 Schema with an incremented version is added instead.
 :::
 

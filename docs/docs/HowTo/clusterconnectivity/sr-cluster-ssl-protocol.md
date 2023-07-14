@@ -39,18 +39,17 @@ cluster with Klaw using SSL protocol:
 6.  In the **Schema Registry Environments** section, click **Add
     Environment** and enter the details to add your schema registry
     environment. Click **Save**.
-7.  Open the `application.properties` file for [core][
-    (klaw/core/src/main/resources) and \`cluster-api]
-    (klaw/cluster-api/src/main/resources) modules.
+7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core) and [cluster-api](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
+
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
     icon that is available on the right hand side of the each cluster
     row.
 
 9. Configure the SSL properties to connect to Schema Registry cluster
 by copying and editing the following lines. Where the **clusterid**
-should be replaced by the value copied in step 8. :
+should be replaced by the value copied in step 8. 
 
-    ```
+    
     clusterid.kafkassl.keystore.location=client.keystore.p12
     clusterid.kafkassl.keystore.pwd=klaw1234
     clusterid.kafkassl.key.pwd=klaw1234
@@ -58,7 +57,7 @@ should be replaced by the value copied in step 8. :
     clusterid.kafkassl.truststore.pwd=klaw1234
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
-    ```
+    
     
 
 -   For the lines starting with `clusterid`, replace `clusterid` with

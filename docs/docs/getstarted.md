@@ -15,7 +15,7 @@ needed to add them all.
 
 1.  Navigate to **Environments** and then **Clusters**. Choose **Add
     Cluster**.
-2.  **Cluster Type** will be \"Kafka\". Give your cluster a name.
+2.  **Cluster Type** will be **Kafka**. Give your cluster a name.
 3.  Add your server details into **Bootstrap servers** (any port range
     is permitted).
 4.  Select the **Protocol** that is needed to connect. Check the
@@ -37,7 +37,7 @@ production.
     will see this information when they are requesting new topics, so
     this ensures consistency across complex setups.
 9.  Save the environment.
-10. Check the connection status by clicking the \"status\" icon for your
+10. Check the connection status by clicking the **status** icon for your
     new environment. Klaw will test the connection and return the
     status.
 
@@ -52,13 +52,15 @@ An example value for a simple `DEV` environment might look something
 like this:
 
     {
-      "tenantModel" : {
-        "tenantName" : "default",
-        "baseSyncEnvironment" : "DEV",
-        "orderOfTopicPromotionEnvsList" : [ "DEV" ],
-        "requestTopicsEnvironmentsList" : [ "DEV" ],
-        "baseSyncKafkaConnectCluster" : null,
-        "orderOfConnectorsPromotionEnvsList" : null,
-        "requestConnectorsEnvironmentsList" : null
-      }
+     "tenantModel":
+     {
+      "tenantName": "default",
+      "baseSyncEnvironment": "DEV",
+      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+      "requestTopicsEnvironmentsList": ["DEV", "TST"],
+      "baseSyncKafkaConnectCluster" : null,
+      "orderOfConnectorsPromotionEnvsList" : [],
+      "requestSchemaEnvironmentsList" : [],
+      "requestConnectorsEnvironmentsList" : []
+     }
     }

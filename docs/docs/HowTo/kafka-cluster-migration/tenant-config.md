@@ -74,13 +74,17 @@ You can configure the following in a tenant:
     
     ```
     {
-      "tenantModel":
-        {
-          "tenantName": "default",
-          "baseSyncEnvironment": "DEV",
-          "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
-          "requestTopicsEnvironmentsList": ["DEV", "TST"]
-        }
+     "tenantModel":
+     {
+      "tenantName": "default",
+      "baseSyncEnvironment": "DEV",
+      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+      "requestTopicsEnvironmentsList": ["DEV", "TST"],
+      "baseSyncKafkaConnectCluster" : null,
+      "orderOfConnectorsPromotionEnvsList" : [],
+      "requestSchemaEnvironmentsList" : [],
+      "requestConnectorsEnvironmentsList" : []
+     }
     }
     ```
 

@@ -21,4 +21,4 @@ so the highest level environment only will be available for deletion.
 4.  Confirm that you are sure you wish to delete the topic from the
     environment.
 5.  A delete topic request will be generated and an approver from your
-    team can approve or decline it in the **Approvers** view.\"
+    team can approve or decline it in the **Approvers** view.

@@ -28,8 +28,11 @@ redesign of the following user interfaces:
 
 To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
-value of the following property to `true`: :: \# Enable new Klaw user
-interface klaw.coral.enabled=true
+value of the following property to `true`: 
+
+
+    # Enable new Klaw user interface
+    klaw.coral.enabled=true
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out
@@ -45,8 +48,9 @@ before creating the schema creation requests. This feature will only be
 bypassed during promotion when the 'force register schema' option is
 selected.
 
-Masking of ACL information for enhanced security ``````````````\` To
-enhance security, Klaw now masks IP Addresses, certificates, and Service
+### Masking of ACL information for enhanced security 
+
+To enhance security, Klaw now masks IP Addresses, certificates, and Service
 Account credentials from all users except the ACL owner team. This
 enhancement ensures that sensitive information is only visible to
 authorized personnel, improving overall security.
