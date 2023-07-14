@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Data governance',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/images/homepage/gov.svg').default,
     description: (
       <>
           Create, modify, subscribe and promote Apache Kafka® topics, schemas as well as manage users/acls via the web based UI.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Security',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/images/homepage/sec.svg').default,
     description: (
       <>
           Fine grained permissions to access resources, combined with the "Four Eyes" approval principal ensure that your kafka cluster is protected from incorrect or malicious changes.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'User management',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/images/homepage/users.svg').default,
     description: (
       <>
           Easily authenticate and authorize users with assigned roles and teams. Ability to Integrate directly with AD/SSO/third party providers like Google/Microsoft.
@@ -35,7 +35,7 @@ const FeatureList = [
 const UseCases = [
     {
         title: 'Make better decisions',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        Svg: require('@site/static/images/homepage/decision.svg').default,
         description: (
             <>
                 With the right governance in place, you can make consistent, confident business decisions based on the trustworthy metadata for all your Apache Kafka® environments.
@@ -44,7 +44,7 @@ const UseCases = [
     },
     {
         title: 'Enhanced regulatory compliance and audit',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/images/homepage/audit.svg').default,
         description: (
             <>
                 Apache Kafka® moves critical data throughout your organizations. Using proper user management and policy with Klaw, you can avoid risks associated with noncompliance while proactively anticipating new requirements.
@@ -53,7 +53,7 @@ const UseCases = [
     },
     {
         title: 'Developer self-service',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        Svg: require('@site/static/images/homepage/self-service.svg').default,
         description: (
             <>
                 Klaw provides an intuitive and easy to use web UI to manage Apache Kafka topics and connectors, allowing developers to maintain velocity without needing to know kafka specific knowledge while conforming to an organizations governance standards.
@@ -65,7 +65,7 @@ const UseCases = [
 const Support = [
     {
         title: 'Kafka Flavors',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/images/homepage/kafka.svg').default,
         description: (
             <>
                 <ul>
@@ -84,12 +84,35 @@ const Support = [
         ),
     },
     {
-        title: 'Protocols',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        title: 'Authentication',
+        Svg: require('@site/static/images/homepage/auth.svg').default,
         description: (
             <>
                 <ul>
-                        PLAINTEXT
+                    Windows Active directory
+                </ul>
+                <ul>
+                    Azure Active directory (AAD)
+                </ul>
+                <ul>
+                    Google
+                </ul>
+                <ul>
+                    Third party providers (ex: Github)
+                </ul>
+                <ul>
+                    Database
+                </ul>
+            </>
+        ),
+    },
+    {
+        title: 'Protocols',
+        Svg: require('@site/static/images/homepage/protocols.svg').default,
+        description: (
+            <>
+                <ul>
+                   PLAINTEXT
                 </ul>
                 <ul>
                     SSL
@@ -101,44 +124,19 @@ const Support = [
                     SASL-SSL/PLAIN
                 </ul>
                 <ul>
-                    SASL-SSL/GSSAPI
-                </ul>
-                <ul>
-                    SASL-SSL/SCRAM
+                    SASL-SSL/GSSAPI/SCRAM
                 </ul>
             </>
         ),
     },
-    {
-        title: 'Authentication',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-        description: (
-            <>
-             <ul>
-                 Windows Active directory
-             </ul>
-             <ul>
-                 Azure Active directory (AAD)
-             </ul>
-             <ul>
-                 Google
-             </ul>
-             <ul>
-                 Third party providers (ex: Github)
-             </ul>
-             <ul>
-                 Database
-             </ul>
-            </>
-        ),
-    },
+
 ];
 
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} role="img" width="50%"/>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -158,12 +156,14 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
+          <br/>
         <center><h2>Use cases</h2></center>
         <div className="row">
             {UseCases.map((props, idx) => (
                 <Feature key={idx} {...props} />
             ))}
         </div>
+          <br/>
         <center><h2>Support</h2></center>
         <div className="row">
             {Support.map((props, idx) => (
