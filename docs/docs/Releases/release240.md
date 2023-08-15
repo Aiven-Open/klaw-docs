@@ -8,6 +8,16 @@ Klaw version 2.4.0 is a minor release with several new features and
 improvements. Key highlights of this release include ability to migrate
 schemas from schema registry to Klaw, and vice versa.
 
+## Download
+
+### Binaries
+[klaw-2.4.0.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.4.0/klaw-2.4.0.jar)
+
+[cluster-api-2.4.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.4.0/cluster-api-2.4.0.jar)
+
+### Sources
+[klaw-2.4.0.zip ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.4.0.zip)
+
 ## What's new in Klaw 2.4.0
 
 ### Redesigned screens with React UI
