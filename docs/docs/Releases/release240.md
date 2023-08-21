@@ -77,10 +77,9 @@ This release introduces an email-based password reset feature, allowing
 users to request a password reset via email. A password reset token is
 sent to the user's registered email address upon request. The password
 reset token has a default expiry period of ten minutes, ensuring
-improved security and prompting users to update their passwords
-promptly.
+improved security and prompting users to update their passwords promptly.
 
-### Enhanced email notifications
+### Enhanced email notifications 
 
 This release introduces significant improvements to the email
 notifications functionality. Emails are now sent in accordance with the
