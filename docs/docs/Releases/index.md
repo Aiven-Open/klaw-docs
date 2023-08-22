@@ -2,6 +2,7 @@ Releases
 ========
 
 
+- [Release 2.5.0](release250)
 - [Release 2.4.0](release240)
 - [Release 2.3.0](release230)
 - [Release 2.2.0](release220)
