@@ -1,11 +1,11 @@
 # Release 2.5.0
 
-Date: 23rd of August, 2023
+Date: 25rd of August, 2023
 
 ## Overview
 
 Klaw version 2.5.0 is a minor release with several new features and
-improvements. Key highlights of this release include ability to migrate
+improvements. Key highlights of this release include the ability to migrate
 schemas from schema registry to Klaw, and vice versa.
 
 ## Download
@@ -28,31 +28,37 @@ In this release, we have redesigned some key user interfaces using React
 to enhance user experience and provide a more intuitive design:
 
 -   Features
-* New React UI Topic Overview including capabilities to
-    * Review Topic details
-    * Support creation and promotion of new Schemas
-    * Add and review Subscriptions (ACL) for creation and retrieval of passwords
-    * see History to provide an audit trail of the topic
-    * Messages to view Kafka events on the topic 
-    * Updated markdown support for Documentation
-    * Ability to Claim topics
+* New React UI: Topic Overview including capabilities to
+  * Review topic details
+  * Edit and promote topics
+  * Create and promote new schemas
+  * Add and review subscriptions (ACL) for the creation and retrieval of passwords
+  * See history to provide an audit trail of the topic
+  * See messages to view Kafka events on the topic
+  * Add and edit documentation (now: "Readme") in markdown format
+  * Claim topics
 
-![image](../../static/images/klaw-topic-overview-250.png) 
+![image](../../static/images/klaw-topic-overview-250.png)
 
-* Import previously exported Data back into Klaw
+* New React UI: "Request new..." button
+  * allows creating a new topic, subscription, schema or Kafka connector from everywhere in the new UI 
+
+![image](../../static/images/release-250-request-new-button.png)
+
+* Import previously exported data back into Klaw
 * Support for High Availability Caching
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
 value of the following property to `false` (Effective from version 2.4.0, it
-is true by default): 
+is true by default):
 
     #Enable new Klaw user interface
     klaw.coral.enabled=false
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out
-the new Klaw interfaces. By providing the feature flag to preview user
+the new Klaw interfaces. By providing the feature flag to preview the user
 interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
@@ -72,20 +78,18 @@ Spring upgrade to 3.1.2
 The superadmin can now use the "Schemas From Cluster" functionality to identify Schemas that have been deleted from the Schema Registry.
 
 
-
 ### Bug Fixes
 
 * Topics are now added to the cache when synced through "Synch from Cluster"
-* Postgres deployments now supports count queries for Approval tabs in React UI
-* Promote OperationType now used for Schema promotion (previously create)
+* Postgres deployments now support count queries for Approval tabs in React UI
+* Promote OperationType now used for Schema promotion (previously "create")
   Enhancements
-* Improved email copy on new Installations
+* Improved email copy on new installations
 * Edit Topic can now also alter the Advanced Configuration
-* Toast Notifications in React UI added to inform user of actions
+* Toast Notifications in React UI added to inform users of actions
 * Many small database performance enhancements
 
 
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.5.0>
-
