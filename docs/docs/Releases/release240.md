@@ -85,8 +85,7 @@ This release introduces significant improvements to the email
 notifications functionality. Emails are now sent in accordance with the
 defined email matrix, ensuring consistency. For more detailed
 information, refer to the
-[Workflows](https://www.klaw-project.io/docs/concepts/workflows#approval-process)
-documentation.
+[Workflows](https://www.klaw-project.io/docs/concepts/workflows#approval-process) documentation.
 
 ### Improved error responses to UI
 
