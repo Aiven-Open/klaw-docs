@@ -20,6 +20,10 @@ schemas from schema registry to Klaw, and vice versa.
 
 [klaw-2.5.0.zip ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.5.0.zip)
 
+### Docker
+[Klaw-core](https://hub.docker.com/r/aivenoy/klaw-core)
+[Klaw-cluster-api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+
 ## What's new in Klaw 2.5.0
 
 ### Redesigned screens with React UI
