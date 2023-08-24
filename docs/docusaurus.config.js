@@ -55,7 +55,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: true,
+        disableSwitch: false,
         respectPrefersColorScheme: false,
       },
       image: 'images/logo-dark.png',
@@ -64,6 +64,7 @@ const config = {
         logo: {
           alt: 'Logo',
           src: 'images/logo-dark.png',
+          srcDark: 'images/logo-light.png',
         },
         items: [
           {
@@ -73,7 +74,7 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/Releases/release100', label: 'Releases', position: 'left'},
+          {to: '/docs/category/Releases', label: 'Releases', position: 'left'},
           {
             href: 'https://github.com/aiven/klaw',
             label: 'GitHub',

@@ -1,3 +1,7 @@
+---
+sidebar_position: 99.98
+---
+
 # Release 1.2.0
 
 Date: 15th Dec, 2022

@@ -1,3 +1,7 @@
+---
+sidebar_position: 99.93
+---
+
 # Release 2.4.0
 
 Date: 15th of June, 2023

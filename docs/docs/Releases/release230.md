@@ -1,3 +1,7 @@
+---
+sidebar_position: 99.94
+---
+
 # Release 2.3.0
 
 Date: 10th of May, 2023
