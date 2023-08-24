@@ -1,6 +1,6 @@
 # Release 2.5.0
 
-Date: 25rd of August, 2023
+Date: 24th of August, 2023
 
 ## Overview
 
@@ -41,7 +41,7 @@ to enhance user experience and provide a more intuitive design:
 ![image](../../static/images/klaw-topic-overview-250.png)
 
 * New React UI: "Request new..." button
-  * allows creating a new topic, subscription, schema or Kafka connector from everywhere in the new UI 
+  * Allows creating a new topic, subscription, schema or Kafka connector from everywhere in the new UI 
 
 ![image](../../static/images/release-250-request-new-button.png)
 
@@ -80,14 +80,17 @@ The superadmin can now use the "Schemas From Cluster" functionality to identify 
 
 ### Bug Fixes
 
-* Topics are now added to the cache when synced through "Synch from Cluster"
-* Postgres deployments now support count queries for Approval tabs in React UI
-* Promote OperationType now used for Schema promotion (previously "create")
+- [#1651](https://github.com/Aiven-Open/klaw/pull/1651) Postgres deployments now support count queries for Approval tabs in React UI
+- #1569]() Promote OperationType now used for Schema promotion (previously "create")
   Enhancements
-* Improved email copy on new installations
-* Edit Topic can now also alter the Advanced Configuration
-* Toast Notifications in React UI added to inform users of actions
-* Many small database performance enhancements
+- [#1550](https://github.com/Aiven-Open/klaw/pull/1550) Improved email copy on new installations
+- [#1414](https://github.com/Aiven-Open/klaw/pull/1414) Edit Topic can now also alter the Advanced Configuration
+- [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted Connector not added to Cache
+- [#1555](https://github.com/Aiven-Open/klaw/pull/1555) Superuser was able to access Coral UI
+- [#1546](https://github.com/Aiven-Open/klaw/pull/1546) Promoted Schema Requests should use PROMOTE Request operation Type
+- [#1591](https://github.com/Aiven-Open/klaw/pull/1591) Don't load users with empty passwords when auth type DB
+- [#1521](https://github.com/Aiven-Open/klaw/pull/1521) Add topic to cache after it is added to Klaw via Synchronization
+- [#1474](https://github.com/Aiven-Open/klaw/pull/1474) If deleting an ACL from Klaw that does not exist on the cluster executes successfully
 
 
 :::note
