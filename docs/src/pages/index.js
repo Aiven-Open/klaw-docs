@@ -13,11 +13,12 @@ function HomepageHeader() {
   const dockerScript = "docker run -d -t -i \\\n" +
       "-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET=\"dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==\" \\\n" +
       "-p 9343:9343 \\\n" +
-      "--name klaw-cluster-api aivenoy/klaw-cluster-api --add-host host.docker.internal:host-gateway \\\n" +
+      "--name klaw-cluster-api aivenoy/klaw-cluster-api:nightly --add-host host.docker.internal:host-gateway \\\n" +
       "&& docker run -d -t -i \\\n" +
       "-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET=\"dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==\" \\\n" +
+      "-e KLAW_QUICKSTART_ENABLED=true \\\n" +
       "-e SPRING_DATASOURCE_URL=\"jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;\" \\\n" +
-      "-p 9097:9097 --name klaw-core aivenoy/klaw-core \\\n" +
+      "-p 9097:9097 --name klaw-core aivenoy/klaw-core:nightly \\\n" +
       "&& docker run -d -t -i -p 2181:2181 --add-host host.docker.internal:host-gateway \\\n" +
       "-e ALLOW_ANONYMOUS_LOGIN=yes --name klaw-zookeeper bitnami/zookeeper:3.8 \\\n" +
       "&& docker run -d -t -i -p 9092:9092 --add-host host.docker.internal:host-gateway \\\n" +
@@ -39,12 +40,12 @@ function HomepageHeader() {
                       <Link
                           className="button button--secondary button--lg"
                           to="/docs/getstarted">
-                          Get started
+                          Go to docs
                       </Link>
                   </div>
               </div>
               <div className="col col--4">
-                  <h2>Trying Klaw is as easy as ...</h2>
+                  <h4>Quick start : trying Klaw is as easy as ...</h4>
                   <div className={"row"}>
                       <div className="col col--10">
                           <textarea id={"dockerScriptId"} rows={10} cols={40} value={dockerScript}>
@@ -63,7 +64,7 @@ function HomepageHeader() {
                   </div>
                   <br></br>
                   Klaw will be running at <b><a href={"http://localhost:9097"}>http://localhost:9097</a></b> on your machine.
-                  Learn about other options and next steps in the <b><a href={"/docs/getstarted"}>Quick start guides</a></b>.
+                  Learn about other options and next steps in the <b><a href={"/docs/quickstart"}>Quick start guides</a></b>.
               </div>
               <div className="col col--4">
                     <img src={'/images/homepage/quickstart.gif'}/>
