@@ -24,10 +24,9 @@ List requests made against the topic.
 2.  Select the environment. This is the Kafka environment in which the
     topic will be created.
 
-  :::note
-  In most cases, you must start with the lowest environment and use the
-  promotion feature for higher environments.
-  :::
+    :::note
+    In most cases, you must start with the lowest environment and use the promotion feature for higher environments.
+    :::
 
 3.  Enter the name of your topic based on your organization's naming
     conventions, or Klaw will enforce a minimum 5-character name.

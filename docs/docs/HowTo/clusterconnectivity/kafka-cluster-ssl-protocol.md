@@ -25,11 +25,11 @@ cluster in Klaw using SSL protocol:
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
 
--   **Cluster Type:** Select **Kafka** from the drop-down list
--   **Cluster Name:** Provide a name for the cluster
--   **Protocol:** Select SSL protocol for your cluster
--   **Kafka Flavor:** Select Apache Kafka as the flavor
--   **Bootstrap server:** Enter the bootstrap servers details for an
+    -   **Cluster Type:** Select **Kafka** from the drop-down list
+    -   **Cluster Name:** Provide a name for the cluster
+    -   **Protocol:** Select SSL protocol for your cluster
+    -   **Kafka Flavor:** Select Apache Kafka as the flavor
+    -   **Bootstrap server:** Enter the bootstrap servers details for an
     Apache Kafka cluster.
 
 4.  Click **Save**.

@@ -24,7 +24,7 @@ property: `klaw.enable.sso=true`
 properties and provide the appropriate values for ClientId, Client
 secret, and Tenant Id: 
 
-    ```
+    
     # Uncomment the below OAuth2 configuration to
     enable Azure AD based authentication
     #spring.security.oauth2.client.registration.azure.client-id=
@@ -34,7 +34,7 @@ secret, and Tenant Id:
     #spring.security.oauth2.client.registration.azure.scope=openid, profile,
     email
     #spring.security.oauth2.client.provider.azure-active-directory.issuer-uri=https://login.microsoftonline.com/{tenantid}/v2.0
-    ```
+    
 
 5. Configure an existing SUPERADMIN user from AD to approve new users
 in the following property for username:

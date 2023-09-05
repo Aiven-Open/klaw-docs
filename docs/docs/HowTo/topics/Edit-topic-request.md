@@ -11,12 +11,9 @@ ability to edit an existing topic.
 4.  On the **Edit Topic** view, you can modify advanced configuration or
     change the *Partitions* and *Replication factor*.
 
-:::note
-See all advanced Topic configuration options in [Apaches
-documentation](https://kafka.apache.org/documentation/#topicconfigs) or
-Select the 'i' button beside an advanced configuration entry to be
-taken directly to that entry in the Apache documentation.
-:::
+    :::note
+    See all advanced Topic configuration options in [Apaches documentation](https://kafka.apache.org/documentation/#topicconfigs) or Select the 'i' button beside an advanced configuration entry to be taken directly to that entry in the Apache documentation.
+    :::
 
 5.  Make all the changes to existing configuration and/or add additional
     configuration.
