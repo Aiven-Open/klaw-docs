@@ -6,7 +6,7 @@ sidebar_position: 1.1
 
 ## 1. Run the docker script
 
-``` copy-button
+```typescript copy-button
 docker run -d -t -i \
 -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \
 -p 9343:9343 \
