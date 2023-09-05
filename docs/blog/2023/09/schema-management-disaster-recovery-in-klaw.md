@@ -1,5 +1,5 @@
 ---
-slug: schemaregistry-migration-disaster-recovery
+slug: schema-management-disaster-recovery-in-klaw
 title: Schema Management and Disaster recovery in Klaw
 authors: muralibasani
 tags: [kafka,governance,klaw,schema registry,disaster recovery,migration,evolution]
