@@ -24,7 +24,7 @@ const dockerScript = "docker run -d -t -i \\\n" +
 export default function QuickStartRow() {
     return (
         <div className={clsx("container", "padding-top--lg", styles.quickStartContainer)}>
-            <h2>Quick start: Trying Klaw is as easy as...</h2>
+            <h2>Quick start: Get up and running with Klaw in no time!</h2>
             <div className={clsx("row", styles.quickStartRow)}>
                 <div className={"col col--6"}>
                     <div style={{ fontSize: "0.8em "}}>
