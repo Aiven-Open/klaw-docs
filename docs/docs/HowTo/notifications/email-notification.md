@@ -40,25 +40,24 @@ additional information.
 
   ### Email matrix
 
-  Notification Type           | Requestor  | Approver | Requestor Team | Approver Team | All Approvals   | Admin
-  ----------------------------|------------|----------|----------------|---------------|-----------------|-------
-  User Registration Request   | cc         |          |                |               |                 |   to
-  User Registration Approved  | to         |          |                |               |                 |     
-  New Topic Request           | cc         |          |                | to            | bcc             |   
-  New Topic Approved          | to         | cc       |                | cc            |                 |   
-  Promote Topic Request       | cc         |          |                | to            | bcc             |  
-  New ACL Request             | cc         |          |                | to            | bcc             |  
-  New ACL Approved            | to         | cc       |                | cc            |                 |   
-  New Schema Request          |cc          |          |                | to            | bcc             |  
-  New Schema Approved         | to         | cc       |                | cc            |                 |   
-  Promote Schema Request      | cc         |          |                | to            | bcc             |  
-  New Connector Request       | cc         |          |                | to            | bcc             |  
-  New Connector Approved      | to         | cc       |                | cc            |                 |   
-  Promote Connector Request   | cc         |          |                | to            | bcc             |  
-  New Claim Request           | cc         |          |                | to            | bcc             |  
-  Password Reset              | to         |          |                |               |                 |     
-  Password Changed            | to         |          |                |               |                 |     
-  
+| Notification Type          | Requestor | Approver | Requestor Team | Approver Team | All Approvals | Admin |
+|----------------------------|-----------|----------|----------------|---------------|---------------|-------|
+| User Registration Request  | cc        |          |                |               |               | to    |
+| User Registration Approved | to        |          |                |               |               |       |
+| New Topic Request          | cc        |          |                | to            | bcc           |       |
+| New Topic Approved         | to        | cc       |                | cc            |               |       |
+| Promote Topic Request      | cc        |          |                | to            | bcc           |       |
+| New ACL Request            | cc        |          |                | to            | bcc           |       |
+| New ACL Approved           | to        | cc       |                | cc            |               |       |
+| New Schema Request         | cc        |          |                | to            | bcc           |       |
+| New Schema Approved        | to        | cc       |                | cc            |               |       |
+| Promote Schema Request     | cc        |          |                | to            | bcc           |       |
+| New Connector Request      | cc        |          |                | to            | bcc           |       |
+| New Connector Approved     | to        | cc       |                | cc            |               |       |
+| Promote Connector Request  | cc        |          |                | to            | bcc           |       |
+| New Claim Request          | cc        |          |                | to            | bcc           |       |
+| Password Reset             | to        |          |                |               |               |       |
+| Password Changed           | to        |          |                |               |               |       |
 
 :::tip
 'All Approvals' are Users assigned the permission
