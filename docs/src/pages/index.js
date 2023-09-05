@@ -35,6 +35,7 @@ function HomepageHeader() {
           <div className="row">
               <div className="col col--4">
                   <h1 className="hero__title">{siteConfig.title}</h1>
+
                   <p className="hero__subtitle">{siteConfig.tagline}</p>
                   <div className={styles.buttons}>
                       <Link
@@ -45,7 +46,7 @@ function HomepageHeader() {
                   </div>
               </div>
               <div className="col col--4">
-                  <h4>Quick start : trying Klaw is as easy as ...</h4>
+                  <h4>Quick start: Try klaw out in two minutes or less!</h4>
                   <div className={"row"}>
                       <div className="col col--10">
                           <textarea id={"dockerScriptId"} rows={10} cols={40} value={dockerScript}>

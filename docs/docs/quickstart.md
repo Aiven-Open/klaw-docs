@@ -38,13 +38,13 @@ Now you may login to Klaw here  [http://localhost:9097/](http://localhost:9097/)
 
 ## 3. Topics Catalog page
 
-After logging in, you will be redirected to a UI. 
+After logging in you will be redirected to our brand new feature rich React UI.
+
+You can "Request new Topic" from the top right corner, or you can select the drop down "Request a new" to view all your options.
 
 ![image](../static/images/quickstart/AfterLogin.png)
 
 ## 4. Request for topic
-
-On top right hand corner a button 'Request for topic' is visible.
 
 ![image](../static/images/quickstart/RequestForTopic.png)
 
@@ -91,4 +91,4 @@ To verify
 docker exec -it klaw-kafka /opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-should display the newly created kafka topic. You can also try creating a schema for the topic.
+should display the newly created kafka topic. You can also try creating a schema for the topic from the "Request a new" dropdown.
