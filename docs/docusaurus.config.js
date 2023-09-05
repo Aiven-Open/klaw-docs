@@ -49,10 +49,22 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'AA4VAX6QBK',
+
+        // Public API key: it is safe to commit it
+        apiKey: '1819f8ba477f2be52049b20578a7e6cc',
+
+        indexName: 'klaw-project',
+
+        insights: true,
+
+        contextualSearch: true,
+      },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
