@@ -24,7 +24,7 @@ module.
    klaw.enable.sso=true
    ```
 
-4. To enable third-party account-based authentication, find the registration of the third-party account like [github \`or\`twitter][ or any other and replace][registrationid]\` with the third-party account ID in the following properties. Additionally, provide the appropriate values for ClientId, Client secret, and Tenant Id
+4. To enable third-party account-based authentication, find the registration of the third-party account like GitHub or Twitter and replace `registrationid` with the third-party account ID in the following properties. Additionally, provide the appropriate values for ClientId, Client secret, and Tenant Id
     
     ```
     # Uncomment the below OAuth2 configuration to enable Google based authentication
