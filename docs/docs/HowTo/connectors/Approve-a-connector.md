@@ -16,9 +16,7 @@ of the request, can review and either approve or decline it.
 3. The connector will immediately attempt to be provisioned on
     approval.
 
-
-    If there are any issue during the connector creation, the request will
-    stay in the approvals view for re-approval once the problem is resolved.
+    If there are any issue during the connector creation, the request will stay in the approvals view for re-approval once the problem is resolved.
 
 ## Decline a connector request
 

@@ -26,20 +26,16 @@ Kafka® and Klaw using SSL protocol:
     **Clusters**.
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
-
--   **Cluster Type:** Select **Kafka** from the drop-down list
--   **Cluster Name:** Provide a name for the cluster
--   **Protocol:** Select SSL protocol for your cluster
--   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
--   **Project Name:** Select the project name defined in the [Aiven
-    Console](https://console.aiven.io/)
--   **Bootstrap server:** Enter the Service URI for your Apache Kafka
-    service. You can find the service URI in the Connection information
-    page of your service in Aiven Console.
--   **Service Name:** Enter the name of the service as defined in the
-    [Aiven Console](https://console.aiven.io/) for your Apache Kafka
-    service
-
+    -   **Cluster Type:** Select **Kafka** from the drop-down list
+    -   **Cluster Name:** Provide a name for the cluster
+    -   **Protocol:** Select SSL protocol for your cluster
+    -   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+    -   **Project Name:** Select the project name defined in the [Aiven
+        Console](https://console.aiven.io/)
+    -   **Bootstrap server:** Enter the Service URI for your Apache Kafka
+        service. You can find the service URI in the Connection information
+        page of your service in Aiven Console.
+    -   **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for your Apache Kafka service
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
     from the **Environments** drop-down menu.
@@ -53,7 +49,6 @@ Kafka® and Klaw using SSL protocol:
     row.
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.
-
 10. Depending on the SASL mechanism you are using, copy one of the below properties, replace `clusterid` with the copied cluster id, and save the `application.properties` file.
     
     ```
@@ -61,7 +56,6 @@ Kafka® and Klaw using SSL protocol:
     clusterid.kafkasasl.jaasconfig.scram=org.apache.kafka.common.security.scram.ScramLoginModule required username='kwuser' password='kwuser-secret';
     clusterid.kafkasasl.jaasconfig.gssapi=com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true keyTab="/location/kafka_client.keytab" principal="kafkaclient1@EXAMPLE.COM";
     ```
-
 11. To enable ACLs authorization, copy the Authorization token from
     Aiven Console and configure `klaw.clusters.accesstoken` with the
     copied authorization token.

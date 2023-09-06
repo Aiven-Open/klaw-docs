@@ -52,8 +52,9 @@ subject compatibility. If the subject compatibility is not set, it falls
 back to the global compatibility. Klaw will not change the global
 compatibility.
 
-    The user who raised a request cannot approve it. Instead, a different
-    user from the same team must approve the request.
+:::note
+The user who raised a request cannot approve it. Instead, a different user from the same team must approve the request.
+:::
 
 ## Schema validation
 

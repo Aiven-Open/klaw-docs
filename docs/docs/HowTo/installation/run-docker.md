@@ -3,8 +3,8 @@
 Klaw provides Docker images that allow you to run Klaw inside Docker
 containers. There are two Docker images available:
 
--   Core API : <https://hub.docker.com/r/aivenoy/klaw-core>
--   Cluster API : <https://hub.docker.com/r/aivenoy/klaw-cluster-api>
+-   Core API : `https://hub.docker.com/r/aivenoy/klaw-core`
+-   Cluster API : `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
 
 ## Prerequisites
 
@@ -153,22 +153,14 @@ To verify the installation and access Klaw, follow the steps below:
     -   **Username:** `superadmin`
     -   **Password:** `kwsuperadmin123$$`
 
-
-
-    Recommend you change the default credentials before running Klaw in
-    your application.
-
+    Recommend you change the default credentials before running Klaw in your application.
 
 2.  In the Klaw user interface, go to the **Dashboard -\> Settings**
     page, and look for the `klaw.clusterapi.url` configuration. To use a
-    secure connection, update the URL to HTTPS, for example:
-
-        http://localhost:9343
+    secure connection, update the URL to HTTPS, for example: `http://localhost:9343`
 
 3.  Or if using a windows or linux machine ensure you update the url to
-    use the container name, for example:
-
-    <http://klaw-cluster-api:9343>
+    use the container name, for example: `http://klaw-cluster-api:9343`
 
 4.  Click **Test connection**.
 
@@ -229,26 +221,26 @@ There are two ways to configure this:
     execute `./klaw-docker.sh --deploy` to redeploy environmental
     changes and restart Klaw.
 
-Here is an example of how to update the `docker-compose-klaw.yaml` file:
+    Here is an example of how to update the `docker-compose-klaw.yaml` file:
 
-``` {.yaml caption="Override default docker configuration"}
-environment:
-    KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
-    SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
-    DEV1_KAFKASSL_KEYSTORE_LOCATION: "/klaw/client.keystore.p12"
-    DEV1_KAFKASSL_KEYSTORE_PWD: "klaw1234"
-    DEV1_KAFKASSL_KEY_PWD: "klaw1234"
-    DEV1_KAFKASSL_KEYSTORE_TYPE: "pkcs12"
-    DEV1_KAFKASSL_TRUSTSTORE_LOCATION: "/klaw/client.truststore.jks"
-    DEV1_KAFKASSL_TRUSTSTORE_PWD: "klaw1234"
-    DEV1_KAFKASSL_TRUSTSTORE_TYPE: "JKS"
-    SERVER_SSL_KEYSTORE: "/klaw/client.keystore.p12"
-    SERVER_SSL_TRUSTSTORE: "/klaw/client.truststore.jks"
-    SERVER_SSL_KEYSTOREPASSWORD: "klaw1234"
-    SERVER_SSL_KEYPASSWORD: "klaw1234"
-    SERVER_SSL_TRUSTSTOREPASSWORD: "klaw1234"
-    SERVER_SSL_KEYSTORETYPE: "pkcs12"
-```
+    ``` {.yaml caption="Override default docker configuration"}
+    environment:
+        KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
+        SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;    CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+        DEV1_KAFKASSL_KEYSTORE_LOCATION: "/klaw/client.keystore.p12"
+        DEV1_KAFKASSL_KEYSTORE_PWD: "klaw1234"
+        DEV1_KAFKASSL_KEY_PWD: "klaw1234"
+        DEV1_KAFKASSL_KEYSTORE_TYPE: "pkcs12"
+        DEV1_KAFKASSL_TRUSTSTORE_LOCATION: "/klaw/client.truststore.jks"
+        DEV1_KAFKASSL_TRUSTSTORE_PWD: "klaw1234"
+        DEV1_KAFKASSL_TRUSTSTORE_TYPE: "JKS"
+        SERVER_SSL_KEYSTORE: "/klaw/client.keystore.p12"
+        SERVER_SSL_TRUSTSTORE: "/klaw/client.truststore.jks"
+        SERVER_SSL_KEYSTOREPASSWORD: "klaw1234"
+        SERVER_SSL_KEYPASSWORD: "klaw1234"
+        SERVER_SSL_TRUSTSTOREPASSWORD: "klaw1234"
+        SERVER_SSL_KEYSTORETYPE: "pkcs12"
+    ```
 
 3.  Another option is to externalize the `application.properties` file
     to the volume, and then set the environment value in the

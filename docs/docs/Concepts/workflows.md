@@ -66,9 +66,9 @@ registration requests:
 
 New User Approver matrix
 
-  Operation Type              | Resource Owners Team  | Requestors Team  | All Approvers  | Admin
-  --------------------------- | ----------------------| -----------------| ---------------| -------
-  User Registration Request   |                       |                  |                |      ✅
+| Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
+|---------------------------|----------------------|-----------------|---------------|-------|
+| User Registration Request |                      |                 |               | ✅     |
 
 ## Topic owner
 
@@ -91,13 +91,13 @@ topic-related requests:
 
 Topic Approver matrix
 
-  Operation Type         | Resource Owners Team |  Requestors Team |  All Approvers |  Admin
-  -----------------------| ---------------------| -----------------| ---------------| -------
-  New Topic Request      |                      |  ✅              |  ✅            |  
-  Update Topic Request   |                      |  ✅              |  ✅            |  
-  Delete Topic Request   |                      |  ✅              |  ✅            |  
-  Claim Topic Request    | ✅                   |                  |  ✅            |  
-  Promote Topic Request  |                      |  ✅              |  ✅            |  
+| Operation Type        | Resource Owners Team | Requestors Team | All Approvers | Admin |
+|-----------------------|----------------------|-----------------|---------------|-------|
+| New Topic Request     |                      | ✅               | ✅             |       |
+| Update Topic Request  |                      | ✅               | ✅             |       |
+| Delete Topic Request  |                      | ✅               | ✅             |       |
+| Claim Topic Request   | ✅                    |                 | ✅             |       |
+| Promote Topic Request |                      | ✅               | ✅             |       |
 
 ## Connector owner
 
@@ -112,14 +112,13 @@ connector-related requests:
 
 Connector Approver matrix
 
-  Operation Type             | Resource Owners Team |  Requestors Team |  All Approvers |  Admin
-  ---------------------------| ---------------------| -----------------| ---------------| -------
-  New Connector Request      |                      |  ✅              |  ✅            |  
-  Update Connector Request   |                      |  ✅              |  ✅            |  
-  Delete Connector Request   |                      |  ✅              |  ✅            |  
-  Claim Connector Request    | ✅                   |                  |  ✅            |  
-  Promote Connector Request  |                      |  ✅              |  ✅            |  
-
+| Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
+|---------------------------|----------------------|-----------------|---------------|-------|
+| New Connector Request     |                      | ✅               | ✅             |       |
+| Update Connector Request  |                      | ✅               | ✅             |       |
+| Delete Connector Request  |                      | ✅               | ✅             |       |
+| Claim Connector Request   | ✅                    |                 | ✅             |       |
+| Promote Connector Request |                      | ✅               | ✅             |       |
 
 ## Schema owner
 
@@ -137,12 +136,11 @@ schema-related requests:
 
 Schema Approver matrix
 
-  Operation Type          | Resource Owners Team  | Requestors Team  | All Approvers  | Admin
-  ------------------------| ----------------------| -----------------| ---------------| -------
-  New Schema Request      |                       | ✅               | ✅             | 
-  Delete Schema Request   |                       | ✅               | ✅             | 
-  Promote Schema Request  |                       | ✅               | ✅             | 
-
+| Operation Type         | Resource Owners Team | Requestors Team | All Approvers | Admin |
+|------------------------|----------------------|-----------------|---------------|-------|
+| New Schema Request     |                      | ✅               | ✅             |       |
+| Delete Schema Request  |                      | ✅               | ✅             |       |
+| Promote Schema Request |                      | ✅               | ✅             |       |
 
 :::note
 With Schemas there is no Claim Schema as it is assigned to
@@ -172,12 +170,11 @@ subscription-related requests:
 
 Subscription Approver matrix
 
-  Operation Type                |Resource Owners Team  | Requestors Team  | All Approvers  | Admin
-  ----------------------------- |----------------------| -----------------| ---------------| -------
-  New Subscription Request      |                      | ✅               | ✅             | 
-  Delete Subscription Request   |✅                    |                  | ✅             | 
-  Claim Subscription Request    |✅                    |                  | ✅             |
-
+| Operation Type              | Resource Owners Team | Requestors Team | All Approvers | Admin |
+|-----------------------------|----------------------|-----------------|---------------|-------|
+| New Subscription Request    |                      | ✅               | ✅             |       |
+| Delete Subscription Request | ✅                    |                 | ✅             |       |
+| Claim Subscription Request  | ✅                    |                 | ✅             |       |
 
 :::tip
 When claiming a Subscription, if the Subscription is owned by a team

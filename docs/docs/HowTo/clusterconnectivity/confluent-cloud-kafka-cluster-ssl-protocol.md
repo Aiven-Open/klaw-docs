@@ -37,14 +37,11 @@ Kafka and Klaw using SSL protocol:
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
 
--   **Cluster Type:** Select **Kafka** from the drop-down list
--   **Cluster Name:** Provide a name for the cluster
--   **Protocol:** Select SSL protocol for your cluster
--   **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-
-- **Bootstrap server:** Enter the REST endpoint of your Confluent cloud
-kafka cluster (without <https://>). Ex:
-xyz-pk07es.us-west4.gcp.confluent.cloud:443
+    -   **Cluster Type:** Select **Kafka** from the drop-down list
+    -   **Cluster Name:** Provide a name for the cluster
+    -   **Protocol:** Select SSL protocol for your cluster
+    -   **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
+    - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud kafka cluster (without <https://>). Ex: `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
@@ -60,25 +57,19 @@ xyz-pk07es.us-west4.gcp.confluent.cloud:443
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.
 10. Configure the Apikey, Api secret, uris to connect to Confluent Cloud
-    Kafka clusters by copying and editing the following lines. ::
-
-
+    Kafka clusters by copying and editing the following lines:
+    
+    ```
     #clusterid.klaw.confluentcloud.credentials=apikey:apisecret
     #clusterid.klaw.clusters.counfluentcloud.acls.api=/kafka/v3/clusters/{cluster_id}/acls
     #clusterid.klaw.clusters.counfluentcloud.topics.api=/kafka/v3/clusters/{cluster_id}/topics
     #Example :
     dev3.klaw.clusters.counfluentcloud.acls.api=/kafka/v3/clusters/abc-ab1abc/acls
+    ```
+    
+    - {cluster_id} in the api uri should be copied from Confluent Cloud portal (Cluster Settings -\> General -\> Identification -\> Cluster ID). - Api key/secrets can be copied from Confluent Cloud -\> API Keys 
+    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.  Save the `application.properties` file.
 
-
-- {cluster_id} in the api uri should be copied from Confluent Cloud
-portal (Cluster Settings -\> General -\> Identification -\> Cluster
-ID). - Api key/secrets can be copied from Confluent Cloud -\> API Keys
-
-
-   For the lines starting with `clusterid`, replace `clusterid` with
-    the Klaw Cluster ID.
-   Save the `application.properties` file.
-
-10. Re-deploy the Cluster API with the updated configuration. This will
+11. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud
     Kafka® cluster using ApiKey/Secret.

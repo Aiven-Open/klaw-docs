@@ -27,15 +27,15 @@ registry cluster with Klaw using SSL protocol:
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
 
--   **Cluster Type:** Select **SchemaRegistry** from the drop-down list
--   **Cluster Name:** Provide a name for the cluster
--   **Protocol:** Select SSL protocol for your cluster
--   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
--   **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/)
--   **Bootstrap server:** Enter the Service URI for your Apache Kafka
+    -   **Cluster Type:** Select **SchemaRegistry** from the drop-down list
+    -   **Cluster Name:** Provide a name for the cluster
+    -   **Protocol:** Select SSL protocol for your cluster
+    -   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+    -   **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/)
+    -   **Bootstrap server:** Enter the Service URI for your Apache Kafka
     service. You can find the service URI in the Connection information
     page of your service in Aiven Console.
--   **Service Name:** Enter the name of the service as defined in the
+    -   **Service Name:** Enter the name of the service as defined in the
     [Aiven Console](https://console.aiven.io/) for your Apache Kafka
     service
 

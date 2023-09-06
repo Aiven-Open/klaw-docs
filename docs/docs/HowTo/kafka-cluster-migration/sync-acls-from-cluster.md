@@ -14,7 +14,7 @@ in Klaw.
     will now appear in the topic overview page, assigned to the chosen
     team.
 
-![image](../../../static/images/sync/SyncAclsFromCluster.png)
+    ![image](../../../static/images/sync/SyncAclsFromCluster.png)
 
 5.  You can view all existing ACLs and reassign them to different teams
     by selecting the **Show All** option. This will display all Kafka

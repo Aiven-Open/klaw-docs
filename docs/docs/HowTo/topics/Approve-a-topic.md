@@ -36,107 +36,61 @@ The request contains various fields to help the approver make an
 informed decision and keep an audit record of the request and the topic
 details within Klaw.
 
--   
-
-    Cluster
-
+- **Cluster** <br />
     Establishes the cluster environment for which the request is
         being made.
 
--   
-
-    Partitions
-
+- **Partitions** <br />
     The number of Partitions this topic has in this environment.
 
--   
-
-    Replication Factor
-
+- **Replication Factor** <br />
     The replication factor set for this topic in this environment.
 
--   
-
-    Requestor
-
+- **Requestor** <br />
     The person who has raised this request. In most cases, this will
         be a fellow team member, but in the case of a *claim topic*
         request, it would be a person from another team.
 
--   
-
-    Team
-
+- **Team** <br />
     The team who has raised this request. In most cases will be your
         team, but in the case of a *claim topic* request, it would be
         another team.
 
--   
-
-    Request Type
-
+- **Request Type** <br />
     The type of request being requested, these can take the form of
         an action.
 
--   
-
-    Create
-
+- **Create** <br />
     Create a new topic Request is in this category.
 
--   
-
-    Delete
-
+- **Delete** <br />
     Delete a topic request is in this category.
 
--   
-
-    Update
-
+- **Update** <br />
     Claim a topic and edit a topic are both in this category.
 
--   
-
-    Date Requested
-
+- **Date Requested** <br />
     This is a timestamp of when the request was created.
 
--   
-
-    Other Topic Configs
-
+- **Other Topic Configs** <br />
     The advanced configuration will appear in this space, such as
         those described in [Apaches
         documentation](https://kafka.apache.org/documentation/#topicconfigs)
 
--   
-
-    Description
-
+- **Description** <br />
     This will include details provided by the topic creator.
 
--   
-
-    Remarks
-
+- **Remarks** <br />
     This is any remarks on the request by the request creator.
 
--   
-
-    Status
-
+- **Status** <br />
     The Status will show the current state of the request
+    -   `created`
+    -   `approved`
+    -   `declined`
+    -   `deleted`
 
-            -   created
-            -   approved
-            -   declined
-            -   deleted
-
--   
-
-    Approving Info
-
+- **Approving Info** <br />
     This lists the team and the team members who can approve the
         request.
 

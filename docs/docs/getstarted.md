@@ -33,17 +33,17 @@ Klaw supports environments, which is very useful if you have similar
 clusters at different stages of the lifecycle, such as staging and
 production.
 
-6.  Navigate to **Environments** and under **Kafka Environments**,
+1. Navigate to **Environments** and under **Kafka Environments**,
     choose **Add Environment**.
-7.  Pick an environment, and link a cluster to it. You can add more
+2. Pick an environment, and link a cluster to it. You can add more
     cluster/environment combinations as needed to suit your setup.
-8.  Configure the default and maximum values for this environment. Users
+3. Configure the default and maximum values for this environment. Users
     will see this information when they are requesting new topics, so
     this ensures consistency across complex setups.
-9.  Save the environment.
-10. Check the connection status by clicking the **status** icon for your
-    new environment. Klaw will test the connection and return the
-    status.
+4. Save the environment.
+5. Check the connection status by clicking the **status** icon for your
+   new environment. Klaw will test the connection and return the
+   status.
 
 ## Configure the cluster to sync
 

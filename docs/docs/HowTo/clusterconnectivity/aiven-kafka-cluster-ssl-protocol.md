@@ -28,20 +28,18 @@ Kafka® and Klaw using SSL protocol:
     **Clusters**.
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
-
--   **Cluster Type:** Select **Kafka** from the drop-down list
--   **Cluster Name:** Provide a name for the cluster
--   **Protocol:** Select SSL protocol for your cluster
--   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
--   **Project Name:** Select the project name defined in the [Aiven
+    -   **Cluster Type:** Select **Kafka** from the drop-down list
+    -   **Cluster Name:** Provide a name for the cluster
+    -   **Protocol:** Select SSL protocol for your cluster
+    -   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+    -   **Project Name:** Select the project name defined in the [Aiven
     Console](https://console.aiven.io/)
--   **Bootstrap server:** Enter the Service URI for your Apache Kafka
+    -   **Bootstrap server:** Enter the Service URI for your Apache Kafka
     service. You can find the service URI in the Connection information
     page of your service in Aiven Console.
--   **Service Name:** Enter the name of the service as defined in the
+    -   **Service Name:** Enter the name of the service as defined in the
     [Aiven Console](https://console.aiven.io/) for your Apache Kafka
     service
-
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
     from the **Environments** drop-down menu.
@@ -58,7 +56,7 @@ Kafka® and Klaw using SSL protocol:
 10. Configure the SSL properties to connect to Aiven for Apache Kafka®
     clusters by copying and editing the following lines.
 
-
+    ```
     clusterid.kafkassl.keystore.location=client.keystore.p12
     clusterid.kafkassl.keystore.pwd=klaw1234
     clusterid.kafkassl.key.pwd=klaw1234
@@ -66,22 +64,18 @@ Kafka® and Klaw using SSL protocol:
     clusterid.kafkassl.truststore.pwd=klaw1234
     clusterid.kafkassl.keystore.type=pkcs12
     clusterid.kafkassl.truststore.type=JKS
+    ```
 
+    It is possible to configure JKS, PKCS12 and PEM certificate types.
 
-It is possible to configure JKS, PKCS12 and PEM certificate types.
+    -   For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.
+    -   Replace `client.keystore.p12` with the path for the keystore and `klaw1234` with the password configured for the keystore file.
+    -   Replace `client.truststore.jks` with the path for the truststore and `klaw1234` with the password configured for the truststore file.
+    -   Save the `application.properties` file.
 
+    The following is an example of an application.properties file configured  with Klaw cluster ID:
 
--   For the lines starting with `clusterid`, replace `clusterid` with
-    the Klaw Cluster ID.
--   Replace `client.keystore.p12` with the path for the keystore and
-    `klaw1234` with the password configured for the keystore file.
--   Replace `client.truststore.jks` with the path for the truststore and
-    `klaw1234` with the password configured for the truststore file.
--   Save the `application.properties` file.
-
-The following is an example of an application.properties file configured
-with Klaw cluster ID :
-
+    ```
     demo_cluster.kafkassl.keystore.location=/Users/demo.user/Documents/Klaw/demo-certs/client.keystore.p12
     demo_cluster.kafkassl.keystore.pwd=Aiventest123!
     demo_cluster.kafkassl.key.pwd=Aiventest123!
@@ -89,6 +83,7 @@ with Klaw cluster ID :
     demo_cluster.kafkassl.truststore.pwd=Aiventest123!
     demo_cluster.kafkassl.keystore.type=pkcs12
     demo_cluster.kafkassl.truststore.type=JK
+    ```
 
 11. To enable ACLs authorization, copy the Authorization token from
     Aiven Console and configure `klaw.clusters.accesstoken` with the
