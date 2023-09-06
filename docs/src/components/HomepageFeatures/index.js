@@ -7,27 +7,27 @@ const FeatureList = [
     title: 'Data governance',
     Svg: require('@site/static/images/homepage/gov.svg').default,
     description: (
-      <>
+      <p>
           Create, modify, subscribe and promote Apache Kafka® topics, schemas as well as manage users/acls via the web based UI.
-      </>
+      </p>
     ),
   },
   {
     title: 'Security',
     Svg: require('@site/static/images/homepage/sec.svg').default,
     description: (
-      <>
+      <p>
           Fine grained permissions to access resources, combined with the "Four Eyes" approval principal ensure that your kafka cluster is protected from incorrect or malicious changes.
-      </>
+      </p>
     ),
   },
   {
     title: 'User management',
     Svg: require('@site/static/images/homepage/users.svg').default,
     description: (
-      <>
+      <p>
           Easily authenticate and authorize users with assigned roles and teams. Ability to Integrate directly with AD/SSO/third party providers like Google/Microsoft.
-      </>
+      </p>
     ),
   },
 ];
@@ -37,27 +37,27 @@ const UseCases = [
         title: 'Make better decisions',
         Svg: require('@site/static/images/homepage/decision.svg').default,
         description: (
-            <>
+            <p>
                 With the right governance in place, you can make consistent, confident business decisions based on the trustworthy metadata for all your Apache Kafka® environments.
-            </>
+            </p>
         ),
     },
     {
         title: 'Enhanced regulatory compliance and audit',
         Svg: require('@site/static/images/homepage/audit.svg').default,
         description: (
-            <>
+            <p>
                 Apache Kafka® moves critical data throughout your organizations. Using proper user management and policy with Klaw, you can avoid risks associated with noncompliance while proactively anticipating new requirements.
-            </>
+            </p>
         ),
     },
     {
         title: 'Developer self-service',
         Svg: require('@site/static/images/homepage/self-service.svg').default,
         description: (
-            <>
+            <p>
                 Klaw provides an intuitive and easy to use web UI to manage Apache Kafka topics and connectors, allowing developers to maintain velocity without needing to know kafka specific knowledge while conforming to an organizations governance standards.
-            </>
+            </p>
         ),
     },
 ];
@@ -67,66 +67,66 @@ const Support = [
         title: 'Kafka Flavors',
         Svg: require('@site/static/images/homepage/kafka.svg').default,
         description: (
-            <>
-                <ul>
+            <ul className={styles.featuresList}>
+                <li>
                     Apache Kafka
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Aiven for Apache Kafka
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Confluent
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Confluent Cloud
-                </ul>
-            </>
+                </li>
+            </ul>
         ),
     },
     {
         title: 'Authentication',
         Svg: require('@site/static/images/homepage/auth.svg').default,
         description: (
-            <>
-                <ul>
+            <ul className={styles.featuresList}>
+                <li>
                     Windows Active directory
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Azure Active directory (AAD)
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Google
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Third party providers (ex: Github)
-                </ul>
-                <ul>
+                </li>
+                <li>
                     Database
-                </ul>
-            </>
+                </li>
+            </ul>
         ),
     },
     {
         title: 'Protocols',
         Svg: require('@site/static/images/homepage/protocols.svg').default,
         description: (
-            <>
-                <ul>
+            <ul className={styles.featuresList}>
+                <li>
                    PLAINTEXT
-                </ul>
-                <ul>
+                </li>
+                <li>
                     SSL
-                </ul>
-                <ul>
+                </li>
+                <li>
                     SASL-PLAIN
-                </ul>
-                <ul>
+                </li>
+                <li>
                     SASL-SSL/PLAIN
-                </ul>
-                <ul>
+                </li>
+                <li>
                     SASL-SSL/GSSAPI/SCRAM
-                </ul>
-            </>
+                </li>
+            </ul>
         ),
     },
 
@@ -136,11 +136,11 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" width="50%"/>
+        <Svg className={styles.featureSvg} role="img" width="50%" aria-hidden={true} alt={`Icon ${title}`} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
-        <p>{description}</p>
+        <>{description}</>
       </div>
     </div>
   );

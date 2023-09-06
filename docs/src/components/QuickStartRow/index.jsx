@@ -31,8 +31,8 @@ export default function QuickStartRow() {
                         <CodeBlock language={"typescript"}>{dockerScript}</CodeBlock>
                     </div>
                 </div>
-                <div className="col col--6">
-                    <img src={'/images/homepage/quickstart.gif'}/>
+                <div className="col col--6" aria-hidden={true}>
+                    <img alt="Gif showing a users log in to Klaw, create and approve a topic." src={'/images/homepage/quickstart.gif'}/>
                 </div>
             </div>
             <p>Klaw will be running at <b><a href={"http://localhost:9097"}>http://localhost:9097</a></b> on your machine.

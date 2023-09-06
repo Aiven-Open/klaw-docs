@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.featuresList {
+  list-style: none;
+}
+
 .featureSvg {
   height: 100px;
   width: 100px;
