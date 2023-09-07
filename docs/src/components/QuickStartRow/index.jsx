@@ -2,7 +2,6 @@ import React from "react";
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 
 const dockerScript = "docker run -d -t -i \\\n" +
       "-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET=\"dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==\" \\\n" +
