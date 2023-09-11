@@ -34,7 +34,7 @@ following user interfaces:
 
 ![image](../../static/images/topic/RequestTopic-react.png)
 
-To preview the new Klaw user user interface, open the
+To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
 value of the following property to `true`: 
 

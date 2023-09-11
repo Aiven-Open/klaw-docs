@@ -1,6 +1,6 @@
 # Edit a Topic
 
-Changing the configuration to a topic over it's lifetime is a common
+Changing the configuration to a topic over its lifetime is a common
 and sometimes unavoidable task. Klaw makes this easier by providing the
 ability to edit an existing topic.
 

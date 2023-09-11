@@ -252,7 +252,7 @@ There are two ways to configure this:
 version copied over to the volume as this is usually updated during the
 build to keep the API versions in line with the pom version. \* Also,
 ensure that the `application.properties` is renamed to a unique
-properties file name so you don't accidentally copy over the Core
+properties file name, so you don't accidentally copy over the Core
 properties with the cluster properties and vice versa.
 
 

@@ -47,7 +47,7 @@ It consists of changes to the layout, styling, and overall appearance of
 the interface, as well as improvements to make browsing and working
 topics easier, more efficient, and more accessible.
 
-To preview the new Klaw user user interface, open the
+To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
 value of the following property to true: 
 

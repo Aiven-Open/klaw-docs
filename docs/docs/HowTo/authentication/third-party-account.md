@@ -41,7 +41,9 @@ module.
     klaw.superadmin.default.username=superadmin@company.com
     ```
 
-6. To add the login button to the third party provider please update application.properties with the following three entries. A https link or local image location, this is optional but can help users identify the correct provider. where {provider} is your thirdparty vendor e.g. github or okta
+6. To add the login button to the third party provider please update application.properties with the following three 
+   entries. A https link or local image location, this is optional but can help users identify the correct provider. 
+   where {provider} is your third party vendor e.g. GitHub or Okta
 
     ```
     klaw.superadmin.default.username=superadmin@company.com

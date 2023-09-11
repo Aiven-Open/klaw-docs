@@ -1,6 +1,6 @@
 # Import Klaw data
 
-Klaw administrators can import Klaw metadata into another brand new
+Klaw administrators can import Klaw metadata into another brand-new
 instance (or existing) of Klaw.
 
 ## How this can be helpful ?

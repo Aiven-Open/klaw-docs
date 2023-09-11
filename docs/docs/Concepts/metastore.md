@@ -7,7 +7,7 @@ By default, Klaw will use
 means that there are no additional dependencies to get started with the
 project.
 
-If you would prefer to use another RDBMS, such as
+If you prefer to use another RDBMS, such as
 [MySQL](https://www.mysql.com/), you can do this too. Check the
 `config` documentation for information
 about working with configuration files.

@@ -29,7 +29,7 @@ References :
 
 ## Configure and connect using SSL/ApiKeys
 
-Follow the steps below to configure and connect to an Confluent cloud
+Follow the steps below to configure and connect to a Confluent cloud
 Kafka and Klaw using SSL protocol:
 
 1.  In the Klaw web interface, navigate to **Environments**, and click
@@ -52,7 +52,7 @@ Kafka and Klaw using SSL protocol:
     drop-down list, and configure partitions and replication factor, and
     tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.

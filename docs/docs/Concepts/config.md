@@ -67,4 +67,5 @@ first install the [Aiven client](https://github.com/aiven/aiven-client) CLI tool
         dev1.kafkassl.truststore.pwd=trustme
         dev1.kafkassl.truststore.type=JKS
 
-To add multiple SSL configurations, simply copy paste the above lines by prefixing with the required cluster identification and relevant certificates.
+To add multiple SSL configurations, simply copy and paste the above lines by prefixing with the required cluster 
+identification and relevant certificates.

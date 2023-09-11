@@ -35,7 +35,7 @@ the source.
     VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
     ```
 
-4.  Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top level of the project directory. This will build JAR files in the `target/` directories of each modules: core and cluster-api.
+4.  Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top level of the project directory. This will build JAR files in the `target/` directories of each module: core and cluster-api.
 
     node, npm and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 

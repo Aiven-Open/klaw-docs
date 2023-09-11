@@ -27,7 +27,7 @@ To create a new team, follow these steps:
 To update an existing team, follow these steps:
 
 1.  Log in to Klaw.
-2.  Navigate to the \"**Users - Teams** tab and select **Teams**.
+2.  Navigate to the **Users - Teams** tab and select **Teams**.
 3.  Find the team you want to update and select the **Edit/modify** icon
     next to it.
 4.  Modify the necessary details.

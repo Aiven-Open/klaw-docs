@@ -5,7 +5,7 @@ of the request, can review and either approve or decline it.
 
 ## Approve a connector request
 
-1.  When you login into Klaw, a pop-up will notify you of **Pending
+1.  When you log into Klaw, a pop-up will notify you of **Pending
     Requests**. Select **Yes, show me!** or navigate to the **Approve**
     tab and select on **Connector Requests** to view the requests that
     need approval.
@@ -20,7 +20,7 @@ of the request, can review and either approve or decline it.
 
 ## Decline a connector request
 
-1.  When you login into Klaw, a pop-up will notify you of **Pending
+1.  When you log into Klaw, a pop-up will notify you of **Pending
     Requests**. Select **Yes, show me!** or navigate to the **Approve**
     tab and click on **Connector Requests** to view the pending
     requests.

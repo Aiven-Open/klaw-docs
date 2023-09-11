@@ -57,7 +57,7 @@ Once a topic is created in the base environment it is then possible to
 promote this to the next higher level environment. This will create a
 promotion request that can be reviewed, approved, or declined by the
 requester's teammates. **Topic Overview** view where the topic can be
-promoted will show all of the environments the topic is now configured
+promoted will show all the environments the topic is now configured
 on.
 
 ### Promote a topic
@@ -71,7 +71,7 @@ To promote a topic to a higher environment, follow these steps:
     where a higher environment has been configured. **Promote to \[Next
     Environment\]**
 4.  Configure the number of Partitions and Replication Factor for the
-    higher environment in the drop downs provided.
+    higher environment in the dropdowns provided.
 5.  Confirm the promotion to the next environment by selecting **Submit
     Promotion to \[Next Environment\]**
 6.  A Topic request is now created for team members to review and

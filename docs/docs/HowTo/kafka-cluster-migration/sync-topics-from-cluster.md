@@ -33,5 +33,5 @@ If a topic is deleted on the cluster but still exists in Klaw metadata,
 you can remove it from Klaw. You will notice this at the end of the
 record.
 
-By following these steps, you can synchronize topics from a Apache Kafka
+By following these steps, you can synchronize topics from an Apache Kafka
 cluster with Klaw metadata.

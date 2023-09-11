@@ -1,6 +1,6 @@
 # Authentication
 
-How to Authenticate an user in Klaw.
+How to Authenticate a user in Klaw.
 
 -   [UserPwd](userpwd-db)
 -   [Windows AD](windows-ad)

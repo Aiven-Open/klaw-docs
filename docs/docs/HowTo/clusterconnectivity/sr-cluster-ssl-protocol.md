@@ -42,7 +42,7 @@ cluster with Klaw using SSL protocol:
 7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core) and [cluster-api](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
 
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right hand side of each cluster
     row.
 
 9. Configure the SSL properties to connect to Schema Registry cluster
