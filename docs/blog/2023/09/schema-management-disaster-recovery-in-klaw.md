@@ -67,12 +67,12 @@ Example of an avro schema
 
 ```
 {
-        "type" : "record",
-        "namespace" : "customer.account",
-        "name" : "CustomerAccount",
-        "fields" : [
-                        { "name" : "Name" , "type" : "string" },
-                        { "name" : "Age" , "type" : "int" }
+        "type": "record",
+        "namespace": "customer.account",
+        "name": "CustomerAccount",
+        "fields": [
+                        { "name": "Name", "type": "string" },
+                        { "name": "Age", "type": "int" }
                 ]
 }
 ```
@@ -119,9 +119,9 @@ POST /subjects/(string: subject)/versions
 
 Here is a detailed documentation :
 
-**Karapace** : https://github.com/Aiven-Open/karapace#quickstart
+**Karapace**: https://github.com/Aiven-Open/karapace#quickstart
 
-**Confluent** : https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas
+**Confluent**: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas
 
 ## Schema management in Klaw
 

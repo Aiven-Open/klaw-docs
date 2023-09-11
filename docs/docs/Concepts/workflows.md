@@ -49,13 +49,13 @@ governance of the system.
 Within this approval process, different roles come into play, each with
 its unique responsibilities and permissions. These roles include:
 
-1.  **Resource Owners Team** : When transferring ownership between
+1.  **Resource Owners Team**: When transferring ownership between
     teams, the current resource owner provides the necessary approval.
-2.  **Requestors Team** : Usually, a fellow team member reviews and
+2.  **Requestors Team**: Usually, a fellow team member reviews and
     either approves or declines a request.
-3.  **All Approvers** : Users assigned the `APPROVE_ALL_REQUESTS_TEAMS`
+3.  **All Approvers**: Users assigned the `APPROVE_ALL_REQUESTS_TEAMS`
     permission can approve any request from any team.
-4.  **Admin** : Admin users manage Klaw, primarily reviewing and
+4.  **Admin**: Admin users manage Klaw, primarily reviewing and
     approving user requests unless they also assinged the
     `APPROVE_ALL_REQUESTS_TEAMS` permission.
 

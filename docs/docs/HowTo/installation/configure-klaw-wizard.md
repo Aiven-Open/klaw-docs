@@ -62,14 +62,14 @@ URL: [https://host:port/helpwizard]
     
     ```
     {
-      "tenantModel" : {
-        "tenantName" : "default",
-        "baseSyncEnvironment" : "DEV",
-        "orderOfTopicPromotionEnvsList" : [ "DEV" ],
-        "requestTopicsEnvironmentsList" : [ "DEV" ],
-        "baseSyncKafkaConnectCluster" : null,
-        "orderOfConnectorsPromotionEnvsList" : null,
-        "requestConnectorsEnvironmentsList" : null
+      "tenantModel": {
+        "tenantName": "default",
+        "baseSyncEnvironment": "DEV",
+        "orderOfTopicPromotionEnvsList": [ "DEV" ],
+        "requestTopicsEnvironmentsList": [ "DEV" ],
+        "baseSyncKafkaConnectCluster": null,
+        "orderOfConnectorsPromotionEnvsList": null,
+        "requestConnectorsEnvironmentsList": null
       }
     }
     ```

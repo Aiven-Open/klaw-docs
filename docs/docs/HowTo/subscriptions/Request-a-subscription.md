@@ -25,12 +25,12 @@ responsible for approving or declining subscription requests.
     -   For Aiven for Apache Kafka environment, there are no
    consumer groups but a Service account has to be specified.
 
-4.  Select the ACL type : Producer (write access on the topic) or
+4.  Select the ACL type: Producer (write access on the topic) or
     Consumer (read access on the topic).
 
 5.  
 
-    For the ACL type : Producer
+    For the ACL type: Producer
 
     -   Select Pattern type LITERAL (on one topic) or PREFIXED (on
             all topics with the same prefix).
@@ -39,7 +39,7 @@ responsible for approving or declining subscription requests.
 
 6.  
 
-    For the ACL type : Consumer
+    For the ACL type: Consumer
 
     -   A consumer group is mandatory.
 
@@ -47,8 +47,8 @@ responsible for approving or declining subscription requests.
 
     Select ACL IP (host based) or Principal based
 
-    -   IP : add one or more IP addresses (IPv4 / IPv6).
-    -   Principal : add one or more Principals (SSL DN strings or
+    -   IP: add one or more IP addresses (IPv4 / IPv6).
+    -   Principal: add one or more Principals (SSL DN strings or
     usernames).
 
 8.  Add any remarks that will help the reviewer make an informed

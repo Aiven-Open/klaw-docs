@@ -38,9 +38,9 @@ order.
     "baseSyncEnvironment": "DEV",
     "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
     "requestTopicsEnvironmentsList": ["DEV"],
-    "requestSchemaEnvironmentsList" : [ "DEV_SCH"],
-    "orderOfConnectorsPromotionEnvsList" : [],
-    "requestConnectorsEnvironmentsList" : []
+    "requestSchemaEnvironmentsList": [ "DEV_SCH"],
+    "orderOfConnectorsPromotionEnvsList": [],
+    "requestConnectorsEnvironmentsList": []
    }
 }
 ```

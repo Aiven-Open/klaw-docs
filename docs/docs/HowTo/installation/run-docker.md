@@ -3,8 +3,8 @@
 Klaw provides Docker images that allow you to run Klaw inside Docker
 containers. There are two Docker images available:
 
--   Core API : `https://hub.docker.com/r/aivenoy/klaw-core`
--   Cluster API : `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
+-   Core API: `https://hub.docker.com/r/aivenoy/klaw-core`
+-   Cluster API: `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
 
 ## Prerequisites
 
