@@ -56,7 +56,7 @@ cluster row.
 
     `clusterid.klaw.kafkaconnect.credentials=username:password`
 
-    Replace clusterid with Klaw cluster Id copied from Klaw UI.
+    Replace `clusterid` with Klaw cluster Id copied from Klaw UI.
 
 9.  Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Aiven for Apache

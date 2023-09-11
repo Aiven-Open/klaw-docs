@@ -4,7 +4,7 @@ In Klaw, users are assigned default roles such as **USER** or
 **SUPERADMIN** when they are added to the system. Each role has specific
 permissions associated to it.
 
-## Retrive roles in AD
+## Retrieve roles in AD
 
 For users defined in Azure Active Directory or third-party SSO
 providers, roles can be retrieved from the provider by setting the
