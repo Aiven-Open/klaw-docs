@@ -6,16 +6,16 @@ environment through the concept of promotion.
 -   This adds an extra layer of security, avoiding the risk of manually
     duplicating entries across environments.
 -   The requests are properly reviewed and verified by another pair of
-    eyes, maintaining sanity of the application.
+    eyes, maintaining the sanity of the application.
 -   Information is audited. Who is raising the request, when it has been
-    created, and who approved and when. Helps in identifying problems
-    during unexpected behaviour of system.
--   By maintaining a history of applied changes, easy track back on the
+    created, and who approved it and when. Helps in identifying problems
+    during unexpected behavior of the system.
+-   By maintaining a history of applied changes, easy to track back on the
     evolution of a configuration.
 -   Preloading requests with the advanced configuration of the lower environment to help ensure developers don't miss any important configuration.
 
-The resource owners administer promotion of resources, and each team can
-promote a topic, schema or connector from one environment to the next.
+The resource owners administer the promotion of resources, and each team can
+promote a topic, schema, or connector from one environment to the next.
 
 ## Configure environment promotion
 
@@ -56,8 +56,8 @@ schema registry with a Kafka environment in the Add/modify Schema Environment pa
 Once a topic is created in the base environment it is then possible to
 promote this to the next higher level environment. This will create a
 promotion request that can be reviewed, approved, or declined by the
-requester's teammates. **Topic Overview** view where the topic can be
-promoted will show all the environments the topic is now configured
+requester's teammates. **Topic Overview** view, where the topic can be
+promoted, will show all the the environments the topic is now configured
 on.
 
 ### Promote a topic
@@ -114,10 +114,10 @@ To promote a schema to a higher environment, follow these steps:
 When promoting a schema to a higher environment in Klaw, you can use the
 **Force Register Schema** option, which enables you to register a schema
 that may not be compatible with previous schemas. By selecting this
-option, then Klaw will change the compatibility of the subject (topic)
-to **NONE**, register the new schema and then revert to the previous
+option, Klaw will change the compatibility of the subject (topic)
+to **NONE**, register the new schema, and then revert to the previous
 subject compatibility. If the subject compatibility is not set, it will
-fall back to the global compatibility. However, Klaw will not change the
+fall back to global compatibility. However, Klaw will not change the
 global compatibility.
 
 :::note

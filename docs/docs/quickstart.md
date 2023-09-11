@@ -27,7 +27,8 @@ docker run -d -t -i \
 --name klaw-schema-registry bitnami/schema-registry:latest
 ```
 
-This script basically creates klaw, kafka and schema registry processes, and also configures kafka and schema registry servers in klaw.
+This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema 
+registry servers in Klaw.
 
 ## 2. Login to Klaw
 

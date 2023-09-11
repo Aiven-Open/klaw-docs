@@ -35,7 +35,7 @@ A user with the SUPERADMIN role in Klaw has complete control over
     clusters, environments, users, and teams.
 
 
-Users can request to create or promote topics, schemas and connectors
+Users can request to create or promote topics, schemas, and connectors
 for their team. Other users in the same team can check and approve the
 requests.
 

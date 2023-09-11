@@ -24,7 +24,7 @@ You can configure the following in a tenant:
 
     Order of Kafka Topics promotion environments
 
-    Define a set of environments in order for the promotion of a
+    Define a set of environments in order to promote a
         Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
         environment already exists under Environments (Kafka)
 
@@ -34,7 +34,7 @@ You can configure the following in a tenant:
 
     Request Topics Environments List
 
-    Define a set of environments for which kafka topics can be
+    Define a set of environments for which Kafka topics can be
         requested directly. Other environments cannot be requested
         directly, and topics can only be promoted to them.
 
@@ -54,7 +54,7 @@ You can configure the following in a tenant:
 
     Order of Kafka Connect promotion environments
 
-    Define a set of environments in order for the promotion of a
+    Define a set of environments in order to promote a
         Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
         environment already exists under Environments (Kafka connect)
 

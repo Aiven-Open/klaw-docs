@@ -1,6 +1,6 @@
 # Teams
 
-Klaw has concepts of users, roles and teams.
+Klaw has concepts of users, roles, and teams.
 
 
 Team A collection of users. Teams also `own` topics and when one user

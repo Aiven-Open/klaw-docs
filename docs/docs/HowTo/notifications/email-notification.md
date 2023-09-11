@@ -1,7 +1,7 @@
 # Email Notifications
 
 Email notifications can be sent to users when actions are performed in
-Klaw that require their attention.
+Klaw that requires their attention.
 
 Skip to see all notifications sent and to which users [Email Matrix](#email-matrix) below
 
@@ -33,7 +33,7 @@ spring.mail.frommailid=fromailid
 
 The Superadmin can access all the email templates through the navigation
 bar by going to Dashboard -\> Settings. Within settings all email
-templates are prefixed with `klaw.mail` and is suffixed by the
+templates are prefixed with `klaw.mail` and are suffixed by the
 notificationtype and `.content` These templates can be modified to suit
 local languages, allowing for the rewording of emails and including any
 additional information.
@@ -61,5 +61,5 @@ additional information.
 
 :::tip
 'All Approvals' are Users assigned the permission
-APPROVE_ALL_REQUESTS_TEAMS, this permission allows users to approve any
-Topic, Schema, ACL or Connector request from any team.
+APPROVE_ALL_REQUESTS_TEAMS. This permission allows users to approve any
+Topic, Schema, ACL, or Connector request from any team.

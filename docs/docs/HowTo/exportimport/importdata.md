@@ -3,7 +3,7 @@
 Klaw administrators can import Klaw metadata into another brand-new
 instance (or existing) of Klaw.
 
-## How this can be helpful ?
+## How this can be helpful?
 
 If you currently have a running instance of Klaw in AWS and are
 considering migrating to Azure, the ability to export Klaw data becomes
@@ -11,11 +11,11 @@ highly advantageous. In such situations, you can export the Klaw data
 from your AWS instance and import it into your Azure instance.
 
 This process facilitates a smooth transition of your Klaw data from one
-cloud platform to another, ensuring continuity of your operations and
+cloud platform to another, ensuring the continuity of your operations and
 minimizing any potential disruptions or data loss during the migration
 process.
 
-## What data can be exported ?
+## What data can be exported?
 
 Klaw data is classified into the below 3 types.
 
@@ -41,7 +41,7 @@ Klaw data is classified into the below 3 types.
     -   Schema requests
     -   Connector requests
 
-## How data can be imported ?
+## How data can be imported?
 
 To import data, follow these steps:
 
@@ -63,7 +63,7 @@ To import data, follow these steps:
 4.  After updating the above settings, restart the application for the
     changes to take effect.
 
-## What files are imported ?
+## What files are imported?
 
 The files that can be imported depend on the configuration settings
 mentioned above. You have the flexibility to import either admin data,

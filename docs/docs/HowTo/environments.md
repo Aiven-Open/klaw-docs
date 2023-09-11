@@ -2,7 +2,7 @@
 
 Environments in Klaw are similar to application environments that act as
 a wrapper over clusters. Each environment in Klaw is associated with a
-cluster, and there are three types of environments available:
+cluster and there are three types of environments available:
 
 -   Kafka
 -   Schema Registry

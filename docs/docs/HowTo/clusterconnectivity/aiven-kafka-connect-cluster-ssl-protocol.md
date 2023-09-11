@@ -49,7 +49,7 @@ and enter the details to add your schema registry environment. Click
 **Save**.
 
 7. Copy the **Cluster ID** from the **Clusters** page using
-the copy icon that is available on the right hand side of each
+the copy icon that is available on the right-hand side of each
 cluster row. 
 
 8. In the `application.properties` file for [cluster-api] (klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console:

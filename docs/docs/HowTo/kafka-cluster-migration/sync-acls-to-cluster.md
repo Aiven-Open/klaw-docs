@@ -10,7 +10,7 @@ them on the Apache Kafka cluster.
     permission.
 3.  Navigate to the **Synchronize** menu and select **ACLs to Cluster**.
 4.  Select the source environment (Klaw metadata with topics) and target
-    environment (kafka cluster where ACLs have to be created)
+    environment (Kafka cluster where ACLs have to be created)
 
 ![image](../../../static/images/sync/SyncTopicsToCluster.png)
 

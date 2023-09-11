@@ -34,7 +34,7 @@ Running Klaw in Docker is a simple and efficient way to deploy and
 manage Klaw instances. Follow the steps below to quickly get Klaw up and
 running in Docker.
 
-### 1. Create Docker Compose file
+### 1. Create a Docker Compose file
 
 To begin, create a Docker Compose file called `docker-compose.yml` that
 defines the configuration for running Klaw. For a quick start, you can
@@ -159,7 +159,7 @@ To verify the installation and access Klaw, follow the steps below:
     page, and look for the `klaw.clusterapi.url` configuration. To use a
     secure connection, update the URL to HTTPS, for example: `http://localhost:9343`
 
-3.  Or if using a windows or linux machine ensure you update the url to
+3.  Or if using a Windows or Linux machine ensure you update the URL to
     use the container name, for example: `http://klaw-cluster-api:9343`
 
 4.  Click **Test connection**.

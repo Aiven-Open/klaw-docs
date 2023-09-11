@@ -12,14 +12,14 @@ Apache Kafka cluster and assigning them to a team in Klaw.
 
 3.  Navigate to the Synchronize menu and select **Topics from Cluster**.
 
-4.  Synchronize topics with either of following two options:
+4.  Synchronize topics with either of the following two options:
 
     -   `Individual Options`: Select one or more topics
          individually, choose a team, and save. The selected topics
          will now appear in the **Topics** menu, assigned to the chosen
          team.
     -   `Bulk Options` tab: Select all topics from the
-         Kafka cluster at once, choose a team, and save. The selected
+         Kafka cluster at once, choose a team and save. The selected
          topics will now appear in the **Topics** menu, assigned to the
          chosen team.
 

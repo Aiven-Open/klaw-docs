@@ -11,7 +11,7 @@ in Klaw.
 3.  Navigate to the **Synchronize** menu and select **ACLs from
     Cluster**.
 4.  Select one or more ACLs, choose a team, and save. The selected ACLs
-    will now appear in the topic overview page, assigned to the chosen
+    will now appear on the topic overview page, assigned to the chosen
     team.
 
     ![image](../../../static/images/sync/SyncAclsFromCluster.png)

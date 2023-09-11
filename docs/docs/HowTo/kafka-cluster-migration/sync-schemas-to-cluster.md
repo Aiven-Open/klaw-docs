@@ -30,6 +30,6 @@ By following these steps, you can synchronize schemas from a Klaw
 metadata to a Schema Registry cluster.
 
 :::note
-This synchronization is primarily suitable for migrating to new schema
+This synchronization is primarily suitable for migrating to the new schema
 registry clusters.
 

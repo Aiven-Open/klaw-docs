@@ -17,7 +17,7 @@ the final decision.
     approval.
 
 :::note
-If there are any issue in the subscription creation, the request will
+If there are any issues in the subscription creation, the request will
 remain in the approvals view for re-approval once the issue is resolved.
 :::
 

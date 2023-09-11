@@ -41,7 +41,8 @@ Kafka and Klaw using SSL protocol:
     -   **Cluster Name:** Provide a name for the cluster
     -   **Protocol:** Select SSL protocol for your cluster
     -   **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-    - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud kafka cluster (without <https://>). Ex: `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
+    - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud Kafka cluster (without <https://>). Ex: 
+      `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
@@ -52,7 +53,7 @@ Kafka and Klaw using SSL protocol:
     drop-down list, and configure partitions and replication factor, and
     tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.

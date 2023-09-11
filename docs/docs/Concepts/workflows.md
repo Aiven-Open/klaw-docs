@@ -56,7 +56,7 @@ its unique responsibilities and permissions. These roles include:
 3.  **All Approvers**: Users assigned the `APPROVE_ALL_REQUESTS_TEAMS`
     permission can approve any request from any team.
 4.  **Admin**: Admin users manage Klaw, primarily reviewing and
-    approving user requests unless they also assinged the
+    approving user requests unless they are also assigned the
     `APPROVE_ALL_REQUESTS_TEAMS` permission.
 
 ## User Requests
@@ -143,7 +143,7 @@ Schema Approver matrix
 | Promote Schema Request |                      | ✅               | ✅             |       |
 
 :::note
-With Schemas there is no Claim Schema as it is assigned to
+With Schemas, there is no Claim Schema as it is assigned to
 a topic and so the Topic owner owns the Schema. Likewise, there is no
 Update Schema as existing Schemas are kept and a new
 Schema with an incremented version is added instead.

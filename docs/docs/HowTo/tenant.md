@@ -17,7 +17,7 @@ permission can do so under the **Environments -\> Tenants** menu.
 
 :::note
 If the application should be limited to only one tenant, you can
-configure it with thee below property in `application.properties` file.
+configure it with the below property in `application.properties` file.
 
 
      #maximum tenants can be created

@@ -12,7 +12,7 @@ responsible for approving or declining subscription requests.
 ## Make a subscription request
 
 1.  In Klaw, navigate to the **Topics** menu, and select the topic you
-    want to request a subscription for.
+    want to request a subscription.
 
 2.  Select the subscribe button available in the bottom right corner.
 
@@ -20,7 +20,7 @@ responsible for approving or declining subscription requests.
 
     Select the environment where the Kafka topic is located and available for subscription creation.
 
-    -   Based on kafka flavor of the environment, the fields
+    -   Based on Kafka flavor of the environment, the fields
             displayed will vary.
     -   For Aiven for Apache Kafka environment, there are no
    consumer groups but a Service account has to be specified.

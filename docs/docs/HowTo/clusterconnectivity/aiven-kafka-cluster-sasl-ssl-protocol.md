@@ -45,7 +45,7 @@ Kafka® and Klaw using SSL protocol:
     drop-down list, and configure partitions and replication factor, and
     tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.

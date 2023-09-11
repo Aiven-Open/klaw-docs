@@ -14,7 +14,7 @@ them to a team in Klaw.
 3.  Navigate to the Synchronize menu and select **Connectors from
     Cluster**.
 
-4.  Synchronize connectors with following option:
+4.  Synchronize connectors with the following option:
 
     -   Select one or more connectors individually, choose a team, and
         save.

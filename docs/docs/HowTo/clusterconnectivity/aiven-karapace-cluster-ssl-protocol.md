@@ -1,7 +1,7 @@
 # Connect to Karapace schema registry with SSL protocol
 
 This section provides information on how to connect a Karapace schema
-registry using the SSL protocol. Klaw connects to Schema Registry over
+registry using the SSL protocol. Klaw connects to the Schema Registry over
 the REST protocol.
 
 ## Prerequisite
@@ -48,7 +48,7 @@ registry cluster with Klaw using SSL protocol:
 7.  Open the `application.properties` file for [cluster-api]
     (klaw/cluster-api/src/main/resources) modules.
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 
 9. In the `application.properties` file for [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties) module, configure Karapace credentials copied from Aiven console

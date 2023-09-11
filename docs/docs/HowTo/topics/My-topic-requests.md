@@ -24,13 +24,13 @@ are viewing by the status of the request.
         which have yet to be actioned.
 
 - **deleted** <br/>
-    View all the requests which you have deleted. These are the
+    View all the requests that you have deleted. These are the
         requests which have been withdrawn from review and which will
         never be actioned.
 
 - **declined** <br/>
     View all the requests that an approver has declined. These are
-        requests which will never be actioned.
+        requests that will never be actioned.
 
 - **approved** <br/>
     View all the requests you have submitted that have been approved

@@ -25,7 +25,7 @@ cluster in Klaw using SASL_SSL protocol:
     -   **Cluster Name:** Provide a name for the cluster
     -   **Protocol:** Select SASL_SSL protocol for your cluster
     -   **Kafka Flavor:** Select Apache Kafka as the flavor
-    -   **Bootstrap server:** Enter the bootstrap servers details for an Apache Kafka cluster.
+    -   **Bootstrap server:** Enter the bootstrap server details for an Apache Kafka cluster.
 
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
@@ -36,7 +36,7 @@ cluster in Klaw using SASL_SSL protocol:
     drop-down list, and configure partitions and replication factor, and
     tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources) directory.

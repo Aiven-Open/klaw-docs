@@ -16,7 +16,7 @@ Topics allow the producers to create events that consumers can then
 read. Using Kafka, this is done in an incredibly fast, secure, and
 durable way. Due to the nature of Kafka, it also means that if a
 producer or consumer cannot operate for a period of time (maintenance,
-faults or other unexpected reasons), it is decoupled from the wider
+faults, or other unexpected reasons), it is decoupled from the wider
 environment and does not impact the entire system. A consumer can still
 read messages even if there is a backlog of events waiting to be
 processed, and a producer can still generate events even if the consumer

@@ -7,7 +7,7 @@ failures.
 
 ## View/restart connectors status
 
-1.  Login to Klaw, ensure that you have the `MANAGE_CONNECTORS`
+1.  Log in to Klaw, ensure that you have the `MANAGE_CONNECTORS`
     permission.
 2.  Navigate to the Synchronize menu and select **Manage connectors**.
 3.  On this screen, you will be able to view the status of the

@@ -2,7 +2,7 @@
 
 In Klaw, users are assigned default roles such as **USER** or
 **SUPERADMIN** when they are added to the system. Each role has specific
-permissions associated to it.
+permissions associated with it.
 
 ## Retrieve roles in AD
 
