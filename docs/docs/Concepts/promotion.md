@@ -3,16 +3,11 @@
 Klaw allows users to control the creation of resources in their Kafka
 environment through the concept of promotion.
 
--   This adds an extra layer of security, avoiding the risk of manually
-    duplicating entries across environments.
--   The requests are properly reviewed and verified by another pair of
-    eyes, maintaining the sanity of the application.
--   Information is audited. Who is raising the request, when it has been
-    created, and who approved it and when. Helps in identifying problems
-    during unexpected behavior of the system.
--   By maintaining a history of applied changes, easy to track back on the
-    evolution of a configuration.
--   Preloading requests with the advanced configuration of the lower environment to help ensure developers don't miss any important configuration.
+- This adds an extra layer of security, avoiding the risk of manually duplicating entries across environments.
+- The requests are corectly reviewed and verified by another pair of eyes, maintaining the sanity of the application.
+- Information is audited. It is helpful to know who raised and approved the request and when it was created. This information can aid in identifying issues that arise during unexpected system behavior.
+- By maintaining a history of applied changes, it is easy to track back the evolution of a configuration.
+- Preloading requests with the advanced configuration of the lower environment to help ensure developers don't miss any important configuration.
 
 The resource owners administer the promotion of resources, and each team can
 promote a topic, schema, or connector from one environment to the next.
@@ -46,80 +41,48 @@ order.
 ```
  
 :::note
-In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a
-schema registry with a Kafka environment in the Add/modify Schema Environment pages. Thereby matching the order of promotion defined in `orderOfTopicPromotionEnvsList`.
+In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a schema registry with a Kafka environment in the Add/Modify Schema Environment pages—matching the order of promotion defined in `orderOfTopicPromotionEnvsList`.
 :::
 
 
 ## Topic promotion
 
-Once a topic is created in the base environment it is then possible to
-promote this to the next higher level environment. This will create a
-promotion request that can be reviewed, approved, or declined by the
-requester's teammates. **Topic Overview** view, where the topic can be
-promoted, will show all the the environments the topic is now configured
-on.
+Once a topic is created in the base environment, you can promote it to the next higher-level environment. This will create a promotion request that your teammates can review, approve, or decline. The **Topic Overview** view will show all the environments the topic is configured on, including the environment to which you can promote the topic.
+
 
 ### Promote a topic
 
 To promote a topic to a higher environment, follow these steps:
 
-1.  Select **Topics** on the navigation bar.
-2.  Select the specific Kafka Topic you wish to promote to the higher
-    environment.
-3.  A button is available to promote the topic to the next environment
-    where a higher environment has been configured. **Promote to \[Next
-    Environment\]**
-4.  Configure the number of Partitions and Replication Factor for the
-    higher environment in the dropdowns provided.
-5.  Confirm the promotion to the next environment by selecting **Submit
-    Promotion to \[Next Environment\]**
-6.  A Topic request is now created for team members to review and
-    approve under Approvals.
+1. Select **Topics** on the navigation bar.
+2. Select the specific Kafka Topic you want to promote to the higher environment.
+3. Select the **Promote to \[Next Environment\]** button to promote the topic to the next environment (higher environment) that has been configured.
+4. Configure the number of **Partitions** and **Replication factor** for the higher environment in the dropdowns provided.
+5. Confirm the promotion to the next environment by selecting **Submit Promotion to \[Next Environment\]**
+6. A Topic request is now created for team members to review and approve under **Approvals**.
 
 ## Schema promotion
 
-Under the **Topic Overview**, the schema can be requested and viewed for
-an individual topic. As of Release 2.0.0, the ability to promote
-existing schemas to higher-level environments is also available. The
-requester can select a particular version of the schema to promote from
-the lower environment to the higher environment. The requester can
-select a particular version of the schema to promote from the lower
-environment to the higher environment.
+In the **Topic Overview**, you can request and view the schema for an individual topic. Release 2.0.0 allows you to promote existing schemas to higher-level environments. To do this, select the specific schema version you want to promote from the lower environment to the higher environment.
+
 
 ### Promote a schema
 
 To promote a schema to a higher environment, follow these steps:
 
-1.  Select **Topics** on the navigation bar.
-2.  Select the specific Kafka Topic you wish to promote a Schema to the
-    higher environment.
-3.  Select the **Schema** tab under the main Topic section.
-4.  A button is available to promote a schema to a higher environment
-    where a higher environment has been configured. **Promote to \[Next
-    Environment\]**
-5.  Select the version of the Schema you wish to promote to the higher
-    environment, this Schema will be available for the team to review
-    when approving or declining the request.
-6.  Optionally, if the Schema you wish to promote is not compatible with
-    the existing schemas on that topic, **Force Register Schema** can be
-    used to register the Schema.
-7.  Confirm the promotion to the next environment by selecting **Submit
-    Promotion to \[Next Environment\]**
-8.  A schema request is now created for team members to review and
-    approve under Approvals.
+1. Select **Topics** on the navigation bar.
+2. Select the specific Kafka Topic you wish to promote a Schema to the higher environment.
+3. Select the **Schema** tab under the main Topic section.
+4. Select the **Promote to \[Next Environment\]** button to promote a schema to the next environment (higher environment) that has been configured.
+5. To promote a schema to a higher environment, select the specific version of the schema that you want to promote. This schema will be available for your team to review when approving or declining the request.
+6. Optionally, you can use the **Force Register Schema** option to register a schema that is not compatible with the existing schemas on that topic.
+7. Confirm the promotion to the next environment by selecting **Submit Promotion to \[Next Environment\]**.
+8. A schema request is now created for team members to review and approve under **Approvals**.
 
 ### How does Force Register work
 
-When promoting a schema to a higher environment in Klaw, you can use the
-**Force Register Schema** option, which enables you to register a schema
-that may not be compatible with previous schemas. By selecting this
-option, Klaw will change the compatibility of the subject (topic)
-to **NONE**, register the new schema, and then revert to the previous
-subject compatibility. If the subject compatibility is not set, it will
-fall back to global compatibility. However, Klaw will not change the
-global compatibility.
+When promoting a schema to a higher environment in Klaw, you can use the **Force Register Schema** option, which enables you to register a schema that may not be compatible with previous schemas. By selecting this option, Klaw will change the compatibility of the subject (topic) to **NONE**, register the new schema, and revert to the previous subject compatibility. If the subject compatibility is not set, it will fall back to global compatibility. However, Klaw will not change the global compatibility.
+
 
 :::note
-Any request raised cannot be approved by the same user, rather it has to
-be a different user from the same team.
+Requests cannot be approved by the user who raised it. It must be approved by a different user from the same team.
