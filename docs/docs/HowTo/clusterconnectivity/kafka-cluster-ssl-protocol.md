@@ -37,9 +37,7 @@ cluster in Klaw using SSL protocol:
     from the **Environments** drop-down menu.
 6.  Click **Add Environment** and enter the details to add your Kafka
     environment.
-7.  Enter an environment name, set the cluster you added from the
-    drop-down list, and configure partitions and replication factor, and
-    tenant (set to default).ß
+7.   Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication factor, and tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
     icon that is available on the right-hand side of each cluster
     row.

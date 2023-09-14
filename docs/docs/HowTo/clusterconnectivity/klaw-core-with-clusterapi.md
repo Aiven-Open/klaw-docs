@@ -1,11 +1,8 @@
 # Connect Klaw Core and Klaw Cluster APIs
 
-For Klaw to run successfully and perform all the necessary operations on
-a Kafka cluster, both the Klaw APIs (Core API and Cluster API) must be
-running and connected. This involves configuring the secret key, SSL
-protocols in the respective `application.properties` files and verifying
-the connectivity between the Klaw APIs, as explained below. You can find
-the application.properties file located in the following paths:
+To run Klaw successfully and perform all the necessary operations on a Kafka cluster, you must connect the Klaw APIs (Core API and Cluster API). This involves configuring the secret key and SSL protocols in the respective `application.properties` files and verifying the connectivity between the APIs.
+
+You can find the `application.properties` file located in the following paths:
 
 -   Core: [klaw/core/src/main/resources]
 -   Cluster-api: [klaw/cluster-api/src/main/resources]
@@ -24,12 +21,10 @@ the application.properties file located in the following paths:
     Example: ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
     ```
 
-2.  Configure the SSL protocols
+2.  Configure the SSL settings to enable HTTPS
 
-    You need to configure the following SSL settings for Klaw to run on
-    HTTPS. These settings must be configured in the
-    `application.properties` files for Klaw's `core` and `cluster-api`
-    modules to communicate securely over HTTPS:
+    To enable HTTPS for Klaw, you need to configure the following SSL settings in the `application.properties` files for the Klaw Core API and the Klaw Cluster API:
+    
 
     ```
     server.ssl.key-store=client.keystore.p12
@@ -63,4 +58,4 @@ the application.properties file located in the following paths:
 
     Save the change and click **Test connection**.
 
-If everything is configured correctly, you should be able to perform all the necessary operations with Klaw. If you encounter any issues, you should check the logs or troubleshoot the configuration to ensure everything is set up correctly.
+If everything is configured correctly, you can perform all the necessary operations with Klaw. However, if you encounter any issues, you can check the logs or troubleshoot the configuration to fix the problem.

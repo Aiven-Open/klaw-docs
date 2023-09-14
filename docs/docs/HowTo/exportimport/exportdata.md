@@ -30,7 +30,7 @@ Klaw data is classified into the below 3 types.
     -   Schema requests
     -   Connector requests
 
-## How data can be exported?
+## How can data be exported?
 
 To export data, follow these steps:
 

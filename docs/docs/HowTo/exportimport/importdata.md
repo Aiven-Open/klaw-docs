@@ -41,7 +41,7 @@ Klaw data is classified into the below 3 types.
     -   Schema requests
     -   Connector requests
 
-## How data can be imported?
+## How can data be imported?
 
 To import data, follow these steps:
 

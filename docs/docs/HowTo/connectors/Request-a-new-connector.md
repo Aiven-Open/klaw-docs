@@ -20,7 +20,7 @@ Kafka Connector.
     In most cases, you must start with the lowest environment and use the promotion feature for higher environments.
 
 3.  Enter a name for the connector based on your organization's naming
-    conventions. Ensure that the name is at least 5 characters long to
+    conventions. Ensure the name is at least five characters long to
     comply with Klaw's minimum requirements.
 4.  Add the connector configuration in valid JSON format in the
     configuration field.
@@ -28,5 +28,4 @@ Kafka Connector.
     the connector throughout its lifecycle.
 6.  Include any remarks that can help the reviewer make an informed
     decision to approve or decline the request.
-7.  Submit the request, and a team member will review it and approve or
-    decline the request based on the request details.
+7.  Submit your request for review and await approval or decline based on details provided.

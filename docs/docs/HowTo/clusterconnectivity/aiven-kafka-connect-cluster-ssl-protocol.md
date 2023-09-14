@@ -15,7 +15,7 @@ Apache Kafka Connect service with Klaw using SSL protocol.
     `klaw-core-with-clusterapi`. This
     involves configuring the `klaw.clusterapi.url` setting in the Klaw
     UI and testing the connectivity to ensure the two APIs can
-    communicate over https.
+    communicate over HTTPS.
 
 ## Configure and connect with SSL protocol
 
@@ -56,7 +56,7 @@ cluster row.
 
     `clusterid.klaw.kafkaconnect.credentials=username:password`
 
-    Replace `clusterid` with Klaw cluster Id copied from Klaw UI.
+    Replace `clusterid` with Klaw cluster ID copied from Klaw UI.
 
 9.  Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Aiven for Apache
