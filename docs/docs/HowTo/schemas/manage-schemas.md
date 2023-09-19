@@ -6,7 +6,7 @@ only be submitted by the topic owner team and approved by the same team.
 
 ## Approve a schema request
 
-1.  When you login into Klaw, a pop-up will notify you of **Pending
+1.  When you log into Klaw, a pop-up will notify you of **Pending
     Requests**. Select **Yes, show me!** or navigate to **Approve** and
     select **Schema Requests** to view the pending requests.
 2.  Review all information related to the request and approve it by
@@ -20,7 +20,7 @@ only be submitted by the topic owner team and approved by the same team.
 
 ## Decline a schema request
 
-1.  When you login into Klaw, a pop-up will notify you of **Pending
+1.  When you log into Klaw, a pop-up will notify you of **Pending
     Requests**. Select **Yes, show me!** or navigate to **Approve** and
     select **Schema Requests** to view the pending requests.
 2.  Review the information associated with the topic request and decline

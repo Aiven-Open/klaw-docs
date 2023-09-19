@@ -1,9 +1,7 @@
 # Connect with Aiven for Apache Kafka® Cluster using SSL protocol
 
 Aiven for Apache Kafka® is a fully managed distributed data streaming
-platform, deployable in the cloud of your choice. This section provides
-you with information on how to connect Aiven for Apache Kafka cluster
-with Klaw using SSL authentication protocol.
+platform, deployable in the cloud of your choice. This section provides information on connecting Aiven for Apache Kafka cluster with Klaw using SSL authentication protocol.
 
 ## Prerequisite
 
@@ -45,11 +43,9 @@ Kafka® and Klaw using SSL protocol:
     from the **Environments** drop-down menu.
 6.  Click **Add Environment** and enter the details to add your Kafka
     environment.
-7.  Enter an environment name, set the cluster you added from the
-    drop-down list, and configure partitions and replication factor, and
-    tenant (set to default).
+7.  Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication factor, and tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [klaw/cluster-api/src/main/resources] directory.
@@ -85,7 +81,7 @@ Kafka® and Klaw using SSL protocol:
     demo_cluster.kafkassl.truststore.type=JK
     ```
 
-11. To enable ACLs authorization, copy the Authorization token from
+11. To enable ACL authorization, copy the Authorization token from
     Aiven Console and configure `klaw.clusters.accesstoken` with the
     copied authorization token.
 12. Re-deploy the Cluster API with the updated configuration. This will

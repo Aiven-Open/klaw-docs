@@ -24,8 +24,8 @@ You can configure the following in a tenant:
 
     Order of Kafka Topics promotion environments
 
-    Define a set of environments in order for the promotion of a
-        Kafka topic. Ex : \[\"DEV\", \"TST\"\]. Make sure this
+    Define a set of environments in order to promote a
+        Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
         environment already exists under Environments (Kafka)
 
         Field: orderOfTopicPromotionEnvsList
@@ -34,7 +34,7 @@ You can configure the following in a tenant:
 
     Request Topics Environments List
 
-    Define a set of environments for which kafka topics can be
+    Define a set of environments for which Kafka topics can be
         requested directly. Other environments cannot be requested
         directly, and topics can only be promoted to them.
 
@@ -54,8 +54,8 @@ You can configure the following in a tenant:
 
     Order of Kafka Connect promotion environments
 
-    Define a set of environments in order for the promotion of a
-        Kafka connector. Ex : \[\"DEV\", \"TST\"\]. Make sure this
+    Define a set of environments in order to promote a
+        Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
         environment already exists under Environments (Kafka connect)
 
         Field: orderOfConnectorsPromotionEnvsList
@@ -70,7 +70,7 @@ You can configure the following in a tenant:
 
         Field: requestConnectorsEnvironmentsList
 
-    Sample Tenant configuration for Property : `klaw.tenant.config`:
+    Sample Tenant configuration for Property: `klaw.tenant.config`:
     
     ```
     {
@@ -80,10 +80,10 @@ You can configure the following in a tenant:
       "baseSyncEnvironment": "DEV",
       "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
       "requestTopicsEnvironmentsList": ["DEV", "TST"],
-      "baseSyncKafkaConnectCluster" : null,
-      "orderOfConnectorsPromotionEnvsList" : [],
-      "requestSchemaEnvironmentsList" : [],
-      "requestConnectorsEnvironmentsList" : []
+      "baseSyncKafkaConnectCluster": null,
+      "orderOfConnectorsPromotionEnvsList": [],
+      "requestSchemaEnvironmentsList": [],
+      "requestConnectorsEnvironmentsList": []
      }
     }
     ```

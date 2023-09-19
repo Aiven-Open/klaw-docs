@@ -41,11 +41,16 @@ module.
     klaw.superadmin.default.username=superadmin@company.com
     ```
 
-6. To add the login button to the third party provider please update application.properties with the following three entries. A https link or local image location, this is optional but can help users identify the correct provider. where {provider} is your thirdparty vendor e.g. github or okta
+6. To add a logo of the third-party provider to the login button, you can update the `application.properties` file with the following entry:
 
     ```
-    klaw.superadmin.default.username=superadmin@company.com
+   spring.security.oauth2.client.registration.{provider}.imageURI=assets/images/clients/logo.svg
     ```
+
+    where `{provider}` is the name of the third-party provider, such as GitHub or Okta.
+
+    The `imageURI` property specifies the URL of the logo image. The image must be uploaded to the `assets/images/clients` folder before you can use this property.
+
 
 7.  If you have already signed up, you will be directed to the Klaw home
     page.

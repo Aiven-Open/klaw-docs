@@ -186,7 +186,7 @@ and Production is essential to streamline the developer experience.
 ### System requirements
 
 For optimal performance of Klaw, we recommend the following system
-requirements . These specifications assume a user base of approximately
+requirements. These specifications assume a user base of approximately
 100 or more, with around 50 or more Kafka clusters and over 10,000
 topics.
 

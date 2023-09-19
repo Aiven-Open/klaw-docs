@@ -41,8 +41,9 @@ in the following property for username:
 
     klaw.superadmin.default.username=superadmin@company.com
 
-6.  If you have already signed up, you will be directed to the Klaw home
-    page.
+6. If you have already signed up with Azure AD, you will be redirected to the Klaw home page.
+
+
 
     ![image](../../../static/images/authentication/OAuthLogin.png)
 
@@ -50,8 +51,6 @@ in the following property for username:
 
     ![image](../../../static/images/authentication/AzureLogin.png)
 
-7.  If this is your first time logging in, you will be presented with a
-    signup form to fill in. On submission, a request will be created for
-    the Klaw Administrator to approve or decline.
+7.  If this is your first time logging in, you will be presented with a signup form to fill in. On submission, the Klaw Administrator will approve or decline your request.
 
     ![image](../../../static/images/authentication/OAuthSignupForm.png)

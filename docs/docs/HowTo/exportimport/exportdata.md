@@ -4,7 +4,7 @@ Klaw administrators can export the database configuration and data in
 three parts: admin data, requests data, and core data, providing
 administrators with additional backup and recovery options.
 
-## What data can be exported ?
+## What data can be exported?
 
 Klaw data is classified into the below 3 types.
 
@@ -30,7 +30,7 @@ Klaw data is classified into the below 3 types.
     -   Schema requests
     -   Connector requests
 
-## How data can be exported ?
+## How can data be exported?
 
 To export data, follow these steps:
 
@@ -39,7 +39,7 @@ To export data, follow these steps:
 3.  Configure a pattern (cron expression) for the scheduler to run at a specific interval. For example, to run the scheduler at 12 am every day, use the expression `'0 0 0 \* \* ?'`.
 4.  Once you have updated the above settings, restart the application for the changes to take effect.
 
-## What files are exported ?
+## What files are exported?
 
 The exported files typically include the following examples in the
 configured export directory:

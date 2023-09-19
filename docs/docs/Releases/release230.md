@@ -66,8 +66,8 @@ user-friendly way.
 
 ### Topic Overview
 
-The Klaw Topic overview has now been enchanced to display one
-environment at a time for better readability and useability. A simple
+The Klaw Topic overview has now been enhanced to display one
+environment at a time for better readability and usability. A simple
 drop-down allows users to switch between environments.
 
 ### Regex support on topics

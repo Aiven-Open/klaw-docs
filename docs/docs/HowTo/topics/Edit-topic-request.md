@@ -1,6 +1,6 @@
 # Edit a Topic
 
-Changing the configuration to a topic over it's lifetime is a common
+Changing the configuration to a topic over its lifetime is a common
 and sometimes unavoidable task. Klaw makes this easier by providing the
 ability to edit an existing topic.
 
@@ -15,7 +15,7 @@ ability to edit an existing topic.
     See all advanced Topic configuration options in [Apaches documentation](https://kafka.apache.org/documentation/#topicconfigs) or Select the 'i' button beside an advanced configuration entry to be taken directly to that entry in the Apache documentation.
     :::
 
-5.  Make all the changes to existing configuration and/or add additional
+5.  Make all the changes to the existing configuration and/or add additional
     configuration.
 6.  Submit the configuration update request by selecting **Submit
     Update**.

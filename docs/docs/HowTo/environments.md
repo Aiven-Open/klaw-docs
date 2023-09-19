@@ -2,7 +2,7 @@
 
 Environments in Klaw are similar to application environments that act as
 a wrapper over clusters. Each environment in Klaw is associated with a
-cluster, and there are three types of environments available:
+cluster and there are three types of environments available:
 
 -   Kafka
 -   Schema Registry
@@ -27,7 +27,7 @@ To add a new environment in Klaw, follow these steps:
 
 To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
 
--   **Environment name** : Choose an environment from the
+-   **Environment name**: Choose an environment from the
     available dropdown list.
 -   **Select cluster**: Choose the Kafka cluster you want to
     associate with this environment from the dropdown list.

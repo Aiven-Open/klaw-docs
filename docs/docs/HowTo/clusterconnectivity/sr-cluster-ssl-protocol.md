@@ -1,8 +1,6 @@
 # Connect to Schema Registry cluster with SSL protocol
 
-This section provides information on how to connect a Schema Registry
-cluster using the SSL protocol. Klaw connects to Schema Registry over
-the REST protocol.
+This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the Schema Registry over the REST protocol.
 
 ## Prerequisite
 
@@ -11,8 +9,8 @@ the REST protocol.
     `klaw-core-with-clusterapi`. This
     involves configuring the `klaw.clusterapi.url` setting in the Klaw
     UI and testing the connectivity to ensure the two APIs can
-    communicate over https.
--   Import the Schema registry public certificate to truststore of Klaw.
+    communicate over HTTPS.
+-   Import the schema registry public certificate to truststore of Klaw.
     Ensure that the certificates used in the keystore and truststore are
     signed by the same CA.
 
@@ -30,7 +28,7 @@ cluster with Klaw using SSL protocol:
     -   **Cluster Name:** Provide a name for the cluster
     -   **Protocol:** Select SSL protocol for your cluster
     -   **Kafka Flavor:** Select Apache Kafka as the flavor
-    -   **Bootstrap server:** Enter the bootstrap servers details for an
+    -   **Bootstrap server:** Enter the bootstrap server details for an
     Apache Kafka cluster.
 
 4.  Click **Save**.
@@ -42,10 +40,10 @@ cluster with Klaw using SSL protocol:
 7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core) and [cluster-api](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
 
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 
-9. Configure the SSL properties to connect to Schema Registry cluster
+9. Configure the SSL properties to connect to the schema registry cluster
 by copying and editing the following lines. Where the **clusterid**
 should be replaced by the value copied in step 8. 
 

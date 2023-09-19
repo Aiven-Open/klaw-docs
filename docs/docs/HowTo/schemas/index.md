@@ -11,8 +11,8 @@ consumers.
 ## Manage schema
 
 Aiven's Karapace and Confluent's Schema Registry are two highly
-popular products that enable the management of schemas outside of a
-Kafka cluster. For more infomation, see [Aiven
+popular products that enable the management of schemas outside a
+Kafka cluster. For more information, see [Aiven
 Karapace](https://karapace.io) and [Confluent Schema
 registry](https://docs.confluent.io/platform/current/schema-registry/index.html).
 

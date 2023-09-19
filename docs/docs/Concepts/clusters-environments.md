@@ -33,7 +33,7 @@ environments.
 
 ## Associating schema environments
 
-As of release 2.2.0 it is now possible to associate a Schema Registry
+As of release 2.2.0, it is now possible to associate a Schema Registry
 environment to a Kafka Environment meaning that you no longer need to
 duplicate the promotion ordering for both Topics and for Schema
 Registries.

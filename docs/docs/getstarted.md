@@ -62,9 +62,9 @@ like this:
       "baseSyncEnvironment": "DEV",
       "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
       "requestTopicsEnvironmentsList": ["DEV", "TST"],
-      "baseSyncKafkaConnectCluster" : null,
-      "orderOfConnectorsPromotionEnvsList" : [],
-      "requestSchemaEnvironmentsList" : [],
-      "requestConnectorsEnvironmentsList" : []
+      "baseSyncKafkaConnectCluster": null,
+      "orderOfConnectorsPromotionEnvsList": [],
+      "requestSchemaEnvironmentsList": [],
+      "requestConnectorsEnvironmentsList": []
      }
     }

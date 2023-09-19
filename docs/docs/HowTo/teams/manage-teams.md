@@ -5,7 +5,7 @@ managing and owning specific Kafka topics.
 
 ## Prerequisite
 
-To manage teams in Klaw, including adding, deleting, or updating, you
+To manage teams in Klaw, including adding, deleting, or updating you
 need to log in using a SUPERADMIN account or an account with the
 `ADD_EDIT_DELETE_TEAMS` permission.
 
@@ -27,7 +27,7 @@ To create a new team, follow these steps:
 To update an existing team, follow these steps:
 
 1.  Log in to Klaw.
-2.  Navigate to the \"**Users - Teams** tab and select **Teams**.
+2.  Navigate to the **Users - Teams** tab and select **Teams**.
 3.  Find the team you want to update and select the **Edit/modify** icon
     next to it.
 4.  Modify the necessary details.
@@ -48,7 +48,7 @@ To delete an existing team, follow these steps:
     A team can only be deleted if there are no associated requests for that team.
     :::
 
-4.  On the confirmation screen, select **delete** to confirm deletion of
+4.  On the confirmation screen, select **delete** to confirm the deletion of
     the team. The selected team is deleted.
 
 ![image](../../../static/images/teams/Teams.png)

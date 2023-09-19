@@ -22,7 +22,7 @@ are viewing by the status of the request.
     View all requests that have been created but are yet to be reviewed, approved, or declined. These are your active requests which are yet to be actioned.
 
 - **deleted** <br />
-    View all the requests which you have deleted. These are the requests which have been withdrawn from review and which will never be actioned.
+    View all the requests that you have deleted. These are the requests which have been withdrawn from review and that will never be actioned.
 
 - **declined** <br />
     View all the requests that an approver has declined. These are requests which will never be actioned.

@@ -5,22 +5,23 @@ below procedure, which involves retrieving the topics and their schema
 versions from an existing Schema registry cluster and saving them to the
 topic.
 
-As schemas are owned by Topic Owners, this functionality allows you to
+As Topic Owners own schemas, this functionality allows you to
 select topics with schemas and synchronize them with Klaw metadata.
 
 
 :::note
-A schema can have multiple versions. During this process, any existing
-    schema (including all versions) in Klaw for the selected topic will be
-    deleted and replaced with the schema (including all versions) available
-    in the Schema Registry server.
+A schema can have multiple versions. During synchronization, Klaw will delete and replace any existing schema and its versions associated with the selected topics with those available on the Schema Registry server.
 :::
 
-1.  Log in as a SUPERADMIN or user with the `SYNC_SCHEMAS` permission.
-2.  Navigate to the Synchronize menu and select **Schemas from
-    cluster**.
-3.  Synchronize schemas with the following option:
-    -   `Individual Options` Select one or more topics individually
+## Prerequisites
+
+- **User Permissions**: Log in with a user account with either a `SUPERADMIN` or a user with the `SYNC_SCHEMAS` permission.
+
+## Steps to synchronize schemas
+
+1. Navigate to the **Synchronize** menu and select **Schemas from cluster**.
+2.  Synchronize schemas using following option:
+    -   `Individual Options`: Select one or more topics individually
         and save. The selected schemas will now appear in the
         **Schemas** tab in the **TopicOverview** menu.
 
@@ -32,7 +33,7 @@ A schema can have multiple versions. During this process, any existing
     ![image](../../../static/images/sync/SyncSchemasFromCluster.png)
 
     :::note
-    The **Show All** option displays the topics and their associated schemas that have already synchronized with the Schema Registry cluster. These topics require no further action as they can be identified by a green icon.
+    The **Show All** option displays the topics and their associated schemas that have already synchronized with the Schema Registry cluster. These topics require no further action, as a green icon can identify them.
     :::
 
 By following these steps, you can synchronize schemas from a Schema

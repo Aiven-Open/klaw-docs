@@ -4,13 +4,13 @@ Klaw supports data synchronization between Klaw and Apache Kafka® and
 other clusters. This can be accessed through the Synchronize menu
 option.
 
-If you have a new Klaw setup and already have data on other clusters,
-you can synchronize the topics and ACLs from those clusters to Klaw.
+## New Klaw installation 
+Suppose you're setting up a fresh Klaw environment with pre-existing data on other clusters. In that case, Klaw allows for the seamless synchronization of topics and Access Control Lists (ACLs) from those clusters into your new setup.
 
-If your Klaw setup is already in place, for example, if it has been
-restored from a backup or was not affected by a cluster outage, you can
-use the Synchronize option to reinstate topics and/or ACLs on the
-clusters.
+## Existing Klaw environments
+If your Klaw instance is already up and running—restored from a backup or unaffected by a cluster outage—you can leverage the `Synchronize` option to reinstate or update topics and ACLs across clusters, ensuring data consistency and uninterrupted operations.
+
+## Quick links
 
 - [Tenant Configuration](tenant-config)
 

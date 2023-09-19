@@ -1,8 +1,6 @@
 # Connect to Karapace schema registry with SSL protocol
 
-This section provides information on how to connect a Karapace schema
-registry using the SSL protocol. Klaw connects to Schema Registry over
-the REST protocol.
+This section provides information on connecting a Karapace schema registry using the SSL protocol. Klaw connects to the Schema Registry over the REST protocol.
 
 ## Prerequisite
 
@@ -11,8 +9,8 @@ the REST protocol.
     `klaw-core-with-clusterapi`. This
     involves configuring the `klaw.clusterapi.url` setting in the Klaw
     UI and testing the connectivity to ensure the two APIs can
-    communicate over https.
--   Import the Karapce scehma registry public certificate to truststore
+    communicate over HTTPS.
+-   Import the Karapace schema registry public certificate to truststore
     of Klaw. For more information, see [Java keystore and truststore
     containing the service SSL
     certificates](https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html).
@@ -48,16 +46,16 @@ registry cluster with Klaw using SSL protocol:
 7.  Open the `application.properties` file for [cluster-api]
     (klaw/cluster-api/src/main/resources) modules.
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 
-9. In the `application.properties` file for [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties) module, configure Karapace credentials copied from Aiven console
+9. In the `application.properties` file for [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties) module, configure Karapace credentials copied from the Aiven console
 
     ```
     clusterid.klaw.schemaregistry.credentials=username:password
     ```
 
-    Replace clusterid with Klaw cluster Id copied from Klaw UI.
+    Replace `clusterid` with Klaw cluster Id copied from Klaw UI.
 
 10. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster

@@ -10,7 +10,7 @@ access will be granted based on the request.
 ## Manage subscriptions in Kafka
 
 Apache Kafka ships with a pluggable authorization framework. Kafka
-provides default implementations which store ACLs in the cluster
+provides default implementations that store ACLs in the cluster
 metadata For a deeper understanding of Acls, see [Kafka Authorization
 and ACLs](https://kafka.apache.org/documentation/#security_authz)
 

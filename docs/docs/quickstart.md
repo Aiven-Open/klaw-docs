@@ -27,20 +27,21 @@ docker run -d -t -i \
 --name klaw-schema-registry bitnami/schema-registry:latest
 ```
 
-This script basically creates klaw, kafka and schema registry processes, and also configures kafka and schema registry servers in klaw.
+This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema 
+registry servers in Klaw.
 
 ## 2. Login to Klaw
 
 After docker has started 5 processes, you may verify them by `docker ps`.
-Now you may login to Klaw here  [http://localhost:9097/](http://localhost:9097/) with credentials `william : welcome`
+Now you may log into Klaw here  [http://localhost:9097/](http://localhost:9097/) with credentials `william : welcome`
 
 ![Screenshot: Klaw's login page](../static/images/quickstart/QS_LoginScreen.png)
 
 ## 3. Topics Catalog page
 
-After logging in you will be redirected to our brand new feature rich React UI.
+After logging in you will be redirected to our brand-new feature rich React UI.
 
-You can "Request new Topic" from the top right corner, or you can select the drop down "Request a new" to view all your options.
+You can "Request new Topic" from the top right corner, or you can select the dropdown "Request a new" to view all your options.
 
 ![Screenshot: Topic catalog page](../static/images/quickstart/AfterLogin.png)
 
@@ -59,7 +60,7 @@ This will create a topic request for your team member to approve.
 
 ## 5. View your request
 
-Newly created topic request is now visible in My team's requests menu on the side bar
+Newly created topic request is now visible in My team's requests menu on the sidebar
 
 ![Screenshot: "My teams requests" page](../static/images/quickstart/MyRequest.png)
 

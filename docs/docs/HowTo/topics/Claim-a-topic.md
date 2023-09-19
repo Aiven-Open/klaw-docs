@@ -20,5 +20,5 @@ Follow these steps to claim a topic:
 4.  Confirm you wish to claim the topic.
 5.  This will create a single request to claim the topic across all
     environments
-6.  The existing owning team will see the request in their **Approvers**
+6.  The existing owning team will see the request in their **approvers**
     view and be able to approve or decline the request.

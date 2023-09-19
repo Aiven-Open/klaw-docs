@@ -1,7 +1,6 @@
 # Connect to Apache Kafka cluster using SASL protocol
 
-This section provides you with information on how to connect Apache
-Kafka cluster to Klaw using SASL_SSL protocol.
+This section provides information on connecting Klaw to an Apache Kafka cluster using SSL protocol.
 
 ## Prerequisite
 
@@ -25,22 +24,20 @@ cluster in Klaw using SASL_SSL protocol:
     -   **Cluster Name:** Provide a name for the cluster
     -   **Protocol:** Select SASL_SSL protocol for your cluster
     -   **Kafka Flavor:** Select Apache Kafka as the flavor
-    -   **Bootstrap server:** Enter the bootstrap servers details for an Apache Kafka cluster.
+    -   **Bootstrap server:** Enter the bootstrap server details for an Apache Kafka cluster.
 
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
     from the **Environments** drop-down menu.
 6.  Click **Add Environment** and enter the details to add your Kafka
     environment.
-7.  Enter an environment name, set the cluster you added from the
-    drop-down list, and configure partitions and replication factor, and
-    tenant (set to default).
+7.  Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication factor, and tenant (set to default).
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
-    icon that is available on the right hand side of the each cluster
+    icon that is available on the right-hand side of each cluster
     row.
 9.  Open the `application.properties` file located in the
     [cluster-api](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources) directory.
-10. Depending on the SASL mechanism you are using, copy one of the below
+10.  Depending on your SASL mechanism, copy one of the below
     properties, replace `clusterid` with the copied cluster id, and save
     the `application.properties` file.
 

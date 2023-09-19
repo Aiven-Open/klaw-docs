@@ -1,7 +1,6 @@
 # Approve Topic
 
-When a topic request is made, a team member other than the request
-creator can review and approve or decline the request.
+When a topic request is made, a team member other than the request creator can review and approve or decline the request.
 
 ## Approve a request
 
@@ -57,7 +56,7 @@ details within Klaw.
         another team.
 
 - **Request Type** <br />
-    The type of request being requested, these can take the form of
+    The type of request being requested, can take the form of
         an action.
 
 - **Create** <br />

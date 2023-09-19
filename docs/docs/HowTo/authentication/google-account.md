@@ -38,8 +38,7 @@ secret, and Tenant Id:
 
     <klaw.superadmin.default.username=superadmin@company.com>
 
-6.  If you have already signed up, you will be directed to the Klaw home
-    page.
+6.  If you have already signed up with Google, you will be redirected to the Klaw home page.
 
     ![image](../../../static/images/authentication/OAuthLogin.png)
 
