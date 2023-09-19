@@ -30,16 +30,14 @@ prerequisites:
 
 ## Klaw Docker QuickStart
 
-Running Klaw in Docker is a simple and efficient way to deploy and
-manage Klaw instances. Follow the steps below to quickly get Klaw up and
-running in Docker.
+Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw instances. Follow the steps below to get Klaw up and running in Docker quickly.
 
 ### 1. Create a Docker Compose file
 
 To begin, create a Docker Compose file called `docker-compose.yml` that
 defines the configuration for running Klaw. For a quick start, you can
 use the following sample Docker Compose file. This configuration deploys
-the latest release of Klaw, utilizes localhost networking for easy
+the latest release of Klaw, and uses localhost networking for easy
 communication between containers, and sets up a local h2 database for
 quick setup.
 
@@ -159,20 +157,19 @@ To verify the installation and access Klaw, follow the steps below:
     page, and look for the `klaw.clusterapi.url` configuration. To use a
     secure connection, update the URL to HTTPS, for example: `http://localhost:9343`
 
-3.  Or if using a Windows or Linux machine ensure you update the URL to
+3.  Or if using a Windows or Linux machine, ensure you update the URL to
     use the container name, for example: `http://klaw-cluster-api:9343`
 
 4.  Click **Test connection**.
 
 ### 5. Next Steps
 
-After successfully verifying your installation, recommend you to follow
-the documentation in `configure-klaw-wizard`{.interpreted-text
+After successfully verifying your installation, recommend following the documentation in `configure-klaw-wizard`{.interpreted-text
 role="doc"}.
 
 ## Klaw Docker Scripts
 
-Klaw also provides Docker scripts that can be downloaded from the
+Klaw also provides Docker scripts you can download from the
 project's GitHub repository. These scripts include a README file that
 explains how to build and deploy the latest version of Klaw. You can
 find these scripts at
@@ -181,9 +178,7 @@ find these scripts at
 ## Enabling HTTPS
 
 A Docker volume is created to store Klaw data to enable HTTPS and secure
-connections between Klaw and Kafka. You can store your keystore and
-truststore in this volume. Make sure to copy the keystore and truststore
-to the Klaw data volume so that they can be accessed at runtime.
+connections between Klaw and Kafka. You can save your keystore and truststore in this volume. Make sure to copy the keystore and truststore to the Klaw data volume so that they can be accessed at runtime.
 
 ## Find Klaw Docker volume location
 

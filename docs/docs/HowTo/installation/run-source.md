@@ -15,12 +15,12 @@ the source.
     A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier, more efficient, and more accessible. This new look and feel is achieved by switching to React.
 
     The redesigned UI is enabled by default since Release 2.4.0. If you
-    want to use Klaw without the preview for now, you can disable it:
+    want to use Klaw without the preview, for now, you can disable it:
 
     -   Configure the property `klaw.coral.enabled` in the
         `application.properties` file to `false` in the module: core.
 
-3. Configure Cluster Api access
+3. Configure Cluster API access
 
     -   Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64 string in the module: core.
     -   Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above base64 string in the module: cluster-api. 
@@ -64,5 +64,4 @@ the source.
 
 ## Next Steps
 
-Once you have finished verifying your installation we recommend you follow
-the documentation in [configure-klaw-wizard](configure-klaw-wizard)
+Once you have finished verifying your installation, we recommend you follow the documentation in [configure-klaw-wizard](configure-klaw-wizard).
