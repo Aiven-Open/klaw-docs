@@ -2,6 +2,7 @@
   "name": "klaw-docs",
   "version": "1.0.0",
   "scripts": {
+    "prepare": "git config --local core.hooksPath .githooks/",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -11,27 +12,25 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "prepare": "git config --local core.hooksPath .githooks/",
-    "lint-staged": "lint-staged",
-    "mdlint": "markdownlint \"**/*.md\" --ignore node_modules",
-    "markdownlint": "markdownlint  \"**/*.md\" --ignore node_modules --fix",
-    "markdownlint:fix": "markdownlint  \"**/*.md\" --ignore node_modules --fix"
+    "lint:code": "eslint . && prettier --check .",
+    "lint:markdown": "markdownlint \"**/*.md\" --ignore node_modules",
+    "lint": "npm run lint:code && npm run lint:markdown",
+    "reformat:code": "eslint . --fix && prettier --write .",
+    "reformat:markdown": "markdownlint \"**/*.md\" --ignore node_modules --fix",
+    "reformat": "npm run reformat:code && npm run reformat:markdown",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [
-      "prettier --check",
-      "eslint"
+      "prettier --check .",
+      "eslint ."
     ],
     "**/*.css": [
-      "prettier --check"
+      "prettier --check ."
     ],
     "**/*.md": [
       "markdownlint \"**/*.md\" --ignore node_modules",
-      "prettier --check"
+      "prettier --check ."
     ]
   },
   "dependencies": {
@@ -70,7 +69,8 @@
       "last 1 safari version"
     ]
   },
+  "engineStrict": true,
   "engines": {
-    "node": ">=16.14"
+    "node": ">=18.0.0 <19.0.0"
   }
 }
