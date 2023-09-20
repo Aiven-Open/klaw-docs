@@ -4,6 +4,8 @@ sidebar_position: 1.1
 
 # Quick Start
 
+In this tutorial, we will install Klaw with docker, and request for a kafka topic and verify its existence on kafka cluster.
+
 ## 1. Run the docker script
 
 ```typescript copy-button
@@ -27,7 +29,7 @@ docker run -d -t -i \
 --name klaw-schema-registry bitnami/schema-registry:latest
 ```
 
-This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema 
+This script basically creates Klaw, Kafka and schema registry docker processes, and also configures Kafka and schema 
 registry servers in Klaw.
 
 ## 2. Login to Klaw

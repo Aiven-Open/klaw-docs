@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1.0
+sidebar_position: 1.2
 ---
 
 # Get started
@@ -52,7 +52,7 @@ configuration so that Klaw understands how your environments are laid
 out. This can be found under **Settings** as the `tenant.config`
 setting.
 
-An example value for a simple `DEV` environment might look something
+An example value for a simple `DEV` environment would look something
 like this:
 
     {
@@ -60,11 +60,20 @@ like this:
      {
       "tenantName": "default",
       "baseSyncEnvironment": "DEV",
-      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
-      "requestTopicsEnvironmentsList": ["DEV", "TST"],
+      "orderOfTopicPromotionEnvsList": ["DEV"],
+      "requestTopicsEnvironmentsList": ["DEV"],
       "baseSyncKafkaConnectCluster": null,
       "orderOfConnectorsPromotionEnvsList": [],
       "requestSchemaEnvironmentsList": [],
       "requestConnectorsEnvironmentsList": []
      }
     }
+
+
+At this stage 
+
+- Cluster is configured
+- Environment is created and associated to cluster
+- Create a Team and users and associate users to teams
+
+All set, and users can now request for topics, acls and schemas.
