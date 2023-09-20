@@ -2,7 +2,7 @@
 slug: Effortless-Kafka-Governance-making-Life-Easier-for-Developers
 title: Effortless Kafka Governance making Life Easier for Developers
 authors: muralibasani
-tags: [kafka,governance,topics,acls,klaw]
+tags: [kafka, governance, topics, acls, klaw]
 date: May 15, 2023
 ---
 
@@ -15,8 +15,8 @@ systems are handled. As more and more organizations adopt Kafka as a
 vital component of their technology stacks, the need for effective Kafka
 governance becomes paramount.
 
-``` bash
-A common challenge companies face is the inability to effectively govern 
+```bash
+A common challenge companies face is the inability to effectively govern
 and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.
 ```
@@ -25,22 +25,22 @@ Managing Kafka topics poses significant challenges for companies, often
 leading to struggles executing the task effectively. Several crucial
 considerations arise when undertaking this endeavor:
 
--   **Authorization and ownership**: Determining who has the rights to
-    produce and consume messages on a specific topic and establishing
-    clear ownership are crucial aspects to address.
--   **Configuration backup and restoration**: Establishing robust
-    strategies for backing up and restoring Kafka's configuration is
-    essential to ensure prompt recovery in the face of failures or
-    system disruptions.
--   **Security measures**: Ensuring the proper enforcement of security
-    measures through subscriptions and access controls is paramount to
-    safeguarding sensitive data and preventing unauthorized access.
--   **Topic promotion**: Navigating the process of smoothly promoting
-    topics with thoroughly tested configurations from lower environments
-    to production requires careful planning and coordination.
--   **Enhancing visibility and awareness**: Increasing the visibility
-    and awareness of topics within the organization facilitates better
-    collaboration and knowledge sharing among teams.
+- **Authorization and ownership**: Determining who has the rights to
+  produce and consume messages on a specific topic and establishing
+  clear ownership are crucial aspects to address.
+- **Configuration backup and restoration**: Establishing robust
+  strategies for backing up and restoring Kafka's configuration is
+  essential to ensure prompt recovery in the face of failures or
+  system disruptions.
+- **Security measures**: Ensuring the proper enforcement of security
+  measures through subscriptions and access controls is paramount to
+  safeguarding sensitive data and preventing unauthorized access.
+- **Topic promotion**: Navigating the process of smoothly promoting
+  topics with thoroughly tested configurations from lower environments
+  to production requires careful planning and coordination.
+- **Enhancing visibility and awareness**: Increasing the visibility
+  and awareness of topics within the organization facilitates better
+  collaboration and knowledge sharing among teams.
 
 Managing a small number of Kafka topics may seem manageable at first.
 However, as Kafka usage grows and more applications and teams are added,
@@ -59,29 +59,29 @@ overall performance.
 
 Let's explore the key challenges that need to be addressed:
 
--    Manual activities
+- Manual activities
 
-     Creating, accessing, and promoting a topic to a higher environment requires extensive email communication, involving approximately 10 emails. This manual approach consumes valuable time and increases potential errors and miscommunication.
+  Creating, accessing, and promoting a topic to a higher environment requires extensive email communication, involving approximately 10 emails. This manual approach consumes valuable time and increases potential errors and miscommunication.
 
--    Longer lead time
+- Longer lead time
 
-     The end-to-end communication and execution of the manual activities take approximately 2.5 hours, excluding the time spent waiting for human responses. This long lead time hampers efficiency and slows down the overall workflow.
+  The end-to-end communication and execution of the manual activities take approximately 2.5 hours, excluding the time spent waiting for human responses. This long lead time hampers efficiency and slows down the overall workflow.
 
--    Security
+- Security
 
-     The system faces Role-Based Access Control (RBAC) and data security-related challenges. Ensuring proper access rights and safeguarding sensitive information is crucial for maintaining the integrity and confidentiality of the system.
+  The system faces Role-Based Access Control (RBAC) and data security-related challenges. Ensuring proper access rights and safeguarding sensitive information is crucial for maintaining the integrity and confidentiality of the system.
 
--    Lack of audit
-     
-     No proper auditing mechanism is in place to track and monitor requests. This lack of audit trails creates an accountability gap, making identifying and rectifying potential issues or discrepancies challenging.
+- Lack of audit
 
--    Adhoc governance
+  No proper auditing mechanism is in place to track and monitor requests. This lack of audit trails creates an accountability gap, making identifying and rectifying potential issues or discrepancies challenging.
 
-     The absence of a centralized governance setup adds complexity to the system. All actions are initiated through emails, and the request approver list is maintained in spreadsheets or confluence.
+- Adhoc governance
 
--    Release management
+  The absence of a centralized governance setup adds complexity to the system. All actions are initiated through emails, and the request approver list is maintained in spreadsheets or confluence.
 
-     The manual release processes, mainly promoting configurations from one environment to another, introduce a significant risk of errors. These errors can cause system outages, leading to disruptions in service and impacting user experience.
+- Release management
+
+  The manual release processes, mainly promoting configurations from one environment to another, introduce a significant risk of errors. These errors can cause system outages, leading to disruptions in service and impacting user experience.
 
 ![image](../../../static/images/blogimages/kafka-clusters.png)
 
@@ -108,15 +108,15 @@ To ensure a fail-safe Kafka system, it is crucial to mitigate these
 challenges by implementing a robust governance platform. This platform
 should encompass the following essential capabilities:
 
--   **Comprehensive visibility**: Providing a holistic view of topics,
-    producers, consumers, schemas, and connectors.
--   **Secure configuration management**: Implementing a four-eye
-    principle-based system for reviews and approvals to maintain the
-    safety and consistency of configurations.
--   **Notifications**: Alerting users about changes to schemas and other
-    configurations.
--   **Action tracking**: Maintaining a detailed record of actions
-    performed by different users for transparent accountability.
+- **Comprehensive visibility**: Providing a holistic view of topics,
+  producers, consumers, schemas, and connectors.
+- **Secure configuration management**: Implementing a four-eye
+  principle-based system for reviews and approvals to maintain the
+  safety and consistency of configurations.
+- **Notifications**: Alerting users about changes to schemas and other
+  configurations.
+- **Action tracking**: Maintaining a detailed record of actions
+  performed by different users for transparent accountability.
 
 ## Klaw
 
@@ -138,36 +138,36 @@ for its capabilities.
 
 ![image](../../../static/images/blogimages/klaw-features.png)
 
--   **Governance**: Ensures accountability and consistency with
-    approvals, audit trails, naming conventions, clear ownership, and a
-    single source of truth.
--   **Self-service**: Empowers developers with search, customizable
-    dashboard, reporting, and multi-tenancy for efficient resource
-    management and data integrity.
--   **Security**: Offers SSO/AD authentication, RBAC, Kafka Security
-    protocols, audit trails, and multi-tenancy to address diverse
-    security needs.
--   **Automation**: Streamlines tasks like resource provisioning, topic
-    promotion, metadata sync, backup/restore, and notifications for time
-    and cost savings.
+- **Governance**: Ensures accountability and consistency with
+  approvals, audit trails, naming conventions, clear ownership, and a
+  single source of truth.
+- **Self-service**: Empowers developers with search, customizable
+  dashboard, reporting, and multi-tenancy for efficient resource
+  management and data integrity.
+- **Security**: Offers SSO/AD authentication, RBAC, Kafka Security
+  protocols, audit trails, and multi-tenancy to address diverse
+  security needs.
+- **Automation**: Streamlines tasks like resource provisioning, topic
+  promotion, metadata sync, backup/restore, and notifications for time
+  and cost savings.
 
 #### Benefits of Klaw
 
--   **Reduced dependency**: By reducing dependency on infrastructure
-    teams and empowering developer teams, Klaw enables faster execution
-    and decision-making, saving time, cost, and effort.
--   **Zero risk of manual errors**: With full self-service capabilities,
-    Klaw eliminates the risk of manual errors, ensuring data accuracy
-    and cost savings.
--   **Continuous integration**: Klaw enables continuous integration by
-    promoting topics and schemas to higher environments, ensuring
-    consistency throughout the development pipeline.
--   **Secure authentication**: Klaw authenticates users based on an
-    organization's single sign-on (SSO) or Active Directory (AD),
-    providing a secure access control mechanism.
--   **Tailored security features**: Klaw offers robust security features
-    that cater to the specific needs of different types of
-    organizations, ensuring data protection and compliance.
+- **Reduced dependency**: By reducing dependency on infrastructure
+  teams and empowering developer teams, Klaw enables faster execution
+  and decision-making, saving time, cost, and effort.
+- **Zero risk of manual errors**: With full self-service capabilities,
+  Klaw eliminates the risk of manual errors, ensuring data accuracy
+  and cost savings.
+- **Continuous integration**: Klaw enables continuous integration by
+  promoting topics and schemas to higher environments, ensuring
+  consistency throughout the development pipeline.
+- **Secure authentication**: Klaw authenticates users based on an
+  organization's single sign-on (SSO) or Active Directory (AD),
+  providing a secure access control mechanism.
+- **Tailored security features**: Klaw offers robust security features
+  that cater to the specific needs of different types of
+  organizations, ensuring data protection and compliance.
 
 ### Klaw project resources
 
@@ -183,7 +183,6 @@ for its capabilities.
 
 [Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster Api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
-
 ## Conclusion
 
 Organizations are devising unique strategies to tackle the growing
@@ -195,6 +194,6 @@ For a comprehensive and streamlined solution that simplifies the tasks
 for both developers and admins, Klaw stands as a highly effective
 one-stop solution.
 
-``` bash
+```bash
 It's free and opensource.
 ```

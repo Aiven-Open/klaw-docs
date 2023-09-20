@@ -14,7 +14,7 @@ notifications. Additionally, make sure you have the `host`, `username`,
 and `password` details as you will need to provide this information to
 enable email notifications in Klaw.
 
-``` {.text caption="Klaw email properties"}
+```{.text caption="Klaw email properties"}
 klaw.admin.mailid=
 klaw.mail.notifications.enable=true
 spring.mail.properties.mail.transport.protocol=smtp
@@ -38,10 +38,10 @@ notificationtype and `.content` These templates can be modified to suit
 local languages, allowing for the rewording of emails and including any
 additional information.
 
-  ### Email matrix
+### Email matrix
 
 | Notification Type          | Requestor | Approver | Requestor Team | Approver Team | All Approvals | Admin |
-|----------------------------|-----------|----------|----------------|---------------|---------------|-------|
+| -------------------------- | --------- | -------- | -------------- | ------------- | ------------- | ----- |
 | User Registration Request  | cc        |          |                |               |               | to    |
 | User Registration Approved | to        |          |                |               |               |       |
 | New Topic Request          | cc        |          |                | to            | bcc           |       |

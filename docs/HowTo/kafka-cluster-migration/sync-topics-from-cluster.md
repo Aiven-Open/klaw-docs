@@ -9,23 +9,22 @@ To synchronize topics from an Apache Kafka cluster with Klaw, follow the procedu
 
 ## Steps to synchronize topics
 
-
 1.  Navigate to the Synchronize menu and select **Topics from Cluster**.
 
 2.  Synchronize topics with either of the following two options:
 
-    -   `Individual Options`: Select one or more topics
-         individually, choose a team, and save. The selected topics
-         will now appear in the **Topics** menu, assigned to the chosen
-         team.
-    -   `Bulk Options` tab: Select all topics from the
-         Kafka cluster at once, choose a team and save. The selected
-         topics will now appear in the **Topics** menu, assigned to the
-         chosen team.
+    - `Individual Options`: Select one or more topics
+      individually, choose a team, and save. The selected topics
+      will now appear in the **Topics** menu, assigned to the chosen
+      team.
+    - `Bulk Options` tab: Select all topics from the
+      Kafka cluster at once, choose a team and save. The selected
+      topics will now appear in the **Topics** menu, assigned to the
+      chosen team.
 
-        ![image](../../../static/images/sync/SyncTopicsFromCluster.png)
+      ![image](../../../static/images/sync/SyncTopicsFromCluster.png)
 
-5.  You can view all the topics and assign topics to a different team by
+3.  You can view all the topics and assign topics to a different team by
     selecting the **Show All** option. This displays all the Apache
     Kafka topics, both assigned and unassigned to any team.
 

@@ -4,8 +4,8 @@ To run Klaw successfully and perform all the necessary operations on a Kafka clu
 
 You can find the `application.properties` file located in the following paths:
 
--   Core: [klaw/core/src/main/resources]
--   Cluster-api: [klaw/cluster-api/src/main/resources]
+- Core: [klaw/core/src/main/resources]
+- Cluster-api: [klaw/cluster-api/src/main/resources]
 
 ## Configure Klaw application.properties file
 
@@ -24,7 +24,6 @@ You can find the `application.properties` file located in the following paths:
 2.  Configure the SSL settings to enable HTTPS
 
     To enable HTTPS for Klaw, you need to configure the following SSL settings in the `application.properties` files for the Klaw Core API and the Klaw Cluster API:
-    
 
     ```
     server.ssl.key-store=client.keystore.p12

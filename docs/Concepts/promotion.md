@@ -39,16 +39,14 @@ order.
    }
 }
 ```
- 
+
 :::note
 In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users to associate a schema registry with a Kafka environment in the Add/Modify Schema Environment pages—matching the order of promotion defined in `orderOfTopicPromotionEnvsList`.
 :::
 
-
 ## Topic promotion
 
 Once a topic is created in the base environment, you can promote it to the next higher-level environment. This will create a promotion request that your teammates can review, approve, or decline. The **Topic Overview** view will show all the environments the topic is configured on, including the environment to which you can promote the topic.
-
 
 ### Promote a topic
 
@@ -64,7 +62,6 @@ To promote a topic to a higher environment, follow these steps:
 ## Schema promotion
 
 In the **Topic Overview**, you can request and view the schema for an individual topic. Release 2.0.0 allows you to promote existing schemas to higher-level environments. To do this, select the specific schema version you want to promote from the lower environment to the higher environment.
-
 
 ### Promote a schema
 
@@ -82,7 +79,6 @@ To promote a schema to a higher environment, follow these steps:
 ### How does Force Register work
 
 When promoting a schema to a higher environment in Klaw, you can use the **Force Register Schema** option, which enables you to register a schema that may not be compatible with previous schemas. By selecting this option, Klaw will change the compatibility of the subject (topic) to **NONE**, register the new schema, and revert to the previous subject compatibility. If the subject compatibility is not set, it will fall back to global compatibility. However, Klaw will not change the global compatibility.
-
 
 :::note
 Requests cannot be approved by the user who raised it. It must be approved by a different user from the same team.

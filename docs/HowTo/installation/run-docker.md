@@ -3,30 +3,30 @@
 Klaw provides Docker images that allow you to run Klaw inside Docker
 containers. There are two Docker images available:
 
--   Core API: `https://hub.docker.com/r/aivenoy/klaw-core`
--   Cluster API: `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
+- Core API: `https://hub.docker.com/r/aivenoy/klaw-core`
+- Cluster API: `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
 
 ## Prerequisites
 
 Before running Klaw in Docker, ensure that you have the following
 prerequisites:
 
--   Docker installed
+- Docker installed
 
--   Docker Compose installed
+- Docker Compose installed
 
--   Generate a minimum 32 character
-    `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`
+- Generate a minimum 32 character
+  `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`
 
-    ``` {.bash caption="Bash Generation Example"}
-    echo "ThisIsExactlyA32CharStringSecret" | base64
-    VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
-    ```
+  ```{.bash caption="Bash Generation Example"}
+  echo "ThisIsExactlyA32CharStringSecret" | base64
+  VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
+  ```
 
-    ``` {.bash caption="Powershell Generation Example"}
-    [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("ThisIsExactlyA32CharStringSecret"))
-    VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
-    ```
+  ```{.bash caption="Powershell Generation Example"}
+  [convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("ThisIsExactlyA32CharStringSecret"))
+  VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
+  ```
 
 ## Klaw Docker QuickStart
 
@@ -46,7 +46,7 @@ generated value in docker compose below:
 
 #### Linux docker compose
 
-``` {.yaml caption="Deploy latest Klaw release with docker compose on Linux"}
+```{.yaml caption="Deploy latest Klaw release with docker compose on Linux"}
 ---
 version: '3'
 services:
@@ -78,7 +78,7 @@ volumes:
 
 #### Windows & Mac docker compose
 
-``` {.yaml caption="Deploy latest Klaw release with docker compose on Windows or Mac"}
+```{.yaml caption="Deploy latest Klaw release with docker compose on Windows or Mac"}
 ---
 version: '3'
 services:
@@ -114,10 +114,8 @@ To configure a property, for example,
 `klaw.login.authentication.type=db`, set it up as
 `KLAW_LOGIN_AUTHENTICATION_TYPE: db`.
 
-
     It is important to update the `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET`
     property with a new base64-encoded secret.
-
 
 ### 2. Run Docker Compose
 
@@ -132,7 +130,7 @@ start the containers defined in the Docker Compose file:
 To ensure that the containers are running successfully, use the
 following command to check their status:
 
-``` {.bash caption="Verify docker is running"}
+```{.bash caption="Verify docker is running"}
 #See if both klaw-core and klaw-cluster-api are running
 docker ps
 ```
@@ -148,8 +146,8 @@ To verify the installation and access Klaw, follow the steps below:
 1.  Access Klaw using the below default credentials for the superadmin
     account:
 
-    -   **Username:** `superadmin`
-    -   **Password:** `kwsuperadmin123$$`
+    - **Username:** `superadmin`
+    - **Password:** `kwsuperadmin123$$`
 
     Recommend you change the default credentials before running Klaw in your application.
 
@@ -218,7 +216,7 @@ There are two ways to configure this:
 
     Here is an example of how to update the `docker-compose-klaw.yaml` file:
 
-    ``` {.yaml caption="Override default docker configuration"}
+    ```{.yaml caption="Override default docker configuration"}
     environment:
         KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
         SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;    CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
@@ -242,19 +240,17 @@ There are two ways to configure this:
     `docker-compose` file so that it uses the local copy of the
     `application.properties` file.
 
-
 - Ensure that the `klaw.version` property is updated correctly on the
-version copied over to the volume as this is usually updated during the
-build to keep the API versions in line with the pom version. \* Also,
-ensure that the `application.properties` is renamed to a unique
-properties file name, so you don't accidentally copy over the Core
-properties with the cluster properties and vice versa.
+  version copied over to the volume as this is usually updated during the
+  build to keep the API versions in line with the pom version. \* Also,
+  ensure that the `application.properties` is renamed to a unique
+  properties file name, so you don't accidentally copy over the Core
+  properties with the cluster properties and vice versa.
 
-
-    environment:
-      KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
-      SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
-      SPRING_CONFIG_LOCATION: "/klaw/klaw-application.properties"
+      environment:
+        KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==
+        SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+        SPRING_CONFIG_LOCATION: "/klaw/klaw-application.properties"
 
 ## How to use an existing H2 Database
 

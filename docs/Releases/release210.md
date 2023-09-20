@@ -21,13 +21,13 @@ enhancements.
 With the switch to React, this release features a redesign of the
 following user interfaces:
 
--   **Approve and Reject Topic Requests**: Users can now approve or
-    reject topic requests using the new UI.
--   **Approve and Reject Subscription Requests** (Producer/Consumer):
-    Users can now approve or reject ACL requests for both producers and
-    consumers using the new UI.
--   **Approve and Reject Schema Requests**: Users can now approve or
-    reject schema requests using the new UI.
+- **Approve and Reject Topic Requests**: Users can now approve or
+  reject topic requests using the new UI.
+- **Approve and Reject Subscription Requests** (Producer/Consumer):
+  Users can now approve or reject ACL requests for both producers and
+  consumers using the new UI.
+- **Approve and Reject Schema Requests**: Users can now approve or
+  reject schema requests using the new UI.
 
 ![image](../../static/images/ApprovalRequestTopic-react.png)
 
@@ -37,7 +37,6 @@ value of the following property to `true`:
 
     # Enable new Klaw user interface
     klaw.coral.enabled=true
-
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out
@@ -52,10 +51,10 @@ Klaw now offers Confluent Cloud Kafka Topics and ACLs support, expanding
 its capabilities to interact with Confluent Cloud Kafka. This release
 includes the implementation of the following APIs:
 
--   [Topic
-    (v3)](https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3))
--   [ACL
-    (v3)](https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3))
+- [Topic
+  (v3)](<https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>)
+- [ACL
+  (v3)](<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>)
 
 For more information, see [Confluent
 Cloud](https://www.klaw-project.io/docs/howto/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol).
@@ -75,4 +74,3 @@ Teams](https://www.klaw-project.io/docs/concepts/switch-teams).
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.1.0>
-

@@ -9,26 +9,28 @@ administrators with additional backup and recovery options.
 Klaw data is classified into the below 3 types.
 
 - Admin configuration comprises of the below entities
-    -   Tenants
-    -   Clusters
-    -   Environments
-    -   Roles
-    -   Permissions
-    -   Teams
-    -   Users
-    -   Properties
+
+  - Tenants
+  - Clusters
+  - Environments
+  - Roles
+  - Permissions
+  - Teams
+  - Users
+  - Properties
 
 - Core configuration comprises of the below
-    -   Topics
-    -   Subscriptions
-    -   Schemas
-    -   Connectors
+
+  - Topics
+  - Subscriptions
+  - Schemas
+  - Connectors
 
 - Requests data comprises of the below
-    -   Topic requests
-    -   Subscription requests
-    -   Schema requests
-    -   Connector requests
+  - Topic requests
+  - Subscription requests
+  - Schema requests
+  - Connector requests
 
 ## How can data be exported?
 
@@ -44,6 +46,6 @@ To export data, follow these steps:
 The exported files typically include the following examples in the
 configured export directory:
 
--   kwmetadata-admin_config-2023-04-03-09-42-00501.json
--   kwmetadata-kwdata-2023-04-03-09-42-00501.json
--   kwmetadata-kwrequests_data-2023-04-03-09-42-00501.json
+- kwmetadata-admin_config-2023-04-03-09-42-00501.json
+- kwmetadata-kwdata-2023-04-03-09-42-00501.json
+- kwmetadata-kwrequests_data-2023-04-03-09-42-00501.json

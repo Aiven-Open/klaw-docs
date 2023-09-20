@@ -16,7 +16,7 @@ URL: [https://host:port/helpwizard]
     The first step is to configure your Kafka cluster. You can add any
     number of clusters. Only users with SUPERADMIN roles (or check allowed
     permission) can add clusters.
-    
+
     After adding the cluster, based on the protocol selected (SSL or any
     other protocol), ensure the Klaw Cluster API's `application.properties`
     files include the relevant configurations.
@@ -48,7 +48,7 @@ URL: [https://host:port/helpwizard]
 
     After configuring environments, you can test the connection by clicking
     the validate button.
-    
+
     ![image](../../../static/images/general/EnvStatus.png)
 
 4.  Configure Tenant and Environment hierarchy
@@ -59,7 +59,7 @@ URL: [https://host:port/helpwizard]
     Settings**, and look for [klaw.tenant.config].
 
     Example :
-    
+
     ```
     {
       "tenantModel": {
@@ -84,7 +84,7 @@ URL: [https://host:port/helpwizard]
     individually or with a bulk option, assigning all at a time to one team.
     Users can synchronize topics from cluster to Klaw with `SYNC_TOPICS`
     permission.
-    
+
     ![image](../../../static/images/topic/SyncTopicsFromCluster.png)
 
 6.  Create Teams

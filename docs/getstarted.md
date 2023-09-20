@@ -9,7 +9,7 @@ sidebar_position: 1.3
 If you have not setup Klaw, see [Klaw installation](HowTo/installation).
 Once Klaw is up and running, the next step is to connect it to your
 Apache Kafka® service. Whether you are running this locally, or using a
-hosted service, the steps below will get you started. 
+hosted service, the steps below will get you started.
 
 ## Add a cluster
 
@@ -34,12 +34,12 @@ clusters at different stages of the lifecycle, such as staging and
 production.
 
 1. Navigate to **Environments** and under **Kafka Environments**,
-    choose **Add Environment**.
+   choose **Add Environment**.
 2. Pick an environment, and link a cluster to it. You can add more
-    cluster/environment combinations as needed to suit your setup.
+   cluster/environment combinations as needed to suit your setup.
 3. Configure the default and maximum values for this environment. Users
-    will see this information when they are requesting new topics, so
-    this ensures consistency across complex setups.
+   will see this information when they are requesting new topics, so
+   this ensures consistency across complex setups.
 4. Save the environment.
 5. Check the connection status by clicking the **status** icon for your
    new environment. Klaw will test the connection and return the

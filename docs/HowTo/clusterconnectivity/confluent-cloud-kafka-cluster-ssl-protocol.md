@@ -5,12 +5,12 @@ platform, deployable in a cloud, maintained by Confluent. This section
 provides you with information on how to connect Confluent Cloud Kafka
 cluster with Klaw. The following functionalities are available in Klaw for Confluent Cloud:
 
--   Create Topics
--   Delete Topics
--   Create ACLs
--   Delete ACLs
--   Sync Topics
--   Sync ACLs
+- Create Topics
+- Delete Topics
+- Create ACLs
+- Delete ACLs
+- Sync Topics
+- Sync ACLs
 
 References :
 
@@ -19,12 +19,12 @@ References :
 
 ## Prerequisite
 
--   Set up the connection between the Klaw APIs (Core API and Cluster
-    API), see `klaw-core-with-clusterapi`.
-    This involves configuring the `klaw.clusterapi.url` setting in the
-    Klaw UI and testing the connectivity to ensure the two APIs can
-    communicate.
--   Both the Klaw Apis are running on SSL/HTTPS.
+- Set up the connection between the Klaw APIs (Core API and Cluster
+  API), see `klaw-core-with-clusterapi`.
+  This involves configuring the `klaw.clusterapi.url` setting in the
+  Klaw UI and testing the connectivity to ensure the two APIs can
+  communicate.
+- Both the Klaw Apis are running on SSL/HTTPS.
 
 ## Configure and connect using SSL/ApiKeys
 
@@ -35,11 +35,11 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
 
-    -   **Cluster Type:** Select **Kafka** from the drop-down list
-    -   **Cluster Name:** Provide a name for the cluster
-    -   **Protocol:** Select SSL protocol for your cluster
-    -   **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-    - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud Kafka cluster (without <https://>). Ex: 
+    - **Cluster Type:** Select **Kafka** from the drop-down list
+    - **Cluster Name:** Provide a name for the cluster
+    - **Protocol:** Select SSL protocol for your cluster
+    - **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
+    - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud Kafka cluster (without <https://>). Ex:
       `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4.  Click **Save**.
@@ -55,7 +55,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
     [klaw/cluster-api/src/main/resources] directory.
 10. Configure the Apikey, Api secret, uris to connect to Confluent Cloud
     Kafka clusters by copying and editing the following lines:
-    
+
     ```
     #clusterid.klaw.confluentcloud.credentials=apikey:apisecret
     #clusterid.klaw.clusters.counfluentcloud.acls.api=/kafka/v3/clusters/{cluster_id}/acls
@@ -63,11 +63,10 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
     #Example :
     dev3.klaw.clusters.counfluentcloud.acls.api=/kafka/v3/clusters/abc-ab1abc/acls
     ```
-    
+
     - Copy the {cluster_id} from the Confluent Cloud portal (Cluster Settings > General > Identification > Cluster ID) and insert into the API URI.
     - Copy the API key/secrets from Confluent Cloud > API Keys.
-    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.  Save the `application.properties` file.
-
+    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID. Save the `application.properties` file.
 
 11. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud

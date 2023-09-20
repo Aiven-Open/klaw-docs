@@ -10,83 +10,71 @@ Every installation of Klaw comes with a single (default) tenant.
 
 You can configure the following in a tenant:
 
--   
+- Base sync environment
 
-    Base sync environment
+  This is the base Apache Kafka environment in a hierarchy of
+  environments. Make sure this environment already exists under
+  Environments (Kafka).
 
-    This is the base Apache Kafka environment in a hierarchy of
-        environments. Make sure this environment already exists under
-        Environments (Kafka).
+      Field: baseSyncEnvironment
 
-        Field: baseSyncEnvironment
+- Order of Kafka Topics promotion environments
 
--   
+  Define a set of environments in order to promote a
+  Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
+  environment already exists under Environments (Kafka)
 
-    Order of Kafka Topics promotion environments
+      Field: orderOfTopicPromotionEnvsList
 
-    Define a set of environments in order to promote a
-        Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
-        environment already exists under Environments (Kafka)
+- Request Topics Environments List
 
-        Field: orderOfTopicPromotionEnvsList
+  Define a set of environments for which Kafka topics can be
+  requested directly. Other environments cannot be requested
+  directly, and topics can only be promoted to them.
 
--   
+      Field: requestTopicsEnvironmentsList
 
-    Request Topics Environments List
+- Base sync environment Kafka Connector
 
-    Define a set of environments for which Kafka topics can be
-        requested directly. Other environments cannot be requested
-        directly, and topics can only be promoted to them.
+  This is the base Kafka connect environment in a hierarchy of
+  environments. Make sure this environment already exists under
+  Environments (Kafka connect).
 
-        Field: requestTopicsEnvironmentsList
+      Field: baseSyncKafkaConnectCluster
 
--   
+- Order of Kafka Connect promotion environments
 
-    Base sync environment Kafka Connector
+  Define a set of environments in order to promote a
+  Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
+  environment already exists under Environments (Kafka connect)
 
-    This is the base Kafka connect environment in a hierarchy of
-        environments. Make sure this environment already exists under
-        Environments (Kafka connect).
+      Field: orderOfConnectorsPromotionEnvsList
 
-        Field: baseSyncKafkaConnectCluster
+- Request Connectors Environments List
 
--   
+  Define a set of environments for which Kafka connectors can be
+  requested directly. Other environments cannot be requested
+  directly, and connectors can only be promoted to them.
 
-    Order of Kafka Connect promotion environments
+      Field: requestConnectorsEnvironmentsList
 
-    Define a set of environments in order to promote a
-        Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
-        environment already exists under Environments (Kafka connect)
+  Sample Tenant configuration for Property: `klaw.tenant.config`:
 
-        Field: orderOfConnectorsPromotionEnvsList
-
--   
-
-    Request Connectors Environments List
-
-    Define a set of environments for which Kafka connectors can be
-        requested directly. Other environments cannot be requested
-        directly, and connectors can only be promoted to them.
-
-        Field: requestConnectorsEnvironmentsList
-
-    Sample Tenant configuration for Property: `klaw.tenant.config`:
-    
-    ```
-    {
-     "tenantModel":
-     {
-      "tenantName": "default",
-      "baseSyncEnvironment": "DEV",
-      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
-      "requestTopicsEnvironmentsList": ["DEV", "TST"],
-      "baseSyncKafkaConnectCluster": null,
-      "orderOfConnectorsPromotionEnvsList": [],
-      "requestSchemaEnvironmentsList": [],
-      "requestConnectorsEnvironmentsList": []
-     }
-    }
-    ```
+  ```
+  {
+   "tenantModel":
+   {
+    "tenantName": "default",
+    "baseSyncEnvironment": "DEV",
+    "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+    "requestTopicsEnvironmentsList": ["DEV", "TST"],
+    "baseSyncKafkaConnectCluster": null,
+    "orderOfConnectorsPromotionEnvsList": [],
+    "requestSchemaEnvironmentsList": [],
+    "requestConnectorsEnvironmentsList": []
+   }
+  }
+  ```
 
 You can configure the above configurations under **Dashboard** -\>
 **Settings** with a SUPERADMIN role or a user with the

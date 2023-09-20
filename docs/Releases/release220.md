@@ -17,23 +17,23 @@ cluster administration.
 ## What's new in Klaw 2.2.0
 
 Redesigned My Team's Request screens with React UI
-- With the switch to React, this release features a
-redesign of the following user interfaces:
 
--   **My Team's Topic Requests**: Users can now view all of their
-    team's topic requests using the new UI.
--   **My Team's Subscription Requests** (Producer/Consumer): Users can
-    now view all of their team's ACL requests for both producers and
-    consumers using the new UI.
--   **My Team's Schema Requests**: Users can now view all of their
-    team's schema requests using the new UI.
+- With the switch to React, this release features a
+  redesign of the following user interfaces:
+
+- **My Team's Topic Requests**: Users can now view all of their
+  team's topic requests using the new UI.
+- **My Team's Subscription Requests** (Producer/Consumer): Users can
+  now view all of their team's ACL requests for both producers and
+  consumers using the new UI.
+- **My Team's Schema Requests**: Users can now view all of their
+  team's schema requests using the new UI.
 
 ![image](../../static/images/release-220-react-ui.png)
 
 To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
-value of the following property to `true`: 
-
+value of the following property to `true`:
 
     # Enable new Klaw user interface
     klaw.coral.enabled=true
@@ -52,7 +52,7 @@ before creating the schema creation requests. This feature will only be
 bypassed during promotion when the 'force register schema' option is
 selected.
 
-### Masking of ACL information for enhanced security 
+### Masking of ACL information for enhanced security
 
 To enhance security, Klaw now masks IP Addresses, certificates, and Service
 Account credentials from all users except the ACL owner team. This
@@ -72,4 +72,3 @@ data](https://www.klaw-project.io/docs/howto/exportdata).
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.2.0>
-

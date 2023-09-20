@@ -20,26 +20,28 @@ process.
 Klaw data is classified into the below 3 types.
 
 - Admin configuration comprises of the below entities
-    -   Tenants
-    -   Clusters
-    -   Environments
-    -   Roles
-    -   Permissions
-    -   Teams
-    -   Users
-    -   Properties
+
+  - Tenants
+  - Clusters
+  - Environments
+  - Roles
+  - Permissions
+  - Teams
+  - Users
+  - Properties
 
 - Core configuration comprises of the below
-    -   Topics
-    -   Subscriptions
-    -   Schemas
-    -   Connectors
+
+  - Topics
+  - Subscriptions
+  - Schemas
+  - Connectors
 
 - Requests data comprises of the below
-    -   Topic requests
-    -   Subscription requests
-    -   Schema requests
-    -   Connector requests
+  - Topic requests
+  - Subscription requests
+  - Schema requests
+  - Connector requests
 
 ## How can data be imported?
 

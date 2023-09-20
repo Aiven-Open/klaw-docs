@@ -30,4 +30,3 @@ metadata to a Schema Registry cluster.
 :::note
 This synchronization is primarily suitable for migrating to the new schema
 registry clusters.
-

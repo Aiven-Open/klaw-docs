@@ -11,7 +11,7 @@ specified in the `application.properties` file in the core
 (klaw/core/src/main/resources) module. For example, your configuration
 might look something similar to this:
 
-```    
+```
 # Spring JPA properties filedb
 spring.datasource.url=jdbc:h2:file:./klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
 spring.datasource.driver.class=org.h2.Driver

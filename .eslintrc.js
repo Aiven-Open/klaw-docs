@@ -11,7 +11,7 @@ module.exports = {
     "plugin:@docusaurus/recommended",
     "plugin:json/recommended",
     "plugin:react/recommended",
-    "prettier"
+    "prettier",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -22,8 +22,8 @@ module.exports = {
   },
   plugins: ["json", "react"],
   settings: {
-    "react": {
-      "version": "detect", // React version. "detect" automatically picks the version you have installed.
+    react: {
+      version: "detect", // React version. "detect" automatically picks the version you have installed.
     },
   },
   rules: {

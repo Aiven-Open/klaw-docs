@@ -6,52 +6,49 @@
 
 /* You can override the default Infima variables here. */
 
-
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/Inter-Bold.ttf') format('truetype');
+  src: url("./fonts/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Poppins;
-  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
 }
-
 
 h1,
 h2,
 h3 {
   color: var(--color-foreground-primary);
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
   color: var(--color-content-foreground);
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
   color: var(--color-link);
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration-color: var(--color-link--hover);
 }
-
 
 a.muted-link {
   text-decoration: underline;
 }
 
 a:hover {
-  color: #3545BE;
+  color: #3545be;
 }
 
 .custom-note {
@@ -60,7 +57,6 @@ a:hover {
   padding: 16px;
   margin-bottom: 16px;
 }
-
 
 :root {
   --ifm-color-primary: #0e1652;
@@ -72,7 +68,11 @@ a:hover {
   --ifm-color-primary-lightest: #121d6b;
 }
 .hero--primary {
-  background-image: linear-gradient(180.0deg, rgba(14, 22, 82, 1.0) 0%, rgba(34, 47, 149, 1.0) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(14, 22, 82, 1) 0%,
+    rgba(34, 47, 149, 1) 100%
+  );
   color: var(--ifm-font-color-base-inverse);
 }
 
@@ -81,21 +81,25 @@ a:hover {
 }
 
 /* Overriding root Infima variables */
-[data-theme='dark'] {
-  --ifm-color-primary: #B9C5EF;
+[data-theme="dark"] {
+  --ifm-color-primary: #b9c5ef;
   background: #303030;
 }
 /* Styling one class specially in dark mode */
-[data-theme='dark'] .purple-text {
+[data-theme="dark"] .purple-text {
   color: rgb(181, 160, 181);
 }
 
-[data-theme='dark'] .hero--primary {
-  background-image: linear-gradient(180.0deg, rgba(166, 166, 166, 1.0) 0%, rgba(235, 235, 235, 1.0) 100%);
+[data-theme="dark"] .hero--primary {
+  background-image: linear-gradient(
+    180deg,
+    rgba(166, 166, 166, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
   color: var(--ifm-font-color-base-inverse);
 }
 
-[data-theme='dark'] .navbar__link {
+[data-theme="dark"] .navbar__link {
   color: #ffffff;
 }
 
@@ -103,6 +107,6 @@ a:hover {
   background-color: #1a1b22;
 }
 
-[data-theme='dark'] .footer--dark {
-  background-color: #7F7F7F;
+[data-theme="dark"] .footer--dark {
+  background-color: #7f7f7f;
 }

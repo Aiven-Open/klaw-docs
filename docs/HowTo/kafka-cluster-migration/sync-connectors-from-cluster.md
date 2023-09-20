@@ -16,10 +16,10 @@ them to a team in Klaw.
 
 2.  Synchronize connectors with the following option:
 
-    -   Select one or more connectors individually, choose a team, and
-        save.
-    -   The selected connector will now appear in the **Apache Kafka
-        Connect** menu, assigned to the chosen team.
+    - Select one or more connectors individually, choose a team, and
+      save.
+    - The selected connector will now appear in the **Apache Kafka
+      Connect** menu, assigned to the chosen team.
 
     ![image](../../../static/images/sync/SyncConnectorsFromCluster.png)
 

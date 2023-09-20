@@ -7,8 +7,8 @@ decline any schema request.
 
 ## Prerequisites
 
--   The Superadmin must configure the environment within Klaw. See
-    [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
+- The Superadmin must configure the environment within Klaw. See
+  [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
 
 ## Make a schema request
 
@@ -46,17 +46,17 @@ decline any schema request.
 When you submit a Schema Request, the Schema will be checked for
 validation against the Schema Registry.
 
-In case of errors, Klaw provides the following failure messages: 
+In case of errors, Klaw provides the following failure messages:
 
 - **Schema is not compatible**: This message indicates that the submitted
-Schema fails to comply with the Schema Compatibility set on the schema
-registry. To fix this issue, review the Schema to see what is causing
-the compatibility problem. 
+  Schema fails to comply with the Schema Compatibility set on the schema
+  registry. To fix this issue, review the Schema to see what is causing
+  the compatibility problem.
 
 - **Unable to validate Schema
-Compatibility**: It indicates that the submitted Schema may be invalid
-or missing the required Schema definition fields. It could also occur if
-there is a problem with communication to the Schema Registry, such as if
-it is not reachable. To fix this issue, review your Schema to ensure it
-is correctly defined. If it is, contact your administrator to resolve
-the issue with communication to the Schema Registry.
+  Compatibility**: It indicates that the submitted Schema may be invalid
+  or missing the required Schema definition fields. It could also occur if
+  there is a problem with communication to the Schema Registry, such as if
+  it is not reachable. To fix this issue, review your Schema to ensure it
+  is correctly defined. If it is, contact your administrator to resolve
+  the issue with communication to the Schema Registry.

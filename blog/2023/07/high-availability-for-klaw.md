@@ -2,10 +2,20 @@
 slug: high-availability-for-klaw
 title: High availability for Klaw
 authors: muralibasani
-tags: [kafka,governance,topics,acls,klaw, high availability,fault tolerance,active,passive]
+tags:
+  [
+    kafka,
+    governance,
+    topics,
+    acls,
+    klaw,
+    high availability,
+    fault tolerance,
+    active,
+    passive,
+  ]
 date: July 4, 2023
 ---
-
 
 ## Background
 
@@ -57,22 +67,22 @@ paramount. Downtime can have dire consequences ranging from slight
 inconveniences to lost revenue and a damaged reputation. High
 Availability for Klaw addresses these critical issues:
 
--   Minimizing downtime: By eliminating single points of failure and
-    ensuring redundancy in the system, HA for Klaw minimizes or
-    eliminates downtime.
--   Scalability: As the workload increases, Klaw can handle a higher
-    number of requests, catering to a growing user base, thanks to the
-    HA configuration.
--   Data availability: Ensuring that the data is always available, even
-    in the case of component failures, is crucial. HA ensures the data
-    is replicated across different servers, safeguarding against data
-    loss.
--   Service continuity: In the event of a disaster or system failure, HA
-    ensures that there is no interruption in service and the operations
-    continue without a hitch.
--   Enhanced user experience: Constant availability and reliability
-    improve user experience, which is vital for customer satisfaction
-    and retention.
+- Minimizing downtime: By eliminating single points of failure and
+  ensuring redundancy in the system, HA for Klaw minimizes or
+  eliminates downtime.
+- Scalability: As the workload increases, Klaw can handle a higher
+  number of requests, catering to a growing user base, thanks to the
+  HA configuration.
+- Data availability: Ensuring that the data is always available, even
+  in the case of component failures, is crucial. HA ensures the data
+  is replicated across different servers, safeguarding against data
+  loss.
+- Service continuity: In the event of a disaster or system failure, HA
+  ensures that there is no interruption in service and the operations
+  continue without a hitch.
+- Enhanced user experience: Constant availability and reliability
+  improve user experience, which is vital for customer satisfaction
+  and retention.
 
 ## What is high availability?
 
@@ -135,7 +145,7 @@ based H2 database for storing metadata.
 Klaw is composed of two primary Java applications: the Governance Layer
 and the Cluster Layer.
 
--   Governance layer
+- Governance layer
 
 The governance layer is an integral part of Klaw, responsible for
 handling user interfaces and APIs.
@@ -155,13 +165,13 @@ role and a set of permissions. Additionally, users can be part of
 multiple teams and have the flexibility to switch between them.
 
 - Cluster layer The Cluster Layer is the second Java application within
-Klaw.
-Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
+  Klaw.
+  Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
 
 - User interface switch: By default, users are logged into the
-AngularJS-based interface. However, they have the option to switch to
-the React JS interface. Building React assets requires npm, pnpm, and
-node.
+  AngularJS-based interface. However, they have the option to switch to
+  the React JS interface. Building React assets requires npm, pnpm, and
+  node.
 
 - Metastore Klaw organizes data in the database into three categories:
 
@@ -175,11 +185,11 @@ Requests data: Comprises requests of Topics, ACLs, Schemas and
 Connectors.
 
 - Cache Klaw stores most frequently queried data in a local cache to
-for improved performance and user experience. This effectively reduces
-latency and gives users immediate response from the application.
-However, this cache is reset whenever changes are requested. Deploying
-Klaw in different environments like Development, Testing, Acceptance,
-and Production is essential to streamline the developer experience.
+  for improved performance and user experience. This effectively reduces
+  latency and gives users immediate response from the application.
+  However, this cache is reset whenever changes are requested. Deploying
+  Klaw in different environments like Development, Testing, Acceptance,
+  and Production is essential to streamline the developer experience.
 
 ![image](../../../static/images/blogimages/KlawCache.png)
 
@@ -201,7 +211,6 @@ Core Governance Application / Cluster Application
     | ------------------------ ------ ------------ |
     | Production (HA)          | 4 GB |  Dual-core |
     | ------------------------ ------ ------------ |
-
 
 ### Database management system
 
@@ -237,12 +246,12 @@ applications.
 
 Nginx supports three types of load balancing methods:
 
--   Round-robin: Requests are distributed among the application servers
-    in a cyclic manner.
--   Least-connected: The next request is directed to the server with the
-    fewest active connections.
--   IP-hash: A hash-function based on the client's IP address is used
-    to determine the server to which the next request should be sent.
+- Round-robin: Requests are distributed among the application servers
+  in a cyclic manner.
+- Least-connected: The next request is directed to the server with the
+  fewest active connections.
+- IP-hash: A hash-function based on the client's IP address is used
+  to determine the server to which the next request should be sent.
 
 Detailed information can be found on the official Nginx documentation.
 
@@ -271,7 +280,7 @@ upstream klawgcp {
     listen 80;
     listen [::]:80;
     ssl on;
-    
+
     ssl_certificate     /opt/klaw/certs/service.cert;
     ssl_certificate_key /opt/klaw/certs/service.key;
     ssl_protocols TLSv1.2;
@@ -293,6 +302,7 @@ Below is an example Nginx configuration using Round-Robin load
 balancing:
 
 **Nginx configuration**
+
 ```
 upstream klawgcp {
         round-robin; // load balancing method
@@ -366,7 +376,6 @@ AWS page.
 [Community](https://aiven.io/community/forum/tag/klaw)
 
 [Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster Api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
-
 
 For any questions or discussions, please open an issue on GitHub or
 participate in our Community forum.

@@ -38,4 +38,3 @@ schema details within Klaw.
 :::note
 The request creator cannot approve their own request and will not be
 listed as an approver.
-

@@ -15,56 +15,56 @@ module.
 
 2. Configure the authentication type by setting the value to `ad` in the following property: :
 
-    ```
-    klaw.login.authentication.type=ad
-    ```
+   ```
+   klaw.login.authentication.type=ad
+   ```
 
 3. Enable SSO by setting the value to [true] in the following property
-    ```
+
+   ```
    klaw.enable.sso=true
    ```
 
 4. To enable third-party account-based authentication, find the registration of the third-party account like GitHub or Twitter and replace `registrationid` with the third-party account ID in the following properties. Additionally, provide the appropriate values for ClientId, Client secret, and Tenant Id
-    
-    ```
-    # Uncomment the below OAuth2 configuration to enable Google based authentication
-    #spring.security.oauth2.client.registration.registrationid.client-id=
-    #spring.security.oauth2.client.registration.registrationid.client-secret=
-    #spring.security.oauth2.client.registration.registrationid.redirect-uri=https://localhost:9097/login/oauth2/code/google
-    #spring.security.oauth2.client.registration.registrationid.scope=profile, email
-    #klaw.sso.server.loginurl.registrationid=/oauth2/authorization/registrationid
-    ```
+
+   ```
+   # Uncomment the below OAuth2 configuration to enable Google based authentication
+   #spring.security.oauth2.client.registration.registrationid.client-id=
+   #spring.security.oauth2.client.registration.registrationid.client-secret=
+   #spring.security.oauth2.client.registration.registrationid.redirect-uri=https://localhost:9097/login/oauth2/code/google
+   #spring.security.oauth2.client.registration.registrationid.scope=profile, email
+   #klaw.sso.server.loginurl.registrationid=/oauth2/authorization/registrationid
+   ```
 
 5. Configure an existing SUPERADMIN user from AD to approve new users in the following property for username: :
 
-    ```
-    klaw.superadmin.default.username=superadmin@company.com
-    ```
+   ```
+   klaw.superadmin.default.username=superadmin@company.com
+   ```
 
 6. To add a logo of the third-party provider to the login button, you can update the `application.properties` file with the following entry:
 
-    ```
+   ```
    spring.security.oauth2.client.registration.{provider}.imageURI=assets/images/clients/logo.svg
-    ```
+   ```
 
-    where `{provider}` is the name of the third-party provider, such as GitHub or Okta.
+   where `{provider}` is the name of the third-party provider, such as GitHub or Okta.
 
-    The `imageURI` property specifies the URL of the logo image. The image must be uploaded to the `assets/images/clients` folder before you can use this property.
+   The `imageURI` property specifies the URL of the logo image. The image must be uploaded to the `assets/images/clients` folder before you can use this property.
 
+7. If you have already signed up, you will be directed to the Klaw home
+   page.
 
-7.  If you have already signed up, you will be directed to the Klaw home
-    page.
+   ![image](../../../static/images/authentication/OAuthLogin.png)
 
-    ![image](../../../static/images/authentication/OAuthLogin.png)
+   Enter the credentials for the third party account.
 
-    Enter the credentials for the third party account.
+   :::note
+   Login page for third party account is not fully updated.
+   :::
 
-    :::note
-    Login page for third party account is not fully updated.
-    :::
+8. If this is your first time logging in, you will be presented with a
+   signup form to fill in. On submission, a request will be created for
+   the Klaw Administrator to approve or decline.
 
-8.  If this is your first time logging in, you will be presented with a
-    signup form to fill in. On submission, a request will be created for
-    the Klaw Administrator to approve or decline.
-
-    ![image](../../../static/images/authentication/OAuthSignupForm.png)
+   ![image](../../../static/images/authentication/OAuthSignupForm.png)

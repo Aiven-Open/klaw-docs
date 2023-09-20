@@ -5,17 +5,17 @@ platform, deployable in the cloud of your choice. This section provides informat
 
 ## Prerequisite
 
--   Set up the connection between the Klaw APIs (Core API and Cluster
-    API), see `klaw-core-with-clusterapi`.
-    This involves configuring the `klaw.clusterapi.url` setting in the
-    Klaw UI and testing the connectivity to ensure the two APIs can
-    communicate.
--   A running Aiven for Apache Kafka® service. See [Getting started with
-    Aiven for Apache Kafka for more
-    information](https://docs.aiven.io/docs/products/kafka/getting-started.html).
--   Configured [Java keystore and truststore containing the service SSL
-    certificates](https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html)
-    to access Apache Kafka.
+- Set up the connection between the Klaw APIs (Core API and Cluster
+  API), see `klaw-core-with-clusterapi`.
+  This involves configuring the `klaw.clusterapi.url` setting in the
+  Klaw UI and testing the connectivity to ensure the two APIs can
+  communicate.
+- A running Aiven for Apache Kafka® service. See [Getting started with
+  Aiven for Apache Kafka for more
+  information](https://docs.aiven.io/docs/products/kafka/getting-started.html).
+- Configured [Java keystore and truststore containing the service SSL
+  certificates](https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html)
+  to access Apache Kafka.
 
 ## Configure and connect using SSL protocol
 
@@ -26,18 +26,18 @@ Kafka® and Klaw using SSL protocol:
     **Clusters**.
 2.  On the **Clusters** page, click **Add Cluster**.
 3.  On the **Add Kafka cluster** page, enter the following details:
-    -   **Cluster Type:** Select **Kafka** from the drop-down list
-    -   **Cluster Name:** Provide a name for the cluster
-    -   **Protocol:** Select SSL protocol for your cluster
-    -   **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
-    -   **Project Name:** Select the project name defined in the [Aiven
-    Console](https://console.aiven.io/)
-    -   **Bootstrap server:** Enter the Service URI for your Apache Kafka
-    service. You can find the service URI in the Connection information
-    page of your service in Aiven Console.
-    -   **Service Name:** Enter the name of the service as defined in the
-    [Aiven Console](https://console.aiven.io/) for your Apache Kafka
-    service
+    - **Cluster Type:** Select **Kafka** from the drop-down list
+    - **Cluster Name:** Provide a name for the cluster
+    - **Protocol:** Select SSL protocol for your cluster
+    - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+    - **Project Name:** Select the project name defined in the [Aiven
+      Console](https://console.aiven.io/)
+    - **Bootstrap server:** Enter the Service URI for your Apache Kafka
+      service. You can find the service URI in the Connection information
+      page of your service in Aiven Console.
+    - **Service Name:** Enter the name of the service as defined in the
+      [Aiven Console](https://console.aiven.io/) for your Apache Kafka
+      service
 4.  Click **Save**.
 5.  Add the cluster to the preferred environment. Click **Environments**
     from the **Environments** drop-down menu.
@@ -64,12 +64,12 @@ Kafka® and Klaw using SSL protocol:
 
     It is possible to configure JKS, PKCS12 and PEM certificate types.
 
-    -   For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.
-    -   Replace `client.keystore.p12` with the path for the keystore and `klaw1234` with the password configured for the keystore file.
-    -   Replace `client.truststore.jks` with the path for the truststore and `klaw1234` with the password configured for the truststore file.
-    -   Save the `application.properties` file.
+    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.
+    - Replace `client.keystore.p12` with the path for the keystore and `klaw1234` with the password configured for the keystore file.
+    - Replace `client.truststore.jks` with the path for the truststore and `klaw1234` with the password configured for the truststore file.
+    - Save the `application.properties` file.
 
-    The following is an example of an application.properties file configured  with Klaw cluster ID:
+    The following is an example of an application.properties file configured with Klaw cluster ID:
 
     ```
     demo_cluster.kafkassl.keystore.location=/Users/demo.user/Documents/Klaw/demo-certs/client.keystore.p12

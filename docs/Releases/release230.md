@@ -19,26 +19,26 @@ Connectors interface, improved Topic Overview and Grouping of ACLs.
 In this release, we have redesigned some key user interfaces using React
 to enhance user experience and provide a more intuitive design:
 
--   **Browse Connectors**: With the redesigned user interface for
-    Connectors, you can now explore and filter the available connectors
-    with a more intuitive and user-friendly interface.
--   **Request new Connector**: With the updated user interface, users
-    can now easily submit a request for a new connector.
--   **Approve Connectors requests**: The new user interface makes
-    approving or rejecting Connector requests easy. Access the *Approve
-    requests - connectors* screen to quickly and effortlessly approve or
-    reject requests.
--   **My team's Connectors requests**: In addition to viewing all
-    connectors from the Connectors screen, you can now access an
-    overview of your team's connector requests using our newly designed
-    \"My team's requests\" interface. You can also quickly delete your
-    own requests from this interface.
--   **Improved usability in forms**: We have improved our form
-    submission process by always enabling the Submit buttons. If users
-    click submit while required fields are incomplete or contain invalid
-    inputs, error messages are displayed on all problematic fields. This
-    improvement gives users more autonomy and improves the experience of
-    those using assistive technologies.
+- **Browse Connectors**: With the redesigned user interface for
+  Connectors, you can now explore and filter the available connectors
+  with a more intuitive and user-friendly interface.
+- **Request new Connector**: With the updated user interface, users
+  can now easily submit a request for a new connector.
+- **Approve Connectors requests**: The new user interface makes
+  approving or rejecting Connector requests easy. Access the _Approve
+  requests - connectors_ screen to quickly and effortlessly approve or
+  reject requests.
+- **My team's Connectors requests**: In addition to viewing all
+  connectors from the Connectors screen, you can now access an
+  overview of your team's connector requests using our newly designed
+  \"My team's requests\" interface. You can also quickly delete your
+  own requests from this interface.
+- **Improved usability in forms**: We have improved our form
+  submission process by always enabling the Submit buttons. If users
+  click submit while required fields are incomplete or contain invalid
+  inputs, error messages are displayed on all problematic fields. This
+  improvement gives users more autonomy and improves the experience of
+  those using assistive technologies.
 
 ![image](../../static/images/release-230-react-ui.png)
 
@@ -78,4 +78,3 @@ pattern. Previously, only prefix or suffix validation was available.
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.3.0>
-

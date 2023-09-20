@@ -12,8 +12,8 @@ of the request, can review and either approve or decline it.
 2.  Review all information related to the connector request and approve
     it by selecting the tick button while viewing the pending connector
     requests.
- 
-3. The connector will immediately attempt to be provisioned on
+
+3.  The connector will immediately attempt to be provisioned on
     approval.
 
     If there are any issues during the connector creation, the request will stay in the approvals view for re-approval once the problem is resolved.
@@ -36,4 +36,3 @@ The connector request provides multiple fields that assist the approver in makin
 
 :::tip
 The request creator cannot approve their request and will not be listed as an approver.
-

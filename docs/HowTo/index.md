@@ -1,5 +1,4 @@
-How to
-======
+# How to
 
 How to install and configure Klaw.
 

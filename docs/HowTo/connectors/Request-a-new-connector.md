@@ -7,8 +7,8 @@ Kafka Connector.
 
 ## Prerequisites
 
--   The Superadmin must configure the environment within Klaw. See
-    [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
+- The Superadmin must configure the environment within Klaw. See
+  [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
 
 ## Make a connector request
 
