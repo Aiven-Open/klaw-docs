@@ -1,7 +1,6 @@
 {
-  "name": "website",
-  "version": "0.0.0",
-  "private": true,
+  "name": "klaw-docs",
+  "version": "1.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
