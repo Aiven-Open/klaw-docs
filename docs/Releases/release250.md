@@ -38,7 +38,7 @@ to enhance user experience and provide a more intuitive design:
 
 - Features
 
-* New React UI: Topic Overview including capabilities to
+- New React UI: Topic Overview including capabilities to
   - Review topic details
   - Edit and promote topics
   - Create and promote new schemas

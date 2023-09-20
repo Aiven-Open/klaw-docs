@@ -25,17 +25,13 @@ module.exports = {
     react: {
       version: "detect",
     },
-<<<<<<< Updated upstream
     plugins: ["json", "react"],
     settings: {
-        react: {
-            version: "detect",
-        },
+      react: {
+        version: "detect",
+      },
     },
     rules: {},
     ignorePatterns: ["build"],
-=======
   },
-  ignorePatterns: ["build"],
->>>>>>> Stashed changes
 };

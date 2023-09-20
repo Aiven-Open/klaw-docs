@@ -19,10 +19,10 @@ you need to log in using a SUPERADMIN account or an account with the
 
 To add a new environment in Klaw, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Environments** tab and select **Environments**.
-3.  Select **Add Environment**.
-4.  Select Add Environment for the type of environment you want to add.
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Environments**.
+3. Select **Add Environment**.
+4. Select Add Environment for the type of environment you want to add.
 
 ### Add Kafka environment
 
@@ -80,17 +80,17 @@ To add a **KafkaConnect environment**, enter the following details in the **Add 
 
 To update/modify an existing environment in Klaw, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Environments** tab and select **Environments**.
-3.  Choose the environment you want to update and Select on the
-    **Edit/Modify** icon located in the **Actions** column.
-4.  Update the relevant details.
-5.  Select **Save** to apply your changes.
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Environments**.
+3. Choose the environment you want to update and Select on the
+   **Edit/Modify** icon located in the **Actions** column.
+4. Update the relevant details.
+5. Select **Save** to apply your changes.
 
-    :::note
-    To modify the **Bootstrap servers** and **Protocol** details, you must
-    edit them in the corresponding clusters.
-    :::
+   :::note
+   To modify the **Bootstrap servers** and **Protocol** details, you must
+   edit them in the corresponding clusters.
+   :::
 
 ![image](../../static/images/environments/UpdateEnvironment.png)
 
@@ -98,12 +98,12 @@ To update/modify an existing environment in Klaw, follow these steps:
 
 To delete an existing environment in Klaw, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Environments** tab and select **Environments**.
-3.  Select the **delete** icon next to the environment you want to
-    remove.
-4.  On the Confirmation screen, select **delete** to confirm the
-    deletion of the environment. Once confirmed, the selected
-    environment will be deleted.
+1. Log in to Klaw.
+2. Navigate to the **Environments** tab and select **Environments**.
+3. Select the **delete** icon next to the environment you want to
+   remove.
+4. On the Confirmation screen, select **delete** to confirm the
+   deletion of the environment. Once confirmed, the selected
+   environment will be deleted.
 
 ![image](../../static/images/environments/Environments.png)

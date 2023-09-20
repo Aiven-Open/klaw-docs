@@ -17,13 +17,9 @@
     "prettier:fix": "prettier --write .",
     "prepare": "git config --local core.hooksPath .githooks/",
     "lint-staged": "lint-staged",
-<<<<<<< Updated upstream
     "mdlint": "markdownlint \"**/*.md\" --ignore node_modules",
-    "markdownlint": "markdownlint  \"**/*.md\" --ignore node_modules --fix"
-=======
-    "markdownlint": "markdownlint \"**/*.md\" --ignore node_modules",
+    "markdownlint": "markdownlint  \"**/*.md\" --ignore node_modules --fix",
     "markdownlint:fix": "markdownlint  \"**/*.md\" --ignore node_modules --fix"
->>>>>>> Stashed changes
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [

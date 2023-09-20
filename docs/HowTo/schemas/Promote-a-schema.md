@@ -23,23 +23,23 @@ You can see all created schema environments in the same **Topic Overview
 
 To promote a schema to a higher environment, follow these steps:
 
-1.  Select _Topics_ on the navigation bar.
-2.  Select the specific Kafka Topic you wish to promote a Schema to the
-    higher environment.
-3.  Select the **Schema** tab under the main Topic section.
-4.  Select the **Promote to \[Next Environment\]** button to promote the
-    schema to a higher environment, provided the higher environment has
-    been configured.
-5.  Choose the version of the schema that you want to promote to the
-    higher environment. This schema will be available for your team
-    members to review when they approve or decline the request.
-6.  Optionally, if the Schema you wish to promote is not compatible with
-    the existing schemas on that topic, you can use the **Force Register
-    Schema** option to register the schema.
-7.  Confirm the promotion to the next environment by selecting **Submit
-    Promotion to \[Next Environment\]**
-8.  A schema request is now created for team members to review and
-    approve under the _Approvals_ section.
+1. Select _Topics_ on the navigation bar.
+2. Select the specific Kafka Topic you wish to promote a Schema to the
+   higher environment.
+3. Select the **Schema** tab under the main Topic section.
+4. Select the **Promote to \[Next Environment\]** button to promote the
+   schema to a higher environment, provided the higher environment has
+   been configured.
+5. Choose the version of the schema that you want to promote to the
+   higher environment. This schema will be available for your team
+   members to review when they approve or decline the request.
+6. Optionally, if the Schema you wish to promote is not compatible with
+   the existing schemas on that topic, you can use the **Force Register
+   Schema** option to register the schema.
+7. Confirm the promotion to the next environment by selecting **Submit
+   Promotion to \[Next Environment\]**
+8. A schema request is now created for team members to review and
+   approve under the _Approvals_ section.
 
 ### How does Force Register work
 

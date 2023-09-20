@@ -8,13 +8,13 @@ the final decision.
 
 ## Approve a subscription request
 
-1.  When you log into Klaw, a pop-up will notify you of **Pending
-    Requests**. Select **Yes, show me!** or navigate to **Approve** and
-    select **ACl Requests** to view the pending requests.
-2.  Review all information related to the request and approve it by
-    clicking the tick button while viewing the pending topic requests.
-3.  The subscription will immediately attempt to be provisioned on
-    approval.
+1. When you log into Klaw, a pop-up will notify you of **Pending
+   Requests**. Select **Yes, show me!** or navigate to **Approve** and
+   select **ACl Requests** to view the pending requests.
+2. Review all information related to the request and approve it by
+   clicking the tick button while viewing the pending topic requests.
+3. The subscription will immediately attempt to be provisioned on
+   approval.
 
 :::note
 If there are any issues in the subscription creation, the request will
@@ -23,14 +23,14 @@ remain in the approvals view for re-approval once the issue is resolved.
 
 ## Decline a subscription request
 
-1.  When you log into Klaw, a pop-up will notify you of **Pending
-    Requests**. Select **Yes, show me!** or navigate to **Approve** and
-    select **Acl Requests** to view the pending requests.
-2.  Review the information associated with the topic request and decline
-    it by clicking the **X** button.
-3.  Provide a reason for declining the request.
-4.  The request will be declined, and the creator will receive an email
-    with your reason for declining the request.
+1. When you log into Klaw, a pop-up will notify you of **Pending
+   Requests**. Select **Yes, show me!** or navigate to **Approve** and
+   select **Acl Requests** to view the pending requests.
+2. Review the information associated with the topic request and decline
+   it by clicking the **X** button.
+3. Provide a reason for declining the request.
+4. The request will be declined, and the creator will receive an email
+   with your reason for declining the request.
 
 ## Review a subscription request
 

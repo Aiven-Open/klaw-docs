@@ -30,7 +30,7 @@ implementing these measures, we can ensure continuous operation, enhance
 reliability, and deliver a seamless user experience, even during
 unexpected failures.
 
-**Why High Availability matters**
+### Why High Availability matters
 
 High availability (HA) is a design principle to ensure operational
 continuity over a given period. For Klaw, being an essential tool in
@@ -44,7 +44,7 @@ equipped to automatically recover from component failures, thereby
 reducing the impact of these events and providing users with a seamless
 experience.
 
-**Importance of High Availability in Klaw**
+### Importance of High Availability in Klaw
 
 Kafka clusters can be complex and substantial, making effective
 management and monitoring crucial. A failure in these operations can
@@ -58,7 +58,7 @@ and its critical role in Klaw, let's explore the architectural design
 that supports it, the internal components of Klaw, and how to configure
 Klaw for high availability.
 
-**What Problem Does High Availability for Klaw Solve?**
+### What Problem Does High Availability for Klaw Solve?
 
 Before diving into what High Availability is, let's understand why
 it's crucial for Klaw. As Klaw is essential in managing and monitoring
@@ -166,7 +166,8 @@ multiple teams and have the flexibility to switch between them.
 
 - Cluster layer The Cluster Layer is the second Java application within
   Klaw.
-  Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka, Schema Registry, Kafka Connect).
+  Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka,
+  Schema Registry, Kafka Connect).
 
 - User interface switch: By default, users are logged into the
   AngularJS-based interface. However, they have the option to switch to
@@ -268,9 +269,9 @@ balancing method.
 
 Below is an example of Nginx configuration using the IP-Hash method:
 
-**Nginx configuration**
+### Nginx configuration
 
-```
+```nginx
 upstream klawgcp {
     ip_hash; // load balancing method
     server klawhost1:9097;
@@ -301,9 +302,7 @@ Least-Connected load balancing methods can be used.
 Below is an example Nginx configuration using Round-Robin load
 balancing:
 
-**Nginx configuration**
-
-```
+```nginx
 upstream klawgcp {
         round-robin; // load balancing method
         server klawhost1:9097;
@@ -345,12 +344,12 @@ ACLs, etc.
 To ensure proper cache reset across Klaw instances, you must configure
 the following property with the comma-separated list of instance hosts:
 
-> klaw.uiapi.servers=https://klawhost1:port,https:klawhost2:port..
+> `klaw.uiapi.servers=https://klawhost1:port,https:klawhost2:port..`
 
 This configuration ensures all requests are directed to the various Klaw
 instances using the Nginx load-balancing configuration.
 
-**Other Load Balancers**
+#### Other Load Balancers
 
 Spring Cloud Load Balancer: Allows client-side load balancing. For more
 information, see the official guide.
@@ -380,6 +379,4 @@ AWS page.
 For any questions or discussions, please open an issue on GitHub or
 participate in our Community forum.
 
-```
-It's free and opensource.
-```
+**It's free and opensource.**

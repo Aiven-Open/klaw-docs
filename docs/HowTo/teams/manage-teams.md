@@ -13,12 +13,12 @@ need to log in using a SUPERADMIN account or an account with the
 
 To create a new team, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Users - Teams** tab and select **Teams**.
-3.  Select **Add team** and provide the necessary details in the **Add
-    team** screen.
-4.  Select **Save** to save the information and create the new team
-    successfully.
+1. Log in to Klaw.
+2. Navigate to the **Users - Teams** tab and select **Teams**.
+3. Select **Add team** and provide the necessary details in the **Add
+   team** screen.
+4. Select **Save** to save the information and create the new team
+   successfully.
 
 ![image](../../../static/images/teams/NewTeam.png)
 
@@ -26,12 +26,12 @@ To create a new team, follow these steps:
 
 To update an existing team, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Users - Teams** tab and select **Teams**.
-3.  Find the team you want to update and select the **Edit/modify** icon
-    next to it.
-4.  Modify the necessary details.
-5.  Click **Save** to apply your changes.
+1. Log in to Klaw.
+2. Navigate to the **Users - Teams** tab and select **Teams**.
+3. Find the team you want to update and select the **Edit/modify** icon
+   next to it.
+4. Modify the necessary details.
+5. Click **Save** to apply your changes.
 
 ![image](../../../static/images/teams/UpdateTeam.png)
 
@@ -39,16 +39,16 @@ To update an existing team, follow these steps:
 
 To delete an existing team, follow these steps:
 
-1.  Log in to Klaw.
-2.  Navigate to the **Users - Teams** tab and select **Teams**.
-3.  Find the team you want to delete and select the delete icon next to
-    it.
+1. Log in to Klaw.
+2. Navigate to the **Users - Teams** tab and select **Teams**.
+3. Find the team you want to delete and select the delete icon next to
+   it.
 
-    :::note
-    A team can only be deleted if there are no associated requests for that team.
-    :::
+   :::note
+   A team can only be deleted if there are no associated requests for that team.
+   :::
 
-4.  On the confirmation screen, select **delete** to confirm the deletion of
-    the team. The selected team is deleted.
+4. On the confirmation screen, select **delete** to confirm the deletion of
+   the team. The selected team is deleted.
 
 ![image](../../../static/images/teams/Teams.png)

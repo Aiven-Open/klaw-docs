@@ -86,7 +86,7 @@ credentials.
 A sample configuration of Azure AD based authentication for Klaw is as
 shown below:
 
-```
+```java
 klaw.sso.server.loginurl=/oauth2/authorization/azure
 spring.cloud.azure.active-directory.enabled=true
 spring.cloud.azure.active-directory.profile.tenant-id=tenantid

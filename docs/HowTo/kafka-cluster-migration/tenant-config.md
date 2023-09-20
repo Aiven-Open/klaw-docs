@@ -60,19 +60,18 @@ You can configure the following in a tenant:
 
   Sample Tenant configuration for Property: `klaw.tenant.config`:
 
-  ```
+  ```json
   {
-   "tenantModel":
-   {
-    "tenantName": "default",
-    "baseSyncEnvironment": "DEV",
-    "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
-    "requestTopicsEnvironmentsList": ["DEV", "TST"],
-    "baseSyncKafkaConnectCluster": null,
-    "orderOfConnectorsPromotionEnvsList": [],
-    "requestSchemaEnvironmentsList": [],
-    "requestConnectorsEnvironmentsList": []
-   }
+    "tenantModel": {
+      "tenantName": "default",
+      "baseSyncEnvironment": "DEV",
+      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+      "requestTopicsEnvironmentsList": ["DEV", "TST"],
+      "baseSyncKafkaConnectCluster": null,
+      "orderOfConnectorsPromotionEnvsList": [],
+      "requestSchemaEnvironmentsList": [],
+      "requestConnectorsEnvironmentsList": []
+    }
   }
   ```
 

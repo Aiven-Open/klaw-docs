@@ -24,7 +24,9 @@ an overview of the key concepts related to ownership in Klaw.
 
 Request and approval
 
-One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka® landscape. Developers can **request** new topics, schemas, ACLs, or connectors themselves. The request is then reviewed and **approved** by another member of the same team.
+One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka® landscape. Developers
+can **request** new topics, schemas, ACLs, or connectors themselves. The request is then reviewed and **approved** by
+another member of the same team.
 
 :::note
 This is the default configuration. The default configuration permits
@@ -49,22 +51,22 @@ governance of the system.
 Within this approval process, different roles come into play, each with
 its unique responsibilities and permissions. These roles include:
 
-1.  **Resource Owners Team**: When transferring ownership between
-    teams, the current resource owner provides the necessary approval.
-2.  **Requestors Team**: Usually, a fellow team member reviews and
-    either approves or declines a request.
-3.  **All Approvers**: Users assigned the `APPROVE_ALL_REQUESTS_TEAMS`
-    permission can approve any request from any team.
-4.  **Admin**: Admin users manage Klaw, primarily reviewing and
-    approving user requests unless they are also assigned the
-    `APPROVE_ALL_REQUESTS_TEAMS` permission.
+1. **Resource Owners Team**: When transferring ownership between
+   teams, the current resource owner provides the necessary approval.
+2. **Requestors Team**: Usually, a fellow team member reviews and
+   either approves or declines a request.
+3. **All Approvers**: Users assigned the `APPROVE_ALL_REQUESTS_TEAMS`
+   permission can approve any request from any team.
+4. **Admin**: Admin users manage Klaw, primarily reviewing and
+   approving user requests unless they are also assigned the
+   `APPROVE_ALL_REQUESTS_TEAMS` permission.
 
 ## User Requests
 
 The table below outlines the roles responsible for approving user
 registration requests:
 
-**New user approver matrix**
+### New user approver matrix
 
 | Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
 | ------------------------- | -------------------- | --------------- | ------------- | ----- |
@@ -89,7 +91,7 @@ this team has the right to delete the topic.
 The table below outlines the roles responsible for approving various
 topic-related requests:
 
-**Topic approver matrix**
+#### Topic approver matrix
 
 | Operation Type        | Resource Owners Team | Requestors Team | All Approvers | Admin |
 | --------------------- | -------------------- | --------------- | ------------- | ----- |
@@ -110,7 +112,7 @@ become the owners of that connector.
 The table below outlines the roles responsible for approving various
 connector-related requests:
 
-**Connector approver matrix**
+#### Connector approver matrix
 
 | Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
 | ------------------------- | -------------------- | --------------- | ------------- | ----- |
@@ -132,7 +134,7 @@ evolution.
 The table below outlines the roles responsible for approving various
 schema-related requests:
 
-**Schema approver matrix**
+#### Schema approver matrix
 
 | Operation Type         | Resource Owners Team | Requestors Team | All Approvers | Admin |
 | ---------------------- | -------------------- | --------------- | ------------- | ----- |
@@ -141,7 +143,9 @@ schema-related requests:
 | Promote Schema Request |                      | ✅              | ✅            |       |
 
 :::note
-With Schemas, there is no specific Claim Schema as it is assigned to a Topic. The owner of the Topic also owns the Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an incremented version number is added instead.
+With Schemas, there is no specific Claim Schema as it is assigned to a Topic. The owner of the Topic also owns the
+Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an
+incremented version number is added instead.
 :::
 
 ## Subscription owner
@@ -161,7 +165,7 @@ subscription.
 The table below outlines the roles responsible for approving various
 subscription-related requests:
 
-**Subscription approver matrix**
+#### Subscription approver matrix
 
 | Operation Type              | Resource Owners Team | Requestors Team | All Approvers | Admin |
 | --------------------------- | -------------------- | --------------- | ------------- | ----- |

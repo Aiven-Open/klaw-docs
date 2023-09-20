@@ -47,23 +47,23 @@ Klaw data is classified into the below 3 types.
 
 To import data, follow these steps:
 
-1.  In the core module of the application properties, enable data import
-    by setting `klaw.import.enable` to true.
-2.  Configure the specific import settings as shown below:
+1. In the core module of the application properties, enable data import
+   by setting `klaw.import.enable` to true.
+2. Configure the specific import settings as shown below:
 
-    ```
-    klaw.import.adminconfig.enable=false
-    klaw.import.adminconfig.file.path=kwmetadata-admin_config-2023-....json
-    klaw.import.kwdata.enable=false
-    klaw.import.kwdata.file.path=kwmetadata-kwdata-2023-....json
-    klaw.import.kwrequestsdata.enable=false
-    klaw.import.kwrequestsdata.file.path=kwmetadata-kwrequests_data-2023-....json
-    ```
+   ```java
+   klaw.import.adminconfig.enable=false
+   klaw.import.adminconfig.file.path=kwmetadata-admin_config-2023-....json
+   klaw.import.kwdata.enable=false
+   klaw.import.kwdata.file.path=kwmetadata-kwdata-2023-....json
+   klaw.import.kwrequestsdata.enable=false
+   klaw.import.kwrequestsdata.file.path=kwmetadata-kwrequests_data-2023-....json
+   ```
 
-3.  Make sure to disable this configuration for the next restart of the
-    application.
-4.  After updating the above settings, restart the application for the
-    changes to take effect.
+3. Make sure to disable this configuration for the next restart of the
+   application.
+4. After updating the above settings, restart the application for the
+   changes to take effect.
 
 ## What files are imported?
 

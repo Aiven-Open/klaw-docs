@@ -2,17 +2,17 @@
 
 You can log in to Klaw using the Windows credentials configured in the Windows active directory.
 
-Before you can proceed with using your Windows Active directory credentials, you need to make the following configurations in the `application.properties` file in the Klaw-core module.
+Before you can proceed with using your Windows Active directory credentials, you need to make the following
+configurations in the `application.properties` file in the Klaw-core module.
 
 1. Configure the authentication type by setting the value to `ad` in the following property:
 
-   ```
-   klaw.login.authentication.type=ad
-   ```
+   `klaw.login.authentication.type=ad`
 
-2. To enable active directory-based authentication, uncomment the following properties and provide the appropriate values for your Active Directory configuration:
+2. To enable active directory-based authentication, uncomment the following properties and provide the appropriate
+   values for your Active Directory configuration:
 
-   ```
+   ```java
    # Uncomment the below ActiveDirectory properties for Users to login with their active directory credentials.
    #spring.ad.domain=
    #spring.ad.url=

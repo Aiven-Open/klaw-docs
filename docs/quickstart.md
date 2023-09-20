@@ -87,7 +87,7 @@ Here there is a pending request to be approved or declined. Click on view to rev
 
 ![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
 
-## 10. That's it. Topic is created on Apache kafka cluster.
+## 10. That's it. Topic is created on Apache kafka cluster
 
 To verify
 

@@ -1,6 +1,7 @@
 # Connect to Schema Registry cluster with SSL protocol
 
-This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the Schema Registry over the REST protocol.
+This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the
+Schema Registry over the REST protocol.
 
 ## Prerequisite
 
@@ -37,7 +38,8 @@ cluster with Klaw using SSL protocol:
 6.  In the **Schema Registry Environments** section, click **Add
     Environment** and enter the details to add your schema registry
     environment. Click **Save**.
-7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core) and [cluster-api](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
+7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core)
+    and [cluster-api](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
 
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy
     icon that is available on the right-hand side of each cluster

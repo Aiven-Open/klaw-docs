@@ -15,12 +15,12 @@ homepage.
 
 To complete the sign-up process, follow these steps:
 
-1.  Fill out all the required fields.
-2.  Submit your information.
-3.  After submitting your information, a request will be created for the
-    administrators to approve.
-4.  Once approved, you will be assigned to the **STAGING TEAM**, which
-    can be changed later.
+1. Fill out all the required fields.
+2. Submit your information.
+3. After submitting your information, a request will be created for the
+   administrators to approve.
+4. Once approved, you will be assigned to the **STAGING TEAM**, which
+   can be changed later.
 
 ## Profile update
 

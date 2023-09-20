@@ -1,6 +1,8 @@
 # Connect Klaw Core and Klaw Cluster APIs
 
-To run Klaw successfully and perform all the necessary operations on a Kafka cluster, you must connect the Klaw APIs (Core API and Cluster API). This involves configuring the secret key and SSL protocols in the respective `application.properties` files and verifying the connectivity between the APIs.
+To run Klaw successfully and perform all the necessary operations on a Kafka cluster, you must connect the Klaw APIs (
+Core API and Cluster API). This involves configuring the secret key and SSL protocols in the
+respective `application.properties` files and verifying the connectivity between the APIs.
 
 You can find the `application.properties` file located in the following paths:
 
@@ -15,7 +17,7 @@ You can find the `application.properties` file located in the following paths:
     `application.properties` files for Klaw's `core` and `cluster-api`
     modules. An example secret key is as follows:
 
-    ```
+    ```java
     klaw.clusterapi.access.base64.secret
 
     Example: ``dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==``
@@ -23,9 +25,10 @@ You can find the `application.properties` file located in the following paths:
 
 2.  Configure the SSL settings to enable HTTPS
 
-    To enable HTTPS for Klaw, you need to configure the following SSL settings in the `application.properties` files for the Klaw Core API and the Klaw Cluster API:
+    To enable HTTPS for Klaw, you need to configure the following SSL settings in the `application.properties` files for
+    the Klaw Core API and the Klaw Cluster API:
 
-    ```
+    ```java
     server.ssl.key-store=client.keystore.p12
     server.ssl.trust-store=client.truststore.jks
     server.ssl.key-store-password=klaw1234
@@ -53,8 +56,9 @@ You can find the `application.properties` file located in the following paths:
     page, and look for the `klaw.clusterapi.url` configuration. To use a
     secure connection, update the URL to HTTPS, for example:
 
-        https://localhost:9343
+         https://localhost:9343
 
     Save the change and click **Test connection**.
 
-If everything is configured correctly, you can perform all the necessary operations with Klaw. However, if you encounter any issues, you can check the logs or troubleshoot the configuration to fix the problem.
+If everything is configured correctly, you can perform all the necessary operations with Klaw. However, if you encounter
+any issues, you can check the logs or troubleshoot the configuration to fix the problem.

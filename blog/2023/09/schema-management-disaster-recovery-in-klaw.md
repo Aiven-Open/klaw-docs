@@ -57,11 +57,7 @@ a unique identifier.
 If the same schema is registered on another topic, it will link the previously registered schema using the same
 identifier. This identifier becomes an integer value generated upon successfully registering the schema.
 
-To retrieve a schema based on an id :
-
-```
-GET /schemas/ids/{int: id}/schema
-```
+To retrieve a schema based on an id: `GET /schemas/ids/{int: id}/schema`
 
 ### Schema Strategy
 
@@ -71,15 +67,21 @@ approach, the subject name corresponds to the Kafka topic name. In this strategy
 
 Example of an avro schema
 
-```
+```json
 {
-        "type": "record",
-        "namespace": "customer.account",
-        "name": "CustomerAccount",
-        "fields": [
-                        { "name": "Name", "type": "string" },
-                        { "name": "Age", "type": "int" }
-                ]
+  "type": "record",
+  "namespace": "customer.account",
+  "name": "CustomerAccount",
+  "fields": [
+    {
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "name": "Age",
+      "type": "int"
+    }
+  ]
 }
 ```
 
@@ -105,26 +107,21 @@ setting if you don't specify subject-level compatibility.
 
 To check the compatibility status, you can use the following APIs:
 
-```
-GET /config    (global)
-GET /config/(string: subject)
-```
+- `GET /config    (global)`
+- `GET /config/(string: subject)`
 
 ### Rest interface
 
-A REST interface is accessible for schema management, enabling tasks such as registering a new schema, submitting updates
-to it, deletion, and more.
+A REST interface is accessible for schema management, enabling tasks such as registering a new schema, submitting
+updates to it, deletion, and more.
 
-```
-GET /subjects
-POST /subjects/(string: subject)/versions
-```
+- `GET /subjects`
+- `POST /subjects/(string: subject)/versions`
 
 Here is a detailed documentation :
 
-**Karapace**: https://github.com/Aiven-Open/karapace#quickstart
-
-**Confluent**: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas
+- [**Karapace**](https://github.com/Aiven-Open/karapace#quickstart)
+- [**Confluent**](https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas)
 
 ## Schema management in Klaw
 
@@ -147,8 +144,8 @@ For more information on registering a schema **[see here](../../../docs/HowTo/sc
 
 Watch the video below for a step-by-step demonstration of registering a schema in Klaw.
 
-<iframe src="https://drive.google.com/file/d/1g_wngVYcSgtGIWjwMxNT0ck--zGIKuew/preview" width="640" 
-height="480" allow="autoplay"></iframe>
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe src="https://drive.google.com/file/d/1g_wngVYcSgtGIWjwMxNT0ck--zGIKuew/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ### Schema migration from Schema registry to Klaw
 
@@ -166,6 +163,7 @@ For more information on synchronizing schemas from the schema registry to Klaw, 
 The following video demonstrates how schemas are synchronized to Klaw for a selection of topics already present in
 Karapace.
 
+<!-- markdownlint-disable-next-line MD033 -->
 <iframe src="https://drive.google.com/file/d/1iSkAUd7jVD7Zt6OH_-Gc2NGyIbpXi2VK/preview" width="640" height="480"
 allow="autoplay"></iframe>
 
@@ -183,6 +181,7 @@ For more information on this synchronization process, refer to
 The following video demonstrates migrating schemas to a Schema Registry, specifically focusing on a couple of subjects
 already stored in Klaw.
 
+<!-- markdownlint-disable-next-line MD033 -->
 <iframe src="https://drive.google.com/file/d/1TAxmgJSkSfCKYrYIDL_DUSR5wb4jMlzv/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Conclusion
