@@ -11,19 +11,30 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint": "eslint \"./**/*.js*\"",
-    "lint:fix": "eslint \"./**/*.js*\" --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "prepare": "git config --local core.hooksPath .githooks/",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+<<<<<<< Updated upstream
+    "mdlint": "markdownlint \"**/*.md\" --ignore node_modules",
+    "markdownlint": "markdownlint  \"**/*.md\" --ignore node_modules --fix"
+=======
+    "markdownlint": "markdownlint \"**/*.md\" --ignore node_modules",
+    "markdownlint:fix": "markdownlint  \"**/*.md\" --ignore node_modules --fix"
+>>>>>>> Stashed changes
   },
   "lint-staged": {
-    "**/*.{js,jsx,json,md}": [
+    "**/*.{js,jsx,json}": [
       "prettier --check",
       "eslint"
     ],
     "**/*.css": [
+      "prettier --check"
+    ],
+    "**/*.md": [
+      "markdownlint \"**/*.md\" --ignore node_modules",
       "prettier --check"
     ]
   },
@@ -46,6 +57,8 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-react": "^7.33.2",
     "lint-staged": "^14.0.1",
+    "markdownlint": "^0.31.1",
+    "markdownlint-cli": "^0.36.0",
     "prettier": "^3.0.3",
     "prop-types": "^15.8.1"
   },
