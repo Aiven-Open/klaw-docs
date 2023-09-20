@@ -8,6 +8,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "plugin:@docusaurus/recommended",
     "plugin:json/recommended",
     "plugin:react/recommended",
   ],
@@ -19,7 +20,11 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["json", "react"],
-  settings: {},
+  settings: {
+    "react": {
+      "version": "detect", // React version. "detect" automatically picks the version you have installed.
+    },
+  },
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",
