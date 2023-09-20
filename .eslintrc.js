@@ -11,6 +11,7 @@ module.exports = {
     "plugin:@docusaurus/recommended",
     "plugin:json/recommended",
     "plugin:react/recommended",
+    "prettier"
   ],
   parserOptions: {
     ecmaFeatures: {
