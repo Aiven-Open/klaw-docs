@@ -1,4 +1,3 @@
-import React from "react";
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 import clsx from "clsx";

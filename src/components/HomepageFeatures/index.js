@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/images/homepage/sec.svg').default,
     description: (
       <p>
-          Fine grained permissions to access resources, combined with the "Four Eyes" approval principal ensure that your kafka cluster is protected from incorrect or malicious changes.
+          Fine grained permissions to access resources, combined with the &quot;Four Eyes&quot; approval principal ensure that your kafka cluster is protected from incorrect or malicious changes.
       </p>
     ),
   },
@@ -145,6 +145,13 @@ function Feature({Svg, title, description}) {
     </div>
   );
 }
+
+Feature.propTypes = {
+  Svg: PropTypes.any,
+  title: PropTypes.string,
+  description: PropTypes.string,
+}
+
 
 export default function HomepageFeatures() {
   return (
