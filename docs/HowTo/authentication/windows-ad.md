@@ -20,12 +20,19 @@ Before you can proceed with using your Windows Active directory credentials, you
     #spring.ad.filter=
     ```
 
-3.  If you have already signed up, you will be directed to the Klaw home
+3. Configure an existing SUPERADMIN user from AD (which already exists) to approve new users
+   in the following property for username:
+
+    ```
+     klaw.superadmin.default.username=superadmin@company.com 
+    ```
+    
+4.  If you have already signed up, you will be directed to the Klaw home
     page.
 
     ![image](../../../static/images/authentication/login.png)
 
-4.  If this is your first time logging in, you will be presented with a
+5. If this is your first time logging in, you will be presented with a
     signup form to fill in. On submission, a request will be created for
     the Klaw Administrator to approve or decline.
 
