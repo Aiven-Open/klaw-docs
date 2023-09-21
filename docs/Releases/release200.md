@@ -25,18 +25,18 @@ Instead, Klaw now supports Java 17 (LTS) and Java 19 (latest).
 With the switch to React, this release features a redesign of the
 following user interfaces:
 
--   **Topic Request**: Users can now submit topic requests using the new
-    UI.
--   **Subscription Request** (Producer/Consumer): Users can now submit
-    ACL requests for both producers and consumers using the new UI.
--   **Schema Request**: Users can now submit schema requests using the
-    new UI.
+- **Topic Request**: Users can now submit topic requests using the new
+  UI.
+- **Subscription Request** (Producer/Consumer): Users can now submit
+  ACL requests for both producers and consumers using the new UI.
+- **Schema Request**: Users can now submit schema requests using the
+  new UI.
 
 ![image](../../static/images/topic/RequestTopic-react.png)
 
 To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
-value of the following property to `true`: 
+value of the following property to `true`:
 
     # Enable new Klaw user
     interface klaw.coral.enabled=true
@@ -78,4 +78,3 @@ To enable the authorization feature, set the below property to value
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v2.0.0>
-

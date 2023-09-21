@@ -2,11 +2,10 @@
 
 Efficiently manage connections between Klaw and various Kafka cluster types.
 
-
 - [Klaw database connection](klaw-db-connection)
 
 - [Connect Klaw Core and Klaw Cluster APIs](klaw-core-with-clusterapi)
- 
+
 - [Connect to Apache Kafka cluster using SSL protocol](kafka-cluster-ssl-protocol)
 
 - [Connect to Apache Kafka cluster using SASL protocol](kafka-cluster-sasl-ssl-protocol)
@@ -23,10 +22,9 @@ Efficiently manage connections between Klaw and various Kafka cluster types.
 
 - [Connect with Confluent Cloud Kafka® cluster using SSL protocol](confluent-cloud-kafka-cluster-ssl-protocol)
 
-
 Klaw supports the following Kafka flavors:
 
--  Apache Kafka
--  Aiven for Apache Kafka
--  Confluent
--  Confluent Cloud
+- Apache Kafka
+- Aiven for Apache Kafka
+- Confluent
+- Confluent Cloud

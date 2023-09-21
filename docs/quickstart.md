@@ -29,13 +29,13 @@ docker run -d -t -i \
 --name klaw-schema-registry bitnami/schema-registry:latest
 ```
 
-This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema 
+This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema
 registry servers in Klaw.
 
 ## 2. Login to Klaw
 
 After docker has started 5 processes, you may verify them by `docker ps`.
-Now you may log into Klaw here  [http://localhost:9097/](http://localhost:9097/) with credentials `william : welcome`
+Now you may log into Klaw here [http://localhost:9097/](http://localhost:9097/) with credentials `william : welcome`
 
 ![Screenshot: Klaw's login page](../static/images/quickstart/QS_LoginScreen.png)
 
@@ -52,10 +52,11 @@ You can "Request new Topic" from the top right corner, or you can select the dro
 ![Screenshot: Form to request a new topic](../static/images/quickstart/RequestForTopic.png)
 
 Fill in the details
+
 - Select STG environment
 - Fill in a topic name 'testtopic' for example
 - Leave partitions, replication factor and advanced configuration to defaults
-- Fill in text a topic description. 'Topic for demo' for example 
+- Fill in text a topic description. 'Topic for demo' for example
 - Submit
 
 This will create a topic request for your team member to approve.
@@ -66,7 +67,7 @@ Newly created topic request is now visible in My team's requests menu on the sid
 
 ![Screenshot: "My teams requests" page](../static/images/quickstart/MyRequest.png)
 
-## 6. Logout 
+## 6. Logout
 
 On the top right click on the profile and again click on the profile -> logout
 
@@ -86,11 +87,11 @@ Here there is a pending request to be approved or declined. Click on view to rev
 
 ![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
 
-## 10. That's it. Topic is created on Apache kafka cluster.
+## 10. That's it. Topic is created on Apache kafka cluster
 
 To verify
 
-``` copy-button
+```copy-button
 docker exec -it klaw-kafka /opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 

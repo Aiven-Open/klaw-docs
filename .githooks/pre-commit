@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Execute lint-staged jobs
+
+echo "Pre=commit hook"
+npm run lint-staged
+if [ $? -ne 0 ]; then
+    echo -e '\n\n🙋 Check "lint-staged" in failed.'
+    echo -e '   Canceling the commit process.'
+    echo -e '   Please fix and try again!\n\n'
+    exit 1
+fi
+

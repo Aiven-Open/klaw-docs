@@ -1,9 +1,9 @@
 .quickStartContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quickStartRow {
-    align-items: center;
+  align-items: center;
 }

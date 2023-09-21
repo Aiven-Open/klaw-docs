@@ -19,7 +19,7 @@ permission can do so under the **Environments -\> Tenants** menu.
 If the application should be limited to only one tenant, you can
 configure it with the below property in `application.properties` file.
 
-
      #maximum tenants can be created
      klaw.max.tenants=200
+
 :::

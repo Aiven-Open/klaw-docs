@@ -10,54 +10,54 @@ Apache Kafka Connect service with Klaw using SSL protocol.
 
 ## Prerequisite
 
--   Set up the connection between the Klaw APIs (Core API and Cluster
-    API) to use secure SSL, see
-    `klaw-core-with-clusterapi`. This
-    involves configuring the `klaw.clusterapi.url` setting in the Klaw
-    UI and testing the connectivity to ensure the two APIs can
-    communicate over HTTPS.
+- Set up the connection between the Klaw APIs (Core API and Cluster
+  API) to use secure SSL, see
+  `klaw-core-with-clusterapi`. This
+  involves configuring the `klaw.clusterapi.url` setting in the Klaw
+  UI and testing the connectivity to ensure the two APIs can
+  communicate over HTTPS.
 
 ## Configure and connect with SSL protocol
 
 Follow the steps below to configure and connect an Aiven for Apache
 Kafka Connect service with Klaw using SSL protocol:
 
-1.  In the Klaw web interface, navigate to **Environments**, and click
-    **Clusters**.
-2.  On the **Clusters** page, click **Add Cluster**.
+1. In the Klaw web interface, navigate to **Environments**, and click
+   **Clusters**.
+2. On the **Clusters** page, click **Add Cluster**.
 
-3.  On the **Add Kafka cluster** page, enter the following details:
-    
-    * **Cluster Type:** Select **KafkaConnect** from the drop-down list
-    * **Cluster Name:** Provide a name for the cluster* 
-    * **Protocol:** Select SSL protocol for your cluster
-    * **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
-    * **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/) 
-    * **Bootstrap server:** Enter the Service URI for your Apache Kafka Connect service. You can find the service URI in the Connection information page of your service in Aiven Console.
+3. On the **Add Kafka cluster** page, enter the following details:
 
-    In the service URI, you can omit the `https://` portion of the URL and the user credentials. The Aiven for Kafka Connect server details should typically start with `kafkaconnect-<servicename>-<projectname>:<port>`.
+   - **Cluster Type:** Select **KafkaConnect** from the drop-down list
+   - **Cluster Name:** Provide a name for the cluster\*
+   - **Protocol:** Select SSL protocol for your cluster
+   - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+   - **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/)
+   - **Bootstrap server:** Enter the Service URI for your Apache Kafka Connect service. You can find the service URI in the Connection information page of your service in Aiven Console.
 
-    - **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for your Apache Kafka service
+   In the service URI, you can omit the `https://` portion of the URL and the user credentials. The Aiven for Kafka Connect server details should typically start with `kafkaconnect-<servicename>-<projectname>:<port>`.
 
-4. Click **Save**. 
+   - **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for your Apache Kafka service
+
+4. Click **Save**.
 
 5. Add the cluster to the preferred environment.
-Click **Environments** from the **Environments** drop-down menu. 
+   Click **Environments** from the **Environments** drop-down menu.
 
 6. In the **Kafka Connect Environments** section, click **Add Environment**
-and enter the details to add your schema registry environment. Click
-**Save**.
+   and enter the details to add your schema registry environment. Click
+   **Save**.
 
 7. Copy the **Cluster ID** from the **Clusters** page using
-the copy icon that is available on the right-hand side of each
-cluster row. 
+   the copy icon that is available on the right-hand side of each
+   cluster row.
 
 8. In the `application.properties` file for [cluster-api] (klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console:
 
-    `clusterid.klaw.kafkaconnect.credentials=username:password`
+   `clusterid.klaw.kafkaconnect.credentials=username:password`
 
-    Replace `clusterid` with Klaw cluster ID copied from Klaw UI.
+   Replace `clusterid` with Klaw cluster ID copied from Klaw UI.
 
-9.  Re-deploy the Cluster API with the updated configuration. This will
-    apply the changes and enable Klaw to connect to the Aiven for Apache
-    Kafka Connect service using SSL protocol.
+9. Re-deploy the Cluster API with the updated configuration. This will
+   apply the changes and enable Klaw to connect to the Aiven for Apache
+   Kafka Connect service using SSL protocol.

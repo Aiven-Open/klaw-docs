@@ -15,14 +15,14 @@ metadata. For example, if version 1 already exists in the target cluster, it wil
 
 ## Steps to synchronize schemas
 
-1.  Navigate to the **Synchronize** menu and select **Schemas to Cluster**.
-2.  To synchronize schemas, select the source environment (Klaw metadata
-    with topics and schemas) and the target environment (Kafka cluster
-    with the associated schema registry where the schemas need to be
-    created).
-3.  Select the **Force Register** checkbox if you want to proceed with the sync despite compatibility failures.
+1. Navigate to the **Synchronize** menu and select **Schemas to Cluster**.
+2. To synchronize schemas, select the source environment (Klaw metadata
+   with topics and schemas) and the target environment (Kafka cluster
+   with the associated schema registry where the schemas need to be
+   created).
+3. Select the **Force Register** checkbox if you want to proceed with the sync despite compatibility failures.
 
-    ![image](../../../static/images/sync/SyncSchemasToCluster.png)
+   ![image](../../../static/images/sync/SyncSchemasToCluster.png)
 
 By following these steps, you can synchronize schemas from a Klaw
 metadata to a Schema Registry cluster.
@@ -30,4 +30,3 @@ metadata to a Schema Registry cluster.
 :::note
 This synchronization is primarily suitable for migrating to the new schema
 registry clusters.
-

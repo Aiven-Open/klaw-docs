@@ -31,8 +31,9 @@ Klaw version 2.5.1 is a patch release primarily aimed at enhancing MySQL support
 
 ### Bug Fixes
 
-- [#1769](https://github.com/Aiven-Open/klaw/pull/1769): MySQL support has been re-enabled by removing custom EXISTS queries. Instead, JPQL is now used, allowing Spring to manage query details based on specific drivers.
+- [#1769](https://github.com/Aiven-Open/klaw/pull/1769): MySQL support has been re-enabled by removing custom EXISTS
+  queries. Instead, JPQL is now used, allowing Spring to manage query details based on specific drivers.
 
 :::note
-For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.5.1>
+For a complete list of improvements, changelog, and to download the release,
+see <https://github.com/aiven/klaw/releases/tag/v2.5.1>

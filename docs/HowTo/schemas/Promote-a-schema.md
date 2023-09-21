@@ -23,23 +23,23 @@ You can see all created schema environments in the same **Topic Overview
 
 To promote a schema to a higher environment, follow these steps:
 
-1.  Select *Topics* on the navigation bar.
-2.  Select the specific Kafka Topic you wish to promote a Schema to the
-    higher environment.
-3.  Select the **Schema** tab under the main Topic section.
-4.  Select the **Promote to \[Next Environment\]** button to promote the
-    schema to a higher environment, provided the higher environment has
-    been configured.
-5.  Choose the version of the schema that you want to promote to the
-    higher environment. This schema will be available for your team
-    members to review when they approve or decline the request.
-6.  Optionally, if the Schema you wish to promote is not compatible with
-    the existing schemas on that topic, you can use the **Force Register
-    Schema** option to register the schema.
-7.  Confirm the promotion to the next environment by selecting **Submit
-    Promotion to \[Next Environment\]**
-8.  A schema request is now created for team members to review and
-    approve under the *Approvals* section.
+1. Select _Topics_ on the navigation bar.
+2. Select the specific Kafka Topic you wish to promote a Schema to the
+   higher environment.
+3. Select the **Schema** tab under the main Topic section.
+4. Select the **Promote to \[Next Environment\]** button to promote the
+   schema to a higher environment, provided the higher environment has
+   been configured.
+5. Choose the version of the schema that you want to promote to the
+   higher environment. This schema will be available for your team
+   members to review when they approve or decline the request.
+6. Optionally, if the Schema you wish to promote is not compatible with
+   the existing schemas on that topic, you can use the **Force Register
+   Schema** option to register the schema.
+7. Confirm the promotion to the next environment by selecting **Submit
+   Promotion to \[Next Environment\]**
+8. A schema request is now created for team members to review and
+   approve under the _Approvals_ section.
 
 ### How does Force Register work
 
@@ -61,21 +61,20 @@ The user who raised a request cannot approve it. Instead, a different user from 
 When you submit a Schema Request, the Schema will be checked for
 validation against the Schema Registry.
 
-In case of errors, Klaw provides the following failure messages: 
+In case of errors, Klaw provides the following failure messages:
 
 - **Schema is not compatible**: This message indicates that the submitted
-Schema fails to comply with the Schema Compatibility set on the schema
-registry. To fix this issue, review the Schema to see what is causing
-the compatibility problem. 
+  Schema fails to comply with the Schema Compatibility set on the schema
+  registry. To fix this issue, review the Schema to see what is causing
+  the compatibility problem.
 
 - **Unable to validate Schema Compatibility**: It indicates that the submitted Schema may be invalid
-or missing the required Schema definition fields. It could also occur if
-there is a problem with communication to the Schema Registry, such as if
-it is not reachable. To fix this issue, review your Schema to ensure it
-is correctly defined. If it is, contact your administrator to resolve
-the issue with communication to the Schema Registry.
+  or missing the required Schema definition fields. It could also occur if
+  there is a problem with communication to the Schema Registry, such as if
+  it is not reachable. To fix this issue, review your Schema to ensure it
+  is correctly defined. If it is, contact your administrator to resolve
+  the issue with communication to the Schema Registry.
 
 :::note
 Using forceRegister will bypass the Schema Validation as you will be
 overriding the compatibility on provisioning.
-

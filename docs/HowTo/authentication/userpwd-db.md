@@ -6,16 +6,16 @@ The configuration for the database login, including the authentication type, enc
 
 To enable authentication with the Klaw database, follow these steps:
 
-1. **Enable authentication with the database:** In the `application.properties` file, find the following property and set it
-`db` to enable user authentication with the database.
+1.  **Enable authentication with the database:** In the `application.properties` file, find the following property and set it
+    `db` to enable user authentication with the database.
 
-    klaw.login.authentication.type=db
+        klaw.login.authentication.type=db
 
-2. **Password encryption:** In the `application.properties` file, find the following encryption key property. Use the encryption key to encrypt your password before it is stored in the database. The encryption key is used to secure and protect your password.
+2.  **Password encryption:** In the `application.properties` file, find the following encryption key property. Use the encryption key to encrypt your password before it is stored in the database. The encryption key is used to secure and protect your password.
 
     klaw.jasypt.encryptor.secretkey=kw2021secretkey
 
-3. **Decrypt password:** The password stored in the database can be decrypted with the following java code.
+3.  **Decrypt password:** The password stored in the database can be decrypted with the following java code.
 
     org.jasypt.util.text.BasicTextEncryptor textEncryptor = new org.jasypt.util.text.BasicTextEncryptor();
     textEncryptor.setPasswordCharArray(encryptorSecretKey.toCharArray());

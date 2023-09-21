@@ -2,13 +2,21 @@
 slug: schema-management-disaster-recovery-in-klaw
 title: Schema Management and Disaster recovery in Klaw
 authors: muralibasani
-tags: [kafka,governance,klaw,schema registry,disaster recovery,migration,evolution]
+tags:
+  [
+    kafka,
+    governance,
+    klaw,
+    schema registry,
+    disaster recovery,
+    migration,
+    evolution,
+  ]
 date: Sep 5, 2023
 ---
 
 This article explores the significance, evolution, and management of schemas in Klaw. It also covers how Klaw safeguards
 organizations against data loss by creating schema backups for disaster and failure recovery.
-
 
 ## Schemas
 
@@ -33,7 +41,6 @@ producers and consumers to ensure that events are processed successfully.
 
 The below image depicts the communication between Schema Registry, Apache Kafka, Producers and Consumers.
 
-
 ![image](../../../static/images/blogimages/SchemaRegistryFlow.png)
 
 Producers can register a schema based on a specific configuration, or they can use the REST API provided by the Schema
@@ -50,12 +57,7 @@ a unique identifier.
 If the same schema is registered on another topic, it will link the previously registered schema using the same
 identifier. This identifier becomes an integer value generated upon successfully registering the schema.
 
-
-To retrieve a schema based on an id :
-
-```
-GET /schemas/ids/{int: id}/schema
-```
+To retrieve a schema based on an id: `GET /schemas/ids/{int: id}/schema`
 
 ### Schema Strategy
 
@@ -65,21 +67,26 @@ approach, the subject name corresponds to the Kafka topic name. In this strategy
 
 Example of an avro schema
 
-```
+```json
 {
-        "type": "record",
-        "namespace": "customer.account",
-        "name": "CustomerAccount",
-        "fields": [
-                        { "name": "Name", "type": "string" },
-                        { "name": "Age", "type": "int" }
-                ]
+  "type": "record",
+  "namespace": "customer.account",
+  "name": "CustomerAccount",
+  "fields": [
+    {
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "name": "Age",
+      "type": "int"
+    }
+  ]
 }
 ```
 
 Key schemas are usually strings by default, but you can register key schemas explicitly if needed. Kafka supports
 alternative strategies, such as `RecordNameStrategy` and `TopicRecordNameStrategy`.
-
 
 ### Schema evolution
 
@@ -98,30 +105,23 @@ and NONE.
 You can configure schema compatibility settings at both the subject and global levels. The system defaults to the global
 setting if you don't specify subject-level compatibility.
 
-
 To check the compatibility status, you can use the following APIs:
 
-```
-GET /config    (global)
-GET /config/(string: subject)
-```
+- `GET /config    (global)`
+- `GET /config/(string: subject)`
 
 ### Rest interface
 
-A REST interface is accessible for schema management, enabling tasks such as registering a new schema, submitting updates
-to it, deletion, and more.
+A REST interface is accessible for schema management, enabling tasks such as registering a new schema, submitting
+updates to it, deletion, and more.
 
-
-```
-GET /subjects
-POST /subjects/(string: subject)/versions
-```
+- `GET /subjects`
+- `POST /subjects/(string: subject)/versions`
 
 Here is a detailed documentation :
 
-**Karapace**: https://github.com/Aiven-Open/karapace#quickstart
-
-**Confluent**: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas
+- [**Karapace**](https://github.com/Aiven-Open/karapace#quickstart)
+- [**Confluent**](https://docs.confluent.io/platform/current/schema-registry/develop/api.html#schemas)
 
 ## Schema management in Klaw
 
@@ -133,12 +133,10 @@ Klaw ensures data consistency, reliability, and secure access, aligning with org
 schema registration, permitting only the designated owner to manage schemas and preventing unauthorized modifications
 by other teams.
 
-
 ### Request for a Schema in Klaw
 
 After creating a topic, the designated team that owns the topic gains the exclusive right to register a schema for it.
 As the topic owner, you have the authority to approve, initiate, or reject any schema-related requests for that topic.
-
 
 ![image](../../../static/images/blogimages/SchemaRequest-Workflow.png)
 
@@ -146,8 +144,8 @@ For more information on registering a schema **[see here](../../../docs/HowTo/sc
 
 Watch the video below for a step-by-step demonstration of registering a schema in Klaw.
 
-<iframe src="https://drive.google.com/file/d/1g_wngVYcSgtGIWjwMxNT0ck--zGIKuew/preview" width="640" 
-height="480" allow="autoplay"></iframe>
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe src="https://drive.google.com/file/d/1g_wngVYcSgtGIWjwMxNT0ck--zGIKuew/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ### Schema migration from Schema registry to Klaw
 
@@ -159,14 +157,13 @@ Klaw simplifies this by connecting directly to the schema registry server, retri
 with topics, and integrating them into its metastore. This backup process is straightforward and takes only a few
 clicks, regardless of the volume of schemas or topics.
 
-
 For more information on synchronizing schemas from the schema registry to Klaw, refer to
 **[sync-schemas-from-cluster](../../../docs/HowTo/kafka-cluster-migration/sync-schemas-from-cluster)**
 
 The following video demonstrates how schemas are synchronized to Klaw for a selection of topics already present in
 Karapace.
 
-
+<!-- markdownlint-disable-next-line MD033 -->
 <iframe src="https://drive.google.com/file/d/1iSkAUd7jVD7Zt6OH_-Gc2NGyIbpXi2VK/preview" width="640" height="480"
 allow="autoplay"></iframe>
 
@@ -178,15 +175,14 @@ cluster or integrate them into an existing one.
 Select the schemas you want to sync with the cluster. Once you submit your choices, Klaw will register the selected
 schemas directly into your designated schema registry environment.
 
-
 For more information on this synchronization process, refer to
 **[sync-schemas-to-cluster](../../../docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster)**
 
 The following video demonstrates migrating schemas to a Schema Registry, specifically focusing on a couple of subjects
 already stored in Klaw.
 
+<!-- markdownlint-disable-next-line MD033 -->
 <iframe src="https://drive.google.com/file/d/1TAxmgJSkSfCKYrYIDL_DUSR5wb4jMlzv/preview" width="640" height="480" allow="autoplay"></iframe>
-
 
 ## Conclusion
 

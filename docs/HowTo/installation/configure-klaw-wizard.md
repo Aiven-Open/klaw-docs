@@ -11,100 +11,100 @@ URL: [https://host:port/helpwizard]
 
 ![image](../../../static/images/general/KlawWizard.png)
 
-1.  Configure Kafka clusters
+1. Configure Kafka clusters
 
-    The first step is to configure your Kafka cluster. You can add any
-    number of clusters. Only users with SUPERADMIN roles (or check allowed
-    permission) can add clusters.
-    
-    After adding the cluster, based on the protocol selected (SSL or any
-    other protocol), ensure the Klaw Cluster API's `application.properties`
-    files include the relevant configurations.
+   The first step is to configure your Kafka cluster. You can add any
+   number of clusters. Only users with SUPERADMIN roles (or check allowed
+   permission) can add clusters.
 
-    Example :
+   After adding the cluster, based on the protocol selected (SSL or any
+   other protocol), ensure the Klaw Cluster API's `application.properties`
+   files include the relevant configurations.
 
-    ```
-    dev1.kafkassl.protocol=TLS
-    dev1.kafkassl.key.pwd=trustme
-    dev1.kafkassl.keystore.location=/srv/certs/client.keystore.p12
-    dev1.kafkassl.keystore.pwd=trustme
-    dev1.kafkassl.keystore.type=PKCS12
-    dev1.kafkassl.truststore.location=/srv/certs/client.truststore.jks
-    dev1.kafkassl.truststore.pwd=trustme
-    dev1.kafkassl.truststore.type=JKS
-    ```
+   Example:
 
-2.  Configure Environments
+   ```java
+   dev1.kafkassl.protocol=TLS
+   dev1.kafkassl.key.pwd=trustme
+   dev1.kafkassl.keystore.location=/srv/certs/client.keystore.p12
+   dev1.kafkassl.keystore.pwd=trustme
+   dev1.kafkassl.keystore.type=PKCS12
+   dev1.kafkassl.truststore.location=/srv/certs/client.truststore.jks
+   dev1.kafkassl.truststore.pwd=trustme
+   dev1.kafkassl.truststore.type=JKS
+   ```
 
-    Environments are wrappers over your Kafka clusters. You can add any
-    number of environments and have multiple environments connected to one
-    Kafka cluster with different settings. Only users with SUPERADMIN roles
-    (or check allowed permission) can add environments by default.
-    Additionally, you can configure the partitions, replication factors,
-    topic prefixes, and suffixes for your Kafka topics under Kafka
-    environments.
+2. Configure Environments
 
-3.  Test Kafka connectivity
+   Environments are wrappers over your Kafka clusters. You can add any
+   number of environments and have multiple environments connected to one
+   Kafka cluster with different settings. Only users with SUPERADMIN roles
+   (or check allowed permission) can add environments by default.
+   Additionally, you can configure the partitions, replication factors,
+   topic prefixes, and suffixes for your Kafka topics under Kafka
+   environments.
 
-    After configuring environments, you can test the connection by clicking
-    the validate button.
-    
-    ![image](../../../static/images/general/EnvStatus.png)
+3. Test Kafka connectivity
 
-4.  Configure Tenant and Environment hierarchy
+   After configuring environments, you can test the connection by clicking
+   the validate button.
 
-    Klaw is multi-tenant by default. Every tenant has its own set of Kafka
-    environments, and users of one tenant cannot view/access topics, or acls
-    from other tenants. To configure tenants, navigate to **Dashboard -\>
-    Settings**, and look for [klaw.tenant.config].
+   ![image](../../../static/images/general/EnvStatus.png)
 
-    Example :
-    
-    ```
-    {
-      "tenantModel": {
-        "tenantName": "default",
-        "baseSyncEnvironment": "DEV",
-        "orderOfTopicPromotionEnvsList": [ "DEV" ],
-        "requestTopicsEnvironmentsList": [ "DEV" ],
-        "baseSyncKafkaConnectCluster": null,
-        "orderOfConnectorsPromotionEnvsList": null,
-        "requestConnectorsEnvironmentsList": null
-      }
-    }
-    ```
+4. Configure Tenant and Environment hierarchy
 
-5.  Synchronize Topics and ACls
+   Klaw is multi-tenant by default. Every tenant has its own set of Kafka
+   environments, and users of one tenant cannot view/access topics, or acls
+   from other tenants. To configure tenants, navigate to **Dashboard -\>
+   Settings**, and look for [klaw.tenant.config].
 
-    If you already have a Kafka cluster, you can easily migrate topics and
-    acls to Klaw using the **Synchronize** option. As a SUPERADMIN, you can
-    synchronize topics and ACLs by default. Navigate to **Synchronize** menu
-    and select **Topics from cluster** or **ACLs from cluster** to
-    synchronize the topics or ACLs. You also can synchronize topics
-    individually or with a bulk option, assigning all at a time to one team.
-    Users can synchronize topics from cluster to Klaw with `SYNC_TOPICS`
-    permission.
-    
-    ![image](../../../static/images/topic/SyncTopicsFromCluster.png)
+   Example :
 
-6.  Create Teams
+   ```json
+   {
+     "tenantModel": {
+       "tenantName": "default",
+       "baseSyncEnvironment": "DEV",
+       "orderOfTopicPromotionEnvsList": ["DEV"],
+       "requestTopicsEnvironmentsList": ["DEV"],
+       "baseSyncKafkaConnectCluster": null,
+       "orderOfConnectorsPromotionEnvsList": null,
+       "requestConnectorsEnvironmentsList": null
+     }
+   }
+   ```
 
-    After adding clusters and environments, you can create **Teams**. A team
-    owns topics and is also a collection of users. A user can manage teams
-    with `ADD_EDIT_DELETE_TEAMS` permission.
+5. Synchronize Topics and ACls
 
-7.  Create Users
+   If you already have a Kafka cluster, you can easily migrate topics and
+   acls to Klaw using the **Synchronize** option. As a SUPERADMIN, you can
+   synchronize topics and ACLs by default. Navigate to **Synchronize** menu
+   and select **Topics from cluster** or **ACLs from cluster** to
+   synchronize the topics or ACLs. You also can synchronize topics
+   individually or with a bulk option, assigning all at a time to one team.
+   Users can synchronize topics from cluster to Klaw with `SYNC_TOPICS`
+   permission.
 
-    **Users** can be created and assigned to the newly created teams. A user
-    with `ADD_EDIT_DELETE_USERS` permission or the SUPERADMIN role can add
-    users.
+   ![image](../../../static/images/topic/SyncTopicsFromCluster.png)
 
-8.  Create any other Roles and Permissions (Optional)
+6. Create Teams
 
-    A **role** is a collection of permissions defining the tasks a user can
-    perform. Add roles and assign permissions to the added roles. A
-    SUPERADMIN can add roles by default. Other users can add roles with
-    `ADD_EDIT_DELETE_ROLES` permission.
+   After adding clusters and environments, you can create **Teams**. A team
+   owns topics and is also a collection of users. A user can manage teams
+   with `ADD_EDIT_DELETE_TEAMS` permission.
+
+7. Create Users
+
+   **Users** can be created and assigned to the newly created teams. A user
+   with `ADD_EDIT_DELETE_USERS` permission or the SUPERADMIN role can add
+   users.
+
+8. Create any other Roles and Permissions (Optional)
+
+   A **role** is a collection of permissions defining the tasks a user can
+   perform. Add roles and assign permissions to the added roles. A
+   SUPERADMIN can add roles by default. Other users can add roles with
+   `ADD_EDIT_DELETE_ROLES` permission.
 
 You are all set now. Your team members can request topics or ACLs and
 approve requests.

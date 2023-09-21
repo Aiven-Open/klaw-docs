@@ -1,6 +1,4 @@
-Concepts
-========
-
+# Concepts
 
 - [Workflows](workflows)
 - [Users & Teams](users-teams)
@@ -11,4 +9,3 @@ Concepts
 - [Promotion](promotion)
 - [Switch Teams](switch-teams)
 - [High Availability](high-availability)
-

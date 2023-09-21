@@ -49,7 +49,7 @@ topics easier, more efficient, and more accessible.
 
 To preview the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
-value of the following property to true: 
+value of the following property to true:
 
     # Enable new Klaw user interface
     klaw.coral.enabled=true
@@ -84,9 +84,9 @@ authentication enabling users to log in to Klaw using their Azure AD
 credentials.
 
 A sample configuration of Azure AD based authentication for Klaw is as
-shown below: 
+shown below:
 
-```
+```java
 klaw.sso.server.loginurl=/oauth2/authorization/azure
 spring.cloud.azure.active-directory.enabled=true
 spring.cloud.azure.active-directory.profile.tenant-id=tenantid
@@ -111,4 +111,3 @@ policy, retention period, flush interval, and more.
 :::note
 For a complete list of improvements, changelog, and to download the
 release, see <https://github.com/aiven/klaw/releases/tag/v1.2.0>
-

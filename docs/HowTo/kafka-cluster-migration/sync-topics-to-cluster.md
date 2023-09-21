@@ -11,12 +11,12 @@ them on the Apache Kafka cluster.
 
 ## Steps to synchronize topics
 
-1.  Navigate to the Synchronize menu and select **Topics to Cluster**.
-2.  To synchronize topics, select the source environment (Klaw metadata
-    with topics) and target environment (Kafka cluster where topics have
-    to be created).
+1. Navigate to the Synchronize menu and select **Topics to Cluster**.
+2. To synchronize topics, select the source environment (Klaw metadata
+   with topics) and target environment (Kafka cluster where topics have
+   to be created).
 
-    ![image](../../../static/images/sync/SyncTopicsToCluster.png)
+   ![image](../../../static/images/sync/SyncTopicsToCluster.png)
 
 If a topic already exists, you will see a `TopicAlreadyExistsException`,
 which can be ignored, and you can proceed with the other topics.
