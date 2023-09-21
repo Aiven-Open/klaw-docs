@@ -4,6 +4,8 @@ sidebar_position: 1.1
 
 # Quick Start
 
+In this tutorial, we will install Klaw with docker, and request for a kafka topic and verify its existence on kafka cluster.
+
 ## 1. Run the docker script
 
 ```typescript copy-button
