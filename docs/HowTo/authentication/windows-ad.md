@@ -23,11 +23,9 @@ configurations in the `application.properties` file in the Klaw-core module.
 3. Configure an existing SUPERADMIN user from AD (which already exists) to approve new users
    in the following property for username:
 
-    ```
-     klaw.superadmin.default.username=superadmin@company.com 
-    ```
-    
-4.If you have already signed up, you will be directed to the Klaw home
+   `klaw.superadmin.default.username=superadmin@company.com`
+
+4. If you have already signed up, you will be directed to the Klaw home
    page.
 
    ![image](../../../static/images/authentication/login.png)
