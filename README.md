@@ -41,14 +41,13 @@ Here are the important ones you're likely to use:
 - `npm run build`: will build the documentation site and generate all static files in "build". After `build` you can
   run `npm run serve` to test your build locally
 - `npm run lint`: runs a format check and if no error is found, lints code and markdown files in the project.
-  - the linting script does not mutate your code. See [Linting and code formatting](#linting-and-code-formatting) for
-    more info.
+    - the linting script does not mutate your code. See [Linting and code formatting](#linting-and-code-formatting) for
+      more info.
 - `npm run reformat`: runs the code formatter (prettier) as well as the markdown linter in fix mode. This will mutate
-  you code.
-- `npm run markdown-link-check`: checks if there are any broke internal or external links that are broken. Note: This
-  required internet connection, as it does check external links.
-  - Run `npm run markdown-link-check -- -o` to only check for internal links.
-  - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
+- `npm run markdown-link-check`: checks if there are any broken links. Note: This requires internet connection, as it
+  does check external links, too!
+    - Run `npm run markdown-link-check -- -o` to only check for internal links (offline mode).
+    - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
 
 ℹ️ We are using a custom hook path for enabling pre-commit hooks. This path is set in the local git config when
 running `npm install`.
