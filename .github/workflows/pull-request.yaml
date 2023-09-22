@@ -1,0 +1,39 @@
+name: "Static code and markdown analysis"
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  static_analysis:
+    name: Static analysis code and markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac #v4.0.0
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Set Node version
+        id: versions
+        shell: bash
+        run: |
+          NODE_VERSION=$(jq -r '.engines.node' package.json)
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Setup node.js
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
+        with:
+          node-version: ${{ steps.versions.outputs.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Linting code files
+        run: npm run lint:code
+
+      - name: Linting markdown files
+        run: npm run lint:markdown
