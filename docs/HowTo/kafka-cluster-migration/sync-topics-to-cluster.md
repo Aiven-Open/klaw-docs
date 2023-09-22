@@ -6,8 +6,10 @@ them on the Apache Kafka cluster.
 
 ## Prerequisites
 
-- **Configuration**: Make sure to configure the environments and the `klaw.tenant.config` property. Refer to the [Tenant Configuration](tenant-config) documentation for more information.
-- **User Permissions**: Log in with a user account with either `SUPERADMIN` or as a user with the `SYNC_BACK_TOPICS` permission.
+- **Configuration**: Make sure to configure the environments and the `klaw.tenant.config` property. Refer to
+  the [Tenant Configuration](tenant-config.md) documentation for more information.
+- **User Permissions**: Log in with a user account with either `SUPERADMIN` or as a user with the `SYNC_BACK_TOPICS`
+  permission.
 
 ## Steps to synchronize topics
 

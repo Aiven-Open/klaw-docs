@@ -28,10 +28,10 @@ them to other environments, including production. The team that owns the
 connector is responsible for making the final decision related to any
 requests, such as approving or declining them.
 
-- [Request a new Connector](Request-a-new-connector)
+- [Request a new Connector](Request-a-new-connector.md)
 
-- [Approve a Connector](Approve-a-connector)
+- [Approve a Connector](Approve-a-connector.md)
 
-- [My Connector Requests](My-connector-requests)
+- [My Connector Requests](My-connector-requests.md)
 
-- [Manage Connectors](manage-connectors)
+- [Manage Connectors](manage-connectors.md)

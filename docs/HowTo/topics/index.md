@@ -45,16 +45,16 @@ from the topic. Similarly, if the team wants to enforce a schema on the
 topic, the team submits a request, and another team member reviews and
 approves or declines it.
 
-- [Request a new topic](Request-a-new-topic)
+- [Request a new topic](Request-a-new-topic.md)
 
-- [Approve a topic](Approve-a-topic)
+- [Approve a topic](Approve-a-topic.md)
 
-- [Promote a topic](Promote-a-topic)
+- [Promote a topic](Promote-a-topic.md)
 
-- [Claim a topic](Claim-a-topic)
+- [Claim a topic](Claim-a-topic.md)
 
-- [Edit Topic Request](Edit-topic-request)
+- [Edit Topic Request](Edit-topic-request.md)
 
-- [Delete a topic](Delete-a-topic)
+- [Delete a topic](Delete-a-topic.md)
 
-- [My Topic Requests](My-topic-requests)
+- [My Topic Requests](My-topic-requests.md)

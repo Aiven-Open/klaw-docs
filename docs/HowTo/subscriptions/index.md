@@ -43,10 +43,10 @@ subscription, the team that owns the topic is responsible for making the
 final decision, such as approving or declining a request from the same
 team or another team to produce/consume events from the topic.
 
-- [Request a subscription](Request-a-subscription)
+- [Request a subscription](Request-a-subscription.md)
 
-- [Approve a subscription](Approve-a-subscription)
+- [Approve a subscription](Approve-a-subscription.md)
 
-- [Delete a subscription](Delete-a-subscription)
+- [Delete a subscription](Delete-a-subscription.md)
 
-- [My Subscription Requests](My-subscription-requests)
+- [My Subscription Requests](My-subscription-requests.md)

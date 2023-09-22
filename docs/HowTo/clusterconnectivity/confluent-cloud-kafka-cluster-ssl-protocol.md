@@ -12,10 +12,14 @@ cluster with Klaw. The following functionalities are available in Klaw for Confl
 - Sync Topics
 - Sync ACLs
 
-References :
+References:
 
-<https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>
-<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>
+[//]: # "<!-- markdown-link-check-disable -->"
+
+- <https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>
+- <https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>
+
+[//]: # "<!-- markdown-link-check-enable -->"
 
 ## Prerequisite
 

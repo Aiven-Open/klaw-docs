@@ -7,6 +7,5 @@ in a team makes a request, a peer from the same team is expected to
 approve. Teams can be managed by a user with `ADD_EDIT_DELETE_TEAMS`
 permission.
 
-- [Switch Teams](switch-teams)
-
-- [Manage Teams](manage-teams)
+- [Switch Teams](switch-teams.md)
+- [Manage Teams](manage-teams.md)
