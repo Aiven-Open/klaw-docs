@@ -19,7 +19,7 @@
     "reformat:markdown": "markdownlint \"**/*.md\" --ignore node_modules --fix",
     "reformat": "npm run reformat:code && npm run reformat:markdown",
     "lint-staged": "lint-staged",
-    "markdown-link-check": "scripts/markdown-link-check"
+    "markdown-link-check": "scripts/markdown-link-check.sh"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [
