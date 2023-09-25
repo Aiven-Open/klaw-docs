@@ -25,40 +25,10 @@
   src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 
-h1,
-h2,
-h3 {
-  color: var(--color-foreground-primary);
-  font-family: "Poppins", sans-serif;
-}
-
-p {
-  color: var(--color-content-foreground);
-  font-family: "Inter", sans-serif;
-}
-
-a {
-  color: var(--color-link);
-  font-family: "Inter", sans-serif;
-  text-decoration-color: var(--color-link--hover);
-}
-
-a.muted-link {
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #3545be;
-}
-
-.custom-note {
-  background-color: #f8f8f8;
-  border-left: 4px solid #2196f3;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
 :root {
+  --ifm-font-family-base: "Inter";
+  --ifm-heading-font-family: "Poppins";
+
   --ifm-color-primary: #0e1652;
   --ifm-color-primary-dark: #0d144a;
   --ifm-color-primary-darker: #0c1346;
@@ -66,7 +36,11 @@ a:hover {
   --ifm-color-primary-light: #0f185a;
   --ifm-color-primary-lighter: #10195e;
   --ifm-color-primary-lightest: #121d6b;
+
+  --ifm-link-color: #3545be;
+  --ifm-link-hover-color: #3545be;
 }
+
 .hero--primary {
   background-image: linear-gradient(
     180deg,
@@ -85,6 +59,7 @@ a:hover {
   --ifm-color-primary: #b9c5ef;
   background: #303030;
 }
+
 /* Styling one class specially in dark mode */
 [data-theme="dark"] .purple-text {
   color: rgb(181, 160, 181);
