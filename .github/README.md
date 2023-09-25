@@ -10,5 +10,9 @@ Our directory structure is as follows:
 
 ## Pipeline
 
-When a Pull Request is opened targeting `main`, the [`pull-request`](./workflows/pull-request.yaml) workflow is
-triggered.
+When a Pull Request is opened targeting `main`, these workflows are triggered:
+
+- [`pull-request`](./workflows/pull-request.yaml)
+  - runs linting and code / markdown formatting checks
+- [`link-check`](./workflows/link-check.yaml)
+  - checks that internal links are correct

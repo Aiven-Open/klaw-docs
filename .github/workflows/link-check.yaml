@@ -1,15 +1,13 @@
-#  currently unstable, see markdown-link-check.sh
-name: "Link check"
+name: "Link check for internal links"
 on:
-  #  push:
-  #    branches: ["main"]
-  #    paths:
-  #      - "**.md"
-  #  pull_request:
-  #    branches: ["main"]
-  #    paths:
-  #      - "**.md"
-  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "**.md"
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "**.md"
 
 jobs:
   link-checker:
@@ -38,4 +36,4 @@ jobs:
         run: npm install
 
       - name: Run markdown link check
-        run: npm run markdown-link-check -- -q
+        run: npm run markdown-link-check -- -q -o
