@@ -10,11 +10,11 @@ List requests made against the topic.
 ## Prerequisites
 
 - The Superadmin must configure the environment within Klaw, see
-  [Environments](../../Concepts/clusters-environments)
+  [Environments](../../Concepts/clusters-environments.md)
   for the steps to configure the environments.
 - The Superadmin must also update the Server Config to include the
   environments, see
-  [Configure Klaw](../installation/configure-klaw-wizard)
+  [Configure Klaw](../installation/configure-klaw-wizard.md)
   for the steps to configure the server settings.
 
 ## Make a request
@@ -32,10 +32,10 @@ List requests made against the topic.
    conventions, or Klaw will enforce a minimum 5-character name.
 4. Select the number of Topic Partitions you would like for your topic.
    To learn more, see
-   [partitions](https://kafka.apache.org/intro#intro_concepts_and_terms).
+   [partitions](https://kafka.apache.org/intro#intro_concepts_and_terms.md).
 5. Select the Replication factor. This is the number of times each
    event is written to a broker. To learn more, see
-   [replication](https://kafka.apache.org/intro#intro_concepts_and_terms).
+   [replication](https://kafka.apache.org/intro#intro_concepts_and_terms.md).
 6. Add any advanced topic configuration settings. To learn more, see
    Kafka's [Topic configuration
    guide](https://kafka.apache.org/documentation/#topicconfigs).

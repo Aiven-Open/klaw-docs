@@ -7,7 +7,8 @@ them to a team in Klaw.
 
 ## Prerequisites
 
-1. **Environment configuration**: Make sure to configure your environments and set the `klaw.tenant.config` property as described in the [tenant configuration](tenant-config) guide.
+1. **Environment configuration**: Make sure to configure your environments and set the `klaw.tenant.config` property as
+   described in the [tenant configuration](tenant-config.md) guide.
 2. **User permissions**: You need to be logged in as a `SUPERADMIN` or a user with the `SYNC_CONNECTORS` permission.
 
 ## Steps to synchronize connectors
@@ -23,4 +24,6 @@ them to a team in Klaw.
 
    ![image](../../../static/images/sync/SyncConnectorsFromCluster.png)
 
-In case a connector is deleted from the cluster but still exists in Klaw metadata, you can remove it by selecting **REMOVE FROM KLAW** at the end of the corresponding record.
+<!-- prettier-ignore -->
+In case a connector is deleted from the cluster but still exists in Klaw metadata, you can remove it by selecting
+**REMOVE FROM KLAW** at the end of the corresponding record.

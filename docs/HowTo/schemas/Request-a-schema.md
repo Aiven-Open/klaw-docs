@@ -8,7 +8,7 @@ decline any schema request.
 ## Prerequisites
 
 - The Superadmin must configure the environment within Klaw. See
-  [Environments](../../Concepts/clusters-environments) for the steps to configure the environments.
+  [Environments](../../Concepts/clusters-environments.md) for the steps to configure the environments.
 
 ## Make a schema request
 
@@ -30,7 +30,9 @@ decline any schema request.
    topic name.
 
    :::note
-   Registering schemas on subject-key is not possible in Klaw. Klaw enforces `TopicNameStrategy` strategy, and it uses the topic name to determine the subject to be used for schema lookups. This strategy enforces following only one schema per topic.
+   Registering schemas on subject-key is not possible in Klaw. Klaw enforces `TopicNameStrategy` strategy, and it uses
+   the topic name to determine the subject to be used for schema lookups. This strategy enforces following only one
+   schema per topic.
    :::
 
 5. Upload the schema (avro) that you wish to register on this subject.

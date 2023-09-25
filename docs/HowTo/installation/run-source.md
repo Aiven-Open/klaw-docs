@@ -12,7 +12,10 @@ the source.
 
 2. Experimental UI Configuration
 
-   A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing and working topics easier, more efficient, and more accessible. This new look and feel is achieved by switching to React.
+   A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists
+   of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing
+   and working topics easier, more efficient, and more accessible. This new look and feel is achieved by switching to
+   React.
 
    The redesigned UI is enabled by default since Release 2.4.0. If you
    want to use Klaw without the preview, for now, you can disable it:
@@ -22,8 +25,10 @@ the source.
 
 3. Configure Cluster API access
 
-   - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64 string in the module: core.
-   - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above base64 string in the module: cluster-api.
+   - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64
+     string in the module: core.
+   - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above
+     base64 string in the module: cluster-api.
 
    ```{.bash caption="Bash Generation Example"}
    echo "ThisIsExactlyA32CharStringSecret" | base64
@@ -35,14 +40,17 @@ the source.
    VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
    ```
 
-4. Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top level of the project directory. This will build JAR files in the `target/` directories of each module: core and cluster-api.
+4. Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top
+   level of the project directory. This will build JAR files in the `target/` directories of each module: core and
+   cluster-api.
 
    node, npm, and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 
    If the build runs into an error while installing node/npm/pnpm, you can
 
    - Disable the execution plugins (for node/npm/pnpm) in module core/pom.xml
-   - Manually install node/npm/pnpm and copy assets by following the procedure here. [Manual installation of React](https://github.com/aiven/klaw/blob/main/coral/README.md)
+   - Manually install node/npm/pnpm and copy assets by following the procedure
+     here. [Manual installation of React](https://github.com/aiven/klaw/blob/main/coral/README.md)
 
 5. Start the API component by running its JAR file:
 
@@ -65,4 +73,5 @@ the source.
 
 ## Next Steps
 
-Once you have finished verifying your installation, we recommend you follow the documentation in [configure-klaw-wizard](configure-klaw-wizard).
+Once you have finished verifying your installation, we recommend you follow the documentation
+in [configure-klaw-wizard](configure-klaw-wizard.md).
