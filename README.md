@@ -35,6 +35,8 @@ npm start
 ℹ️ You can see all our scripts in the [`package.json`](package.json).
 You can also run `npm run` in your console to get a list of all available scripts.
 
+Please note that you have to set up your [local development](#installation-and-usage) in order to use the scripts.
+
 Here are the important ones you're likely to use:
 
 - `npm start`: starts the app for development
