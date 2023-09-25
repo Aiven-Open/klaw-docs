@@ -24,5 +24,6 @@ them to a team in Klaw.
 
    ![image](../../../static/images/sync/SyncConnectorsFromCluster.png)
 
-In case a connector is deleted from the cluster but still exists in Klaw metadata, you can remove it by selecting \*
-\*REMOVE FROM KLAW\*\* at the end of the corresponding record.
+<!-- prettier-ignore -->
+In case a connector is deleted from the cluster but still exists in Klaw metadata, you can remove it by selecting
+**REMOVE FROM KLAW** at the end of the corresponding record.
