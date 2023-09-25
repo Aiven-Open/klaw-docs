@@ -72,7 +72,7 @@ details within Klaw.
 - **Date Requested**  
   This is a timestamp of when the request was created.
 
-- **Other Topic Configs**  
+- **Other Topic Configurations**  
   The advanced configuration will appear in this space, such as
   those described in [Apaches
   documentation](https://kafka.apache.org/documentation/#topicconfigs)

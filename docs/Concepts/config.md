@@ -23,7 +23,7 @@ format.
 ## Configure metastore properties
 
 The `metastore` is a configurable database that holds Klaw's data. You can configure it by setting
-the `spring.datasource.*` config values in your `application.properties` file.
+the `spring.datasource.*` configuration values in your `application.properties` file.
 
 ## Connect to Apache Kafka® over SSL
 

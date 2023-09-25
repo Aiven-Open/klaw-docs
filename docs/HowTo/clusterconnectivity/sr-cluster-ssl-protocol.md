@@ -46,7 +46,7 @@ cluster with Klaw using SSL protocol:
     row.
 
 9.  Configure the SSL properties to connect to the schema registry cluster
-    by copying and editing the following lines. Where the **clusterid**
+    by copying and editing the following lines. Where the **`clusterid`**
     should be replaced by the value copied in step 8.
 
         clusterid.kafkassl.keystore.location=client.keystore.p12

@@ -11,7 +11,7 @@ in Klaw.
    the [tenant configuration](tenant-config.md) documentation.
 2. **User permissions**: Log in with a user account with either `SUPERADMIN` or `SYNC_SUBSCRIPTIONS` permissions.
 
-## Steps to syncrhronize ACLs
+## Steps to synchronize ACLs
 
 1. Navigate to the **Synchronize** menu and select **ACLs from Cluster**.
 2. Choose one or more ACLs from the list, assign them to a team, and select **Save**. The selected ACLs

@@ -61,27 +61,35 @@ Let's explore the key challenges that need to be addressed:
 
 - Manual activities
 
-  Creating, accessing, and promoting a topic to a higher environment requires extensive email communication, involving approximately 10 emails. This manual approach consumes valuable time and increases potential errors and miscommunication.
+  Creating, accessing, and promoting a topic to a higher environment requires extensive email communication, involving
+  approximately 10 emails. This manual approach consumes valuable time and increases potential errors and
+  miscommunication.
 
 - Longer lead time
 
-  The end-to-end communication and execution of the manual activities take approximately 2.5 hours, excluding the time spent waiting for human responses. This long lead time hampers efficiency and slows down the overall workflow.
+  The end-to-end communication and execution of the manual activities take approximately 2.5 hours, excluding the time
+  spent waiting for human responses. This long lead time hampers efficiency and slows down the overall workflow.
 
 - Security
 
-  The system faces Role-Based Access Control (RBAC) and data security-related challenges. Ensuring proper access rights and safeguarding sensitive information is crucial for maintaining the integrity and confidentiality of the system.
+  The system faces Role-Based Access Control (RBAC) and data security-related challenges. Ensuring proper access rights
+  and safeguarding sensitive information is crucial for maintaining the integrity and confidentiality of the system.
 
 - Lack of audit
 
-  No proper auditing mechanism is in place to track and monitor requests. This lack of audit trails creates an accountability gap, making identifying and rectifying potential issues or discrepancies challenging.
+  No proper auditing mechanism is in place to track and monitor requests. This lack of audit trails creates an
+  accountability gap, making identifying and rectifying potential issues or discrepancies challenging.
 
 - Adhoc governance
 
-  The absence of a centralized governance setup adds complexity to the system. All actions are initiated through emails, and the request approver list is maintained in spreadsheets or confluence.
+  The absence of a centralized governance setup adds complexity to the system. All actions are initiated through emails,
+  and the request approver list is maintained in spreadsheets or confluence.
 
 - Release management
 
-  The manual release processes, mainly promoting configurations from one environment to another, introduce a significant risk of errors. These errors can cause system outages, leading to disruptions in service and impacting user experience.
+  The manual release processes, mainly promoting configurations from one environment to another, introduce a significant
+  risk of errors. These errors can cause system outages, leading to disruptions in service and impacting user
+  experience.
 
 ![image](../../../static/images/blogimages/kafka-clusters.png)
 
@@ -181,7 +189,7 @@ for its capabilities.
 
 [Community](https://aiven.io/community/forum/tag/klaw)
 
-[Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster Api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+[Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 ## Conclusion
 
@@ -195,5 +203,5 @@ for both developers and admins, Klaw stands as a highly effective
 one-stop solution.
 
 ```bash
-It's free and opensource.
+It's free and  open source.
 ```

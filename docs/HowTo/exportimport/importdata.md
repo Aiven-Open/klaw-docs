@@ -69,5 +69,5 @@ To import data, follow these steps:
 
 The files that can be imported depend on the configuration settings
 mentioned above. You have the flexibility to import either admin data,
-core config data, requests data, or all of them based on the
+core configure data, requests data, or all of them based on the
 configuration options chosen.

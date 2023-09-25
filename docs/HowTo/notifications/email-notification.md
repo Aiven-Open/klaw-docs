@@ -34,7 +34,7 @@ spring.mail.frommailid=fromailid
 The Superadmin can access all the email templates through the navigation
 bar by going to Dashboard -\> Settings. Within settings all email
 templates are prefixed with `klaw.mail` and are suffixed by the
-notificationtype and `.content` These templates can be modified to suit
+`notificationtype` and `.content` These templates can be modified to suit
 local languages, allowing for the rewording of emails and including any
 additional information.
 

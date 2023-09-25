@@ -133,7 +133,7 @@ offers to users.
 
 Klaw is a web application developed using Java, compatible with JDK
 17/19. The application's front end is initially built using AngularJS,
-but an upgrade to React JS is underway. The backend development is
+but an upgrade to React JS is underway. The Backend development is
 carried out using Spring Boot. Klaw relies on an RDBMS-based data store
 for managing metadata. In its default configuration, Klaw employs a file
 based H2 database for storing metadata.
@@ -374,9 +374,9 @@ AWS page.
 
 [Community](https://aiven.io/community/forum/tag/klaw)
 
-[Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster Api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+[Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 For any questions or discussions, please open an issue on GitHub or
 participate in our Community forum.
 
-**It's free and opensource.**
+**It's free and open source.**

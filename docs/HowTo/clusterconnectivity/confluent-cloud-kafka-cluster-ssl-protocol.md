@@ -28,9 +28,9 @@ References:
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can
   communicate.
-- Both the Klaw Apis are running on SSL/HTTPS.
+- Both the Klaw APIs are running on SSL/HTTPS.
 
-## Configure and connect using SSL/ApiKeys
+## Configure and connect using SSL/APIKeys
 
 Follow the steps below to configure and connect to a Confluent Cloud Kafka and Klaw using SSL protocol:
 
@@ -58,7 +58,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
    row.
 9. Open the `application.properties` file located in the
    [klaw/cluster-api/src/main/resources] directory.
-10. Configure the Apikey, Api secret, uris to connect to Confluent Cloud
+10. Configure the API key, API secret, URIs to connect to Confluent Cloud
     Kafka clusters by copying and editing the following lines:
 
     ```java
@@ -77,4 +77,4 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
 
 11. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud
-    Kafka® cluster using ApiKey/Secret.
+    Kafka® cluster using APIKey/Secret.

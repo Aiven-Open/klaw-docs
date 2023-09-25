@@ -52,7 +52,7 @@ Here are the important ones you're likely to use:
   - Run `npm run markdown-link-check -- -q` to only log failures.
   - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
 
-ℹ️ We are using a custom hook path for enabling pre-commit hooks. This path is set in the local git config when
+ℹ️ We are using a custom hook path for enabling pre-commit hooks. This path is set in the local git configuration when
 running `npm install`.
 
 ## Linting and code formatting
@@ -72,14 +72,15 @@ scripts you can use:
 
 Scripts with `lint` do not mutate your code in any way:
 
-- `npm run lint:code` - runs a prettier and eslint check. This includes basic checks for markdown, but not
+- `npm run lint:code` - runs a prettier and ESlint check. This includes basic checks for markdown, but not
   in depth.
 - `npm run lint:markdown` - runs markdown-lint with more detailed check on markdown files.
 
 To apply findings from `lint` and mutate your files:
 
-- `npm run reformat:code` - runs prettier and eslint in fix mode.
+- `npm run reformat:code` - runs prettier and ESlint in fix mode.
 - `npm run reformat:markdown` - runs markdownlint in fix mode.
 
-ℹ️ It's convenient to let prettier and eslint auto-format your code "on save" by your IDE or editor. For markdownlint
+ℹ️ It's convenient to let prettier and ESlint automatically format your code "on save" by your IDE or editor. For
+markdownlint
 you can find [plugins for some IDE/editors](https://github.com/DavidAnson/markdownlint#related), too.

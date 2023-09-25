@@ -65,7 +65,7 @@ Kafka offers various strategies for schema registration, with the default being 
 approach, the subject name corresponds to the Kafka topic name. In this strategy, typical subject names include
 "topic-key" or "topic-value."
 
-Example of an avro schema
+Example of an Avro schema
 
 ```json
 {

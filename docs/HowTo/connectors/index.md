@@ -10,7 +10,7 @@ Connect, it is possible to ingest entire databases or collect metrics
 from all application servers into Kafka topics, thus making the data
 available for low-latency stream processing.
 
-Kafka Connect is a tool for scalably and reliably streaming data between
+Kafka Connect is a tool for scalable and reliable streaming data between
 Apache Kafka and other systems. For more information, see [Kafka
 Connect](https://kafka.apache.org/documentation/#connect)
 
