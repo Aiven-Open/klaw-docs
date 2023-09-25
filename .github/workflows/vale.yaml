@@ -1,0 +1,29 @@
+name: "Vale spelling and prose check"
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "**.md"
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "**.md"
+
+jobs:
+  spell-prose-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac #v4.0.0
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Run vale
+        uses: errata-ai/vale-action@c4213d4de3d5f718b8497bd86161531c78992084 #v2.0.1
+        with:
+          fail_on_error: true
+          vale_flags: "--minAlertLevel=error"
+          reporter: github-pr-check
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
