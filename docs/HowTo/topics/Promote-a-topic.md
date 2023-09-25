@@ -9,7 +9,7 @@ environments as required.
 
 The Superadmin must ensure all prerequisites are met before this
 functionality is used see
-[Promotion](../../Concepts/promotion)
+[Promotion](../../Concepts/promotion.md)
 
 ## Topic Promotion
 

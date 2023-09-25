@@ -35,10 +35,10 @@ Schema management in Klaw is structured around the following:
 
 ## Learn how to
 
-- [Request a schema](Request-a-schema)
+- [Request a schema](Request-a-schema.md)
 
-- [Promote a schema](Promote-a-schema)
+- [Promote a schema](Promote-a-schema.md)
 
-- [Approve a schema](manage-schemas)
+- [Approve a schema](manage-schemas.md)
 
-- [My Schema Requests](My-schema-requests)
+- [My Schema Requests](My-schema-requests.md)

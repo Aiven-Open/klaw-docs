@@ -176,7 +176,7 @@ Select the schemas you want to sync with the cluster. Once you submit your choic
 schemas directly into your designated schema registry environment.
 
 For more information on this synchronization process, refer to
-**[sync-schemas-to-cluster](../../../docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster)**
+**[sync-schemas-to-cluster](/docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster)**
 
 The following video demonstrates migrating schemas to a Schema Registry, specifically focusing on a couple of subjects
 already stored in Klaw.

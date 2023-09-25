@@ -67,7 +67,7 @@ feature provides administrators with additional backup and recovery
 options, enabling them to manage the system more effectively.
 
 For more information, see [Export Klaw
-data](https://www.klaw-project.io/docs/howto/exportdata).
+data](../../docs/HowTo/exportimport/exportdata.md).
 
 :::note
 For a complete list of improvements, changelog, and to download the

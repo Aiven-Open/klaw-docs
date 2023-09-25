@@ -9,7 +9,7 @@ higher environments as needed.
 
 Before using this functionality, the Superadmin must ensure that all
 prerequisites are met. For more information, see
-[Promotion](../../Concepts/promotion).
+[Promotion](../../Concepts/promotion.md).
 
 ## Schema promotion
 
