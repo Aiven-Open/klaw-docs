@@ -13,6 +13,8 @@ necessary information to respond to your bug report or contribution.
 
 - [❤️ Code of Conduct](#-code-of-conduct)
 - [Before you start](#before-you-start)
+- [Style guide](#style-guide)
+  - [Helpful tools](#helpful-tools)
 - [Opening an issue](#opening-an-issue)
 - [How to work on an issue](#how-to-work-on-an-issue)
 - [How to make a pull request](#how-to-make-a-pull-request)
@@ -20,13 +22,17 @@ necessary information to respond to your bug report or contribution.
     - [How to sign off commits](#how-to-sign-off-commits)
     - [How to fix not signed off commits after the fact](#how-to-fix-not-signed-off-commits-after-the-fact)
   - [✅ When is your pull request ready to be merged?](#-when-is-your-pull-request-ready-to-be-merged)
+    - [1. Every PR has to be releasable](#1-every-pr-has-to-be-releasable)
+    - [2. A clear goal with a small scope](#2-a-clear-goal-with-a-small-scope)
+    - [3. Add meaningful information](#3-add-meaningful-information)
+    - [4. Keep a clear git history in mind](#4-keep-a-clear-git-history-in-mind)
 - [Review process and merging a pull request](#review-process-and-merging-a-pull-request)
   - [Squash and merge](#squash-and-merge)
   - [✍️ Writing a great commit message](#-writing-a-great-commit-message)
     - [1. Add a short description as the first line](#1-add-a-short-description-as-the-first-line)
     - [2. Use the "imperative mood" in the first line](#2-use-the-imperative-mood-in-the-first-line)
     - [3. Separate your description with a new line from the body](#3-separate-your-description-with-a-new-line-from-the-body)
-    - [4. Use an optional body to explain why not how.](#4-use-an-optional-body-to-explain-why-not-how)
+    - [4. Use an optional body to explain why not how](#4-use-an-optional-body-to-explain-why-not-how)
     - [5. Wrap your body at 72 characters](#5-wrap-your-body-at-72-characters)
 
 ## ❤️ Code of Conduct
@@ -110,7 +116,7 @@ To sign off commits you need to add the `-s` (or `--signoff`) flag to your commi
 
 #### How to fix not signed off commits after the fact
 
-If you opened a Pull Request but not all commits were signed off, no worries, it can be easily fixed. If you had only
+If you opened a Pull Request but not all commits were signed off, no worries, it can be fixed. If you had only
 one commit, go and amend it like follows:
 
 `git commit --amend --signoff`
@@ -189,7 +195,7 @@ describe the process of building. It helps reviewers to do a good job! But they 
 branch a lot.
 
 This is why we use "squash and merge" as merge method. When merging, the small commits are combined into one. It creates
-a cleaner merge history. It also makes it more straight forward to revert all parts of the changes, if that is needed.
+a cleaner merge history. It also simplifies the process of reverting all parts of the changes, if that is needed.
 
 The commit message for the pull request can be changed when merging. We recommend updating the automatically created
 text for this commit to create a meaningful squash commit message.

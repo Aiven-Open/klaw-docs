@@ -44,7 +44,7 @@ To start local the local development server, run:
 npm start
 ```
 
-## Scripts used and what they execute
+## Scripts used and their actions
 
 ℹ️ You can see all our scripts in the [`package.json`](package.json).
 You can also run `npm run` in your console to get a list of all available scripts.
@@ -63,7 +63,7 @@ Here are the important ones you're likely to use:
 - `npm run markdown-link-check`: checks if there are any broken links. Note: This requires internet connection, as it
   does check external links, too!
   - Run `npm run markdown-link-check -- -o` to only check for internal links (offline mode).
-  - Run `npm run markdown-link-check -- -q` to only log failures.
+  - Run `npm run markdown-link-check -- -q` to only log errors.
   - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
 
 For these scripts, you need to have Vale installed (see [Requirements](#requirements)):
