@@ -11,7 +11,7 @@ order to use them.
 ### ➡️ `npm run markdown-link-check`
 
 Will run the check for all Markdown files. It checks internal as well as external links (so it needs internet
-connection) and assets. Please be aware that you need to [check your results](#-limitation)
+connection) and assets. Please be aware that you need to [check your results](#limitation)
 
 ### ➡️ `npm run markdown-link-check -f "path/to/file.md`
 
@@ -27,9 +27,9 @@ connection) and assets.
 
 The flags can be used with all files as well as only one. They can also be used together.
 
-## ⚠️ Limitation
+## Limitation
 
-When running the link-check for all files without the offline mode flag, the first command ("Checking links in all
+⚠️ When running the link-check for all files without the offline mode flag, the first command ("Checking links in all
 markdown files in /docs") will always return an exist code `1`. We've investigated that for quite some time, but not
 found out what the issue is. Since we're only using offline mode in CI, we decided that we can live with that for now,
 as we still can run the checks and get all result.

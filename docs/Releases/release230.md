@@ -58,7 +58,7 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### Group ACls
+### Group ACLs
 
 You can now group Access Control Lists (ACLs) by Team, making it easier
 to view and manage all ACL information in a more concise and

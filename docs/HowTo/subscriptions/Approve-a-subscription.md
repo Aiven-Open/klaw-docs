@@ -10,7 +10,7 @@ the final decision.
 
 1. When you log into Klaw, a pop-up will notify you of **Pending
    Requests**. Select **Yes, show me!** or navigate to **Approve** and
-   select **ACl Requests** to view the pending requests.
+   select **ACL Requests** to view the pending requests.
 2. Review all information related to the request and approve it by
    clicking the tick button while viewing the pending topic requests.
 3. The subscription will immediately attempt to be provisioned on
@@ -25,7 +25,7 @@ remain in the approvals view for re-approval once the issue is resolved.
 
 1. When you log into Klaw, a pop-up will notify you of **Pending
    Requests**. Select **Yes, show me!** or navigate to **Approve** and
-   select **Acl Requests** to view the pending requests.
+   select **ACL Requests** to view the pending requests.
 2. Review the information associated with the topic request and decline
    it by clicking the **X** button.
 3. Provide a reason for declining the request.

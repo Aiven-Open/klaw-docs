@@ -54,7 +54,7 @@ URL: [https://host:port/helpwizard]
 4. Configure Tenant and Environment hierarchy
 
    Klaw is multi-tenant by default. Every tenant has its own set of Kafka
-   environments, and users of one tenant cannot view/access topics, or acls
+   environments, and users of one tenant cannot view/access topics, or ACLs
    from other tenants. To configure tenants, navigate to **Dashboard -\>
    Settings**, and look for [klaw.tenant.config].
 
@@ -74,10 +74,10 @@ URL: [https://host:port/helpwizard]
    }
    ```
 
-5. Synchronize Topics and ACls
+5. Synchronize Topics and ACLs
 
    If you already have a Kafka cluster, you can easily migrate topics and
-   acls to Klaw using the **Synchronize** option. As a SUPERADMIN, you can
+   ACLs to Klaw using the **Synchronize** option. As a SUPERADMIN, you can
    synchronize topics and ACLs by default. Navigate to **Synchronize** menu
    and select **Topics from cluster** or **ACLs from cluster** to
    synchronize the topics or ACLs. You also can synchronize topics

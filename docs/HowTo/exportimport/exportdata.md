@@ -36,9 +36,12 @@ Klaw data is classified into the below 3 types.
 
 To export data, follow these steps:
 
-1. In the core module of the application properties, enable the data export scheduler by setting `klaw.export.scheduler.enable` to true.
-2. Specify the directory where the data files should be exported by setting `klaw.export.file.path` to the desired location.
-3. Configure a pattern (cron expression) for the scheduler to run at a specific interval. For example, to run the scheduler at 12 am every day, use the expression `'0 0 0 \* \* ?'`.
+1. In the core module of the application properties, enable the data export scheduler by
+   setting `klaw.export.scheduler.enable` to true.
+2. Specify the directory where the data files should be exported by setting `klaw.export.file.path` to the desired
+   location.
+3. Configure a pattern (cron expression) for the scheduler to run at a specific interval. For example, to run the
+   scheduler at 12 AM every day, use the expression `'0 0 0 \* \* ?'`.
 4. Once you have updated the above settings, restart the application for the changes to take effect.
 
 ## What files are exported?
@@ -46,6 +49,6 @@ To export data, follow these steps:
 The exported files typically include the following examples in the
 configured export directory:
 
-- kwmetadata-admin_config-2023-04-03-09-42-00501.json
-- kwmetadata-kwdata-2023-04-03-09-42-00501.json
-- kwmetadata-kwrequests_data-2023-04-03-09-42-00501.json
+- `kwmetadata-admin_config-2023-04-03-09-42-00501.json`
+- `kwmetadata-kwdata-2023-04-03-09-42-00501.json`
+- `kwmetadata-kwrequests_data-2023-04-03-09-42-00501.json`
