@@ -2,10 +2,10 @@
 sidebar_position: 6.0
 ---
 
-# Faq
+# FAQ
 
-1\. Is Klaw Opensource? Yes, Klaw is fully opensource, and it remains
+1\. Is Klaw open source? Yes, Klaw is fully open source, and it remains
 the same.
 
-2\. Who manages Klaw project? Klaw is managed by Aiven Open source
-developers (Ospo team).
+2\. Who manages Klaw project? Klaw is managed by Aiven open source
+developers (OSPO team).

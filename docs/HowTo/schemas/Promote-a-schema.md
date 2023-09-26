@@ -76,5 +76,5 @@ In case of errors, Klaw provides the following failure messages:
   the issue with communication to the Schema Registry.
 
 :::note
-Using forceRegister will bypass the Schema Validation as you will be
+Using "forceRegister" <!--vale NO_SPELL--> will bypass the Schema Validation as you will be
 overriding the compatibility on provisioning.

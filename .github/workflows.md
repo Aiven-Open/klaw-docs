@@ -16,3 +16,5 @@ When a Pull Request is opened targeting `main`, these workflows are triggered:
   - runs linting and code / markdown formatting checks
 - [`link-check`](./workflows/link-check.yaml)
   - checks that internal links are correct
+- [`vale`](./workflows/vale.yaml)
+  - spell checking

@@ -11,7 +11,7 @@ access will be granted based on the request.
 
 Apache Kafka ships with a pluggable authorization framework. Kafka
 provides default implementations that store ACLs in the cluster
-metadata For a deeper understanding of Acls, see [Kafka Authorization
+metadata For a deeper understanding of ACLs, see [Kafka Authorization
 and ACLs](https://kafka.apache.org/documentation/#security_authz)
 
 Topics allow the producers to create events that consumers can read

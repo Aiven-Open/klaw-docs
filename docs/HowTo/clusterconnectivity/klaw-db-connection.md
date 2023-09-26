@@ -33,7 +33,7 @@ To configure a connection to a relational database management system
 core(klaw/core/src/main/resources) module, with the connection details
 for your database.
 
-Below is a sample config for Mysql :
+Below is a sample configuration for MySQL:
 
     # Spring JPA properties mysql
     #spring.datasource.url=jdbc:mysql://localhost:3306/kafkametadbpro?autoReconnect=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&cachePrepStmts=true&useServerPrepStmts=true&rewriteBatchedStatements=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
@@ -43,7 +43,7 @@ Below is a sample config for Mysql :
     #spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
     #spring.datasource.platform=mysql
 
-Below is a sample config for Postgres :
+Below is a sample configuration for Postgres :
 
     # Spring JPA properties postgresql
     #spring.datasource.url=jdbc:postgresql://localhost:5432/klaw?cachePrepStmts=true&useServerPrepStmts=true&rewriteBatchedStatements=true

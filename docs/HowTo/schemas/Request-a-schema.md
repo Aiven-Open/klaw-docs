@@ -35,7 +35,7 @@ decline any schema request.
    schema per topic.
    :::
 
-5. Upload the schema (avro) that you wish to register on this subject.
+5. Upload the schema (Avro) that you wish to register on this subject.
    Make sure it is a valid JSON.
 6. Add any remarks that will help the reviewer decide whether to
    approve or decline the request.

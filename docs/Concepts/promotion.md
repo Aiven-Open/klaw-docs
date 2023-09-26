@@ -4,7 +4,7 @@ Klaw allows users to control the creation of resources in their Kafka
 environment through the concept of promotion.
 
 - This adds an extra layer of security, avoiding the risk of manually duplicating entries across environments.
-- The requests are corectly reviewed and verified by another pair of eyes, maintaining the sanity of the application.
+- The requests are correctly reviewed and verified by another pair of eyes, maintaining the sanity of the application.
 - Information is audited. It is helpful to know who raised and approved the request and when it was created. This
   information can aid in identifying issues that arise during unexpected system behavior.
 - By maintaining a history of applied changes, it is easy to track back the evolution of a configuration.
@@ -22,7 +22,7 @@ configures which environments promote to the next environment in your
 organization. Each resource Topic/Schema must already be created by the
 superadmin under **Environments** before being added to the **Tenant
 Model** or the server will reject the configuration. The below example
-defines the Kafka Topic environments as 'Dev' & 'TST' and specifies
+defines the Kafka Topic environments as "DEV" & "TST" and specifies
 the order that will be enforced in the promotion of topics. Similarly,
 the Schema Registry environments have all been defined and placed in
 order.

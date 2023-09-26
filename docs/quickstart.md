@@ -4,7 +4,7 @@ sidebar_position: 1.1
 
 # Quick Start
 
-In this tutorial, we will install Klaw with docker, and request for a kafka topic and verify its existence on kafka
+In this tutorial, we will install Klaw with docker, and request for a Kafka topic and verify its existence on Kafka
 cluster.
 
 ## 1. Run the docker script
@@ -111,7 +111,8 @@ registry servers in Klaw.
 ## 2. Login to Klaw
 
 After docker has started 5 processes, you may verify them by `docker ps`.
-Now you may log into Klaw on `http://localhost:9097` with credentials `william : welcome`
+Now you may log into Klaw on `http://localhost:9097` with
+credentials `william : welcome` <!--vale NO_SPELL-->
 
 ![Screenshot: Klaw's login page](../static/images/quickstart/QS_LoginScreen.png)
 
@@ -131,7 +132,7 @@ options.
 Fill in the details
 
 - Select STG environment
-- Fill in a topic name 'testtopic' for example
+- Fill in a topic name <!-- vale off -->"testtopic" <!-- vale on -->for example
 - Leave partitions, replication factor and advanced configuration to defaults
 - Fill in text a topic description. 'Topic for demo' for example
 - Submit
@@ -148,7 +149,7 @@ Newly created topic request is now visible in My team's requests menu on the sid
 
 On the top right click on the profile and again click on the profile -> logout
 
-william is now logged out.
+william <!--vale NO_SPELL--> is now logged out.
 
 ## 7. Login again
 
@@ -164,7 +165,7 @@ Here there is a pending request to be approved or declined. Click on view to rev
 
 ![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
 
-## 10. That's it. Topic is created on Apache kafka cluster
+## 10. That's it. Topic is created on Apache Kafka cluster
 
 To verify
 
@@ -172,5 +173,5 @@ To verify
 docker exec -it klaw-kafka /opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-should display the newly created kafka topic. You can also try creating a schema for the topic from the "Request a new"
+should display the newly created Kafka topic. You can also try creating a schema for the topic from the "Request a new"
 dropdown.

@@ -1,7 +1,7 @@
 # My Subscription Requests
 
-To access the **My Acl Requests** page, navigate to the **Requests -\>
-My Acl Requests**. On this page, you can see all the requests created by
+To access the **My ACL Requests** page, navigate to the **Requests -\>
+My ACL Requests**. On this page, you can see all the requests created by
 you or your team, along with an audit log and the history of your
 subscription requests.
 

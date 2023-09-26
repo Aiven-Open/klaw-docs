@@ -27,8 +27,7 @@ these steps:
 2. Go to **Users**, and select the **Edit** option for the user whose
    profile you want to modify.
 3. Check the **Enable Switching Teams** checkbox.
-4. Select at least two teams from the **Switch between Teams** multiple
-   select listbox.
+4. Select at least two teams from the **Switch between Teams** multiple select
 5. Click **Save** to save your changes.
 
 ![image](../../../static/images/teams/SwitchTeams.png)
