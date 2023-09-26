@@ -11,6 +11,9 @@ their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
 
 ## How to use Vale
 
+- install Vale
+- run `vale sync` on root level
+
 Our Vale setup is a work in progress, we will extent it over time and establish a more strict style guide. Right now, we
 use it for a basic spell checking.
 

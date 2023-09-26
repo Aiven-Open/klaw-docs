@@ -17,10 +17,11 @@ You can find source code and all content for our ([klaw-project.io](https://www.
 This is the setup you every time. You can find the different ways how to run the local development process below.
 
 Optional, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline. If
-you want to use Vale locally, too, please make sure you install it.
+you want to use Vale locally, too, please make sure you install it:
 
-It runs on Mac, Linux and Windows. You can find instructions to download and install it at
-their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
+- It runs on Mac, Linux and Windows. You can find instructions to download and install it at
+  their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
+- after installation, run `vale sync` on root level
 
 ### Local development
 
