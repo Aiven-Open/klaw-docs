@@ -38,7 +38,7 @@ When you have Vale installed, you can run this scripts on root level:
 - what files to check (`.md` and `.mdx` files)
 - what styles to use ([Google package](https://vale.sh/hub/google/) as well as custom Klaw styles)
 
-The GitHub workflow is defined in [`.github/workflows/vale.yaml`](/.github/workflows/vale.yaml)
+The GitHub workflow is defined in [`.github/workflows/vale.yaml`](../workflows/vale.yaml)
 
 ### Spell checking
 
