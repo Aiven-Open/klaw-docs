@@ -7,6 +7,8 @@
 This is the Klaw documentation repository. Welcome 👋 🎉
 You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
 
+We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation, an optimized site generator in React.
+
 ## Installation and usage
 
 ### Requirements
@@ -14,10 +16,10 @@ You can find source code and all content for our ([klaw-project.io](https://www.
 - [node](https://nodejs.org/en/) needs to be installed.
   -> please check [nvmrc](.nvmrc) or the `engines` definition in [package.json](package.json) for version.
 
-This is the setup you every time. You can find the different ways how to run the local development process below.
+This is the setup you need every time. You can find the different ways how to run the local development process below.
 
-Optional, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline. If
-you want to use Vale locally, too, please make sure you install it:
+Optionally, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline.
+If you want to use Vale locally, too, please make sure you install it:
 
 - It runs on Mac, Linux and Windows. You can find instructions to download and install it at
   their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
@@ -25,7 +27,12 @@ you want to use Vale locally, too, please make sure you install it:
 
 ### Local development
 
-Install all needed dependencies and setup githooks:
+First, make sure you hare the required technology set up:
+
+- node (see above)
+- optional: Vale (see above)
+
+The, install all needed dependencies and setup the needed githooks:
 
 ```shell
 npm install

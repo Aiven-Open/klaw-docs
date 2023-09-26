@@ -11,6 +11,7 @@ Approvers
 Avro
 Confluent
 Confluent's
+Docusaurus
 ESlint
 Kafkawize
 Karapace
@@ -29,9 +30,11 @@ URI
 URIs
 ZooKeeper
 actioned
+alex
 approvers
 auditable
 bcc
+changeset
 cron
 deserialization
 deserialize
@@ -52,6 +55,7 @@ pluggable
 pnpm
 preloading
 protobuf
+rebase
 requester
 requester's
 signup
