@@ -19,7 +19,10 @@
     "reformat:markdown": "markdownlint \"**/*.md\" --ignore node_modules --fix",
     "reformat": "npm run reformat:code && npm run reformat:markdown",
     "lint-staged": "lint-staged",
-    "markdown-link-check": "markdown-link-check-script/markdown-link-check.sh"
+    "markdown-link-check": "markdown-link-check-script/markdown-link-check.sh",
+    "spell:error": "vale . --minAlertLevel=error",
+    "spell:warn": "vale . --minAlertLevel=warning",
+    "spell:suggestion": "vale . --minAlertLevel=suggestion"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [

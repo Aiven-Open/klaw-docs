@@ -1,11 +1,11 @@
 name: "Vale spelling and prose check"
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
       - "**.md"
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
       - "**.md"
 
