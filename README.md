@@ -7,6 +7,8 @@
 This is the Klaw documentation repository. Welcome 👋 🎉
 You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
 
+We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation, an optimized site generator in React.
+
 ## Installation and usage
 
 ### Requirements
@@ -14,10 +16,10 @@ You can find source code and all content for our ([klaw-project.io](https://www.
 - [node](https://nodejs.org/en/) needs to be installed.
   -> please check [nvmrc](.nvmrc) or the `engines` definition in [package.json](package.json) for version.
 
-This is the setup you every time. You can find the different ways how to run the local development process below.
+This is the setup you need every time. You can find the different ways how to run the local development process below.
 
-Optional, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline. If
-you want to use Vale locally, too, please make sure you install it:
+Optionally, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline.
+If you want to use Vale locally, too, please make sure you install it:
 
 - It runs on Mac, Linux and Windows. You can find instructions to download and install it at
   their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
@@ -25,7 +27,12 @@ you want to use Vale locally, too, please make sure you install it:
 
 ### Local development
 
-Install all needed dependencies and setup githooks:
+First, make sure you hare the required technology set up:
+
+- node (see above)
+- optional: Vale (see above)
+
+The, install all needed dependencies and setup the needed githooks:
 
 ```shell
 npm install
@@ -37,7 +44,7 @@ To start local the local development server, run:
 npm start
 ```
 
-## Scripts used and what they execute
+## Scripts used and their actions
 
 ℹ️ You can see all our scripts in the [`package.json`](package.json).
 You can also run `npm run` in your console to get a list of all available scripts.
@@ -52,11 +59,12 @@ Here are the important ones you're likely to use:
 - `npm run lint`: runs a format check and if no error is found, lints code and markdown files in the project.
   - the linting script does not mutate your code. See [Linting and code formatting](#linting-and-code-formatting) for
     more info.
-- `npm run reformat`: runs the code formatter (prettier) as well as the markdown linter in fix mode. This will mutate
+- `npm run reformat`: runs the code formatter (Prettier) as well as the markdown linter in fix mode. This will mutate
+  your code.
 - `npm run markdown-link-check`: checks if there are any broken links. Note: This requires internet connection, as it
   does check external links, too!
   - Run `npm run markdown-link-check -- -o` to only check for internal links (offline mode).
-  - Run `npm run markdown-link-check -- -q` to only log failures.
+  - Run `npm run markdown-link-check -- -q` to only log errors.
   - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
 
 For these scripts, you need to have Vale installed (see [Requirements](#requirements)):
@@ -85,15 +93,15 @@ scripts you can use:
 
 Scripts with `lint` do not mutate your code in any way:
 
-- `npm run lint:code` - runs a prettier and ESlint check. This includes basic checks for markdown, but not
+- `npm run lint:code` - runs a Prettier and ESlint check. This includes basic checks for markdown, but not
   in depth.
 - `npm run lint:markdown` - runs markdown-lint with more detailed check on markdown files.
 
 To apply findings from `lint` and mutate your files:
 
-- `npm run reformat:code` - runs prettier and ESlint in fix mode.
+- `npm run reformat:code` - runs Prettier and ESlint in fix mode.
 - `npm run reformat:markdown` - runs markdownlint in fix mode.
 
-ℹ️ It's convenient to let prettier and ESlint automatically format your code "on save" by your IDE or editor. For
+ℹ️ It's convenient to let Prettier and ESlint automatically format your code "on save" by your IDE or editor. For
 markdownlint
 you can find [plugins for some IDE/editors](https://github.com/DavidAnson/markdownlint#related), too.
