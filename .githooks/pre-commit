@@ -8,6 +8,7 @@ if [ $? -ne 0 ]; then
     echo -e '\n\n🙋 Check "lint-staged" in failed.'
     echo -e '   Canceling the commit process.'
     echo -e '   Please fix and try again!\n\n'
+    echo -e '   To fix formatting, run: npm run reformat'
     exit 1
 fi
 

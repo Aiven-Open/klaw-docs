@@ -133,8 +133,7 @@ Once you are done, you need to force push your changes. We recommend using `--fo
 
 Every pull request has to be reviewed before merging. At least one maintainer needs to approve it. This is meant to
 ensure the quality of our documentation. It is also a great tool to give and receive feedback in the community and learn
-from
-each other.
+from each other. Make sure your pipeline is green before asking for a review.
 
 Your pull request should meet the following criteria to be ready for review:
 
