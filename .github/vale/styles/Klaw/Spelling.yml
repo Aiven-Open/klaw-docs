@@ -1,0 +1,7 @@
+# Klaw.Spelling
+# Extends Vale.Spelling and applies exceptions for Klaw specific words
+extends: spelling
+message: "Did you really mean '%s'? If yes, add the term to spelling-klaw-vocabulary.txt"
+level: error
+ignore:
+  - Klaw/spelling-klaw-vocabulary.txt

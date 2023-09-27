@@ -1,9 +1,0 @@
-extends: spelling
-message: "'%s' does not seem to be a recognised word"
-
-dicpath: .github/vale/dicts
-
-append: true
-level: error
-dictionaries:
-  - klaw
