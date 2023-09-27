@@ -13,7 +13,6 @@ Confluent's
 Docusaurus
 ESlint
 Kafkawize
-Kafka
 Karapace
 Klaw
 Klaw's

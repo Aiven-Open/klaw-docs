@@ -1,0 +1,7 @@
+extends: existence
+scope: text
+ignorecase: true
+message: "Please remove the whitespace before punctuation in '%s'."
+level: error
+tokens:
+  - '\s+[:.!?]\s*'

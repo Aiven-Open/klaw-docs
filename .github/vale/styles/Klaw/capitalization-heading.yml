@@ -1,0 +1,52 @@
+# Checks text in sentence case and
+# adds exceptions to where we want words
+# to be used in Title Cases
+extends: capitalization
+message: "'%s' should be in sentence case"
+level: suggestion
+scope: heading
+indicators:
+  - ':'
+  - '.'
+# $title, $sentence, $lower, $upper, or a pattern.
+match: $sentence
+exceptions:
+  - ACLs
+  - APIs
+  - Aiven
+  - AlexJS
+  - Apache
+  - Auth0
+  - Azure
+  - Code of Conduct
+  - Code of Conduct
+  - Community
+  - Confluent
+  - Confluent Cloud
+  - Contributing Guidelines
+  - Contributor Covenant
+  - Developer Certificate of Origin
+  - Docker
+  - GitHub
+  - GitHub
+  - Google
+  - HowTo
+  - Java
+  - JavaScript
+  - Kafka
+  - Klaw
+  - Nginx
+  - NodeJS
+  - OAuth
+  - Okta
+  - PostgreSQL
+  - RDBMS
+  - React
+  - SAML
+  - SSL
+  - Schema Registry
+  - Third-party
+  - TypeScript
+  - UI
+  - Vale
+  - ZooKeeper

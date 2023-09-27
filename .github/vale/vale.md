@@ -34,9 +34,9 @@ When you have Vale installed, you can run this scripts on root level:
 
 [`.vale.ini`](../../.vale.ini) defines:
 
-- where to find Vale style files (`.github/vale/styles`)
-- what files to check (`.md` and `.mdx` files)
-- what styles to use ([Google package](https://vale.sh/hub/google/) as well as custom Klaw styles)
+- Where to find Vale style files (`.github/vale/styles`).
+- What files to check (`.md` and `.mdx` files).
+- What styles to use ([Google package](https://vale.sh/hub/google/) as well as custom Klaw styles).
 
 The GitHub workflow is defined in [`.github/workflows/vale.yaml`](../workflows/vale.yaml)
 
