@@ -129,13 +129,7 @@ Once you are done, you need to force push your changes. We recommend using `--fo
 
 ### ✅ When is your pull request ready to be merged?
 
-<<<<<<< HEAD
-Every pull request has to be reviewed before merging. At least one maintainer needs to approve it. This is meant to
-ensure the quality of our documentation. It is also a great tool to give and receive feedback in the community and learn
-from each other. Make sure your pipeline is green before asking for a review.
-=======
-Every pull request undergoes a review before merging. At least one maintainer must approve it to ensure the quality of our documentation. This process also fosters community learning and feedback. 
->>>>>>> 7b2915e (Reviewed and updated sentences in the  CONTRIBUTING file)
+Before merging any pull request, it must be reviewed by at least one maintainer. This process is in place to ensure the high quality of our documentation. Also, it serves as a valuable opportunity for community members to give and receive feedback and learn from one another. Ensure that your pipeline is in the green before requesting a review.
 
 Your pull request should meet the following criteria to be ready for review:
 
