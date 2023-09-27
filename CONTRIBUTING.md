@@ -6,7 +6,6 @@ Whether you're reporting a bug, suggesting a correction, or adding documentation
 
 Before submitting any issues or pull requests, please read through this document. It ensures that all parties have the necessary information to address your bug report or contribution.
 
-
 ## Content
 
 - [❤️ Code of Conduct](#-code-of-conduct)
@@ -35,7 +34,6 @@ Before submitting any issues or pull requests, please read through this document
 
 ## ❤️ Code of Conduct
 
-
 This project has adopted the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). Before contributing, please take the time to read our Code of Conduct. We expect everyone to uphold this code. Report any unacceptable behavior to us.
 
 For more information, see [Code of Conduct FAQ](https://www.contributor-covenant.org/faq/).
@@ -46,12 +44,12 @@ Our Klaw documentation aims to support and enable users to understand what Klaw 
 
 ## Style guide
 
-We adhere to the [Google developer documentation style guide](https://developers.google.com/style). We're also in the process of formulating our custom guidelines, which will be documented here. 
+We adhere to the [Google developer documentation style guide](https://developers.google.com/style). We're also in the process of formulating our custom guidelines, which will be documented here.
 
 Where possible, these rules are checked automatically using Vale. For more information on how this is set up, see
 our [Vale documentation](.github/vale/vale.md).
 
-We're committed to producing accessible documentation. Learn more in Google's guide on [writing accessible documentation](https://developers.google.com/style/accessibility). 
+We're committed to producing accessible documentation. Learn more in Google's guide on [writing accessible documentation](https://developers.google.com/style/accessibility).
 
 ### Helpful tools
 
@@ -71,7 +69,7 @@ Consider opening an issue if you:
 **What information does an issue need?**
 The more information an issue includes, the better! For example:
 
-- For bugs, provide a comprehensive description of how to reproduce them. Consider adding screenshots or screen recordings for visual issues. 
+- For bugs, provide a comprehensive description of how to reproduce them. Consider adding screenshots or screen recordings for visual issues.
 
 ## How to work on an issue
 
@@ -81,8 +79,6 @@ The more information an issue includes, the better! For example:
 - In your fork, [create a branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) named after the issue you're addressing.
 - 🧑‍💻 Implement your changes. For guidance on setting up a local development environment, refer to our [README](README.md#installation-and-usage).
 - Aim for small, focused commits. This facilitates the review process.
-
-
 
 - If you have the rights: set yourself as an assignee and add the **in progress** label.
 - [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the Klaw repository.
@@ -95,13 +91,11 @@ The more information an issue includes, the better! For example:
 
 Once you've made all your changes and pushed them to GitHub, you're ready to submit a pull request 🎉.
 
-
 ## How to make a pull request
 
 For a detailed guide on creating a PR, refer to GitHub's documentation on [how to create a PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). If you're not sure what to do, please feel free to reach out!
 
 Be conscious of the scope of one PR. Only add changes to your PR related and contributing to the issue you're solving.
-
 
 ### Developer Certificate of Origin
 
@@ -170,7 +164,7 @@ The review process goes as follows:
 - One or more maintainers will carefully read the description and the code of the pull request
 - Comments may be left on specific parts of the change, or on the pull request as a whole. We strive to always be
   empathetic and helpful in our reviews.
--  In some cases, comments may prevent the approval of a pull request. It's important to address these comments before the request can be approved. "Addressing" a comment could involve explaining your approach, getting approval from the reviewer, implementing the suggested change, and making a subsequent commit. To help streamline the process, please include a link to the commit in your response to the comment.
+- In some cases, comments may prevent the approval of a pull request. It's important to address these comments before the request can be approved. "Addressing" a comment could involve explaining your approach, getting approval from the reviewer, implementing the suggested change, and making a subsequent commit. To help streamline the process, please include a link to the commit in your response to the comment.
 - Once all comments have been addressed and resolved, one or more maintainers will approve the pull request.
 - The pull request will then be merged into the `main` branch by a maintainer, usually one of the reviewers.
 
@@ -188,7 +182,6 @@ To address this issue, we implement the "squash and merge" method when merging. 
 
 The pull request's commit message can be modified upon merging. It's advised to update the auto-generated message to make it more meaningful as a squash commit message.
 
-
 ### ✍️ Writing a great commit message
 
 A "great" commit message provides clarity and context, bridging the code and its purpose. While the `diff` highlights the **what** has changed, the commit message explains the **why** behind those changes.
@@ -199,7 +192,6 @@ a base for our rules.
 #### 1. Add a short description as the first line
 
 The first line (`<description>`) should briefly describe your change. Limit it to preferably 50 characters. It should never be longer than 72 characters.
-
 
 ⛔ **️Don't**
 
@@ -213,7 +205,6 @@ The first line (`<description>`) should briefly describe your change. Limit it t
 
 "Imperative mood" means forming sentences as commands. Imagine your commit message as: "If applied, this commit will... 'do your change'".
 
-
 ⛔ **️Don't**
 `fix: Removed the newline that caused a linting error`
 -> _"If applied, this commit will_ removed the newline that caused a linting error"
@@ -225,7 +216,6 @@ The first line (`<description>`) should briefly describe your change. Limit it t
 #### 3. Separate your description with a new line from the body
 
 If you add a body to your message, make sure to add an empty line to separate it from the description. This will improve readability and make `git log --oneline` or `git shortlog` more usable.
-
 
 #### 4. Use an optional body to explain why, not how
 
