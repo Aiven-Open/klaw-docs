@@ -18,16 +18,18 @@ exceptions:
   - Apache
   - Auth0
   - Azure
+  - Azure
+  - CLI
+  - Code
   - Code of Conduct
-  - Code of Conduct
-  - Community
   - Confluent
   - Confluent Cloud
   - Contributing Guidelines
   - Contributor Covenant
+  - Cosmos
   - Developer Certificate of Origin
   - Docker
-  - GitHub
+  - Emmet
   - GitHub
   - Google
   - HowTo
@@ -35,12 +37,13 @@ exceptions:
   - JavaScript
   - Kafka
   - Klaw
+  - Kubernetes
+  - Linux
   - Nginx
   - NodeJS
   - OAuth
   - Okta
   - PostgreSQL
-  - RDBMS
   - React
   - SAML
   - SSL
@@ -48,5 +51,11 @@ exceptions:
   - Third-party
   - TypeScript
   - UI
+  - URLs
+  - VS
   - Vale
+  - Visual
+  - Windows
   - ZooKeeper
+  - gRPC
+  - macOS
