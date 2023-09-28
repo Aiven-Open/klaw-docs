@@ -11,7 +11,7 @@ Date: 29th Sep, 2022
 Klaw version 1.0.0 is a first major release.
 
 - Klaw (formerly Kafkawize) Initial Release 1.0.0
-- This release is cloned from master branch of
+- This release is cloned from main branch of
   <https://github.com/muralibasani/kafkawize>
 - Package renamed to io.aiven.klaw
 - Introduced 'Kafka flavor' in the configuration of clusters
