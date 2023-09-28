@@ -1,0 +1,24 @@
+# Based alex https://github.com/errata-ai/alex/
+
+extends: substitution
+message: Consider using '%s' instead of '%s'.
+ignorecase: true
+level: error
+action:
+  name: replace
+swap:
+  black list: blocklist|wronglist|banlist|deny list
+  blacklist: blocklist|wronglist|banlist|deny list
+  blacklisted: blocklisted|wronglisted|banlisted|deny-listed
+  blacklisting: blocklisting|wronglisting|banlisting|deny-listing
+  master: primary|hub|reference
+  masters: primaries|hubs|references
+  sophisticated technology: complex technology
+  white list: passlist|alrightlist|safelist|allow list
+  white space: space|blank
+  white spaces: space|blank
+  whitelist: passlist|alrightlist|safelist|allow list
+  whitelisted: passlisted|alrightlisted|safelisted|allow-listed
+  whitelisting: passlisting|alrightlisting|safelisting|allow-listing
+  whitespace: space|blank
+  whitespaces: space|blank
