@@ -1,0 +1,8 @@
+extends: conditional
+message: "The first mention of '%s' must be marked as ®"
+level: warning
+scope: text
+ignorecase: false
+
+first: '\b(Kafka)(?!®)'
+second: '(Kafka)(?:®)'

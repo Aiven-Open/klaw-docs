@@ -3,7 +3,7 @@
 # to be used in Title Cases
 extends: capitalization
 message: "'%s' should be in sentence case"
-level: suggestion
+level: warning
 scope: heading
 indicators:
   - ':'
@@ -36,6 +36,7 @@ exceptions:
   - Java
   - JavaScript
   - Kafka
+  - Kafka Connect
   - Klaw
   - Kubernetes
   - Linux

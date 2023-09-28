@@ -5,4 +5,19 @@ ignorecase: true
 # swap maps tokens in form of bad: good
 # Vale will ignore any alerts that match the intended form.
 swap:
+  "(?i)Confluent": Confluent
+  "(?i)acl": ACL
+  "(?i)apache": Apache
+  "(?i)google": Google
+  "(?i)kubernetes": Kubernetes
+  "(?i)linux": Linux
+  "(?i)nginx": Nginx
+  "(?i)oauth": OAuth
+  "(?i)okta": Okta
+  "(?i)postgresql": PostgreSQL
+  "(?i)react": React
+  "(?i)saml": SAML
+  "git[ -]?hub?": GitHub
   "java[ -]?scripts?": JavaScript
+  "node[ -]?js?": NodeJS
+  "type[ -]?scripts?": TypeScript
