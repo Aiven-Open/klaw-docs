@@ -1,9 +1,8 @@
+# Klaw.Spelling
+# Extends Vale.Spelling and applies exceptions for Klaw specific words
 extends: spelling
-message: "'%s' does not seem to be a recognised word"
-
-dicpath: .github/vale/dicts
-
-append: true
+message: "Did you really mean '%s'? If yes, add the term to spelling-klaw-vocabulary.txt"
+ignorecase: true
 level: error
-dictionaries:
-  - klaw
+ignore:
+  - Klaw/spelling-klaw-vocabulary.txt
