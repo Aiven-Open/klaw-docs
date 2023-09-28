@@ -13,16 +13,16 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint:code": "eslint . && prettier --check .",
-    "lint:markdown": "markdownlint \"**/*.md\" --ignore node_modules",
+    "lint:markdown": "markdownlint \"**/*.md\" --ignore '**/.github/vale/styles/**' --ignore '**/node_modules/**'",
     "lint": "npm run lint:code && npm run lint:markdown",
     "reformat:code": "eslint . --fix && prettier --write .",
     "reformat:markdown": "markdownlint \"**/*.md\" --ignore node_modules --fix",
     "reformat": "npm run reformat:code && npm run reformat:markdown",
     "lint-staged": "lint-staged",
     "markdown-link-check": "markdown-link-check-script/markdown-link-check.sh",
-    "spell:error": "vale . --minAlertLevel=error",
-    "spell:warn": "vale . --minAlertLevel=warning",
-    "spell:suggestion": "vale --minAlertLevel=suggestion"
+    "spell:error": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=error ",
+    "spell:warn": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=warning",
+    "spell:all": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=suggestion"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [
@@ -33,7 +33,7 @@
       "prettier --check ."
     ],
     "**/*.md": [
-      "markdownlint \"**/*.md\" --ignore node_modules",
+      "markdownlint \"**/*.md\" --ignore '**/.github/vale/styles/**' --ignore '**/node_modules/**'",
       "prettier --check ."
     ]
   },

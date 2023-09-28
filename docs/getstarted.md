@@ -29,7 +29,7 @@ needed to add them all.
 
 ## Add the cluster to an environment
 
-Klaw supports environments, which is very useful if you have similar
+Klaw supports environments, which is useful if you have similar
 clusters at different stages of the lifecycle, such as staging and
 production.
 

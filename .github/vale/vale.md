@@ -28,29 +28,29 @@ When you have Vale installed, you can run this scripts on root level:
 
 - `npm run spell:error` to show only errors (same as in CI)
 - `npm run spell:warn` to show errors as well as warnings
-- `npm run spell:suggestion` to show errors, warnings and suggestions
+- `npm run spell:all` to show errors, warnings and suggestions
 
 ## Our Vale setup
 
 [`.vale.ini`](../../.vale.ini) defines:
 
-- where to find Vale style files (`.github/vale/styles`)
-- what files to check (`.md` and `.mdx` files)
-- what styles to use ([Google package](https://vale.sh/hub/google/) as well as custom Klaw styles)
+- Where to find Vale style files (`.github/vale/styles`).
+- What files to check (`.md` and `.mdx` files).
+- What styles to use ([Google package](https://vale.sh/hub/google/) as well as custom Klaw styles).
 
 The GitHub workflow is defined in [`.github/workflows/vale.yaml`](../workflows/vale.yaml)
 
 ### Spell checking
 
 Vale ships with an [American dictionary](https://github.com/errata-ai/en_US-web) by default. We define extra vocabulary
-with `styles/Klaw/spelling.yml`. This dictionary is specified in the file `dicts/klaw.dic`. Vale will look in the
-default dictionary first, and then in the Klaw dictionary.
+with `styles/Klaw/spelling.yml`. This refers to a file `spelling-klaw-vocabulary.txt`.In this file, we add words that are common in Klaw but are marked as error from the default dictionary.
+
+The words in our custom spelling are **case sensitive**!
 
 #### Adding word to custom dictionary
 
-If the word is correctly written, you can add it to our custom dictionary. To extend the vocabulary, add the word you
-need in the file `dicts/klaw.dic`. The first line of `dicts/klaw.dic` is a count of the number of entries. Please keep
-it up-to-date. After you added your word, sort the lines alphabetically (except the first one).
+If the word is correctly written, you can add extend our vocabulary. Add the word you
+need in the file `spelling-klaw-vocabulary.txt`. After you added your word, sort the lines alphabetically (except the first one). Make sure you add the correct capitalization, as the words are case-sensitive. Adding "ZooKeeper" for example will still show an error for "zookeeper", which is something we want.
 
 ##### When not to add a word
 
