@@ -24,7 +24,7 @@ improvements.
   functionality to configure Klaw to connect to multiple Apache Kafka
   clusters with different SSL certificates. In the
   application.properties file located in the src/main/resources
-  folder, look for the line starting with ssl.\* and replace it with
+  folder, look for the line starting with SSL .\* and replace it with
   .kafkassl.\*. You can find the cluster-id from the user interface
   under the Clusters page.
 
