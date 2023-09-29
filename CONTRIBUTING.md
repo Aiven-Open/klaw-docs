@@ -44,12 +44,7 @@ Our Klaw documentation aims to support and enable users to understand what Klaw 
 
 ## Style guide
 
-We adhere to the [Google developer documentation style guide](https://developers.google.com/style). We're also in the process of formulating our custom guidelines, which will be documented here.
-
-Where possible, these rules are checked automatically using Vale. For more information on how this is set up, see
-our [Vale documentation](.github/vale/vale.md).
-
-We're committed to producing accessible documentation. Learn more in Google's guide on [writing accessible documentation](https://developers.google.com/style/accessibility).
+You can find all information in our [style guide](styleguide.md) document.
 
 ### Helpful tools
 
