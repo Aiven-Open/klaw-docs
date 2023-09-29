@@ -23,4 +23,5 @@ swap:
   "type[ -]?scripts?": TypeScript
   "(?i)klaw core": Klaw Core
   "(?i)ssl": SSL
+  "(?i)klaw": Klaw
  
