@@ -10,6 +10,5 @@ swap:
   "(?i)Confluent Cloud": Confluent Cloud
   "(?i)api": API
   "(?i)kafka connect": Kafka Connect
-  "(?i)klaw core": Klaw Core
   "(?i)klaw": Klaw
   "(?i)ssl": SSL

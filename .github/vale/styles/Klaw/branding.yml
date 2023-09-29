@@ -21,3 +21,4 @@ swap:
   "java[ -]?scripts?": JavaScript
   "node[ -]?js?": NodeJS
   "type[ -]?scripts?": TypeScript
+  "(?i)klaw core": Klaw Core
