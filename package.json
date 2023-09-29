@@ -20,7 +20,7 @@
     "reformat": "npm run reformat:code && npm run reformat:markdown",
     "lint-staged": "lint-staged",
     "markdown-link-check": "markdown-link-check-script/markdown-link-check.sh",
-    "spell:error": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=error ",
+    "spell:error": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=error",
     "spell:warn": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=warning",
     "spell:all": "vale --glob='!.github/vale/styles/*' . --minAlertLevel=suggestion"
   },
