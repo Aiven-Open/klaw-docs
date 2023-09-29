@@ -48,7 +48,7 @@ Kafka® and Klaw using SSL protocol:
    icon that is available on the right-hand side of each cluster
    row.
 9. Open the `application.properties` file located in the
-   [Klaw/cluster-api/src/main/resources] directory.
+   `klaw/cluster-api/src/main/resources` directory.
 10. Depending on your SASL mechanism, copy one of the below properties, replace `clusterid` with the copied cluster id,
     and save the `application.properties` file.
 
