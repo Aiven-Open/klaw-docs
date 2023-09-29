@@ -11,4 +11,4 @@ swap:
   "(?i)api": API
   "(?i)kafka connect": Kafka Connect
   "(?i)klaw": Klaw
-  "(?i)ssl": SSL
+  
