@@ -4,7 +4,7 @@ Klaw uses a database to store metadata, such as information about users,
 teams, and owners. This allows the system to track and manage access to
 resources within an organization/team. By default, Klaw uses a
 file-based database. However, you can also configure Klaw to use various
-RDBMS, such as MySQL, Oracle, or PostgreSQL.
+RDBMS, such as MySQL, Oracle, or PostgreSQL®.
 
 The configuration for the default file-based database in Klaw is
 specified in the `application.properties` file in the core

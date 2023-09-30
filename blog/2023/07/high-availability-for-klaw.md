@@ -216,7 +216,7 @@ Core Governance Application / Cluster Application
 ### Database management system
 
 For the RDBMS, Klaw is compatible with various database management
-systems such as PostgreSQL, MySQL, and others.
+systems such as PostgreSQL®, MySQL, and others.
 
 Note: While the above configurations have been tested and proven to work
 effectively, there are no guarantees that they will suit every use case.
