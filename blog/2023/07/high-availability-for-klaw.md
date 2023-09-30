@@ -4,7 +4,7 @@ title: High availability for Klaw
 authors: muralibasani
 tags:
   [
-    kafka,
+    Apache Kafka,
     governance,
     topics,
     acls,
@@ -22,7 +22,7 @@ date: July 4, 2023
 In today's dynamic and ever-changing digital landscape, maintaining the
 uninterrupted operation of applications is of the highest importance.
 This blog post explores the configuration of Klaw, a Java-based
-application designed specifically for Kafka governance.
+application designed specifically for Apache Kafka governance.
 
 Our primary focus is on exploring the configuration process for
 achieving high availability (HA) in production environments. By
@@ -34,10 +34,10 @@ unexpected failures.
 
 High availability (HA) is a design principle to ensure operational
 continuity over a given period. For Klaw, being an essential tool in
-managing and monitoring Kafka clusters, the application must be
+managing and monitoring Apache Kafka clusters, the application must be
 resilient to potential system failures. Achieving high availability for
 Klaw means eliminating single points of failure and ensuring minimal or
-no downtime, thereby leading to a more reliable Kafka governance.
+no downtime, thereby leading to a more reliable Apache Kafka governance.
 Unforeseen events and emergencies can cause server failures, affecting
 even the most robust systems. By supporting high availability, Klaw is
 equipped to automatically recover from component failures, thereby
@@ -46,13 +46,13 @@ experience.
 
 ### Importance of High Availability in Klaw
 
-Kafka clusters can be complex and substantial, making effective
+Apache Kafka clusters can be complex and substantial, making effective
 management and monitoring crucial. A failure in these operations can
 lead to significant issues. By configuring Klaw with high availability,
-it becomes a reliable Kafka governance tool that ensures uninterrupted
+it becomes a reliable Apache Kafka governance tool that ensures uninterrupted
 operations, even in the face of underlying system failures. Deploying
 Klaw with high availability minimizes or eliminates downtime and
-provides continuous support for Kafka cluster management, enhancing
+provides continuous support for Apache Kafka cluster management, enhancing
 overall system reliability. With this understanding of high availability
 and its critical role in Klaw, let's explore the architectural design
 that supports it, the internal components of Klaw, and how to configure
@@ -62,7 +62,7 @@ Klaw for high availability.
 
 Before diving into what High Availability is, let's understand why
 it's crucial for Klaw. As Klaw is essential in managing and monitoring
-Kafka clusters, ensuring its resilience against potential failures is
+Apache Kafka clusters, ensuring its resilience against potential failures is
 paramount. Downtime can have dire consequences ranging from slight
 inconveniences to lost revenue and a damaged reputation. High
 Availability for Klaw addresses these critical issues:
@@ -166,8 +166,8 @@ multiple teams and have the flexibility to switch between them.
 
 - Cluster layer The Cluster Layer is the second Java application within
   Klaw.
-  Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka,
-  Schema Registry, Kafka Connect).
+  Communication: This layer is a Java application that communicates with the Governance Layer and Apache Kafka clusters (Apache Kafka,
+  Schema Registry, Apache Kafka Connect).
 
 - User interface switch: By default, users are logged into the
   AngularJS-based interface. However, they have the option to switch to
@@ -198,7 +198,7 @@ Connectors.
 
 For optimal performance of Klaw, we recommend the following system
 requirements. These specifications assume a user base of approximately
-100 or more, with around 50 or more Kafka clusters and over 10,000
+100 or more, with around 50 or more Apache Kafka clusters and over 10,000
 topics.
 
 Core Governance Application / Cluster Application
