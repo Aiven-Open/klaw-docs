@@ -29,17 +29,17 @@ relationships among objects. This guidance enables streamlined access, modificat
 
 Furthermore, a schema outlines both the visual representation and structural organization of the data.
 
-### Kafka context
+### Apache Kafka® context
 
-Within the Kafka ecosystem, schema registries such as Karapace and Confluent's Schema Registry play a key role in the
+Within the Apache Kafka® ecosystem, schema registries such as Karapace and Confluent's Schema Registry play a key role in the
 management and validation of schemas. Furthermore, they provide a RESTful interface to manage schema and their evolution
 processes effectively.
 
-Apache Kafka is a distributed streaming platform that allows producers to write data to topics and consumers to read
+Apache Apache Kafka® is a distributed streaming platform that allows producers to write data to topics and consumers to read
 from them. When there are structural changes to the data, it is important to establish an understanding between the
 producers and consumers to ensure that events are processed successfully.
 
-The below image depicts the communication between Schema Registry, Apache Kafka, Producers and Consumers.
+The below image depicts the communication between Schema Registry, Apache Apache Kafka®, Producers and Consumers.
 
 ![image](../../../static/images/blogimages/SchemaRegistryFlow.png)
 
@@ -50,8 +50,8 @@ registered schemas, as determined by the consumer's settings.
 
 ### Schema id
 
-In Kafka events, you can create schemas for both keys and values, allowing the generation of key schemas and value
-schemas. When a schema is registered, it is automatically stored in the default `_schemas` Kafka topic and is assigned
+In Apache Kafka® events, you can create schemas for both keys and values, allowing the generation of key schemas and value
+schemas. When a schema is registered, it is automatically stored in the default `_schemas` Apache Kafka® topic and is assigned
 a unique identifier.
 
 If the same schema is registered on another topic, it will link the previously registered schema using the same
@@ -61,8 +61,8 @@ To retrieve a schema based on an id: `GET /schemas/ids/{int: id}/schema`
 
 ### Schema Strategy
 
-Kafka offers various strategies for schema registration, with the default being the `TopicNameStrategy`. In this
-approach, the subject name corresponds to the Kafka topic name. In this strategy, typical subject names include
+Apache Kafka® offers various strategies for schema registration, with the default being the `TopicNameStrategy`. In this
+approach, the subject name corresponds to the Apache Kafka® topic name. In this strategy, typical subject names include
 "topic-key" or "topic-value."
 
 Example of an Avro schema
@@ -85,16 +85,16 @@ Example of an Avro schema
 }
 ```
 
-Key schemas are usually strings by default, but you can register key schemas explicitly if needed. Kafka supports
+Key schemas are usually strings by default, but you can register key schemas explicitly if needed. Apache Kafka® supports
 alternative strategies, such as `RecordNameStrategy` and `TopicRecordNameStrategy`.
 
 ### Schema evolution
 
 When you initially register a schema, the need for expansion and scalability arises as application requirements evolve.
-To manage this growth effectively, Kafka consumers must be able to process events using both existing and newly
+To manage this growth effectively, Apache Kafka® consumers must be able to process events using both existing and newly
 registered schemas, thereby avoiding deserialization issues.
 
-A key feature is accommodating multiple schema versions and allowing consumers to seamlessly deserialize Kafka records
+A key feature is accommodating multiple schema versions and allowing consumers to seamlessly deserialize Apache Kafka® records
 according to the registered schema and event structure. This dynamic feature enables producers and consumers to generate
 and process events at scale while ensuring compatibility efficiently. It is important to note that each new schema
 version is assigned a unique identifier.
@@ -125,7 +125,7 @@ Here is a detailed documentation :
 
 ## Schema management in Klaw
 
-In Klaw, each Kafka topic is associated with a specific owner, usually a designated team. The owner team is
+In Klaw, each Apache Kafka® topic is associated with a specific owner, usually a designated team. The owner team is
 automatically granted the role of schema owner, giving them the authority to create new schemas and oversee their
 evolution.
 
@@ -150,7 +150,7 @@ Watch the video below for a step-by-step demonstration of registering a schema i
 ### Schema migration from Schema registry to Klaw
 
 Backing up schemas from the schema registry is essential for ensuring recovery in the event of server failures or
-unexpected disasters. While schemas are typically stored in a Kafka topic with replication, there may be cases where
+unexpected disasters. While schemas are typically stored in a Apache Kafka® topic with replication, there may be cases where
 retrieving them is difficult or impossible.
 
 Klaw simplifies this by connecting directly to the schema registry server, retrieving all available schemas associated

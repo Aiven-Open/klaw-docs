@@ -1,6 +1,6 @@
 extends: conditional
 message: "The first mention of '%s' must be marked as ®"
-level: warning
+level: error
 scope: text
 ignorecase: false
 
