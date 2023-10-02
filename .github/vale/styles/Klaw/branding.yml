@@ -22,4 +22,3 @@ swap:
   "node[ -]?js?": NodeJS
   "type[ -]?scripts?": TypeScript
   "(?i)ssl": SSL
-  "(?i)klaw": Klaw
