@@ -24,4 +24,3 @@ swap:
   "(?i)ssl": SSL
   "(?i)klaw": Klaw
   "(?i)kafka connect": Kafka Connect
-

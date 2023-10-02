@@ -19,11 +19,16 @@ jobs:
           ref: ${{ github.ref }}
           fetch-depth: 0
 
-      - name: Run vale
-        uses: errata-ai/vale-action@c4213d4de3d5f718b8497bd86161531c78992084 #v2.0.1
-        with:
-          fail_on_error: true
-          vale_flags: "--glob='!.github/vale/styles/*' --minAlertLevel=error"
-          reporter: github-pr-check
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        # While Vale offers an action, based on review dog, but that didn't work
+        # to catch errors that are not in files outside of the diff of the PR
+        # We need to run the pipeline for all files at least as long as we introduce
+        # new styles frequently. This is why I followed this approach for running Vale.working-directory:
+        # https://github.com/reviewdog/reviewdog/issues/1408
+      - name: Install Vale
+        run: |
+          wget https://github.com/errata-ai/vale/releases/download/v2.29.1/vale_2.29.1_Linux_64-bit.tar.gz -O vale.tar.gz
+          tar -xvzf vale.tar.gz vale
+          rm vale.tar.gz
+
+      - name: Run Vale
+        run: ./vale --glob='!.github/vale/styles/*' . --minAlertLevel=error --config=.vale.ini
