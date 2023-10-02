@@ -2,7 +2,7 @@
 
 We adhere to the [Google developer documentation style guide](https://developers.google.com/style). We're also establishing a more detailed custom guidelines, which is documented here.
 
-You can run a Vale check for all available styles by running `npm run spell:all`. At the moment, only the level `error` is a established styleguide for us. Checking for warnings or suggestions is meant to be used as inspiration and support.
+You can run a Vale check for all available styles by running `npm run spell:all`. At the moment, only the level `error` is a established style guide for us. Checking for warnings or suggestions is meant to be used as inspiration and support.
 
 Where possible, these rules are checked automatically using Vale. For more information on how this is set up, see
 our [Vale documentation](.github/vale/vale.md).
