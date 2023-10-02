@@ -7,7 +7,6 @@ ignorecase: true
 swap:
   "(?<!Apache )kafka": Apache Kafka
   "(?<!Klaw )cluster api": Klaw Cluster API
-  "(?i)Confluent Cloud": Confluent Cloud
   "(?i)api": API
   "(?i)kafka connect": Kafka Connect
   "(?i)klaw core": Klaw Core
