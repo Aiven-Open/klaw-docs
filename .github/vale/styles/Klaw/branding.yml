@@ -22,3 +22,4 @@ swap:
   "node[ -]?js?": NodeJS
   "type[ -]?scripts?": TypeScript
   "(?i)ssl": SSL
+  "(?<!Klaw )cluster api": Klaw Cluster API

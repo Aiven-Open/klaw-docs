@@ -23,7 +23,7 @@ References:
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Cluster
+- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
   API), see `klaw-core-with-clusterapi`.
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can
@@ -75,6 +75,6 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
     - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID. Save
       the `application.properties` file.
 
-11. Re-deploy the Cluster API with the updated configuration. This will
+11. Re-deploy the Klaw Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud
     Kafka® cluster using APIKey/Secret.

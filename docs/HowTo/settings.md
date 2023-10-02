@@ -1,5 +1,6 @@
 # Klaw settings
 
+api
 You can configure Klaw for various Klaw functionalities, such as Email
 notification templates and roles, under **Dashboard -\> Settings**.
 
@@ -41,9 +42,9 @@ notification templates and roles, under **Dashboard -\> Settings**.
   registry server when a request is made. You can enable this by
   updating the property `klaw.getschemas.enable`. By default, it is
   false.
-- **Cluster API connectivity**  
+- **Klaw Cluster API connectivity**  
   When installing Klaw, it is important
-  to establish the connectivity between Core API and Cluster API. You
+  to establish the connectivity between Core API and Kluster Cluster API. You
   can test this connectivity by updating the property
   `klaw.clusterapi.url`.
 - **Stop Core API**  
