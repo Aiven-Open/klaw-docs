@@ -6,6 +6,7 @@ ignorecase: true
 # Vale will ignore any alerts that match the intended form.
 swap:
   "(?i)Confluent": Confluent
+  "(?i)Confluent[ -]?Cloud": Confluent Cloud
   "(?i)acl": ACL
   "(?i)apache": Apache
   "(?i)google": Google

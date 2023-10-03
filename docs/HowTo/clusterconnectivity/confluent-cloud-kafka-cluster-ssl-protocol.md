@@ -43,7 +43,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
    - **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-   - **Bootstrap server:** Enter the REST endpoint of your Confluent cloud Kafka cluster (without <https://>). Ex:
+   - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Kafka cluster (without <https://>). Ex:
      `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4. Click **Save**.
