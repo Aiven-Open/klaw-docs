@@ -9,7 +9,7 @@ Kafka cluster to Klaw using SSL protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Cluster
+- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
   API), see `klaw-core-with-clusterapi`.
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can
@@ -86,7 +86,7 @@ cluster in Klaw using SSL protocol:
 
     `--operation All --clusterCluster:kafka-cluster --topic "*"`
 
-12. Re-deploy the Cluster API with the updated configuration. This will
+12. Re-deploy the Klaw Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster
     using SSL protocol.
 

@@ -7,7 +7,7 @@ sidebar_position: 1.0
 Klaw consists of two components:
 
 - The main Klaw core application handling Governance, Security and meta storage.
-- The Cluster API handling the connections to the Apache Kafka,
+- The Klaw Cluster API handling the connections to the Apache Kafka,
   Apache Kafka Connect and Schema Registry servers.
 
 ## Quickstart
