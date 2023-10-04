@@ -24,3 +24,4 @@ swap:
   "type[ -]?scripts?": TypeScript
   "(?i)ssl": SSL
   "(?i)kafka[ -]?connect": Kafka Connect
+  "(?<!Klaw )cluster api": Klaw Cluster API

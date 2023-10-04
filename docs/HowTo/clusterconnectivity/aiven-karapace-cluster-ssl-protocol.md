@@ -5,7 +5,7 @@ Schema Registry over the REST protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Cluster
+- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
   API) to use secure SSL, see
   `klaw-core-with-clusterapi`. This
   involves configuring the `klaw.clusterapi.url` setting in the Klaw
@@ -58,6 +58,6 @@ registry cluster with Klaw using SSL protocol:
 
    Replace `clusterid` with Klaw cluster Id copied from Klaw UI.
 
-10. Re-deploy the Cluster API with the updated configuration. This will
+10. Re-deploy the Klaw Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Kafka cluster
     using SSL protocol.

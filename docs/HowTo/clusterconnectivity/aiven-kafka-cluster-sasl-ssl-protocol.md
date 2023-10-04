@@ -61,7 +61,7 @@ Kafka® and Klaw using SSL protocol:
 11. To enable ACL authorization, copy the Authorization token from
     Aiven Console and configure `klaw.clusters.accesstoken` with the
     copied authorization token.
-12. Save the `application.properties` file. Re-deploy the Cluster API
+12. Save the `application.properties` file. Re-deploy the Klaw Cluster API
     with the updated configuration. This will apply the changes and
     enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL
     protocol.
