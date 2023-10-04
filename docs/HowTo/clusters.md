@@ -3,12 +3,12 @@
 In Klaw, clusters are used to store the connectivity information of
 servers. There are three types of clusters that you can define in Klaw:
 
-- Kafka
+- Apache Kafka
 - Schema Registry
-- Kafka Connect
+- Apache Kafka Connect
 
 Depending on the type of cluster, you can need to configure various
-settings, such as protocol, bootstrap servers, REST API URLs, and Kafka
+settings, such as protocol, bootstrap servers, REST API URLs, and Apache Kafka
 flavors.
 
 ## Prerequisite
@@ -24,14 +24,14 @@ To add a new cluster in Klaw, follow these steps:
 1. Log in to Klaw.
 2. Navigate to the **Environments** tab and select **Clusters**.
 3. On the **Clusters** screen, select **Add Cluster**.
-4. On the **Add Kafka Cluster** screen, provide the following information:
+4. On the **Add Apache Kafka Cluster** screen, provide the following information:
 
-   - **Cluster type**: Choose a cluster type from the dropdown menu (Kafka, Schema Registry, or Kafka Connect). Based
+   - **Cluster type**: Choose a cluster type from the dropdown menu (Apache Kafka, Schema Registry, or Apache Kafka Connect). Based
      on the cluster type, you need to include additional information.
    - **Cluster name**: Enter a name for the cluster, for example, `Dev_cluster`.
-   - **Kafka flavor**: Select a Kafka flavor from the dropdown list.
+   - **Apache Kafka flavor**: Select a Apache Kafka flavor from the dropdown list.
      - Provide the additional information required based on the **cluster type**:
-       - If you are adding a **Kafka cluster**, enter the following:
+       - If you are adding a **Apache Kafka cluster**, enter the following:
          - **Protocol**: Select either plaintext or SSL.
          - **RestAPI servers**: Enter the URL of the REST API servers, for example, `https://server:12695`.
          - **Bootstrap servers**: Enter the comma-separated list of bootstrap servers, for
@@ -39,9 +39,9 @@ To add a new cluster in Klaw, follow these steps:
        - If you are adding a **Schema Registry cluster**, enter the following:
          - **Protocol**: Select either plaintext or SSL.
          - **Bootstrap servers**: Enter the comma-separated list of bootstrap servers.
-       - If you are adding a **Kafka Connect cluster**, enter the following:
+       - If you are adding a **Apache Kafka Connect cluster**, enter the following:
          - **Protocol**: Select either plaintext or SSL.
-         - **Kafka Connect servers**: Enter the URL of the Kafka Connect servers, for example, server1:8083.
+         - **Apache Kafka Connect servers**: Enter the URL of the Apache Kafka Connect servers, for example, server1:8083.
 
 5. Select **Save** to create the new cluster. A new cluster is now
    created.

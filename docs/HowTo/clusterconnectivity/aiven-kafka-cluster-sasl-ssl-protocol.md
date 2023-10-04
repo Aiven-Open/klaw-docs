@@ -20,16 +20,16 @@ Apache Kafka® cluster with Klaw using the SASL_SSL authentication protocol.
 ## Configure and connect using SASL protocol
 
 Follow the steps below to configure and connect to an Aiven for Apache
-Kafka® and Klaw using SSL protocol:
+Apache Kafka® and Klaw using SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Kafka cluster** page, enter the following details:
-   - **Cluster Type:** Select **Kafka** from the drop-down list
+3. On the **Add Apache Kafka cluster** page, enter the following details:
+   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
-   - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+   - **Apache Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
    - **Project Name:** Select the project name defined in the [Aiven
      Console](https://console.aiven.io/)
    - **Bootstrap server:** Enter the Service URI for your Apache Kafka
@@ -40,7 +40,7 @@ Kafka® and Klaw using SSL protocol:
 4. Click **Save**.
 5. Add the cluster to the preferred environment. Click **Environments**
    from the **Environments** drop-down menu.
-6. Click **Add Environment** and enter the details to add your Kafka
+6. Click **Add Environment** and enter the details to add your Apache Kafka
    environment.
 7. Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication
    factor, and tenant (set to default).

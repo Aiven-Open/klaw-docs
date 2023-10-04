@@ -1,6 +1,6 @@
 # Request a new Subscription
 
-The process for requesting a new subscription to be created in Kafka is
+The process for requesting a new subscription to be created in Apache Kafka is
 straightforward and efficient. The team that owns the relevant topic is
 responsible for approving or declining subscription requests.
 
@@ -16,9 +16,9 @@ responsible for approving or declining subscription requests.
 
 2. Select the subscribe button available in the bottom right corner.
 
-3. Select the environment where the Kafka topic is located and available for subscription creation.
+3. Select the environment where the Apache Kafka topic is located and available for subscription creation.
 
-   - Based on Kafka flavor of the environment, the fields
+   - Based on Apache Kafka flavor of the environment, the fields
      displayed will vary.
    - For Aiven for Apache Kafka environment, there are no
      consumer groups but a Service account has to be specified.

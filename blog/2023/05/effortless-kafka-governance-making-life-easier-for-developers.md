@@ -11,8 +11,8 @@ date: May 15, 2023
 In today's ever-evolving technological landscape, organizations
 worldwide have adopted Apache Kafka® for its unparalleled scalability
 and exceptional features, leading to a paradigm shift in how messaging
-systems are handled. As more and more organizations adopt Kafka as a
-vital component of their technology stacks, the need for effective Kafka
+systems are handled. As more and more organizations adopt Apache Kafka as a
+vital component of their technology stacks, the need for effective Apache Kafka
 governance becomes paramount.
 
 ```bash
@@ -21,7 +21,7 @@ and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.
 ```
 
-Managing Kafka topics poses significant challenges for companies, often
+Managing Apache Kafka topics poses significant challenges for companies, often
 leading to struggles executing the task effectively. Several crucial
 considerations arise when undertaking this endeavor:
 
@@ -29,7 +29,7 @@ considerations arise when undertaking this endeavor:
   produce and consume messages on a specific topic and establishing
   clear ownership are crucial aspects to address.
 - **Configuration backup and restoration**: Establishing robust
-  strategies for backing up and restoring Kafka's configuration is
+  strategies for backing up and restoring Apache Kafka's configuration is
   essential to ensure prompt recovery in the face of failures or
   system disruptions.
 - **Security measures**: Ensuring the proper enforcement of security
@@ -42,8 +42,8 @@ considerations arise when undertaking this endeavor:
   and awareness of topics within the organization facilitates better
   collaboration and knowledge sharing among teams.
 
-Managing a small number of Kafka topics may seem manageable at first.
-However, as Kafka usage grows and more applications and teams are added,
+Managing a small number of Apache Kafka topics may seem manageable at first.
+However, as Apache Kafka usage grows and more applications and teams are added,
 effective and efficient management can become increasingly challenging.
 This includes the important task of isolating sensitive topics
 containing GDPR, HIPAA, or other types of sensitive data. It is
@@ -93,13 +93,13 @@ Let's explore the key challenges that need to be addressed:
 
 ![image](../../../static/images/blogimages/kafka-clusters.png)
 
-### Navigating Kafka system failures
+### Navigating Apache Kafka system failures
 
-Failures are an inevitable part of any system, and Kafka applications
+Failures are an inevitable part of any system, and Apache Kafka applications
 are no different. These failures can occur at different levels,
 including client-side issues where event deserialization creates
 problems for consumers, as well as infrastructure-related issues that
-result in the loss of zookeeper/Kafka configurations.
+result in the loss of zookeeper/Apache Kafka configurations.
 
 In the context of infrastructure failures, let's consider a scenario
 with 1000 topics, each possessing a unique configuration stored in a
@@ -112,7 +112,7 @@ for efficient recovery.
 
 ### How to mitigate these problems?
 
-To ensure a fail-safe Kafka system, it is crucial to mitigate these
+To ensure a fail-safe Apache Kafka system, it is crucial to mitigate these
 challenges by implementing a robust governance platform. This platform
 should encompass the following essential capabilities:
 
@@ -128,13 +128,13 @@ should encompass the following essential capabilities:
 
 ## Klaw
 
-Klaw is a comprehensive toolkit designed to address the challenges Kafka
+Klaw is a comprehensive toolkit designed to address the challenges Apache Kafka
 developers encounter. It provides solutions for compliance and audit
 concerns, data security, and release management.
 
 Developed as an open tool, Klaw is committed to contributing to the
 streaming community by empowering developers to leverage modern
-governance, control, and security practices while building Kafka
+governance, control, and security practices while building Apache Kafka
 applications.
 
 ### Klaw features
@@ -152,7 +152,7 @@ for its capabilities.
 - **Self-service**: Empowers developers with search, customizable
   dashboard, reporting, and multi-tenancy for efficient resource
   management and data integrity.
-- **Security**: Offers SSO/AD authentication, RBAC, Kafka Security
+- **Security**: Offers SSO/AD authentication, RBAC, Apache Kafka Security
   protocols, audit trails, and multi-tenancy to address diverse
   security needs.
 - **Automation**: Streamlines tasks like resource provisioning, topic
@@ -194,7 +194,7 @@ for its capabilities.
 ## Conclusion
 
 Organizations are devising unique strategies to tackle the growing
-complexity of managing an increasing number of Kafka topics, schemas,
+complexity of managing an increasing number of Apache Kafka topics, schemas,
 and associated issues. These strategies involve using tools like Excel,
 Confluence, and GitOps for partial data maintenance.
 

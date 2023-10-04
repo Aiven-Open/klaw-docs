@@ -1,7 +1,7 @@
 # Manage connectors
 
-To effectively manage Klaw and Kafka Connect, the Administrator must be
-able to stop, start, and restart Kafka Connect as needed. This is
+To effectively manage Klaw and Apache Kafka Connect, the Administrator must be
+able to stop, start, and restart Apache Kafka Connect as needed. This is
 necessary in instances where tasks, connectors, or workers encounter
 failures.
 

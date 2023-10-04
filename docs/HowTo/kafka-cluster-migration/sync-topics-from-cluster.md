@@ -20,7 +20,7 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
      will now appear in the **Topics** menu, assigned to the chosen
      team.
    - `Bulk Options` tab: Select all topics from the
-     Kafka cluster at once, choose a team and save. The selected
+     Apache Kafka cluster at once, choose a team and save. The selected
      topics will now appear in the **Topics** menu, assigned to the
      chosen team.
 
@@ -28,7 +28,7 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
 
 3. You can view all the topics and assign topics to a different team by
    selecting the **Show All** option. This displays all the Apache
-   Kafka topics, both assigned and unassigned to any team.
+   Apache Kafka topics, both assigned and unassigned to any team.
 
 If a topic is deleted on the cluster but still exists in Klaw metadata,
 you can remove it from Klaw. You will notice this at the end of the

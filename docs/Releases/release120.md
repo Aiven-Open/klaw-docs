@@ -42,7 +42,7 @@ and it looks amazing - we're excited to start this new journey.
 
 With the switch to React for UI, this release also introduces the
 redesigned user interface for Browse topics, providing a more
-user-friendly and intuitive interface for managing Kafka topics in Klaw.
+user-friendly and intuitive interface for managing Apache Kafka topics in Klaw.
 It consists of changes to the layout, styling, and overall appearance of
 the interface, as well as improvements to make browsing and working
 topics easier, more efficient, and more accessible.
@@ -100,10 +100,10 @@ The **Request new topic** function in Klaw now includes an advanced
 topic configuration section, where you can configure all the supported
 [topic-level
 configurations](https://kafka.apache.org/documentation/#topicconfigs)
-available in Kafka.
+available in Apache Kafka.
 
 From the advanced topic configuration section, you can specify
-additional configuration options for Kafka topics, such as the cleanup
+additional configuration options for Apache Kafka topics, such as the cleanup
 policy, retention period, flush interval, and more.
 
 ![image](../../static/images/topic/Requestnewtopic.png)

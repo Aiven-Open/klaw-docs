@@ -12,7 +12,7 @@ permission or SUPERADMIN role can create a new user account in Klaw.
 
 ## Team
 
-A team is a group of users responsible for managing specific Kafka
+A team is a group of users responsible for managing specific Apache Kafka
 topics. Teams take **ownership** of topics, and when a team member
 makes a request related to a topic, another member of the same team
 is required to approve the request. A user with

@@ -9,7 +9,7 @@ delete the topic from the highest environment down to the lowest
 environment.
 
 1. In Klaw, select **Topics** on the navigation bar.
-2. Select the specific Kafka Topic you wish to delete.
+2. Select the specific Apache Kafka Topic you wish to delete.
 3. Select the red **X** on the right-hand side of the topic by the environment table at the top of the page.
 
    :::note  

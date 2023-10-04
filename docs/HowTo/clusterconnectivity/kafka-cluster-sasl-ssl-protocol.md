@@ -18,18 +18,18 @@ cluster in Klaw using SASL_SSL protocol:
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Kafka cluster** page, enter the following details:
+3. On the **Add Apache Kafka cluster** page, enter the following details:
 
-   - **Cluster Type:** Select **Kafka** from the drop-down list
+   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SASL_SSL protocol for your cluster
-   - **Kafka Flavor:** Select Apache Kafka as the flavor
+   - **Apache Kafka Flavor:** Select Apache Kafka as the flavor
    - **Bootstrap server:** Enter the bootstrap server details for an Apache Kafka cluster.
 
 4. Click **Save**.
 5. Add the cluster to the preferred environment. Click **Environments**
    from the **Environments** drop-down menu.
-6. Click **Add Environment** and enter the details to add your Kafka
+6. Click **Add Environment** and enter the details to add your Apache Kafka
    environment.
 7. Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication
    factor, and tenant (set to default).
@@ -54,11 +54,11 @@ cluster in Klaw using SASL_SSL protocol:
     <principal=%22kafkaclient1@EXAMPLE.COM>\";
     ```
 
-11. Add relevant ACLs on the Kafka cluster (IP/Principal based) to authorize Klaw to create topics and ACLs. This can be
+11. Add relevant ACLs on the Apache Kafka cluster (IP/Principal based) to authorize Klaw to create topics and ACLs. This can be
     done using: :
 
     `--operation All --clusterCluster:kafka-cluster --topic "*"`
 
 12. Re-deploy the Cluster API with the updated configuration. This will
-    apply the changes and enable Klaw to connect to the Kafka cluster
+    apply the changes and enable Klaw to connect to the Apache Kafka cluster
     using SSL protocol.

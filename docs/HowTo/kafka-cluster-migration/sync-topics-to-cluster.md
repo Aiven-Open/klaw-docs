@@ -15,7 +15,7 @@ them on the Apache Kafka cluster.
 
 1. Navigate to the Synchronize menu and select **Topics to Cluster**.
 2. To synchronize topics, select the source environment (Klaw metadata
-   with topics) and target environment (Kafka cluster where topics have
+   with topics) and target environment (Apache Kafka cluster where topics have
    to be created).
 
    ![image](../../../static/images/sync/SyncTopicsToCluster.png)

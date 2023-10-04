@@ -44,14 +44,14 @@ to enhance user experience and provide a more intuitive design:
   - Create and promote new schemas
   - Add and review subscriptions (ACL) for the creation and retrieval of passwords
   - See history to provide an audit trail of the topic
-  - See messages to view Kafka events on the topic
+  - See messages to view Apache Kafka events on the topic
   - Add and edit documentation (now: "Readme") in markdown format
   - Claim topics
 
 ![image](../../static/images/klaw-topic-overview-250.png)
 
 - New React UI: "Request new..." button
-  - Allows creating a new topic, subscription, schema or Kafka connector from everywhere in the new UI
+  - Allows creating a new topic, subscription, schema or Apache Kafka connector from everywhere in the new UI
 
 ![image](../../static/images/release-250-request-new-button.png)
 
@@ -84,7 +84,7 @@ This release adds the ability to edit your topic requests to fix mistakes instea
 
 ### Key dependency updates
 
-Kafka client upgrade to 3.5.1
+Apache Kafka client upgrade to 3.5.1
 Spring upgrade to 3.1.2
 
 ### Identify Schemas deleted from Schema Registry

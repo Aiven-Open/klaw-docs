@@ -1,8 +1,8 @@
-# Connect with Confluent Cloud Kafka Cluster
+# Connect with Confluent Cloud Apache Kafka Cluster
 
-Confluent Cloud Kafka® is a fully managed distributed data streaming
+Confluent Cloud Apache Kafka® is a fully managed distributed data streaming
 platform, deployable in a cloud, maintained by Confluent. This section
-provides you with information on how to connect Confluent Cloud Kafka
+provides you with information on how to connect Confluent Cloud Apache Kafka
 cluster with Klaw. The following functionalities are available in Klaw for Confluent Cloud:
 
 - Create Topics
@@ -32,24 +32,24 @@ References:
 
 ## Configure and connect using SSL/APIKeys
 
-Follow the steps below to configure and connect to a Confluent Cloud Kafka and Klaw using SSL protocol:
+Follow the steps below to configure and connect to a Confluent Cloud Apache Kafka and Klaw using SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Kafka cluster** page, enter the following details:
+3. On the **Add Apache Kafka cluster** page, enter the following details:
 
-   - **Cluster Type:** Select **Kafka** from the drop-down list
+   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
-   - **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-   - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Kafka cluster (without <https://>). Ex:
+   - **Apache Kafka Flavor:** Select Confluent Cloud Apache Kafka as the flavor
+   - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Apache Kafka cluster (without <https://>). Ex:
      `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4. Click **Save**.
 5. Add the cluster to the preferred environment. Click **Environments**
    from the **Environments** drop-down menu.
-6. Click **Add Environment** and enter the details to add your Kafka
+6. Click **Add Environment** and enter the details to add your Apache Kafka
    environment.
 7. Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication
    factor, and tenant (set to default).
@@ -59,7 +59,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
 9. Open the `application.properties` file located in the
    [klaw/cluster-api/src/main/resources] directory.
 10. Configure the API key, API secret, URIs to connect to Confluent Cloud
-    Kafka clusters by copying and editing the following lines:
+    Apache Kafka clusters by copying and editing the following lines:
 
     ```java
     #clusterid.klaw.confluentcloud.credentials=apikey:apisecret
@@ -77,4 +77,4 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
 
 11. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud
-    Kafka® cluster using APIKey/Secret.
+    Apache Kafka® cluster using APIKey/Secret.

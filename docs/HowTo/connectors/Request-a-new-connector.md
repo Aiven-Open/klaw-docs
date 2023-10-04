@@ -1,9 +1,9 @@
 # Request a new connector
 
-You can request a new connector to be created in Kafka quickly and
+You can request a new connector to be created in Apache Kafka quickly and
 easily using Klaw. The team that requests the connector automatically
 becomes the connector owner, with the ability to approve or deny any
-Kafka Connector.
+Apache Kafka Connector.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Kafka Connector.
 
 1. From the navigation bar in Klaw, select **Requests** and then click
    on **Request Connector** from the drop-down menu
-2. In the **Connect create request** screen, select the Kafka Connect
+2. In the **Connect create request** screen, select the Apache Kafka Connect
    environment where the connector will be created.
 
    In most cases, you must start with the lowest environment and use the promotion feature for higher environments.
