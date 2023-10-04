@@ -154,7 +154,7 @@ User interface components: Allows users to interact with Klaw's
 features through a web interface. APIs and Authorization: The APIs in
 the governance layer are responsible for authorizing requests and
 interacting with the metastore (database). Upon approval, the
-application communicates with the Cluster API application.
+application communicates with the Klaw Cluster API application.
 
 Security: The communication between APIs in the Governance Layer and
 the Cluster Layer is highly secure. JWT token-based authentication is
@@ -227,7 +227,7 @@ running on the virtual machines.
 ### Deployment model
 
 To further enhance the system's reliability, deploying the Governance
-Application and the Cluster API Application on separate machines is
+Application and the Klaw Cluster API Application on separate machines is
 recommended. This setup minimizes the risk of both applications being
 affected by a single point of failure.
 
@@ -327,7 +327,7 @@ upstream klawgcp {
 
 In the high availability mode, Nginx routes the requests to Klaw
 instances which are connected to a common data store such as Postgres.
-Each Klaw instance comprises both the Governance and Cluster API
+Each Klaw instance comprises both the Governance and Klaw Cluster API
 applications. You may choose to deploy these applications on separate
 machines for increased robustness. Below is the deployment model of Klaw
 in HA mode.
