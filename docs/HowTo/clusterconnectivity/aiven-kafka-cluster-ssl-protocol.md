@@ -6,7 +6,7 @@ cluster with Klaw using SSL authentication protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Cluster
+- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
   API), see `klaw-core-with-clusterapi`.
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can
@@ -88,6 +88,6 @@ Kafka® and Klaw using SSL protocol:
 11. To enable ACL authorization, copy the Authorization token from
     Aiven Console and configure `klaw.clusters.accesstoken` with the
     copied authorization token.
-12. Re-deploy the Cluster API with the updated configuration. This will
+12. Re-deploy the Klaw Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Aiven for Apache
     Kafka® cluster using SSL protocol.

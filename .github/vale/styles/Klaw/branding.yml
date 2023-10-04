@@ -23,4 +23,3 @@ swap:
   "node[ -]?js?": NodeJS
   "type[ -]?scripts?": TypeScript
   "(?i)ssl": SSL
-  "(?i)kafka[ -]?connect": Kafka Connect
