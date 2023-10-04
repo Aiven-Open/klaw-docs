@@ -10,12 +10,6 @@ In this tab, you can view the topic's settings, connection details, subscription
 * **Cluster details**: This section provides key information about the cluster, such as the Bootstrap server address for connections, the protocol used, and the specific Kafka version. You can also see the cluster name, current status, and associated REST API details.
 * **Subscriptions & schemas**: This section displays the total count of producers and consumers subscribed to the topic and the number of associated schemas. You can directly **Request new subscription** or **Request new schema** as needed. To view the current subscriptions and schemas, click the **See subscriptions** and **See schema** options. 
 
-In this tab, the below are displayed
-
-- topic configuration like partitions, replication factor and if any advanced configuration
-- cluster details like bootstrap url
-- count of producer and consumer subscriptions and schemas
-
 
 ## Subscriptions tab
 
