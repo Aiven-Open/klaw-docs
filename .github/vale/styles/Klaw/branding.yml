@@ -25,4 +25,4 @@ swap:
   "(?i)ssl": SSL
   "(?<!Klaw )cluster api": Klaw Cluster API
   "(?i)klaw core": Klaw Core
-  "(?i)klaw": Klaw
+   
