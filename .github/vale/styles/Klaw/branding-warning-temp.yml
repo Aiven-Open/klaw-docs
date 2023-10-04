@@ -5,7 +5,6 @@ ignorecase: true
 # swap maps tokens in form of bad: good
 # Vale will ignore any alerts that match the intended form.
 swap:
-  "(?<!Apache )kafka": Apache Kafka
   "(?<!Klaw )cluster api": Klaw Cluster API
   "(?i)api": API
   "(?i)kafka connect": Kafka Connect
