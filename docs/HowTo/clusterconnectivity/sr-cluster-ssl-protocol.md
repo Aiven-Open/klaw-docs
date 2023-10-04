@@ -5,7 +5,7 @@ Schema Registry over the REST protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Cluster
+- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
   API) to use secure SSL, see
   `klaw-core-with-clusterapi`. This
   involves configuring the `klaw.clusterapi.url` setting in the Klaw
@@ -64,6 +64,6 @@ cluster with Klaw using SSL protocol:
 - Replace `client.truststore.jks` with the path for the truststore and
   `klaw1234` with the password configured for the truststore file.
 
-- Save the `application.properties` file. 10. Re-deploy the Cluster API
+- Save the `application.properties` file. 10. Re-deploy the Klaw Cluster API
   with the updated configuration. This will apply the changes and enable
   Klaw to connect to the Apache Kafka cluster using SSL protocol.

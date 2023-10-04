@@ -24,3 +24,5 @@ swap:
   "type[ -]?scripts?": TypeScript
   "(?i)ssl": SSL
   "(?<!Apache )kafka": Apache Kafka
+  "(?<!Klaw )cluster api": Klaw Cluster API
+ 

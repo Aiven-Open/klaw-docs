@@ -23,7 +23,7 @@ the source.
    - Configure the property `klaw.coral.enabled` in the
      `application.properties` file to `false` in the module: core.
 
-3. Configure Cluster API access
+3. Configure Klaw Cluster API access
 
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64
      string in the module: core.
