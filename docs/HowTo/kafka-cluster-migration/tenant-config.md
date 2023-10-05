@@ -36,9 +36,9 @@ You can configure the following in a tenant:
 
 - Base sync environment Kafka Connector
 
-  This is the base Kafka connect environment in a hierarchy of
+  This is the base Kafka Connect environment in a hierarchy of
   environments. Make sure this environment already exists under
-  Environments (Kafka connect).
+  Environments (Kafka Connect).
 
       Field: baseSyncKafkaConnectCluster
 
@@ -46,7 +46,7 @@ You can configure the following in a tenant:
 
   Define a set of environments in order to promote a
   Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
-  environment already exists under Environments (Kafka connect)
+  environment already exists under Environments (Kafka Connect)
 
       Field: orderOfConnectorsPromotionEnvsList
 

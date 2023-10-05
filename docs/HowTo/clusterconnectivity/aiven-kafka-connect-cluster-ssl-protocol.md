@@ -28,7 +28,7 @@ Kafka Connect service with Klaw using SSL protocol:
 
 3. On the **Add Kafka cluster** page, enter the following details:
 
-   - **Cluster Type:** Select **KafkaConnect** from the drop-down list
+   - **Cluster Type:** Select **Kafka Connect** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster\*
    - **Protocol:** Select SSL protocol for your cluster
    - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
