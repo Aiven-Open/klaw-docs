@@ -1,8 +1,10 @@
 <p align = "center">
 <a href = "https://www.klaw-project.io/"><img src="https://www.klaw-project.io/images/logo-dark.png" alt="Logo"></a>
+<h1 align="center">Welcome👋 🎉</h1>
 </p>
 
-Welcome to the Klaw documentation repository 👋 🎉
+Klaw is designed to streamline your Apache Kafka® ecosystem. With key features like comprehensive data governance, fine-grained security, and intuitive user management, Klaw empowers users to make informed decisions, ensure regulatory compliance, and facilitate developer self-service. Secure your data and simplify Kafka governance with Klaw.
+
 You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
 
 We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation, an optimized site generator in React.
