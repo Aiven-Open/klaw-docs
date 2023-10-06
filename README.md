@@ -1,4 +1,6 @@
-# Klaw
+<p align = "center">
+<a href = "https://www.klaw-project.io/"><img src="https://www.klaw-project.io/images/logo-dark.png" alt="Logo"></a>
+</p>
 
 Welcome to the Klaw documentation repository 👋 🎉
 You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
