@@ -36,7 +36,7 @@ in the Klaw-core module to enable the use of Google account login.
 
 5.  Configure an existing SUPERADMIN user from AD to approve new users in the following property for username:
 
-    <klaw.superadmin.default.username=superadmin@company.com>
+    <Klaw.superadmin.default.username=superadmin@company.com>
 
 6.  If you have already signed up with Google, you will be redirected to the Klaw home page.
 

@@ -8,7 +8,7 @@ RDBMS, such as MySQL, Oracle, or PostgreSQL.
 
 The configuration for the default file-based database in Klaw is
 specified in the `application.properties` file in the core
-(klaw/core/src/main/resources) module. For example, your configuration
+(Klaw/core/src/main/resources) module. For example, your configuration
 might look something similar to this:
 
 ```java
@@ -30,7 +30,7 @@ MySQL, Oracle, or PostgreSQL.
 To configure a connection to a relational database management system
 (RDBMS) such as Postgres, Oracle, or MySQL, you need to edit the
 `application.properties` file location in the
-core(klaw/core/src/main/resources) module, with the connection details
+core(Klaw/core/src/main/resources) module, with the connection details
 for your database.
 
 Below is a sample configuration for MySQL:

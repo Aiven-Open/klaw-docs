@@ -31,7 +31,7 @@ software architecture that surpasses hardware limitations.
 
 ## How High Availability Works
 
-In the Klaw core module, configure the below property, which is a
+In the Klaw Core module, configure the below property, which is a
 comma-separated list of Klaw instances.
 
     klaw.uiapi.servers=https://klawhost1:9097,https://klawhost2:9097

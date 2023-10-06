@@ -6,8 +6,8 @@ respective `application.properties` files and verifying the connectivity between
 
 You can find the `application.properties` file located in the following paths:
 
-- Core: [klaw/core/src/main/resources]
-- Cluster-api: [klaw/cluster-api/src/main/resources]
+- Core: [Klaw/core/src/main/resources]
+- Cluster-api: [Klaw/cluster-api/src/main/resources]
 
 ## Configure Klaw application.properties file
 

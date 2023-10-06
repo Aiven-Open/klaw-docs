@@ -26,4 +26,4 @@ them to a team in Klaw.
 
 <!-- prettier-ignore -->
 In case a connector is deleted from the cluster but still exists in Klaw metadata, you can remove it by selecting
-**REMOVE FROM KLAW** at the end of the corresponding record.
+**REMOVE FROM Klaw** at the end of the corresponding record.

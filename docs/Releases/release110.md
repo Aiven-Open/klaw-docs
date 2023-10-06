@@ -18,7 +18,7 @@ improvements.
   connect to Apache Kafka clusters.
 - Enabled JWT-based authentication: Enabled JWT-based authentication
   to connect to Klaw Cluster API. You can configure
-  klaw.clusterapi.access.base64.secret in both core and cluster-api
+  Klaw.clusterapi.access.base64.secret in both core and cluster-api
   modules to enable this authentication between APIs.
 - Connect to multiple clusters using SSL: This release includes the
   functionality to configure Klaw to connect to multiple Apache Kafka

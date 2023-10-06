@@ -16,13 +16,13 @@ schemas from schema registry to Klaw, and vice versa.
 
 ### Binaries
 
-[klaw-2.5.0.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/klaw-2.5.0.jar)
+[Klaw-2.5.0.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/klaw-2.5.0.jar)
 
 [cluster-api-2.5.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/cluster-api-2.5.0.jar)
 
 ### Sources
 
-[klaw-2.5.0.zip ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.5.0.zip)
+[Klaw-2.5.0.zip ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.5.0.zip)
 
 ### Docker
 
