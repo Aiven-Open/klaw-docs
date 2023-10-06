@@ -50,9 +50,7 @@ registered schemas, as determined by the consumer's settings.
 
 ### Schema id
 
-In Apache Kafka events, you can create schemas for both keys and values, allowing the generation of key schemas and value
-schemas. When a schema is registered, it is automatically stored in the default `_schemas` Apache Kafka topic and is assigned
-a unique identifier.
+In Apache Kafka events, you can create schemas for both keys and values. This allows for the generation of key schemas and value schemas. Once a schema is registered, it is automatically stored in the default \_schemas topic of Apache Kafka and is assigned a unique identifier.
 
 If the same schema is registered on another topic, it will link the previously registered schema using the same
 identifier. This identifier becomes an integer value generated upon successfully registering the schema.

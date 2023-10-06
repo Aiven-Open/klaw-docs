@@ -33,10 +33,7 @@ environments.
 
 ## Associating schema environments
 
-As of release 2.2.0, it is now possible to associate a Schema Registry
-environment to a Apache Kafka Environment meaning that you no longer need to
-duplicate the promotion ordering for both Topics and for Schema
-Registries.
+As of release 2.2.0, it is now possible to associate a Schema Registry environment with an Apache Kafka environment. You no longer need to duplicate the promotion ordering for topics and schema registries.
 
 :::note
 A Schema Registry can only be associated with one Apache Kafka environment at a time.

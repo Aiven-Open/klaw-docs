@@ -57,7 +57,9 @@ To add a **Schema Registry environment**, enter the following details in the **A
 - **Select cluster**: Choose the Apache Kafka cluster you want to
   associate with this environment from the dropdown list.
 - **Tenant**: Set the tenant to default.
-- **Select Associated Apache Kafka Environment**: Choose a schema
+<!-- vale off -->
+- **Select Associated Kafka Environment**: Choose a schema
+  <!-- vale on -->
   environment from the dropdown list.
 
 Select **Save** to add a Schema Registry environment.

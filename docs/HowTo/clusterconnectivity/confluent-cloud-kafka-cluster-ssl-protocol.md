@@ -37,12 +37,17 @@ Follow the steps below to configure and connect to a Confluent Cloud Apache Kafk
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Apache Kafka cluster** page, enter the following details:
+3. <!-- vale off -->On the **Add Kafka cluster** page, enter the following details:<!-- vale on -->
 
-   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
+   <!-- vale off -->
+
+   - **Cluster Type:** Select **Kafka** from the drop-down list
+   <!-- vale on -->
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
-   - **Apache Kafka Flavor:** Select Confluent Cloud Apache Kafka as the flavor
+   <!-- vale off -->
+   - **Kafka Flavor:** Select Confluent Cloud Apache Kafka as the flavor
+   <!-- vale off -->
    - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Apache Kafka cluster (without <https://>). Ex:
      `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 

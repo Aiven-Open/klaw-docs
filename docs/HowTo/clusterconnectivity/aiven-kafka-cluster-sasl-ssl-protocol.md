@@ -25,18 +25,24 @@ Apache Kafka® and Klaw using SSL protocol:
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Apache Kafka cluster** page, enter the following details:
-   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
-   - **Cluster Name:** Provide a name for the cluster
-   - **Protocol:** Select SSL protocol for your cluster
-   - **Apache Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
-   - **Project Name:** Select the project name defined in the [Aiven
-     Console](https://console.aiven.io/)
-   - **Bootstrap server:** Enter the Service URI for your Apache Kafka
-     service. You can find the service URI in the Connection information
-     page of your service in Aiven Console.
-   - **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for
-     your Apache Kafka service
+3. <!-- vale off -->On the **Add Kafka cluster** page, enter the following details:<!-- vale on -->
+   <!-- vale off -->
+
+- **Cluster Type:** Select **Kafka** from the drop-down list
+<!-- vale on -->
+- **Cluster Name:** Provide a name for the cluster
+- **Protocol:** Select SSL protocol for your cluster
+<!-- vale off -->
+- **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+<!-- vale on -->
+- **Project Name:** Select the project name defined in the [Aiven
+  Console](https://console.aiven.io/)
+- **Bootstrap server:** Enter the Service URI for your Apache Kafka
+  service. You can find the service URI in the Connection information
+  page of your service in Aiven Console.
+- **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for
+  your Apache Kafka service
+
 4. Click **Save**.
 5. Add the cluster to the preferred environment. Click **Environments**
    from the **Environments** drop-down menu.

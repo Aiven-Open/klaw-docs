@@ -58,7 +58,7 @@ all the environments the topic is configured on, including the environment to wh
 To promote a topic to a higher environment, follow these steps:
 
 1. Select **Topics** on the navigation bar.
-2. Select the specific Apache Kafka Topic you want to promote to the higher environment.
+2. Select the specific Apache Kafka topic you want to promote to the higher environment.
 3. Select the **Promote to \[Next Environment\]** button to promote the topic to the next environment (higher
    environment) that has been configured.
 4. Configure the number of **Partitions** and **Replication factor** for the higher environment in the dropdowns
@@ -77,7 +77,7 @@ promote from the lower environment to the higher environment.
 To promote a schema to a higher environment, follow these steps:
 
 1. Select **Topics** on the navigation bar.
-2. Select the specific Apache Kafka Topic you wish to promote a Schema to the higher environment.
+2. Select the specific Apache Kafka topic associated with the schema you want to promote to the higher environment.
 3. Select the **Schema** tab under the main Topic section.
 4. Select the **Promote to \[Next Environment\]** button to promote a schema to the next environment (higher
    environment) that has been configured.

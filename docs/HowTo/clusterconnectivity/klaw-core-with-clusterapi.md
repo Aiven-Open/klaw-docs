@@ -2,10 +2,7 @@
 
 To run Klaw successfully and perform all the necessary operations on a Apache Kafka cluster, you must connect the Klaw APIs (
 Core API and Cluster API). This involves configuring the secret key and SSL protocols in the
- 
-To run Klaw successfully and perform all the necessary operations on a Kafka cluster, you must connect the Klaw APIs (
-Core API and Klaw Cluster API). This involves configuring the secret key and SSL protocols in the
- 
+
 respective `application.properties` files and verifying the connectivity between the APIs.
 
 You can find the `application.properties` file located in the following paths:

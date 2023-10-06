@@ -21,17 +21,13 @@ and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.
 ```
 
-Managing Apache Kafka topics poses significant challenges for companies, often
-leading to struggles executing the task effectively. Several crucial
+Managing topics in Apache Kafka poses significant challenges for companies, often leading to struggles executing the task effectively. Several crucial
 considerations arise when undertaking this endeavor:
 
 - **Authorization and ownership**: Determining who has the rights to
   produce and consume messages on a specific topic and establishing
   clear ownership are crucial aspects to address.
-- **Configuration backup and restoration**: Establishing robust
-  strategies for backing up and restoring Apache Kafka's configuration is
-  essential to ensure prompt recovery in the face of failures or
-  system disruptions.
+- **Configuration backup and restoration**: Implementing efficient backup and restoration plans for Apache Kafka's configuration is crucial for quick recovery during system failures or disruptions.
 - **Security measures**: Ensuring the proper enforcement of security
   measures through subscriptions and access controls is paramount to
   safeguarding sensitive data and preventing unauthorized access.
@@ -42,7 +38,7 @@ considerations arise when undertaking this endeavor:
   and awareness of topics within the organization facilitates better
   collaboration and knowledge sharing among teams.
 
-Managing a small number of Apache Kafka topics may seem manageable at first.
+Managing a small number of Apache Kafka topics may seem straightforward at first.
 However, as Apache Kafka usage grows and more applications and teams are added,
 effective and efficient management can become increasingly challenging.
 This includes the important task of isolating sensitive topics

@@ -27,8 +27,7 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
      ![image](../../../static/images/sync/SyncTopicsFromCluster.png)
 
 3. You can view all the topics and assign topics to a different team by
-   selecting the **Show All** option. This displays all the Apache
-   Apache Kafka topics, both assigned and unassigned to any team.
+   selecting the **Show All** option. This displays all the Apache Kafka topics, both assigned and unassigned to any team.
 
 If a topic is deleted on the cluster but still exists in Klaw metadata,
 you can remove it from Klaw. You will notice this at the end of the

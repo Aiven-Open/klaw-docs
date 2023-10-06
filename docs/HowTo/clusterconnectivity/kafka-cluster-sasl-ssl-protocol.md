@@ -18,12 +18,17 @@ cluster in Klaw using SASL_SSL protocol:
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
-3. On the **Add Apache Kafka cluster** page, enter the following details:
+3. <!-- vale off -->On the **Add Kafka cluster** page, enter the following details:<!-- vale on -->
 
-   - **Cluster Type:** Select **Apache Kafka** from the drop-down list
+   <!-- vale off -->
+
+   - **Cluster Type:** Select **Kafka** from the drop-down list
+   <!-- vale on -->
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SASL_SSL protocol for your cluster
-   - **Apache Kafka Flavor:** Select Apache Kafka as the flavor
+   <!-- vale off -->
+   - **Kafka Flavor:** Select Apache Kafka as the flavor
+   <!-- vale on -->
    - **Bootstrap server:** Enter the bootstrap server details for an Apache Kafka cluster.
 
 4. Click **Save**.
@@ -59,11 +64,7 @@ cluster in Klaw using SASL_SSL protocol:
 
     `--operation All --clusterCluster:kafka-cluster --topic "*"`
 
- 
 12. Re-deploy the Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to the Apache Kafka cluster
- 
-12. Re-deploy the Klaw Cluster API with the updated configuration. This will
-    apply the changes and enable Klaw to connect to the Kafka cluster
- 
+
     using SSL protocol.

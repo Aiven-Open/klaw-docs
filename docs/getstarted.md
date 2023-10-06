@@ -19,7 +19,7 @@ needed to add them all.
 
 1. Navigate to **Environments** and then **Clusters**. Choose **Add
    Cluster**.
-2. **Cluster Type** will be **Apache Kafka**. Give your cluster a name.
+2. <!-- vale off -->**Cluster Type** will be **Kafka**. Give your cluster a name.<!-- vale on -->
 3. Add your server details into **Bootstrap servers** (any port range
    is permitted).
 4. Select the **Protocol** that is needed to connect. Check the
@@ -33,8 +33,7 @@ Klaw supports environments, which is useful if you have similar
 clusters at different stages of the lifecycle, such as staging and
 production.
 
-1. Navigate to **Environments** and under **Apache Kafka Environments**,
-   choose **Add Environment**.
+1. <!-- vale off -->Navigate to **Environments** and under **Kafka Environments**, choose **Add Environment**.<!-- vale on -->
 2. Pick an environment, and link a cluster to it. You can add more
    cluster/environment combinations as needed to suit your setup.
 3. Configure the default and maximum values for this environment. Users
