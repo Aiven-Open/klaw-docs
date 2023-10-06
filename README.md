@@ -1,10 +1,6 @@
-# Klaw documentation
+# Klaw
 
-- Please be aware of our [Code of Conduct](CODE_OF_CONDUCT.md) ❤️
-
-## About
-
-This is the Klaw documentation repository. Welcome 👋 🎉
+Welcome to the Klaw documentation repository 👋 🎉
 You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
 
 We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation, an optimized site generator in React.
@@ -105,3 +101,6 @@ To apply findings from `lint` and mutate your files:
 ℹ️ It's convenient to let Prettier and ESlint automatically format your code "on save" by your IDE or editor. For
 markdownlint
 you can find [plugins for some IDE/editors](https://github.com/DavidAnson/markdownlint#related), too.
+
+## Code of Conduct
+- Please be aware of our [Code of Conduct](CODE_OF_CONDUCT.md) Happy hacking ❤️
