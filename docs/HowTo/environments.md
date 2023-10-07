@@ -64,7 +64,7 @@ Select **Save** to add a Schema Registry environment.
 
 ### Add Kafka Connect environment
 
-To add a **KafkaConnect environment**, enter the following details in the **Add KafkaConnect Environment** screen:
+To add a **Kafka Connect environment**, enter the following details in the **Add Kafka Connect Environment** screen:
 
 - **Environment name**: Choose an environment from the
   available dropdown list.
@@ -72,7 +72,7 @@ To add a **KafkaConnect environment**, enter the following details in the **Add 
   associate with this environment from the dropdown list.
 - **Tenant**: Set the tenant to default.
 
-- Select **Save** to add a new KafkaConnect environment.
+- Select **Save** to add a new Kafka Connect environment.
 
 ![image](../../static/images/environments/NewEnvironment.png)
 
