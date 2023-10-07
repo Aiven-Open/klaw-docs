@@ -99,12 +99,12 @@ Failures are an inevitable part of any system, and Kafka applications
 are no different. These failures can occur at different levels,
 including client-side issues where event deserialization creates
 problems for consumers, as well as infrastructure-related issues that
-result in the loss of zookeeper/Kafka configurations.
+result in the loss of ZooKeeper/Kafka configurations.
 
 In the context of infrastructure failures, let's consider a scenario
 with 1000 topics, each possessing a unique configuration stored in a
-zookeeper. Now, imagine a situation where a disaster strikes, causing
-the zookeeper to crash and be unable to recover. This raises a critical
+ZooKeeper. Now, imagine a situation where a disaster strikes, causing
+the ZooKeeper to crash and be unable to recover. This raises a critical
 question: how swiftly can you retrieve the information and reboot your
 server? It's not just about having methods to store information but
 also about strategically implementing storage and retrieval processes
