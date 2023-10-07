@@ -18,7 +18,7 @@ schemas from schema registry to Klaw, and vice versa.
 
 [klaw-2.5.0.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/klaw-2.5.0.jar)
 
-[cluster-api-2.5.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/cluster-api-2.5.0.jar)
+[cluster-API-2.5.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.5.0/cluster-api-2.5.0.jar)
 
 ### Sources
 
@@ -27,7 +27,7 @@ schemas from schema registry to Klaw, and vice versa.
 ### Docker
 
 [Klaw-core](https://hub.docker.com/r/aivenoy/klaw-core)
-[Klaw-cluster-api](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+[Klaw-cluster-API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 ## What's new in Klaw 2.5.0
 

@@ -18,7 +18,7 @@ schemas from schema registry to Klaw, and vice versa.
 
 [klaw-2.4.0.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.4.0/klaw-2.4.0.jar)
 
-[cluster-api-2.4.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.4.0/cluster-api-2.4.0.jar)
+[cluster-API-2.4.0.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.4.0/cluster-api-2.4.0.jar)
 
 ### Sources
 
