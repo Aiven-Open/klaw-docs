@@ -44,14 +44,14 @@ registry cluster with Klaw using SSL protocol:
 6. In the **Schema Registry Environments** section, click **Add
    Environment** and enter the details to add your schema registry
    environment. Click **Save**.
-7. Open the `application.properties` file for [cluster-API]
-   (klaw/cluster-API/src/main/resources) modules.
+7. Open the `application.properties` file for [`cluster-api`]
+   (klaw/cluster-api/src/main/resources) modules.
 8. Copy the **Cluster ID** from the **Clusters** page using the copy
    icon that is available on the right-hand side of each cluster
    row.
 
 9. In the `application.properties` file
-   for [cluster-API](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties)
+   for [`cluster-api`](https://github.com/aiven/klaw/blob/main/cluster-api/src/main/resources/application.properties)
    module, configure Karapace credentials copied from the Aiven console
 
    `clusterid.klaw.schemaregistry.credentials=username:password`

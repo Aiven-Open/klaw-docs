@@ -16,7 +16,7 @@ Klaw version 2.5.1 is a patch release primarily aimed at enhancing MySQL support
 
 - [klaw-2.5.1.jar ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.5.1/klaw-2.5.1.jar)
 
-- [cluster-API-2.5.1.jar ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.5.1/cluster-api-2.5.1.jar)
+- [`cluster-api-2.5.1.jar` ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.5.1/cluster-api-2.5.1.jar)
 
 ### Sources
 

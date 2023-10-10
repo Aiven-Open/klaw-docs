@@ -28,7 +28,7 @@ the source.
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64
      string in the module: core.
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above
-     base64 string in the module: cluster-API.
+     base64 string in the module: `cluster-api`.
 
    ```{.bash caption="Bash Generation Example"}
    echo "ThisIsExactlyA32CharStringSecret" | base64
@@ -42,7 +42,7 @@ the source.
 
 4. Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top
    level of the project directory. This will build JAR files in the `target/` directories of each module: core and
-   cluster-API.
+   `cluster-api`.
 
    node, npm, and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 
