@@ -53,6 +53,8 @@ Kafka Connect service with Klaw using SSL protocol:
    cluster row.
 
 8. In the `application.properties` file for [cluster-api] (Klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console:
+8. In the `application.properties` file for [`cluster-api`](klaw/cluster-api/src/main/resources) module, configure Aiven for Apache Kafka Connect credentials copied from Aiven console:
+ 
 
    `clusterid.klaw.kafkaconnect.credentials=username:password`
 

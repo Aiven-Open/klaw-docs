@@ -8,4 +8,5 @@ swap:
   "(?<!Apache )kafka": Apache Kafka
   "(?i)api": API
   "(?i)kafka connect": Kafka Connect
+  "(?i)klaw core": Klaw Core
   "(?i)klaw": Klaw

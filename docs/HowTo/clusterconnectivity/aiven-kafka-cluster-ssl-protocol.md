@@ -51,6 +51,7 @@ Kafka® and Klaw using SSL protocol:
    row.
 9. Open the `application.properties` file located in the
    [Klaw/cluster-api/src/main/resources] directory.
+   `klaw/cluster-api/src/main/resources` directory.
 10. Configure the SSL properties to connect to Aiven for Apache Kafka®
     clusters by copying and editing the following lines.
 

@@ -12,11 +12,11 @@ relevant configurations in the `application.properties` file.
 
 Relevant configuration:
 
-    # Enable user Authorization/roles from AD/SSO, instead of database.
-    # klaw.login.authentication.type should be set to ad for this value to be true
-    # Role: If klaw.enable.authorization.ad is true, role will be picked up from authentication token/authorities ex
-
-: ROLE_USER. # and looks for matching role in Klaw. Make sure only one matching role exists. If nothing exists, user is denied login.
-klaw.enable.authorization.ad=true
+```java
+# Enable user Authorization/roles from AD/SSO, instead of database.
+# klaw.login.authentication.type should be set to ad for this value to be true
+# Role : If klaw.enable.authorization.ad is true, role will be picked up from authentication token/authorities ex : ROLE_USER.
+# and looks for matching role in Klaw. Make sure only one matching role exists. If nothing exists, user is denied login.
+```
 
 After completing the configuration, make sure that your AD/SSO provider has roles defined, such as **ROLE_USER** or **APPROLE_USER**. The actual role is identified post the underscore (\_). These roles should be consistent with the ones available in Klaw.

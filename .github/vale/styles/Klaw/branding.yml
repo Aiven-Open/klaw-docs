@@ -26,4 +26,5 @@ swap:
   "(?<!Klaw )cluster api": Klaw Cluster API
   "(?i)klaw core": Klaw Core
   "(?i)kafka[ -]?connect": Kafka Connect
- 
+  "(?i)kafka[ -]?connect": Kafka Connect
+  "(?i)api": API

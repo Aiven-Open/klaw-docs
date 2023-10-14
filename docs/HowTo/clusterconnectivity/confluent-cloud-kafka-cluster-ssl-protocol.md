@@ -58,6 +58,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
    row.
 9. Open the `application.properties` file located in the
    [Klaw/cluster-api/src/main/resources] directory.
+   `klaw/cluster-api/src/main/resources` directory.
 10. Configure the API key, API secret, URIs to connect to Confluent Cloud
     Kafka clusters by copying and editing the following lines:
 
