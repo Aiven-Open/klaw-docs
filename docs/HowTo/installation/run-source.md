@@ -73,7 +73,7 @@ the source.
 
      `java -jar klaw-<version>.jar`
 
-     To pass additional configuration, pass an additional parameter like
+     To pass additional configurations, include them as follows:
 
      `--spring.config.location=target/classes/application.properties`
 
@@ -86,8 +86,8 @@ the source.
 7. Log in as the admin user to get started.
 
    - **Username:** `superadmin`
-   - **Password:** `kwsuperadmin123$$` for 2.5.0 and older Klaw release
-   - **Password:** `welcometoklaw` as of 2.6.0 Klaw release
+   - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
+   - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
 
 ## Next Steps
 
