@@ -50,7 +50,7 @@ The words in our custom spelling are **case sensitive**!
 #### Adding word to custom dictionary
 
 If the word is correctly written, you can add extend our vocabulary. Add the word you
-need in the file `spelling-klaw-vocabulary.txt`. After you added your word, sort the lines alphabetically (except the first one). Make sure you add the correct capitalization, as the words are case-sensitive. Adding "ZooKeeper" for example will still show an error for "zookeeper", which is something we want.
+need in the file `spelling-klaw-vocabulary.txt`. After you added your word, sort the lines alphabetically (except the first one). Make sure you add the correct capitalization, as the words are case-sensitive.
 
 ##### When not to add a word
 
