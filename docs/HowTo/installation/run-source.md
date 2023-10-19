@@ -54,36 +54,36 @@ the source.
 
 5. Start the API components by running its JAR files:
 
-      - Run with script
-   
-         In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both core and 
-         cluster-api applications.
+   - Run with script
 
-      Alternatively
-   
-      - Run with commands
-      
-        `java -jar klaw-clusterapi-<version>.jar`
+     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both core and
+     cluster-api applications.
 
-        To pass additional configuration, pass an additional parameter like
+   Alternatively
 
-        `--spring.config.location=target/classes/application.properties`
+   - Run with commands
 
-        Start the web UI by running its JAR file:
+     `java -jar klaw-clusterapi-<version>.jar`
 
-        `java -jar klaw-<version>.jar`
+     To pass additional configuration, pass an additional parameter like
 
-        To pass additional configuration, pass an additional parameter like
+     `--spring.config.location=target/classes/application.properties`
 
-        `--spring.config.location=target/classes/application.properties`
+     Start the web UI by running its JAR file:
 
-7. Access the web interface using the URL: 
+     `java -jar klaw-<version>.jar`
 
-   ``` copy-button
+     To pass additional configuration, pass an additional parameter like
+
+     `--spring.config.location=target/classes/application.properties`
+
+6. Access the web interface using the URL:
+
+   ```copy-button
    http://localhost:9097/
    ```
 
-8. Log in as the admin user to get started.
+7. Log in as the admin user to get started.
 
    - **Username:** `superadmin`
    - **Password:** `welcometoklaw`

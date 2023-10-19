@@ -138,11 +138,11 @@ docker ps
 
 ### 4. Access the web interface
 
-Access the Klaw web interface using this URL: 
+Access the Klaw web interface using this URL:
 
-   ``` copy-button
-    http://localhost:9097/
-   ```
+```copy-button
+ http://localhost:9097/
+```
 
 ### 5. Verify the installation
 
