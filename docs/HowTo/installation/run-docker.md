@@ -138,7 +138,11 @@ docker ps
 
 ### 4. Access the web interface
 
-Access the Klaw web interface using this URL: `http://localhost:9097/`
+Access the Klaw web interface using this URL: 
+
+   ``` copy-button
+    http://localhost:9097/
+   ```
 
 ### 5. Verify the installation
 
@@ -148,7 +152,7 @@ To verify the installation and access Klaw, follow the steps below:
    account:
 
    - **Username:** `superadmin`
-   - **Password:** `kwsuperadmin123$$`
+   - **Password:** `welcometoklaw`
 
    Recommend you change the default credentials before running Klaw in your application.
 
