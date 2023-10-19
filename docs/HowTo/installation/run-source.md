@@ -56,8 +56,8 @@ the source.
 
    - Run with script
 
-     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both core and
-     cluster-api applications.
+     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both Core and
+     Cluster-API applications.
 
    Alternatively
 
