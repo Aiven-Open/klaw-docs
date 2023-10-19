@@ -86,7 +86,7 @@ the source.
 7. Log in as the admin user to get started.
 
    - **Username:** `superadmin`
-   - **Password:** `welcometoklaw`  as of 2.6.0 klaw release.
+   - **Password:** `welcometoklaw`  as of 2.6.0 Klaw release.
 
 ## Next Steps
 
