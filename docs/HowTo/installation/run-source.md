@@ -52,24 +52,42 @@ the source.
    - Manually install node/npm/pnpm and copy assets by following the procedure
      here. [Manual installation of React](https://github.com/aiven/klaw/blob/main/coral/README.md)
 
-5. Start the API component by running its JAR file:
+5. Start the API components by running its JAR files:
 
-   `java -jar klaw-clusterapi-<version>.jar`
+   - Run with script
 
-   To pass additional configuration, pass an additional parameter like
+     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both Core and
+     Cluster-API applications.
 
-   `--spring.config.location=classes/application.properties`
+   Alternatively
 
-6. Start the web UI by running its JAR file:
+   - Run with commands
 
-   `java -jar klaw-<version>.jar`
+     `java -jar klaw-clusterapi-<version>.jar`
 
-7. Access the web interface using the URL: `http://localhost:9097/`.
+     To pass additional configuration, pass an additional parameter like
 
-8. Log in as the admin user to get started.
+     `--spring.config.location=target/classes/application.properties`
+
+     Start the web UI by running its JAR file:
+
+     `java -jar klaw-<version>.jar`
+
+     To pass additional configurations, include them as follows:
+
+     `--spring.config.location=target/classes/application.properties`
+
+6. Access the web interface using the URL:
+
+   ```copy-button
+   http://localhost:9097/
+   ```
+
+7. Log in as the admin user to get started.
 
    - **Username:** `superadmin`
-   - **Password:** `kwsuperadmin123$$`
+   - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
+   - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
 
 ## Next Steps
 
