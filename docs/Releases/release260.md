@@ -64,8 +64,7 @@ When an environment is configured, the timestamp of when it was last connected i
 
 ### Editable Subscription Requests
 
-This release adds the ability to edit your acl requests to fix mistakes instead of deleting and recreating a whole new request.
-
+This release adds the ability to edit your ACL requests to fix mistakes instead of deleting and recreating a whole new request.
 
 :::note
 For a complete list of improvements, changelog, and to download the
