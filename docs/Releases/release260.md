@@ -38,10 +38,11 @@ to enhance user experience and provide a more intuitive design:
 
 - Features
 
-- New React UI: 
+- New React UI:
   - View Environments
   - Promote a connector
   - Claim connector
+  - Log out user
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
@@ -58,6 +59,10 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
+### New React Landing Page
+
+Users availing of the new React UI will be redirected to the React Topic Catalogue allowing them to conduct all their activities in the new React UI without having to use the older UI.
+
 ### Last status of environment
 
 When an environment is configured, the timestamp of when it was last connected is now displayed in the page.
@@ -65,6 +70,10 @@ When an environment is configured, the timestamp of when it was last connected i
 ### Editable Subscription Requests
 
 This release adds the ability to edit your ACL requests to fix mistakes instead of deleting and recreating a whole new request.
+
+### Configurable Logo in Email Notifications
+
+In this release you can configure the application.properties `klaw.notification.header.logo` property to add your own logo to notification emails.
 
 :::note
 For a complete list of improvements, changelog, and to download the
