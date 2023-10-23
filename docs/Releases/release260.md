@@ -33,14 +33,14 @@ schemas from schema registry to Klaw, and vice versa.
 
 ### Redesigned screens with React UI
 
-We have redesigned select user interfaces using React in this release, aiming to enhance the user experience and provide a more intuitive design. 
+In this release, we have redesigned the user interface using React to enhance the user experience and provide a more intuitive design.
 
 Key updates in the new React UI include:
 
-  - View Environments
-  - Promote a connector
-  - Claim connector
-  - Log out user
+- View Environments
+- Promote a connector
+- Claim connector
+- Log out user
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
