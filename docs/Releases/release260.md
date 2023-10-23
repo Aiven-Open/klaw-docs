@@ -33,12 +33,10 @@ schemas from schema registry to Klaw, and vice versa.
 
 ### Redesigned screens with React UI
 
-In this release, we have redesigned some key user interfaces using React
-to enhance user experience and provide a more intuitive design:
+We have redesigned select user interfaces using React in this release, aiming to enhance the user experience and provide a more intuitive design. 
 
-- Features
+Key updates in the new React UI include:
 
-- New React UI:
   - View Environments
   - Promote a connector
   - Claim connector
@@ -59,21 +57,21 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### New React Landing Page
+### New React landing page
 
-Users availing of the new React UI will be redirected to the React Topic Catalogue allowing them to conduct all their activities in the new React UI without having to use the older UI.
+Logging into Klaw will now redirect you to the new React Topic catalog page, allowing you to perform all tasks without needing the older UI.
 
 ### Last status of environment
 
-When an environment is configured, the timestamp of when it was last connected is now displayed in the page.
+When an environment is configured, the timestamp of when it was last connected is now displayed on the page.
 
-### Editable Subscription Requests
+### Editable subscription requests
 
-This release adds the ability to edit your ACL requests to fix mistakes instead of deleting and recreating a whole new request.
+You can now edit ACL requests in this release. This feature allows for corrections without the need to delete and create a new request.
 
-### Configurable Logo in Email Notifications
+### Configurable logo in email notifications
 
-In this release you can configure the application.properties `klaw.notification.header.logo` property to add your own logo to notification emails.
+You can now configure the `klaw.notification.header.logo` property in the `application.properties` to include your own logo in notification emails.
 
 :::note
 For a complete list of improvements, changelog, and to download the
