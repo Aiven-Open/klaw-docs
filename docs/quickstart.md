@@ -10,8 +10,8 @@ cluster.
 ## 1. Run the docker script
 
 ```bash copy-button
-docker run -d -t -i -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" -p 9343:9343 --name klaw-cluster-api aivenoy/klaw-cluster-api:latest --add-host=host.docker.internal:host-gateway &&
-docker run -d -t -i -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" -e KLAW_QUICKSTART_ENABLED=true -e SPRING_DATASOURCE_URL="jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;" -p 9097:9097 --name klaw-core aivenoy/klaw-core:latest &&
+docker run -d -t -i -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" -p 9343:9343 --name klaw-cluster-api aivenoy/klaw-cluster-api:nightly --add-host=host.docker.internal:host-gateway &&
+docker run -d -t -i -e KLAW_UIAPI_SERVERS=http://host.docker.internal:9097  -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" -e KLAW_QUICKSTART_ENABLED=true -e SPRING_DATASOURCE_URL="jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;" -p 9097:9097 --name klaw-core aivenoy/klaw-core:nightly &&
 docker run -d -t -i -p 2181:2181 --add-host=host.docker.internal:host-gateway -e ALLOW_ANONYMOUS_LOGIN=yes --name klaw-zookeeper bitnami/zookeeper:3.8 &&
 docker run -d -t -i -p 9092:9092 --add-host=host.docker.internal:host-gateway -e KAFKA_CFG_ZOOKEEPER_CONNECT=host.docker.internal:2181 -e ALLOW_PLAINTEXT_LISTENER=yes -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://host.docker.internal:9092 --name klaw-kafka bitnami/kafka:3.3 &&
 docker run -d -t -i -p 8081:8081 --add-host=host.docker.internal:host-gateway -e SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://host.docker.internal:9092 --name klaw-schema-registry bitnami/schema-registry:latest
