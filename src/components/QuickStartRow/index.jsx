@@ -7,12 +7,12 @@ const dockerScript =
   "docker run -d -t -i \\\n" +
   '-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \\\n' +
   "-p 9343:9343 \\\n" +
-  "--name klaw-cluster-api aivenoy/klaw-cluster-api:latest --add-host host.docker.internal:host-gateway \\\n" +
+  "--name klaw-cluster-api aivenoy/klaw-cluster-api:nightly --add-host host.docker.internal:host-gateway \\\n" +
   "&& docker run -d -t -i \\\n" +
-  '-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \\\n' +
+  '-e KLAW_UIAPI_SERVERS=http://host.docker.internal:9097 -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \\\n' +
   "-e KLAW_QUICKSTART_ENABLED=true \\\n" +
   '-e SPRING_DATASOURCE_URL="jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;" \\\n' +
-  "-p 9097:9097 --name klaw-core aivenoy/klaw-core:latest \\\n" +
+  "-p 9097:9097 --name klaw-core aivenoy/klaw-core:nightly \\\n" +
   "&& docker run -d -t -i -p 2181:2181 --add-host host.docker.internal:host-gateway \\\n" +
   "-e ALLOW_ANONYMOUS_LOGIN=yes --name klaw-zookeeper bitnami/zookeeper:3.8 \\\n" +
   "&& docker run -d -t -i -p 9092:9092 --add-host host.docker.internal:host-gateway \\\n" +
