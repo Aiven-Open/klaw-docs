@@ -57,6 +57,7 @@ services:
     environment:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+      KLAW_UIAPI_SERVERS: "http://localhost:9097"
     network_mode: "host"
     volumes:
       - "klaw_data:/klaw"
@@ -89,6 +90,7 @@ services:
     environment:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+      KLAW_UIAPI_SERVERS: "http://localhost:9097"
     volumes:
       - "klaw_data:/klaw"
     extra_hosts:
