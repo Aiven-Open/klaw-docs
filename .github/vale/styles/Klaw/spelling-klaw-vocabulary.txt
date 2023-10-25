@@ -10,6 +10,8 @@ Approvers
 Avro
 Confluent
 Confluent's
+DM
+DMs
 Docusaurus
 ESlint
 Kafkawize
