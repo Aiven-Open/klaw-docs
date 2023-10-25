@@ -5,7 +5,7 @@ Klaw that requires their attention in lieu of email notifications.
 
 ## Configure Slack notifications
 
-Slack notifications can be very easily configured in Klaw by following the simple steps outlined by Slack to enable email forwarding to a Slack channel or an individuals Direct Messages.
+Slack notifications can be configured in Klaw by following the simple steps outlined by Slack to enable email forwarding to a Slack channel or an individuals Direct Messages.
 
 Slack has a helpful article on configuring email forwarding to slack [here](https://slack.com/intl/en-ie/help/articles/206819278-Send-emails-to-Slack#)
 
