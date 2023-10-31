@@ -133,6 +133,7 @@ function Feature({ Svg, title, description }) {
         <h3>{title}</h3>
         <>{description}</>
       </div>
+      s
     </div>
   );
 }
@@ -140,7 +141,7 @@ function Feature({ Svg, title, description }) {
 Feature.propTypes = {
   Svg: PropTypes.any,
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.object,
 };
 
 export default function HomepageFeatures() {
