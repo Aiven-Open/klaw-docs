@@ -20,18 +20,14 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["json", "react"],
   settings: {
     react: {
       version: "detect",
     },
-    plugins: ["json", "react"],
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
-    rules: {},
-    ignorePatterns: ["build"],
+  },
+  plugins: ["json", "react"],
+  rules: {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
   },
 };
