@@ -1,6 +1,7 @@
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import { newTracker, trackPageView } from "@snowplow/browser-tracker";
 
+const isProduction = process.env.NODE_ENV === "production";
 const trackerConfig = {
   appId: "klaw-docs",
   platform: "web",
@@ -8,7 +9,7 @@ const trackerConfig = {
   discoverRootDomain: true,
   cookieSameSite: "Lax",
   anonymousTracking: { withServerAnonymisation: true },
-  postPath: "/aiven/dc",
+  postPath: "/aiven/dc2",
   crossDomainLinker: function (linkElement) {
     return linkElement.id === "crossDomainLink";
   },
@@ -23,9 +24,24 @@ function setupBrowserTracker() {
   newTracker("at", "dc.aiven.io", trackerConfig);
 }
 
-if (ExecutionEnvironment.canUseDOM) {
+if (isProduction && ExecutionEnvironment.canUseDOM) {
+  // only set tracker on prod
   setupBrowserTracker();
-  trackPageView();
 }
+
+const module = {
+  onRouteDidUpdate({ location, previousLocation }) {
+    // only set tracker on prod
+    if (isProduction) {
+      // only call trackPageView when page route changed
+      if (location.pathname !== previousLocation?.pathname) {
+        // see https://github.com/facebook/docusaurus/pull/7424 regarding setTimeout
+        setTimeout(() => {
+          trackPageView();
+        });
+      }
+    }
+  },
+};
 
 export default module;

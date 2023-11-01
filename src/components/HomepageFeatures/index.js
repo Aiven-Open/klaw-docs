@@ -140,7 +140,7 @@ function Feature({ Svg, title, description }) {
 Feature.propTypes = {
   Svg: PropTypes.any,
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.node,
 };
 
 export default function HomepageFeatures() {
