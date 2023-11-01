@@ -25,7 +25,17 @@ function setupBrowserTracker() {
 
 if (ExecutionEnvironment.canUseDOM) {
   setupBrowserTracker();
-  trackPageView();
 }
+
+const module = {
+  onRouteDidUpdate({ location, previousLocation }) {
+    if (location.pathname !== previousLocation?.pathname) {
+      // see https://github.com/facebook/docusaurus/pull/7424 regarding setTimeout
+      setTimeout(() => {
+        trackPageView();
+      });
+    }
+  },
+};
 
 export default module;
