@@ -1,20 +1,20 @@
 # Topics
 
-Topics are a fundamental part of the Kafka ecosystem, and the management
+Topics are a fundamental part of the Apache Kafka ecosystem, and the management
 of topics is one of the core and richest features available in Klaw.
 
-## Topics in Kafka
+## Topics in Apache Kafka
 
-Kafka uses topics as a core concept, as a grouping mechanism to organize
+Apache Kafka uses topics as a core concept, as a grouping mechanism to organize
 and store messages or events. For a deeper understanding of topics, see
-[Kafka Main Concepts and
+[Apache Kafka Main Concepts and
 Terminology](https://kafka.apache.org/intro#intro_concepts_and_terms)
 
-## Manage topics in Kafka
+## Manage topics in Apache Kafka
 
 Topics allow the producers to create events that consumers can then
-read. Using Kafka, this is done in an incredibly fast, secure, and
-durable way. Due to the nature of Kafka, it also means that if a
+read. Using Apache Kafka, this is done in an incredibly fast, secure, and
+durable way. Due to the nature of Apache Kafka, it also means that if a
 producer or consumer cannot operate for a period of time (maintenance,
 faults, or other unexpected reasons), it is decoupled from the wider
 environment and does not impact the entire system. A consumer can still

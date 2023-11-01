@@ -4,5 +4,9 @@ level: warning
 ignorecase: true
 # swap maps tokens in form of bad: good
 # Vale will ignore any alerts that match the intended form.
+
+# These rules can't be applied as error right now, because
+# there are too many expectations and vale only can ignore
+# a whole block, not a word
 swap:
   "(?<!Apache )kafka": Apache Kafka

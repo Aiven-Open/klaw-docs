@@ -20,7 +20,7 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
      will now appear in the **Topics** menu, assigned to the chosen
      team.
    - `Bulk Options` tab: Select all topics from the
-     Kafka cluster at once, choose a team and save. The selected
+     Apache Kafka cluster at once, choose a team and save. The selected
      topics will now appear in the **Topics** menu, assigned to the
      chosen team.
 

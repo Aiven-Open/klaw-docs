@@ -1,6 +1,6 @@
 # Request a new schema
 
-You can request a new schema to be created in Kafka quickly and easily
+You can request a new schema to be created in Apache Kafka quickly and easily
 using Klaw. If you own a topic, you will automatically become the schema
 owner. As the topic owner, you have the ability to create, approve, or
 decline any schema request.

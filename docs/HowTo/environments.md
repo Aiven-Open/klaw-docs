@@ -24,13 +24,13 @@ To add a new environment in Klaw, follow these steps:
 3. Select **Add Environment**.
 4. Select Add Environment for the type of environment you want to add.
 
-### Add Kafka environment
+### Add Apache Kafka environment
 
 To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
 
 - **Environment name**: Choose an environment from the
   available dropdown list.
-- **Select cluster**: Choose the Kafka cluster you want to
+- **Select cluster**: Choose the Apache Kafka cluster you want to
   associate with this environment from the dropdown list.
 - **Default partitions**: Set the default number of
   partitions new topics should have in this environment.
@@ -46,7 +46,7 @@ To add a **Kafka environment**, enter the following details in the **Add Kafka E
   to your topics' names, enter it here.
 - **Tenant**: Set to default.
 
-Select **Save** to add a new Kafka environment.
+Select **Save** to add a new Apache Kafka environment.
 
 ### Add Schema Registry environment
 
@@ -54,7 +54,7 @@ To add a **Schema Registry environment**, enter the following details in the **A
 
 - **Environment name**: Choose an environment from the
   available dropdown list.
-- **Select cluster**: Choose the Kafka cluster you want to
+- **Select cluster**: Choose the Apache Kafka cluster you want to
   associate with this environment from the dropdown list.
 - **Tenant**: Set the tenant to default.
 - **Select Associated Kafka Environment**: Choose a schema
@@ -62,17 +62,17 @@ To add a **Schema Registry environment**, enter the following details in the **A
 
 Select **Save** to add a Schema Registry environment.
 
-### Add Kafka Connect environment
+### Add Apache Kafka Connect environment
 
 To add a **Kafka Connect environment**, enter the following details in the **Add Kafka Connect Environment** screen:
 
 - **Environment name**: Choose an environment from the
   available dropdown list.
-- **Select cluster**: Choose the Kafka cluster you want to
+- **Select cluster**: Choose the Apache Kafka cluster you want to
   associate with this environment from the dropdown list.
 - **Tenant**: Set the tenant to default.
 
-- Select **Save** to add a new Kafka Connect environment.
+- Select **Save** to add a new Apache Kafka Connect environment.
 
 ![image](../../static/images/environments/NewEnvironment.png)
 

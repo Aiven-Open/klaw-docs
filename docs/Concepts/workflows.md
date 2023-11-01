@@ -1,6 +1,6 @@
 # Workflows in Klaw
 
-Klaw has defined workflows for applying configurations to Kafka
+Klaw has defined workflows for applying configurations to Apache Kafka
 clusters. Instead of directly creating configurations on the cluster,
 Klaw follows the [Four Eyes Principle] concept. This
 approach entails raising a request and obtaining approval before
@@ -74,7 +74,7 @@ registration requests:
 
 ## Topic owner
 
-In Klaw, each Kafka topic is owned by a team, and all team members are
+In Klaw, each Apache Kafka topic is owned by a team, and all team members are
 considered owners. Any requests to modify the topic's configuration,
 whether direct or indirect, are sent to the team for approval. The team
 has the authority to approve or deny these requests. The team can
@@ -103,7 +103,7 @@ topic-related requests:
 
 ## Connector owner
 
-Klaw can integrate with _Kafka Connect_ and define various types of
+Klaw can integrate with _Apache Kafka Connect_ and define various types of
 connectors. Any team can request a specific connector, and they will
 become the owners of that connector.
 
@@ -150,7 +150,7 @@ incremented version number is added instead.
 
 ## Subscription owner
 
-In Klaw, subscriptions (ACLs) are defined to secure Kafka topics.
+In Klaw, subscriptions (ACLs) are defined to secure Apache Kafka topics.
 Each team that wants to produce or consume from a topic becomes the
 subscription owner. Teams can submit subscription requests for a
 specific topic (either as a producer or consumer), which are then
