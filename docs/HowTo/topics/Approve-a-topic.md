@@ -1,4 +1,4 @@
-# Approve Topic
+# Approve topic
 
 When a topic request is made, a team member other than the request creator can review and approve or decline the
 request.

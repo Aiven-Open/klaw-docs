@@ -53,8 +53,8 @@ approves or declines it.
 
 - [Claim a topic](Claim-a-topic.md)
 
-- [Edit Topic Request](Edit-topic-request.md)
+- [Edit topic request](Edit-topic-request.md)
 
 - [Delete a topic](Delete-a-topic.md)
 
-- [My Topic Requests](My-topic-requests.md)
+- [My topic requests](My-topic-requests.md)

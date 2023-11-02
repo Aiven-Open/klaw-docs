@@ -1,4 +1,4 @@
-# Promote a Topic
+# Promote a topic
 
 Promotion is one of the core features of Klaw and allows better
 governance, administration, and control of topics. It ensures a topic
@@ -11,7 +11,7 @@ The Superadmin must ensure all prerequisites are met before this
 functionality is used see
 [Promotion](../../Concepts/promotion.md)
 
-## Topic Promotion
+## Topic promotion
 
 Once a topic is created in the base environment, it is possible to
 promote this to the next environment. This will create a promotion

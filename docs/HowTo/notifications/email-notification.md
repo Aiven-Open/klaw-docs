@@ -42,22 +42,22 @@ additional information.
 
 | Notification Type          | Requestor | Approver | Requestor Team | Approver Team | All Approvals | Admin |
 | -------------------------- | --------- | -------- | -------------- | ------------- | ------------- | ----- |
-| User Registration Request  | cc        |          |                |               |               | to    |
-| User Registration Approved | to        |          |                |               |               |       |
-| New Topic Request          | cc        |          |                | to            | bcc           |       |
-| New Topic Approved         | to        | cc       |                | cc            |               |       |
-| Promote Topic Request      | cc        |          |                | to            | bcc           |       |
-| New ACL Request            | cc        |          |                | to            | bcc           |       |
-| New ACL Approved           | to        | cc       |                | cc            |               |       |
-| New Schema Request         | cc        |          |                | to            | bcc           |       |
-| New Schema Approved        | to        | cc       |                | cc            |               |       |
-| Promote Schema Request     | cc        |          |                | to            | bcc           |       |
-| New Connector Request      | cc        |          |                | to            | bcc           |       |
-| New Connector Approved     | to        | cc       |                | cc            |               |       |
-| Promote Connector Request  | cc        |          |                | to            | bcc           |       |
-| New Claim Request          | cc        |          |                | to            | bcc           |       |
-| Password Reset             | to        |          |                |               |               |       |
-| Password Changed           | to        |          |                |               |               |       |
+| User registration request  | cc        |          |                |               |               | to    |
+| User registration approved | to        |          |                |               |               |       |
+| New topic tequest          | cc        |          |                | to            | bcc           |       |
+| New Topic approved         | to        | cc       |                | cc            |               |       |
+| Promote topic tequest      | cc        |          |                | to            | bcc           |       |
+| New ACL request            | cc        |          |                | to            | bcc           |       |
+| New ACL approved           | to        | cc       |                | cc            |               |       |
+| New Schema request         | cc        |          |                | to            | bcc           |       |
+| New Schema approved        | to        | cc       |                | cc            |               |       |
+| Promote Schema request     | cc        |          |                | to            | bcc           |       |
+| New Connector request      | cc        |          |                | to            | bcc           |       |
+| New Connector approved     | to        | cc       |                | cc            |               |       |
+| Promote Connector request  | cc        |          |                | to            | bcc           |       |
+| New Claim request          | cc        |          |                | to            | bcc           |       |
+| Password reset             | to        |          |                |               |               |       |
+| Password changed           | to        |          |                |               |               |       |
 
 :::tip
 'All Approvals' are Users assigned the permission

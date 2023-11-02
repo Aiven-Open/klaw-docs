@@ -93,13 +93,13 @@ topic-related requests:
 
 #### Topic approver matrix
 
-| Operation Type        | Resource Owners Team | Requestors Team | All Approvers | Admin |
+| Operation Type        | Resource owners team | Requestors team | All Approvers | Admin |
 | --------------------- | -------------------- | --------------- | ------------- | ----- |
-| New Topic Request     |                      | ✅              | ✅            |       |
-| Update Topic Request  |                      | ✅              | ✅            |       |
-| Delete Topic Request  |                      | ✅              | ✅            |       |
-| Claim Topic Request   | ✅                   |                 | ✅            |       |
-| Promote Topic Request |                      | ✅              | ✅            |       |
+| New topic request     |                      | ✅              | ✅            |       |
+| Update topic request  |                      | ✅              | ✅            |       |
+| Delete topic request  |                      | ✅              | ✅            |       |
+| Claim topic request   | ✅                   |                 | ✅            |       |
+| Promote topic request |                      | ✅              | ✅            |       |
 
 ## Connector owner
 
@@ -143,7 +143,7 @@ schema-related requests:
 | Promote Schema Request |                      | ✅              | ✅            |       |
 
 :::note
-With Schemas, there is no specific Claim Schema as it is assigned to a Topic. The owner of the Topic also owns the
+With Schemas, there is no specific Claim Schema as it is assigned to a topic. The owner of the topic also owns the
 Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an
 incremented version number is added instead.
 :::

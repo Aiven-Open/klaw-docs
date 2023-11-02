@@ -1,8 +1,8 @@
-# Delete a Topic
+# Delete a topic
 
 To delete a topic in Klaw, you need to create a delete topic request.
 
-## Create a Delete Topic request
+## Create a "Delete topic" request
 
 Once a topic is created in the base environment, it is possible to
 delete the topic from the highest environment down to the lowest

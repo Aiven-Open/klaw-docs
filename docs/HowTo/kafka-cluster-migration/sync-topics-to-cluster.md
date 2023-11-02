@@ -1,4 +1,4 @@
-# Synchronize Topics to cluster
+# Synchronize topics to cluster
 
 To synchronize topics from Klaw to an Apache Kafka cluster, follow the
 below steps, which involve displaying the topics in Klaw and creating

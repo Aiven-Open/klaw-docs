@@ -1,4 +1,4 @@
-# Request a new Topic
+# Request a new topic
 
 The process of requesting a new topic to be created in Apache Kafka is simple
 and speedy.

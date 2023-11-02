@@ -78,7 +78,7 @@ interfaces, we would like you to share your valuable
 This release introduces password encryption for fields in connector configuration.
 The fields that are encrypted can be configured in the application.properties file.
 
-### Editable Topic Requests
+### Editable ropic requests
 
 This release adds the ability to edit your topic requests to fix mistakes instead of deleting and recreating a whole new request.
 
@@ -97,7 +97,7 @@ The superadmin can now use the "Schemas From Cluster" functionality to identify 
 - #1569]() Promote OperationType now used for Schema promotion (previously "create")
   Enhancements
 - [#1550](https://github.com/Aiven-Open/klaw/pull/1550) Improved email copy on new installations
-- [#1414](https://github.com/Aiven-Open/klaw/pull/1414) Edit Topic can now also alter the Advanced Configuration
+- [#1414](https://github.com/Aiven-Open/klaw/pull/1414) "Edit topic" can now also alter the advanced configuration
 - [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted Connector not added to Cache
 - [#1555](https://github.com/Aiven-Open/klaw/pull/1555) Superuser was able to access Coral UI
 - [#1546](https://github.com/Aiven-Open/klaw/pull/1546) Promoted Schema Requests should use PROMOTE Request operation Type

@@ -74,7 +74,7 @@ URL: [https://host:port/helpwizard]
    }
    ```
 
-5. Synchronize Topics and ACLs
+5. Synchronize topics and ACLs
 
    If you already have a Kafka cluster, you can easily migrate topics and
    ACLs to Klaw using the **Synchronize** option. As a SUPERADMIN, you can

@@ -22,7 +22,7 @@ configures which environments promote to the next environment in your
 organization. Each resource Topic/Schema must already be created by the
 superadmin under **Environments** before being added to the **Tenant
 Model** or the server will reject the configuration. The below example
-defines the Apache Kafka Topic environments as "DEV" & "TST" and specifies
+defines the Apache Kafka topic environments as "DEV" & "TST" and specifies
 the order that will be enforced in the promotion of topics. Similarly,
 the Schema Registry environments have all been defined and placed in
 order.
@@ -64,7 +64,7 @@ To promote a topic to a higher environment, follow these steps:
 4. Configure the number of **Partitions** and **Replication factor** for the higher environment in the dropdowns
    provided.
 5. Confirm the promotion to the next environment by selecting **Submit Promotion to \[Next Environment\]**
-6. A Topic request is now created for team members to review and approve under **Approvals**.
+6. A topic request is now created for team members to review and approve under **Approvals**.
 
 ## Schema promotion
 
@@ -78,7 +78,7 @@ To promote a schema to a higher environment, follow these steps:
 
 1. Select **Topics** on the navigation bar.
 2. Select the Apache Kafka topic for which you want to promote the schema to a higher environment.
-3. Select the **Schema** tab under the main Topic section.
+3. Select the **Schema** tab under the main topic section.
 4. Select the **Promote to \[Next Environment\]** button to promote a schema to the next environment (higher
    environment) that has been configured.
 5. To promote a schema to a higher environment, select the specific version of the schema that you want to promote. This
