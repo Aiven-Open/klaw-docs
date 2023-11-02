@@ -44,9 +44,9 @@ additional information.
 | -------------------------- | --------- | -------- | -------------- | ------------- | ------------- | ----- |
 | User registration request  | cc        |          |                |               |               | to    |
 | User registration approved | to        |          |                |               |               |       |
-| New topic tequest          | cc        |          |                | to            | bcc           |       |
+| New topic request          | cc        |          |                | to            | bcc           |       |
 | New Topic approved         | to        | cc       |                | cc            |               |       |
-| Promote topic tequest      | cc        |          |                | to            | bcc           |       |
+| Promote topic request      | cc        |          |                | to            | bcc           |       |
 | New ACL request            | cc        |          |                | to            | bcc           |       |
 | New ACL approved           | to        | cc       |                | cc            |               |       |
 | New Schema request         | cc        |          |                | to            | bcc           |       |

@@ -78,7 +78,7 @@ interfaces, we would like you to share your valuable
 This release introduces password encryption for fields in connector configuration.
 The fields that are encrypted can be configured in the application.properties file.
 
-### Editable ropic requests
+### Editable topic requests
 
 This release adds the ability to edit your topic requests to fix mistakes instead of deleting and recreating a whole new request.
 
