@@ -69,11 +69,11 @@ Now login with credentials `jennifer : welcome`
 
 ## 8. Go to Approve requests page
 
-From the menu, click on Approve requests menu.
+From the menu, click on "Approve requests" menu.
 
 ## 9. Approve request
 
-Here there is a pending request to be approved or declined. Click on view to review and Approve it.
+Here there is a pending request to be approved or declined. Click on view to review and approve it.
 
 ![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
 
