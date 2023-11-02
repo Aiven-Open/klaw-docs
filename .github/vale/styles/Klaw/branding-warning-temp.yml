@@ -6,4 +6,3 @@ ignorecase: true
 # Vale will ignore any alerts that match the intended form.
 swap:
   "(?<!Apache )kafka": Apache Kafka
-  "(?i)klaw": Klaw
