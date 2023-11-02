@@ -28,7 +28,7 @@ to enhance user experience and provide a more intuitive design:
   approving or rejecting Connector requests easy. Access the _Approve
   requests - connectors_ screen to quickly and effortlessly approve or
   reject requests.
-- **My team's Connectors requests**: In addition to viewing all
+- **My team's requests** for Connectors: In addition to viewing all
   connectors from the Connectors screen, you can now access an
   overview of your team's connector requests using our newly designed
   \"My team's requests\" interface. You can also quickly delete your

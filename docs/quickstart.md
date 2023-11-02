@@ -53,9 +53,9 @@ This will create a topic request for your team member to approve.
 
 ## 5. View your request
 
-Newly created topic request is now visible in My team's requests menu on the sidebar
+Newly created topic request is now visible in **My team's requests** menu on the sidebar
 
-![Screenshot: "My teams requests" page](../static/images/quickstart/MyRequest.png)
+![Screenshot: "My team's requests" page](../static/images/quickstart/MyRequest.png)
 
 ## 6. Logout
 
