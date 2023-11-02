@@ -18,7 +18,7 @@ We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation,
 
 This is the setup you need every time. You can find the different ways how to run the local development process below.
 
-Optionally, we use [Vale](.github/vale/README.md) for spell checking. The spell check will run in the GitHub pipeline.
+Optionally, we use [Vale](.github/vale/vale.md) for spell checking. The spell check will run in the GitHub pipeline.
 If you want to use Vale locally, too, please make sure you install it:
 
 - It runs on Mac, Linux and Windows. You can find instructions to download and install it at
