@@ -3,7 +3,7 @@
 You can log in to Klaw using the Windows credentials configured in the Windows active directory.
 
 Before you can proceed with using your Windows Active directory credentials, you need to make the following
-configurations in the `application.properties` file in the Klaw-core module.
+configurations in the `application.properties` file in the Klaw Core module.
 
 1. Configure the authentication type by setting the value to `ad` in the following property:
 

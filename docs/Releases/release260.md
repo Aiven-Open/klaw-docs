@@ -26,8 +26,8 @@ schemas from schema registry to Klaw, and vice versa.
 
 ### Docker
 
-[Klaw-core](https://hub.docker.com/r/aivenoy/klaw-core)
-[Klaw-cluster-API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+[Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core)
+[Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 ## What's new in Klaw 2.6.0
 

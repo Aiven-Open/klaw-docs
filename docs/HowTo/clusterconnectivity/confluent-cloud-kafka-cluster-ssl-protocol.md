@@ -23,7 +23,7 @@ References:
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
+- Set up the connection between the Klaw APIs (Klaw Core API and Klaw Cluster
   API), see `klaw-core-with-clusterapi`.
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can

@@ -4,7 +4,7 @@ You have the option to configure any third-party login account to access
 Klaw.
 
 To enable third-party login accounts, you need to make the following
-configurations in the `application.properties` file in the Klaw-core
+configurations in the `application.properties` file in the Klaw Core
 module.
 
 1. Make sure Klaw is running in a secure mode. You will find the following configuration:

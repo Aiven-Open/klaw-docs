@@ -1,13 +1,13 @@
 # Connect Klaw Core and Klaw Cluster APIs
 
 To run Klaw successfully and perform all the necessary operations on a Kafka cluster, you must connect the Klaw APIs (
-Core API and Klaw Cluster API). This involves configuring the secret key and SSL protocols in the
+Klaw Core API and Klaw Cluster API). This involves configuring the secret key and SSL protocols in the
 respective `application.properties` files and verifying the connectivity between the APIs.
 
 You can find the `application.properties` file located in the following paths:
 
-- Core: [klaw/core/src/main/resources]
-- Cluster-API: `klaw/cluster-api/src/main/resources`
+- Klaw Core: [klaw/core/src/main/resources]
+- Klaw Cluster API: `klaw/cluster-api/src/main/resources`
 
 ## Configure Klaw application.properties file
 
