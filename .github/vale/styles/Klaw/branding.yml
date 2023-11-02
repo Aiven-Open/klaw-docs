@@ -27,3 +27,4 @@ swap:
   "(?i)kafka[ -]?connect": Kafka Connect
   "(?i)zookeeper": ZooKeeper
   "(?i)api": API
+  "(?i)klaw[- ]core": Klaw Core
