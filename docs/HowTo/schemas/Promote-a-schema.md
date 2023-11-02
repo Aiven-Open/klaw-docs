@@ -18,7 +18,7 @@ the next environment for better governance, administration, and control.
 This involves submitting a promotion request that your teammates can
 review and either approve or decline.
 
-You can see all created schema environments in the same **Topic Overview
+You can see all created schema environments in the same **Topic overview
 -\> Schemas** tab where you can initiate schema promotion.
 
 To promote a schema to a higher environment, follow these steps:

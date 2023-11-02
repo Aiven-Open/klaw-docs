@@ -50,7 +50,7 @@ promotion defined in `orderOfTopicPromotionEnvsList`.
 ## Topic promotion
 
 Once a topic is created in the base environment, you can promote it to the next higher-level environment. This will
-create a promotion request that your teammates can review, approve, or decline. The **Topic Overview** view will show
+create a promotion request that your teammates can review, approve, or decline. The **Topic overview** view will show
 all the environments the topic is configured on, including the environment to which you can promote the topic.
 
 ### Promote a topic
@@ -68,7 +68,7 @@ To promote a topic to a higher environment, follow these steps:
 
 ## Schema promotion
 
-In the **Topic Overview**, you can request and view the schema for an individual topic. Release 2.0.0 allows you to
+In the **Topic overview**, you can request and view the schema for an individual topic. Release 2.0.0 allows you to
 promote existing schemas to higher-level environments. To do this, select the specific schema version you want to
 promote from the lower environment to the higher environment.
 

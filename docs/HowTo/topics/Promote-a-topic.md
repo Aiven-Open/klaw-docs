@@ -16,7 +16,7 @@ functionality is used see
 Once a topic is created in the base environment, it is possible to
 promote this to the next environment. This will create a promotion
 request that the requester's teammates can review, approve, or decline.
-Each created environment can be seen in the same **Topic Overview**
+Each created environment can be seen in the same **Topic overview**
 where the topic can be promoted.
 
 To promote a topic, follow these steps:
