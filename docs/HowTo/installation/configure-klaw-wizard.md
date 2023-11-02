@@ -56,7 +56,7 @@ URL: [https://host:port/helpwizard]
    Klaw is multi-tenant by default. Every tenant has its own set of Kafka
    environments, and users of one tenant cannot view/access topics, or ACLs
    from other tenants. To configure tenants, navigate to **Dashboard -\>
-   Settings**, and look for [klaw.tenant.config].
+   Settings**, and look for `klaw.tenant.config`.
 
    Example :
 

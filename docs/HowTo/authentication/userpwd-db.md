@@ -17,7 +17,7 @@ To enable authentication with the Klaw database, follow these steps:
     encryption key to encrypt your password before it is stored in the database. The encryption key is used to secure and
     protect your password.
 
-    klaw.jasypt.encryptor.secretkey=kw2021secretkey
+    `klaw.jasypt.encryptor.secretkey=kw2021secretkey`
 
 3.  **Decrypt password:** The password stored in the database can be decrypted with the following java code.
 
