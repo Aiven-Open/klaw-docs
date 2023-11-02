@@ -26,7 +26,7 @@ the source.
 3. Configure Klaw Cluster API access
 
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64
-     string in the module: core.
+     string in the module: `core`.
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above
      base64 string in the module: `cluster-api`.
 
@@ -41,14 +41,14 @@ the source.
    ```
 
 4. Build the project by running `./mvnw clean package` for Linux(bash) or `mvnw clean package` for Windows, from the top
-   level of the project directory. This will build JAR files in the `target/` directories of each module: core and
+   level of the project directory. This will build JAR files in the `target/` directories of each module: `core` and
    `cluster-api`.
 
    node, npm, and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 
    If the build runs into an error while installing node/npm/pnpm, you can
 
-   - Disable the execution plugins (for node/npm/pnpm) in module core/pom.xml
+   - Disable the execution plugins (for node/npm/pnpm) in module `core/pom.xml`
    - Manually install node/npm/pnpm and copy assets by following the procedure
      here. [Manual installation of React](https://github.com/aiven/klaw/blob/main/coral/README.md)
 
@@ -56,8 +56,8 @@ the source.
 
    - Run with script
 
-     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both Core and
-     Cluster-API applications.
+     In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both Klaw Core and
+     Klaw Cluster API applications.
 
    Alternatively
 

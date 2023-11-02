@@ -259,7 +259,7 @@ Detailed information can be found on the official Nginx documentation.
 ### Database authentication in Klaw
 
 In Klaw, you can configure database-level authentication by setting
-`klaw.login.authentication.type: db` in the core mode
+`klaw.login.authentication.type: db` in the Klaw Core mode
 application properties.
 
 With database authentication, Klaw uses the Spring JSESSION ID. When
@@ -295,7 +295,7 @@ upstream klawgcp {
 Using IP-Hash method, sessions are maintained by tracking the client's
 IP address. Single Sign-On (SSO) authentication in Klaw For SSO
 authentication, configure Klaw by setting
-`klaw.login.authentication.type: ad` in the core mode
+`klaw.login.authentication.type: ad` in the Klaw Core mode
 application properties. When SSO is enabled, either Round-Robin or
 Least-Connected load balancing methods can be used.
 

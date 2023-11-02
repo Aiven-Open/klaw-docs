@@ -8,7 +8,7 @@ Skip to see all notifications sent and to which users [Email Matrix](#email-matr
 ## Configure email notifications
 
 You can configure email notifications in the `application.properties`
-file of Klaw-core. Refer to the documentation provided by your email
+file of Klaw Core. Refer to the documentation provided by your email
 service provider for instructions on how to configure email
 notifications. Additionally, make sure you have the `host`, `username`,
 and `password` details as you will need to provide this information to

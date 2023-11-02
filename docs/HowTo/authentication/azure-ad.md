@@ -8,7 +8,7 @@ credentials or select an Azure account.
 
 Before using Azure AD to log in with Klaw, you need to make the
 following configurations in the `application.properties` file in
-Klaw-core module to enable Azure AD.
+Klaw Core module to enable Azure AD.
 
 1.  Make sure Klaw is running in a secure mode. You will find the
     following configuration: `server.ssl.key-store.`

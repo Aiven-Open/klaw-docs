@@ -43,10 +43,10 @@ notification templates and roles, under **Dashboard -\> Settings**.
   false.
 - **Klaw Cluster API connectivity**  
   When installing Klaw, it is important
-  to establish the connectivity between Core API and Klaw Cluster API. You
+  to establish the connectivity between Klaw Core API and Klaw Cluster API. You
   can test this connectivity by updating the property
   `klaw.clusterapi.url`.
-- **Stop Core API**  
-  You can stop the Core API by clicking the Stop
+- **Stop Klaw Core API**  
+  You can stop the Klaw Core API by clicking the Stop
   button. However, it will be your responsibility as an Administrator
   to start it again if required.

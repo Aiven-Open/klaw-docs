@@ -5,7 +5,7 @@ Schema Registry over the REST protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
+- Set up the connection between the Klaw APIs (Klaw Core API and Klaw Cluster
   API) to use secure SSL, see
   `klaw-core-with-clusterapi`. This
   involves configuring the `klaw.clusterapi.url` setting in the Klaw

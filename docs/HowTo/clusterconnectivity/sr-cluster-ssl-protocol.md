@@ -5,7 +5,7 @@ Schema Registry over the REST protocol.
 
 ## Prerequisite
 
-- Set up the connection between the Klaw APIs (Core API and Klaw Cluster
+- Set up the connection between the Klaw APIs (Klaw Core API and Klaw Cluster
   API) to use secure SSL, see
   `klaw-core-with-clusterapi`. This
   involves configuring the `klaw.clusterapi.url` setting in the Klaw
@@ -38,7 +38,7 @@ cluster with Klaw using SSL protocol:
 6.  In the **Schema Registry Environments** section, click **Add
     Environment** and enter the details to add your schema registry
     environment. Click **Save**.
-7.  Open the `application.properties` file for [core](https://github.com/aiven/klaw/tree/main/core)
+7.  Open the `application.properties` file for [`core`](https://github.com/aiven/klaw/tree/main/core)
     and [`cluster-api`](https://github.com/aiven/klaw/tree/main/cluster-api) modules.
 
 8.  Copy the **Cluster ID** from the **Clusters** page using the copy

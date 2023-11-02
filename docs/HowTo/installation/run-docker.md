@@ -3,7 +3,7 @@
 Klaw provides Docker images that allow you to run Klaw inside Docker
 containers. There are two Docker images available:
 
-- Core API: `https://hub.docker.com/r/aivenoy/klaw-core`
+- Klaw Core API: `https://hub.docker.com/r/aivenoy/klaw-core`
 - Klaw Cluster API: `https://hub.docker.com/r/aivenoy/klaw-cluster-api`
 
 ## Prerequisites
@@ -254,7 +254,7 @@ There are two ways to configure this:
   version copied over to the volume as this is usually updated during the
   build to keep the API versions in line with the pom version. \* Also,
   ensure that the `application.properties` is renamed to a unique
-  properties file name, so you don't accidentally copy over the Core
+  properties file name, so you don't accidentally copy over the Klaw Core
   properties with the cluster properties and vice versa.
 
       environment:

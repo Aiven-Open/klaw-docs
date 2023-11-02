@@ -7,7 +7,7 @@ enter your credentials or select an Azure account.
 
 Before using Google account credentials to log in to Klaw, you need to
 make the following configurations in the `application.properties` file
-in the Klaw-core module to enable the use of Google account login.
+in the Klaw Core module to enable the use of Google account login.
 
 1.  Make sure Klaw is running in a secure mode. You will find the
     following configuration:
