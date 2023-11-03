@@ -4,7 +4,7 @@
 
 Currently Klaw contributors intend to release Klaw once in every 1.5 months. Most of the times, it would be a minor
 release. All the releases are available [here](../category/Releases).
-For example : 2.5.0, 2.6.0 and so on.
+For example : 2.4.0, 2.5.0 and so on.
 
 ## Deployment
 
