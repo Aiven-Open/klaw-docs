@@ -45,10 +45,10 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### Confluent Cloud Kafka
+### Confluent Cloud Apache Kafka
 
-Klaw now offers Confluent Cloud Kafka Topics and ACLs support, expanding
-its capabilities to interact with Confluent Cloud Kafka. This release
+Klaw now offers Confluent Cloud Apache Kafka Topics and ACLs support, expanding
+its capabilities to interact with Confluent Cloud Apache Kafka. This release
 includes the implementation of the following APIs:
 
 - [Topic

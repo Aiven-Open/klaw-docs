@@ -7,7 +7,7 @@ When you choose a topic on Klaw, you will be directed to the **Topic overview** 
 In this tab, you can view the topic's settings, connection details, subscriptions, and schemas overview.
 
 - **Topic details**: In this section, you can view the settings related to the topic, such as partitions, replication factors, and any advanced configurations.
-- **Cluster details**: This section provides key information about the cluster, such as the Bootstrap server address for connections, the protocol used, and the specific Kafka version. You can also see the cluster name, current status, and associated REST API details.
+- **Cluster details**: This section provides key information about the cluster, such as the Bootstrap server address for connections, the protocol used, and the specific Apache Kafka version. You can also see the cluster name, current status, and associated REST API details.
 - **Subscriptions & schemas**: This section displays the total count of producers and consumers subscribed to the topic and the number of associated schemas. You can directly **Request new subscription** or **Request new schema** as needed. To view the current subscriptions and schemas, click the **See subscriptions** and **See schema** options.
 
 ## Subscriptions tab

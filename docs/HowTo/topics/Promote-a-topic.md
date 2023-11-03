@@ -22,7 +22,7 @@ where the topic can be promoted.
 To promote a topic, follow these steps:
 
 1. In Klaw, select **Topics** on the navigation bar.
-2. Select the specific Kafka Topic you wish to promote to the higher
+2. Select the specific Apache Kafka topic you wish to promote to the higher
    environment.
 3. Click the **Promote to \[Next Environment\]** button to promote the
    topic to the next environment.

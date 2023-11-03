@@ -18,12 +18,14 @@ We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation,
 
 This is the setup you need every time. You can find the different ways how to run the local development process below.
 
-Optionally, we use [Vale](.github/vale/vale.md) for spell checking. The spell check will run in the GitHub pipeline.
-If you want to use Vale locally, too, please make sure you install it:
+We use [Vale](.github/vale/vale.md) for spell checking. The spell check will run in the GitHub pipeline.
+To use Vale locally, please make sure you install it:
 
 - It runs on Mac, Linux and Windows. You can find instructions to download and install it at
   their [Installation guide](https://vale.sh/docs/vale-cli/installation/).
 - after installation, run `vale sync` on root level
+
+While we check for errors in the pipeline, we also have "warning" and "suggestion" level rules. We recommend [running those](#scripts-used-and-their-actions) checks locally, too.
 
 ### Local development
 

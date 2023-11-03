@@ -1,7 +1,7 @@
 # Connect to Apache Kafka cluster using SSL protocol
 
 Connecting Apache Kafka cluster and Klaw allows you to easily manage and
-enforce governance policies for topics, ACLs, and more on your Kafka
+enforce governance policies for topics, ACLs, and more on your Apache Kafka
 cluster.
 
 This section provides you with information on how to connect Apache

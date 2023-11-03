@@ -1,6 +1,6 @@
 # Schemas
 
-Defining a schema for events sent to a Kafka topic is essential to
+Defining a schema for events sent to a Apache Kafka topic is essential to
 provide clarity to both producers and consumers regarding the contents
 of each event. This schema outlines the structure of the data format,
 which could be in various formats, including JSON, Avro, or Protobuf. A
@@ -11,7 +11,7 @@ consumers.
 
 Aiven's Karapace and Confluent's Schema Registry are two highly
 popular products that enable the management of schemas outside a
-Kafka cluster. For more information, see [Aiven
+Apache Kafka cluster. For more information, see [Aiven
 Karapace](https://karapace.io) and [Confluent Schema
 registry](https://docs.confluent.io/platform/current/schema-registry/index.html).
 

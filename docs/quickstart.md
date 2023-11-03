@@ -4,7 +4,7 @@ sidebar_position: 1.1
 
 # Quick Start
 
-In this tutorial, we will install Klaw with docker, and request for a Kafka topic and verify its existence on Kafka
+In this tutorial, we will install Klaw with docker, and request for a Apache Kafka topic and verify its existence on Apache Kafka
 cluster.
 
 ## 1. Run the docker script
@@ -17,7 +17,7 @@ docker run -d -t -i -p 9092:9092 --add-host=host.docker.internal:host-gateway -e
 docker run -d -t -i -p 8081:8081 --add-host=host.docker.internal:host-gateway -e SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://host.docker.internal:9092 --name klaw-schema-registry bitnami/schema-registry:latest
 ```
 
-This script basically creates Klaw, Kafka and schema registry processes, and also configures Kafka and schema
+This script basically creates Klaw, Apache Kafka and schema registry processes, and also configures Apache Kafka and schema
 registry servers in Klaw.
 
 ## 2. Login to Klaw
@@ -85,5 +85,5 @@ To verify
 docker exec -it klaw-kafka /opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-should display the newly created Kafka topic. You can also try creating a schema for the topic from the "Request a new"
+should display the newly created Apache Kafka topic. You can also try creating a schema for the topic from the "Request a new"
 dropdown.

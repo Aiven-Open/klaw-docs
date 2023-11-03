@@ -1,6 +1,6 @@
 # Manage connections in Klaw
 
-Efficiently manage connections between Klaw and various Kafka cluster types.
+Efficiently manage connections between Klaw and various Apache Kafka cluster types.
 
 - [Klaw database connection](klaw-db-connection.md)
 

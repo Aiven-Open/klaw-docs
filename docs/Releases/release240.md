@@ -54,10 +54,10 @@ to enhance user experience and provide a more intuitive design:
     a schema registry cluster.
 - **Enhanced Kafka Connector management**
   - _Kafka connector status monitoring_: Gain visibility into the
-    status of Kafka connectors and tasks, allowing you to track
+    status of Apache Kafka connectors and tasks, allowing you to track
     their progress and performance efficiently.
   - _Connector restart capability_: Introducing the ability to
-    restart Kafka connectors and their associated tasks, enabling
+    restart Apache Kafka connectors and their associated tasks, enabling
     efficient management and troubleshooting.
 
 To disable the preview for the new Klaw user interface, open the

@@ -1,7 +1,7 @@
 # Manage Teams
 
 In Klaw, teams are a collection of users who are responsible for
-managing and owning specific Kafka topics.
+managing and owning specific Apache Kafka topics.
 
 ## Prerequisite
 
