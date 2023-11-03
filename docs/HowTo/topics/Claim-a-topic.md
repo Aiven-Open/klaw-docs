@@ -1,6 +1,6 @@
-# Claim a Topic
+# Claim a topic
 
-A Topic, over its life cycle, can exist for a long time, and in that
+A topic, over its life cycle, can exist for a long time, and in that
 time, it is possible that teams will change and their priorities and
 missions will change. To facilitate this, Klaw provides the ability for
 a team to **Claim** a topic. This allows another team to take ownership

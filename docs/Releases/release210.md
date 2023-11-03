@@ -21,12 +21,12 @@ enhancements.
 With the switch to React, this release features a redesign of the
 following user interfaces:
 
-- **Approve and Reject Topic Requests**: Users can now approve or
+- **Approve requests** for topics: Users can now approve or
   reject topic requests using the new UI.
-- **Approve and Reject Subscription Requests** (Producer/Consumer):
+- **Approve requests** for subscriptions (Producer/Consumer):
   Users can now approve or reject ACL requests for both producers and
   consumers using the new UI.
-- **Approve and Reject Schema Requests**: Users can now approve or
+- **Approve requests** for schemas: Users can now approve or
   reject schema requests using the new UI.
 
 ![image](../../static/images/ApprovalRequestTopic-react.png)

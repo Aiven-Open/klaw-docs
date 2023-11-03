@@ -16,17 +16,17 @@ cluster administration.
 
 ## What's new in Klaw 2.2.0
 
-Redesigned My Team's Request screens with React UI
+Redesigned **My team's requests** screens with React UI
 
 - With the switch to React, this release features a
   redesign of the following user interfaces:
 
-- **My Team's Topic Requests**: Users can now view all of their
+- **My team's requests** for topics: Users can now view all of their
   team's topic requests using the new UI.
-- **My Team's Subscription Requests** (Producer/Consumer): Users can
+- \***\*My team's requests\*\*** for subscriptions (Producer/Consumer): Users can
   now view all of their team's ACL requests for both producers and
   consumers using the new UI.
-- **My Team's Schema Requests**: Users can now view all of their
+- \***\*My team's requests** for schemas: Users can now view all of their
   team's schema requests using the new UI.
 
 ![image](../../static/images/release-220-react-ui.png)

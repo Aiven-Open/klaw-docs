@@ -61,16 +61,16 @@ its unique responsibilities and permissions. These roles include:
    approving user requests unless they are also assigned the
    `APPROVE_ALL_REQUESTS_TEAMS` permission.
 
-## User Requests
+## User requests
 
 The table below outlines the roles responsible for approving user
 registration requests:
 
 ### New user approver matrix
 
-| Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
+| Operation type            | Resource owners team | Requestors team | All Approvers | Admin |
 | ------------------------- | -------------------- | --------------- | ------------- | ----- |
-| User Registration Request |                      |                 |               | ✅    |
+| User registration request |                      |                 |               | ✅    |
 
 ## Topic owner
 
@@ -93,13 +93,13 @@ topic-related requests:
 
 #### Topic approver matrix
 
-| Operation Type        | Resource Owners Team | Requestors Team | All Approvers | Admin |
+| Operation Type        | Resource owners team | Requestors team | All Approvers | Admin |
 | --------------------- | -------------------- | --------------- | ------------- | ----- |
-| New Topic Request     |                      | ✅              | ✅            |       |
-| Update Topic Request  |                      | ✅              | ✅            |       |
-| Delete Topic Request  |                      | ✅              | ✅            |       |
-| Claim Topic Request   | ✅                   |                 | ✅            |       |
-| Promote Topic Request |                      | ✅              | ✅            |       |
+| New topic request     |                      | ✅              | ✅            |       |
+| Update topic request  |                      | ✅              | ✅            |       |
+| Delete topic request  |                      | ✅              | ✅            |       |
+| Claim topic request   | ✅                   |                 | ✅            |       |
+| Promote topic request |                      | ✅              | ✅            |       |
 
 ## Connector owner
 
@@ -114,13 +114,13 @@ connector-related requests:
 
 #### Connector approver matrix
 
-| Operation Type            | Resource Owners Team | Requestors Team | All Approvers | Admin |
-| ------------------------- | -------------------- | --------------- | ------------- | ----- |
-| New Connector Request     |                      | ✅              | ✅            |       |
-| Update Connector Request  |                      | ✅              | ✅            |       |
-| Delete Connector Request  |                      | ✅              | ✅            |       |
-| Claim Connector Request   | ✅                   |                 | ✅            |       |
-| Promote Connector Request |                      | ✅              | ✅            |       |
+| Operation Type            | Edit topic | Requestors team | All Approvers | Admin |
+| ------------------------- | ---------- | --------------- | ------------- | ----- |
+| New Connector request     |            | ✅              | ✅            |       |
+| Update Connector request  |            | ✅              | ✅            |       |
+| Delete Connector request  |            | ✅              | ✅            |       |
+| Claim Connector request   | ✅         |                 | ✅            |       |
+| Promote Connector request |            | ✅              | ✅            |       |
 
 ## Schema owner
 
@@ -136,14 +136,14 @@ schema-related requests:
 
 #### Schema approver matrix
 
-| Operation Type         | Resource Owners Team | Requestors Team | All Approvers | Admin |
-| ---------------------- | -------------------- | --------------- | ------------- | ----- |
-| New Schema Request     |                      | ✅              | ✅            |       |
-| Delete Schema Request  |                      | ✅              | ✅            |       |
-| Promote Schema Request |                      | ✅              | ✅            |       |
+| Operation Type         | Edit topic | Requestors team | All Approvers | Admin |
+| ---------------------- | ---------- | --------------- | ------------- | ----- |
+| New Schema request     |            | ✅              | ✅            |       |
+| Delete Schema request  |            | ✅              | ✅            |       |
+| Promote Schema request |            | ✅              | ✅            |       |
 
 :::note
-With Schemas, there is no specific Claim Schema as it is assigned to a Topic. The owner of the Topic also owns the
+With Schemas, there is no specific Claim Schema as it is assigned to a topic. The owner of the topic also owns the
 Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an
 incremented version number is added instead.
 :::
@@ -167,11 +167,11 @@ subscription-related requests:
 
 #### Subscription approver matrix
 
-| Operation Type              | Resource Owners Team | Requestors Team | All Approvers | Admin |
-| --------------------------- | -------------------- | --------------- | ------------- | ----- |
-| New Subscription Request    |                      | ✅              | ✅            |       |
-| Delete Subscription Request | ✅                   |                 | ✅            |       |
-| Claim Subscription Request  | ✅                   |                 | ✅            |       |
+| Operation Type              | Edit topic | Requestors team | All Approvers | Admin |
+| --------------------------- | ---------- | --------------- | ------------- | ----- |
+| New Subscription request    |            | ✅              | ✅            |       |
+| Delete Subscription request | ✅         |                 | ✅            |       |
+| Claim Subscription request  | ✅         |                 | ✅            |       |
 
 :::tip
 When claiming a Subscription, if the Subscription is owned by a team

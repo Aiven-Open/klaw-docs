@@ -9,7 +9,7 @@ Once a subscription is created in an environment, it is possible to
 delete the subscription from the environment.
 
 1. In Klaw, select **Topics** on the navigation bar.
-2. Choose the specific Kafka Topic where the subscription you wish to
+2. Choose the specific Kafka topic where the subscription you wish to
    delete is located.
 3. Select the red **X** on the right-hand side of the topic by the
    environment table at the top of the page.

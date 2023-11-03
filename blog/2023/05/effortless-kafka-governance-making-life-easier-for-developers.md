@@ -42,7 +42,7 @@ considerations arise when undertaking this endeavor:
   and awareness of topics within the organization facilitates better
   collaboration and knowledge sharing among teams.
 
-Managing a small number of Apache Kafka topics may seem manageable at first.
+Managing a small number of Apache Kafka topics may seem straightforward at first.
 However, as Apache Kafka usage grows and more applications and teams are added,
 effective and efficient management can become increasingly challenging.
 This includes the important task of isolating sensitive topics

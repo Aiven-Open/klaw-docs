@@ -18,7 +18,7 @@ You can configure the following in a tenant:
 
       Field: baseSyncEnvironment
 
-- Order of Apache Kafka Topics promotion environments
+- Order of Apache Kafka topics promotion environments
 
   Define a set of environments in order to promote a
   Apache Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
@@ -26,7 +26,7 @@ You can configure the following in a tenant:
 
       Field: orderOfTopicPromotionEnvsList
 
-- Request Topics Environments List
+- Request topics Environments List
 
   Define a set of environments for which Apache Kafka topics can be
   requested directly. Other environments cannot be requested

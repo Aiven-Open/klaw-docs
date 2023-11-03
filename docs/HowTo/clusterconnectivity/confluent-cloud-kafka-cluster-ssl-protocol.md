@@ -5,11 +5,11 @@ platform, deployable in a cloud, maintained by Confluent. This section
 provides you with information on how to connect Confluent Cloud Kafka
 cluster with Klaw. The following functionalities are available in Klaw for Confluent Cloud:
 
-- Create Topics
-- Delete Topics
+- Create topics
+- Delete topics
 - Create ACLs
 - Delete ACLs
-- Sync Topics
+- Sync topics
 - Sync ACLs
 
 References:

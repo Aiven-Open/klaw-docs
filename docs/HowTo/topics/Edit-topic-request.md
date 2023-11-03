@@ -1,4 +1,4 @@
-# Edit a Topic
+# Edit a topic
 
 Changing the configuration to a topic over its lifetime is a common
 and sometimes unavoidable task. Klaw makes this easier by providing the
@@ -6,9 +6,9 @@ ability to edit an existing topic.
 
 1. In Klaw, select **Topics** on the navigation bar.
 2. Select the specific Apache Kafka topic you wish to edit.
-3. Click the edit button on the right side of the Topic by Environment
+3. Click the edit button on the right side of the topic by Environment
    view.
-4. On the **Edit Topic** view, you can modify advanced configuration or
+4. On the **Edit topic** view, you can modify advanced configuration or
    change the _Partitions_ and _Replication factor_.
 
    :::note
