@@ -92,4 +92,4 @@ the source.
 ## Next Steps
 
 Once you have finished verifying your installation, we recommend you follow the documentation
-in [configure-klaw-wizard](configure-klaw-wizard.md).
+in [Configure Klaw with Wizard](configure-klaw-wizard.md).

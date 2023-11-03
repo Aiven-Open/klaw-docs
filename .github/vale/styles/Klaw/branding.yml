@@ -28,3 +28,4 @@ swap:
   "(?i)zookeeper": ZooKeeper
   "(?i)api": API
   "(?i)klaw[- ]core": Klaw Core
+  "(?i)klaw": Klaw

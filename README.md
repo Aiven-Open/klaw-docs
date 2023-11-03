@@ -5,7 +5,7 @@
 ## About
 
 This is the Klaw documentation repository. Welcome 👋 🎉
-You can find source code and all content for our ([klaw-project.io](https://www.klaw-project.io/) site here.
+You can find source code and all content for our ([Klaw documentation](https://www.klaw-project.io/) site here.
 
 We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation, an optimized site generator in React.
 

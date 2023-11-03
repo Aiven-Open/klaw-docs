@@ -13,7 +13,7 @@ Klaw version 1.0.0 is a first major release.
 - Klaw (formerly Kafkawize) Initial Release 1.0.0
 - This release is cloned from main branch of
   <https://github.com/muralibasani/kafkawize>
-- Package renamed to io.aiven.klaw
+- Package renamed to `io.aiven.klaw`
 - Introduced 'Kafka flavor' in the configuration of clusters
 - Changes to manage Aiven ACLs
 - All occurrences of Kafkawize renamed to Klaw
