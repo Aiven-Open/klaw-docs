@@ -2,17 +2,17 @@
 
 ## Klaw releases
 
-Currently Klaw contributors intend to release Klaw once in every 1.5 months. Most of the times, it would be a minor
-release. All the releases are available [here](../category/Releases).
-For example : 2.4.0, 2.5.0 and so on.
+Currently Klaw contributors intend to release Klaw once in every 1.5 months. All the releases are
+available [here](../category/Releases). For example : 2.4.0, 2.5.0 and so on.
 
 ## Deployment
 
-On every release, it is recommended to deploy Klaw to a staging server and run few sanity tests.
+On every release, we recommended deploying Klaw to a staging server and run a series of sanity tests which are
+targeted at the features that your organization uses in Klaw.
 
 ![Screenshot: Staging](../../static/images/deployklaw/staging.png)
 
-After successful tests, it is recommended to deploy Klaw to your next higher environments.
+Once the sanity tests have been completed to a satisfactory level, plan your production upgrade.
 
 ### Scenario 1
 
