@@ -8,3 +8,5 @@ Klaw can be installed and configured in two ways:
 Once Klaw is installed, you can use the [Configure Klaw Wizard](configure-klaw-wizard.md) to configure your Kafka
 cluster
 and start managing your Kafka resources.
+
+Read [Deploying klaw recommendations](../deployklaw.md)
