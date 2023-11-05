@@ -4,7 +4,7 @@ Learn how to deploy Klaw with an outline of steps and key points for a smooth up
 
 ## Klaw releases cycle
 
-Our team and Klaw contributors are dedicated to consistently improving the features and performance of Klaw. We aim to roll out a new release approximately every 1.5 months. You can access all past and the most recent releases [here](../category/Releases). Highlighted updates include versions such as 2.4.0, 2.5.0, among others.
+Our team, along with Klaw's contributors, is committed to enhancing the functionality and efficiency of Klaw, aiming to deliver new updates approximately every 1.5 months. You can access all past and the most recent releases [here](../category/Releases). Highlighted updates include versions such as 2.4.0, 2.5.0, among others.
 
 ## Deployment strategy
 
