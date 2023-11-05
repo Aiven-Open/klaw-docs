@@ -18,7 +18,7 @@ Follow these recommended steps for deploying each new release:
 
   Ensure to proceed to the next phase only after verifying that the staging evaluation meets your standards.
 
-- **Production rollout**
+- **Production deployment**
 
   After successfully completing the staging phase, proceed to upgrade your production environment, ensuring you minimize disruptions and have rollback strategies in place if needed.
 
