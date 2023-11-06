@@ -1,3 +1,4 @@
+Acc
 ACL
 ACLs
 API
@@ -10,12 +11,15 @@ Approvers
 Avro
 Confluent
 Confluent's
+Dev
 DM
 DMs
 Docusaurus
 ESlint
 Kafkawize
 Karapace
+Kafka
+kafka
 Klaw
 Klaw's
 Metastore
@@ -52,6 +56,8 @@ markdownlint
 metastore
 npm
 nvmrc
+Prd
+Prod
 plaintext
 pluggable
 pnpm
@@ -64,5 +70,6 @@ signup
 superadmin
 truststore
 truststores
+Tst
 uncomment
 cluster-api
