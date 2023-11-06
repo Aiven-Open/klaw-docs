@@ -47,54 +47,7 @@ to associate a schema registry with a Apache Kafka environment in the Add/Modify
 promotion defined in `orderOfTopicPromotionEnvsList`.
 :::
 
-## Topic promotion
+## More information on promotion topics and schemas
 
-Once a topic is created in the base environment, you can promote it to the next higher-level environment. This will
-create a promotion request that your teammates can review, approve, or decline. The **Topic overview** view will show
-all the environments the topic is configured on, including the environment to which you can promote the topic.
-
-### Promote a topic
-
-To promote a topic to a higher environment, follow these steps:
-
-1. Select **Topics** on the navigation bar.
-2. Select the specific Apache Kafka topic you want to promote to the higher environment.
-3. Select the **Promote to \[Next Environment\]** button to promote the topic to the next environment (higher
-   environment) that has been configured.
-4. Configure the number of **Partitions** and **Replication factor** for the higher environment in the dropdowns
-   provided.
-5. Confirm the promotion to the next environment by selecting **Submit Promotion to \[Next Environment\]**
-6. A topic request is now created for team members to review and approve under **Approvals**.
-
-## Schema promotion
-
-In the **Topic overview**, you can request and view the schema for an individual topic. Release 2.0.0 allows you to
-promote existing schemas to higher-level environments. To do this, select the specific schema version you want to
-promote from the lower environment to the higher environment.
-
-### Promote a schema
-
-To promote a schema to a higher environment, follow these steps:
-
-1. Select **Topics** on the navigation bar.
-2. Select the Apache Kafka topic for which you want to promote the schema to a higher environment.
-3. Select the **Schema** tab under the main topic section.
-4. Select the **Promote to \[Next Environment\]** button to promote a schema to the next environment (higher
-   environment) that has been configured.
-5. To promote a schema to a higher environment, select the specific version of the schema that you want to promote. This
-   schema will be available for your team to review when approving or declining the request.
-6. Optionally, you can use the **Force Register Schema** option to register a schema that is not compatible with the
-   existing schemas on that topic.
-7. Confirm the promotion to the next environment by selecting **Submit Promotion to \[Next Environment\]**.
-8. A schema request is now created for team members to review and approve under **Approvals**.
-
-### How does Force Register work
-
-When promoting a schema to a higher environment in Klaw, you can use the **Force Register Schema** option, which enables
-you to register a schema that may not be compatible with previous schemas. By selecting this option, Klaw will change
-the compatibility of the subject (topic) to **NONE**, register the new schema, and revert to the previous subject
-compatibility. If the subject compatibility is not set, it will fall back to global compatibility. However, Klaw will
-not change the global compatibility.
-
-:::note
-Requests cannot be approved by the user who raised it. It must be approved by a different user from the same team.
+- How to promote a topic
+- How to promote a schema
