@@ -47,7 +47,7 @@ to associate a schema registry with a Apache Kafka environment in the Add/Modify
 promotion defined in `orderOfTopicPromotionEnvsList`.
 :::
 
-## More information on promotion topics and schemas
+## How to promote topics and schemas
 
-- How to promote a topic
-- How to promote a schema
+- [Promote a topic](../HowTo/topics/Promote-a-topic.md)
+- [Promote a schema](../HowTo/schemas/Promote-a-schema.md)
