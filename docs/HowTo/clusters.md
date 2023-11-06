@@ -3,13 +3,12 @@
 In Klaw, clusters are used to store the connectivity information of
 servers. There are three types of clusters that you can define in Klaw:
 
-<!-- vale off ->
+<!-- vale off -->
 
-- Kafka
+- Apache Kafka
 - Schema Registry
-- Kafka Connect
-
-<!-- vale on ->
+- Apache Kafka Connect
+<!-- vale on -->
 
 Depending on the type of cluster, you can need to configure various
 settings, such as protocol, bootstrap servers, REST API URLs, and Apache Kafka®
