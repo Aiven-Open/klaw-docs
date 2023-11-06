@@ -1,9 +1,11 @@
-# Promote a Schema
+# Promote a schema
 
-Schema promotion is a key feature of Klaw that improves governance,
+Promotion is a key feature of Klaw that improves governance,
 administration, and control of schemas. With schema promotion, a schema
 can be initially created in the lowest environment and then promoted to
 higher environments as needed.
+
+Learn more: [Concepts—Promotion](../../Concepts/promotion.md)
 
 ## Prerequisites
 
@@ -11,12 +13,16 @@ Before using this functionality, the Superadmin must ensure that all
 prerequisites are met. For more information, see
 [Promotion](../../Concepts/promotion.md).
 
-## Schema promotion
+## Schema promotion step by step
 
 After creating a schema in the base environment, you can promote it to
 the next environment for better governance, administration, and control.
 This involves submitting a promotion request that your teammates can
 review and either approve or decline.
+
+In the **Topic overview**, you can request and view the schema for an individual topic.
+Release 2.0.0 allows you to promote existing schemas to higher-level environments.
+To do this, select the specific schema version you want to promote from the lower environment to the higher environment.
 
 You can see all created schema environments in the same **Topic overview
 -\> Schemas** tab where you can initiate schema promotion.
