@@ -1,8 +1,8 @@
 extends: conditional
 message: "The first mention of '%s' must be marked as ®"
-level: warning
+level: error
 scope: text
 ignorecase: false
 
-first: '\b(Kafka)(?!®)'
-second: '(Kafka)(?:®)'
+first: '(?<!\w)(Kafka)(?![a-zA-Z])'
+second: '\b(Kafka)(?:®)'
