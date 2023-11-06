@@ -1,6 +1,6 @@
 # Synchronize ACLs to cluster
 
-To synchronize ACLs from Klaw to an Apache Kafka cluster, follow the
+To synchronize ACLs from Klaw to an Apache Kafka® cluster, follow the
 procedure below, which involves displaying the ACLs in Klaw and creating
 them on the Apache Kafka cluster.
 

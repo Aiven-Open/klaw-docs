@@ -1,7 +1,7 @@
 # Connect with Aiven For Apache Kafka® cluster using SASL protocol
 
 This section provides information on how to connect Aiven for
-Apache Kafka® cluster with Klaw using the SASL_SSL authentication protocol.
+Apache Kafka cluster with Klaw using the SASL_SSL authentication protocol.
 
 ## Prerequisite
 
@@ -9,7 +9,7 @@ Apache Kafka® cluster with Klaw using the SASL_SSL authentication protocol.
   This involves configuring the `klaw.clusterapi.url` setting in the
   Klaw UI and testing the connectivity to ensure the two APIs can
   communicate.
-- A running Aiven for Apache Kafka® service. See [Getting started with
+- A running Aiven for Apache Kafka service. See [Getting started with
   Aiven for Apache Kafka for more
   information](https://docs.aiven.io/docs/products/kafka/getting-started.html).
 - Configured [Java keystore and truststore containing the service SSL
@@ -19,7 +19,7 @@ Apache Kafka® cluster with Klaw using the SASL_SSL authentication protocol.
 ## Configure and connect using SASL protocol
 
 Follow the steps below to configure and connect to an Aiven for Apache
-Kafka® and Klaw using SSL protocol:
+Kafka and Klaw using SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click
    **Clusters**.
@@ -28,7 +28,7 @@ Kafka® and Klaw using SSL protocol:
    - **Cluster Type:** Select **Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
-   - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+   - **Kafka Flavor:** Select Aiven for Apache Kafka as the flavor
    - **Project Name:** Select the project name defined in the [Aiven
      Console](https://console.aiven.io/)
    - **Bootstrap server:** Enter the Service URI for your Apache Kafka
@@ -62,5 +62,5 @@ Kafka® and Klaw using SSL protocol:
     copied authorization token.
 12. Save the `application.properties` file. Re-deploy the Klaw Cluster API
     with the updated configuration. This will apply the changes and
-    enable Klaw to connect to Aiven for Apache Kafka® cluster using SSL
+    enable Klaw to connect to Aiven for Apache Kafka cluster using SSL
     protocol.

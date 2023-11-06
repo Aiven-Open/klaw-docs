@@ -183,7 +183,7 @@ find these scripts at in [docker-scripts](https://github.com/aiven/klaw/tree/mai
 ## Enabling HTTPS
 
 A Docker volume is created to store Klaw data to enable HTTPS and secure
-connections between Klaw and Kafka. You can save your keystore and truststore in this volume. Make sure to copy the
+connections between Klaw and Apache Kafka®. You can save your keystore and truststore in this volume. Make sure to copy the
 keystore and truststore to the Klaw data volume so that they can be accessed at runtime.
 
 ## Find Klaw Docker volume location

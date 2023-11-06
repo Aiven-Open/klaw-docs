@@ -42,7 +42,7 @@ and it looks amazing - we're excited to start this new journey.
 
 With the switch to React for UI, this release also introduces the
 redesigned user interface for Browse topics, providing a more
-user-friendly and intuitive interface for managing Apache Kafka topics in Klaw.
+user-friendly and intuitive interface for managing Apache Kafka® topics in Klaw.
 It consists of changes to the layout, styling, and overall appearance of
 the interface, as well as improvements to make browsing and working
 topics easier, more efficient, and more accessible.

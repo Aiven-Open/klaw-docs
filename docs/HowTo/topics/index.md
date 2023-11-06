@@ -1,6 +1,6 @@
 # Topics
 
-Topics are a fundamental part of the Apache Kafka ecosystem, and the management
+Topics are a fundamental part of the Apache Kafka® ecosystem, and the management
 of topics is one of the core and richest features available in Klaw.
 
 ## Topics in Apache Kafka

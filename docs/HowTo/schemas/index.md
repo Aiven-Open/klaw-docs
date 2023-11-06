@@ -1,6 +1,6 @@
 # Schemas
 
-Defining a schema for events sent to a Apache Kafka topic is essential to
+Defining a schema for events sent to an Apache Kafka® topic is essential to
 provide clarity to both producers and consumers regarding the contents
 of each event. This schema outlines the structure of the data format,
 which could be in various formats, including JSON, Avro, or Protobuf. A

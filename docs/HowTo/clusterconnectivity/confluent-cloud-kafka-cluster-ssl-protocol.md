@@ -1,6 +1,6 @@
-# Connect with Confluent Cloud Kafka Cluster
+# Connect with Confluent Cloud Apache Kafka® Cluster
 
-Confluent Cloud Kafka® is a fully managed distributed data streaming
+Confluent Cloud Kafka is a fully managed distributed data streaming
 platform, deployable in a cloud, maintained by Confluent. This section
 provides you with information on how to connect Confluent Cloud Kafka
 cluster with Klaw. The following functionalities are available in Klaw for Confluent Cloud:
@@ -76,4 +76,4 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
 
 11. Re-deploy the Klaw Cluster API with the updated configuration. This will
     apply the changes and enable Klaw to connect to Confluent Cloud
-    Kafka® cluster using APIKey/Secret.
+    Kafka cluster using APIKey/Secret.

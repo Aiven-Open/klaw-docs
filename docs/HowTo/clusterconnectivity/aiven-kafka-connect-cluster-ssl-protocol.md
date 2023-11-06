@@ -1,7 +1,7 @@
 # Connect with Aiven for Apache Kafka® Connect service
 
-Aiven for Apache Kafka® Connect is a fully managed distributed Apache
-Kafka® integration component, deployable in the cloud of your choice.
+Aiven for Apache Kafka Connect is a fully managed distributed Apache
+Kafka integration component, deployable in the cloud of your choice.
 Apache Kafka Connect lets you integrate your existing data sources and
 sinks with Apache Kafka.
 
@@ -31,7 +31,7 @@ Kafka Connect service with Klaw using SSL protocol:
    - **Cluster Type:** Select **Kafka Connect** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster\*
    - **Protocol:** Select SSL protocol for your cluster
-   - **Kafka Flavor:** Select Aiven for Apache Kafka® as the flavor
+   - **Kafka Flavor:** Select Aiven for Apache Kafka as the flavor
    - **Project Name:** Select the project name defined in the [Aiven Console](https://console.aiven.io/)
    - **Bootstrap server:** Enter the Service URI for your Apache Kafka Connect service. You can find the service URI in the Connection information page of your service in Aiven Console.
 

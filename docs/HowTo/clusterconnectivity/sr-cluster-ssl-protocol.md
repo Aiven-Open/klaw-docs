@@ -1,7 +1,6 @@
 # Connect to Schema Registry cluster with SSL protocol
 
-This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the
-Schema Registry over the REST protocol.
+This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the Schema Registry over the REST protocol.
 
 ## Prerequisite
 
@@ -23,12 +22,14 @@ cluster with Klaw using SSL protocol:
 1.  In the Klaw web interface, navigate to **Environments**, and click
     **Clusters**.
 2.  On the **Clusters** page, click **Add Cluster**.
+    <!-- vale off -->
 3.  On the **Add Kafka cluster** page, enter the following details:
+    <!-- vale on -->
 
     - **Cluster Type:** Select **SchemaRegistry** from the drop-down list
     - **Cluster Name:** Provide a name for the cluster
     - **Protocol:** Select SSL protocol for your cluster
-    - **Kafka Flavor:** Select Apache Kafka as the flavor
+    - **Kafka Flavor:** Select Apache Kafka® as the flavor
     - **Bootstrap server:** Enter the bootstrap server details for an
       Apache Kafka cluster.
 

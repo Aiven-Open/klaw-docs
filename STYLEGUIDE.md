@@ -37,7 +37,7 @@ While "topic" would typically be in lowercase, if it's referring to a UI element
 #### Summary capitalization
 
 - **Contextual capitalization**: Adjust the capitalization based on the specific usage in the content.
-- **Product names**: Always capitalize specific product names like Docker, Klaw, and Apache Kafka.
+- **Product names**: Always capitalize specific product names like Docker, Klaw, and Apache Kafka®.
 - **Acronyms**: Use all uppercase for acronyms, such as ACL and API.
 - **UI elements**: If referencing specific user interface elements, capitalize them as they appear in the UI.
 - **Generic terms**: Words like "user" or "server" should typically be in lowercase unless they start a sentence or are part of a title.

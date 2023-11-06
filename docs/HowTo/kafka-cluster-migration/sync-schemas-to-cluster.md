@@ -17,7 +17,7 @@ metadata. For example, if version 1 already exists in the target cluster, it wil
 
 1. Navigate to the **Synchronize** menu and select **Schemas to Cluster**.
 2. To synchronize schemas, select the source environment (Klaw metadata
-   with topics and schemas) and the target environment (Apache Kafka cluster
+   with topics and schemas) and the target environment (Apache Kafka® cluster
    with the associated schema registry where the schemas need to be
    created).
 3. Select the **Force Register** checkbox if you want to proceed with the sync despite compatibility failures.

@@ -1,6 +1,6 @@
 # Connectors
 
-Apache Kafka Connect is a tool that allows scalable and reliable data streaming
+Apache Kafka® Connect is a tool that allows scalable and reliable data streaming
 between Apache Kafka and other systems. For more information, see [Apache Kafka
 Connect](https://kafka.apache.org/documentation/#connect).
 

@@ -11,9 +11,9 @@ URL: [https://host:port/helpwizard]
 
 ![image](../../../static/images/general/KlawWizard.png)
 
-1. Configure Kafka clusters
+1. Configure Apache Kafka® clusters
 
-   The first step is to configure your Kafka cluster. You can add any
+   The first step is to configure your Apache Kafka cluster. You can add any
    number of clusters. Only users with SUPERADMIN roles (or check allowed
    permission) can add clusters.
 

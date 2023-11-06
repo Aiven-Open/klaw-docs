@@ -22,7 +22,7 @@ date: July 4, 2023
 In today's dynamic and ever-changing digital landscape, maintaining the
 uninterrupted operation of applications is of the highest importance.
 This blog post explores the configuration of Klaw, a Java-based
-application designed specifically for Apache Kafka governance.
+application designed specifically for Apache Kafka® governance.
 
 Our primary focus is on exploring the configuration process for
 achieving high availability (HA) in production environments. By

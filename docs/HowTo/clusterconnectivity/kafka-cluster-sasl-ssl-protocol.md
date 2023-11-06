@@ -1,4 +1,4 @@
-# Connect to Apache Kafka cluster using SASL protocol
+# Connect to Apache Kafka® cluster using SASL protocol
 
 This section provides information on connecting Klaw to an Apache Kafka cluster using SSL protocol.
 
@@ -12,7 +12,7 @@ This section provides information on connecting Klaw to an Apache Kafka cluster 
 
 ## Configure and connect using SASL protocol
 
-Follow the steps below to configure and connect to an Apache Kafka®
+Follow the steps below to configure and connect to an Apache Kafka
 cluster in Klaw using SASL_SSL protocol:
 
 1. In the Klaw web interface, navigate to **Environments**, and click

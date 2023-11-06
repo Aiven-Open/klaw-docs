@@ -1,6 +1,6 @@
 # Synchronize ACLs from cluster
 
-To synchronize ACLs from an Apache Kafka cluster with Klaw metadata, use
+To synchronize ACLs from an Apache Kafka® cluster with Klaw metadata, use
 this procedure, which entails retrieving the ACLS (Producers &
 Consumers) from an existing Apache Kafka cluster and assigning them to a team
 in Klaw.

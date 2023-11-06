@@ -29,7 +29,7 @@ relationships among objects. This guidance enables streamlined access, modificat
 
 Furthermore, a schema outlines both the visual representation and structural organization of the data.
 
-### Apache Kafka context
+### Apache Kafka® context
 
 Within the Apache Kafka ecosystem, schema registries such as Karapace and Confluent's Schema Registry play a key role in the
 management and validation of schemas. Furthermore, they provide a RESTful interface to manage schema and their evolution

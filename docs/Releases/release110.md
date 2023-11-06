@@ -15,7 +15,7 @@ improvements.
 
 - Authentication protocols: Klaw 1.1.0 includes the authentication
   protocols SCRAM-SHA-256 and SCRAM-SHA-512, which you can use to
-  connect to Apache Kafka clusters.
+  connect to Apache Kafka® clusters.
 - Enabled JWT-based authentication: Enabled JWT-based authentication
   to connect to Klaw Cluster API. You can configure
   `klaw.clusterapi.access.base64.secret` in both core and Klaw Cluster API
