@@ -150,7 +150,7 @@ Watch the video below for a step-by-step demonstration of registering a schema i
 ### Schema migration from Schema registry to Klaw
 
 Backing up schemas from the schema registry is essential for ensuring recovery in the event of server failures or
-unexpected disasters. While schemas are typically stored in a Kafka topic with replication, there may be cases where
+unexpected disasters. While schemas are typically stored in a Apache Kafka topic with replication, there may be cases where
 retrieving them is difficult or impossible.
 
 Klaw simplifies this by connecting directly to the schema registry server, retrieving all available schemas associated

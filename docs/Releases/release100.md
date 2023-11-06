@@ -18,7 +18,7 @@ Klaw version 1.0.0 is a first major release.
 - Changes to manage Aiven ACLs
 - All occurrences of Kafkawize renamed to Klaw
 - Synchronize Aiven Apache Kafka ACLs from cluster to Klaw (for existing
-  Kafka clusters)
+  Apache Kafka clusters)
 - Few code enhancements
 
 :::note

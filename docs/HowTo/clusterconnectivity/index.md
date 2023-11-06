@@ -22,7 +22,7 @@ Efficiently manage connections between Klaw and various Apache Kafka® cluster t
 
 - [Connect with Confluent Cloud Kafka cluster using SSL protocol](confluent-cloud-kafka-cluster-ssl-protocol.md)
 
-Klaw supports the following Kafka flavors:
+Klaw supports the following Apache Kafka flavors:
 
 - Apache Kafka
 - Aiven for Apache Kafka

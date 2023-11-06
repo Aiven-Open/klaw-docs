@@ -49,10 +49,10 @@ experience.
 Apache Kafka clusters can be complex and substantial, making effective
 management and monitoring crucial. A failure in these operations can
 lead to significant issues. By configuring Klaw with high availability,
-it becomes a reliable Kafka governance tool that ensures uninterrupted
+it becomes a reliable Apache Kafka governance tool that ensures uninterrupted
 operations, even in the face of underlying system failures. Deploying
 Klaw with high availability minimizes or eliminates downtime and
-provides continuous support for Kafka cluster management, enhancing
+provides continuous support for Apache Kafka cluster management, enhancing
 overall system reliability. With this understanding of high availability
 and its critical role in Klaw, let's explore the architectural design
 that supports it, the internal components of Klaw, and how to configure
@@ -62,7 +62,7 @@ Klaw for high availability.
 
 Before diving into what High Availability is, let's understand why
 it's crucial for Klaw. As Klaw is essential in managing and monitoring
-Kafka clusters, ensuring its resilience against potential failures is
+Apache Kafka clusters, ensuring its resilience against potential failures is
 paramount. Downtime can have dire consequences ranging from slight
 inconveniences to lost revenue and a damaged reputation. High
 Availability for Klaw addresses these critical issues:
@@ -166,7 +166,7 @@ multiple teams and have the flexibility to switch between them.
 
 - Cluster layer The Cluster Layer is the second Java application within
   Klaw.
-  Communication: This layer is a Java application that communicates with the Governance Layer and Kafka clusters (Kafka,
+  Communication: This layer is a Java application that communicates with the Governance Layer and Apache Kafka clusters (Kafka,
   Schema Registry, Kafka Connect).
 
 - User interface switch: By default, users are logged into the
@@ -198,7 +198,7 @@ Connectors.
 
 For optimal performance of Klaw, we recommend the following system
 requirements. These specifications assume a user base of approximately
-100 or more, with around 50 or more Kafka clusters and over 10,000
+100 or more, with around 50 or more Apache Kafka clusters and over 10,000
 topics.
 
 Core Governance Application / Cluster Application

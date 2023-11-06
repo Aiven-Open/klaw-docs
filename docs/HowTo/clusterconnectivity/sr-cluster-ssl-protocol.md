@@ -67,4 +67,4 @@ cluster with Klaw using SSL protocol:
 
 - Save the `application.properties` file. 10. Re-deploy the Klaw Cluster API
   with the updated configuration. This will apply the changes and enable
-  Klaw to connect to the Kafka cluster using SSL protocol.
+  Klaw to connect to the Apache Kafka cluster using SSL protocol.

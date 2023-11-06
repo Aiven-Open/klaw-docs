@@ -21,7 +21,7 @@ List requests made against the topic.
 
 1. In Klaw, select **Requests** on the navigation bar, and then select
    **Request Topic** in the drop-down.
-2. Select the environment. This is the Kafka environment in which the
+2. Select the environment. This is the Apache Kafka environment in which the
    topic will be created.
 
    :::note
@@ -37,7 +37,7 @@ List requests made against the topic.
    event is written to a broker. To learn more, see
    [replication](https://kafka.apache.org/intro#intro_concepts_and_terms.md).
 6. Add any advanced topic configuration settings. To learn more, see
-   Kafka's [Topic configuration
+   Apache Kafka's [Topic configuration
    guide](https://kafka.apache.org/documentation/#topicconfigs).
 7. Add a topic description. This information will stay with the topic
    for the duration of its lifecycle.

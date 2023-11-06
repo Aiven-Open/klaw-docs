@@ -10,13 +10,13 @@ Connect, it is possible to ingest entire databases or collect metrics
 from all application servers into Apache Kafka topics, thus making the data
 available for low-latency stream processing.
 
-Kafka Connect is a tool for scalable and reliable streaming data between
-Apache Kafka and other systems. For more information, see [Kafka
+Apache Kafka Connect is a tool for scalable and reliable streaming data between
+Apache Kafka and other systems. For more information, see [Apache Kafka
 Connect](https://kafka.apache.org/documentation/#connect)
 
-## Manage Kafka Connect
+## Manage Apache Kafka Connect
 
-Kafka Connect provides a REST API for managing connectors, which is
+Apache Kafka Connect provides a REST API for managing connectors, which is
 available in both standalone and distributed modes.
 
 ## Manage connectors in Klaw

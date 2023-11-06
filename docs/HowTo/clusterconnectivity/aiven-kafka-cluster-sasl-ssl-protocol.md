@@ -39,7 +39,7 @@ Kafka and Klaw using SSL protocol:
 4. Click **Save**.
 5. Add the cluster to the preferred environment. Click **Environments**
    from the **Environments** drop-down menu.
-6. Click **Add Environment** and enter the details to add your Kafka
+6. Click **Add Environment** and enter the details to add your Apache Kafka
    environment.
 7. Enter an environment name, select the added cluster from the drop-down list, and configure partitions, replication
    factor, and tenant (set to default).
