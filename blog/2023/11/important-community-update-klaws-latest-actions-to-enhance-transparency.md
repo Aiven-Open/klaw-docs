@@ -23,6 +23,6 @@ We are pleased to inform you that the legacy code has not affected our newer Cor
 
 In commitment to our community's transparency, we are releasing software updates 2.5.2 and 2.6.1. These versions aim to completely remove this legacy code, allowing our users to transition to a version where their privacy and trust are further safeguarded.
 
-Your feedback is important. Stay updated and reach out to us via [GitHub/Email] for any queries or suggestions.
+Your feedback is important. Stay updated and reach out to us via [GitHub](https://github.com/Aiven-Open/klaw/issues/new/choose) for any queries or suggestions.
 
 <!-- vale on -->
