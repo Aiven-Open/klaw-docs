@@ -15,20 +15,7 @@ tags:
 date: Sep 5, 2023
 ---
 
----
-
-slug: important-community-update-klaws-latest-actions-to-enhance-transparency
-title: Important community update: Klaw's latest actions to enhance transparency
-authors: The Klaw Team
-tags:
-[
-2.6.1,
-2.5.2,
-transperancy,
-]
-date: Nov 22, 2023
-
----
+## Important community update: Klaw's latest actions to enhance transparency
 
 We, as an integral part of the Klaw open-source project, are committed to upholding the true spirit of open-source values. To ensure transparency and foster trust within our community, we have an important update to share.
 
