@@ -1,18 +1,14 @@
 ---
-slug: schema-management-disaster-recovery-in-klaw
-title: Schema Management and Disaster recovery in Klaw
-authors: muralibasani
+slug: important-community-update-klaws-latest-actions-to-enhance-transparency
+title: Important community update: Klaw's latest actions to enhance transparency
+authors: klawteam
 tags:
   [
-    kafka,
-    governance,
-    klaw,
-    schema registry,
-    disaster recovery,
-    migration,
-    evolution,
+    2.6.1,
+    2.5.2,
+    transperancy,
   ]
-date: Sep 5, 2023
+date: Nov 22, 2023
 ---
 
 ## Important community update: Klaw's latest actions to enhance transparency
