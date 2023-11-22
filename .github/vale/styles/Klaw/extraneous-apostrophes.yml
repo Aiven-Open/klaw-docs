@@ -5,7 +5,7 @@ message: Did you mean "%[1]ss" instead of "%[1]s's"?
 tokens:
   - tag: NN
   - pattern: "'s"
-  - pattern: "(?!are)"
+  - pattern: "are"
 level: error
 action:
   name: edit

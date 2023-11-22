@@ -8,6 +8,8 @@ date: Nov 22, 2023
 
 ## Important community update: Klaw's latest actions to enhance transparency
 
+<!-- vale off -->
+
 We, as an integral part of the Klaw open-source project, are committed to upholding the true spirit of open-source values. To ensure transparency and foster trust within our community, we have an important update to share.
 
 Discovery of legacy tracking code:
@@ -22,3 +24,5 @@ We are pleased to inform you that the legacy code has not affected our newer Cor
 In commitment to our community's transparency, we are releasing software updates 2.5.2 and 2.6.1. These versions aim to completely remove this legacy code, allowing our users to transition to a version where their privacy and trust are further safeguarded.
 
 Your feedback is important. Stay updated and reach out to us via [GitHub/Email] for any queries or suggestions.
+
+<!-- vale on -->
