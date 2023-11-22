@@ -2,7 +2,7 @@
 slug: important-community-update-klaws-latest-actions-to-enhance-transparency
 title: Important community update Klaw's latest actions to enhance transparency
 authors: klawteam
-tags: [2.6.1, 2.5.2, transperancy]
+tags: [2.6.1, 2.5.2, transparency]
 date: Nov 22, 2023
 ---
 
