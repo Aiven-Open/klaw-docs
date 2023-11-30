@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const { writeFileSync } = require("fs");
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
@@ -49,6 +50,7 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        debug: true,
       }),
     ],
   ],
@@ -138,6 +140,19 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    () => ({
+      postBuild(props) {
+        const routes = JSON.stringify(props.routesPaths, null, 2);
+        const filePath = "./current-routes.json";
+
+        // Write the routes to the file
+        writeFileSync(filePath, routes, "utf-8");
+
+        console.log(`Routes paths have been saved to ${filePath}`);
+      },
+    }),
+  ],
 };
 
 module.exports = config;
