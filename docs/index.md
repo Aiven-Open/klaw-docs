@@ -13,4 +13,4 @@ Klaw consists of two components:
 ## Quickstart
 
 Copy the docker script and run. It installs Klaw, Apache Kafka, and schema Schema Registry servers as docker processes. [**Go through
-this guide**](./quickstart.md)
+this guide**](./quickstart)
