@@ -77,4 +77,4 @@ pattern. Previously, only prefix or suffix validation was available.
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.3.0>
+release, see [GitHub release v2.3.0](https://github.com/aiven/klaw/releases/tag/v2.3.0)

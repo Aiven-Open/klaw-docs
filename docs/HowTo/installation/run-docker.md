@@ -170,17 +170,15 @@ To verify the installation and access Klaw, follow the steps below:
 
 ### 5. Next Steps
 
-After successfully verifying your installation, recommend following the documentation in `configure-klaw-wizard`
-{.interpreted-text
-role="doc"}.
+After successfully verifying your installation,
+follow the documentation in [Configure Klaw with Wizard](../installation/configure-klaw-wizard.md).
 
 ## Klaw Docker Scripts
 
 Klaw also provides Docker scripts you can download from the
 project's GitHub repository. These scripts include a README file that
 explains how to build and deploy the latest version of Klaw. You can
-find these scripts at
-<https://github.com/aiven/klaw/tree/main/docker-scripts>.
+find these scripts at in [docker-scripts](https://github.com/aiven/klaw/tree/main/docker-scripts).
 
 ## Enabling HTTPS
 
@@ -193,7 +191,7 @@ keystore and truststore to the Klaw data volume so that they can be accessed at 
 To find the location of the Klaw Docker volume, run the following
 command with your container ID:
 
-    docker inspect -f '{{ .Mounts }}' containerid
+`docker inspect -f '{{ .Mounts }}' containerid`
 
 ### Linux
 

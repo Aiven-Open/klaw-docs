@@ -75,4 +75,4 @@ You can now configure the `klaw.notification.header.logo` property in the `appli
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v.2.6.0>
+release, see [GitHub release tag v.2.6.0](https://github.com/aiven/klaw/releases/tag/v.2.6.0)

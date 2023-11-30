@@ -36,4 +36,4 @@ Klaw version 2.5.1 is a patch release primarily aimed at enhancing MySQL support
 
 :::note
 For a complete list of improvements, changelog, and to download the release,
-see <https://github.com/aiven/klaw/releases/tag/v2.5.1>
+see [GitHub release tag v2.5.1](https://github.com/aiven/klaw/releases/tag/v2.5.1)

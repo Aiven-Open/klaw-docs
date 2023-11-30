@@ -55,16 +55,17 @@ setting.
 An example value for a simple `DEV` environment might look something
 like this:
 
-    {
-     "tenantModel":
-     {
-      "tenantName": "default",
-      "baseSyncEnvironment": "DEV",
-      "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
-      "requestTopicsEnvironmentsList": ["DEV", "TST"],
-      "baseSyncKafkaConnectCluster": null,
-      "orderOfConnectorsPromotionEnvsList": [],
-      "requestSchemaEnvironmentsList": [],
-      "requestConnectorsEnvironmentsList": []
-     }
-    }
+```json
+{
+  "tenantModel": {
+    "tenantName": "default",
+    "baseSyncEnvironment": "DEV",
+    "orderOfTopicPromotionEnvsList": ["DEV", "TST"],
+    "requestTopicsEnvironmentsList": ["DEV", "TST"],
+    "baseSyncKafkaConnectCluster": null,
+    "orderOfConnectorsPromotionEnvsList": [],
+    "requestSchemaEnvironmentsList": [],
+    "requestConnectorsEnvironmentsList": []
+  }
+}
+```
