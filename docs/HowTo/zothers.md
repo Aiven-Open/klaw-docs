@@ -10,4 +10,4 @@
   suggestion or improvement, we recommend you submit an issue to the
   project. You can do this by clicking on help and selecting **Raise
   a git issue** option, or you can directly open an issue by accessing
-  this link: <https://github.com/aiven/klaw/issues>
+  this link: [GitHub issues](https://github.com/aiven/klaw/issues)

@@ -67,8 +67,8 @@ feature provides administrators with additional backup and recovery
 options, enabling them to manage the system more effectively.
 
 For more information, see [Export Klaw
-data](../../docs/HowTo/exportimport/exportdata.md).
+data](../../docs/HowTo/exportimport/exportdata).
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.2.0>
+release, see [GitHub release tag v2.2.0](https://github.com/aiven/klaw/releases/tag/v2.2.0)

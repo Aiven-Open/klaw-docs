@@ -30,4 +30,4 @@ improvements.
 
 :::note
 Read more or Download the release
-<https://github.com/aiven/klaw/releases/tag/v1.1.0>
+[GitHub release tag v1.1.0](https://github.com/aiven/klaw/releases/tag/v1.1.0)

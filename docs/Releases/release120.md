@@ -110,4 +110,4 @@ policy, retention period, flush interval, and more.
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v1.2.0>
+release, see [GitHub release tag v1.2.0](https://github.com/aiven/klaw/releases/tag/v1.2.0)

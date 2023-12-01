@@ -29,4 +29,4 @@ Klaw version 2.5.2 is a patch release which removes some unused analytics code, 
 
 :::note
 For a complete list of improvements, changelog, and to download the release,
-see <https://github.com/aiven/klaw/releases/tag/v2.5.2>
+see [GitHub release tag v2.5.2](https://github.com/aiven/klaw/releases/tag/v2.5.2)

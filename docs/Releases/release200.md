@@ -58,7 +58,7 @@ force-register the schema in case of any compatibility issues during
 registration.
 
 For more information, see [Schema
-Promotion](../../docs/Concepts/promotion.md#schema-promotion).
+Promotion](../../docs/HowTo/schemas/Promote-a-schema).
 
 ### Authorization from OAuth2 Provider/Active Directory
 
@@ -77,4 +77,4 @@ To enable the authorization feature, set the below property to value
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.0.0>
+release, see [GitHub release tag v2.0.0](https://github.com/aiven/klaw/releases/tag/v2.0.0)

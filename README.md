@@ -40,11 +40,13 @@ The, install all needed dependencies and setup the needed githooks:
 npm install
 ```
 
-To start local the local development server, run:
+To start the local development server, run:
 
 ```shell
 npm start
 ```
+
+🦖 the website will now run on `http://localhost:3000/`
 
 ## Scripts used and their actions
 

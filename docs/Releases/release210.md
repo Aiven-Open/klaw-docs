@@ -57,7 +57,7 @@ includes the implementation of the following APIs:
   (v3)](<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>)
 
 For more information, see [Confluent
-Cloud](../../docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol.md).
+Cloud](../../docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol).
 
 ### Switch Teams
 
@@ -69,8 +69,8 @@ from increased flexibility and efficiency when working within the Klaw
 platform, particularly when creating or approving requests.
 
 For more information, see [Switch
-Teams](../../docs/Concepts/switch-teams.md).
+Teams](../../docs/Concepts/switch-teams).
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.1.0>
+release, see [GitHub release tag v2.1.0](https://github.com/aiven/klaw/releases/tag/v2.1.0)

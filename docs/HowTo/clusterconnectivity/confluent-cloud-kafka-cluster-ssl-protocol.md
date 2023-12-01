@@ -16,10 +16,10 @@ References:
 
 [//]: # "<!-- markdown-link-check-disable -->"
 
-- <https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>
-- <https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>
+- [Confluent documentation Topic(v3)](<https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>)
+- [Confluent documentation ACL(v3)](<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>)
 
-[//]: # "<!-- markdown-link-check-enable -->"
+[//]: # "<!-Topic (v3)- markdown-link-check-enable -->"
 
 ## Prerequisite
 
@@ -43,7 +43,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
    - **Kafka Flavor:** Select Confluent Cloud Kafka as the flavor
-   - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Kafka cluster (without <https://>). Ex:
+   - **Bootstrap server:** Enter the REST endpoint of your Confluent Cloud Kafka cluster (without `https://`). Ex:
      `xyz-pk07es.us-west4.gcp.confluent.cloud:443`
 
 4. Click **Save**.
@@ -69,8 +69,7 @@ Follow the steps below to configure and connect to a Confluent Cloud Kafka and K
     dev3.klaw.clusters.counfluentcloud.acls.api=/kafka/v3/clusters/abc-ab1abc/acls
     ```
 
-    - Copy the {cluster_id} from the Confluent Cloud portal (Cluster Settings > General > Identification > Cluster ID)
-      and insert into the API URI.
+    - Copy the `{cluster_id}` from the Confluent Cloud portal (Cluster Settings > General > Identification > Cluster ID) and insert into the API URI.
     - Copy the API key/secrets from Confluent Cloud > API Keys.
     - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID. Save
       the `application.properties` file.

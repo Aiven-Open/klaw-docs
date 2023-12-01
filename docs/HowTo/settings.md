@@ -15,10 +15,8 @@ notification templates and roles, under **Dashboard -\> Settings**.
   this by updating the property `klaw.adduser.roles`.
 - **Tenant Configuration**  
   A tenant is an isolated environment that
-  has its own set of clusters, environments, users, teams, and topics
-  For more information, see `tenant-config`{.interpreted-text
-  role="doc"} documentation. You can change the hierarchy of
-  environments and a few other configurations by updating the property
+  has its own set of clusters, environments, users, teams, and topics.
+  For more information, see [Tenant configuration](./kafka-cluster-migration/tenant-config.md). You can change the hierarchy of environments and a few other configurations by updating the property
   `klaw.tenant.config`.
 - **Environment names**  
   When adding a new Environment, predefined

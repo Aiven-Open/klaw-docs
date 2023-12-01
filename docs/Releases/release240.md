@@ -98,4 +98,4 @@ frontend.
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see <https://github.com/aiven/klaw/releases/tag/v2.4.0>
+release, see [GitHub release tag v2.4.0](https://github.com/aiven/klaw/releases/tagv2.4.0)
