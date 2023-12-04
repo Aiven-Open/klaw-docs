@@ -1,10 +1,15 @@
 /**
  * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * bundles Infima by default (https://infima.dev/).
  */
 
-/* You can override the default Infima variables here. */
+/* Overrides the default Infima  variables */
+
+/**************************************************
+ *
+ * General styles go here (both for light and dark theme)
+ *
+*************************************************!*/
 
 @font-face {
   font-family: "Inter";
@@ -29,59 +34,120 @@
   --ifm-font-family-base: "Inter";
   --ifm-heading-font-family: "Poppins";
 
-  --ifm-color-primary: #0e1652;
-  --ifm-color-primary-dark: #0d144a;
-  --ifm-color-primary-darker: #0c1346;
-  --ifm-color-primary-darkest: #0a0f39;
-  --ifm-color-primary-light: #0f185a;
-  --ifm-color-primary-lighter: #10195e;
-  --ifm-color-primary-lightest: #121d6b;
-
-  --ifm-link-color: #3545be;
-  --ifm-link-hover-color: #3545be;
-}
-
-.hero--primary {
-  background-image: linear-gradient(
-    180deg,
-    rgba(14, 22, 82, 1) 0%,
-    rgba(34, 47, 149, 1) 100%
-  );
-  color: var(--ifm-font-color-base-inverse);
-}
-
-.navbar__link {
-  color: #343745;
-}
-
-/* Overriding root Infima variables */
-[data-theme="dark"] {
-  --ifm-color-primary: #b9c5ef;
-  background: #303030;
-}
-
-/* Styling one class specially in dark mode */
-[data-theme="dark"] .purple-text {
-  color: rgb(181, 160, 181);
-}
-
-[data-theme="dark"] .hero--primary {
-  background-image: linear-gradient(
-    180deg,
-    rgba(166, 166, 166, 1) 0%,
-    rgba(235, 235, 235, 1) 100%
-  );
-  color: var(--ifm-font-color-base-inverse);
-}
-
-[data-theme="dark"] .navbar__link {
-  color: #ffffff;
+  --ifm-link-decoration: underline;
 }
 
 .footer {
-  background-color: #1a1b22;
+  --ifm-footer-background-color: #19191d;
 }
 
-[data-theme="dark"] .footer--dark {
-  background-color: #7f7f7f;
+a.navbar__item.navbar__link,
+a.menu__link,
+a.card,
+a.table-of-contents__link,
+a.pagination-nav__link {
+  text-decoration: none;
+}
+
+a.table-of-contents__link:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: var(--ifm-color-primary) auto 1px;
+}
+
+.pagination-nav__link {
+  border-width: 1.5px;
+}
+
+.pagination-nav__link:hover {
+  border-width: 1.5px;
+}
+
+.card {
+  border-width: 1.5px !important;
+  --ifm-heading-color: #0673b1;
+}
+
+.card:hover {
+  border-width: 1.5px;
+  --ifm-heading-color: #000000;
+}
+
+.menu__link--active {
+  font-weight: 700;
+}
+
+.navbar__link--active {
+  font-weight: 700;
+}
+
+/**************************************************
+ *
+ * Light theme specific styles
+ *
+*************************************************!*/
+
+html[data-theme="light"] {
+  --ifm-color-primary: #0673b1;
+
+  --ifm-link-color: #0673b1;
+
+  --ifm-toc-border-color: #d2d2d6;
+  --ifm-menu-color: #19191d;
+  --ifm-toc-link-color: #19191d;
+  --ifm-link-hover-color: #000000;
+
+  --ifm-menu-color-background-active: #f7f7fa;
+  --ifm-menu-color-active: #0673b1;
+}
+
+html[data-theme="light"] .hero--primary {
+  background-image: linear-gradient(
+    180deg,
+    rgba(128, 207, 249, 1) 0%,
+    rgba(7, 136, 209, 1) 100%
+  );
+  color: var(--ifm-font-color-base-inverse);
+}
+
+/**************************************************
+ *
+ * Dark theme specific styles
+ *
+*************************************************!*/
+
+/*0788d1*/
+html[data-theme="dark"] {
+  --ifm-color-primary: #0399e3;
+
+  --ifm-link-color: #0399e3;
+  --ifm-link-hover-color: #ffffff;
+
+  --ifm-background-color: #292a31;
+  --ifm-navbar-background-color: #19191d;
+  --ifm-toc-border-color: #5a5b6a;
+
+  --ifm-menu-color-background-active: #19191d;
+  --ifm-menu-color-active: #0399e3;
+
+  --ifm-breadcrumb-item-background-active: #19191d;
+}
+
+html[data-theme="dark"] .purple-text {
+  color: rgb(181, 160, 181);
+}
+
+html[data-theme="dark"] .hero--primary {
+  background-image: linear-gradient(
+    180deg,
+    rgba(128, 207, 249, 1) 0%,
+    rgba(7, 136, 209, 1) 100%
+  );
+  color: var(--ifm-font-color-base-inverse);
+}
+
+html[data-theme="dark"] .navbar--fixed-top {
+  border-bottom: 1px #5a5b6a solid;
 }
