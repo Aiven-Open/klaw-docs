@@ -2,7 +2,7 @@
 
 We adhere to the [Google developer documentation style guide](https://developers.google.com/style). We're also establishing a more detailed custom guidelines, which is documented here.
 
-You can run a Vale check for all available styles by running `npm run spell:all`. At the moment, only the level `error` is a established style guide for us. Checking for warnings or suggestions is meant to be used as inspiration and support.
+You can run a Vale check for all available styles by running `pnpm spell:all`. At the moment, only the level `error` is an established style guide for us. Checking for warnings or suggestions is meant to be used as inspiration and support.
 
 Where possible, these rules are checked automatically using Vale. For more information on how this is set up, see
 our [Vale documentation](.github/vale/vale.md).
@@ -43,7 +43,11 @@ While "topic" would typically be in lowercase, if it's referring to a UI element
 - **Generic terms**: Words like "user" or "server" should typically be in lowercase unless they start a sentence or are part of a title.
 - **Branding consistency**: Ensure that brand-specific terms are consistently capitalized across all documentation. This should be added to our [branding](.github/vale/styles/Klaw/branding.yml) style.
 - **Review third-party names**: Always respect the capitalization of third-party product or company names, even if they don't follow standard rules. These can be added to our [branding](.github/vale/styles/Klaw/branding.yml) style.
-- **Use sentence case**: For titles, headings, and general content, adopt sentence case, capitalizing only the first word and any proper nouns. For this, we have [capitalization heading](.github/vale/styles/Klaw/capitalization-heading.yml) style. This style configuration still needs work, as we need to have a comprehensive list of expectations. Until then, it can be used as support with running `npm run spell:warn`.
+- **Use sentence case**: For titles, headings, and general content, adopt sentence case,
+  capitalizing only the first word and any proper nouns.
+  For this, we have [capitalization heading](.github/vale/styles/Klaw/capitalization-heading.yml) style.
+  This style configuration still needs work, as we need to have a comprehensive list of expectations.
+  Until then, it can be used as support with running `pnpm spell:warn`.
 
 ### Helpful tools
 

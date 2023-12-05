@@ -15,10 +15,15 @@ We're using [Docusaurus](https://docusaurus.io/docs) to build our documentation,
 
 - [node](https://nodejs.org/en/) needs to be installed.
   -> please check [nvmrc](.nvmrc) or the `engines` definition in [package.json](package.json) for version.
+- We use [pnpm](https://pnpm.io/) (version 8) as a package manager. Read their official documentation [how to
+  install](https://pnpm.io/installation) pnpm.
 
 This is the setup you need every time. You can find the different ways how to run the local development process below.
 
-We use [Vale](.github/vale/vale.md) for spell checking. The spell check will run in the GitHub pipeline.
+#### Optional
+
+- We use [Vale](.github/vale/vale.md) spell checking. The spell check will run in the GitHub pipeline.
+
 To use Vale locally, please make sure you install it:
 
 - It runs on Mac, Linux and Windows. You can find instructions to download and install it at
@@ -32,18 +37,19 @@ While we check for errors in the pipeline, we also have "warning" and "suggestio
 First, make sure you hare the required technology set up:
 
 - node (see above)
+- pnpm (see above)
 - optional: Vale (see above)
 
 The, install all needed dependencies and setup the needed githooks:
 
 ```shell
-npm install
+pnpm install
 ```
 
 To start the local development server, run:
 
 ```shell
-npm start
+pnpm start
 ```
 
 🦖 the website will now run on `http://localhost:3000/`
@@ -51,34 +57,34 @@ npm start
 ## Scripts used and their actions
 
 ℹ️ You can see all our scripts in the [`package.json`](package.json).
-You can also run `npm run` in your console to get a list of all available scripts.
+You can also run `pnpm run` in your console to get a list of all available scripts.
 
 Please note that you have to set up your [local development](#installation-and-usage) in order to use the scripts.
 
 Here are the important ones you're likely to use:
 
-- `npm start`: starts the app for development
-- `npm run build`: will build the documentation site and generate all static files in "build". After `build` you can
-  run `npm run serve` to test your build locally
-- `npm run lint`: runs a format check and if no error is found, lints code and markdown files in the project.
+- `pnpm start`: starts the app for development
+- `pnpm build`: will build the documentation site and generate all static files in "build". After `build` you can
+  run `pnpm serve` to test your build locally
+- `pnpm lint`: runs a format check and if no error is found, lints code and markdown files in the project.
   - the linting script does not mutate your code. See [Linting and code formatting](#linting-and-code-formatting) for
     more info.
-- `npm run reformat`: runs the code formatter (Prettier) as well as the markdown linter in fix mode. This will mutate
+- `pnpm reformat`: runs the code formatter (Prettier) as well as the markdown linter in fix mode. This will mutate
   your code.
-- `npm run markdown-link-check`: checks if there are any broken links. Note: This requires internet connection, as it
+- `pnpm markdown-link-check`: checks if there are any broken links. Note: This requires internet connection, as it
   does check external links, too!
-  - Run `npm run markdown-link-check -- -o` to only check for internal links (offline mode).
-  - Run `npm run markdown-link-check -- -q` to only log errors.
-  - Run `npm run markdown-link-check -- -f /path/your-file.md` to run checks for only one file.
+  - Run `pnpm markdown-link-check -- -o` to only check for internal links (offline mode).
+  - Run `pnpm markdown-link-check -- -q` to only log errors.
+  - Run `pnpm markdown-link-check -- -q /path/your-file.md` to run checks for only one file.
 
 For these scripts, you need to have Vale installed (see [Requirements](#requirements)):
 
-- `npm run spell:error` to show only errors (same as in CI)
-- `npm run spell:warn` to show errors as well as warnings
-- `npm run spell:all` to show errors, warnings and suggestions
+- `pnpm spell:error` to show only errors (same as in CI)
+- `pnpm spell:warn` to show errors as well as warnings
+- `pnpm spell:warn` to show errors, warnings and suggestions
 
 ℹ️ We are using a custom hook path for enabling pre-commit hooks. This path is set in the local git configuration when
-running `npm install`.
+running `pnpm install`.
 
 ## Linting and code formatting
 
@@ -92,19 +98,19 @@ How we keep our app's codebase looking consistent and nice 💅🏼
 
 ### Fine-grained scripts for linting and formatting
 
-We provide `npm run lint` as well as `npm run reformat` to check or mutate your changes. We also offer more specific
+We provide `pnpm lint` as well as `pnpm reformat` to check or mutate your changes. We also offer more specific
 scripts you can use:
 
 Scripts with `lint` do not mutate your code in any way:
 
-- `npm run lint:code` - runs a Prettier and ESlint check. This includes basic checks for markdown, but not
+- `pnpm lint:code` - runs a Prettier and ESlint check. This includes basic checks for markdown, but not
   in depth.
-- `npm run lint:markdown` - runs markdown-lint with more detailed check on markdown files.
+- `pnpm lint:markdown` - runs markdown-lint with more detailed check on markdown files.
 
 To apply findings from `lint` and mutate your files:
 
-- `npm run reformat:code` - runs Prettier and ESlint in fix mode.
-- `npm run reformat:markdown` - runs markdownlint in fix mode.
+- `pnpm reformat:code` - runs Prettier and ESlint in fix mode.
+- `pnpm reformat:markdown` - runs markdownlint in fix mode.
 
 ℹ️ It's convenient to let Prettier and ESlint automatically format your code "on save" by your IDE or editor. For
 markdownlint
