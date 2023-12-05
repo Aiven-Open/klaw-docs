@@ -5,7 +5,7 @@ and sometimes unavoidable task. Klaw makes this easier by providing the
 ability to edit an existing topic.
 
 1. In Klaw, select **Topics** on the navigation bar.
-2. Select the specific Apache Kafka topic you wish to edit.
+2. Select the specific Apache Kafka® topic you wish to edit.
 3. Click the edit button on the right side of the topic by Environment
    view.
 4. On the **Edit topic** view, you can modify advanced configuration or

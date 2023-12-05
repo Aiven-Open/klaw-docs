@@ -29,7 +29,7 @@ relationships among objects. This guidance enables streamlined access, modificat
 
 Furthermore, a schema outlines both the visual representation and structural organization of the data.
 
-### Apache Kafka context
+### Apache Kafka® context
 
 Within the Apache Kafka ecosystem, schema registries such as Karapace and Confluent's Schema Registry play a key role in the
 management and validation of schemas. Furthermore, they provide a RESTful interface to manage schema and their evolution
@@ -150,7 +150,7 @@ Watch the video below for a step-by-step demonstration of registering a schema i
 ### Schema migration from Schema registry to Klaw
 
 Backing up schemas from the schema registry is essential for ensuring recovery in the event of server failures or
-unexpected disasters. While schemas are typically stored in a Kafka topic with replication, there may be cases where
+unexpected disasters. While schemas are typically stored in a Apache Kafka topic with replication, there may be cases where
 retrieving them is difficult or impossible.
 
 Klaw simplifies this by connecting directly to the schema registry server, retrieving all available schemas associated

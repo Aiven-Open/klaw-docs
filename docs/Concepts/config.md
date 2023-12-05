@@ -27,7 +27,7 @@ the `spring.datasource.*` configuration values in your `application.properties` 
 
 ## Connect to Apache Kafka® over SSL
 
-Configuring Klaw with Apache Kafka® and SSL requires you to set up certificates, key stores, and trust stores. As an
+Configuring Klaw with Apache Kafka and SSL requires you to set up certificates, key stores, and trust stores. As an
 example, here's how to easily configure Klaw for use with an Aiven for Apache Kafka service,
 first install the [Aiven client](https://github.com/aiven/aiven-client) CLI tool.
 

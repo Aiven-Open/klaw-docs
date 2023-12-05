@@ -1,6 +1,6 @@
 # Synchronize connectors from cluster
 
-To synchronize connectors from an Apache Kafka Connect cluster with
+To synchronize connectors from an Apache Kafka® Connect cluster with
 Klaw, follow the steps below. This process involves retrieving the
 connectors from an existing Apache Kafka Connect cluster and assigning
 them to a team in Klaw.

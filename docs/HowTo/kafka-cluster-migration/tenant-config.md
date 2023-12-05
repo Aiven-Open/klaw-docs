@@ -12,7 +12,7 @@ You can configure the following in a tenant:
 
 - Base sync environment
 
-  This is the base Apache Kafka environment in a hierarchy of
+  This is the base Apache Kafka® environment in a hierarchy of
   environments. Make sure this environment already exists under
   Environments (Apache Kafka).
 

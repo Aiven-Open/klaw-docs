@@ -28,7 +28,7 @@ Your choice of deployment scenario will depend on your organization's specific p
 
 ### Scenario 1: Environment promotion with Klaw
 
-Klaw simplifies the process of promoting Apache Kafka topics, schemas, and connectors across different stages of your environment, making it straightforward to move from development to production. If this feature aligns with your operational requirements, begin by setting up Klaw and integrating it into your Apache Kafka ecosystems, as detailed in the illustration below.
+Klaw simplifies the process of promoting Apache Kafka® topics, schemas, and connectors across different stages of your environment, making it straightforward to move from development to production. If this feature aligns with your operational requirements, begin by setting up Klaw and integrating it into your Apache Kafka ecosystems, as detailed in the illustration below.
 
 ![Screenshot: Staging](../../static/images/deployklaw/dtap.png)
 

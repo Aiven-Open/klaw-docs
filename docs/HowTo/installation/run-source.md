@@ -12,7 +12,7 @@ the source.
 
 2. Experimental UI Configuration
 
-   A redesigned user interface for Browse topics, providing a new look and feel for managing Kafka topics. It consists
+   A redesigned user interface for Browse topics, providing a new look and feel for managing Apache Kafka® topics. It consists
    of changes to the layout, styling, and overall appearance of the interface, as well as improvements to make browsing
    and working topics easier, more efficient, and more accessible. This new look and feel is achieved by switching to
    React.

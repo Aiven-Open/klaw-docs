@@ -4,7 +4,7 @@ sidebar_position: 1.2
 
 # Features of Klaw
 
-Explore the comprehensive range of features Klaw offers to manage your Apache Kafka ecosystem more efficiently.
+Explore the comprehensive range of features Klaw offers to manage your Apache Kafka® ecosystem more efficiently.
 
 | Feature                                                                                           | Description                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

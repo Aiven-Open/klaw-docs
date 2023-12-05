@@ -1,6 +1,6 @@
 # Topics
 
-Topics are a fundamental part of the Apache Kafka ecosystem, and the management
+Topics are a fundamental part of the Apache Kafka® ecosystem, and the management
 of topics is one of the core and richest features available in Klaw.
 
 ## Topics in Apache Kafka
@@ -28,10 +28,10 @@ implement proper governance and security measures to ensure that the
 messages are correctly structured and the producers have the necessary
 rights to process sensitive information like PII. This is where Access
 Control Lists and Schema Registries come into play. They help secure the
-Kafka environment and ensure that data privacy and fidelity are
+Apache Kafka environment and ensure that data privacy and fidelity are
 maintained. The key to ensuring all these security measures are
 effective is properly assigning ownership of the topic, which serves as
-the central point for all the functionality in the Kafka ecosystem.
+the central point for all the functionality in the Apache Kafka ecosystem.
 
 ## Manage topics in Klaw
 

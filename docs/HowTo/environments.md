@@ -5,9 +5,12 @@ a wrapper over clusters. Prefix/Suffix or regex patterns on topic names can be d
 Klaw is associated with a
 cluster and there are three types of environments available:
 
+<!-- vale off -->
+
 - Kafka
 - Schema Registry
 - Kafka Connect
+<!-- vale on -->
 
 ## Prerequisite
 
@@ -24,7 +27,7 @@ To add a new environment in Klaw, follow these steps:
 3. Select **Add Environment**.
 4. Select Add Environment for the type of environment you want to add.
 
-### Add Apache Kafka environment
+### Add Apache Kafka® environment
 
 To add a **Kafka environment**, enter the following details in the **Add Kafka Environment** screen:
 

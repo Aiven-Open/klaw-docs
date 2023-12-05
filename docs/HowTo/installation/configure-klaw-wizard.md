@@ -11,9 +11,9 @@ URL: [https://host:port/helpwizard]
 
 ![image](../../../static/images/general/KlawWizard.png)
 
-1. Configure Kafka clusters
+1. Configure Apache Kafka® clusters
 
-   The first step is to configure your Kafka cluster. You can add any
+   The first step is to configure your Apache Kafka cluster. You can add any
    number of clusters. Only users with SUPERADMIN roles (or check allowed
    permission) can add clusters.
 
@@ -36,15 +36,15 @@ URL: [https://host:port/helpwizard]
 
 2. Configure Environments
 
-   Environments are wrappers over your Kafka clusters. You can add any
+   Environments are wrappers over your Apache Kafka clusters. You can add any
    number of environments and have multiple environments connected to one
-   Kafka cluster with different settings. Only users with SUPERADMIN roles
+   Apache Kafka cluster with different settings. Only users with SUPERADMIN roles
    (or check allowed permission) can add environments by default.
    Additionally, you can configure the partitions, replication factors,
-   topic prefixes, and suffixes for your Kafka topics under Kafka
+   topic prefixes, and suffixes for your Apache Kafka topics under Apache Kafka
    environments.
 
-3. Test Kafka connectivity
+3. Test Apache Kafka connectivity
 
    After configuring environments, you can test the connection by clicking
    the validate button.
@@ -53,7 +53,7 @@ URL: [https://host:port/helpwizard]
 
 4. Configure Tenant and Environment hierarchy
 
-   Klaw is multi-tenant by default. Every tenant has its own set of Kafka
+   Klaw is multi-tenant by default. Every tenant has its own set of Apache Kafka
    environments, and users of one tenant cannot view/access topics, or ACLs
    from other tenants. To configure tenants, navigate to **Dashboard -\>
    Settings**, and look for `klaw.tenant.config`.
@@ -76,7 +76,7 @@ URL: [https://host:port/helpwizard]
 
 5. Synchronize topics and ACLs
 
-   If you already have a Kafka cluster, you can easily migrate topics and
+   If you already have a Apache Kafka cluster, you can easily migrate topics and
    ACLs to Klaw using the **Synchronize** option. As a SUPERADMIN, you can
    synchronize topics and ACLs by default. Navigate to **Synchronize** menu
    and select **Topics from cluster** or **ACLs from cluster** to

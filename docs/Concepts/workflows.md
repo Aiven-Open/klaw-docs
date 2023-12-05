@@ -1,6 +1,6 @@
 # Workflows in Klaw
 
-Klaw has defined workflows for applying configurations to Apache Kafka
+Klaw has defined workflows for applying configurations to Apache Kafka®
 clusters. Instead of directly creating configurations on the cluster,
 Klaw follows the [Four Eyes Principle] concept. This
 approach entails raising a request and obtaining approval before
@@ -24,7 +24,7 @@ an overview of the key concepts related to ownership in Klaw.
 
 Request and approval
 
-One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka® landscape. Developers
+One of the primary advantages of using Klaw is the governance it adds to the growing Apache Kafka landscape. Developers
 can **request** new topics, schemas, ACLs, or connectors themselves. The request is then reviewed and **approved** by
 another member of the same team.
 

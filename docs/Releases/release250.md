@@ -44,7 +44,7 @@ to enhance user experience and provide a more intuitive design:
   - Create and promote new schemas
   - Add and review subscriptions (ACL) for the creation and retrieval of passwords
   - See history to provide an audit trail of the topic
-  - See messages to view Apache Kafka events on the topic
+  - See messages to view Apache Kafka® events on the topic
   - Add and edit documentation (now: "Readme") in markdown format
   - Claim topics
 
