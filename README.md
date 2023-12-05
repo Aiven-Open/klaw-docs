@@ -57,7 +57,7 @@ pnpm start
 ## Scripts used and their actions
 
 ℹ️ You can see all our scripts in the [`package.json`](package.json).
-You can also run `npm run` in your console to get a list of all available scripts.
+You can also run `pnpm run` in your console to get a list of all available scripts.
 
 Please note that you have to set up your [local development](#installation-and-usage) in order to use the scripts.
 
