@@ -72,7 +72,6 @@ a.table-of-contents__link:hover {
 
 .card:hover {
   border-width: 1.5px;
-  --ifm-heading-color: #000000;
 }
 
 .menu__link--active {
@@ -110,6 +109,10 @@ html[data-theme="light"] .hero--primary {
     rgba(7, 136, 209, 1) 100%
   );
   color: var(--ifm-font-color-base-inverse);
+}
+
+html[data-theme="light"] .card:hover {
+  --ifm-heading-color: #000000;
 }
 
 /**************************************************
@@ -150,4 +153,8 @@ html[data-theme="dark"] .hero--primary {
 
 html[data-theme="dark"] .navbar--fixed-top {
   border-bottom: 1px #5a5b6a solid;
+}
+
+html[data-theme="dark"] .card:hover {
+  --ifm-heading-color: #ffffff;
 }
