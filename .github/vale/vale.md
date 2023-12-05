@@ -26,9 +26,9 @@ We use Vale in two ways:
 
 When you have Vale installed, you can run this scripts on root level:
 
-- `npm run spell:error` to show only errors (same as in CI)
-- `npm run spell:warn` to show errors as well as warnings
-- `npm run spell:all` to show errors, warnings and suggestions
+- `pnpm spell:error` to show only errors (same as in CI)
+- `pnpm spell:warn` to show errors as well as warnings
+- `pnpm spell:all` to show errors, warnings and suggestions
 
 ## Our Vale setup
 
