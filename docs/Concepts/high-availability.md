@@ -27,7 +27,7 @@ role. It involves implementing a scalable infrastructure design that
 adapts to increased traffic demands. This often involves employing a
 software architecture that surpasses hardware limitations.
 
-![image](../../static/images/HA_Klaw.png)
+![Image of a diagram showing a high availability Klaw cluster. The diagram consists of multiple servers interconnected by a load balancer, representing the system's infrastructure for maintaining continuous operation even in the event of a server failure. The diagram clearly conveys the concept of redundancy and failover mechanisms employed by the Klaw cluster to ensure high availability and data integrity.](../../static/images/HA_Klaw.png)
 
 ## How to configure and enable High Availability
 

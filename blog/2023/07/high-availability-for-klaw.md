@@ -108,7 +108,7 @@ role. It involves implementing a scalable infrastructure design that
 adapts to increased traffic demands. This often consists of employing a
 software architecture that surpasses hardware limitations.
 
-![image](../../../static/images/blogimages/HA_Klaw.png)
+![Image of a diagram showing a high availability Klaw cluster. The diagram consists of multiple servers interconnected by a load balancer, representing the system's infrastructure for maintaining continuous operation even in the event of a server failure. The diagram clearly conveys the concept of redundancy and failover mechanisms employed by the Klaw cluster to ensure high availability and data integrity.](../../../static/images/blogimages/HA_Klaw.png)
 
 Load balancing involves automatically distributing workloads across
 system resources, such as assigning various data requests to different
@@ -138,7 +138,7 @@ carried out using Spring Boot. Klaw relies on an RDBMS-based data store
 for managing metadata. In its default configuration, Klaw employs a file
 based H2 database for storing metadata.
 
-![image](../../../static/images/blogimages/arch.png)
+![Image of a diagram showing the technical architecture of Klaw. The diagram consists of various components, including the User Interface, Cluster API (Admin Client), API, Spring Boot App, Metastore, File, RDBMS, ACIS, and Kafka Clusters. These components interact with each other to form the complete Klaw application ecosystem, enabling its functionality and data management capabilities.](../../../static/images/blogimages/arch.png)
 
 ### Klaw internal components
 
@@ -192,7 +192,7 @@ Connectors.
   Klaw in different environments like Development, Testing, Acceptance,
   and Production is essential to streamline the developer experience.
 
-![image](../../../static/images/blogimages/KlawCache.png)
+![Image that depicts a diagram illustrating the cache management process in the Klaw application. The diagram shows two Klaw instances communicating with each other to synchronize caches and maintain data consistency. The diagram also highlights the steps involved in updating the cache with new data and beams. This visual representation effectively explains the cache management mechanism employed by the Klaw application.](../../../static/images/blogimages/KlawCache.png)
 
 ### System requirements
 
