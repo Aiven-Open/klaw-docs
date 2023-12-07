@@ -9,4 +9,4 @@ The data available will vary depending on whether you are logged in as a
 USER or a SUPERADMIN (tenant overview) role. Additionally, you have the
 option to download a detailed report of the statistics.
 
-![image](../../static/images/Analytics.png)
+![A screenshot of the Klaw Analytics dashboard, displaying an overview of the system's usage and configuration. The dashboard includes sections for Topics, Environments, Users, Teams, Roles, Permissions, and Clusters. A total of 19 topics, 3 environments, 10 users, 2 teams, 3 roles, 3 permissions, and 3 clusters are represented.](../../static/images/Analytics.png)
