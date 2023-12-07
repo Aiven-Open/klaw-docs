@@ -35,11 +35,11 @@ After logging in you will be redirected to our brand-new feature rich React UI.
 You can "Request new Topic" from the top right corner, or you can select the dropdown "Request a new" to view all your
 options.
 
-![Screenshot: Topic catalog page](../static/images/quickstart/AfterLogin.png)
+![Screenshot Topics page, displaying a list of topics in the system. The page indicates that the user is viewing a preview of the redesigned user interface and provides a link to revert to the old interface. The page includes filter options for team and environment, search bar for topic names, and buttons for requesting new topics and approving requests. A message indicating that no topics match the current criteria is displayed.](../static/images/quickstart/AfterLogin.png)
 
 ## 4. Request for topic
 
-![Screenshot: Form to request a new topic](../static/images/quickstart/RequestForTopic.png)
+![Screenshot Request form, inviting to request a new topic. The page prominently displays a "Request a New Topic" button and includes instructions on how to request a topic. The page also includes a disclaimer informing users that they are viewing a preview of the redesigned user interface and provides a link to revert to the old interface.](../static/images/quickstart/RequestForTopic.png)
 
 Fill in the details
 
@@ -55,7 +55,7 @@ This will create a topic request for your team member to approve.
 
 Newly created topic request is now visible in **My team's requests** menu on the sidebar
 
-![Screenshot: "My team's requests" page](../static/images/quickstart/MyRequest.png)
+![Screenshot "My team's requests" page. There is a tab navigation that shows links to Topics, Acls, Schema and Connector requests. Currently, "Topics" is active, so there is a filterable and searchable table with topics. The table prominently displays key information about each topic, including its name, environment, ownership, status, and request-related details.](../static/images/quickstart/MyRequest.png)
 
 ## 6. Logout
 
@@ -75,7 +75,7 @@ From the menu, click on "Approve requests" menu.
 
 Here there is a pending request to be approved or declined. Click on view to review and approve it.
 
-![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
+![Screenshot: "Approve request" page.There is a tab navigation that shows links to Topics, Acls, Schema and Connector requests. Currently, "Topics" is active, so there is a filterable and searchable table with topics. Each topic request is displayed with its topic name, environment, ownership, status, request type, requested by, and requested on details. There is a button to view details, and buttons to approve or decline requests.](../static/images/quickstart/ApproveReq.png)
 
 ## 10. That's it. Topic is created on Apache Kafka cluster
 
