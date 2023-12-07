@@ -77,7 +77,7 @@ To add a **Kafka Connect environment**, enter the following details in the **Add
 
 - Select **Save** to add a new Apache Kafka Connect environment.
 
-![image](../../static/images/environments/NewEnvironment.png)
+![Screenshot Add Environment page. The page includes a heading that says "Add Kafka Environment," a form with fields for cluster name, tenant, default partitions, maximum partitions, default replication factor, max replication factor, topic prefix, topic suffix, and a button to save.](../../static/images/environments/NewEnvironment.png)
 
 ## Update environment
 
@@ -95,7 +95,7 @@ To update/modify an existing environment in Klaw, follow these steps:
    edit them in the corresponding clusters.
    :::
 
-![image](../../static/images/environments/UpdateEnvironment.png)
+![Screenshot Update Environment page. The page includes a heading that says "Update Kafka Environment," a form with fields for Environment Name, Select Cluster, Bootstrap Servers, Protocol, Default Partitions, Maximum Partitions, Default Replication Factor, Max Replication Factor, Topic prefix (optional), Topic suffix (optional), Tenant, and two buttons: Save and Cancel.](../../static/images/environments/UpdateEnvironment.png)
 
 ## Delete environment
 
@@ -109,4 +109,4 @@ To delete an existing environment in Klaw, follow these steps:
    deletion of the environment. Once confirmed, the selected
    environment will be deleted.
 
-![image](../../static/images/environments/Environments.png)
+![Screenshot Environments page. The page includes a heading that says "Environments," a table with four columns: "Environment," "Cluster," "Tenant," and "Status." Each row in the table represents a different Kafka environment. The table includes information about the DEV, TST, ACC, and PRD environments. There is a search bar that allows users to search for environments.](../../static/images/environments/Environments.png)
