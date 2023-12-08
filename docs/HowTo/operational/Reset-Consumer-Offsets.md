@@ -11,9 +11,9 @@ Klaw provides the same functionality to reset offsets of a consumer group.
 
 2. Go to Topic overview page and select the right environment
 
-3. On the Subscriptions tab, choose the right consumer acl and consumer group record
+3. On the Subscriptions tab, choose the right consumer ACL and consumer group record
 
-4. If you are the owner of this consumer acl, you would see a `Reset Consumer Offsets` button
+4. If you are the owner of this consumer ACL, you would see a `Reset Consumer Offsets` button
 
    ![image](../../../static/images/operational/reset-offsets1.png)
 
@@ -25,5 +25,5 @@ Klaw provides the same functionality to reset offsets of a consumer group.
 
    ![image](../../../static/images/operational/reset-offsets2.png)
 
-6. On submission, a request is created which has to be approved by the consumer acl Owner team. On Approval, offsets are
+6. On submission, a request is created which has to be approved by the consumer ACL Owner team. On Approval, offsets are
    reset and users are notified

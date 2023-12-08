@@ -39,7 +39,7 @@ cluster with Klaw metadata.
 
 :::note
 To get automated notifications whenever there are changes on topics between Klaw and Kafka clusters, configure the property
-`klaw.notify.admins.clusterchanges.scheduler.enable` to `true` in Klaw core module. This by default sends a notification
-to Klaw admins at 12 am everyday. If you would like to change that, you may configure the property for cron expression
+`klaw.notify.admins.clusterchanges.scheduler.enable` to `true` in Klaw Core module. This by default sends a notification
+to Klaw admins at 12 AM everyday. If you would like to change that, you may configure the property for cron expression
 `klaw.notify.admins.clusterchanges.scheduler.cron.expression`
 :::
