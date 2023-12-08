@@ -1,8 +1,8 @@
 # View Consumer Lag
 
-Consumer lag indicates the lag between Kafka producers and Consumers. If the rate of producing events on to the topic
+Consumer lag indicates the lag between Kafka® producers and Consumers. If the rate of producing events on to the topic
 exceeds than consuming, then there would be a lag.
-Kafka provides a cli kafka-consumer-groups to view the lag per topic partitions.
+Kafka® provides a cli kafka-consumer-groups to view the lag per topic partitions.
 
 ## How to view the consumer lag in Klaw
 

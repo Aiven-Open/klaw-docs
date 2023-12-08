@@ -1,7 +1,7 @@
 # Reset Consumer group offsets
 
-In certain situations like errors or failures or deserialization issues, a Kafka consumer might want to read/process the
-messages again. Kafka provides a cli kafka-consumer-groups for the same.
+In certain situations like errors or failures or deserialization issues, a Kafka® consumer might want to read/process the
+messages again. Kafka® provides a cli kafka-consumer-groups for the same.
 
 Klaw provides the same functionality to reset offsets of a consumer group.
 
