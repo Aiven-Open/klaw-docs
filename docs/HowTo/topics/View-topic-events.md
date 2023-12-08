@@ -8,7 +8,7 @@ In Klaw, it is possible to view the actual events on a topic, provided they are 
 
 2. Go to Topic Overview and select the right environment for the topic
 
-3. In the bottom, in the new UI, you can select `Messages` tab ( in the old ui, select the `Topic Contents` tab )
+3. In the bottom, in the new UI, you can select `Messages` tab ( in the old UI, select the `Topic Contents` tab )
 
 4. Two types of fetching modes are available.
 
@@ -21,8 +21,8 @@ In Klaw, it is possible to view the actual events on a topic, provided they are 
    ![image](../../../static/images/topic/view-events2.png)
 
    :::note
-   Make sure the property `klaw.topiccontents.consumergroup.id` is enabled cluster-api application. You may change the value of the consumer group.
-   However, an acl has to be created to allow this consumer group to read the messages from Klaw host machine.
+   Make sure the property `klaw.topiccontents.consumergroup.id` is enabled cluster-API application. You may change the value of the consumer group.
+   However, an ACL has to be created to allow this consumer group to read the messages from Klaw host machine.
    :::
 
 5. After the selection, messages will be displayed.

@@ -8,7 +8,7 @@ Kafka provides a cli kafka-consumer-groups to view the lag per topic partitions.
 
 1. Select the topic on which you want to view the lag
 2. In the topic overview, select the right environment
-3. Look for the consumer acl record which your team owns
+3. Look for the consumer ACL record which your team owns
 4. Click on the button `Click to view offset info`
 5. This would display the consumer lag per partition for the selected topic
 

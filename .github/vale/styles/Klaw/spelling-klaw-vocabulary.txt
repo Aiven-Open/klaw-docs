@@ -41,6 +41,7 @@ approvers
 auditable
 bcc
 changeset
+cli
 cron
 deserialization
 deserialize
@@ -74,3 +75,4 @@ Tst
 uncomment
 cluster-api
 gtag
+UI
