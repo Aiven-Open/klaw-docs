@@ -43,8 +43,7 @@ decline any schema request.
    Registry and fail if it is not valid. A team member will review the
    request and approve or decline it based on the request made.
 
-On approval, a notification is sent to all the producers and consumers of the topic in this environment mentioning a
-schema change.
+Once approved, all producers and consumers linked to this topic in the environment will receive a notification regarding a schema change.
 
 ## Schema validation
 

@@ -57,6 +57,7 @@ markdownlint
 metastore
 npm
 nvmrc
+offsets
 Prd
 Prod
 plaintext
@@ -76,3 +77,4 @@ uncomment
 cluster-api
 gtag
 UI
+unencrypted

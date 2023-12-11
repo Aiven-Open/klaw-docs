@@ -1,28 +1,36 @@
-# View Topic Events
+# View topic events in Klaw
 
-In Klaw, it is possible to view the actual events on a topic, provided they are un-encrypted.
+Klaw enables users to view actual events on a topic, provided the messages are unencrypted.
 
-## How to view Events
+## Prerequisites
 
-1. Select the topic for which you want to view the events. (Note you must belong to the topic owner team.)
+- You must be a member of the topic owner team to view events.
+- You need to use the new Klaw user interface to view events.
 
-2. Go to Topic Overview and select the right environment for the topic
+:::note
 
-3. In the bottom, in the new UI, you can select `Messages` tab ( in the old UI, select the `Topic Contents` tab )
+This feature may not be available in the old Klaw UI.
 
-4. Two types of fetching modes are available.
+## How to view events
 
-   In default mode, you can select a number of messages to be displayed. This will display the last messages from the partitions.
+1. Select the topic for which you want to view events using the new Klaw interface.
 
-   ![image](../../../static/images/topic/view-events1.png)
+2. In the **Topic overview** tab, select the right environment for your topic.
 
-   In custom mode, you need to select a partition and number of messages. This will display the last messages from that partition.
+3. Next, select the **Messages** tab.
 
-   ![image](../../../static/images/topic/view-events2.png)
+4. Choose a fetching mode:
+
+   - **Default mode:** Select the number of messages you wish to display. This mode shows the latest messages from the topic's partitions.
+
+     ![image](../../../static/images/topic/view-events1.png)
+
+   - **Custom mode:** Enter a partition ID and specify the number of messages you want to display from that partition.
+
+     ![image](../../../static/images/topic/view-events2.png)
 
    :::note
-   Make sure the property `klaw.topiccontents.consumergroup.id` is enabled cluster-API application. You may change the value of the consumer group.
-   However, an ACL has to be created to allow this consumer group to read the messages from Klaw host machine.
+   Ensure the `klaw.topiccontents.consumergroup.id` property is enabled in the cluster-API application, and adjust the consumer group value as needed. Additionally, create an ACL that allows this consumer group to read messages from the Klaw host machine.
    :::
 
-5. After the selection, messages will be displayed.
+5. After making your selection, messages are displayed. If you wish to view updated or additional messages later, click **Fetch messages**.

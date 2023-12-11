@@ -1,5 +1,5 @@
-# Operational
+# Operational requests
 
-Klaw has categorized certain requests like Resetting consumer offsets into Operational requests.
+Klaw simplifies various administrative tasks by consolidating them into operational requests. These requests handle modifications or actions that influence the system's operations.
 
-- [Request a Reset Consumer Offsets](Reset-Consumer-Offsets.md)
+- [Reset Consumer group offsets](Reset-Consumer-Offsets.md)

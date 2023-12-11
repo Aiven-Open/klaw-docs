@@ -1,29 +1,29 @@
-# Reset Consumer group offsets
+# Reset consumer group offsets
 
-In certain situations like errors or failures or deserialization issues, a Kafka® consumer might want to read/process the
-messages again. Kafka® provides a cli kafka-consumer-groups for the same.
+If you encounter any errors, failures, or deserialization issues while using Apache Kafka® consumers, you may need to reprocess messages. To address this, Apache Kafka® offers a command-line tool called `kafka-consumer-groups`.
 
-Klaw provides the same functionality to reset offsets of a consumer group.
+Similarly, Klaw allows resetting consumer group offsets via its interface.
 
-## Make a reset consumer group offsets request
+Before you begin, ensure that you are the owner of the Consumer ACL for the consumer group you wish to reset.
 
-1. Select the topic on which the request has to be submitted
+## Submit a reset consumer group offsets request
 
-2. Go to Topic overview page and select the right environment
+1. Select the topic for which you need to reset the offsets.
 
-3. On the Subscriptions tab, choose the right consumer ACL and consumer group record
+2. In the **Topic overview** page, select the correct environment for your topic.
 
-4. If you are the owner of this consumer ACL, you would see a `Reset Consumer Offsets` button
+3. On the **Subscriptions** tab, select the relevant consumer ACL and consumer group record.
+
+4. You will see the **Reset Consumer Offsets** button if you are the consumer ACL owner.
 
    ![image](../../../static/images/operational/reset-offsets1.png)
 
-5. A new form is provided to the user and there are 3 options provided to reset the offsets
+5. Select the button to open a form with three reset options:
 
-   - LATEST
-   - EARLIEST
-   - TO_DATE_TIME
+   - LATEST: Resets to the most recent consumed message.
+   - EARLIEST: Resets to the earliest available message.
+   - TO_DATE_TIME: Resets to the oldest message consumed before a specific timestamp.
 
-   ![image](../../../static/images/operational/reset-offsets2.png)
+     ![image](../../../static/images/operational/reset-offsets2.png)
 
-6. On submission, a request is created which has to be approved by the consumer ACL Owner team. On Approval, offsets are
-   reset and users are notified
+6. Upon submission, a request is generated, requiring approval from the Consumer ACL Owner team. Once approved, offsets are reset, and users are notified.
