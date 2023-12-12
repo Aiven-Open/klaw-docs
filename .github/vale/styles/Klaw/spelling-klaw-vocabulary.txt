@@ -41,6 +41,7 @@ approvers
 auditable
 bcc
 changeset
+cli
 cron
 deserialization
 deserialize
@@ -56,6 +57,7 @@ markdownlint
 metastore
 npm
 nvmrc
+offsets
 Prd
 Prod
 plaintext
@@ -74,3 +76,5 @@ Tst
 uncomment
 cluster-api
 gtag
+UI
+unencrypted
