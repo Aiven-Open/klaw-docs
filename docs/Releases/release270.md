@@ -66,9 +66,9 @@ You can now edit Schema requests in this release. This feature allows for correc
 
 Usage of maven plugins to clean and copy the files correctly.
 
-### Differences between Klaw and Kafka clusters
+### Differences between Klaw and Kafka® clusters
 
-Scheduler to detect topic changes between Kafka cluster & Klaw and notify admins
+Scheduler to detect topic changes between Kafka® cluster & Klaw and notify admins
 
 :::note
 For a complete list of improvements, changelog, and to download the
