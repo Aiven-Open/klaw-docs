@@ -34,20 +34,22 @@ software architecture that surpasses hardware limitations.
 In the Klaw Core module, configure the below property, which is a
 comma-separated list of Klaw instances.
 
-    klaw.uiapi.servers=https://klawhost1:9097,https://klawhost2:9097
+`klaw.uiapi.servers=https://klawhost1:9097,https://klawhost2:9097`
 
 This configuration will make sure of any cache which has to be reset on
 the instances.
 
 Next Configure the secure communication between the multiple instances of Klaw.
 
-    # This allows App2App communication in a HA setup
-    # where multiple Klaw-core instances are deployed
-    # Provide a base 64 encoded string. The same secret should be used in all Instances.
-    # Update the below to your own unique secret!!!!!
-    klaw.core.app2app.base64.secret=
-    klaw.core.app2app.username=KlawApp2App
+```java
+# This allows App2App communication in a HA setup
+# where multiple Klaw-core instances are deployed
+# Provide a base 64 encoded string. The same secret should be used in all Instances.
+# Update the below to your own unique secret!!!!!
+klaw.core.app2app.base64.secret=
+klaw.core.app2app.username=KlawApp2App
 
-    # Enable High Availability for multi-instance Klaw-core deployment.
-    # Set to true to enable/false to disable
-    klaw.core.ha.enable=true
+# Enable High Availability for multi-instance Klaw-core deployment.
+# Set to true to enable/false to disable
+klaw.core.ha.enable=true
+```
