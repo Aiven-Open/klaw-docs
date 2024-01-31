@@ -17,7 +17,7 @@ in Klaw.
 2. Choose one or more ACLs from the list, assign them to a team, and select **Save**. The selected ACLs
    will now appear on the topic overview page, assigned to the chosen team.
 
-   ![image](../../../static/images/sync/SyncAclsFromCluster.png)
+   ![Screenshot Klaw's Synchronize ACLs from Cluster page. It shows a list of ACLs synchronized from a specific Kafka cluster. The list is organized into columns that display the topic name, partitions, replication factor, team, and a brief description. A search bar allows users to filter the list of topics based on specific criteria. There is a select element to filter the table by environment.](../../../static/images/sync/SyncAclsFromCluster.png)
 
 3. To view all existing ACLs, whether assigned to teams or not, select the **Show all** option. This will display all
    Apache Kafka ACLs, both assigned and unassigned to any teams.

@@ -17,7 +17,7 @@ them on the Apache Kafka cluster.
 2. Select the source environment (Klaw metadata with topics) and target
    environment (Apache Kafka cluster where ACLs have to be created)
 
-   ![image](../../../static/images/sync/SyncTopicsToCluster.png)
+   ![Screenshot Klaw's Synchronize ACLs to Cluster page. It shows a list of ACLs that can be chosen by checking a checkbox to be synchronized to a specific Kafka cluster. The list is organized into columns that display the topic name, the environment and the team. Below the table is a form to create topics on target environment where user can chose between to synchronise only the selected or all topics. The user can configure from which Klaw environment to which Cluster environment the data is synced.](../../../static/images/sync/SyncTopicsToCluster.png)
 
 By following these steps, you can create ACLs on any Apache Kafka
 cluster.

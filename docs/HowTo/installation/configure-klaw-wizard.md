@@ -9,7 +9,7 @@ For subsequent logins, you access the Klaw configuration wizard using
 URL: [https://host:port/helpwizard]
 :::
 
-![image](../../../static/images/general/KlawWizard.png)
+![Screenshot Klaw Wizard. It shows a step-by-step wizard for configuring Klaw, guiding users through the process of setting up Kafka clusters, environments, teams, users, roles, and permissions. The wizard consists of ten steps, each represented by a numbered button.](../../../static/images/general/KlawWizard.png)
 
 1. Configure Apache Kafka® clusters
 
@@ -49,7 +49,7 @@ URL: [https://host:port/helpwizard]
    After configuring environments, you can test the connection by clicking
    the validate button.
 
-   ![image](../../../static/images/general/EnvStatus.png)
+   ![Screenshot Klaw's environment page. It shows a table listing the available environments in the Klaw application. Each environment entry includes the environment name, cluster name, tenant name, additional parameters, status, and actions. A search bar and an "Add Environment" button are also present.](../../../static/images/general/EnvStatus.png)
 
 4. Configure Tenant and Environment hierarchy
 
@@ -85,7 +85,7 @@ URL: [https://host:port/helpwizard]
    Users can synchronize topics from cluster to Klaw with `SYNC_TOPICS`
    permission.
 
-   ![image](../../../static/images/topic/SyncTopicsFromCluster.png)
+   ![Screenshot Klaw's Synchronize Topics from Cluster page. It shows a list of topics synchronized from a specific Kafka cluster. The list is organized into columns that display the topic name, partitions, replication factor and a editable input field for team, prefilled.](../../../static/images/topic/SyncTopicsFromCluster.png)
 
 6. Create Teams
 

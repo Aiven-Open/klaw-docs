@@ -14,7 +14,7 @@ Follow these recommended steps for deploying each new release:
 
   Begin by deploying the latest version of Klaw to a staging environment. Here, you should conduct thorough sanity tests to ensure all the functionalities critical to your organization are working as expected.
 
-  ![Screenshot: Staging](../../static/images/deployklaw/staging.png)
+  ![Image of a block diagram of a Klaw deployment, showcasing the user node, the single Klaw node, and the staging Kafka cluster. The user node represents the client application that sends data to Klaw. The Klaw node serves as the central management point for all Klaw deployments. The staging Kafka cluster acts as a temporary holding area for data before it is ingested into production Kafka clusters.](../../static/images/deployklaw/staging.png)
 
   Ensure to proceed to the next phase only after verifying that the staging evaluation meets your standards.
 
@@ -30,7 +30,7 @@ Your choice of deployment scenario will depend on your organization's specific p
 
 Klaw simplifies the process of promoting Apache Kafka® topics, schemas, and connectors across different stages of your environment, making it straightforward to move from development to production. If this feature aligns with your operational requirements, begin by setting up Klaw and integrating it into your Apache Kafka ecosystems, as detailed in the illustration below.
 
-![Screenshot: Staging](../../static/images/deployklaw/dtap.png)
+![Image of a diagram diagram showing the data flow within a user-facing network, with a dedicated load balancer for distributing traffic. Data originating from the user node, enters the node with two Klaw instances, and then transitions to the staging Kafka clusters: DEV, TST, ACC, PRD](../../static/images/deployklaw/dtap.png)
 
 ### Scenario 2: Select environment promotion
 
@@ -38,8 +38,8 @@ If your process requires restricting promotions to specific environments, or you
 
 - Set up a Klaw instance to connect Development (Dev), Testing (Tst), and Acceptance (Acc) environments for controlled and sequential promotions.
 
-  ![Screenshot: Staging](../../static/images/deployklaw/dta.png)
+  ![Image of a diagram illustrating the Klaw deployment architecture. Data originating from the user node, enters the single Klaw node, and then transitions to the Kafka clusters: DEV, TST, ACC, PRD](../../static/images/deployklaw/dta.png)
 
 - Use a dedicated Klaw instance exclusively for your Production (Prod) environment to ensure secure and independent management.
 
-  ![Screenshot: Staging](../../static/images/deployklaw/prd.png)
+  ![Image of a diagram diagram highlighting the data flow within a user-facing network, with a dedicated load balancer for distributing traffic. Data originating from the user node, enters the node with two Klaw instances, and then transitions to the production Kafka cluster.](../../static/images/deployklaw/prd.png)

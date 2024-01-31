@@ -28,10 +28,10 @@ configurations in the `application.properties` file in the Klaw Core module.
 4. If you have already signed up, you will be directed to the Klaw home
    page.
 
-   ![image](../../../static/images/authentication/login.png)
+   ![Screenshot Login page. It shows a sign in form that includes fields for username and password. It shows a checkbox "Remember me". There is a button to submit the form. Below that is a link "Forgot password" and "Sign up"](../../../static/images/authentication/login.png)
 
 5. If this is your first time logging in, you will be presented with a
    signup form to fill in. On submission, a request will be created for
    the Klaw Administrator to approve or decline.
 
-   ![image](../../../static/images/authentication/OAuthSignupForm.png)
+   ![Screenshot Sign up page. It shows a form that includes fields for username, name, email address, and a checkbox to agree to the terms of service. There is a button to submit the form and another button to sign in if the user already has an account.](../../../static/images/authentication/OAuthSignupForm.png)

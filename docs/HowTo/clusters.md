@@ -49,7 +49,7 @@ To add a new cluster in Klaw, follow these steps:
 5. Select **Save** to create the new cluster. A new cluster is now
    created.
 
-![image](../../static/images/clusters/NewCluster.png)
+![Screenshot of the New Cluster page. The page includes a heading that says "Add Kafka Cluster," a form with fields for cluster type, cluster name, and Kafka flavor, and buttons to save and cancel.](../../static/images/clusters/NewCluster.png)
 
 ## Update cluster
 
@@ -63,7 +63,7 @@ To update a cluster, follow these steps:
 5. Select **Save** to confirm your changes. The cluster is updated with
    the new information.
 
-![image](../../static/images/clusters/UpdateCluster.png)
+![Screenshot of the Kafka Cluster configuration page. The title says "Update Kafka Cluster." It includes fields for cluster name, bootstrap servers, protocol, Kafka flavor, project name, and service name. There are buttons to save and cancel.](../../static/images/clusters/UpdateCluster.png)
 
 ## Delete Cluster
 
@@ -80,4 +80,4 @@ To delete a cluster, follow these steps:
 4. On the confirmation screen, select **delete** to confirm the deletion of
    the cluster. The selected cluster is deleted.
 
-![image](../../static/images/clusters/Clusters.png)
+![Screenshot of the Klaw Clusters page. It shows a table with five columns: "Cluster", "Bootstrap Servers", "Protocol", "Type", and "Kafka Flavor". Each row in the table represents a different cluster. The page has a search bar that allows searching for clusters.](../../static/images/clusters/Clusters.png)

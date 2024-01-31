@@ -14,4 +14,4 @@ failures.
    connectors and their tasks.
 4. To restart a connector, you can choose to restart all tasks, including the failed ones, or only the failed tasks.
 
-![image](../../../static/images/sync/ConnectorStatus.png)
+![Screenshot Klaw Cluster status page. Includes a title that says "Manage Connectors," a table with five columns: "Connector," "Team," "Config," "Status," and "Restart." Each row in the table represents a different connector. There are buttons to restart the connector and view the connector's configuration](../../../static/images/sync/ConnectorStatus.png)

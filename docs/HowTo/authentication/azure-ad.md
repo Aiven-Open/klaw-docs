@@ -41,12 +41,12 @@ Klaw Core module to enable Azure AD.
 
 6.  If you have already signed up with Azure AD, you will be redirected to the Klaw home page.
 
-    ![image](../../../static/images/authentication/OAuthLogin.png)
+    ![[Screenshot Klaw page to sign in. The page offers a button to use Azure login and a button to use Google Login.](../../../static/images/authentication/OAuthLogin.png)
 
     Enter your credentials in the Azure login window.
 
-    ![image](../../../static/images/authentication/AzureLogin.png)
+    ![Screenshot of the Azure login page.](../../../static/images/authentication/AzureLogin.png)
 
 7.  If this is your first time logging in, you will be presented with a signup form to fill in. On submission, the Klaw Administrator will approve or decline your request.
 
-    ![image](../../../static/images/authentication/OAuthSignupForm.png)
+    ![Screenshot Sign up page. It shows a form that includes fields for username, name, email address, and a checkbox to agree to the terms of service. There is a button to submit the form and another button to sign in if the user already has an account.](../../../static/images/authentication/OAuthSignupForm.png)
