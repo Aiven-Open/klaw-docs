@@ -73,15 +73,16 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "docs",
             position: "left",
             label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            to: "/docs/category/Releases",
-            label: "Releases",
+            type: "docSidebar",
+            sidebarId: "releases",
             position: "left",
+            label: "Releases",
           },
           {
             href: "https://github.com/aiven/klaw",
