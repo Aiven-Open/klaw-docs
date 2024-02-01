@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1.1
+sidebar_position: 2
 ---
 
 # Quick Start
@@ -26,7 +26,7 @@ After docker has started 5 processes, you may verify them by `docker ps`.
 Now you may log into Klaw on `http://localhost:9097` with
 credentials `william : welcome` <!--vale NO_SPELL-->
 
-![Screenshot: Klaw's login page](../static/images/quickstart/QS_LoginScreen.png)
+![Screenshot: Klaw's login page](../../static/images/quickstart/QS_LoginScreen.png)
 
 ## 3. Topics Catalog page
 
@@ -35,11 +35,11 @@ After logging in you will be redirected to our brand-new feature rich React UI.
 You can "Request new Topic" from the top right corner, or you can select the dropdown "Request a new" to view all your
 options.
 
-![Screenshot: Topic catalog page](../static/images/quickstart/AfterLogin.png)
+![Screenshot: Topic catalog page](../../static/images/quickstart/AfterLogin.png)
 
 ## 4. Request for topic
 
-![Screenshot: Form to request a new topic](../static/images/quickstart/RequestForTopic.png)
+![Screenshot: Form to request a new topic](../../static/images/quickstart/RequestForTopic.png)
 
 Fill in the details
 
@@ -55,7 +55,7 @@ This will create a topic request for your team member to approve.
 
 Newly created topic request is now visible in **My team's requests** menu on the sidebar
 
-![Screenshot: "My team's requests" page](../static/images/quickstart/MyRequest.png)
+![Screenshot: "My team's requests" page](../../static/images/quickstart/MyRequest.png)
 
 ## 6. Logout
 
@@ -75,7 +75,7 @@ From the menu, click on "Approve requests" menu.
 
 Here there is a pending request to be approved or declined. Click on view to review and approve it.
 
-![Screenshot: "Approve request" page](../static/images/quickstart/ApproveReq.png)
+![Screenshot: "Approve request" page](../../static/images/quickstart/ApproveReq.png)
 
 ## 10. That's it. Topic is created on Apache Kafka cluster
 
