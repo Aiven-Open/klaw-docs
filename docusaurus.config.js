@@ -1,5 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const { addRedirectsFile } = require("./plugins/add-redirects-file");
+const { createLinkFile } = require("./plugins/create-link-file");
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
@@ -49,6 +51,7 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        debug: true,
       }),
     ],
   ],
@@ -71,15 +74,16 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "docs",
             position: "left",
             label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            to: "/docs/category/Releases",
-            label: "Releases",
+            type: "docSidebar",
+            sidebarId: "releases",
             position: "left",
+            label: "Releases",
           },
           {
             href: "https://github.com/aiven/klaw",
@@ -138,6 +142,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    () => ({
+      postBuild(props) {
+        createLinkFile(props);
+        addRedirectsFile(props);
+      },
+    }),
+  ],
 };
 
 module.exports = config;
