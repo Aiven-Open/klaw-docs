@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const { writeFileSync } = require("fs");
+const fs = require("fs");
+const path = require("path");
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
@@ -148,9 +149,41 @@ const config = {
         const filePath = "./current-routes.json";
 
         // Write the routes to the file
-        writeFileSync(filePath, routes, "utf-8");
+        fs.writeFileSync(filePath, routes, "utf-8");
 
         console.log(`Routes paths have been saved to ${filePath}`);
+
+        const redirectFileName = "_redirects";
+        const redirectFilePath = path.basename(redirectFileName);
+
+        const destinationDirectory = props.outDir;
+
+        if (!redirectFilePath) {
+          console.error(`⚠️ Redirect file does not exist!`);
+          return;
+        }
+
+        if (!fs.existsSync(destinationDirectory)) {
+          console.error(
+            `⚠️ Build directory "${destinationDirectory} does not exist.`
+          );
+          return;
+        }
+
+        // Construct the destination file path
+        const destinationFilePath = path.join(
+          destinationDirectory,
+          redirectFileName
+        );
+
+        // Copy the file
+        fs.copyFile(redirectFilePath, destinationFilePath, (err) => {
+          if (err) {
+            console.error(`Error copying file: ${err}`);
+            return;
+          }
+          console.log(`_redirects copied to ${destinationDirectory}`);
+        });
       },
     }),
   ],
