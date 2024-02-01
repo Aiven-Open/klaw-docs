@@ -1,2 +1,5 @@
 /docs/category/Releases/* /docs/releases/:splat 301
 /docs/category/Releases /docs/releases 301
+
+/docs/category/concepts /docs/Concepts/clusters-environments 301
+/docs/category/howto /docs/HowTo/analytics 301
