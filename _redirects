@@ -64,3 +64,8 @@
 /docs/HowTo/connectors/manage-connectors         /docs/connector-management/manage-connectors 301
 /docs/HowTo/connectors/My-connector-requests     /docs/connector-management/my-connector-requests 301
 /docs/HowTo/connectors/Request-a-new-connector   /docs/connector-management/request-connector 301
+
+/docs/Concepts/metastore               /docs/metadata-management/metastore 301
+/docs/HowTo/exportimport/              /docs/metadata-management/import-export 301
+/docs/HowTo/exportimport/exportdata    /docs/metadata-management/import-export/exportdata 301
+/docs/HowTo/exportimport/importdata    //docs/metadata-management/import-export/importdata 301

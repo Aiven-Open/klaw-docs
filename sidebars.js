@@ -176,6 +176,25 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Metadata management",
+      items: [
+        "metadata-management/metastore",
+        {
+          type: "category",
+          label: "Metadata Import/Export",
+          link: {
+            type: "doc",
+            id: "metadata-management/import-export/index",
+          },
+          items: [
+            "metadata-management/import-export/importdata",
+            "metadata-management/import-export/exportdata",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Concepts",
       items: [
         {
