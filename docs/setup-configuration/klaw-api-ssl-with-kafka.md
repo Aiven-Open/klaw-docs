@@ -1,4 +1,4 @@
-# Advanced configuration
+# Klaw API and SSL with Apache Kafka®
 
 To configure the API component of Klaw, supply an
 `application.properties` file when starting the service. We have

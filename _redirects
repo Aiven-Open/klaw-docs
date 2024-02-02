@@ -1,11 +1,22 @@
-/docs/category/Releases/* /docs/releases/:splat 301
-/docs/category/Releases /docs/releases 301
+/docs/category/Releases/*                         /docs/releases/:splat 301
+/docs/category/Releases                           /docs/releases 301
 
-/docs/category/concepts /docs/Concepts/clusters-environments 301
-/docs/category/howto /docs/HowTo/analytics 301
+/docs/category/concepts                           /docs/Concepts/clusters-environments 301
+/docs/category/howto                              /docs/HowTo/analytics 301
 
-/docs/features /docs/getting-started/features 301
-/docs/getstarted /docs/getting-started/getstarted 301
-/docs/quickstart /docs/getting-started/quickstart 301
+/docs/features                                    /docs/getting-started/features 301
+/docs/getstarted                                  /docs/getting-started/getstarted 301
+/docs/quickstart                                  /docs/getting-started/quickstart 301
 
-/docs/HowTo/analytics /docs/dashboard/analytics 301
+/docs/HowTo/analytics                              /docs/dashboard/analytics 301
+
+/docs/HowTo/installation                           /docs/setup-configuration/klaw-installation 301
+/docs/HowTo/installation/configure-klaw-wizard     /docs/setup-configuration/klaw-installation/configure-klaw-wizard 301
+/docs/HowTo/installation/run-docker                /docs/setup-configuration/klaw-installation/run-docker 301
+/docs/HowTo/installation/run-source                /docs/setup-configuration/klaw-installation/run-source 301
+/docs/HowTo/kafka-cluster-migration/tenant-config  /docs/setup-configuration/tenant-configuration 301
+/docs/HowTo/tenant                                 /docs/setup-configuration/tenant-configuration 301
+
+/docs/Concepts/config                              /docs/setup-configuration/klaw-api-ssl-with-kafka 301
+/docs/Concepts/high-availability                   /docs/setup-configuration/high-availability 310
+/docs/HowTo/settings                               /docs/setup-configuration/settings 310

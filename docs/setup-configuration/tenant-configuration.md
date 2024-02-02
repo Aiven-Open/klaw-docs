@@ -8,6 +8,24 @@ instance.
 
 Every installation of Klaw comes with a single (default) tenant.
 
+![image](../../static/images/Tenants.png)
+
+## Add new tenant
+
+To add a new tenant, a superadmin or user with the `ADD_TENANT`
+permission can do so under the **Environments -\> Tenants** menu.
+
+:::note
+If the application should be limited to only one tenant, you can
+configure it with the below property in `application.properties` file.
+
+     #maximum tenants can be created
+     klaw.max.tenants=200
+
+:::
+
+## Configure a tenant
+
 You can configure the following in a tenant:
 
 - Base sync environment
@@ -16,7 +34,7 @@ You can configure the following in a tenant:
   environments. Make sure this environment already exists under
   Environments (Apache Kafka).
 
-      Field: baseSyncEnvironment
+  Field: `baseSyncEnvironment`
 
 - Order of Apache Kafka topics promotion environments
 
@@ -24,7 +42,7 @@ You can configure the following in a tenant:
   Apache Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
   environment already exists under Environments (Apache Kafka)
 
-      Field: orderOfTopicPromotionEnvsList
+      Field: `orderOfTopicPromotionEnvsList`
 
 - Request topics Environments List
 
@@ -32,7 +50,7 @@ You can configure the following in a tenant:
   requested directly. Other environments cannot be requested
   directly, and topics can only be promoted to them.
 
-      Field: requestTopicsEnvironmentsList
+      Field: `requestTopicsEnvironmentsList`
 
 - Base sync environment Apache Kafka Connector
 
@@ -40,7 +58,7 @@ You can configure the following in a tenant:
   environments. Make sure this environment already exists under
   Environments (Apache Kafka Connect).
 
-      Field: baseSyncKafkaConnectCluster
+      Field: `baseSyncKafkaConnectCluster`
 
 - Order of Apache Kafka Connect promotion environments
 
@@ -48,7 +66,7 @@ You can configure the following in a tenant:
   Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
   environment already exists under Environments (Apache Kafka Connect)
 
-      Field: orderOfConnectorsPromotionEnvsList
+      Field: `orderOfConnectorsPromotionEnvsList`
 
 - Request Connectors Environments List
 
@@ -56,7 +74,7 @@ You can configure the following in a tenant:
   requested directly. Other environments cannot be requested
   directly, and connectors can only be promoted to them.
 
-      Field: requestConnectorsEnvironmentsList
+      Field: `requestConnectorsEnvironmentsList`
 
   Sample Tenant configuration for Property: `klaw.tenant.config`:
 

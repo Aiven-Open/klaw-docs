@@ -171,7 +171,7 @@ To verify the installation and access Klaw, follow the steps below:
 ### 5. Next Steps
 
 After successfully verifying your installation,
-follow the documentation in [Configure Klaw with Wizard](../installation/configure-klaw-wizard.md).
+follow the documentation in [Configure Klaw with Wizard](configure-klaw-wizard.md).
 
 ## Klaw Docker Scripts
 

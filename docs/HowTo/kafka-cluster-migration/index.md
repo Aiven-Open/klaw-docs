@@ -17,7 +17,7 @@ uninterrupted operations.
 
 ## Quick links
 
-- [Tenant Configuration](tenant-config.md)
+- [Tenant Configuration](../../setup-configuration/tenant-configuration.md)
 
 - [Synchronize topics from cluster](sync-topics-from-cluster.md)
 

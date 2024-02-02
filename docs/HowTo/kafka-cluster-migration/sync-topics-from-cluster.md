@@ -6,7 +6,7 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
 ## Prerequisites
 
 - **Configuration**: Ensure that your environments and the `klaw.tenant.config` property are configured as specified in
-  the [Tenant Configuration](tenant-config.md) documentation.
+  the [Tenant Configuration](../../setup-configuration/tenant-configuration.md) documentation.
 - **User Permissions**: Log in as either a `SUPERADMIN` or as a user with the `SYNC_TOPICS` permission.
 
 ## Steps to synchronize topics

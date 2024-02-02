@@ -14,7 +14,7 @@ List requests made against the topic.
   for the steps to configure the environments.
 - The Superadmin must also update the server configuration to include the
   environments, see
-  [Configure Klaw](../installation/configure-klaw-wizard.md)
+  [Configure Klaw](../../setup-configuration/klaw-installation/configure-klaw-wizard.md)
   for the steps to configure the server settings.
 
 ## Make a request

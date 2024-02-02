@@ -7,7 +7,7 @@ them on the Apache Kafka cluster.
 ## Prerequisites
 
 1. **Environment configuration**: Make sure the `klaw.tenant.config` property is correctly configured, as outlined in
-   the [tenant configuration](tenant-config.md) guide.
+   the [tenant configuration](../../setup-configuration/tenant-configuration.md) guide.
 2. **User permissions**: Log in with a user account with either `SUPERADMIN` or a user granted
    the `SYNC_BACK_SUBSCRIPTIONS` permission.
 

@@ -50,6 +50,26 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Setup and configuration",
+      items: [
+        {
+          type: "category",
+          label: "Klaw installation",
+          link: {
+            type: "doc",
+            id: "setup-configuration/klaw-installation/index",
+          },
+          items: [
+            "setup-configuration/klaw-installation/run-docker",
+            "setup-configuration/klaw-installation/run-source",
+            "setup-configuration/klaw-installation/configure-klaw-wizard",
+          ],
+        },
+        "setup-configuration/tenant-configuration",
+      ],
+    },
+    {
+      type: "category",
       label: "Concepts",
       items: [
         {

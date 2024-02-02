@@ -8,7 +8,7 @@ them to a team in Klaw.
 ## Prerequisites
 
 1. **Environment configuration**: Make sure to configure your environments and set the `klaw.tenant.config` property as
-   described in the [tenant configuration](tenant-config.md) guide.
+   described in the [tenant configuration](../../setup-configuration/tenant-configuration.md) guide.
 2. **User permissions**: You need to be logged in as a `SUPERADMIN` or a user with the `SYNC_CONNECTORS` permission.
 
 ## Steps to synchronize connectors

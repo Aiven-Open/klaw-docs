@@ -8,7 +8,7 @@ in Klaw.
 ## Prerequisites
 
 1. **Environment configuration**: Make sure that the `klaw.tenant.config` property is set up as described in
-   the [tenant configuration](tenant-config.md) documentation.
+   the [tenant configuration](../../setup-configuration/tenant-configuration.md) documentation.
 2. **User permissions**: Log in with a user account with either `SUPERADMIN` or `SYNC_SUBSCRIPTIONS` permissions.
 
 ## Steps to synchronize ACLs
