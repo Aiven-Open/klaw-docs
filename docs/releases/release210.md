@@ -57,7 +57,7 @@ includes the implementation of the following APIs:
   (v3)](<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>)
 
 For more information, see [Confluent
-Cloud](../../docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol).
+Cloud](../../docs/cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol).
 
 ### Switch Teams
 

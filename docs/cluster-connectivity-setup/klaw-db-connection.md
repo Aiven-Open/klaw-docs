@@ -1,4 +1,4 @@
-# Configure database connection for Klaw
+# Klaw database connection
 
 Klaw uses a database to store metadata, such as information about users,
 teams, and owners. This allows the system to track and manage access to

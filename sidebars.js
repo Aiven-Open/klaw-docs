@@ -140,7 +140,26 @@ const sidebars = {
         },
       ],
     },
-
+    {
+      type: "category",
+      label: "Cluster connectivity setup",
+      link: {
+        type: "doc",
+        id: "cluster-connectivity-setup/index",
+      },
+      items: [
+        "cluster-connectivity-setup/klaw-db-connection",
+        "cluster-connectivity-setup/klaw-core-with-clusterapi",
+        "cluster-connectivity-setup/kafka-cluster-ssl-protocol",
+        "cluster-connectivity-setup/kafka-cluster-sasl-protocol",
+        "cluster-connectivity-setup/sr-cluster-ssl-protocol",
+        "cluster-connectivity-setup/aiven-kafka-cluster-ssl-protocol",
+        "cluster-connectivity-setup/aiven-kafka-cluster-sasl-protocol",
+        "cluster-connectivity-setup/aiven-karapace-cluster-ssl-protocol",
+        "cluster-connectivity-setup/aiven-kafka-connect-cluster-ssl-protocol",
+        "cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol",
+      ],
+    },
     {
       type: "category",
       label: "Concepts",

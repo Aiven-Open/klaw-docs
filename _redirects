@@ -46,3 +46,15 @@
 /docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster      /docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster  301
 /docs/HowTo/kafka-cluster-migration/sync-topics-from-cluster     /docs/cluster-management/kafka-cluster-sync/sync-topics-from-cluster 301
 /docs/HowTo/kafka-cluster-migration/sync-topics-to-cluster       /docs/cluster-management/kafka-cluster-sync/sync-topics-to-cluster 301
+
+/docs/HowTo/clusterconnectivity/                                            /docs/cluster-connectivity-setup/ 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-sasl-ssl-protocol       /docs/cluster-connectivity-setup/aiven-kafka-cluster-sasl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-ssl-protocol            /docs/cluster-connectivity-setup/aiven-kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-connect-cluster-ssl-protocol    /docs/cluster-connectivity-setup/aiven-kafka-connect-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-karapace-cluster-ssl-protocol         /docs/cluster-connectivity-setup/aiven-karapace-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol  /docs/cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/kafka-cluster-sasl-ssl-protocol             /docs/cluster-connectivity-setup/kafka-cluster-sasl-protocol 301
+/docs/HowTo/clusterconnectivity/kafka-cluster-ssl-protocol                  /docs/cluster-connectivity-setup/kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/klaw-core-with-clusterapi                   /docs/cluster-connectivity-setup/klaw-core-with-clusterapi 301
+/docs/HowTo/clusterconnectivity/klaw-db-connection                          /docs/cluster-connectivity-setup/klaw-db-connection 301
+/docs/HowTo/clusterconnectivity/sr-cluster-ssl-protocol                     /docs/cluster-connectivity-setup/sr-cluster-ssl-protocol 301
