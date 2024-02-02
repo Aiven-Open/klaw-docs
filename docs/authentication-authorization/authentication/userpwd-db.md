@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Login with Klaw database account
 
 You can log in to Klaw using your username and password, which are securely stored in the database (encrypted).

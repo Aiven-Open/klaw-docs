@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Login with Third-party accounts
 
 You have the option to configure any third-party login account to access

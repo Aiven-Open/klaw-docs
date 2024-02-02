@@ -1,8 +1,7 @@
 # Manage users
 
-Klaw stores user information in its metadata, and the method of
-[authentication](../HowTo/authentication) may
-vary depending on the configuration. Each user is associated with a team
+Klaw stores user information in its metadata. The method of
+authentication may vary depending on the configuration. Each user is associated with a team
 and a role, and if the **Switch teams** flag is enabled, they can switch
 between multiple teams.
 

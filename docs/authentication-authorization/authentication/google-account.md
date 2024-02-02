@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Login with Google account
 
 You can log in to Klaw using your Google account credentials. On the

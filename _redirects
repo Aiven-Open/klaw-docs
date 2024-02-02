@@ -26,3 +26,11 @@
 /docs/HowTo/rolespermissions                       /docs/user-team-management/manage-roles-permissions 301
 /docs/HowTo/teams/manage-teams                     /docs/user-team-management/teams/manage-teams 301
 /docs/HowTo/users                                  /docs/user-team-management/manage-users 301
+
+/docs/HowTo/authentication/                        /docs/authentication-authorization/authentication/azure-ad 301
+/docs/HowTo/authentication/azure-ad                /docs/authentication-authorization/authentication/azure-ad 301
+/docs/HowTo/authentication/google-account          /docs/authentication-authorization/authentication/google-account 301
+/docs/HowTo/authentication/third-party-account     /docs/authentication-authorization/authentication/third-party-account 301
+/docs/HowTo/authentication/userpwd-db              /docs/authentication-authorization/authentication/userpwd-db 301
+/docs/HowTo/authentication/windows-ad              /docs/authentication-authorization/authentication/windows-ad 301
+/docs/HowTo/authorization                          /docs/authentication-authorization/authorization 301 301
