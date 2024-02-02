@@ -1,4 +1,4 @@
-# My Topic Requests
+# My topic requests
 
 The **My Topic Requests** page can be accessed through the **Requests
 -\> My Topic Requests** navigation bar. You can view all requests

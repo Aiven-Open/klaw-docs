@@ -140,7 +140,7 @@ As the topic owner, you have the authority to approve, initiate, or reject any s
 
 ![image](../../../static/images/blogimages/SchemaRequest-Workflow.png)
 
-For more information on registering a schema **[see here](/docs/HowTo/schemas/Request-a-schema)**
+For more information on registering a schema **[see here](/docs/workflows/schema/request-schema)**
 
 Watch the video below for a step-by-step demonstration of registering a schema in Klaw.
 

@@ -58,7 +58,7 @@ force-register the schema in case of any compatibility issues during
 registration.
 
 For more information, see [Schema
-Promotion](../../docs/HowTo/schemas/Promote-a-schema).
+Promotion](../../docs/workflows/schema/promote-schema).
 
 ### Authorization from OAuth2 Provider/Active Directory
 

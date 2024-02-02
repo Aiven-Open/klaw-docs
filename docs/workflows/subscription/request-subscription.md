@@ -1,4 +1,4 @@
-# Request a new Subscription
+# Request a new subscription
 
 The process for requesting a new subscription to be created in Apache Kafka® is
 straightforward and efficient. The team that owns the relevant topic is

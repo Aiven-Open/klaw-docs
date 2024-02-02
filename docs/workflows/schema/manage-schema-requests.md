@@ -1,4 +1,4 @@
-# Manage schema
+# Manage schema requests
 
 When a schema request is made, a team member other than the request
 creator can review, approve, or decline the request. Schema requests can

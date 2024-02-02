@@ -195,6 +195,59 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Klaw workflows",
+      items: [
+        "workflows/promotion",
+        {
+          type: "category",
+          label: "Manage schema",
+          link: {
+            type: "doc",
+            id: "workflows/schema/index",
+          },
+          items: [
+            "workflows/schema/request-schema",
+            "workflows/schema/promote-schema",
+            "workflows/schema/manage-schema-requests",
+            "workflows/schema/my-schema-requests",
+          ],
+        },
+        {
+          type: "category",
+          label: "Manage subscription",
+          link: {
+            type: "doc",
+            id: "workflows/subscription/index",
+          },
+          items: [
+            "workflows/subscription/request-subscription",
+            "workflows/subscription/delete-subscription",
+            "workflows/subscription/manage-subscription-requests",
+            "workflows/subscription/my-subscription-requests",
+          ],
+        },
+        {
+          type: "category",
+          label: "Manage topics",
+          link: {
+            type: "doc",
+            id: "workflows/topic/index",
+          },
+          items: [
+            "workflows/topic/topic-overview",
+            "workflows/topic/request-topic",
+            "workflows/topic/claim-topic",
+            "workflows/topic/edit-topic",
+            "workflows/topic/promote-topic",
+            "workflows/topic/delete-topic",
+            "workflows/topic/manage-topic-requests",
+            "workflows/topic/my-topic-requests",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Concepts",
       items: [
         {

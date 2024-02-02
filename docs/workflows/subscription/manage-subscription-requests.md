@@ -1,4 +1,4 @@
-# Manage subscriptions
+# Manage subscription requests
 
 When a team member makes a subscription request, it must be reviewed and
 approved or declined by another team member. This applies to producer

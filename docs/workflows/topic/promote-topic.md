@@ -5,13 +5,13 @@ administration, and control of topics. With topic promotion, a topic
 can be initially created in the lowest environment and then promoted to
 higher environments as needed.
 
-Learn more: [Concepts—Promotion](../../Concepts/promotion.md)
+Learn more: [Concepts—Promotion](../../workflows/promotion.md)
 
 ## Prerequisites
 
 The Superadmin must ensure all prerequisites are met before this
 functionality is used see
-[Concepts—Promotion](../../Concepts/promotion.md)
+[Concepts—Promotion](../../workflows/promotion.md)
 
 ## Topic promotion
 

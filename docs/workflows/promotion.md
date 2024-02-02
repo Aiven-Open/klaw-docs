@@ -49,5 +49,5 @@ promotion defined in `orderOfTopicPromotionEnvsList`.
 
 ## How to promote topics and schemas
 
-- [Promote a topic](../HowTo/topics/Promote-a-topic.md)
-- [Promote a schema](../HowTo/schemas/Promote-a-schema.md)
+- [Promote a topic](../workflows/topic/promote-topic.md)
+- [Promote a schema](../workflows/schema/promote-schema.md)

@@ -68,4 +68,25 @@
 /docs/Concepts/metastore               /docs/metadata-management/metastore 301
 /docs/HowTo/exportimport/              /docs/metadata-management/import-export 301
 /docs/HowTo/exportimport/exportdata    /docs/metadata-management/import-export/exportdata 301
-/docs/HowTo/exportimport/importdata    //docs/metadata-management/import-export/importdata 301
+/docs/HowTo/exportimport/importdata    /docs/metadata-management/import-export/importdata 301
+
+/docs/Concepts/promotion                            /docs/workflows/promotion 301
+/docs/HowTo/schemas                                 /docs/workflows/schema 301
+/docs/HowTo/schemas/manage-schemas                  /docs/workflows/schema/manage-schema-requests 301
+/docs/HowTo/schemas/My-schema-requests              /docs/workflows/schema/my-schema-requests 301
+/docs/HowTo/schemas/Promote-a-schema                /docs/workflows/schema/promote-schema 301
+/docs/HowTo/schemas/Request-a-schema                /docs/workflows/schema/request-schema 301
+/docs/HowTo/subscriptions                           /docs/workflows/subscription 301
+/docs/HowTo/subscriptions/Approve-a-subscription    /docs/workflows/subscription/manage-subscription-requests 301
+/docs/HowTo/subscriptions/Delete-a-subscription     /docs/workflows/subscription/delete-subscription 301
+/docs/HowTo/subscriptions/My-subscription-requests  /docs/workflows/subscription/my-subscription-requests  301
+/docs/HowTo/subscriptions/Request-a-subscription    /docs/workflows/subscription/request-subscription 301
+/docs/HowTo/topics/                                 /docs/workflows/topic 301
+/docs/HowTo/topics/Approve-a-topic                  /docs/workflows/topic/manage-topic-requests 301
+/docs/HowTo/topics/Claim-a-topic                    /docs/workflows/topic/claim-topic 301
+/docs/HowTo/topics/Delete-a-topic                   /docs/workflows/topic/delete-topic 301
+/docs/HowTo/topics/Edit-topic-request               /docs/workflows/topic/edit-topic 301
+/docs/HowTo/topics/My-topic-requests                /docs/workflows/topic/my-topic-requests 301
+/docs/HowTo/topics/Promote-a-topic                  /docs/workflows/topic/promote-topic 301
+/docs/HowTo/topics/Request-a-new-topic              /docs/workflows/topic/request-topic 301
+/docs/HowTo/topics/Topic-overview                   /docs/workflows/topic/topic-overview 301

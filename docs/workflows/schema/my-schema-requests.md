@@ -1,4 +1,4 @@
-# My Schema Requests
+# My schema requests
 
 To access the **My Schema Requests** page, navigate to the **Requests
 -\> My Schema Requests** section. On this page, you can view all the

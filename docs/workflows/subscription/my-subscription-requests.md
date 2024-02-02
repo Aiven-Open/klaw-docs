@@ -1,4 +1,4 @@
-# My Subscription Requests
+# My subscription requests
 
 To access the **My ACL Requests** page, navigate to the **Requests -\>
 My ACL Requests**. On this page, you can see all the requests created by
