@@ -77,7 +77,7 @@ To add a **Kafka Connect environment**, enter the following details in the **Add
 
 - Select **Save** to add a new Apache Kafka Connect environment.
 
-![image](../../static/images/environments/NewEnvironment.png)
+![image](../../../static/images/environments/NewEnvironment.png)
 
 ## Update environment
 
@@ -95,7 +95,7 @@ To update/modify an existing environment in Klaw, follow these steps:
    edit them in the corresponding clusters.
    :::
 
-![image](../../static/images/environments/UpdateEnvironment.png)
+![image](../../../static/images/environments/UpdateEnvironment.png)
 
 ## Delete environment
 
@@ -109,4 +109,4 @@ To delete an existing environment in Klaw, follow these steps:
    deletion of the environment. Once confirmed, the selected
    environment will be deleted.
 
-![image](../../static/images/environments/Environments.png)
+![image](../../../static/images/environments/Environments.png)

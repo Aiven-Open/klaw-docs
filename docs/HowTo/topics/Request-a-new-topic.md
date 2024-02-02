@@ -10,7 +10,7 @@ List requests made against the topic.
 ## Prerequisites
 
 - The Superadmin must configure the environment within Klaw, see
-  [Environments](../../Concepts/clusters-environments.md)
+  [Environments](../../cluster-management/clusters-environments/index.md)
   for the steps to configure the environments.
 - The Superadmin must also update the server configuration to include the
   environments, see

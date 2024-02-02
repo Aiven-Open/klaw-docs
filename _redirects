@@ -34,3 +34,15 @@
 /docs/HowTo/authentication/userpwd-db              /docs/authentication-authorization/authentication/userpwd-db 301
 /docs/HowTo/authentication/windows-ad              /docs/authentication-authorization/authentication/windows-ad 301
 /docs/HowTo/authorization                          /docs/authentication-authorization/authorization 301 301
+
+/docs/Concepts/clusters-environments               /docs/cluster-management/clusters-environments/ 301
+/docs/HowTo/clusters                               /docs/cluster-management/clusters-environments/clusters 301
+/docs/HowTo/environments                           /docs/cluster-management/clusters-environments/environments 301
+/docs/HowTo/kafka-cluster-migration                /docs/cluster-management/kafka-cluster-sync 301
+/docs/HowTo/kafka-cluster-migration/sync-acls-from-cluster       /docs/cluster-management/kafka-cluster-sync/sync-acls-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-acls-to-cluster         /docs/cluster-management/kafka-cluster-sync/sync-acls-to-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-connectors-from-cluster /docs/cluster-management/kafka-cluster-sync/sync-connectors-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-schemas-from-cluster    /docs/cluster-management/kafka-cluster-sync/sync-schemas-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster      /docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster  301
+/docs/HowTo/kafka-cluster-migration/sync-topics-from-cluster     /docs/cluster-management/kafka-cluster-sync/sync-topics-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-topics-to-cluster       /docs/cluster-management/kafka-cluster-sync/sync-topics-to-cluster 301

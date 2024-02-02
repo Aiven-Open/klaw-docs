@@ -49,7 +49,7 @@ To add a new cluster in Klaw, follow these steps:
 5. Select **Save** to create the new cluster. A new cluster is now
    created.
 
-![image](../../static/images/clusters/NewCluster.png)
+![image](../../../static/images/clusters/NewCluster.png)
 
 ## Update cluster
 
@@ -63,7 +63,7 @@ To update a cluster, follow these steps:
 5. Select **Save** to confirm your changes. The cluster is updated with
    the new information.
 
-![image](../../static/images/clusters/UpdateCluster.png)
+![image](../../../static/images/clusters/UpdateCluster.png)
 
 ## Delete Cluster
 
@@ -80,4 +80,4 @@ To delete a cluster, follow these steps:
 4. On the confirmation screen, select **delete** to confirm the deletion of
    the cluster. The selected cluster is deleted.
 
-![image](../../static/images/clusters/Clusters.png)
+![image](../../../static/images/clusters/Clusters.png)

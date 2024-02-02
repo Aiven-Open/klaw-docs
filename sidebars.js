@@ -107,6 +107,42 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Cluster management",
+      items: [
+        {
+          type: "category",
+          label: "Clusters and environments",
+          link: {
+            type: "doc",
+            id: "cluster-management/clusters-environments/index",
+          },
+          items: [
+            "cluster-management/clusters-environments/clusters",
+            "cluster-management/clusters-environments/environments",
+          ],
+        },
+        {
+          type: "category",
+          label: "Kafka cluster synchronization",
+          link: {
+            type: "doc",
+            id: "cluster-management/kafka-cluster-sync/index",
+          },
+          items: [
+            "cluster-management/kafka-cluster-sync/sync-acls-from-cluster",
+            "cluster-management/kafka-cluster-sync/sync-acls-to-cluster",
+            "cluster-management/kafka-cluster-sync/sync-connectors-from-cluster",
+            "cluster-management/kafka-cluster-sync/sync-schemas-from-cluster",
+            "cluster-management/kafka-cluster-sync/sync-schemas-to-cluster",
+            "cluster-management/kafka-cluster-sync/sync-topics-from-cluster",
+            "cluster-management/kafka-cluster-sync/sync-topics-to-cluster",
+          ],
+        },
+      ],
+    },
+
+    {
+      type: "category",
       label: "Concepts",
       items: [
         {
