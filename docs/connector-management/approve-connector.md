@@ -1,4 +1,4 @@
-# Approve connectors
+# Approve a connector
 
 When a connector request is made, a team member, other than the creator
 of the request, can review and either approve or decline it.

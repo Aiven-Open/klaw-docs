@@ -58,3 +58,9 @@
 /docs/HowTo/clusterconnectivity/klaw-core-with-clusterapi                   /docs/cluster-connectivity-setup/klaw-core-with-clusterapi 301
 /docs/HowTo/clusterconnectivity/klaw-db-connection                          /docs/cluster-connectivity-setup/klaw-db-connection 301
 /docs/HowTo/clusterconnectivity/sr-cluster-ssl-protocol                     /docs/cluster-connectivity-setup/sr-cluster-ssl-protocol 301
+
+/docs/HowTo/connectors                           /docs/connector-management 301
+/docs/HowTo/connectors/Approve-a-connector       /docs/connector-management/approve-connector 301
+/docs/HowTo/connectors/manage-connectors         /docs/connector-management/manage-connectors 301
+/docs/HowTo/connectors/My-connector-requests     /docs/connector-management/my-connector-requests 301
+/docs/HowTo/connectors/Request-a-new-connector   /docs/connector-management/request-connector 301

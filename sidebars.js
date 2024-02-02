@@ -162,6 +162,20 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Connector management",
+      link: {
+        type: "doc",
+        id: "connector-management/index",
+      },
+      items: [
+        "connector-management/request-connector",
+        "connector-management/approve-connector",
+        "connector-management/manage-connectors",
+        "connector-management/my-connector-requests",
+      ],
+    },
+    {
+      type: "category",
       label: "Concepts",
       items: [
         {

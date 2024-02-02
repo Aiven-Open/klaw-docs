@@ -1,4 +1,4 @@
-# Connectors
+# Connector management
 
 Apache Kafka® Connect is a tool that allows scalable and reliable data streaming
 between Apache Kafka and other systems. For more information, see [Apache Kafka
@@ -28,10 +28,7 @@ them to other environments, including production. The team that owns the
 connector is responsible for making the final decision related to any
 requests, such as approving or declining them.
 
-- [Request a new Connector](Request-a-new-connector.md)
-
-- [Approve a Connector](Approve-a-connector.md)
-
-- [My Connector Requests](My-connector-requests.md)
-
-- [Manage Connectors](manage-connectors.md)
+- [Request a new connector](request-connector.md)
+- [Approve a connector](approve-connector.md)
+- [Manage connectors](manage-connectors.md)
+- [My connector requests](my-connector-requests.md)

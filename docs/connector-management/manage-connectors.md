@@ -14,4 +14,4 @@ failures.
    connectors and their tasks.
 4. To restart a connector, you can choose to restart all tasks, including the failed ones, or only the failed tasks.
 
-![image](../../../static/images/sync/ConnectorStatus.png)
+![image](../../static/images/sync/ConnectorStatus.png)

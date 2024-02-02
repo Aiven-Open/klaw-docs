@@ -1,4 +1,4 @@
-# My Connector Requests
+# My connector requests
 
 You can access the **My Connector Requests** page by navigating to
 **Requests -\> My Connector Requests**. On this page, you can view all
