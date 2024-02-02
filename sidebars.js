@@ -65,7 +65,27 @@ const sidebars = {
             "setup-configuration/klaw-installation/configure-klaw-wizard",
           ],
         },
+        "setup-configuration/klaw-api-ssl-with-kafka",
+        "setup-configuration/high-availability",
+        "setup-configuration/settings",
         "setup-configuration/tenant-configuration",
+      ],
+    },
+    {
+      type: "category",
+      label: "User and team management",
+      items: [
+        "user-team-management/users-roles-teams",
+        "user-team-management/manage-users",
+        "user-team-management/manage-roles-permissions",
+        {
+          type: "category",
+          label: "Teams",
+          items: [
+            "user-team-management/teams/manage-teams",
+            "user-team-management/teams/switch-teams",
+          ],
+        },
       ],
     },
     {

@@ -69,7 +69,7 @@ from increased flexibility and efficiency when working within the Klaw
 platform, particularly when creating or approving requests.
 
 For more information, see [Switch
-Teams](../../docs/Concepts/switch-teams).
+Teams](../../docs/user-team-management/teams/switch-teams).
 
 :::note
 For a complete list of improvements, changelog, and to download the

@@ -20,3 +20,9 @@
 /docs/Concepts/config                              /docs/setup-configuration/klaw-api-ssl-with-kafka 301
 /docs/Concepts/high-availability                   /docs/setup-configuration/high-availability 310
 /docs/HowTo/settings                               /docs/setup-configuration/settings 310
+
+/docs/Concepts/switch-teams                        /docs/user-team-management/teams/switch-teams 301
+/docs/Concepts/users-teams                         /docs/user-team-management/users-roles-teams 301
+/docs/HowTo/rolespermissions                       /docs/user-team-management/manage-roles-permissions 301
+/docs/HowTo/teams/manage-teams                     /docs/user-team-management/teams/manage-teams 301
+/docs/HowTo/users                                  /docs/user-team-management/manage-users 301

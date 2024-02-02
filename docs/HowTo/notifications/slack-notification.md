@@ -9,5 +9,5 @@ Configuring Slack notifications in Klaw is straightforward. Follow the steps pro
 1. Visit Slack's official guide on [sending emails to Slack](https://slack.com/intl/en-ie/help/articles/206819278-Send-emails-to-Slack#).
 2. As part of the setup, Slack provides a unique email address.
 3. Use this email address in Klaw:
-   - Replace a user's email address in the [User Configuration](../users.md) to send notifications directly to their DMs.
-   - Alternatively, replace the team email to forward notifications to a specific channel. For more information, see [Managing Teams](../teams/manage-teams.md).
+   - Replace a user's email address in the [User Configuration](../../user-team-management/manage-users.md) to send notifications directly to their DMs.
+   - Alternatively, replace the team email to forward notifications to a specific channel. For more information, see [Managing Teams](../../user-team-management/teams/manage-teams.md).
