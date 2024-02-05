@@ -1,9 +1,8 @@
 #!/bin/bash
 
-
 FILES_TO_CHECK=""
 QUIET_MODE=""
-OFFLINE_MODE=""
+OFFLINE_MODE=false
 BROKEN_LINK=false
 EXIT_CODES=()
 
@@ -17,7 +16,7 @@ while getopts "f:qo" opt; do
       QUIET_MODE="-q"
       ;;
     o)
-      OFFLINE_MODE="--config=./scripts/markdown-link-check-script/markdown-link-check-offline-config.json"
+      OFFLINE_MODE=true
       ;;
     \?)
       echo "Usage: $0 [-f file] [-q]"
@@ -27,61 +26,101 @@ while getopts "f:qo" opt; do
 done
 
 
-
 if [ -n "$FILES_TO_CHECK" ]; then
   # Check the specified file
   echo "🔍 Checking links in $FILES_TO_CHECK."
   # shellcheck disable=SC2046
 
   markdown-link-check \
-  $(find "docs" -type f -name '*.md' ! -path '*/node_modules/*' ! -path '*/.github/vale/styles/*' -print) \
+    "$FILES_TO_CHECK" \
     $QUIET_MODE \
     $OFFLINE_MODE
 
   EXIT_CODES+=("$?")
 else
-
-
-
   # @TODO without offline mode, this returns an exist code 1
   # even though there is no error. I've not found out why,
   # needs further investigation.
+
+  ########### CHECK LINKS IN /DOCS
   echo "🔍 Checking links in all markdown files in /docs"
-  # Use "find" to locate all Markdown files in docs, excluding those in node_modules
+
+  DOCS_IGNORE_PATTERN=""
+  if [ $OFFLINE_MODE == true ]; then
+    DOCS_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-offline-config.json"
+  fi
+
+  # Use "find" to locate all Markdown files in /docs, excluding the category
+  # docs/release and the file docs/index.md as Docusaurus does resolve those links differently
   # shellcheck disable=SC2046
   markdown-link-check \
-    $(find "docs" -type f -name '*.md' ! -path '*/node_modules/*' ! -path '*/.github/vale/styles/*' -print) \
-    $QUIET_MODE \
-    $OFFLINE_MODE
+  $(find "docs" -type f -name '*.md' ! -path 'docs/releases/*' ! -path 'docs/index.md' -print) \
+  $QUIET_MODE  \
+  $DOCS_IGNORE_PATTERN
 
   EXIT_CODES+=("$?")
 
+
+  ########### CHECK LINKS IN /DOCS/RELEASE
+  echo "🔍 Checking links in all markdown files in /releases"
+
+  RELEASE_IGNORE_PATTERN=""
+  if [ $OFFLINE_MODE == true ]; then
+    RELEASE_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-releases-config-offline.json"
+  else
+    RELEASE_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-releases-config.json"
+  fi
+
+  # Use "find" to locate all Markdown files in /docs/releases/
+  # shellcheck disable=SC2046
+  markdown-link-check \
+    $(find "docs/releases" -type f -name '*.md' -print) \
+    $QUIET_MODE \
+    $RELEASE_IGNORE_PATTERN
+
+  EXIT_CODES+=("$?")
+
+
+  ########### CHECK LINKS IN /BLOG
   echo "🔍 Checking links in all markdown files in /blog"
-  # Use "find" to locate all Markdown files in blog, excluding those in node_modules
-  # Apply ignore pattern to not check links that are not starting with http/https AND
-  # are not located in "blog"
-  IGNORE_PATTERN_BLOG="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config.json"
+
+  BLOG_IGNORE_PATTERN=""
+  if [ $OFFLINE_MODE == true ]; then
+    BLOG_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config-offline.json"
+  else
+    BLOG_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config.json"
+  fi
+
+  # Use "find" to locate all Markdown files in /blogs
   # shellcheck disable=SC2046
   markdown-link-check \
-    $(find "blog" -type f -name '*.md' ! -path '*/node_modules/*' ! -path '*/.github/vale/styles/*' -print) \
+    $(find "blog" -type f -name '*.md' -print) \
     $QUIET_MODE \
-    $OFFLINE_MODE \
-    $IGNORE_PATTERN_BLOG
+    $BLOG_IGNORE_PATTERN
 
   EXIT_CODES+=("$?")
 
 
+  ########### CHECK LINKS IN OTHER DIRECTORIES
   echo "🔍 Checking links in other markdown files"
-  # Use "find" to locate all Markdown files excluding those in node_modules, docs or blog
+
+  OTHER_IGNORE_PATTERN=""
+  if [ $OFFLINE_MODE == true ]; then
+    OTHER_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config-offline.json"
+  else
+    OTHER_IGNORE_PATTERN="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config.json"
+  fi
+
+  # Use "find" to locate all Markdown files in /docs/releases/
   # shellcheck disable=SC2046
   markdown-link-check \
-  $(find . -type f -name '*.md' ! -path './docs/*' ! -path './blog/*' ! -path '*/node_modules/*' ! -path '
-  */.github/vale/styles/*' -print) \
+  $(find . -type f -name '*.md' ! -path './docs/*' ! -path './blog/*' ! -path '*/node_modules/*' ! -path '*/.github/vale/styles/*' -print) \
     $QUIET_MODE \
-    $OFFLINE_MODE
+    $OTHER_IGNORE_PATTERN
 
   EXIT_CODES+=("$?")
 fi
+
 
 
 # Check if an error occurred for link checking

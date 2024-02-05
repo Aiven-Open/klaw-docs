@@ -5,7 +5,7 @@ Uses [markdown-link-check](https://github.com/tcort/markdown-link-check) to chec
 ## Scripts you can use
 
 Note: All scripts need to be run from root and you have to set up
-your [local development](../README.md#installation-and-usage) in
+your [local development](../../README.md#installation-and-usage) in
 order to use them.
 
 ### ➡️ `pnpm markdown-link-check`

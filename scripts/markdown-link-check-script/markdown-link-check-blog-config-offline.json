@@ -2,6 +2,9 @@
   "ignorePatterns": [
     {
       "pattern": "^(?!(http://|https://)|[^/]*/blog/).+"
+    },
+    {
+      "pattern": "^https?://.*"
     }
   ]
 }
