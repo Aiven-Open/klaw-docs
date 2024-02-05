@@ -1,107 +1,119 @@
-/docs/category/Releases/*                         /docs/releases/:splat 301
-/docs/category/Releases                           /docs/releases 301
+/docs/category/Releases/*    /docs/releases/:splat 301
+/docs/category/Releases    /docs/releases 301
 
-/docs/category/concepts                           /docs/Concepts/clusters-environments 301
-/docs/category/howto                              /docs/HowTo/analytics 301
 
-/docs/features                                    /docs/getting-started/features 301
-/docs/getstarted                                  /docs/getting-started/getstarted 301
-/docs/quickstart                                  /docs/getting-started/quickstart 301
-/docs/HowTo/zothers                               /docs/getting-started/features 301
+/docs/category/concepts    /docs/Concepts/clusters-environments 301
+/docs/category/howto       /docs/HowTo/analytics 301
 
-/docs/HowTo/analytics                              /docs/dashboard/analytics 301
-/docs/HowTo/dashboard                              /docs/dashboard/dashboard-view 301
 
-/docs/HowTo/installation                           /docs/setup-configuration/klaw-installation 301
-/docs/HowTo/installation/configure-klaw-wizard     /docs/setup-configuration/klaw-installation/configure-klaw-wizard 301
-/docs/HowTo/installation/run-docker                /docs/setup-configuration/klaw-installation/run-docker 301
-/docs/HowTo/installation/run-source                /docs/setup-configuration/klaw-installation/run-source 301
-/docs/HowTo/deployklaw                             /docs/setup-configuration/klaw-installation/deployklaw 301
-/docs/HowTo/kafka-cluster-migration/tenant-config  /docs/setup-configuration/tenant-configuration 301
-/docs/HowTo/tenant                                 /docs/setup-configuration/tenant-configuration 301
+/docs/features         /docs/getting-started/features 301
+/docs/getstarted       /docs/getting-started/getstarted 301
+/docs/quickstart       /docs/getting-started/quickstart 301
+/docs/HowTo/zothers    /docs/getting-started/features 301
 
-/docs/Concepts/config                              /docs/setup-configuration/klaw-api-ssl-with-kafka 301
-/docs/Concepts/high-availability                   /docs/setup-configuration/high-availability 310
-/docs/HowTo/settings                               /docs/setup-configuration/settings 310
 
-/docs/Concepts/switch-teams                        /docs/user-team-management/teams/switch-teams 301
-/docs/Concepts/users-teams                         /docs/user-team-management/users-roles-teams 301
-/docs/HowTo/rolespermissions                       /docs/user-team-management/manage-roles-permissions 301
-/docs/HowTo/teams/manage-teams                     /docs/user-team-management/teams/manage-teams 301
-/docs/HowTo/users                                  /docs/user-team-management/manage-users 301
+/docs/HowTo/analytics          /docs/dashboard/analytics 301
+/docs/HowTo/dashboard          /docs/dashboard/dashboard-view 301
 
-/docs/HowTo/authentication/                        /docs/authentication-authorization/authentication/azure-ad 301
-/docs/HowTo/authentication/azure-ad                /docs/authentication-authorization/authentication/azure-ad 301
-/docs/HowTo/authentication/google-account          /docs/authentication-authorization/authentication/google-account 301
-/docs/HowTo/authentication/third-party-account     /docs/authentication-authorization/authentication/third-party-account 301
-/docs/HowTo/authentication/userpwd-db              /docs/authentication-authorization/authentication/userpwd-db 301
-/docs/HowTo/authentication/windows-ad              /docs/authentication-authorization/authentication/windows-ad 301
-/docs/HowTo/authorization                          /docs/authentication-authorization/authorization 301 301
 
-/docs/Concepts/clusters-environments               /docs/cluster-management/clusters-environments/ 301
-/docs/HowTo/clusters                               /docs/cluster-management/clusters-environments/clusters 301
-/docs/HowTo/environments                           /docs/cluster-management/clusters-environments/environments 301
-/docs/HowTo/kafka-cluster-migration                /docs/cluster-management/kafka-cluster-sync 301
-/docs/HowTo/kafka-cluster-migration/sync-acls-from-cluster       /docs/cluster-management/kafka-cluster-sync/sync-acls-from-cluster 301
-/docs/HowTo/kafka-cluster-migration/sync-acls-to-cluster         /docs/cluster-management/kafka-cluster-sync/sync-acls-to-cluster 301
-/docs/HowTo/kafka-cluster-migration/sync-connectors-from-cluster /docs/cluster-management/kafka-cluster-sync/sync-connectors-from-cluster 301
-/docs/HowTo/kafka-cluster-migration/sync-schemas-from-cluster    /docs/cluster-management/kafka-cluster-sync/sync-schemas-from-cluster 301
-/docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster      /docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster  301
-/docs/HowTo/kafka-cluster-migration/sync-topics-from-cluster     /docs/cluster-management/kafka-cluster-sync/sync-topics-from-cluster 301
-/docs/HowTo/kafka-cluster-migration/sync-topics-to-cluster       /docs/cluster-management/kafka-cluster-sync/sync-topics-to-cluster 301
+/docs/HowTo/installation                             /docs/setup-configuration/klaw-installation 301
+/docs/HowTo/installation/configure-klaw-wizard       /docs/setup-configuration/klaw-installation/configure-klaw-wizard 301
+/docs/HowTo/installation/run-docker                  /docs/setup-configuration/klaw-installation/run-docker 301
+/docs/HowTo/installation/run-source                  /docs/setup-configuration/klaw-installation/run-source 301
+/docs/HowTo/deployklaw                               /docs/setup-configuration/klaw-installation/deployklaw 301
+/docs/HowTo/kafka-cluster-migration/tenant-config    /docs/setup-configuration/tenant-configuration 301
+/docs/HowTo/tenant                                   /docs/setup-configuration/tenant-configuration 301
 
-/docs/HowTo/clusterconnectivity/                                            /docs/cluster-connectivity-setup/ 301
-/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-sasl-ssl-protocol       /docs/cluster-connectivity-setup/aiven-kafka-cluster-sasl-protocol 301
-/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-ssl-protocol            /docs/cluster-connectivity-setup/aiven-kafka-cluster-ssl-protocol 301
-/docs/HowTo/clusterconnectivity/aiven-kafka-connect-cluster-ssl-protocol    /docs/cluster-connectivity-setup/aiven-kafka-connect-cluster-ssl-protocol 301
-/docs/HowTo/clusterconnectivity/aiven-karapace-cluster-ssl-protocol         /docs/cluster-connectivity-setup/aiven-karapace-cluster-ssl-protocol 301
-/docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol  /docs/cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol 301
-/docs/HowTo/clusterconnectivity/kafka-cluster-sasl-ssl-protocol             /docs/cluster-connectivity-setup/kafka-cluster-sasl-protocol 301
-/docs/HowTo/clusterconnectivity/kafka-cluster-ssl-protocol                  /docs/cluster-connectivity-setup/kafka-cluster-ssl-protocol 301
-/docs/HowTo/clusterconnectivity/klaw-core-with-clusterapi                   /docs/cluster-connectivity-setup/klaw-core-with-clusterapi 301
-/docs/HowTo/clusterconnectivity/klaw-db-connection                          /docs/cluster-connectivity-setup/klaw-db-connection 301
-/docs/HowTo/clusterconnectivity/sr-cluster-ssl-protocol                     /docs/cluster-connectivity-setup/sr-cluster-ssl-protocol 301
 
-/docs/HowTo/connectors                           /docs/connector-management 301
-/docs/HowTo/connectors/Approve-a-connector       /docs/connector-management/approve-connector 301
-/docs/HowTo/connectors/manage-connectors         /docs/connector-management/manage-connectors 301
-/docs/HowTo/connectors/My-connector-requests     /docs/connector-management/my-connector-requests 301
-/docs/HowTo/connectors/Request-a-new-connector   /docs/connector-management/request-connector 301
+/docs/Concepts/config               /docs/setup-configuration/klaw-api-ssl-with-kafka 301
+/docs/Concepts/high-availability    /docs/setup-configuration/high-availability 310
+/docs/HowTo/settings                /docs/setup-configuration/settings 310
 
-/docs/Concepts/metastore               /docs/metadata-management/metastore 301
-/docs/HowTo/exportimport/              /docs/metadata-management/import-export 301
-/docs/HowTo/exportimport/exportdata    /docs/metadata-management/import-export/exportdata 301
-/docs/HowTo/exportimport/importdata    /docs/metadata-management/import-export/importdata 301
 
-/docs/Concepts/promotion                            /docs/workflows/promotion 301
-/docs/HowTo/schemas                                 /docs/workflows/schema 301
-/docs/HowTo/schemas/manage-schemas                  /docs/workflows/schema/manage-schema-requests 301
-/docs/HowTo/schemas/My-schema-requests              /docs/workflows/schema/my-schema-requests 301
-/docs/HowTo/schemas/Promote-a-schema                /docs/workflows/schema/promote-schema 301
-/docs/HowTo/schemas/Request-a-schema                /docs/workflows/schema/request-schema 301
-/docs/HowTo/subscriptions                           /docs/workflows/subscription 301
-/docs/HowTo/subscriptions/Approve-a-subscription    /docs/workflows/subscription/manage-subscription-requests 301
-/docs/HowTo/subscriptions/Delete-a-subscription     /docs/workflows/subscription/delete-subscription 301
-/docs/HowTo/subscriptions/My-subscription-requests  /docs/workflows/subscription/my-subscription-requests  301
-/docs/HowTo/subscriptions/Request-a-subscription    /docs/workflows/subscription/request-subscription 301
-/docs/HowTo/topics/                                 /docs/workflows/topic 301
-/docs/HowTo/topics/Approve-a-topic                  /docs/workflows/topic/manage-topic-requests 301
-/docs/HowTo/topics/Claim-a-topic                    /docs/workflows/topic/claim-topic 301
-/docs/HowTo/topics/Delete-a-topic                   /docs/workflows/topic/delete-topic 301
-/docs/HowTo/topics/Edit-topic-request               /docs/workflows/topic/edit-topic 301
-/docs/HowTo/topics/My-topic-requests                /docs/workflows/topic/my-topic-requests 301
-/docs/HowTo/topics/Promote-a-topic                  /docs/workflows/topic/promote-topic 301
-/docs/HowTo/topics/Request-a-new-topic              /docs/workflows/topic/request-topic 301
-/docs/HowTo/topics/Topic-overview                   /docs/workflows/topic/topic-overview 301
-/docs/HowTo/topics/View-consumer-lag                /docs/workflows/topic/view-consumer-lag 301
-/docs/HowTo/topics/View-topic-events                /docs/workflows/topic/view-topic-events 301
-/docs/HowTo/operational/                            /docs/workflows/topic/reset-consumer-offsets 301
-/docs/HowTo/operational/Reset-Consumer-Offsets      /docs/workflows/topic/reset-consumer-offsets 301
+/docs/Concepts/switch-teams       /docs/user-team-management/teams/switch-teams 301
+/docs/Concepts/users-teams        /docs/user-team-management/users-roles-teams 301
+/docs/HowTo/rolespermissions      /docs/user-team-management/manage-roles-permissions 301
+/docs/HowTo/teams/manage-teams    /docs/user-team-management/teams/manage-teams 301
+/docs/HowTo/users                 /docs/user-team-management/manage-users 301
+
+
+/docs/HowTo/authentication/                       /docs/authentication-authorization/authentication/azure-ad 301
+/docs/HowTo/authentication/azure-ad               /docs/authentication-authorization/authentication/azure-ad 301
+/docs/HowTo/authentication/google-account         /docs/authentication-authorization/authentication/google-account 301
+/docs/HowTo/authentication/third-party-account    /docs/authentication-authorization/authentication/third-party-account 301
+/docs/HowTo/authentication/userpwd-db             /docs/authentication-authorization/authentication/userpwd-db 301
+/docs/HowTo/authentication/windows-ad             /docs/authentication-authorization/authentication/windows-ad 301
+/docs/HowTo/authorization                         /docs/authentication-authorization/authorization 301 301
+
+
+/docs/Concepts/clusters-environments                                /docs/cluster-management/clusters-environments/ 301
+/docs/HowTo/clusters                                                /docs/cluster-management/clusters-environments/clusters 301
+/docs/HowTo/environments                                            /docs/cluster-management/clusters-environments/environments 301
+/docs/HowTo/kafka-cluster-migration                                 /docs/cluster-management/kafka-cluster-sync 301
+/docs/Concepts/synchronize                                          /docs/cluster-management/kafka-cluster-sync 301
+/docs/HowTo/kafka-cluster-migration/sync-acls-from-cluster          /docs/cluster-management/kafka-cluster-sync/sync-acls-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-acls-to-cluster            /docs/cluster-management/kafka-cluster-sync/sync-acls-to-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-connectors-from-cluster    /docs/cluster-management/kafka-cluster-sync/sync-connectors-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-schemas-from-cluster       /docs/cluster-management/kafka-cluster-sync/sync-schemas-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster         /docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster  301
+/docs/HowTo/kafka-cluster-migration/sync-topics-from-cluster        /docs/cluster-management/kafka-cluster-sync/sync-topics-from-cluster 301
+/docs/HowTo/kafka-cluster-migration/sync-topics-to-cluster          /docs/cluster-management/kafka-cluster-sync/sync-topics-to-cluster 301
+
+
+/docs/HowTo/clusterconnectivity/                                                /docs/cluster-connectivity-setup/ 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-sasl-ssl-protocol           /docs/cluster-connectivity-setup/aiven-kafka-cluster-sasl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-cluster-ssl-protocol                /docs/cluster-connectivity-setup/aiven-kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-kafka-connect-cluster-ssl-protocol        /docs/cluster-connectivity-setup/aiven-kafka-connect-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/aiven-karapace-cluster-ssl-protocol             /docs/cluster-connectivity-setup/aiven-karapace-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/confluent-cloud-kafka-cluster-ssl-protocol      /docs/cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/kafka-cluster-sasl-ssl-protocol                 /docs/cluster-connectivity-setup/kafka-cluster-sasl-protocol 301
+/docs/HowTo/clusterconnectivity/kafka-cluster-ssl-protocol                      /docs/cluster-connectivity-setup/kafka-cluster-ssl-protocol 301
+/docs/HowTo/clusterconnectivity/klaw-core-with-clusterapi                       /docs/cluster-connectivity-setup/klaw-core-with-clusterapi 301
+/docs/HowTo/clusterconnectivity/klaw-db-connection                              /docs/cluster-connectivity-setup/klaw-db-connection 301
+/docs/HowTo/clusterconnectivity/sr-cluster-ssl-protocol                         /docs/cluster-connectivity-setup/sr-cluster-ssl-protocol 301
+
+
+/docs/HowTo/connectors                             /docs/connector-management 301
+/docs/HowTo/connectors/Approve-a-connector         /docs/connector-management/approve-connector 301
+/docs/HowTo/connectors/manage-connectors           /docs/connector-management/manage-connectors 301
+/docs/HowTo/connectors/My-connector-requests       /docs/connector-management/my-connector-requests 301
+/docs/HowTo/connectors/Request-a-new-connector     /docs/connector-management/request-connector 301
+
+
+/docs/Concepts/metastore                /docs/metadata-management/metastore 301
+/docs/HowTo/exportimport/               /docs/metadata-management/import-export 301
+/docs/HowTo/exportimport/exportdata     /docs/metadata-management/import-export/exportdata 301
+/docs/HowTo/exportimport/importdata     /docs/metadata-management/import-export/importdata 301
+
+
+/docs/Concepts/workflows                               /docs/workflows/ 301
+/docs/Concepts/promotion                               /docs/workflows/promotion 301
+/docs/HowTo/schemas                                    /docs/workflows/schema 301
+/docs/HowTo/schemas/manage-schemas                     /docs/workflows/schema/manage-schema-requests 301
+/docs/HowTo/schemas/My-schema-requests                 /docs/workflows/schema/my-schema-requests 301
+/docs/HowTo/schemas/Promote-a-schema                   /docs/workflows/schema/promote-schema 301
+/docs/HowTo/schemas/Request-a-schema                   /docs/workflows/schema/request-schema 301
+/docs/HowTo/subscriptions                              /docs/workflows/subscription 301
+/docs/HowTo/subscriptions/Approve-a-subscription       /docs/workflows/subscription/manage-subscription-requests 301
+/docs/HowTo/subscriptions/Delete-a-subscription        /docs/workflows/subscription/delete-subscription 301
+/docs/HowTo/subscriptions/My-subscription-requests     /docs/workflows/subscription/my-subscription-requests  301
+/docs/HowTo/subscriptions/Request-a-subscription       /docs/workflows/subscription/request-subscription 301
+/docs/HowTo/topics/                                    /docs/workflows/topic 301
+/docs/HowTo/topics/Approve-a-topic                     /docs/workflows/topic/manage-topic-requests 301
+/docs/HowTo/topics/Claim-a-topic                       /docs/workflows/topic/claim-topic 301
+/docs/HowTo/topics/Delete-a-topic                      /docs/workflows/topic/delete-topic 301
+/docs/HowTo/topics/Edit-topic-request                  /docs/workflows/topic/edit-topic 301
+/docs/HowTo/topics/My-topic-requests                   /docs/workflows/topic/my-topic-requests 301
+/docs/HowTo/topics/Promote-a-topic                     /docs/workflows/topic/promote-topic 301
+/docs/HowTo/topics/Request-a-new-topic                 /docs/workflows/topic/request-topic 301
+/docs/HowTo/topics/Topic-overview                      /docs/workflows/topic/topic-overview 301
+/docs/HowTo/topics/View-consumer-lag                   /docs/workflows/topic/view-consumer-lag 301
+/docs/HowTo/topics/View-topic-events                   /docs/workflows/topic/view-topic-events 301
+/docs/HowTo/operational/                               /docs/workflows/topic/reset-consumer-offsets 301
+/docs/HowTo/operational/Reset-Consumer-Offsets         /docs/workflows/topic/reset-consumer-offsets 301
+
 
 /docs/HowTo/notifications/                       /docs/notifications/email-notification 301
 /docs/HowTo/notifications/email-notification     /docs/notifications/email-notification 301
 /docs/HowTo/notifications/slack-notification     /docs/notifications/slack-notification 301
 
-/docs/Concepts/workflows      /docs/workflows/ 301
-
-/docs/Concepts/synchronize  /docs/cluster-management/kafka-cluster-sync/kafka-cluster-sync 301
