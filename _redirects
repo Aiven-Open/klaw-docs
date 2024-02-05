@@ -96,3 +96,5 @@
 /docs/HowTo/notifications/slack-notification     /docs/notifications/slack-notification 301
 
 /docs/Concepts/workflows      /docs/workflows/ 301
+
+/docs/Concepts/synchronize  /docs/cluster-management/kafka-cluster-sync/kafka-cluster-sync 301

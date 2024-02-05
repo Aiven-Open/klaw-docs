@@ -59,7 +59,6 @@
   "/docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster",
   "/docs/cluster-management/kafka-cluster-sync/sync-topics-from-cluster",
   "/docs/cluster-management/kafka-cluster-sync/sync-topics-to-cluster",
-  "/docs/Concepts/synchronize",
   "/docs/connector-management/",
   "/docs/connector-management/approve-connector",
   "/docs/connector-management/manage-connectors",
