@@ -1,7 +1,3 @@
----
-sidebar_position: 1.0
----
-
 # Klaw Documentation
 
 Klaw consists of two components:
