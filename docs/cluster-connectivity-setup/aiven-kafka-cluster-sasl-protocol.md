@@ -11,7 +11,7 @@ Apache Kafka cluster with Klaw using the SASL_SSL authentication protocol.
   communicate.
 - A running Aiven for Apache Kafka service. See [Getting started with
   Aiven for Apache Kafka for more
-  information](https://docs.aiven.io/docs/products/kafka/getting-started.html).
+  information](https://aiven.io/docs/products/kafka#get-started-with-aiven-for-apache-kafka).
 - Configured [Java keystore and truststore containing the service SSL
   certificates](https://docs.aiven.io/docs/products/kafka/howto/keystore-truststore.html)
   to access Apache Kafka.

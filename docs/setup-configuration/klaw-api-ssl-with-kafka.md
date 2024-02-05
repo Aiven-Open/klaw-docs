@@ -32,7 +32,7 @@ example, here's how to easily configure Klaw for use with an Aiven for Apache Ka
 first install the [Aiven client](https://github.com/aiven/aiven-client) CLI tool.
 
 1.  Start or navigate to your Aiven for Apache Kafka service. If you're doing this for the first time, you can find more
-    information [in the Aiven documentation](https://docs.aiven.io/docs/products/kafka/getting-started.html).
+    information [in the Aiven documentation](https://aiven.io/docs/products/kafka#get-started-with-aiven-for-apache-kafka).
 
 2.  Make a directory to store the certificates in, for example, `certs/`.
 
