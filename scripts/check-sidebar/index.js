@@ -27,9 +27,9 @@ function checkAllMarkdownFilesAreInSidebar(basePath, allListedFiles) {
 
 function checkListedFileIsInFileSystem(fileToCheck) {
   if (!fs.existsSync(fileToCheck)) {
-    console.error(`⛔️ File ${fileToCheck} is missing.`);
+    console.error(`⛔️ File ${fileToCheck} does not exist.`);
   } else {
-    console.log(`✅ File ${fileToCheck} is correctly linked in sidebar.`);
+    console.log(`✅ File ${fileToCheck} does exist and is linked.`);
   }
 }
 function checkSidebarItems(sidebarConfig, basePath, callback) {

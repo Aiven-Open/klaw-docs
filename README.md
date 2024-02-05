@@ -76,6 +76,7 @@ Here are the important ones you're likely to use:
   - Run `pnpm markdown-link-check -- -o` to only check for internal links (offline mode).
   - Run `pnpm markdown-link-check -- -q` to only log errors.
   - Run `pnpm markdown-link-check -- -q /path/your-file.md` to run checks for only one file.
+- `pnpm check-sidbar`: checks that the file linked in sidebar do exist and that all markdown files in `docs` are listed in sidebar.js. It does not warn for files that start with the prefix `DRAFT_`.
 
 For these scripts, you need to have Vale installed (see [Requirements](#requirements)):
 
