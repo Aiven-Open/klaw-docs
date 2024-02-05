@@ -1,4 +1,4 @@
-# Dashboard
+# Dashboard view
 
 Klaw dashboard displays the below (in old UI)
 
