@@ -67,9 +67,9 @@ const sidebars = {
           items: [
             "authentication-authorization/authentication/azure-ad",
             "authentication-authorization/authentication/google-account",
-            "authentication-authorization/authentication/third-party/account",
-            "authentication-authorization/authentication/third-party/userpwd-db",
-            "authentication-authorization/authentication/third-party/windows-ad",
+            "authentication-authorization/authentication/third-party-account",
+            "authentication-authorization/authentication/userpwd-db",
+            "authentication-authorization/authentication/windows-ad",
           ],
         },
         "authentication-authorization/authorization",
