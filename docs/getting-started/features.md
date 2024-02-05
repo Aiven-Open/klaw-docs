@@ -36,6 +36,17 @@ Explore the comprehensive range of features Klaw offers to manage your Apache Ka
 | [_Apache Kafka flavor support_](../cluster-management/clusters-environments/clusters.md)                     | Klaw is compatible with multiple Apache Kafka flavors, including Apache Kafka, Aiven Apache Kafka, Confluent Apache Kafka, and Confluent Cloud Apache Kafka.                                                                                                                                                                                                                                                                                                                                                                           |
 | _Klaw login AD/SSO/DB_                                                                                       | Users can log in to Klaw using [Windows AD](../authentication-authorization/authentication/windows-ad.md), SSO providers like [Azure](../authentication-authorization/authentication/azure-ad.md) and [Google](../authentication-authorization/authentication/google-account.md). Klaw also offers the option to configure any [third-party login account](../authentication-authorization/authentication/third-party-account.md) as well as using a [database account](../authentication-authorization/authentication/userpwd-db.md). |
 
+## Contact administrator
+
+It is possible to send a message to the administrator of Klaw by clicking the help button on the top right of the screen.
+
+![image](../../static/images/ContactAdmin.png)
+
+## Contact us
+
+If you find any issue with the project or have a suggestion or improvement, we recommend you submit an issue to the
+project. You can do this by clicking on help and selecting **Raise a git issue** option, or you can directly open an issue by accessing this link: [GitHub issues](https://github.com/aiven/klaw/issues)
+
 :::note
 Klaw is continuously evolving, and many other minor features are also available that are not listed above.
 :::
