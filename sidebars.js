@@ -63,6 +63,7 @@ const sidebars = {
             "setup-configuration/klaw-installation/run-docker",
             "setup-configuration/klaw-installation/run-source",
             "setup-configuration/klaw-installation/configure-klaw-wizard",
+            "setup-configuration/klaw-installation/deployklaw",
           ],
         },
         "setup-configuration/klaw-api-ssl-with-kafka",

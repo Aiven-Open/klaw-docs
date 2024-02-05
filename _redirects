@@ -14,6 +14,7 @@
 /docs/HowTo/installation/configure-klaw-wizard     /docs/setup-configuration/klaw-installation/configure-klaw-wizard 301
 /docs/HowTo/installation/run-docker                /docs/setup-configuration/klaw-installation/run-docker 301
 /docs/HowTo/installation/run-source                /docs/setup-configuration/klaw-installation/run-source 301
+/docs/HowTo/deployklaw                             /docs/setup-configuration/klaw-installation/deployklaw 301
 /docs/HowTo/kafka-cluster-migration/tenant-config  /docs/setup-configuration/tenant-configuration 301
 /docs/HowTo/tenant                                 /docs/setup-configuration/tenant-configuration 301
 
