@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Login with Windows active directory
 
 You can log in to Klaw using the Windows credentials configured in the Windows active directory.

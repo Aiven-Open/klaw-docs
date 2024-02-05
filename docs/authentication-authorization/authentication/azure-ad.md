@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Login with Azure AD
 
 You can log in to Klaw with your credentials configured in the Azure
