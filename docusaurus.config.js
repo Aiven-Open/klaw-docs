@@ -1,8 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const { addRedirectsFile } = require("./plugins/add-redirects-file");
-const { createLinkFile } = require("./plugins/create-link-file");
-
+const {
+  addRedirectsFile,
+} = require("./scripts/post-build-plugins/add-redirects-file");
+const {
+  createLinkFile,
+} = require("./scripts/post-build-plugins/create-link-file");
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 

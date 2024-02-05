@@ -17,7 +17,7 @@ while getopts "f:qo" opt; do
       QUIET_MODE="-q"
       ;;
     o)
-      OFFLINE_MODE="--config=./markdown-link-check-script/markdown-link-check-offline-config.json"
+      OFFLINE_MODE="--config=./scripts/markdown-link-check-script/markdown-link-check-offline-config.json"
       ;;
     \?)
       echo "Usage: $0 [-f file] [-q]"
@@ -60,7 +60,7 @@ else
   # Use "find" to locate all Markdown files in blog, excluding those in node_modules
   # Apply ignore pattern to not check links that are not starting with http/https AND
   # are not located in "blog"
-  IGNORE_PATTERN_BLOG="--config=./markdown-link-check-script/markdown-link-check-blog-config.json"
+  IGNORE_PATTERN_BLOG="--config=./scripts/markdown-link-check-script/markdown-link-check-blog-config.json"
   # shellcheck disable=SC2046
   markdown-link-check \
     $(find "blog" -type f -name '*.md' ! -path '*/node_modules/*' ! -path '*/.github/vale/styles/*' -print) \

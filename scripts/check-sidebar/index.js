@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const sidebars = require("../sidebars");
+const sidebars = require("../../sidebars");
 
 function checkAllMarkdownFilesAreInSidebar(basePath, allListedFiles) {
   const files = fs.readdirSync(basePath);
