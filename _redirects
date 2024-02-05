@@ -94,3 +94,5 @@
 /docs/HowTo/notifications/                       /docs/notifications/email-notification 301
 /docs/HowTo/notifications/email-notification     /docs/notifications/email-notification 301
 /docs/HowTo/notifications/slack-notification     /docs/notifications/slack-notification 301
+
+/docs/Concepts/workflows      /docs/workflows/ 301

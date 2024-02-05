@@ -196,6 +196,10 @@ const sidebars = {
     {
       type: "category",
       label: "Klaw workflows",
+      link: {
+        type: "doc",
+        id: "workflows/index",
+      },
       items: [
         "workflows/promotion",
         {
