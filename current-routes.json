@@ -70,10 +70,6 @@
   "/docs/getting-started/features",
   "/docs/getting-started/getstarted",
   "/docs/getting-started/quickstart",
-  "/docs/HowTo/operational/",
-  "/docs/HowTo/operational/Reset-Consumer-Offsets",
-  "/docs/HowTo/topics/View-consumer-lag",
-  "/docs/HowTo/topics/View-topic-events",
   "/docs/HowTo/zothers",
   "/docs/metadata-management/import-export/",
   "/docs/metadata-management/import-export/exportdata",
@@ -130,6 +126,9 @@
   "/docs/workflows/topic/my-topic-requests",
   "/docs/workflows/topic/promote-topic",
   "/docs/workflows/topic/request-topic",
+  "/docs/workflows/topic/reset-consumer-offsets",
   "/docs/workflows/topic/topic-overview",
+  "/docs/workflows/topic/view-consumer-lag",
+  "/docs/workflows/topic/view-topic-events",
   "/"
 ]

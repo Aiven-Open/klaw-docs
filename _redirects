@@ -92,6 +92,10 @@
 /docs/HowTo/topics/Promote-a-topic                  /docs/workflows/topic/promote-topic 301
 /docs/HowTo/topics/Request-a-new-topic              /docs/workflows/topic/request-topic 301
 /docs/HowTo/topics/Topic-overview                   /docs/workflows/topic/topic-overview 301
+/docs/HowTo/topics/View-consumer-lag                /docs/workflows/topic/view-consumer-lag 301
+/docs/HowTo/topics/View-topic-events                /docs/workflows/topic/view-topic-events 301
+/docs/HowTo/operational/                            /docs/workflows/topic/reset-consumer-offsets 301
+/docs/HowTo/operational/Reset-Consumer-Offsets      /docs/workflows/topic/reset-consumer-offsets 301
 
 /docs/HowTo/notifications/                       /docs/notifications/email-notification 301
 /docs/HowTo/notifications/email-notification     /docs/notifications/email-notification 301
