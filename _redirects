@@ -90,3 +90,7 @@
 /docs/HowTo/topics/Promote-a-topic                  /docs/workflows/topic/promote-topic 301
 /docs/HowTo/topics/Request-a-new-topic              /docs/workflows/topic/request-topic 301
 /docs/HowTo/topics/Topic-overview                   /docs/workflows/topic/topic-overview 301
+
+/docs/HowTo/notifications/                       /docs/notifications/email-notification 301
+/docs/HowTo/notifications/email-notification     /docs/notifications/email-notification 301
+/docs/HowTo/notifications/slack-notification     /docs/notifications/slack-notification 301
