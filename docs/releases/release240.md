@@ -88,7 +88,7 @@ improved security and prompting users to update their passwords promptly.
 This release introduces significant improvements to the email
 notifications functionality. Emails are now sent in accordance with the
 defined email matrix, ensuring consistency. For more detailed
-information, refer to the [Workflows](../../docs/Concepts/workflows.md#approval-process) documentation.
+information, refer to the [Workflows](../../docs/workflows/index.md#approval-process) documentation.
 
 ### Improved error responses to UI
 
@@ -98,4 +98,4 @@ frontend.
 
 :::note
 For a complete list of improvements, changelog, and to download the
-release, see [GitHub release tag v2.4.0](https://github.com/aiven/klaw/releases/tagv2.4.0)
+release, see [GitHub release tag v2.4.0](https://github.com/Aiven-Open/klaw/releases/tag/v2.4.0)

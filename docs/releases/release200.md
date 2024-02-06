@@ -58,7 +58,7 @@ force-register the schema in case of any compatibility issues during
 registration.
 
 For more information, see [Schema
-Promotion](../../docs/HowTo/schemas/Promote-a-schema).
+Promotion](../../docs/workflows/schema/promote-schema).
 
 ### Authorization from OAuth2 Provider/Active Directory
 
@@ -68,7 +68,7 @@ provider, such as grants in Azure Active Directory, and Klaw will
 validate and assign these roles to users during the sign-up process.
 
 For more information, see
-[Authorization](../../docs/HowTo/authorization.md).
+[Authorization](../../docs/authentication-authorization/authorization.md).
 
 To enable the authorization feature, set the below property to value
 `true` in the `application.properties` file: :

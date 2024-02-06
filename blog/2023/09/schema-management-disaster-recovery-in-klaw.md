@@ -140,7 +140,7 @@ As the topic owner, you have the authority to approve, initiate, or reject any s
 
 ![image](../../../static/images/blogimages/SchemaRequest-Workflow.png)
 
-For more information on registering a schema **[see here](../../../docs/HowTo/schemas/Request-a-schema)**
+For more information on registering a schema **[see here](/docs/workflows/schema/request-schema)**
 
 Watch the video below for a step-by-step demonstration of registering a schema in Klaw.
 
@@ -158,7 +158,7 @@ with topics, and integrating them into its metastore. This backup process is str
 clicks, regardless of the volume of schemas or topics.
 
 For more information on synchronizing schemas from the schema registry to Klaw, refer to
-**[sync-schemas-from-cluster](../../../docs/HowTo/kafka-cluster-migration/sync-schemas-from-cluster)**
+**[sync-schemas-from-cluster](/docs/cluster-management/kafka-cluster-sync/sync-schemas-from-cluster)**
 
 The following video demonstrates how schemas are synchronized to Klaw for a selection of topics already present in
 Karapace.
@@ -176,7 +176,7 @@ Select the schemas you want to sync with the cluster. Once you submit your choic
 schemas directly into your designated schema registry environment.
 
 For more information on this synchronization process, refer to
-**[sync-schemas-to-cluster](/docs/HowTo/kafka-cluster-migration/sync-schemas-to-cluster)**
+**[sync-schemas-to-cluster](/docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster)**
 
 The following video demonstrates migrating schemas to a Schema Registry, specifically focusing on a couple of subjects
 already stored in Klaw.
