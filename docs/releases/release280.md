@@ -38,10 +38,15 @@ In this release, we have redesigned the user interface using React to enhance th
 Key updates in the new React UI include:
 
 - Topic Catalogue - Filter by Topic Type
+  ![image](../../static/images/release280/Filter by.png)
 - Activity Log
+  ![image](../../static/images/release280/Activity Log.png)
 - Dashboard landing page
+  ![image](../../static/images/release280/Dashboard.png)
 - View Clusters
+  ![image](../../static/images/release280/view clusters.png)
 - View Environments
+  ![image](../../static/images/release280/view envs.png)
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
