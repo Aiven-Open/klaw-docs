@@ -1,5 +1,5 @@
 ---
-sidebar_position: 99.89
+sidebar_position: 99.88
 ---
 
 # Release 2.8.0
@@ -48,8 +48,10 @@ To disable the preview for the new Klaw user interface, open the
 value of the following property to `false` (Effective from version 2.4.0, it
 is true by default):
 
+```properties
     #Enable new Klaw user interface
     klaw.coral.enabled=false
+```
 
 :::note
 We are taking an incremental, feedback-driven approach in rolling out
