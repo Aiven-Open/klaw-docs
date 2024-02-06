@@ -62,11 +62,11 @@ interfaces, we would like you to share your valuable
 
 ### Feedback Form to help gather community feedback for Klaw
 
-Available in the angular view a new submit feedback form is now available to have your thoughts and feedback better included in Klaws planning and future trajectory
+Available in the angular view a new submit feedback form is now available to have your thoughts and feedback better included in the planning and future trajectory of Klaw
 
 ### New Klaw documentation site structure implemented
 
-The klaw-project.io documentation website has an updated navigation to improve useability.
+The documentation website has an updated navigation to improve usability.
 
 ### Improvements
 
