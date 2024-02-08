@@ -1,10 +1,10 @@
 # High Availability in Klaw
 
-Ensuring high availability is crucial when deploying any application in
-a production environment. High availability mode guarantees minimal or
+Ensuring High Availability is crucial when deploying any application in
+a production environment. High Availability mode guarantees minimal or
 no downtime and balanced processing of requests.
 
-Klaw, a Java-based web application, can be deployed in high availability
+Klaw, a Java-based web application, can be deployed in High Availability
 mode. A key feature of Klaw is its ability to reset the cache in all
 running instances whenever users or administrators request changes.
 

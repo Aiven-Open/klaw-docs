@@ -89,7 +89,7 @@ the source.
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
 
-## Next Steps
+## Next steps
 
 Once you have finished verifying your installation, we recommend you follow the documentation
 in [Configure Klaw with Wizard](configure-klaw-wizard.md).

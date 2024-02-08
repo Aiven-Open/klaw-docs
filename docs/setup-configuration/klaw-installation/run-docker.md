@@ -168,7 +168,7 @@ To verify the installation and access Klaw, follow the steps below:
 
 4. Click **Test connection**.
 
-### 5. Next Steps
+### 5. Next steps
 
 After successfully verifying your installation,
 follow the documentation in [Configure Klaw with Wizard](configure-klaw-wizard.md).
