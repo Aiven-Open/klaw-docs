@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Apache Kafka Governance toolkit <head />"
+      description="Klaw: Apache Kafka® governance toolkit"
     >
       <HomepageHeader />
       <main>

@@ -11,7 +11,7 @@ const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Klaw: Apache Kafka governance toolkit",
+  title: "Klaw: Apache Kafka® governance toolkit",
   tagline:
     "Streamline your Apache Kafka ecosystem, secure your data & simplify governance",
   favicon: "images/favicon.ico",
