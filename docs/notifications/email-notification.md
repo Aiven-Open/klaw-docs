@@ -40,7 +40,7 @@ additional information.
 
 ### Email matrix
 
-| Notification Type          | Requestor | Approver | Requestor Team | Approver Team | All Approvals | Admin |
+| Notification Type          | Requestor | Approver | Requestor team | Approver team | All Approvals | Admin |
 | -------------------------- | --------- | -------- | -------------- | ------------- | ------------- | ----- |
 | User registration request  | cc        |          |                |               |               | to    |
 | User registration approved | to        |          |                |               |               |       |
@@ -60,6 +60,6 @@ additional information.
 | Password changed           | to        |          |                |               |               |       |
 
 :::tip
-'All Approvals' are Users assigned the permission
+'All Approvals' are users assigned the permission
 APPROVE_ALL_REQUESTS_TEAMS. This permission allows users to approve any
 topic, schema, ACL, or connector request from any team.

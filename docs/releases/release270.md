@@ -38,10 +38,10 @@ In this release, we have redesigned the user interface using React to enhance th
 Key updates in the new React UI include:
 
 - Show pending requests
-- User Information
-- Tenant Information
-- View Users
-- View Teams
+- User information
+- Tenant information
+- View users
+- View teams
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the

@@ -87,7 +87,7 @@ URL: [https://host:port/helpwizard]
 
    ![image](../../../static/images/topic/SyncTopicsFromCluster.png)
 
-6. Create Teams
+6. Create teams
 
    After adding clusters and environments, you can create **Teams**. A team
    owns topics and is also a collection of users. A user can manage teams

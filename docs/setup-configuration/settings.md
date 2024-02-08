@@ -11,7 +11,7 @@ notification templates and roles, under **Dashboard -\> Settings**.
 
 - **Roles when adding users**  
   When adding users manually from the
-  Users menu, only the USER role is available. However, you can edit
+  users menu, only the USER role is available. However, you can edit
   this by updating the property `klaw.adduser.roles`.
 - **Tenant Configuration**  
   A tenant is an isolated environment that

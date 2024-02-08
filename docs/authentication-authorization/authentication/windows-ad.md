@@ -13,7 +13,7 @@ configurations in the `application.properties` file in the Klaw Core module.
    values for your Active Directory configuration:
 
    ```java
-   # Uncomment the below ActiveDirectory properties for Users to login with their active directory credentials.
+   # Uncomment the below ActiveDirectory properties for users to login with their active directory credentials.
    #spring.ad.domain=
    #spring.ad.url=
    #spring.ad.rootDn=
