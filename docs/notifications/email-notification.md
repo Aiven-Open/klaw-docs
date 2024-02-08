@@ -45,7 +45,7 @@ additional information.
 | User registration request  | cc        |          |                |               |               | to    |
 | User registration approved | to        |          |                |               |               |       |
 | New topic request          | cc        |          |                | to            | bcc           |       |
-| New Topic approved         | to        | cc       |                | cc            |               |       |
+| New topic approved         | to        | cc       |                | cc            |               |       |
 | Promote topic request      | cc        |          |                | to            | bcc           |       |
 | New ACL request            | cc        |          |                | to            | bcc           |       |
 | New ACL approved           | to        | cc       |                | cc            |               |       |
@@ -62,4 +62,4 @@ additional information.
 :::tip
 'All Approvals' are Users assigned the permission
 APPROVE_ALL_REQUESTS_TEAMS. This permission allows users to approve any
-Topic, schema, ACL, or connector request from any team.
+topic, schema, ACL, or connector request from any team.

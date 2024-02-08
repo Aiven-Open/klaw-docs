@@ -59,7 +59,8 @@ interfaces, we would like you to share your valuable
 
 ### New React landing page
 
-Logging into Klaw will now redirect you to the new React Topic catalog page, allowing you to perform all tasks without needing the older UI.
+Logging into Klaw will now redirect you to the new React topic catalog page, allowing you to perform all tasks
+without needing the older UI.
 
 ### Last status of environment
 

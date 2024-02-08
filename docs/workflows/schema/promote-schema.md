@@ -29,7 +29,7 @@ You can see all created schema environments in the same **Topic overview
 
 To promote a schema to a higher environment, follow these steps:
 
-1. Select _Topics_ on the navigation bar.
+1. Select **Topics** on the navigation bar.
 2. Select the Apache Kafka® topic for which you wish to promote the schema to the next environment.
 3. Select the **Schema** tab under the main topic section.
 4. Select the **Promote to \[Next Environment\]** button to promote the

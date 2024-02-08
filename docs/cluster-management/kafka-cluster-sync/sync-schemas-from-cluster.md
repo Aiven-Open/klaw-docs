@@ -5,7 +5,7 @@ below procedure, which involves retrieving the topics and their schema
 versions from an existing schema registry cluster and saving them to the
 topic.
 
-As Topic Owners own schemas, this functionality allows you to
+As topic owners own schemas, this functionality allows you to
 select topics with schemas and synchronize them with Klaw metadata.
 
 :::note

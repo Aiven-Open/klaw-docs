@@ -11,7 +11,7 @@ Follow these steps to claim a topic:
 1. In Klaw, select **Topics** on the navigation bar.
 2. Select the specific Apache Kafka® topic you wish to claim.
 3. A **Claim Topic** button will be available on the top right of the
-   Topic by Environment view.
+   topic by Environment view.
 
    :::note
    This option will only be available on topics your team does not own.

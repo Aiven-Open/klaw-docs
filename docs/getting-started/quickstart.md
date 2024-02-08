@@ -28,11 +28,11 @@ credentials `william : welcome` <!--vale NO_SPELL-->
 
 ![Screenshot: Klaw's login page](../../static/images/quickstart/QS_LoginScreen.png)
 
-## 3. Topics Catalog page
+## 3. Topics catalog page
 
 After logging in you will be redirected to our brand-new feature rich React UI.
 
-You can "Request new Topic" from the top right corner, or you can select the dropdown "Request a new" to view all your
+You can "Request new topic" from the top right corner, or you can select the dropdown "Request a new" to view all your
 options.
 
 ![Screenshot: Topic catalog page](../../static/images/quickstart/AfterLogin.png)

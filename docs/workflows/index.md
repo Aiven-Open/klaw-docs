@@ -154,7 +154,7 @@ In Klaw, subscriptions (ACLs) are defined to secure Apache Kafka topics.
 Each team that wants to produce or consume from a topic becomes the
 subscription owner. Teams can submit subscription requests for a
 specific topic (either as a producer or consumer), which are then
-reviewed by the Topic Owner team for approval. The Topic Owner team
+reviewed by the topic owner team for approval. The topic owner team
 alone can access consumer offsets, view topic contents, and manage
 any relevant subscription credentials, if applicable. The
 subscription owner alone has the ability to delete their

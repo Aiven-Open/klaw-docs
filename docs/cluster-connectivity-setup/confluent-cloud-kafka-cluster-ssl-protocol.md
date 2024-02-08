@@ -16,7 +16,7 @@ References:
 
 [//]: # "<!-- markdown-link-check-disable -->"
 
-- [Confluent documentation Topic(v3)](<https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>)
+- [Confluent documentation topic(v3)](<https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3)>)
 - [Confluent documentation ACL(v3)](<https://docs.confluent.io/cloud/current/api.html#tag/ACL-(v3)>)
 
 [//]: # "<!-Topic (v3)- markdown-link-check-enable -->"

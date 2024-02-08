@@ -54,7 +54,7 @@ value of the following property to true:
     # Enable new Klaw user interface
     klaw.coral.enabled=true
 
-Login to Klaw and under Topics, click the banner with the preview link.
+Login to Klaw and under **Topics**, click the banner with the preview link.
 
 Below is a screenshot of the redesigned UI
 
