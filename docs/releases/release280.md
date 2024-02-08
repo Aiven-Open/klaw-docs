@@ -81,7 +81,7 @@ The documentation website has an updated navigation to improve usability.
 
 ### Bug Fixes
 
-- Fix analytics for the dashboard and add 30/60/90 day drop down in coral
+- Fix analytics for the dashboard and added 30/60/90 day drop down in coral
 - New User email only sent to the user directly now
 - Version number for data migration is now stored internally instead of through the application.properties
 
