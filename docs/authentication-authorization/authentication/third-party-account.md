@@ -1,4 +1,4 @@
-# Login with Third-party accounts
+# Login with third-party accounts
 
 You have the option to configure any third-party login account to access
 Klaw.
@@ -51,10 +51,10 @@ module.
 
    ![image](../../../static/images/authentication/OAuthLogin.png)
 
-   Enter the credentials for the third party account.
+   Enter the credentials for the third-party account.
 
    :::note
-   Login page for third party account is not fully updated.
+   Login page for third-party account is not fully updated.
    :::
 
 8. If this is your first time logging in, you will be presented with a
