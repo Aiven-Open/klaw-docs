@@ -1,4 +1,4 @@
-# Connect with Confluent Cloud Apache Kafka® Cluster
+# Connect with Confluent Cloud Apache Kafka® cluster
 
 Confluent Cloud Apache Kafka is a fully managed distributed data streaming
 platform, deployable in a cloud, maintained by Confluent. This section

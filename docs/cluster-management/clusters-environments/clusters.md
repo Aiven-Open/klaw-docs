@@ -65,7 +65,7 @@ To update a cluster, follow these steps:
 
 ![image](../../../static/images/clusters/UpdateCluster.png)
 
-## Delete Cluster
+## Delete cluster
 
 To delete a cluster, follow these steps:
 
