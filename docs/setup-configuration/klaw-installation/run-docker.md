@@ -43,9 +43,9 @@ communication between containers, and sets up a local h2 database for
 quick setup.
 
 Replace the `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET` value with your own
-generated value in Docker compose below:
+generated value in Docker Compose below:
 
-#### Linux Docker compose
+#### Linux Docker Compose
 
 ```{.yaml caption="Deploy latest Klaw release with docker compose on Linux"}
 ---
@@ -78,7 +78,7 @@ volumes:
     driver: local
 ```
 
-#### Windows & Mac Docker compose
+#### Windows & Mac Docker Compose
 
 ```{.yaml caption="Deploy latest Klaw release with docker compose on Windows or Mac"}
 ---
