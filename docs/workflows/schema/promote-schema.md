@@ -38,7 +38,7 @@ To promote a schema to a higher environment, follow these steps:
 5. Choose the version of the schema that you want to promote to the
    higher environment. This schema will be available for your team
    members to review when they approve or decline the request.
-6. Optionally, if the Schema you wish to promote is not compatible with
+6. Optionally, if the schema you wish to promote is not compatible with
    the existing schemas on that topic, you can use the **Force Register
    Schema** option to register the schema.
 7. Confirm the promotion to the next environment by selecting **Submit
@@ -63,23 +63,23 @@ The user who raised a request cannot approve it. Instead, a different user from 
 
 ## Schema validation
 
-When you submit a Schema Request, the Schema will be checked for
-validation against the Schema Registry.
+When you submit a schema request, the schema will be checked for
+validation against the schema registry.
 
 In case of errors, Klaw provides the following failure messages:
 
 - **Schema is not compatible**: This message indicates that the submitted
-  Schema fails to comply with the Schema Compatibility set on the schema
-  registry. To fix this issue, review the Schema to see what is causing
+  schema fails to comply with the Schema Compatibility set on the schema
+  registry. To fix this issue, review the schema to see what is causing
   the compatibility problem.
 
 - **Unable to validate Schema Compatibility**: It indicates that the submitted Schema may be invalid
-  or missing the required Schema definition fields. It could also occur if
-  there is a problem with communication to the Schema Registry, such as if
-  it is not reachable. To fix this issue, review your Schema to ensure it
+  or missing the required schema definition fields. It could also occur if
+  there is a problem with communication to the schema registry, such as if
+  it is not reachable. To fix this issue, review your schema to ensure it
   is correctly defined. If it is, contact your administrator to resolve
-  the issue with communication to the Schema Registry.
+  the issue with communication to the schema registry.
 
 :::note
-Using "forceRegister" <!--vale NO_SPELL--> will bypass the Schema Validation as you will be
+Using "forceRegister" <!--vale NO_SPELL--> will bypass the schema validation as you will be
 overriding the compatibility on provisioning.

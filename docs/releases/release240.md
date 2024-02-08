@@ -44,7 +44,7 @@ to enhance user experience and provide a more intuitive design:
     visual appearance of Coral with a consistent blue color scheme.
   - _SwitchTeams_: Easily switch between teams within the Coral
     interface, allowing smoother navigation and collaboration.
-- **Schema Synchronization**: Introducing the Schema synchronization
+- **Schema Synchronization**: Introducing the schema synchronization
   feature that allows for seamless synchronization of schemas.
   - _Cluster to Klaw schema synchronization_: With this feature, you
     can effortlessly synchronize all schemas from a schema registry

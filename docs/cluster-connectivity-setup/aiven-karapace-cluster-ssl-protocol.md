@@ -1,7 +1,7 @@
 # Connect to Karapace schema registry with SSL protocol
 
 This section provides information on connecting a Karapace schema registry using the SSL protocol. Klaw connects to the
-Schema Registry over the REST protocol.
+schema registry over the REST protocol.
 
 ## Prerequisite
 

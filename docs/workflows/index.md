@@ -124,7 +124,7 @@ connector-related requests:
 
 ## Schema owner
 
-Klaw can integrate with _Karapace_ or _Schema registry_ and define
+Klaw can integrate with _Karapace_ or _schema registry_ and define
 schemas on a topic. Currently, the topic owner team can raise a
 schema request, and they become the owners of the schema and its
 evolution.
@@ -138,13 +138,13 @@ schema-related requests:
 
 | Operation Type         | Edit topic | Requestors team | All Approvers | Admin |
 | ---------------------- | ---------- | --------------- | ------------- | ----- |
-| New Schema request     |            | ✅              | ✅            |       |
-| Delete Schema request  |            | ✅              | ✅            |       |
-| Promote Schema request |            | ✅              | ✅            |       |
+| New schema request     |            | ✅              | ✅            |       |
+| Delete schema request  |            | ✅              | ✅            |       |
+| Promote schema request |            | ✅              | ✅            |       |
 
 :::note
-With Schemas, there is no specific Claim Schema as it is assigned to a topic. The owner of the topic also owns the
-Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an
+With schemas, there is no specific "Claim schema" as it is assigned to a topic. The owner of the topic also owns the
+schema. Additionally, there is no Update schema since existing schemas are maintained, and a new schema with an
 incremented version number is added instead.
 :::
 

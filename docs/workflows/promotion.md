@@ -19,12 +19,12 @@ promote a topic, schema, or connector from one environment to the next.
 Server Configuration Found under **Dashboard -\> Settings**, the
 Superadmin user has the ability to define the **Tenant Model**, which
 configures which environments promote to the next environment in your
-organization. Each resource Topic/Schema must already be created by the
+organization. Each resource topic/schema must already be created by the
 superadmin under **Environments** before being added to the **Tenant
 Model** or the server will reject the configuration. The below example
 defines the Apache Kafka topic environments as "DEV" & "TST" and specifies
 the order that will be enforced in the promotion of topics. Similarly,
-the Schema Registry environments have all been defined and placed in
+the schema registry environments have all been defined and placed in
 order.
 
 ```json
@@ -43,7 +43,8 @@ order.
 
 :::note
 In Klaw version 2.2.0, the `orderOfSchemaPromotionEnvsList` has been replaced with an enhanced feature that allows users
-to associate a schema registry with a Apache Kafka environment in the Add/Modify Schema Environment pages—matching the order of
+to associate a schema registry with a Apache Kafka environment in the Add/Modify schema Environment pages—matching
+the order of
 promotion defined in `orderOfTopicPromotionEnvsList`.
 :::
 

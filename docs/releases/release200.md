@@ -10,7 +10,7 @@ Date: 1st Feb, 2023
 
 Klaw version 2.0.0 is a major release with several new features and
 improvements. Key highlights of this release include redesigned Request
-screens in the React UI, Schema promotion, codebase optimizations, and
+screens in the React UI, schema promotion, codebase optimizations, and
 additional enhancements.
 
 ## Breaking changes

@@ -27,7 +27,7 @@ This capability is incredibly powerful. However, it is essential to
 implement proper governance and security measures to ensure that the
 messages are correctly structured and the producers have the necessary
 rights to process sensitive information like PII. This is where Access
-Control Lists and Schema Registries come into play. They help secure the
+Control Lists and schema registries come into play. They help secure the
 Apache Kafka environment and ensure that data privacy and fidelity are
 maintained. The key to ensuring all these security measures are
 effective is properly assigning ownership of the topic, which serves as

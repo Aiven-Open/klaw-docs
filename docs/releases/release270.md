@@ -60,7 +60,8 @@ interfaces, we would like you to share your valuable
 
 ### Editable schema requests
 
-You can now edit Schema requests in this release. This feature allows for corrections without the need to delete and create a new request.
+You can now edit schema requests in this release. This feature allows for corrections without the need to delete and
+create a new request.
 
 ### Windows build capability
 

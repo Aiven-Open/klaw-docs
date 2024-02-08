@@ -4,7 +4,7 @@ The process of requesting a new topic to be created in Apache Kafka® is simple
 and speedy.
 
 The team that requests a topic will automatically become the topic owner
-and can approve or deny any Apache Kafka Connector, Schemas, or Access Control
+and can approve or deny any Apache Kafka Connector, schemas, or Access Control
 List requests made against the topic.
 
 ## Prerequisites
