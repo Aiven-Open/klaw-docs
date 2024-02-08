@@ -37,7 +37,7 @@ In this release, we have redesigned the user interface using React to enhance th
 
 Key updates in the new React UI include:
 
-- Topic catalog - Filter by Topic Type
+- Topic catalog - Filter by Topic type
   ![image](../../static/images/release280/Filter-by.png)
 - Activity log
   ![image](../../static/images/release280/Activity-Log.png)
