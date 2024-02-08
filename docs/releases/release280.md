@@ -77,7 +77,7 @@ The documentation website has an updated navigation to improve usability.
 
 - A new optional permission to only allow certain users create the initial topic
 - Allow Deletion of a Superadmin User
-- Redesigned Login, Forgot Password and Sign Up Pages
+- Redesigned Login, Forgot Password, and Sign Up Pages
 
 ### Bug Fixes
 
