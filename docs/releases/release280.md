@@ -75,7 +75,7 @@ The documentation website has an updated navigation to improve usability.
 
 ### Improvements
 
-- A new optional permission to only allow certain users create the initial topic
+- A new optional permission to only allow certain users to create the initial topic
 - Allow Deletion of a Superadmin User
 - Redesigned Login, Forgot Password, and Sign Up Pages
 
