@@ -4,10 +4,11 @@ sidebar_position: 2
 
 # Quickstart
 
-In this tutorial, we will install Klaw with docker, and request for a Apache Kafka® topic and verify its existence on Apache Kafka
+In this tutorial, we will install Klaw with Docker, and request for a Apache Kafka® topic and verify its existence on
+Apache Kafka
 cluster.
 
-## 1. Run the docker script
+## 1. Run the Docker script
 
 ```bash copy-button
 docker run -d -t -i -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" -p 9343:9343 --name klaw-cluster-api aivenoy/klaw-cluster-api:nightly --add-host=host.docker.internal:host-gateway &&
@@ -22,7 +23,7 @@ registry servers in Klaw.
 
 ## 2. Login to Klaw
 
-After docker has started 5 processes, you may verify them by `docker ps`.
+After Docker has started 5 processes, you may verify them by `docker ps`.
 Now you may log into Klaw on `http://localhost:9097` with
 credentials `william : welcome` <!--vale NO_SPELL-->
 

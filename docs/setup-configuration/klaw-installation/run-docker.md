@@ -43,9 +43,9 @@ communication between containers, and sets up a local h2 database for
 quick setup.
 
 Replace the `KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET` value with your own
-generated value in docker compose below:
+generated value in Docker compose below:
 
-#### Linux docker compose
+#### Linux Docker compose
 
 ```{.yaml caption="Deploy latest Klaw release with docker compose on Linux"}
 ---
@@ -78,7 +78,7 @@ volumes:
     driver: local
 ```
 
-#### Windows & Mac docker compose
+#### Windows & Mac Docker compose
 
 ```{.yaml caption="Deploy latest Klaw release with docker compose on Windows or Mac"}
 ---
@@ -123,7 +123,7 @@ To configure a property, for example,
 ### 2. Run Docker Compose
 
 In the same directory that you created the
-[docker-compose.yaml] file, run the following command to
+`docker-compose.yaml` file, run the following command to
 start the containers defined in the Docker Compose file:
 
     docker-compose up -d
@@ -178,7 +178,7 @@ follow the documentation in [Configure Klaw with Wizard](configure-klaw-wizard.m
 Klaw also provides Docker scripts you can download from the
 project's GitHub repository. These scripts include a README file that
 explains how to build and deploy the latest version of Klaw. You can
-find these scripts at in [docker-scripts](https://github.com/aiven/klaw/tree/main/docker-scripts).
+find these scripts at in [`docker-scripts`](https://github.com/aiven/klaw/tree/main/docker-scripts).
 
 ## Enabling HTTPS
 
@@ -209,7 +209,7 @@ directory:
 
 ## Configure Docker images
 
-After copying the Keystores to the Klaw docker volume, you can set the
+After copying the Keystores to the Klaw Docker volume, you can set the
 keystore location by simply specifying `/klaw/client.keystore.p12` and
 `/klaw/client.truststore.jks`.
 
@@ -263,7 +263,7 @@ There are two ways to configure this:
 ## How to use an existing H2 Database
 
 If you already have a configured environment with users, etc., you can
-transfer them to the docker image by copying the `klawprodb` files into
-the docker volume. It is recommended that you back up any existing
-`prodb` files in the docker volume in case you need to revert to them in
+transfer them to the Docker image by copying the `klawprodb` files into
+the Docker volume. It is recommended that you back up any existing
+`prodb` files in the Docker volume in case you need to revert to them in
 the future.
