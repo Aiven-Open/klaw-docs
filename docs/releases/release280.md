@@ -26,8 +26,8 @@ kafka clients on schema changes
 
 ### Docker
 
-[Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core)
-[Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
+- [Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core)
+- [Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 ## What's new in Klaw 2.8.0
 
@@ -38,15 +38,15 @@ In this release, we have redesigned the user interface using React to enhance th
 Key updates in the new React UI include:
 
 - Topic catalog - Filter by Topic Type
-  ![image](../../static/images/release280/Filter by.png)
+  ![image](../../static/images/release280/Filter-by.png)
 - Activity log
-  ![image](../../static/images/release280/Activity Log.png)
+  ![image](../../static/images/release280/Activity-Log.png)
 - Dashboard landing page
   ![image](../../static/images/release280/Dashboard.png)
 - View clusters
-  ![image](../../static/images/release280/view clusters.png)
+  ![image](../../static/images/release280/view-clusters.png)
 - View environments
-  ![image](../../static/images/release280/view envs.png)
+  ![image](../../static/images/release280/view-envs.png)
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
