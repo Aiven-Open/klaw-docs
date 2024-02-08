@@ -61,7 +61,7 @@ details within Klaw.
   an action.
 
 - **Create**  
-  Create a new topic Request is in this category.
+  Create a new topic request is in this category.
 
 - **Delete**  
   Delete a topic request is in this category.

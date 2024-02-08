@@ -19,6 +19,6 @@ ability to edit an existing topic.
    configuration.
 6. Submit the configuration update request by selecting **Submit
    Update**.
-7. A Request to update the topic with the new configuration is created,
+7. A request to update the topic with the new configuration is created,
    and a member of your team will be able to approve or decline the
    request in their **Approvers** view.

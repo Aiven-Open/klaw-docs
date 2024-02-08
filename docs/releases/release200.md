@@ -9,7 +9,7 @@ Date: 1st Feb, 2023
 ## Overview
 
 Klaw version 2.0.0 is a major release with several new features and
-improvements. Key highlights of this release include redesigned Request
+improvements. Key highlights of this release include redesigned request
 screens in the React UI, schema promotion, codebase optimizations, and
 additional enhancements.
 
@@ -20,16 +20,16 @@ Instead, Klaw now supports Java 17 (LTS) and Java 19 (latest).
 
 ## What's new in Klaw 2.0.0
 
-### Redesigned Request screens with React UI
+### Redesigned request screens with React UI
 
 With the switch to React, this release features a redesign of the
 following user interfaces:
 
-- **Topic Request**: Users can now submit topic requests using the new
+- **Topic request**: Users can now submit topic requests using the new
   UI.
-- **Subscription Request** (Producer/Consumer): Users can now submit
+- **Subscription request** (Producer/Consumer): Users can now submit
   ACL requests for both producers and consumers using the new UI.
-- **Schema Request**: Users can now submit schema requests using the
+- **Schema request**: Users can now submit schema requests using the
   new UI.
 
 ![image](../../static/images/topic/RequestTopic-react.png)

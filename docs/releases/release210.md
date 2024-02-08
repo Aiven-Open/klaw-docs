@@ -16,7 +16,7 @@ enhancements.
 
 ## What's new in Klaw 2.1.0
 
-### Redesigned Request screens with React UI
+### Redesigned request screens with React UI
 
 With the switch to React, this release features a redesign of the
 following user interfaces:
