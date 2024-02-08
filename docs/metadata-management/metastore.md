@@ -1,7 +1,7 @@
 # Metastore data
 
 The Klaw metastore holds important audit and governance data related to the management and governance of your Apache
-Kafka® ecosystem. This data includes Topic, schema, ACL, and Connector requests and audit trails.
+Kafka® ecosystem. This data includes Topic, schema, ACL, and connector requests and audit trails.
 
 By default, Klaw will use
 [H2](https://www.h2database.com/html/main.html) as the metastore; this

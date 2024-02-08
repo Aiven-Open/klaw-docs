@@ -99,7 +99,7 @@ the schema registry.
   Enhancements
 - [#1550](https://github.com/Aiven-Open/klaw/pull/1550) Improved email copy on new installations
 - [#1414](https://github.com/Aiven-Open/klaw/pull/1414) "Edit topic" can now also alter the advanced configuration
-- [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted Connector not added to Cache
+- [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted connector not added to Cache
 - [#1555](https://github.com/Aiven-Open/klaw/pull/1555) Superuser was able to access Coral UI
 - [#1546](https://github.com/Aiven-Open/klaw/pull/1546) Promoted schema requests should use PROMOTE request
   operation type

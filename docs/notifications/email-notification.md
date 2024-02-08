@@ -52,9 +52,9 @@ additional information.
 | New schema request         | cc        |          |                | to            | bcc           |       |
 | New schema approved        | to        | cc       |                | cc            |               |       |
 | Promote schema request     | cc        |          |                | to            | bcc           |       |
-| New Connector request      | cc        |          |                | to            | bcc           |       |
-| New Connector approved     | to        | cc       |                | cc            |               |       |
-| Promote Connector request  | cc        |          |                | to            | bcc           |       |
+| New connector request      | cc        |          |                | to            | bcc           |       |
+| New connector approved     | to        | cc       |                | cc            |               |       |
+| Promote connector request  | cc        |          |                | to            | bcc           |       |
 | New Claim request          | cc        |          |                | to            | bcc           |       |
 | Password reset             | to        |          |                |               |               |       |
 | Password changed           | to        |          |                |               |               |       |
@@ -62,4 +62,4 @@ additional information.
 :::tip
 'All Approvals' are Users assigned the permission
 APPROVE_ALL_REQUESTS_TEAMS. This permission allows users to approve any
-Topic, schema, ACL, or Connector request from any team.
+Topic, schema, ACL, or connector request from any team.

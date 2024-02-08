@@ -10,7 +10,7 @@ Date: 10th of May, 2023
 
 Klaw version 2.3.0 is a minor release with several new features and
 improvements. Key highlights of this release include redesigned
-Connectors interface, improved **Topic overview** and Grouping of ACLs.
+connectors interface, improved **Topic overview** and Grouping of ACLs.
 
 ## What's new in Klaw 2.3.0
 
@@ -20,16 +20,16 @@ In this release, we have redesigned some key user interfaces using React
 to enhance user experience and provide a more intuitive design:
 
 - **Browse Connectors**: With the redesigned user interface for
-  Connectors, you can now explore and filter the available connectors
+  connectors, you can now explore and filter the available connectors
   with a more intuitive and user-friendly interface.
 - **Request new Connector**: With the updated user interface, users
   can now easily submit a request for a new connector.
 - **Approve Connectors requests**: The new user interface makes
-  approving or rejecting Connector requests easy. Access the _Approve
+  approving or rejecting connector requests easy. Access the _Approve
   requests - connectors_ screen to quickly and effortlessly approve or
   reject requests.
-- **My team's requests** for Connectors: In addition to viewing all
-  connectors from the Connectors screen, you can now access an
+- **My team's requests** for connectors: In addition to viewing all
+  connectors from the connectors screen, you can now access an
   overview of your team's connector requests using our newly designed
   \"My team's requests\" interface. You can also quickly delete your
   own requests from this interface.

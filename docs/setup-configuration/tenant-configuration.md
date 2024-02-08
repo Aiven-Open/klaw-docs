@@ -52,7 +52,7 @@ You can configure the following in a tenant:
 
       Field: `requestTopicsEnvironmentsList`
 
-- Base sync environment Apache Kafka Connector
+- Base sync environment Apache Kafka Connect
 
   This is the base Apache Kafka Connect environment in a hierarchy of
   environments. Make sure this environment already exists under
@@ -68,7 +68,7 @@ You can configure the following in a tenant:
 
       Field: `orderOfConnectorsPromotionEnvsList`
 
-- Request Connectors Environments List
+- Request connectors Environments List
 
   Define a set of environments for which Apache Kafka connectors can be
   requested directly. Other environments cannot be requested

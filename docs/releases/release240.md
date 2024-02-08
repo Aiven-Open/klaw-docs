@@ -32,7 +32,7 @@ In this release, we have redesigned some key user interfaces using React
 to enhance user experience and provide a more intuitive design:
 
 - **Browse Connectors**: With the redesigned user interface for
-  Connectors, you can now explore and filter the available connectors
+  connectors, you can now explore and filter the available connectors
   with a more intuitive and user-friendly interface.
 - **Enhanced React UI**: With the switch to React, this release
   features a redesign of the following user interfaces:
@@ -52,7 +52,7 @@ to enhance user experience and provide a more intuitive design:
   - _Klaw to Cluster schema synchronization_: With this feature, you
     can synchronize schemas, along with their versions, from Klaw to
     a schema registry cluster.
-- **Enhanced Apache Kafka® Connector management**
+- **Enhanced Apache Kafka® connectors management**
   - _Kafka connector status monitoring_: Gain visibility into the
     status of Apache Kafka connectors and tasks, allowing you to track
     their progress and performance efficiently.

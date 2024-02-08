@@ -116,11 +116,11 @@ connector-related requests:
 
 | Operation Type            | Edit topic | Requestors team | All Approvers | Admin |
 | ------------------------- | ---------- | --------------- | ------------- | ----- |
-| New Connector request     |            | ✅              | ✅            |       |
-| Update Connector request  |            | ✅              | ✅            |       |
-| Delete Connector request  |            | ✅              | ✅            |       |
-| Claim Connector request   | ✅         |                 | ✅            |       |
-| Promote Connector request |            | ✅              | ✅            |       |
+| New connector request     |            | ✅              | ✅            |       |
+| Update connector request  |            | ✅              | ✅            |       |
+| Delete connector request  |            | ✅              | ✅            |       |
+| Claim connector request   | ✅         |                 | ✅            |       |
+| Promote connector request |            | ✅              | ✅            |       |
 
 ## Schema owner
 
