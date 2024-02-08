@@ -67,7 +67,7 @@ interfaces, we would like you to share your valuable
 
 ### Feedback Form to help gather community feedback for Klaw
 
-Available in the angular view a new submit feedback form is now available to have your thoughts and feedback better included in the planning and future trajectory of Klaw
+Available in the angular view, a new submit feedback form is now available to have your thoughts and feedback better included in the planning and future trajectory of Klaw
 
 ### New Klaw documentation site structure implemented
 
