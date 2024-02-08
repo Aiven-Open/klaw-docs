@@ -28,7 +28,7 @@ prerequisites:
   VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQ=
   ```
 
-## Klaw Docker QuickStart
+## Klaw Docker quickstart
 
 Running Klaw in Docker is a simple and efficient way to deploy and manage Klaw instances. Follow the steps below to get
 Klaw up and running in Docker quickly.
@@ -36,7 +36,7 @@ Klaw up and running in Docker quickly.
 ### 1. Create a Docker Compose file
 
 To begin, create a Docker Compose file called `docker-compose.yml` that
-defines the configuration for running Klaw. For a quick start, you can
+defines the configuration for running Klaw. For a quickstart, you can
 use the following sample Docker Compose file. This configuration deploys
 the latest release of Klaw, and uses localhost networking for easy
 communication between containers, and sets up a local h2 database for

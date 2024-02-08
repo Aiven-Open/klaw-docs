@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Quick Start
+# Quickstart
 
 In this tutorial, we will install Klaw with docker, and request for a Apache Kafka® topic and verify its existence on Apache Kafka
 cluster.
