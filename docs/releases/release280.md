@@ -87,7 +87,7 @@ The documentation website has an updated navigation to improve usability.
 
 ### DB upgrade
 
-In this release there is a migration utility to add a new fine grain permission.
+In this release, there is a migration utility to add a new fine-grain permission.
 
 :::note
 For a complete list of improvements, changelog, and to download the
