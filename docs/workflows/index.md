@@ -157,7 +157,7 @@ specific topic (either as a producer or consumer), which are then
 reviewed by the Topic Owner team for approval. The Topic Owner team
 alone can access consumer offsets, view topic contents, and manage
 any relevant subscription credentials, if applicable. The
-Subscription owner alone has the ability to delete their
+subscription owner alone has the ability to delete their
 subscription.
 
 ### Subscription request approvals
@@ -169,15 +169,15 @@ subscription-related requests:
 
 | Operation Type              | Edit topic | Requestors team | All Approvers | Admin |
 | --------------------------- | ---------- | --------------- | ------------- | ----- |
-| New Subscription request    |            | ✅              | ✅            |       |
-| Delete Subscription request | ✅         |                 | ✅            |       |
-| Claim Subscription request  | ✅         |                 | ✅            |       |
+| New subscription request    |            | ✅              | ✅            |       |
+| Delete subscription request | ✅         |                 | ✅            |       |
+| Claim subscription request  | ✅         |                 | ✅            |       |
 
 :::tip
-When claiming a Subscription, if the Subscription is owned by a team
+When claiming a subscription, if the subscription is owned by a team
 that does not own the corresponding topic, then two approvals are
 required:
 
-- Approval by the team that owns the Subscription.
+- Approval by the team that owns the subscription.
 - Approval by the team that owns the topic.
   :::

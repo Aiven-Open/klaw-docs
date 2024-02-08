@@ -48,7 +48,7 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### Schema Promotion
+### Schema promotion
 
 Users can now promote their schemas from lower to higher environments.
 They can select a specific version of the schema and submit a request
@@ -58,7 +58,7 @@ force-register the schema in case of any compatibility issues during
 registration.
 
 For more information, see [Schema
-Promotion](../../docs/workflows/schema/promote-schema).
+promotion](../../docs/workflows/schema/promote-schema).
 
 ### Authorization from OAuth2 Provider/Active Directory
 

@@ -5,7 +5,7 @@ administration, and control of schemas. With schema promotion, a schema
 can be initially created in the lowest environment and then promoted to
 higher environments as needed.
 
-Learn more: [Concepts—Promotion](../../workflows/promotion.md)
+Learn more: [Promotion](../../workflows/promotion.md)
 
 ## Prerequisites
 
