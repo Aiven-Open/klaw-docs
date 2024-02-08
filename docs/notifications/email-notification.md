@@ -1,4 +1,4 @@
-# Email Notifications
+# Email notifications
 
 Email notifications can be sent to users when actions are performed in
 Klaw that requires their attention.
