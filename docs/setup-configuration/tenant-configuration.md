@@ -38,7 +38,7 @@ You can configure the following in a tenant:
 
 - Order of Apache Kafka topics promotion environments
 
-  Define a set of environments in order to promote a
+  Define a set of environments to promote a
   Apache Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
   environment already exists under Environments (Apache Kafka)
 
@@ -62,8 +62,9 @@ You can configure the following in a tenant:
 
 - Order of Apache Kafka Connect promotion environments
 
-  Define a set of environments in order to promote a Apache
-  Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
+  Define a set of environments to promote a Apache Kafka connector.
+  Ex: \[\"DEV\", \"TST\"\].
+  Make sure this
   environment already exists under Environments (Apache Kafka Connect)
 
       Field: `orderOfConnectorsPromotionEnvsList`

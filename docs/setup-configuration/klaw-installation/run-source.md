@@ -83,7 +83,7 @@ the source.
    http://localhost:9097/
    ```
 
-7. Log in as the admin user to get started.
+7. Log in as the administrator user to get started.
 
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
@@ -92,4 +92,4 @@ the source.
 ## Next steps
 
 Once you have finished verifying your installation, we recommend you follow the documentation
-in [Configure Klaw with Wizard](configure-klaw-wizard.md).
+in [Configure Klaw with wizard](configure-klaw-wizard.md).

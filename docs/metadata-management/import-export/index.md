@@ -1,4 +1,4 @@
-# Metadata Import/Export
+# Metadata import/export
 
 Taking backups of Klaw metadata and importing it into another Klaw
 instance are important operations. These features provided by Klaw serve

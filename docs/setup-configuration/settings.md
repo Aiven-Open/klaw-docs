@@ -1,6 +1,6 @@
 # Klaw settings
 
-You can configure Klaw for various Klaw functionalities, such as Email
+You can configure Klaw for various Klaw functionalities, such as email
 notification templates and roles, under **Dashboard -\> Settings**.
 
 - **Email Notification templates**  

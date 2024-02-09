@@ -8,7 +8,7 @@ Klaw, a Java-based web application, can be deployed in High Availability
 mode. A key feature of Klaw is its ability to reset the cache in all
 running instances whenever users or administrators request changes.
 
-## Why is High Availability Important?
+## Why is High Availability important?
 
 To minimize interruptions and downtime, it is crucial to prepare for
 unforeseen events that can cause server failures. Emergencies can
@@ -17,7 +17,7 @@ Implementing highly available systems can reduce the impact of such
 events, as these systems often can automatically recover from failures
 in components or servers.
 
-## High Availability Architecture
+## High Availability architecture
 
 Ensuring systems can handle higher workloads and substantial traffic is
 undeniably vital. However, it is equally important to identify potential

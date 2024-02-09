@@ -3,7 +3,7 @@
 Email notifications can be sent to users when actions are performed in
 Klaw that requires their attention.
 
-Skip to see all notifications sent and to which users [Email Matrix](#email-matrix) below
+Skip to see all notifications sent and to which users [Email matrix](#email-matrix) below
 
 ## Configure email notifications
 

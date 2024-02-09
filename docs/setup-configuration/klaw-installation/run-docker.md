@@ -171,7 +171,7 @@ To verify the installation and access Klaw, follow the steps below:
 ### 5. Next steps
 
 After successfully verifying your installation,
-follow the documentation in [Configure Klaw with Wizard](configure-klaw-wizard.md).
+follow the documentation in [Configure Klaw with wizard](configure-klaw-wizard.md).
 
 ## Klaw Docker Scripts
 
@@ -252,7 +252,7 @@ There are two ways to configure this:
   version copied over to the volume as this is usually updated during the
   build to keep the API versions in line with the pom version. \* Also,
   ensure that the `application.properties` is renamed to a unique
-  properties file name, so you don't accidentally copy over the Klaw Core
+  properties filename, so you don't accidentally copy over the Klaw Core
   properties with the cluster properties and vice versa.
 
       environment:

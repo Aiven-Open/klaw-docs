@@ -10,7 +10,7 @@ Date: 13th of December, 2023
 
 Klaw version 2.7.0 is a minor release with several new features and
 improvements. Key highlights of this release include notifications to
-kafka clients on schema changes
+Apache Kafka® clients on schema changes
 
 ## Download
 
@@ -67,9 +67,9 @@ create a new request.
 
 Usage of maven plugins to clean and copy the files correctly.
 
-### Differences between Klaw and Kafka® clusters
+### Differences between Klaw and Apache Kafka clusters
 
-Scheduler to detect topic changes between Kafka® cluster & Klaw and notify admins
+Scheduler to detect topic changes between Apache Kafka cluster & Klaw and notify admins
 
 :::note
 For a complete list of improvements, changelog, and to download the

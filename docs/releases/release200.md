@@ -60,7 +60,7 @@ registration.
 For more information, see [Schema
 promotion](../../docs/workflows/schema/promote-schema).
 
-### Authorization from OAuth2 Provider/Active Directory
+### Authorization from OAuth2 provider/Active Directory
 
 With this release, users can now be authorized through an OAuth2
 Provider or Active Directory. Roles for users can be defined in the

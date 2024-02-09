@@ -92,7 +92,7 @@ Spring upgrade to 3.1.2
 The superadmin can now use the "Schemas From Cluster" functionality to identify schemas that have been deleted from
 the schema registry.
 
-### Bug Fixes
+### Bug fixes
 
 - [#1651](https://github.com/Aiven-Open/klaw/pull/1651) Postgres deployments now support count queries for Approval tabs in React UI
 - #1569]() Promote OperationType now used for schema promotion (previously "create")

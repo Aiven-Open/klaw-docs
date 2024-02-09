@@ -39,7 +39,7 @@ Apache Kafka is a distributed streaming platform that allows producers to write 
 from them. When there are structural changes to the data, it is important to establish an understanding between the
 producers and consumers to ensure that events are processed successfully.
 
-The below image depicts the communication between Schema Registry, Apache Kafka, Producers and Consumers.
+The below image depicts the communication between Schema Registry, Apache Kafka, Producers, and Consumers.
 
 ![image](../../../static/images/blogimages/SchemaRegistryFlow.png)
 
@@ -59,7 +59,7 @@ identifier. This identifier becomes an integer value generated upon successfully
 
 To retrieve a schema based on an id: `GET /schemas/ids/{int: id}/schema`
 
-### Schema Strategy
+### Schema strategy
 
 Apache Kafka offers various strategies for schema registration, with the default being the `TopicNameStrategy`. In this
 approach, the subject name corresponds to the Apache Kafka topic name. In this strategy, typical subject names include
@@ -133,7 +133,7 @@ Klaw ensures data consistency, reliability, and secure access, aligning with org
 schema registration, permitting only the designated owner to manage schemas and preventing unauthorized modifications
 by other teams.
 
-### Request for a Schema in Klaw
+### Request for a schema in Klaw
 
 After creating a topic, the designated team that owns the topic gains the exclusive right to register a schema for it.
 As the topic owner, you have the authority to approve, initiate, or reject any schema-related requests for that topic.
@@ -147,7 +147,7 @@ Watch the video below for a step-by-step demonstration of registering a schema i
 <!-- markdownlint-disable-next-line MD033 -->
 <iframe src="https://drive.google.com/file/d/1g_wngVYcSgtGIWjwMxNT0ck--zGIKuew/preview" width="640" height="480" allow="autoplay"></iframe>
 
-### Schema migration from Schema registry to Klaw
+### Schema migration from Schema Registry to Klaw
 
 Backing up schemas from the schema registry is essential for ensuring recovery in the event of server failures or
 unexpected disasters. While schemas are typically stored in a Apache Kafka topic with replication, there may be cases where

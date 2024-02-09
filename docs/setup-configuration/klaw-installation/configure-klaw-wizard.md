@@ -1,4 +1,4 @@
-# Configure Klaw with Wizard
+# Configure Klaw with wizard
 
 The first time you log in to Klaw as an administrator, you will see the
 Klaw configuration wizard that guides you through the steps required to

@@ -46,7 +46,7 @@ To promote a schema to a higher environment, follow these steps:
 8. A schema request is now created for team members to review and
    approve under the _Approvals_ section.
 
-### How does Force Register work
+### How does force register work
 
 When promoting a schema to a higher environment in Klaw, you can use the
 **Force Register Schema** option, which enables you to register a schema

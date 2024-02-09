@@ -25,7 +25,7 @@ This blog post explores the configuration of Klaw, a Java-based
 application designed specifically for Apache Kafka® governance.
 
 Our primary focus is on exploring the configuration process for
-achieving high availability (HA) in production environments. By
+achieving High Availability (HA) in production environments. By
 implementing these measures, we can ensure continuous operation, enhance
 reliability, and deliver a seamless user experience, even during
 unexpected failures.
@@ -58,7 +58,7 @@ and its critical role in Klaw, let's explore the architectural design
 that supports it, the internal components of Klaw, and how to configure
 Klaw for high availability.
 
-### What Problem Does High Availability for Klaw Solve?
+### What problem does High Availability for Klaw solve?
 
 Before diving into what High Availability is, let's understand why
 it's crucial for Klaw. As Klaw is essential in managing and monitoring
@@ -179,11 +179,11 @@ multiple teams and have the flexibility to switch between them.
 Admin data: Comprises users, roles, permissions, teams, tenants,
 clusters, environments, properties and other product related details.
 
-Core data: Comprises Topics, ACLs, Schemas and Connector
+Core data: Comprises topics, ACLs, schemas and connector
 configurations.
 
-Requests data: Comprises requests of Topics, ACLs, Schemas and
-Connectors.
+Requests data: Comprises requests of Topics, ACLs, schemas and
+connectors.
 
 - Cache Klaw stores most frequently queried data in a local cache to
   for improved performance and user experience. This effectively reduces

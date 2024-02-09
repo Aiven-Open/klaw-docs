@@ -18,4 +18,4 @@ Klaw supports the following Apache Kafka® flavors:
 - [Connect with Aiven For Apache Kafka cluster using SASL protocol](aiven-kafka-cluster-sasl-protocol.md)
 - [Connect to Karapace schema registry](aiven-karapace-cluster-ssl-protocol.md)
 - [Aiven For Apache Kafka Connect cluster](aiven-kafka-connect-cluster-ssl-protocol.md)
-- [Connect with Confluent Cloud Kafka cluster using SSL protocol](confluent-cloud-kafka-cluster-ssl-protocol.md)
+- [Connect with Confluent Cloud Apache Kafka cluster using SSL protocol](confluent-cloud-kafka-cluster-ssl-protocol.md)

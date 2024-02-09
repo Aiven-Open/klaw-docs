@@ -62,7 +62,7 @@ authorized personnel, improving overall security.
 ### Export data to JSON
 
 Klaw now allows administrators to export the database configuration and
-data in three parts - admin data, requests data, and core data. This
+data in three parts - administrator data, requests data, and core data. This
 feature provides administrators with additional backup and recovery
 options, enabling them to manage the system more effectively.
 

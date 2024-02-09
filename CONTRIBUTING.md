@@ -234,4 +234,4 @@ It is advisable to exclude the word "just" from the description as it can cause 
 
 #### 5. Wrap your body at 72 characters
 
-When writing in Git, it is important to adjust margins manually since text does not wrap. However, editors and IDEs can assist with this.
+When writing in Git, it is important to adjust margins manually since text does not wrap. However, editors, and IDEs can assist with this.

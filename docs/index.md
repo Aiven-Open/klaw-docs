@@ -1,4 +1,4 @@
-# Klaw Documentation
+# Klaw documentation
 
 Klaw consists of two components:
 
