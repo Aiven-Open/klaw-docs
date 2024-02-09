@@ -26,3 +26,6 @@ In commitment to our community's transparency, we are releasing software updates
 Your feedback is important. Stay updated and reach out to us via [GitHub](https://github.com/Aiven-Open/klaw/issues/new/choose) for any queries or suggestions.
 
 <!-- vale on -->
+
+:::info[Klaw is free and open source.]
+:::

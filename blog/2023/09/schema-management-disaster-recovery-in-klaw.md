@@ -1,6 +1,6 @@
 ---
 slug: schema-management-disaster-recovery-in-klaw
-title: Schema Management and Disaster recovery in Klaw
+title: Schema management and disaster recovery in Klaw
 authors: muralibasani
 tags:
   [
@@ -39,7 +39,7 @@ Apache Kafka is a distributed streaming platform that allows producers to write 
 from them. When there are structural changes to the data, it is important to establish an understanding between the
 producers and consumers to ensure that events are processed successfully.
 
-The below image depicts the communication between Schema Registry, Apache Kafka, Producers, and Consumers.
+The below image depicts the communication between Schema Registry, Apache Kafka, producers, and consumers.
 
 ![image](../../../static/images/blogimages/SchemaRegistryFlow.png)
 
@@ -149,15 +149,15 @@ Watch the video below for a step-by-step demonstration of registering a schema i
 
 ### Schema migration from Schema Registry to Klaw
 
-Backing up schemas from the schema registry is essential for ensuring recovery in the event of server failures or
+Backing up schemas from the Schema Registry is essential for ensuring recovery in the event of server failures or
 unexpected disasters. While schemas are typically stored in a Apache Kafka topic with replication, there may be cases where
 retrieving them is difficult or impossible.
 
-Klaw simplifies this by connecting directly to the schema registry server, retrieving all available schemas associated
+Klaw simplifies this by connecting directly to the Schema Registry server, retrieving all available schemas associated
 with topics, and integrating them into its metastore. This backup process is straightforward and takes only a few
 clicks, regardless of the volume of schemas or topics.
 
-For more information on synchronizing schemas from the schema registry to Klaw, refer to
+For more information on synchronizing schemas from the Schema Registry to Klaw, refer to
 **[sync-schemas-from-cluster](/docs/cluster-management/kafka-cluster-sync/sync-schemas-from-cluster)**
 
 The following video demonstrates how schemas are synchronized to Klaw for a selection of topics already present in
@@ -169,11 +169,12 @@ allow="autoplay"></iframe>
 
 ### Schema migration from Klaw to Schema Registry
 
-After successfully backing up schemas in Klaw, you have the flexibility to register them either to a new schema registry
+After successfully backing up schemas in Klaw, you have the flexibility to register them either to a new Schema
+Registry
 cluster or integrate them into an existing one.
 
 Select the schemas you want to sync with the cluster. Once you submit your choices, Klaw will register the selected
-schemas directly into your designated schema registry environment.
+schemas directly into your designated Schema Registry environment.
 
 For more information on this synchronization process, refer to
 **[sync-schemas-to-cluster](/docs/cluster-management/kafka-cluster-sync/sync-schemas-to-cluster)**
@@ -189,3 +190,6 @@ already stored in Klaw.
 Given the critical importance of data quality, protection, compliance, and management in every organization, Klaw
 provides a robust foundation for building a resilient data governance framework. With its automated features, Klaw
 empowers data teams to organize data, ensuring consistent accessibility, robust security, and unmatched reliability.
+
+:::info[Klaw is free and open source.]
+:::
