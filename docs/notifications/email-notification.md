@@ -1,9 +1,9 @@
-# Email Notifications
+# Email notifications
 
 Email notifications can be sent to users when actions are performed in
 Klaw that requires their attention.
 
-Skip to see all notifications sent and to which users [Email Matrix](#email-matrix) below
+Skip to see all notifications sent and to which users [Email matrix](#email-matrix) below
 
 ## Configure email notifications
 
@@ -40,26 +40,26 @@ additional information.
 
 ### Email matrix
 
-| Notification Type          | Requestor | Approver | Requestor Team | Approver Team | All Approvals | Admin |
+| Notification Type          | Requestor | Approver | Requestor team | Approver team | All Approvals | Admin |
 | -------------------------- | --------- | -------- | -------------- | ------------- | ------------- | ----- |
 | User registration request  | cc        |          |                |               |               | to    |
 | User registration approved | to        |          |                |               |               |       |
 | New topic request          | cc        |          |                | to            | bcc           |       |
-| New Topic approved         | to        | cc       |                | cc            |               |       |
+| New topic approved         | to        | cc       |                | cc            |               |       |
 | Promote topic request      | cc        |          |                | to            | bcc           |       |
 | New ACL request            | cc        |          |                | to            | bcc           |       |
 | New ACL approved           | to        | cc       |                | cc            |               |       |
-| New Schema request         | cc        |          |                | to            | bcc           |       |
-| New Schema approved        | to        | cc       |                | cc            |               |       |
-| Promote Schema request     | cc        |          |                | to            | bcc           |       |
-| New Connector request      | cc        |          |                | to            | bcc           |       |
-| New Connector approved     | to        | cc       |                | cc            |               |       |
-| Promote Connector request  | cc        |          |                | to            | bcc           |       |
+| New schema request         | cc        |          |                | to            | bcc           |       |
+| New schema approved        | to        | cc       |                | cc            |               |       |
+| Promote schema request     | cc        |          |                | to            | bcc           |       |
+| New connector request      | cc        |          |                | to            | bcc           |       |
+| New connector approved     | to        | cc       |                | cc            |               |       |
+| Promote connector request  | cc        |          |                | to            | bcc           |       |
 | New Claim request          | cc        |          |                | to            | bcc           |       |
 | Password reset             | to        |          |                |               |               |       |
 | Password changed           | to        |          |                |               |               |       |
 
 :::tip
-'All Approvals' are Users assigned the permission
+'All Approvals' are users assigned the permission
 APPROVE_ALL_REQUESTS_TEAMS. This permission allows users to approve any
-Topic, Schema, ACL, or Connector request from any team.
+topic, schema, ACL, or connector request from any team.

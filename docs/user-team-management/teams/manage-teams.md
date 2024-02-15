@@ -1,4 +1,4 @@
-# Manage Teams
+# Manage teams
 
 In Klaw, teams are a collection of users who are responsible for
 managing and owning specific Apache Kafka® topics.
@@ -35,7 +35,7 @@ To update an existing team, follow these steps:
 
 ![image](../../../static/images/teams/UpdateTeam.png)
 
-## Delete Team
+## Delete team
 
 To delete an existing team, follow these steps:
 

@@ -9,8 +9,8 @@ Date: 1st Feb, 2023
 ## Overview
 
 Klaw version 2.0.0 is a major release with several new features and
-improvements. Key highlights of this release include redesigned Request
-screens in the React UI, Schema promotion, codebase optimizations, and
+improvements. Key highlights of this release include redesigned request
+screens in the React UI, schema promotion, codebase optimizations, and
 additional enhancements.
 
 ## Breaking changes
@@ -20,16 +20,16 @@ Instead, Klaw now supports Java 17 (LTS) and Java 19 (latest).
 
 ## What's new in Klaw 2.0.0
 
-### Redesigned Request screens with React UI
+### Redesigned request screens with React UI
 
 With the switch to React, this release features a redesign of the
 following user interfaces:
 
-- **Topic Request**: Users can now submit topic requests using the new
+- **Topic request**: Users can now submit topic requests using the new
   UI.
-- **Subscription Request** (Producer/Consumer): Users can now submit
+- **Subscription request** (Producer/Consumer): Users can now submit
   ACL requests for both producers and consumers using the new UI.
-- **Schema Request**: Users can now submit schema requests using the
+- **Schema request**: Users can now submit schema requests using the
   new UI.
 
 ![image](../../static/images/topic/RequestTopic-react.png)
@@ -48,7 +48,7 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### Schema Promotion
+### Schema promotion
 
 Users can now promote their schemas from lower to higher environments.
 They can select a specific version of the schema and submit a request
@@ -58,9 +58,9 @@ force-register the schema in case of any compatibility issues during
 registration.
 
 For more information, see [Schema
-Promotion](../../docs/workflows/schema/promote-schema).
+promotion](../../docs/workflows/schema/promote-schema).
 
-### Authorization from OAuth2 Provider/Active Directory
+### Authorization from OAuth2 provider/Active Directory
 
 With this release, users can now be authorized through an OAuth2
 Provider or Active Directory. Roles for users can be defined in the

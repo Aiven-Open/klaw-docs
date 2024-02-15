@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Heading from "@theme/Heading";
 
 const FeatureList = [
   {
@@ -130,7 +131,7 @@ function Feature({ Svg, title, description }) {
         />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <Heading as={"h3"}>{title}</Heading>
         <>{description}</>
       </div>
     </div>
@@ -148,7 +149,9 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <center>
-          <h2 id={"keyfeatures"}>Key Features</h2>
+          <Heading as={"h2"} id={"keyfeatures"}>
+            Key Features
+          </Heading>
         </center>
         <div className="row">
           {FeatureList.map((props, idx) => (
@@ -157,7 +160,7 @@ export default function HomepageFeatures() {
         </div>
         <br />
         <center>
-          <h2>Use cases</h2>
+          <Heading as={"h2"}>Use cases</Heading>
         </center>
         <div className="row">
           {UseCases.map((props, idx) => (
@@ -166,7 +169,7 @@ export default function HomepageFeatures() {
         </div>
         <br />
         <center>
-          <h2>Support</h2>
+          <Heading as={"h2"}>Support</Heading>
         </center>
         <div className="row">
           {Support.map((props, idx) => (

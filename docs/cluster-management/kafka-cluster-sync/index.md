@@ -1,4 +1,4 @@
-# Apache Kafka® Cluster Migration
+# Apache Kafka® cluster migration
 
 Klaw supports data synchronization between Klaw and Apache Kafka and
 other clusters. This can be accessed through the Synchronize menu

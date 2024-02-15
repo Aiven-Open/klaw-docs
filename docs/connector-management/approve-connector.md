@@ -22,7 +22,7 @@ of the request, can review and either approve or decline it.
 
 1. When you log into Klaw, a pop-up will notify you of **Pending
    Requests**. Select **Yes, show me!** or navigate to the **Approve**
-   tab and click on **Connector Requests** to view the pending
+   tab and click **Connector Requests** to view the pending
    requests.
 2. Review the information associated with the connector request and
    decline it by clicking the **X** button.

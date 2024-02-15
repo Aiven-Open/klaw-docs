@@ -68,6 +68,6 @@ To import data, follow these steps:
 ## What files are imported?
 
 The files that can be imported depend on the configuration settings
-mentioned above. You have the flexibility to import either admin data,
+mentioned above. You have the flexibility to import either administrator data,
 core configure data, requests data, or all of them based on the
 configuration options chosen.

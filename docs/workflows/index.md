@@ -116,15 +116,15 @@ connector-related requests:
 
 | Operation Type            | Edit topic | Requestors team | All Approvers | Admin |
 | ------------------------- | ---------- | --------------- | ------------- | ----- |
-| New Connector request     |            | ✅              | ✅            |       |
-| Update Connector request  |            | ✅              | ✅            |       |
-| Delete Connector request  |            | ✅              | ✅            |       |
-| Claim Connector request   | ✅         |                 | ✅            |       |
-| Promote Connector request |            | ✅              | ✅            |       |
+| New connector request     |            | ✅              | ✅            |       |
+| Update connector request  |            | ✅              | ✅            |       |
+| Delete connector request  |            | ✅              | ✅            |       |
+| Claim connector request   | ✅         |                 | ✅            |       |
+| Promote connector request |            | ✅              | ✅            |       |
 
 ## Schema owner
 
-Klaw can integrate with _Karapace_ or _Schema registry_ and define
+Klaw can integrate with _Karapace_ or _schema registry_ and define
 schemas on a topic. Currently, the topic owner team can raise a
 schema request, and they become the owners of the schema and its
 evolution.
@@ -138,13 +138,13 @@ schema-related requests:
 
 | Operation Type         | Edit topic | Requestors team | All Approvers | Admin |
 | ---------------------- | ---------- | --------------- | ------------- | ----- |
-| New Schema request     |            | ✅              | ✅            |       |
-| Delete Schema request  |            | ✅              | ✅            |       |
-| Promote Schema request |            | ✅              | ✅            |       |
+| New schema request     |            | ✅              | ✅            |       |
+| Delete schema request  |            | ✅              | ✅            |       |
+| Promote schema request |            | ✅              | ✅            |       |
 
 :::note
-With Schemas, there is no specific Claim Schema as it is assigned to a topic. The owner of the topic also owns the
-Schema. Additionally, there is no Update Schema since existing Schemas are maintained, and a new Schema with an
+With schemas, there is no specific "Claim schema" as it is assigned to a topic. The owner of the topic also owns the
+schema. Additionally, there is no Update schema since existing schemas are maintained, and a new schema with an
 incremented version number is added instead.
 :::
 
@@ -154,10 +154,10 @@ In Klaw, subscriptions (ACLs) are defined to secure Apache Kafka topics.
 Each team that wants to produce or consume from a topic becomes the
 subscription owner. Teams can submit subscription requests for a
 specific topic (either as a producer or consumer), which are then
-reviewed by the Topic Owner team for approval. The Topic Owner team
+reviewed by the topic owner team for approval. The topic owner team
 alone can access consumer offsets, view topic contents, and manage
 any relevant subscription credentials, if applicable. The
-Subscription owner alone has the ability to delete their
+subscription owner alone has the ability to delete their
 subscription.
 
 ### Subscription request approvals
@@ -169,15 +169,15 @@ subscription-related requests:
 
 | Operation Type              | Edit topic | Requestors team | All Approvers | Admin |
 | --------------------------- | ---------- | --------------- | ------------- | ----- |
-| New Subscription request    |            | ✅              | ✅            |       |
-| Delete Subscription request | ✅         |                 | ✅            |       |
-| Claim Subscription request  | ✅         |                 | ✅            |       |
+| New subscription request    |            | ✅              | ✅            |       |
+| Delete subscription request | ✅         |                 | ✅            |       |
+| Claim subscription request  | ✅         |                 | ✅            |       |
 
 :::tip
-When claiming a Subscription, if the Subscription is owned by a team
+When claiming a subscription, if the subscription is owned by a team
 that does not own the corresponding topic, then two approvals are
 required:
 
-- Approval by the team that owns the Subscription.
+- Approval by the team that owns the subscription.
 - Approval by the team that owns the topic.
   :::

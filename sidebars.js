@@ -174,7 +174,7 @@ const sidebars = {
         "workflows/promotion",
         {
           type: "category",
-          label: "Manage schema",
+          label: "Manage schemas",
           link: {
             type: "doc",
             id: "workflows/schema/index",
@@ -188,7 +188,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Manage subscription",
+          label: "Manage subscriptions",
           link: {
             type: "doc",
             id: "workflows/subscription/index",

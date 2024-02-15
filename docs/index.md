@@ -1,12 +1,11 @@
-# Klaw Documentation
+# Klaw documentation
 
 Klaw consists of two components:
 
-- The main Klaw Core application handling Governance, Security and meta storage.
+- The main Klaw Core application handling governance, security and meta storage.
 - The Klaw Cluster API handling the connections to the Apache Kafka®,
-  Apache Kafka Connect and Schema Registry servers.
+  Apache Kafka Connect and schema registry servers.
 
 ## Quickstart
 
-Copy the docker script and run. It installs Klaw, Apache Kafka, and schema Schema Registry servers as docker processes. [**Go through
-this guide**](./getting-started/quickstart)
+We're providing a Docker script that you can copy and run. It installs Klaw, Apache Kafka, and schema registry servers as Docker processes. [**Go through the quickstart guide**](./getting-started/quickstart).

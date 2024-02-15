@@ -38,7 +38,7 @@ You can configure the following in a tenant:
 
 - Order of Apache Kafka topics promotion environments
 
-  Define a set of environments in order to promote a
+  Define a set of environments to promote a
   Apache Kafka topic. Ex: \[\"DEV\", \"TST\"\]. Make sure this
   environment already exists under Environments (Apache Kafka)
 
@@ -52,7 +52,7 @@ You can configure the following in a tenant:
 
       Field: `requestTopicsEnvironmentsList`
 
-- Base sync environment Apache Kafka Connector
+- Base sync environment Apache Kafka Connect
 
   This is the base Apache Kafka Connect environment in a hierarchy of
   environments. Make sure this environment already exists under
@@ -62,13 +62,14 @@ You can configure the following in a tenant:
 
 - Order of Apache Kafka Connect promotion environments
 
-  Define a set of environments in order to promote a Apache
-  Kafka connector. Ex: \[\"DEV\", \"TST\"\]. Make sure this
+  Define a set of environments to promote a Apache Kafka connector.
+  Ex: \[\"DEV\", \"TST\"\].
+  Make sure this
   environment already exists under Environments (Apache Kafka Connect)
 
       Field: `orderOfConnectorsPromotionEnvsList`
 
-- Request Connectors Environments List
+- Request connectors Environments List
 
   Define a set of environments for which Apache Kafka connectors can be
   requested directly. Other environments cannot be requested

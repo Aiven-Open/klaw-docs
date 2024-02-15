@@ -5,7 +5,7 @@ The **My Topic Requests** page can be accessed through the **Requests
 created by you here. This page also provides an audit log and a history
 of the topics and configuration requests created by you.
 
-The Requests are displayed in chronological order by 'Date Requested'
+The requests are displayed in chronological order by 'Date Requested'
 with the most recent request at the top and the oldest request at the
 bottom. Additionally, on this page, you can find any request you and
 your team have made and its current status.

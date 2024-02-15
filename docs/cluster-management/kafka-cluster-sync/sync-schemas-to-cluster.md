@@ -1,8 +1,8 @@
-# Synchronize Schemas to cluster
+# Synchronize schemas to cluster
 
-To synchronize schemas from Klaw to a Schema Registry cluster, follow
+To synchronize schemas from Klaw to a schema registry cluster, follow
 the below steps, which involve displaying the topics and schema versions
-in Klaw and creating them on the Schema Registry cluster.
+in Klaw and creating them on the schema registry cluster.
 
 :::note
 During synchronization, all existing schemas for the subject in the target environment are deleted, and new schemas are created based on Klaw
@@ -25,7 +25,7 @@ metadata. For example, if version 1 already exists in the target cluster, it wil
    ![image](../../../static/images/sync/SyncSchemasToCluster.png)
 
 By following these steps, you can synchronize schemas from a Klaw
-metadata to a Schema Registry cluster.
+metadata to a schema registry cluster.
 
 :::note
 This synchronization is primarily suitable for migrating to the new schema

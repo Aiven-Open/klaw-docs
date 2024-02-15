@@ -1,4 +1,4 @@
-# Switch Teams
+# Switch teams
 
 In Klaw, users can easily switch between teams, enhancing collaboration
 and flexibility on the platform. Switching teams provide users access to

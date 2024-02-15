@@ -6,7 +6,7 @@ servers. There are three types of clusters that you can define in Klaw:
 <!-- vale off -->
 
 - Apache Kafka
-- Schema Registry
+- Schema registry
 - Apache Kafka Connect
 <!-- vale on -->
 
@@ -29,7 +29,7 @@ To add a new cluster in Klaw, follow these steps:
 3. On the **Clusters** screen, select **Add Cluster**.
 4. On the **Add Kafka Cluster** screen, provide the following information:
 
-   - **Cluster type**: Choose a cluster type from the dropdown menu (Kafka, Schema Registry, or Kafka Connect). Based
+   - **Cluster type**: Choose a cluster type from the dropdown menu (Kafka, schema registry, or Kafka Connect). Based
      on the cluster type, you need to include additional information.
    - **Cluster name**: Enter a name for the cluster, for example, `Dev_cluster`.
    - **Kafka flavor**: Select a Apache Kafka flavor from the dropdown list.
@@ -65,7 +65,7 @@ To update a cluster, follow these steps:
 
 ![image](../../../static/images/clusters/UpdateCluster.png)
 
-## Delete Cluster
+## Delete cluster
 
 To delete a cluster, follow these steps:
 

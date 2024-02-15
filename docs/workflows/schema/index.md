@@ -9,10 +9,10 @@ consumers.
 
 ## Manage schema
 
-Aiven's Karapace and Confluent's Schema Registry are two highly
+Aiven's Karapace and Confluent's schema registry are two highly
 popular products that enable the management of schemas outside a
 Apache Kafka cluster. For more information, see [Aiven
-Karapace](https://karapace.io) and [Confluent Schema
+Karapace](https://karapace.io) and [Confluent schema
 registry](https://docs.confluent.io/platform/current/schema-registry/index.html).
 
 ## Manage schema in Klaw
@@ -31,7 +31,7 @@ Schema management in Klaw is structured around the following:
 - Klaw enforces the `TopicNameStrategy` strategy to ensure only one
   schema is applied per topic, which uses the topic name to identify
   the schema subject used for schema lookups.
-- Klaw supports Aiven's Karapace and Confluent Schema registry.
+- Klaw supports Aiven's Karapace and Confluent schema registry.
 
 ## Learn how to
 

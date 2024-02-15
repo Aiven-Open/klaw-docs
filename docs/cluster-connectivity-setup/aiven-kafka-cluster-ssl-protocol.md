@@ -1,4 +1,4 @@
-# Connect with Aiven for Apache Kafka® Cluster using SSL protocol
+# Connect with Aiven for Apache Kafka® cluster using SSL protocol
 
 Aiven for Apache Kafka is a fully managed distributed data streaming
 platform, deployable in the cloud of your choice. This section provides information on connecting Aiven for Apache Kafka
@@ -66,7 +66,7 @@ Kafka and Klaw using SSL protocol:
 
     It is possible to configure JKS, PKCS12 and PEM certificate types.
 
-    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw Cluster ID.
+    - For the lines starting with `clusterid`, replace `clusterid` with the Klaw cluster ID.
     - Replace `client.keystore.p12` with the path for the keystore and `klaw1234` with the password configured for the
       keystore file.
     - Replace `client.truststore.jks` with the path for the truststore and `klaw1234` with the password configured for

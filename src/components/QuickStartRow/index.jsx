@@ -32,7 +32,7 @@ export default function QuickStartRow() {
       )}
     >
       <h2 id={"quickstart"}>
-        Quick start: Get up and running with Klaw in no time!
+        Quickstart: Get up and running with Klaw in no time!
       </h2>
       <div className={clsx("row", styles.quickStartRow)}>
         <div className={"col col--6"}>
@@ -54,7 +54,7 @@ export default function QuickStartRow() {
         </b>{" "}
         on your machine. Learn about other options and next steps in the{" "}
         <b>
-          <a href={"/docs/quickstart"}>Quick start guides</a>
+          <a href={"/docs/quickstart"}>quickstart guide</a>.
         </b>
         .
       </p>

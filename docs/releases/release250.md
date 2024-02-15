@@ -87,20 +87,22 @@ This release adds the ability to edit your topic requests to fix mistakes instea
 Apache Kafka client upgrade to 3.5.1
 Spring upgrade to 3.1.2
 
-### Identify Schemas deleted from Schema Registry
+### Identify schemas deleted from schema registry
 
-The superadmin can now use the "Schemas From Cluster" functionality to identify Schemas that have been deleted from the Schema Registry.
+The superadmin can now use the "Schemas From Cluster" functionality to identify schemas that have been deleted from
+the schema registry.
 
-### Bug Fixes
+### Bug fixes
 
 - [#1651](https://github.com/Aiven-Open/klaw/pull/1651) Postgres deployments now support count queries for Approval tabs in React UI
-- #1569]() Promote OperationType now used for Schema promotion (previously "create")
+- #1569]() Promote OperationType now used for schema promotion (previously "create")
   Enhancements
 - [#1550](https://github.com/Aiven-Open/klaw/pull/1550) Improved email copy on new installations
 - [#1414](https://github.com/Aiven-Open/klaw/pull/1414) "Edit topic" can now also alter the advanced configuration
-- [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted Connector not added to Cache
+- [#1622](https://github.com/Aiven-Open/klaw/pull/1622) Promoted connector not added to Cache
 - [#1555](https://github.com/Aiven-Open/klaw/pull/1555) Superuser was able to access Coral UI
-- [#1546](https://github.com/Aiven-Open/klaw/pull/1546) Promoted Schema Requests should use PROMOTE Request operation Type
+- [#1546](https://github.com/Aiven-Open/klaw/pull/1546) Promoted schema requests should use PROMOTE request
+  operation type
 - [#1591](https://github.com/Aiven-Open/klaw/pull/1591) Don't load users with empty passwords when auth type DB
 - [#1521](https://github.com/Aiven-Open/klaw/pull/1521) Add topic to cache after it is added to Klaw via Synchronization
 - [#1474](https://github.com/Aiven-Open/klaw/pull/1474) If deleting an ACL from Klaw that does not exist on the cluster executes successfully

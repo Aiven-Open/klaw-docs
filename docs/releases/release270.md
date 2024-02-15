@@ -10,7 +10,7 @@ Date: 13th of December, 2023
 
 Klaw version 2.7.0 is a minor release with several new features and
 improvements. Key highlights of this release include notifications to
-kafka clients on schema changes
+Apache Kafka® clients on schema changes
 
 ## Download
 
@@ -38,10 +38,10 @@ In this release, we have redesigned the user interface using React to enhance th
 Key updates in the new React UI include:
 
 - Show pending requests
-- User Information
-- Tenant Information
-- View Users
-- View Teams
+- User information
+- Tenant information
+- View users
+- View teams
 
 To disable the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
@@ -60,15 +60,16 @@ interfaces, we would like you to share your valuable
 
 ### Editable schema requests
 
-You can now edit Schema requests in this release. This feature allows for corrections without the need to delete and create a new request.
+You can now edit schema requests in this release. This feature allows for corrections without the need to delete and
+create a new request.
 
 ### Windows build capability
 
 Usage of maven plugins to clean and copy the files correctly.
 
-### Differences between Klaw and Kafka® clusters
+### Differences between Klaw and Apache Kafka clusters
 
-Scheduler to detect topic changes between Kafka® cluster & Klaw and notify admins
+Scheduler to detect topic changes between Apache Kafka cluster & Klaw and notify admins
 
 :::note
 For a complete list of improvements, changelog, and to download the

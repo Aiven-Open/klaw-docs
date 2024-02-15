@@ -9,9 +9,9 @@ Date: 5th of April, 2023
 ## Overview
 
 Klaw version 2.2.0 is a minor release with several new features and
-improvements. Key highlights of this release include redesigned My
-Team's Requests page, pre-validation of schema requests, sensitive ACL
-data is now masked unless you are the owner and unified Apache Kafka® & Schema
+improvements. Key highlights of this release include redesigned **My
+Team's Requests** page, pre-validation of schema requests, sensitive ACL
+data is now masked unless you are the owner and unified Apache Kafka® & schema
 cluster administration.
 
 ## What's new in Klaw 2.2.0
@@ -47,7 +47,7 @@ interfaces, we would like you to share your valuable
 
 ### Pre-validation of schema compatibility
 
-Klaw will now check all schema compatibility against the Schema Registry
+Klaw will now check all schema compatibility against the schema registry
 before creating the schema creation requests. This feature will only be
 bypassed during promotion when the 'force register schema' option is
 selected.
@@ -62,7 +62,7 @@ authorized personnel, improving overall security.
 ### Export data to JSON
 
 Klaw now allows administrators to export the database configuration and
-data in three parts - admin data, requests data, and core data. This
+data in three parts - administrator data, requests data, and core data. This
 feature provides administrators with additional backup and recovery
 options, enabling them to manage the system more effectively.
 

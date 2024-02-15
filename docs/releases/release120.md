@@ -21,7 +21,7 @@ authentication, enhancements to the codebase, and more.
 
 ### Introducing React for UI
 
-React is a popular open-source JavaScript library that simplifies the
+React is a popular open source JavaScript library that simplifies the
 development of front-end applications and provides a great alternative
 to large, complex front-end frameworks like AngularJS. Klaw's current
 user interface is built with AngularJS, which is no longer officially
@@ -54,7 +54,7 @@ value of the following property to true:
     # Enable new Klaw user interface
     klaw.coral.enabled=true
 
-Login to Klaw and under Topics, click the banner with the preview link.
+Login to Klaw and under **Topics**, click the banner with the preview link.
 
 Below is a screenshot of the redesigned UI
 

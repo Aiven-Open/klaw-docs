@@ -1,6 +1,6 @@
 ---
 slug: Effortless-Kafka-Governance-making-Life-Easier-for-Developers
-title: Effortless Kafka Governance making Life Easier for Developers
+title: Effortless Kafka governance making life easier for developers
 authors: muralibasani
 tags: [kafka, governance, topics, acls, klaw]
 date: May 15, 2023
@@ -15,11 +15,9 @@ systems are handled. As more and more organizations adopt Apache Kafka as a
 vital component of their technology stacks, the need for effective Apache Kafka
 governance becomes paramount.
 
-```bash
 A common challenge companies face is the inability to effectively govern
 and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.
-```
 
 Managing Apache Kafka topics poses significant challenges for companies, often
 leading to struggles executing the task effectively. Several crucial
@@ -199,9 +197,8 @@ and associated issues. These strategies involve using tools like Excel,
 Confluence, and GitOps for partial data maintenance.
 
 For a comprehensive and streamlined solution that simplifies the tasks
-for both developers and admins, Klaw stands as a highly effective
+for both developers and administrators, Klaw stands as a highly effective
 one-stop solution.
 
-```bash
-It's free and  open source.
-```
+:::info[Klaw is free and open source.]
+:::

@@ -16,7 +16,7 @@ enhancements.
 
 ## What's new in Klaw 2.1.0
 
-### Redesigned Request screens with React UI
+### Redesigned request screens with React UI
 
 With the switch to React, this release features a redesign of the
 following user interfaces:
@@ -59,7 +59,7 @@ includes the implementation of the following APIs:
 For more information, see [Confluent
 Cloud](../../docs/cluster-connectivity-setup/confluent-cloud-kafka-cluster-ssl-protocol).
 
-### Switch Teams
+### Switch teams
 
 Klaw now allows users to be members of multiple teams and easily switch
 between them without needing to log out and back in. With this new
@@ -69,7 +69,7 @@ from increased flexibility and efficiency when working within the Klaw
 platform, particularly when creating or approving requests.
 
 For more information, see [Switch
-Teams](../../docs/user-team-management/teams/switch-teams).
+teams](../../docs/user-team-management/teams/switch-teams).
 
 :::note
 For a complete list of improvements, changelog, and to download the

@@ -39,28 +39,28 @@ decline any schema request.
    Make sure it is a valid JSON.
 6. Add any remarks that will help the reviewer decide whether to
    approve or decline the request.
-7. Submit the request. Klaw will validate the Schema against the Schema
-   Registry and fail if it is not valid. A team member will review the
+7. Submit the request. Klaw will validate the schema against the schema
+   registry and fail if it is not valid. A team member will review the
    request and approve or decline it based on the request made.
 
 Once approved, all producers and consumers linked to this topic in the environment will receive a notification regarding a schema change.
 
 ## Schema validation
 
-When you submit a Schema Request, the Schema will be checked for
-validation against the Schema Registry.
+When you submit a schema request, the schema will be checked for
+validation against the schema registry.
 
 In case of errors, Klaw provides the following failure messages:
 
 - **Schema is not compatible**: This message indicates that the submitted
-  Schema fails to comply with the Schema Compatibility set on the schema
-  registry. To fix this issue, review the Schema to see what is causing
+  schema fails to comply with the schema compatibility set on the schema
+  registry. To fix this issue, review the schema to see what is causing
   the compatibility problem.
 
 - **Unable to validate Schema
-  Compatibility**: It indicates that the submitted Schema may be invalid
-  or missing the required Schema definition fields. It could also occur if
-  there is a problem with communication to the Schema Registry, such as if
-  it is not reachable. To fix this issue, review your Schema to ensure it
+  Compatibility**: It indicates that the submitted schema may be invalid
+  or missing the required schema definition fields. It could also occur if
+  there is a problem with communication to the schema registry, such as if
+  it is not reachable. To fix this issue, review your schema to ensure it
   is correctly defined. If it is, contact your administrator to resolve
-  the issue with communication to the Schema Registry.
+  the issue with communication to the schema registry.

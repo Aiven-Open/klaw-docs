@@ -1,7 +1,7 @@
 # Login with Azure AD
 
 You can log in to Klaw with your credentials configured in the Azure
-Active directory. On the login screen, you are prompted with a login
+Active Directory. On the login screen, you are prompted with a login
 option for Azure AD. After clicking on the login button, you are
 provided with an Azure pop-up window with options to provide your
 credentials or select an Azure account.

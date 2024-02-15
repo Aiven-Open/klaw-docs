@@ -1,6 +1,6 @@
 # Klaw settings
 
-You can configure Klaw for various Klaw functionalities, such as Email
+You can configure Klaw for various Klaw functionalities, such as email
 notification templates and roles, under **Dashboard -\> Settings**.
 
 - **Email Notification templates**  
@@ -11,7 +11,7 @@ notification templates and roles, under **Dashboard -\> Settings**.
 
 - **Roles when adding users**  
   When adding users manually from the
-  Users menu, only the USER role is available. However, you can edit
+  users menu, only the USER role is available. However, you can edit
   this by updating the property `klaw.adduser.roles`.
 - **Tenant Configuration**  
   A tenant is an isolated environment that
@@ -35,7 +35,7 @@ notification templates and roles, under **Dashboard -\> Settings**.
   stop.
 - **Schemas Retrieval**  
   Every Apache Kafka® implementation may not have
-  Schema Registries; hence, it may not be required to query a schema
+  schema registries; hence, it may not be required to query a schema
   registry server when a request is made. You can enable this by
   updating the property `klaw.getschemas.enable`. By default, it is
   false.

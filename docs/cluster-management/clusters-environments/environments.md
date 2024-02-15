@@ -8,7 +8,7 @@ cluster and there are three types of environments available:
 <!-- vale off -->
 
 - Kafka
-- Schema Registry
+- Schema registry
 - Kafka Connect
 <!-- vale on -->
 
@@ -51,7 +51,7 @@ To add a **Kafka environment**, enter the following details in the **Add Kafka E
 
 Select **Save** to add a new Apache Kafka environment.
 
-### Add Schema Registry environment
+### Add schema registry environment
 
 To add a **Schema Registry environment**, enter the following details in the **Add Schema Registry Environment** screen:
 
@@ -63,7 +63,7 @@ To add a **Schema Registry environment**, enter the following details in the **A
 - **Select Associated Kafka Environment**: Choose a schema
   environment from the dropdown list.
 
-Select **Save** to add a Schema Registry environment.
+Select **Save** to add a schema registry environment.
 
 ### Add Apache Kafka Connect environment
 

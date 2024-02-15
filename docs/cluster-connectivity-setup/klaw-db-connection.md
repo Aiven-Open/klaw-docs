@@ -25,7 +25,7 @@ For large implementations of Klaw, a file-based database may not be suitable due
 limitations. In these cases, we recommend configuring Klaw to use a different database management system (DBMS), such as
 MySQL, Oracle, or PostgreSQL.
 
-## RDBMS Configuration
+## RDBMS configuration
 
 To configure a connection to a relational database management system
 (RDBMS) such as Postgres, Oracle, or MySQL, you need to edit the

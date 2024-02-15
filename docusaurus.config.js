@@ -11,7 +11,7 @@ const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Klaw: Apache Kafka governance toolkit",
+  title: "Klaw: Apache Kafka® governance toolkit",
   tagline:
     "Streamline your Apache Kafka ecosystem, secure your data & simplify governance",
   favicon: "images/favicon.ico",
@@ -99,11 +99,15 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Documentation",
             items: [
               {
                 label: "Docs",
                 to: "/docs/",
+              },
+              {
+                label: "Releases",
+                to: "docs/releases",
               },
               {
                 label: "Faq",
@@ -119,7 +123,7 @@ const config = {
                 href: "https://aiven.io/community/forum/tag/klaw",
               },
               {
-                label: "Contact Us",
+                label: "Contact us",
                 href: "mailto:info@klaw-project.io",
               },
             ],

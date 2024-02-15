@@ -1,6 +1,7 @@
-# Connect to Schema Registry cluster with SSL protocol
+# Connect to schema registry cluster with SSL protocol
 
-This section provides information on connecting a Schema Registry cluster using the SSL protocol. Klaw connects to the Schema Registry over the REST protocol.
+This section provides information on connecting a schema registry cluster using the SSL protocol. Klaw connects to
+the schema registry over the REST protocol.
 
 ## Prerequisite
 
@@ -16,7 +17,7 @@ This section provides information on connecting a Schema Registry cluster using 
 
 ## Configure SSL protocol
 
-Follow the steps below to configure and connect to a Schema Registry
+Follow the steps below to configure and connect to a schema registry
 cluster with Klaw using SSL protocol:
 
 1.  In the Klaw web interface, navigate to **Environments**, and click

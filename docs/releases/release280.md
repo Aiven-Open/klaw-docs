@@ -65,9 +65,9 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### Feedback Form to help gather community feedback for Klaw
+### Feedback form to help gather community feedback for Klaw
 
-Available in the angular view, a new submit feedback form is now available to have your thoughts and feedback better included in the planning and future trajectory of Klaw
+Available in the angular view, a new feedback form is now available to have your thoughts and feedback better included in the planning and future trajectory of Klaw
 
 ### New Klaw documentation site structure implemented
 
@@ -79,7 +79,7 @@ The documentation website has an updated navigation to improve usability.
 - Allow Deletion of a Superadmin User
 - Redesigned Login, Forgot Password, and Sign Up Pages
 
-### Bug Fixes
+### Bug fixes
 
 - Fix analytics for the dashboard and added 30/60/90 day drop down in coral
 - New User email only sent to the user directly now

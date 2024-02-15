@@ -1,6 +1,6 @@
 ---
 slug: high-availability-for-klaw
-title: High availability for Klaw
+title: High Availability for Klaw
 authors: muralibasani
 tags:
   [
@@ -25,21 +25,21 @@ This blog post explores the configuration of Klaw, a Java-based
 application designed specifically for Apache Kafka® governance.
 
 Our primary focus is on exploring the configuration process for
-achieving high availability (HA) in production environments. By
+achieving High Availability (HA) in production environments. By
 implementing these measures, we can ensure continuous operation, enhance
 reliability, and deliver a seamless user experience, even during
 unexpected failures.
 
 ### Why High Availability matters
 
-High availability (HA) is a design principle to ensure operational
+High Availability (HA) is a design principle to ensure operational
 continuity over a given period. For Klaw, being an essential tool in
 managing and monitoring Apache Kafka clusters, the application must be
-resilient to potential system failures. Achieving high availability for
+resilient to potential system failures. Achieving High Availability for
 Klaw means eliminating single points of failure and ensuring minimal or
 no downtime, thereby leading to a more reliable Apache Kafka governance.
 Unforeseen events and emergencies can cause server failures, affecting
-even the most robust systems. By supporting high availability, Klaw is
+even the most robust systems. By supporting High Availability, Klaw is
 equipped to automatically recover from component failures, thereby
 reducing the impact of these events and providing users with a seamless
 experience.
@@ -48,17 +48,17 @@ experience.
 
 Apache Kafka clusters can be complex and substantial, making effective
 management and monitoring crucial. A failure in these operations can
-lead to significant issues. By configuring Klaw with high availability,
+lead to significant issues. By configuring Klaw with High Availability,
 it becomes a reliable Apache Kafka governance tool that ensures uninterrupted
 operations, even in the face of underlying system failures. Deploying
-Klaw with high availability minimizes or eliminates downtime and
+Klaw with High Availability minimizes or eliminates downtime and
 provides continuous support for Apache Kafka cluster management, enhancing
-overall system reliability. With this understanding of high availability
+overall system reliability. With this understanding of High Availability
 and its critical role in Klaw, let's explore the architectural design
 that supports it, the internal components of Klaw, and how to configure
-Klaw for high availability.
+Klaw for High Availability.
 
-### What Problem Does High Availability for Klaw Solve?
+### What problem does High Availability for Klaw solve?
 
 Before diving into what High Availability is, let's understand why
 it's crucial for Klaw. As Klaw is essential in managing and monitoring
@@ -84,21 +84,21 @@ Availability for Klaw addresses these critical issues:
   improve user experience, which is vital for customer satisfaction
   and retention.
 
-## What is high availability?
+## What is High Availability?
 
-High availability (HA) is a design approach that guarantees a certain
+High Availability (HA) is a design approach that guarantees a certain
 degree of operational continuity during a given measurement period.
 It's about ensuring that applications remain available even if a
 critical component, such as a server, fails. Essentially, high
 availability eliminates any single point of failure and ensures minimal
-or no downtime. Why is high availability important? Deploying
-applications with high availability in production environments is
+or no downtime. Why is High Availability important? Deploying
+applications with High Availability in production environments is
 essential for minimizing or eliminating downtime. Unforeseen events and
 emergencies can cause server failures, affecting even the most robust
 systems. HA systems are designed to automatically recover from component
 failures, reducing the impact of these events.
 
-### High availability architecture
+### High Availability architecture
 
 Ensuring systems can handle higher workloads and substantial traffic is
 undeniably vital. However, it is equally essential to identify potential
@@ -142,8 +142,8 @@ based H2 database for storing metadata.
 
 ### Klaw internal components
 
-Klaw is composed of two primary Java applications: the Governance Layer
-and the Cluster Layer.
+Klaw is composed of two primary Java applications: the governance layer
+and the cluster layer.
 
 - Governance layer
 
@@ -156,34 +156,35 @@ the governance layer are responsible for authorizing requests and
 interacting with the metastore (database). Upon approval, the
 application communicates with the Klaw Cluster API application.
 
-Security: The communication between APIs in the Governance Layer and
-the Cluster Layer is highly secure. JWT token-based authentication is
+Security: The communication between APIs in the governance layer and
+the cluster layer is highly secure. JWT token-based authentication is
 used to ensure that no external user can interact directly with it.
 
-User Roles and Permissions: Every user in Klaw is associated with a
+User roles and permissions: Every user in Klaw is associated with a
 role and a set of permissions. Additionally, users can be part of
 multiple teams and have the flexibility to switch between them.
 
-- Cluster layer The Cluster Layer is the second Java application within
+- Cluster layer: The cluster layer is the second Java application within
   Klaw.
-  Communication: This layer is a Java application that communicates with the Governance Layer and Apache Kafka clusters (Kafka,
+  Communication: This layer is a Java application that communicates with the governance layer and Apache Kafka
+  clusters (Kafka,
   Schema Registry, Kafka Connect).
 
 - User interface switch: By default, users are logged into the
-  AngularJS-based interface. However, they have the option to switch to
+  AngularJS-based interface. However, they can switch to
   the React JS interface. Building React assets requires npm, pnpm, and
   node.
 
 - Metastore Klaw organizes data in the database into three categories:
 
-Admin data: Comprises users, roles, permissions, teams, tenants,
+Administrator data: Comprises users, roles, permissions, teams, tenants,
 clusters, environments, properties and other product related details.
 
-Core data: Comprises Topics, ACLs, Schemas and Connector
+Core data: Comprises topics, ACLs, schemas and connector
 configurations.
 
-Requests data: Comprises requests of Topics, ACLs, Schemas and
-Connectors.
+Requests data: Comprises requests of topics, ACLs, schemas and
+connectors.
 
 - Cache Klaw stores most frequently queried data in a local cache to
   for improved performance and user experience. This effectively reduces
@@ -201,7 +202,7 @@ requirements. These specifications assume a user base of approximately
 100 or more, with around 50 or more Apache Kafka clusters and over 10,000
 topics.
 
-Core Governance Application / Cluster Application
+Core governance application / cluster application
 
     | ------------------------ ------ ------------ |
     | Deployment environment   | RAM  |  CPU       |
@@ -226,18 +227,18 @@ running on the virtual machines.
 
 ### Deployment model
 
-To further enhance the system's reliability, deploying the Governance
-Application and the Klaw Cluster API Application on separate machines is
+To further enhance the system's reliability, deploying the governance
+application and the Klaw Cluster API application on separate machines is
 recommended. This setup minimizes the risk of both applications being
 affected by a single point of failure.
 
 With the understanding of Klaw's working mechanism, let's explore how
-to deploy Klaw in high-availability production-like environments using
+to deploy Klaw in High Availability production-like environments using
 the Nginx load balancer.
 
 ## Nginx load balancer
 
-In this section, let's explore how to achieve high availability for
+In this section, let's explore how to achieve High Availability for
 Klaw using Nginx as the load balancer. Nginx serves as an efficient HTTP
 load balancer, distributing traffic across multiple application servers,
 thereby enhancing the performance, scalability, and reliability of web
@@ -323,11 +324,11 @@ upstream klawgcp {
     }
 ```
 
-### Klaw deployment model in high availability (HA) mode
+### Klaw deployment model in High Availability (HA) mode
 
-In the high availability mode, Nginx routes the requests to Klaw
+In the High Availability mode, Nginx routes the requests to Klaw
 instances which are connected to a common data store such as Postgres.
-Each Klaw instance comprises both the Governance and Klaw Cluster API
+Each Klaw instance comprises both the governance and Klaw Cluster API
 applications. You may choose to deploy these applications on separate
 machines for increased robustness. Below is the deployment model of Klaw
 in HA mode.
@@ -379,4 +380,5 @@ AWS page.
 For any questions or discussions, please open an issue on GitHub or
 participate in our Community forum.
 
-**It's free and open source.**
+:::info[Klaw is free and open source.]
+:::

@@ -28,7 +28,7 @@ The ability to produce and consume events with Apache Kafka is a powerful
 capability. However, having the proper governance and security measures
 in place is essential to ensure that messages are correctly structured,
 and producers have the necessary permissions to handle sensitive
-information such as PII. Access Control Lists and Schema Registries are
+information such as PII. Access Control Lists and schema registries are
 crucial in securing the Apache Kafka environment and maintaining data privacy
 and fidelity. The key to ensuring all these security measures are
 effective is properly assigning ownership of the topic, which serves as
