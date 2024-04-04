@@ -78,3 +78,4 @@ cluster-api
 gtag
 UI
 unencrypted
+kwregisterusers
