@@ -64,9 +64,9 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### JSON Schema support in Coral and Angular UIs
+### JSON Schema support in Coral and Angular
 
-Klaw now supports provisioning Json Schemas through both the Angular and React UI. Previously only Schemas of type Avro were supported.
+Klaw now supports provisioning JSON Schemas through both the Angular and React UI. Previously only Schemas of type Avro were supported.
 
 ### BETA Release of ACL Claim functionality
 
@@ -88,7 +88,7 @@ Please see the ACL Claim page for more information on these limitations.
 
 ### DB upgrade
 
-In this release, there is a new primary key added to the kwregisterusers table to allow previously denied usernames to be re-used in future requests.
+In this release, there is a new primary key added to the "kwregisterusers" table to allow previously denied usernames to be re-used in future requests.
 
 :::note
 For a complete list of improvements, changelog, and to download the

@@ -39,6 +39,6 @@ The topic owner must be the first approval, this is not reflected well in the UI
 ## Limitations to the current implementation
 
 Currently when looking at the subscription table if a team has multiple service users for a topic it will not be possible to see if you have correctly selected the desired service account until after the claim request is created.
-Once created you can see htis information on the "My Teams Requests" page along with the two teams who are required to approve the claim.
+Once created you can see this information on the "My Teams Requests" page along with the two teams who are required to approve the claim.
 
 We do not currently recommend using this functionality with IP based subscriptions support for these will be part of Klaw 2.10.0
