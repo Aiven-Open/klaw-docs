@@ -1,6 +1,6 @@
 ---
-
 sidebar_position: 99.88
+---
 
 # Release 2.8.0
 
@@ -15,7 +15,6 @@ kafka clients on schema changes
 ## Download
 
 ### Binaries
-
 
 [`klaw-2.8.0.jar` ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.8.0/klaw-2.8.0.jar)
 
@@ -38,7 +37,6 @@ In this release, we have redesigned the user interface using React to enhance th
 
 Key updates in the new React UI include:
 
-
 - Topic catalog - Filter by Topic type
   ![image](../../static/images/release280/Filter-by.png)
 - Activity log
@@ -57,7 +55,7 @@ is true by default):
 
 ```properties
     #Enable new Klaw user interface
-    klaw.coral.enabled=false
+klaw.coral.enabled=false
 ```
 
 :::note
@@ -88,7 +86,6 @@ The documentation website has an updated navigation to improve usability.
 - Version number for data migration is now stored internally instead of through the application.properties
 
 ### DB upgrade
-
 
 In this release, there is a migration utility to add a new fine-grain permission.
 
