@@ -9,7 +9,7 @@ Date: 8th of April, 2024
 ## Overview
 
 Overview
-Klaw version 2.9.0 is a patch release which fixes an issue introduced in 2.9.0 with some minor bug fixes and improvements.
+Klaw version 2.9.0 is a patch release which fixes an issue introduced in 2.8.0 with some minor bug fixes and improvements.
 
 ## Download
 
