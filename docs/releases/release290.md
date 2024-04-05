@@ -8,8 +8,7 @@ Date: 8th of April, 2024
 
 ## Overview
 
-Overview
-Klaw version 2.9.0 is a patch release which fixes an issue introduced in 2.8.0 with some minor bug fixes and improvements.
+Klaw version 2.9.0 is a patch release that fixes an issue introduced in 2.8.0 and includes minor bug fixes and improvements.
 
 ## Download
 
@@ -47,7 +46,7 @@ Key updates in the new React UI include:
 - View environments
   ![image](../../static/images/release280/view-envs.png)
 
-To disable the preview for the new Klaw user interface, open the
+To turn off the preview for the new Klaw user interface, open the
 `application.properties` file on the Klaw **core** module, and set the
 value of the following property to `false` (Effective from version 2.4.0, it
 is true by default):
@@ -64,32 +63,34 @@ interfaces, we would like you to share your valuable
 [feedback](https://github.com/aiven/klaw/issues/new?assignees=&labels=&template=03_feature.md).
 :::
 
-### JSON Schema support in Coral and Angular
+### JSON schema support in Coral and Angular
 
-Klaw now supports provisioning JSON Schemas through both the Angular and React UI. Previously only Schemas of type Avro were supported.
+Klaw now supports provisioning JSON schemas through both the Angular and React UI. Previously, only Schemes of type Avro were supported.
 
-### BETA Release of ACL Claim functionality
+### Beta release of ACL claim feature
 
-We are pleased to announce the Beta release of Claim ACL/Subscription functionality. This functionality still has some limitations that we will be improving in upcoming releases.
-Please see the ACL Claim page for more information on these limitations.
+We are excited to announce that the beta version of Claim ACL/Subscription feature has been released. However, some limitations will be addressed in the upcoming releases. For more information about these limitations, see ACL Claim.
 
 ### Improvements
 
-- Admin Guards on all APIs for roles for enhanced security and enhanced user feedback
-- Delete Service Users when ACLs are deleted
-- Declined User requests can be reused
+- Admin guards on all APIs for roles for enhanced security and enhanced user feedback
+- Delete service users when ACLs are deleted
+- Declined user requests can be reused
 
 ### Bug fixes
 
-- Allow creating new users with an email address as a username
-- Fix the default schema version on promote to be an informational message in angular UI
-- Fix unused script and unsafe links
-- Fix target=blank vulnerability
+- Allowed creating new users with an email address as a username
+- Fixed the default schema version on promote to be an informational message in angular UI
+- Fixed unused scripts and unsafe links
+- Fixed `target=blank` vulnerability
 
-### DB upgrade
+### Database upgrade
 
-In this release, there is a new primary key added to the "kwregisterusers" table to allow previously denied usernames to be re-used in future requests.
+This release adds a new primary key to the `kwregisterusers` table, allowing previously denied usernames to be reused in future requests.
 
 :::note
-For a complete list of improvements, changelog, and to download the
+
+For a complete list of improvements, changelog, and download the
 release, see [GitHub release tag v2.9.0](https://github.com/aiven/klaw/releases/tag/v2.9.0)
+
+:::
