@@ -198,6 +198,7 @@ const sidebars = {
             "workflows/subscription/delete-subscription",
             "workflows/subscription/manage-subscription-requests",
             "workflows/subscription/my-subscription-requests",
+            "workflows/subscription/claim-subscription",
           ],
         },
         {

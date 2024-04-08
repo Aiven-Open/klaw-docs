@@ -55,7 +55,7 @@ is true by default):
 
 ```properties
     #Enable new Klaw user interface
-    klaw.coral.enabled=false
+klaw.coral.enabled=false
 ```
 
 :::note
