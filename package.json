@@ -50,7 +50,7 @@
     "react-player": "^2.12.0"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "^3.0.1",
+    "@docusaurus/eslint-plugin": "^3.3.2",
     "@docusaurus/module-type-aliases": "3.0.1",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.1.0",
