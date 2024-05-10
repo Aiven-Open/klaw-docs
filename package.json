@@ -60,7 +60,7 @@
     "markdown-link-check": "^3.11.2",
     "markdownlint": "^0.34.0",
     "markdownlint-cli": "^0.37.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.2.5",
     "prop-types": "^15.8.1"
   },
   "browserslist": {
