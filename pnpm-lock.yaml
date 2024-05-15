@@ -15,8 +15,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1(@types/react@18.2.42)(react@18.3.1)
   '@snowplow/browser-tracker':
-    specifier: ^3.16.0
-    version: 3.18.0
+    specifier: ^3.23.0
+    version: 3.23.0
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -2599,25 +2599,25 @@ packages:
       webpack-sources: 3.2.3
     dev: false
 
-  /@snowplow/browser-tracker-core@3.18.0:
-    resolution: {integrity: sha512-wmtjDpGi03tEWbrLgjbmOMpO9kgHIp5Il2ErJY1alFCs4NLC4sC24gHe3emzaN9oFCbi4b540SoskcpWaHrfHw==}
+  /@snowplow/browser-tracker-core@3.23.0:
+    resolution: {integrity: sha512-Lt0Mc2Z3NiWCskn8rfgAQ3SCAI16qeU/j7OB6PP1H9NM40hbUVvsg6txYn0JwY2hZEhD8C0H2fi16enbIpZkkw==}
     dependencies:
-      '@snowplow/tracker-core': 3.18.0
+      '@snowplow/tracker-core': 3.23.0
       sha1: 1.1.1
       tslib: 2.6.2
       uuid: 3.4.0
     dev: false
 
-  /@snowplow/browser-tracker@3.18.0:
-    resolution: {integrity: sha512-5RX6iCczmWj+MJwIQzyCbmSLicrIvJ5eL/m/4u/UsAD0SwPclNttGoOB/3Ed9Tc+UIjXBWJIfmPTEWYojr+XpQ==}
+  /@snowplow/browser-tracker@3.23.0:
+    resolution: {integrity: sha512-+cZ9TUomhMQluUdWCy0hqy3eHOFAlLD/Z+/b0CouMVF/jFvLzIv4xw5sxSnA2JUnzIYD7F10lesehEH4bpMuXQ==}
     dependencies:
-      '@snowplow/browser-tracker-core': 3.18.0
-      '@snowplow/tracker-core': 3.18.0
+      '@snowplow/browser-tracker-core': 3.23.0
+      '@snowplow/tracker-core': 3.23.0
       tslib: 2.6.2
     dev: false
 
-  /@snowplow/tracker-core@3.18.0:
-    resolution: {integrity: sha512-5GL7Xfh9IOqyae0C5PVVCJ+gRKcfIAMHWyQ095ZuIC7UO+uaC4Jqxg0wEkIWyspejZY6oPg1qXQ7WVm04OlM4A==}
+  /@snowplow/tracker-core@3.23.0:
+    resolution: {integrity: sha512-q6Z7czCjyfzhnftnofWo+jaLf3jdmTO8yNze7WbJcnZBTQjO0iMjx1ffVieZ38zFOc+O6ANLv4roMfmgyohwiQ==}
     dependencies:
       tslib: 2.6.2
       uuid: 3.4.0
