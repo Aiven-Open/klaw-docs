@@ -9,7 +9,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@docusaurus/recommended",
-    "plugin:json/recommended",
+    "plugin:json/recommended-legacy",
     "plugin:react/recommended",
     "prettier",
   ],
