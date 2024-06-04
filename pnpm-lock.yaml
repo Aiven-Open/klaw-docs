@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^15.2.2
     version: 15.2.2
   markdown-link-check:
-    specifier: ^3.12.1
-    version: 3.12.1
+    specifier: ^3.12.2
+    version: 3.12.2
   markdownlint:
     specifier: ^0.34.0
     version: 0.34.0
@@ -4070,6 +4070,7 @@ packages:
   /commander@10.0.1:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
+    dev: false
 
   /commander@11.0.0:
     resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
@@ -4079,6 +4080,11 @@ packages:
   /commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
+    dev: true
+
+  /commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
     dev: true
 
   /commander@2.20.3:
@@ -7122,13 +7128,13 @@ packages:
       uc.micro: 2.1.0
     dev: true
 
-  /markdown-link-check@3.12.1:
-    resolution: {integrity: sha512-qjaopy0tcZFKMhr+wAOQf7KyValRXygTOaZQ3Ka1rf+nyObIUdU9hUVY93gYysz8+hx92YnXnKh1dmNRPO/5bA==}
+  /markdown-link-check@3.12.2:
+    resolution: {integrity: sha512-GWMwSvxuZn+uGGydi5yywnnDZy08SGps4I/63xqvWT7lxtH4cVLnhgZZYtEcPz/QvgPg9vbH2rvWpa29owMtHA==}
     hasBin: true
     dependencies:
       async: 3.2.5
       chalk: 5.3.0
-      commander: 10.0.1
+      commander: 12.1.0
       link-check: 5.3.0
       lodash: 4.17.21
       markdown-link-extractor: 4.0.2
