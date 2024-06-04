@@ -31,6 +31,7 @@ This feature may not be available in the old Klaw UI.
 
    :::note
    Ensure the `klaw.topiccontents.consumergroup.id` property is enabled in the cluster-API application, and adjust the consumer group value as needed. Additionally, create an ACL that allows this consumer group to read messages from the Klaw host machine.
+
    :::
 
 5. After making your selection, messages are displayed. If you wish to view updated or additional messages later, click **Fetch messages**.
