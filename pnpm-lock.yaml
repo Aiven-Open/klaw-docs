@@ -15,8 +15,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1(@types/react@18.2.42)(react@18.3.1)
   '@snowplow/browser-tracker':
-    specifier: ^3.23.0
-    version: 3.23.0
+    specifier: ^3.23.1
+    version: 3.23.1
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^0.41.0
     version: 0.41.0
   prettier:
-    specifier: ^3.3.0
-    version: 3.3.0
+    specifier: ^3.3.1
+    version: 3.3.1
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
@@ -2658,25 +2658,25 @@ packages:
       webpack-sources: 3.2.3
     dev: false
 
-  /@snowplow/browser-tracker-core@3.23.0:
-    resolution: {integrity: sha512-Lt0Mc2Z3NiWCskn8rfgAQ3SCAI16qeU/j7OB6PP1H9NM40hbUVvsg6txYn0JwY2hZEhD8C0H2fi16enbIpZkkw==}
+  /@snowplow/browser-tracker-core@3.23.1:
+    resolution: {integrity: sha512-d2w8wjRX5NE/midFnzKlDaWjof6FgxS0d92OLu7FypSWL45uKrY1A13Qz6Quu+jrfWr4ox/9A2hIKQSDtmLeNg==}
     dependencies:
-      '@snowplow/tracker-core': 3.23.0
+      '@snowplow/tracker-core': 3.23.1
       sha1: 1.1.1
       tslib: 2.6.2
       uuid: 3.4.0
     dev: false
 
-  /@snowplow/browser-tracker@3.23.0:
-    resolution: {integrity: sha512-+cZ9TUomhMQluUdWCy0hqy3eHOFAlLD/Z+/b0CouMVF/jFvLzIv4xw5sxSnA2JUnzIYD7F10lesehEH4bpMuXQ==}
+  /@snowplow/browser-tracker@3.23.1:
+    resolution: {integrity: sha512-Mi75/LOdBkn3V2BAD7S7O1GEKZC5jwVbPjAQ6FQtYp8KFirsTlB4BE2pIidowSvFo6bQRs0MefxpnKu5ulMdZQ==}
     dependencies:
-      '@snowplow/browser-tracker-core': 3.23.0
-      '@snowplow/tracker-core': 3.23.0
+      '@snowplow/browser-tracker-core': 3.23.1
+      '@snowplow/tracker-core': 3.23.1
       tslib: 2.6.2
     dev: false
 
-  /@snowplow/tracker-core@3.23.0:
-    resolution: {integrity: sha512-q6Z7czCjyfzhnftnofWo+jaLf3jdmTO8yNze7WbJcnZBTQjO0iMjx1ffVieZ38zFOc+O6ANLv4roMfmgyohwiQ==}
+  /@snowplow/tracker-core@3.23.1:
+    resolution: {integrity: sha512-EJJuRS2fI/XrrDaHSLnGfwLz+fweucwCeKF0cVNCVr5sm7kVw32DhHmFz1SCh2yMAN/9mGihyasTwRNONPuQSw==}
     dependencies:
       tslib: 2.6.2
       uuid: 3.4.0
@@ -8620,8 +8620,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier@3.3.0:
-    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
+  /prettier@3.3.1:
+    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
