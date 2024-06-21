@@ -24,10 +24,10 @@ const dockerScript =
   "--name klaw-schema-registry bitnami/schema-registry:latest";
 
 const dockerScriptLinux =
-  "docker run -d -t -i --network=host\\\n" +
+  "docker run -d -t -i --network=host \\\n" +
   '-e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \\\n' +
   "--name klaw-cluster-api aivenoy/klaw-cluster-api:latest --add-host localhost:host-gateway \\\n" +
-  "&& docker run -d -t -i --network=host\\\n" +
+  "&& docker run -d -t -i --network=host \\\n" +
   '-e KLAW_UIAPI_SERVERS=http://localhost:9097 -e KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET="dGhpcyBpcyBhIHNlY3JldCB0byBhY2Nlc3MgY2x1c3RlcmFwaQ==" \\\n' +
   "-e KLAW_QUICKSTART_ENABLED=true \\\n" +
   '-e SPRING_DATASOURCE_URL="jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;" \\\n' +
