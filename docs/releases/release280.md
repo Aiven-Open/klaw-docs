@@ -1,6 +1,6 @@
 ---
-
 sidebar_position: 99.88
+---
 
 # Release 2.8.0
 
@@ -15,7 +15,6 @@ kafka clients on schema changes
 ## Download
 
 ### Binaries
-
 
 [`klaw-2.8.0.jar` ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.8.0/klaw-2.8.0.jar)
 
@@ -37,7 +36,6 @@ kafka clients on schema changes
 In this release, we have redesigned the user interface using React to enhance the user experience and provide a more intuitive design.
 
 Key updates in the new React UI include:
-
 
 - Topic catalog - Filter by Topic type
   ![image](../../static/images/release280/Filter-by.png)
@@ -88,7 +86,6 @@ The documentation website has an updated navigation to improve usability.
 - Version number for data migration is now stored internally instead of through the application.properties
 
 ### DB upgrade
-
 
 In this release, there is a migration utility to add a new fine-grain permission.
 
