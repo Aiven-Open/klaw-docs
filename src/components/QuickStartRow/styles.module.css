@@ -7,3 +7,27 @@
 .quickStartRow {
   align-items: center;
 }
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: inherit;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #f1f1f1;
+}

@@ -43,7 +43,7 @@ const dockerScriptLinux =
   "--name klaw-schema-registry bitnami/schema-registry:latest";
 
 export default function QuickStartRow() {
-  const [selected, setSelected] = React.useState(false);
+  const [selected, setSelected] = React.useState(true);
   const [selectedLinux, setSelectedLinux] = React.useState(false);
   return (
     <div
@@ -57,23 +57,27 @@ export default function QuickStartRow() {
         Quickstart: Get up and running with Klaw in no time!
       </h2>
       <div className={clsx("row", styles.quickStartRow)}>
-        <div className={"col col--6"}>
-          <button
-            selected={selected}
-            onClick={() => {
-              setSelected(!selected);
-            }}
-          >
-            Windows & Mac
-          </button>
-          <button
-            onClick={() => {
-              setSelectedLinux(!selectedLinux);
-            }}
-          >
-            Linux
-          </button>
-          <div id="Linux" style={{ fontSize: "0.8em " }}>
+        <div className={("col col--6", styles.tab)}>
+          <div className={styles.tab}>
+            <button
+              selected={selected}
+              onClick={() => {
+                setSelected(true);
+                setSelectedLinux(false);
+              }}
+            >
+              Windows & Mac
+            </button>
+            <button
+              onClick={() => {
+                setSelected(false);
+                setSelectedLinux(true);
+              }}
+            >
+              Linux
+            </button>
+          </div>
+          <div style={{ fontSize: "0.8em " }}>
             <CodeBlock language={"typescript"}>
               {selected ? dockerScript : ""}
               {selectedLinux ? dockerScriptLinux : ""}
