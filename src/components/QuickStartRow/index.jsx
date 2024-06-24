@@ -2,6 +2,8 @@ import React from "react";
 import CodeBlock from "@theme/CodeBlock";
 import styles from "./styles.module.css";
 import clsx from "clsx";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 const dockerScript =
   "docker run -d -t -i \\\n" +
@@ -42,54 +44,28 @@ const dockerScriptLinux =
   "-e SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://localhost:9092 \\\n" +
   "--name klaw-schema-registry bitnami/schema-registry:latest";
 
-export default function QuickStartRow() {
-  const [selected, setSelected] = React.useState(true);
-  const [selectedLinux, setSelectedLinux] = React.useState(false);
+const WINDOWS_MAC_SELECTED = "windows_mac";
+const LINUX_SELECTED = "linux";
+
+function quickStartExample(selectedScript) {
   return (
-    <div
-      className={clsx(
-        "container",
-        "padding-top--lg",
-        styles.quickStartContainer
-      )}
-    >
-      <h2 id={"quickstart"}>
-        Quickstart: Get up and running with Klaw in no time!
-      </h2>
-      <div className={clsx("row", styles.quickStartRow)}>
-        <div className={("col col--6", styles.tab)}>
-          <div className={styles.tab}>
-            <button
-              selected={selected}
-              onClick={() => {
-                setSelected(true);
-                setSelectedLinux(false);
-              }}
-            >
-              Windows & Mac
-            </button>
-            <button
-              onClick={() => {
-                setSelected(false);
-                setSelectedLinux(true);
-              }}
-            >
-              Linux
-            </button>
-          </div>
-          <div style={{ fontSize: "0.8em " }}>
-            <CodeBlock language={"typescript"}>
-              {selected ? dockerScript : ""}
-              {selectedLinux ? dockerScriptLinux : ""}
-            </CodeBlock>
-          </div>
-        </div>
-        <div className="col col--6" aria-hidden={true}>
-          <img
-            alt="Gif showing a users log in to Klaw, create and approve a topic."
-            src={"/images/homepage/quickstart.gif"}
-          />
-        </div>
+    <div className={clsx("row", styles.quickStartRow)}>
+      <div
+        style={{ fontSize: "0.8em", minHeight: "380px" }}
+        className="col col--6"
+      >
+        <CodeBlock language={"typescript"}>
+          {selectedScript === WINDOWS_MAC_SELECTED
+            ? dockerScript
+            : dockerScriptLinux}
+        </CodeBlock>
+      </div>
+
+      <div className="col col--6" aria-hidden={true}>
+        <img
+          alt="Gif showing a users log in to Klaw, create and approve a topic."
+          src={"/images/homepage/quickstart.gif"}
+        />
       </div>
       <p>
         Klaw will be running at{" "}
@@ -102,6 +78,32 @@ export default function QuickStartRow() {
         </b>
         .
       </p>
+    </div>
+  );
+}
+export default function QuickStartRow() {
+  return (
+    <div
+      className={clsx(
+        "container",
+        "padding-top--lg",
+        styles.quickStartContainer
+      )}
+    >
+      <h2 id={"quickstart"}>
+        Quickstart: Get up and running with Klaw in no time!
+      </h2>
+
+      <section aria-label={"See quick start script for your OS"}>
+        <Tabs>
+          <TabItem value={WINDOWS_MAC_SELECTED} label="Windows & Mac">
+            {quickStartExample(WINDOWS_MAC_SELECTED)}
+          </TabItem>
+          <TabItem value={LINUX_SELECTED} label="Linux">
+            {quickStartExample(LINUX_SELECTED)}
+          </TabItem>
+        </Tabs>
+      </section>
     </div>
   );
 }
