@@ -32,8 +32,8 @@ dependencies:
 
 devDependencies:
   '@docusaurus/eslint-plugin':
-    specifier: ^3.3.2
-    version: 3.3.2(eslint@8.57.0)(typescript@5.3.2)
+    specifier: ^3.4.0
+    version: 3.4.0(eslint@8.57.0)(typescript@5.3.2)
   '@docusaurus/module-type-aliases':
     specifier: 3.4.0
     version: 3.4.0(react-dom@18.3.1)(react@18.3.1)
@@ -1679,8 +1679,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@docusaurus/eslint-plugin@3.3.2(eslint@8.57.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-0RBuWVV9pFmuvHO4BCN4U4P+WQRgvSzZSXPlNw5P2LLhwKNiDSPgzTUA+7FdleIsfk8+lxo/2/3YkEnarHrEAw==}
+  /@docusaurus/eslint-plugin@3.4.0(eslint@8.57.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-3Y9SwkxwY36TmsvZGyLZepifHbXIjZHMEFGuPcvtkFNnVgFIUkoAkf17GfwKKHnAloYVG/hpLV1m8q2BVKSLNQ==}
     engines: {node: '>=18.0'}
     peerDependencies:
       eslint: '>=6'
@@ -5642,7 +5642,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.3.0
+      ignore: 5.3.1
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -5652,7 +5652,7 @@ packages:
     dependencies:
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.3.0
+      ignore: 5.3.1
       merge2: 1.4.1
       slash: 4.0.0
     dev: false
@@ -6105,7 +6105,6 @@ packages:
   /ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
-    dev: true
 
   /image-size@1.0.2:
     resolution: {integrity: sha512-xfOoWjceHntRb3qFCrh5ZFORYH8XCdYpASltMhZ/Q0KZiOwjdE/Yl2QCiWdwD+lygV5bMCvauzgu5PxBX/Yerg==}
