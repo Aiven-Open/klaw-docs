@@ -76,7 +76,6 @@ function quickStartExample(selectedScript) {
         <b>
           <a href={"/docs/quickstart"}>quickstart guide</a>.
         </b>
-        .
       </p>
     </div>
   );
