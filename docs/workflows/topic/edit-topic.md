@@ -12,8 +12,7 @@ ability to edit an existing topic.
    change the _Partitions_ and _Replication factor_.
 
    :::note
-   See all advanced topic configuration options in [Apaches documentation](https://kafka.apache).
-   org/documentation/#topicconfigs) or Select the 'i' button beside an advanced configuration entry to be taken directly to that entry in the Apache documentation.
+   See all advanced topic configuration options in [Apaches documentation](https://kafka.apache.org/documentation/#topicconfigs) or Select the 'i' button beside an advanced configuration entry to be taken directly to that entry in the Apache documentation.
    :::
 
 5. Make all the changes to the existing configuration and/or add additional
