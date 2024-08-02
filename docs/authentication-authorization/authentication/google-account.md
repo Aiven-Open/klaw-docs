@@ -38,8 +38,8 @@ in the Klaw Core module to enable the use of Google account login.
 
     `klaw.superadmin.default.username=superadmin@company.com`
 
-6.  Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
-    For Google update this attribute in the application.properties as below.
+6.  Each SSO provider can have a different "preferred username" attribute that identifies your user correctly.
+    For Google, update this attribute in the `application.properties` file as shown below:
 
     `klaw.ad.username.attribute=email`
 

@@ -46,9 +46,9 @@ module.
    The `imageURI` property specifies the URL of the logo image. The image must be uploaded to
    the `assets/images/clients` folder before you can use this property.
 
-7. Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
-   Check your providers documentation and select the attribute which defines the email address.
-   update this attribute in the application.properties replacing 'preferred_username' with their attribute.
+7. Each SSO provider can have a different "preferred username" attribute that identifies your user correctly.
+   Check your provider's documentation and select the attribute that defines the email address.
+   Update this attribute in the `application.properties` file, replacing 'preferred_username' with their attribute.
 
    `klaw.ad.username.attribute=preferred_username`
 

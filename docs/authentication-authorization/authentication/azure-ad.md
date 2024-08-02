@@ -39,9 +39,8 @@ Klaw Core module to enable Azure AD.
 
         klaw.superadmin.default.username=superadmin@company.com
 
-6.  Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
-    For Azure the default value should suffice, however if it has been changed
-    update this attribute in the application.properties as below.
+6.  Each SSO provider can have a different "preferred username" attribute that identifies your user correctly.
+    For Azure, the default value should suffice. However, if it has been changed, update this attribute in the `application.properties` file as shown below:
 
     `klaw.ad.username.attribute=preferred_username`
 
