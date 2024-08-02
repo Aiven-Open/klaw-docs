@@ -38,7 +38,12 @@ in the Klaw Core module to enable the use of Google account login.
 
     `klaw.superadmin.default.username=superadmin@company.com`
 
-6.  If you have already signed up with Google, you will be redirected to the Klaw home page.
+6.  Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
+    For Google update this attribute in the application.properties as below.
+
+    `klaw.ad.username.attribute=email`
+
+7.  If you have already signed up with Google, you will be redirected to the Klaw home page.
 
     ![image](../../../static/images/authentication/OAuthLogin.png)
 
@@ -46,7 +51,7 @@ in the Klaw Core module to enable the use of Google account login.
 
     ![image](../../../static/images/authentication/GoogleLogin.png)
 
-7.  If this is your first time logging in, you will be presented with a
+8.  If this is your first time logging in, you will be presented with a
     signup form to fill in. On submission, a request will be created for
     the Klaw Administrator to approve or decline.
 

@@ -39,7 +39,13 @@ Klaw Core module to enable Azure AD.
 
         klaw.superadmin.default.username=superadmin@company.com
 
-6.  If you have already signed up with Azure AD, you will be redirected to the Klaw home page.
+6.  Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
+    For Azure the default value should suffice, however if it has been changed
+    update this attribute in the application.properties as below.
+
+    `klaw.ad.username.attribute=preferred_username`
+
+7.  If you have already signed up with Azure AD, you will be redirected to the Klaw home page.
 
     ![image](../../../static/images/authentication/OAuthLogin.png)
 
@@ -47,6 +53,6 @@ Klaw Core module to enable Azure AD.
 
     ![image](../../../static/images/authentication/AzureLogin.png)
 
-7.  If this is your first time logging in, you will be presented with a signup form to fill in. On submission, the Klaw Administrator will approve or decline your request.
+8.  If this is your first time logging in, you will be presented with a signup form to fill in. On submission, the Klaw Administrator will approve or decline your request.
 
     ![image](../../../static/images/authentication/OAuthSignupForm.png)
