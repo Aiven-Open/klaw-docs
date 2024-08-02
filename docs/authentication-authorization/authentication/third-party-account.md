@@ -47,7 +47,7 @@ module.
    the `assets/images/clients` folder before you can use this property.
 
 7. Each SSO provider can have a different "preferred username" attribute that identifies your user correctly.
-   Check your provider's documentation and select the attribute that defines the email address.
+   Check your provider's documentation and select the attribute/claim that defines the username/login name.
    Update this attribute in the `application.properties` file, replacing 'preferred_username' with their attribute.
 
    `klaw.ad.username.attribute=preferred_username`
