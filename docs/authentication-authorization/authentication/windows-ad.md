@@ -25,18 +25,12 @@ configurations in the `application.properties` file in the Klaw Core module.
 
    `klaw.superadmin.default.username=superadmin@company.com`
 
-4. Each SSO provider can have a different "preferred username" attribute which identifies your user correctly.
-   For Windows the default value should suffice, however if it has been changed
-   update this attribute in the application.properties as below.
-
-   `klaw.ad.username.attribute=preferred_username`
-
-5. If you have already signed up, you will be directed to the Klaw home
+4. If you have already signed up, you will be directed to the Klaw home
    page.
 
    ![image](../../../static/images/authentication/login.png)
 
-6. If this is your first time logging in, you will be presented with a
+5. If this is your first time logging in, you will be presented with a
    signup form to fill in. On submission, a request will be created for
    the Klaw Administrator to approve or decline.
 
