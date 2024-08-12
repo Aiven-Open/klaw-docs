@@ -34,8 +34,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@docusaurus/eslint-plugin':
-        specifier: ^3.4.0
-        version: 3.4.0(eslint@8.57.0)(typescript@5.3.2)
+        specifier: ^3.5.1
+        version: 3.5.1(eslint@8.57.0)(typescript@5.3.2)
       '@docusaurus/module-type-aliases':
         specifier: 3.4.0
         version: 3.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -825,8 +825,8 @@ packages:
     resolution: {integrity: sha512-wjuXzkHMW+ig4BD6Ya1Yevx9UJadO4smNZCEljqBoQfIQrQskTswBs7lZ8InHP7mCt273a/y/rm36EZhqJhknQ==}
     engines: {node: '>=18.0'}
 
-  '@docusaurus/eslint-plugin@3.4.0':
-    resolution: {integrity: sha512-3Y9SwkxwY36TmsvZGyLZepifHbXIjZHMEFGuPcvtkFNnVgFIUkoAkf17GfwKKHnAloYVG/hpLV1m8q2BVKSLNQ==}
+  '@docusaurus/eslint-plugin@3.5.1':
+    resolution: {integrity: sha512-Oqs2rH3iMYGQvxxllGFhKNWUlQxqxwWd4dRlgFrU9QTfmQV9H0wIEnfLZgpoDcnerZwh54f+VZE29gF6874XLg==}
     engines: {node: '>=18.0'}
     peerDependencies:
       eslint: '>=6'
@@ -5615,7 +5615,7 @@ snapshots:
       '@babel/core': 7.23.5
       '@babel/helper-compilation-targets': 7.22.15
       '@babel/helper-plugin-utils': 7.22.5
-      debug: 4.3.4
+      debug: 4.3.6
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -6445,7 +6445,7 @@ snapshots:
       postcss-sort-media-queries: 4.4.1(postcss@8.4.32)
       tslib: 2.6.2
 
-  '@docusaurus/eslint-plugin@3.4.0(eslint@8.57.0)(typescript@5.3.2)':
+  '@docusaurus/eslint-plugin@3.5.1(eslint@8.57.0)(typescript@5.3.2)':
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.0)(typescript@5.3.2)
       eslint: 8.57.0
@@ -7520,7 +7520,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/visitor-keys': 5.62.0
-      debug: 4.3.4
+      debug: 4.3.6
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.5.4
@@ -9089,7 +9089,7 @@ snapshots:
     dependencies:
       basic-ftp: 5.0.5
       data-uri-to-buffer: 6.0.2
-      debug: 4.3.4
+      debug: 4.3.6
       fs-extra: 11.2.0
     transitivePeerDependencies:
       - supports-color
@@ -10485,7 +10485,7 @@ snapshots:
   micromark@4.0.0:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.3.4
+      debug: 4.3.6
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
@@ -11754,7 +11754,7 @@ snapshots:
 
   spdy-transport@3.0.0:
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.6
       detect-node: 2.1.0
       hpack.js: 2.1.6
       obuf: 1.1.2
