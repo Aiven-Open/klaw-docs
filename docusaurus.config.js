@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: "Forum",
-                href: "https://aiven.io/community/forum/tag/klaw",
+                href: "https://aiven.io/community/forum/tags/c/open-source/12/klaw",
               },
               {
                 label: "Contact us",
