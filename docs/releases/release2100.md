@@ -45,15 +45,16 @@ Key updates in the new React UI include:
 
 ### Improvements
 
-- Improves cross DB compatibility by using jpq
+- Improves cross DB compatibility by using `jpq`
 - Improve Claim experience
 
 ### Bug fixes
 
-- Prevent orphan ACl without service user being created
-- Fix validation to parse partitions as ints first
+- Prevent orphan ACL without service user being created
+- Fix validation to parse partitions as `ints` first
 - Avoid NullPointerException when trying to login with Keycloak SSO
 - Avoid possible NullPointerException when trying to login with Google SSO
+- Fix NullPointerException when trying to read topic events from coral UI
 
 [//]: # "@TODO links"
 
