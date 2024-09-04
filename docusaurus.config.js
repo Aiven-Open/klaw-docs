@@ -151,6 +151,7 @@ const config = {
     }),
   plugins: [
     () => ({
+      name: "custom-plugin", // Add a unique name here
       postBuild(props) {
         createLinkFile(props);
         addRedirectsFile(props);
