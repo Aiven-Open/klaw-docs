@@ -15,6 +15,8 @@ systems are handled. As more and more organizations adopt Apache Kafka as a
 vital component of their technology stacks, the need for effective Apache Kafka
 governance becomes paramount.
 
+<!--truncate-->
+
 A common challenge companies face is the inability to effectively govern
 and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.

@@ -12,6 +12,8 @@ date: Nov 22, 2023
 
 We, as an integral part of the Klaw open-source project, are committed to upholding the true spirit of open-source values. To ensure transparency and foster trust within our community, we have an important update to share.
 
+<!--truncate-->
+
 **Discovery of legacy tracking code:**
 We recently identified a piece of legacy, non-functional tracking code within our codebase. This code, originating from a previous version of our project, used Google tag (gtag) for analytics purposes. It was designed to track various user interactions on our site, including page views, scrolls, outbound link clicks, file downloads, video plays, site searches, and form interactions.
 
