@@ -18,6 +18,8 @@ date: Sep 5, 2023
 This article explores the significance, evolution, and management of schemas in Klaw. It also covers how Klaw safeguards
 organizations against data loss by creating schema backups for disaster and failure recovery.
 
+<!--truncate-->
+
 ## Schemas
 
 Data governance is becoming increasingly important for organizations that want to improve data quality, comply with

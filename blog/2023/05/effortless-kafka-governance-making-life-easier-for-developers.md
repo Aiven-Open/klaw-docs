@@ -15,6 +15,8 @@ systems are handled. As more and more organizations adopt Apache Kafka as a
 vital component of their technology stacks, the need for effective Apache Kafka
 governance becomes paramount.
 
+<!--truncate-->
+
 A common challenge companies face is the inability to effectively govern
 and manage access permissions for the numerous topics created,
 often numbering in the hundreds or even thousands.
@@ -185,7 +187,7 @@ for its capabilities.
 
 [Documentation](https://www.klaw-project.io/docs)
 
-[Community](https://aiven.io/community/forum/tag/klaw)
+[Community forum](https://aiven.io/community/forum/tags/c/open-source/12/klaw)
 
 [Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 

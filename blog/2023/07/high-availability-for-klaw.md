@@ -30,6 +30,8 @@ implementing these measures, we can ensure continuous operation, enhance
 reliability, and deliver a seamless user experience, even during
 unexpected failures.
 
+<!--truncate-->
+
 ### Why High Availability matters
 
 High Availability (HA) is a design principle to ensure operational
@@ -373,12 +375,11 @@ AWS page.
 
 [Documentation](https://www.klaw-project.io/docs)
 
-[Community](https://aiven.io/community/forum/tag/klaw)
+[Community forum](https://aiven.io/community/forum/tags/c/open-source/12/klaw)
 
 [Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
-For any questions or discussions, please open an issue on GitHub or
-participate in our Community forum.
+For any questions or discussions, please open an issue on GitHub or ask in our [Community forum](https://aiven.io/community/forum/new-topic?category=open-source&tags=klaw)
 
 :::info[Klaw is free and open source.]
 :::

@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: "Forum",
-                href: "https://aiven.io/community/forum/tag/klaw",
+                href: "https://aiven.io/community/forum/tags/c/open-source/12/klaw",
               },
               {
                 label: "Contact us",
@@ -151,6 +151,7 @@ const config = {
     }),
   plugins: [
     () => ({
+      name: "custom-plugin", // Add a unique name here
       postBuild(props) {
         createLinkFile(props);
         addRedirectsFile(props);
