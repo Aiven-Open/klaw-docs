@@ -30,6 +30,8 @@ implementing these measures, we can ensure continuous operation, enhance
 reliability, and deliver a seamless user experience, even during
 unexpected failures.
 
+<!--truncate-->
+
 ### Why High Availability matters
 
 High Availability (HA) is a design principle to ensure operational
