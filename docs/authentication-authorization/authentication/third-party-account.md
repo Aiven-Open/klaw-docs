@@ -46,7 +46,13 @@ module.
    The `imageURI` property specifies the URL of the logo image. The image must be uploaded to
    the `assets/images/clients` folder before you can use this property.
 
-7. If you have already signed up, you will be directed to the Klaw home
+7. Each SSO provider can have a different "preferred username" attribute that identifies your user correctly.
+   Check your provider's documentation and select the attribute/claim that defines the username/login name.
+   Update this attribute in the `application.properties` file, replacing 'preferred_username' with their attribute.
+
+   `klaw.ad.username.attribute=preferred_username`
+
+8. If you have already signed up, you will be directed to the Klaw home
    page.
 
    ![image](../../../static/images/authentication/OAuthLogin.png)
@@ -57,7 +63,7 @@ module.
    Login page for third-party account is not fully updated.
    :::
 
-8. If this is your first time logging in, you will be presented with a
+9. If this is your first time logging in, you will be presented with a
    signup form to fill in. On submission, a request will be created for
    the Klaw Administrator to approve or decline.
 
