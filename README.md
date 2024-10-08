@@ -82,7 +82,7 @@ For these scripts, you need to have Vale installed (see [Requirements](#requirem
 
 - `pnpm spell:error` to show only errors (same as in CI)
 - `pnpm spell:warn` to show errors as well as warnings
-- `pnpm spell:warn` to show errors, warnings and suggestions
+- `pnpm spell:all` to show errors, warnings and suggestions
 
 ℹ️ We are using a custom hook path for enabling pre-commit hooks. This path is set in the local git configuration when
 running `pnpm install`.
