@@ -4,7 +4,7 @@ sidebar_position: 99.86
 
 # Release 2.10.0
 
-Date: X of September, 2024
+Date: X of October, 2024
 
 ## Overview
 
@@ -47,6 +47,7 @@ Key updates in the new React UI include:
 
 - Improves cross DB compatibility by using `jpq`
 - Improve Claim experience
+- Enable viewing Topic events based on offset range and partition
 
 ### Bug fixes
 
