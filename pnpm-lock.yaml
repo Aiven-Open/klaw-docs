@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.2.42)(react@18.3.1)
       '@snowplow/browser-tracker':
-        specifier: ^3.24.4
-        version: 3.24.4
+        specifier: ^4.0.1
+        version: 4.0.1
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1104,14 +1104,14 @@ packages:
   '@slorber/remark-comment@1.0.0':
     resolution: {integrity: sha512-RCE24n7jsOj1M0UPvIQCHTe7fI0sFL4S2nwKVWwHyVr/wI/H8GosgsJGyhnsZoGFnD/P2hLf1mSbrrgSLN93NA==}
 
-  '@snowplow/browser-tracker-core@3.24.4':
-    resolution: {integrity: sha512-O/r7HFWLlnKxg+qv4c6IpZ5cHrlqUkzuaKPzaxjpypGuTVPnTnuiP5ysRd/5XFHgIkLc4bh5FrOn2eMfiTI2rw==}
+  '@snowplow/browser-tracker-core@4.0.1':
+    resolution: {integrity: sha512-spWlcEFIzJByPtM1xGP9Im7KeiPXe9Q52qr+emSo5/NVc8lVhc3SHiBKCqTRmRTpkd2Bko66TwL4CYaC1QkRaQ==}
 
-  '@snowplow/browser-tracker@3.24.4':
-    resolution: {integrity: sha512-NF9fZI6lfN48eVycXwd4SuUB1W8mrfSpLmbOxX7Wn37T8MTLBCoqTAAVOIm94MNxFH7FPYA7hgJtl2lPK2InDQ==}
+  '@snowplow/browser-tracker@4.0.1':
+    resolution: {integrity: sha512-eYoyQV251j+IvbHjxFv3QO54kMvagSK/Jqgf71yS+D7BTqjgt7vaEllegASDfjoXJRYgxDuxHLSCrdK9ugjSAA==}
 
-  '@snowplow/tracker-core@3.24.4':
-    resolution: {integrity: sha512-ltyGOTAOsjEyOIz3DqE+nIHXVlZThbokPeUIVYkPbuFpvfOga2GMFiYPwAH/rWKNIf8mW87oYSiGVJcc/E3J9A==}
+  '@snowplow/tracker-core@4.0.1':
+    resolution: {integrity: sha512-oX4FELetgF+mEjDDxt4hFbDHJG38ZkZKRkTvKkkAKpYeWlu/fSUlSjyFhE2cREvdU9vAvQ+TFYNbFEbAih1+JA==}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
@@ -5254,9 +5254,8 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
-  uuid@3.4.0:
-    resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
     hasBin: true
 
   uuid@8.3.2:
@@ -7196,23 +7195,23 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
 
-  '@snowplow/browser-tracker-core@3.24.4':
+  '@snowplow/browser-tracker-core@4.0.1':
     dependencies:
-      '@snowplow/tracker-core': 3.24.4
+      '@snowplow/tracker-core': 4.0.1
       sha1: 1.1.1
       tslib: 2.6.2
-      uuid: 3.4.0
+      uuid: 10.0.0
 
-  '@snowplow/browser-tracker@3.24.4':
+  '@snowplow/browser-tracker@4.0.1':
     dependencies:
-      '@snowplow/browser-tracker-core': 3.24.4
-      '@snowplow/tracker-core': 3.24.4
+      '@snowplow/browser-tracker-core': 4.0.1
+      '@snowplow/tracker-core': 4.0.1
       tslib: 2.6.2
 
-  '@snowplow/tracker-core@3.24.4':
+  '@snowplow/tracker-core@4.0.1':
     dependencies:
       tslib: 2.6.2
-      uuid: 3.4.0
+      uuid: 10.0.0
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.23.5)':
     dependencies:
@@ -12383,7 +12382,7 @@ snapshots:
 
   utils-merge@1.0.1: {}
 
-  uuid@3.4.0: {}
+  uuid@10.0.0: {}
 
   uuid@8.3.2: {}
 
