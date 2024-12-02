@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",
-    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/module-type-aliases": "3.6.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-json": "^4.0.1",
