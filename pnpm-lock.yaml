@@ -34,8 +34,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@docusaurus/eslint-plugin':
-        specifier: ^3.6.1
-        version: 3.6.1(eslint@8.57.1)(typescript@5.3.2)
+        specifier: ^3.6.3
+        version: 3.6.3(eslint@8.57.1)(typescript@5.3.2)
       '@docusaurus/module-type-aliases':
         specifier: 3.6.1
         version: 3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1369,8 +1369,8 @@ packages:
     resolution: {integrity: sha512-ZxYUmNeyQHW2w4/PJ7d07jQDuxzmKr9uPAQ6IVe5dTkeIeV0mDBB3jOLeJkNoI42Ru9JKEqQ9aVDtM9ct6QHnw==}
     engines: {node: '>=18.0'}
 
-  '@docusaurus/eslint-plugin@3.6.1':
-    resolution: {integrity: sha512-yo2DKHlF+fFP3Qml0ORXUAnQFKlbmXZxqbQKk9ZahlErGLQwqYTYJxK/gZrDwk2Tvrv0jSSisProkXH26vVTNw==}
+  '@docusaurus/eslint-plugin@3.6.3':
+    resolution: {integrity: sha512-CyniwPKULbBJQhecgANmCk6w98kvJr3Zrp3tTM5mxKcwytssYmABp/JhKjeksbMVsx/rYl3B19aQzGbF/ddFSg==}
     engines: {node: '>=18.0'}
     peerDependencies:
       eslint: '>=6'
@@ -7886,7 +7886,7 @@ snapshots:
       postcss-sort-media-queries: 5.2.0(postcss@8.4.44)
       tslib: 2.6.2
 
-  '@docusaurus/eslint-plugin@3.6.1(eslint@8.57.1)(typescript@5.3.2)':
+  '@docusaurus/eslint-plugin@3.6.3(eslint@8.57.1)(typescript@5.3.2)':
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.1)(typescript@5.3.2)
       eslint: 8.57.1
