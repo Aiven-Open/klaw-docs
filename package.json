@@ -39,7 +39,7 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "3.6.1",
+    "@docusaurus/core": "3.6.3",
     "@docusaurus/preset-classic": "3.6.1",
     "@mdx-js/react": "^3.1.0",
     "@snowplow/browser-tracker": "^4.0.4",
