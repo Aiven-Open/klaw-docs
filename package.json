@@ -42,7 +42,7 @@
     "@docusaurus/core": "3.6.3",
     "@docusaurus/preset-classic": "3.6.3",
     "@mdx-js/react": "^3.1.0",
-    "@snowplow/browser-tracker": "^4.0.4",
+    "@snowplow/browser-tracker": "^4.1.0",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.1",
@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",
-    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/module-type-aliases": "3.6.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-json": "^4.0.1",

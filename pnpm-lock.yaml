@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.2.42)(react@18.3.1)
       '@snowplow/browser-tracker':
-        specifier: ^4.0.4
-        version: 4.0.4
+        specifier: ^4.1.0
+        version: 4.1.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -37,8 +37,8 @@ importers:
         specifier: ^3.6.3
         version: 3.6.3(eslint@8.57.1)(typescript@5.3.2)
       '@docusaurus/module-type-aliases':
-        specifier: 3.6.1
-        version: 3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 3.6.3
+        version: 3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -1040,12 +1040,6 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
 
-  '@docusaurus/module-type-aliases@3.6.1':
-    resolution: {integrity: sha512-J+q1jgm7TnEfVIUZImSFeLA1rghb6nwtoB9siHdcgKpDqFJ9/S7xhQL2aEKE7iZMZYzpu+2F390E9A7GkdEJNA==}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-
   '@docusaurus/module-type-aliases@3.6.3':
     resolution: {integrity: sha512-MjaXX9PN/k5ugNvfRZdWyKWq4FsrhN4LEXaj0pEmMebJuBNlFeGyKQUa9DRhJHpadNaiMLrbo9m3U7Ig5YlsZg==}
     peerDependencies:
@@ -1146,12 +1140,6 @@ packages:
   '@docusaurus/theme-translations@3.6.3':
     resolution: {integrity: sha512-Gb0regclToVlngSIIwUCtBMQBq48qVUaN1XQNKW4XwlsgUyk0vP01LULdqbem7czSwIeBAFXFoORJ0RPX7ht/w==}
     engines: {node: '>=18.0'}
-
-  '@docusaurus/types@3.6.1':
-    resolution: {integrity: sha512-hCB1hj9DYutVYBisnPNobz9SzEmCcf1EetJv09O49Cov3BqOkm+vnnjB3d957YJMtpLGQoKBeN/FF1DZ830JwQ==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
 
   '@docusaurus/types@3.6.3':
     resolution: {integrity: sha512-xD9oTGDrouWzefkhe9ogB2fDV96/82cRpNGx2HIvI5L87JHNhQVIWimQ/3JIiiX/TEd5S9s+VO6FFguwKNRVow==}
@@ -1330,14 +1318,14 @@ packages:
   '@slorber/remark-comment@1.0.0':
     resolution: {integrity: sha512-RCE24n7jsOj1M0UPvIQCHTe7fI0sFL4S2nwKVWwHyVr/wI/H8GosgsJGyhnsZoGFnD/P2hLf1mSbrrgSLN93NA==}
 
-  '@snowplow/browser-tracker-core@4.0.4':
-    resolution: {integrity: sha512-9qoMTVb4S5uWw7XeM+QyBdT3BZFFNhBlE9wGNVXNPdtZenqPtRTi1FNZSY8a8jlTtHDqLJ/Hs7MzNaX+Wki+ZA==}
+  '@snowplow/browser-tracker-core@4.1.0':
+    resolution: {integrity: sha512-QsC80kv8lu3f+r4PxahlueklcuueYpJ/oM/X5rHIxPzefsgIJI5felOguxXMEZptPicLG7riwWnsiFN6g6vM1g==}
 
-  '@snowplow/browser-tracker@4.0.4':
-    resolution: {integrity: sha512-exSLWQa3hEX7asFSyz0J9J7m5AueL+xw7m082yZTwz0pzZDoePYcLNK5fdaV+JIIRJ8CarfSQg9YjwUmtRWdRA==}
+  '@snowplow/browser-tracker@4.1.0':
+    resolution: {integrity: sha512-4Ccuny+Hb4JiL5bKaZ3WWxfKxNYZsQeHSotf40yX8IWQ/Ttys9ohom2kk2dEIunOTEec7vkKGhNA44DV+B4rUQ==}
 
-  '@snowplow/tracker-core@4.0.4':
-    resolution: {integrity: sha512-8TffG+h/oHjpIbOlAseBEEBWdB4jcblgU2zwLviifxlqpIJ7xmy+Kmi1FgSkkIBEM6O+tDCERlReF3ijVsov3Q==}
+  '@snowplow/tracker-core@4.1.0':
+    resolution: {integrity: sha512-mj+yAjFSADQAbAuLx/bFW2BLkjjpMYFzW8HpNvsTkBXilEyQNkhpV/CE36YKZCJXghZomozQRlohWamISFmm3Q==}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
@@ -1454,9 +1442,6 @@ packages:
 
   '@types/estree-jsx@1.0.3':
     resolution: {integrity: sha512-pvQ+TKeRHeiUGRhvYwRrQ/ISnohKkSJR14fT2yqyZ4e9K5vqc7hrtY2Y1Dw0ZwAzQ6DQsxsaCUuSIIi8v0Cq6w==}
-
-  '@types/estree@1.0.5':
-    resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -7147,24 +7132,6 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/module-type-aliases@3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@docusaurus/types': 3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/history': 4.7.11
-      '@types/react': 18.2.42
-      '@types/react-router-config': 5.0.10
-      '@types/react-router-dom': 5.3.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-helmet-async: 2.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-loadable: '@docusaurus/react-loadable@6.0.0(react@18.3.1)'
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - supports-color
-      - uglify-js
-      - webpack-cli
-
   '@docusaurus/module-type-aliases@3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@docusaurus/types': 3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -7615,26 +7582,6 @@ snapshots:
       fs-extra: 11.2.0
       tslib: 2.6.2
 
-  '@docusaurus/types@3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@mdx-js/mdx': 3.0.0
-      '@types/history': 4.7.11
-      '@types/react': 18.2.42
-      commander: 5.1.0
-      joi: 17.11.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-helmet-async: 1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      utility-types: 3.10.0
-      webpack: 5.96.1
-      webpack-merge: 5.10.0
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - supports-color
-      - uglify-js
-      - webpack-cli
-
   '@docusaurus/types@3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@mdx-js/mdx': 3.0.0
@@ -7823,7 +7770,7 @@ snapshots:
 
   '@mdx-js/mdx@3.0.0':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.3
       '@types/hast': 3.0.3
       '@types/mdx': 2.0.10
@@ -7918,20 +7865,20 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
 
-  '@snowplow/browser-tracker-core@4.0.4':
+  '@snowplow/browser-tracker-core@4.1.0':
     dependencies:
-      '@snowplow/tracker-core': 4.0.4
+      '@snowplow/tracker-core': 4.1.0
       sha1: 1.1.1
       tslib: 2.6.2
       uuid: 10.0.0
 
-  '@snowplow/browser-tracker@4.0.4':
+  '@snowplow/browser-tracker@4.1.0':
     dependencies:
-      '@snowplow/browser-tracker-core': 4.0.4
-      '@snowplow/tracker-core': 4.0.4
+      '@snowplow/browser-tracker-core': 4.1.0
+      '@snowplow/tracker-core': 4.1.0
       tslib: 2.6.2
 
-  '@snowplow/tracker-core@4.0.4':
+  '@snowplow/tracker-core@4.1.0':
     dependencies:
       tslib: 2.6.2
       uuid: 10.0.0
@@ -8039,7 +7986,7 @@ snapshots:
 
   '@types/acorn@4.0.6':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   '@types/body-parser@1.19.5':
     dependencies:
@@ -8075,9 +8022,7 @@ snapshots:
 
   '@types/estree-jsx@1.0.3':
     dependencies:
-      '@types/estree': 1.0.5
-
-  '@types/estree@1.0.5': {}
+      '@types/estree': 1.0.6
 
   '@types/estree@1.0.6': {}
 
@@ -8354,6 +8299,10 @@ snapshots:
   acorn-jsx@5.3.2(acorn@8.11.2):
     dependencies:
       acorn: 8.11.2
+
+  acorn-jsx@5.3.2(acorn@8.14.0):
+    dependencies:
+      acorn: 8.14.0
 
   acorn-walk@8.3.0: {}
 
@@ -9494,7 +9443,7 @@ snapshots:
 
   estree-util-attach-comments@3.0.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   estree-util-build-jsx@3.0.1:
     dependencies:
@@ -9523,7 +9472,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   esutils@2.0.3: {}
 
@@ -9972,7 +9921,7 @@ snapshots:
 
   hast-util-to-estree@3.1.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.3
       '@types/hast': 3.0.3
       comma-separated-tokens: 2.0.3
@@ -9993,7 +9942,7 @@ snapshots:
 
   hast-util-to-jsx-runtime@2.3.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/hast': 3.0.3
       '@types/unist': 3.0.2
       comma-separated-tokens: 2.0.3
@@ -10366,7 +10315,7 @@ snapshots:
 
   is-reference@3.0.2:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   is-regex@1.1.4:
     dependencies:
@@ -11011,7 +10960,7 @@ snapshots:
 
   micromark-extension-mdx-expression@3.0.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.1
       micromark-factory-space: 2.0.0
@@ -11023,7 +10972,7 @@ snapshots:
   micromark-extension-mdx-jsx@3.0.0:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.1
@@ -11039,7 +10988,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@3.0.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
       micromark-util-character: 2.0.1
@@ -11051,8 +11000,8 @@ snapshots:
 
   micromark-extension-mdxjs@3.0.0:
     dependencies:
-      acorn: 8.11.2
-      acorn-jsx: 5.3.2(acorn@8.11.2)
+      acorn: 8.14.0
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       micromark-extension-mdx-expression: 3.0.0
       micromark-extension-mdx-jsx: 3.0.0
       micromark-extension-mdx-md: 2.0.0
@@ -11075,7 +11024,7 @@ snapshots:
 
   micromark-factory-mdx-expression@2.0.1:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       devlop: 1.1.0
       micromark-util-character: 2.0.1
       micromark-util-events-to-acorn: 2.0.2
@@ -11149,7 +11098,7 @@ snapshots:
   micromark-util-events-to-acorn@2.0.2:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/unist': 3.0.2
       devlop: 1.1.0
       estree-util-visit: 2.0.0
@@ -11549,7 +11498,7 @@ snapshots:
 
   periscopic@3.1.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-walker: 3.0.3
       is-reference: 3.0.2
 
