@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.2.42)(react@18.3.1)
       '@snowplow/browser-tracker':
-        specifier: ^4.0.4
-        version: 4.0.4
+        specifier: ^4.1.0
+        version: 4.1.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1318,14 +1318,14 @@ packages:
   '@slorber/remark-comment@1.0.0':
     resolution: {integrity: sha512-RCE24n7jsOj1M0UPvIQCHTe7fI0sFL4S2nwKVWwHyVr/wI/H8GosgsJGyhnsZoGFnD/P2hLf1mSbrrgSLN93NA==}
 
-  '@snowplow/browser-tracker-core@4.0.4':
-    resolution: {integrity: sha512-9qoMTVb4S5uWw7XeM+QyBdT3BZFFNhBlE9wGNVXNPdtZenqPtRTi1FNZSY8a8jlTtHDqLJ/Hs7MzNaX+Wki+ZA==}
+  '@snowplow/browser-tracker-core@4.1.0':
+    resolution: {integrity: sha512-QsC80kv8lu3f+r4PxahlueklcuueYpJ/oM/X5rHIxPzefsgIJI5felOguxXMEZptPicLG7riwWnsiFN6g6vM1g==}
 
-  '@snowplow/browser-tracker@4.0.4':
-    resolution: {integrity: sha512-exSLWQa3hEX7asFSyz0J9J7m5AueL+xw7m082yZTwz0pzZDoePYcLNK5fdaV+JIIRJ8CarfSQg9YjwUmtRWdRA==}
+  '@snowplow/browser-tracker@4.1.0':
+    resolution: {integrity: sha512-4Ccuny+Hb4JiL5bKaZ3WWxfKxNYZsQeHSotf40yX8IWQ/Ttys9ohom2kk2dEIunOTEec7vkKGhNA44DV+B4rUQ==}
 
-  '@snowplow/tracker-core@4.0.4':
-    resolution: {integrity: sha512-8TffG+h/oHjpIbOlAseBEEBWdB4jcblgU2zwLviifxlqpIJ7xmy+Kmi1FgSkkIBEM6O+tDCERlReF3ijVsov3Q==}
+  '@snowplow/tracker-core@4.1.0':
+    resolution: {integrity: sha512-mj+yAjFSADQAbAuLx/bFW2BLkjjpMYFzW8HpNvsTkBXilEyQNkhpV/CE36YKZCJXghZomozQRlohWamISFmm3Q==}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
@@ -7865,20 +7865,20 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
 
-  '@snowplow/browser-tracker-core@4.0.4':
+  '@snowplow/browser-tracker-core@4.1.0':
     dependencies:
-      '@snowplow/tracker-core': 4.0.4
+      '@snowplow/tracker-core': 4.1.0
       sha1: 1.1.1
       tslib: 2.6.2
       uuid: 10.0.0
 
-  '@snowplow/browser-tracker@4.0.4':
+  '@snowplow/browser-tracker@4.1.0':
     dependencies:
-      '@snowplow/browser-tracker-core': 4.0.4
-      '@snowplow/tracker-core': 4.0.4
+      '@snowplow/browser-tracker-core': 4.1.0
+      '@snowplow/tracker-core': 4.1.0
       tslib: 2.6.2
 
-  '@snowplow/tracker-core@4.0.4':
+  '@snowplow/tracker-core@4.1.0':
     dependencies:
       tslib: 2.6.2
       uuid: 10.0.0
