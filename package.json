@@ -55,7 +55,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-json": "^4.0.1",
     "eslint-plugin-react": "^7.37.2",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.2.11",
     "markdown-link-check": "^3.13.6",
     "markdownlint": "^0.36.1",
     "markdownlint-cli": "^0.43.0",
