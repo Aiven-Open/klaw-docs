@@ -20,6 +20,7 @@ Kafkawize
 Karapace
 Kafka
 kafka
+Keycloak
 Klaw
 Klaw's
 Metastore
