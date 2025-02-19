@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.2.42)(react@18.3.1)
       '@snowplow/browser-tracker':
-        specifier: ^4.2.0
-        version: 4.2.0
+        specifier: ^4.3.1
+        version: 4.3.1
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1341,14 +1341,14 @@ packages:
   '@slorber/remark-comment@1.0.0':
     resolution: {integrity: sha512-RCE24n7jsOj1M0UPvIQCHTe7fI0sFL4S2nwKVWwHyVr/wI/H8GosgsJGyhnsZoGFnD/P2hLf1mSbrrgSLN93NA==}
 
-  '@snowplow/browser-tracker-core@4.2.0':
-    resolution: {integrity: sha512-yLqaPSoFOH7c7csg1as3gNflvB2M6AwUToiHDddtx52jE52rudAa5jqCh8pblIfQ7HAulzSR/DQicQIYn7ihZw==}
+  '@snowplow/browser-tracker-core@4.3.1':
+    resolution: {integrity: sha512-6LBGvHHp4I+OibGmm81iHJLlQ/qI7QqnQlZKzVRa1KIMIUnfTvuGHdUnYNQL7aTWWB2sHFEvB+9JwMUEHQcp0g==}
 
-  '@snowplow/browser-tracker@4.2.0':
-    resolution: {integrity: sha512-EPns0oZDGVfNpsdag5bh5o4OHxwfAQpueKVrSjyPdIbciio+hIVH0zeOiKPhlLts+uirCE7YRMJ9S1SHNwjqqQ==}
+  '@snowplow/browser-tracker@4.3.1':
+    resolution: {integrity: sha512-u8BRg6Ei1/gJFuT87peHrN57lIzHDEukJjMndLSXw2euorIEauGWcQGepZrqsK0ihEAb+3tcmyiVhhGC6KWUHA==}
 
-  '@snowplow/tracker-core@4.2.0':
-    resolution: {integrity: sha512-6SZi1SACJgCFIiz6BYk9Run5Z4u2lEKC5AYuaU5qM1xMnmW6UV2752nl3VmRqIeg0Be7VCgaA83iZZf3z/Sg5g==}
+  '@snowplow/tracker-core@4.3.1':
+    resolution: {integrity: sha512-1hWOlDQdPnIVB/zlqKbSj+4I1sQQWBEblGGU1FIYKaRi+YMnvLJu35N0cGOk41J0ZFPCf9/HpxOAG88JhWsEuQ==}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
@@ -5523,6 +5523,9 @@ packages:
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
   tsutils@3.21.0:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
     engines: {node: '>= 6'}
@@ -7195,7 +7198,7 @@ snapshots:
       cssnano-preset-advanced: 6.1.2(postcss@8.4.44)
       postcss: 8.4.44
       postcss-sort-media-queries: 5.2.0(postcss@8.4.44)
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@docusaurus/eslint-plugin@3.7.0(eslint@8.57.1)(typescript@5.3.2)':
     dependencies:
@@ -7283,7 +7286,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       reading-time: 1.5.0
       srcset: 4.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
       unist-util-visit: 5.0.0
       utility-types: 3.10.0
       webpack: 5.96.1
@@ -7325,7 +7328,7 @@ snapshots:
       lodash: 4.17.21
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
       utility-types: 3.10.0
       webpack: 5.96.1
     transitivePeerDependencies:
@@ -7358,7 +7361,7 @@ snapshots:
       fs-extra: 11.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
       webpack: 5.96.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
@@ -7389,7 +7392,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-json-view-lite: 1.2.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -7417,7 +7420,7 @@ snapshots:
       '@docusaurus/utils-validation': 3.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -7446,7 +7449,7 @@ snapshots:
       '@types/gtag.js': 0.0.12
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -7474,7 +7477,7 @@ snapshots:
       '@docusaurus/utils-validation': 3.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -7507,7 +7510,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       sitemap: 7.1.1
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -7538,7 +7541,7 @@ snapshots:
       '@svgr/webpack': 8.1.0(typescript@5.3.2)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
       webpack: 5.96.1
     transitivePeerDependencies:
       - '@docusaurus/faster'
@@ -7634,7 +7637,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-router-dom: 5.3.4(react@18.3.1)
       rtlcss: 4.1.1
-      tslib: 2.6.2
+      tslib: 2.8.1
       utility-types: 3.10.0
     transitivePeerDependencies:
       - '@docusaurus/faster'
@@ -7671,7 +7674,7 @@ snapshots:
       prism-react-renderer: 2.4.1(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
       utility-types: 3.10.0
     transitivePeerDependencies:
       - '@swc/core'
@@ -7698,7 +7701,7 @@ snapshots:
       lodash: 4.17.21
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      tslib: 2.6.2
+      tslib: 2.8.1
       utility-types: 3.10.0
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -7726,7 +7729,7 @@ snapshots:
   '@docusaurus/theme-translations@3.7.0':
     dependencies:
       fs-extra: 11.2.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@docusaurus/types@3.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -8018,22 +8021,22 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
 
-  '@snowplow/browser-tracker-core@4.2.0':
+  '@snowplow/browser-tracker-core@4.3.1':
     dependencies:
-      '@snowplow/tracker-core': 4.2.0
+      '@snowplow/tracker-core': 4.3.1
       sha1: 1.1.1
-      tslib: 2.6.2
+      tslib: 2.8.1
       uuid: 10.0.0
 
-  '@snowplow/browser-tracker@4.2.0':
+  '@snowplow/browser-tracker@4.3.1':
     dependencies:
-      '@snowplow/browser-tracker-core': 4.2.0
-      '@snowplow/tracker-core': 4.2.0
-      tslib: 2.6.2
+      '@snowplow/browser-tracker-core': 4.3.1
+      '@snowplow/tracker-core': 4.3.1
+      tslib: 2.8.1
 
-  '@snowplow/tracker-core@4.2.0':
+  '@snowplow/tracker-core@4.3.1':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
       uuid: 10.0.0
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.26.0)':
@@ -8628,7 +8631,7 @@ snapshots:
 
   ast-types@0.13.4:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   astring@1.8.6: {}
 
@@ -8805,7 +8808,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   camelcase@6.3.0: {}
 
@@ -9356,7 +9359,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   dot-prop@6.0.1:
     dependencies:
@@ -10795,7 +10798,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   lowercase-keys@3.0.0: {}
 
@@ -11484,7 +11487,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   node-email-verifier@2.0.0:
     dependencies:
@@ -11677,7 +11680,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -11716,7 +11719,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -12877,7 +12880,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   sockjs@0.3.24:
     dependencies:
@@ -13126,6 +13129,8 @@ snapshots:
   tslib@1.14.1: {}
 
   tslib@2.6.2: {}
+
+  tslib@2.8.1: {}
 
   tsutils@3.21.0(typescript@5.3.2):
     dependencies:
