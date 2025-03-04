@@ -52,14 +52,14 @@
     "@docusaurus/eslint-plugin": "^3.7.0",
     "@docusaurus/module-type-aliases": "3.7.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-json": "^4.0.1",
     "eslint-plugin-react": "^7.37.4",
     "lint-staged": "^15.4.3",
     "markdown-link-check": "^3.13.6",
     "markdownlint": "^0.37.4",
     "markdownlint-cli": "^0.44.0",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.3",
     "prop-types": "^15.8.1"
   },
   "browserslist": {
