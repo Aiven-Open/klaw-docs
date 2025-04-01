@@ -15,12 +15,12 @@ This helps you better organize and manage your Apache Kafka topics and data.
 
 Klaw supports the following protocols:
 
-- PLAINTEXT
 - SSL
 - SASL PLAIN
 - SASL SSL
 - SASL SSL (GSSAPI/Kerberos)
 - SASL_SSL (SCRAM SHA 256/512)
+- PLAINTEXT (insecure and not recommended)
 
 ## Order and promote environments
 

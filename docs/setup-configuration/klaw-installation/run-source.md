@@ -88,6 +88,7 @@ the source.
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
+   - **Password:** based on configuration of klaw.superadmin.default.password in core/resources/application.properties (starting from the Klaw 2.9.0 release)
 
 ## Next steps
 
