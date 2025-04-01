@@ -40,10 +40,10 @@ To add a new cluster in Klaw, follow these steps:
          - **Bootstrap servers**: Enter the comma-separated list of bootstrap servers, for
            example, `server1:9092,server2:9092,server3:9092`.
        - If you are adding a **Schema Registry cluster**, enter the following:
-         - **Protocol**: Select either SSL or PLAINTEXT(not recommended).
+         - **Protocol**: Select either SSL or PLAINTEXT (not recommended).
          - **Bootstrap servers**: Enter the comma-separated list of bootstrap servers.
        - If you are adding a **Kafka Connect cluster**, enter the following:
-         - **Protocol**: Select either SSL or PLAINTEXT(not recommended).
+         - **Protocol**: Select either SSL or PLAINTEXT (not recommended).
          - **Kafka Connect servers**: Enter the URL of the Apache Kafka Connect servers, for example, server1:8083.
 
 5. Select **Save** to create the new cluster. A new cluster is now
