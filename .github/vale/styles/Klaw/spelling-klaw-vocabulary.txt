@@ -81,3 +81,5 @@ unencrypted
 kwregisterusers
 Json
 preferred_username
+bcrypt
+klaw
