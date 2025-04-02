@@ -83,3 +83,4 @@ Json
 preferred_username
 bcrypt
 klaw
+yaml
