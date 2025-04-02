@@ -158,7 +158,7 @@ To verify the installation and access Klaw, follow the steps below:
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
-   - **Password:** Set based on the `klaw.superadmin.default.password` property in `core/resources/application.properties`. Available starting in Klaw 2.9.0.
+   - **Password:** Set based on the `klaw.superadmin.default.password` property in `core/resources/application.properties`. From Klaw 2.10.0 we are enforcing users to set their own superadmin password by setting KLAW_SUPERADMIN_DEFAULT_PASSWORD in the docker yaml file
 
    Recommend you change the default credentials before running Klaw in your application.
 
