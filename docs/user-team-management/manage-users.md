@@ -29,6 +29,7 @@ your email address and name, from the **My Profile** menu.
 ## Change password
 
 You can change your password from the **Change Password** menu.
+Password policy: Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.
 
 ## Update other users
 
