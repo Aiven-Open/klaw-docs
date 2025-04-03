@@ -88,7 +88,7 @@ the source.
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
-   - **Password:** Set based on the `klaw.superadmin.default.password` property in `core/resources/application.properties`. From Klaw 2.10.0 we are enforcing users to set their own superadmin password by setting the `klaw.superadmin.default.password` property in core/resources/application.properties
+   - **Password:** Set using the `klaw.superadmin.default.password` property in the `core/resources/application.properties` file. Starting with Klaw 2.10.0, users must define their own superadmin password by setting this property.
 
 ## Next steps
 
