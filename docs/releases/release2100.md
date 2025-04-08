@@ -38,13 +38,13 @@ With v2.10.0, users with the role `SUPERADMIN` will have access to the new React
 
 ### 🛡️ Security updates
 
-- Default superadmin password removed from application config, needs now to be configured on startup.
+- Default superadmin password removed from application configuration, needs now to be configured on startup.
 - Discourage and warn users from usage of PLAINTEXT as protocol (UI change).
 - Update rules for passwords.
-- Delete unused, old dependency (owl carousal js)
-- Add api permission check on `testClusterApiConnection` as this should be elevated for administrators only.
-- Remove params from api calls.
-- Change permission to add/update super admin useres (only super admin can do so).
+- Delete unused, old dependency (owl carousal-js)
+- Add API permission check on `testClusterApiConnection` as this should be elevated for administrators only.
+- Remove parameters from API calls.
+- Change permission to add/update super admin users (only super admin can do so).
 - Upgrade encryption to BCrypt for password storage, also no longer sends plain text passwords to users on initial creation.
 - Change emails for new user registration so that they do not get sent a plaintext password in their email.
 - Re-enable and correctly configured CSRF protection in both backend and frontend (Angular as well as React).
