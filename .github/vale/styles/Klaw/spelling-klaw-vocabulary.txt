@@ -20,6 +20,7 @@ Kafkawize
 Karapace
 Kafka
 kafka
+Keycloak
 Klaw
 Klaw's
 Metastore
@@ -81,3 +82,4 @@ unencrypted
 kwregisterusers
 Json
 preferred_username
+BCrypt
