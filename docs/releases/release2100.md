@@ -38,16 +38,25 @@ With v2.10.0, users with the role `SUPERADMIN` will have access to the new React
 
 ### 🛡️ Security updates
 
-- Default superadmin password removed from application configuration, needs now to be configured on startup.
+- Default superadmin password removed from application configuration, it is required now to be configured on startup.
 - Discourage and warn users from usage of PLAINTEXT as protocol (UI change).
 - Update rules for passwords.
 - Delete unused, old dependency (owl carousal-js)
 - Add API permission check on `testClusterApiConnection` as this should be elevated for administrators only.
-- Remove parameters from API calls.
+- Remove deprecated and unused parameters from API calls.
 - Change permission to add/update super admin users (only super admin can do so).
 - Upgrade encryption to BCrypt for password storage, also no longer sends plain text passwords to users on initial creation.
 - Change emails for new user registration so that they do not get sent a plaintext password in their email.
 - Re-enable and correctly configured CSRF protection in both backend and frontend (Angular as well as React).
+
+### ⚠️ Rollback notes
+
+This release updates password hashing to use bcrypt for improved security. If you rollback to Klaw 2.9.0 or earlier, users may not be able to log in with passwords created or changed in 2.10.0.
+
+- Older versions do not support bcrypt, so bcrypt-hashed passwords will fail validation.
+- In such cases, affected users may need to reset their passwords manually.
+
+**Recommendation**: Avoid rolling back unless absolutely necessary. If you must, ensure you have a process in place to assist users with password resets.
 
 ### Redesigned screens with React UI
 
@@ -60,7 +69,7 @@ Key updates in the new React UI include:
 ### Improvements
 
 - Improves cross DB compatibility by using `jpq`
-- Improve Claim experience
+- Improved Claim experience
 - Enable viewing Topic events based on offset range and partition
 
 ### Bug fixes
