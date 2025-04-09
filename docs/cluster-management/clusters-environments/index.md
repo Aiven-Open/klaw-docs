@@ -20,7 +20,7 @@ Klaw supports the following protocols:
 - SASL SSL
 - SASL SSL (GSSAPI/Kerberos)
 - SASL_SSL (SCRAM SHA 256/512)
-- PLAINTEXT – Supported by Klaw, but not recommended for use outside of a proof of concept due to security concerns, as it transmits data unencrypted.
+- PLAINTEXT - Supported by Klaw, but not recommended for use outside of a proof of concept due to security concerns, as it transmits data unencrypted.
 
 :::warning
 For production use, it's strongly advised to choose a secure protocol like SSL or SASL.
