@@ -15,12 +15,18 @@ This helps you better organize and manage your Apache Kafka topics and data.
 
 Klaw supports the following protocols:
 
-- PLAINTEXT
 - SSL
 - SASL PLAIN
 - SASL SSL
 - SASL SSL (GSSAPI/Kerberos)
 - SASL_SSL (SCRAM SHA 256/512)
+- PLAINTEXT - Supported by Klaw, but not recommended for use outside of a proof of concept due to security concerns, as it transmits data unencrypted.
+
+:::warning
+For production use, it's strongly advised to choose a secure protocol like SSL or SASL.
+:::
+
+See also: [Cluster connectivity setup](../../cluster-connectivity-setup/index.md)
 
 ## Order and promote environments
 
@@ -38,5 +44,5 @@ environment to a Apache Kafka Environment meaning that you no longer need to
 duplicate the promotion ordering for both topics and for schema
 registries.
 
-:::note
+:::info
 A schema registry can only be associated with one Apache Kafka environment at a time.

@@ -58,6 +58,7 @@ services:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
       KLAW_UIAPI_SERVERS: "http://localhost:9097"
+      KLAW_SUPERADMIN_DEFAULT_PASSWORD: ""
     network_mode: "host"
     volumes:
       - "klaw_data:/klaw"
@@ -91,6 +92,7 @@ services:
       KLAW_CLUSTERAPI_ACCESS_BASE64_SECRET: VGhpc0lzRXhhY3RseUEzMkNoYXJTdHJpbmdTZWNyZXQK
       SPRING_DATASOURCE_URL: "jdbc:h2:file:/klaw/klawprodb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
       KLAW_UIAPI_SERVERS: "http://localhost:9097"
+      KLAW_SUPERADMIN_DEFAULT_PASSWORD: ""
     volumes:
       - "klaw_data:/klaw"
     extra_hosts:
@@ -156,6 +158,7 @@ To verify the installation and access Klaw, follow the steps below:
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)
+   - **Password:** Set using the `KLAW_SUPERADMIN_DEFAULT_PASSWORD` property in the Docker Compose file. Starting with Klaw 2.10.0, users must define their own superadmin password by setting this property in the Docker YAML file
 
    Recommend you change the default credentials before running Klaw in your application.
 

@@ -30,8 +30,8 @@ responsible for approving or declining subscription requests.
 
    - Select Pattern type LITERAL (on one topic) or PREFIXED (on
      all topics with the same prefix).
-   - Provide a transaction ID(optional). This is required for
-     exactly-once semantics.
+   - Provide a transaction ID(optional). This is required for <!-- vale:skip -->
+     exactly-once semantics.<!-- vale:endskip -->
 
 6. For the ACL type: Consumer
 
