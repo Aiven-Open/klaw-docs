@@ -19,7 +19,7 @@ To enable authentication with the Klaw database, follow these steps:
 
     `klaw.jasypt.encryptor.secretkey=kw2021secretkey`
 
-    Additionally, bcrypt encryption is supported for enhanced security starting with Klaw 2.10.0.
+    Additionally, BCrypt encryption is supported for enhanced security starting with Klaw 2.10.0.
 
 3.  **Decrypt password:** The password stored in the database can be decrypted with the following java code.
 

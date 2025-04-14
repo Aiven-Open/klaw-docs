@@ -82,6 +82,6 @@ unencrypted
 kwregisterusers
 Json
 preferred_username
-bcrypt
+BCrypt
 yaml
 exactly-once semantics
