@@ -15,21 +15,15 @@ With v2.10.0, users with the role `SUPERADMIN` will have access to the new React
 
 ### Binaries
 
-[//]: # "@TODO links"
+[`klaw-2.10.0.jar` ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.10.0/klaw-2.10.0.jar)
 
-[`klaw-2.10.0.jar` ⬇︎](https://github.com/Aiven-Open/klaw/releases/download/v2.9.0/klaw-2.9.0.jar)
-
-[//]: # "@TODO links"
-
-[`cluster-api-2.10.0.jar` ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.9.0/cluster-api-2.9.0.jar)
+[`cluster-api-2.10.0.jar` ⬇](https://github.com/Aiven-Open/klaw/releases/download/v2.10.0/cluster-api-2.10.0.jar)
 
 ### Sources
 
-[`klaw-2.10.0.zip` ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.9.0.zip)
+[`klaw-2.10.0.zip` ⬇](https://github.com/Aiven-Open/klaw/archive/refs/tags/v2.10.0.zip)
 
 ### Docker
-
-[//]: # "@TODO links"
 
 - [Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core)
 - [Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
