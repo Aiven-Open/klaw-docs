@@ -1,10 +1,10 @@
 ---
-sidebar_position: 99.86
+sidebar_position: 99.85
 ---
 
 # Release 2.10.0
 
-Date: X of April, 2025
+Date: 15 of April, 2025
 
 ## Overview
 
