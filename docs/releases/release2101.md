@@ -4,12 +4,12 @@ sidebar_position: 99.84
 
 # Release 2.10.1
 
-Date: 6th of June, 2025
+Date: June 13, 2025
 
 ## Overview
 
 Overview
-Klaw version 2.10.1 is a patch release which improves couple of user flows while a user is onboarding with Single sign on.
+Klaw version 2.10.1 is a patch release that improves a few onboarding flows for single sign-on (SSO) users.
 
 ## Download
 
