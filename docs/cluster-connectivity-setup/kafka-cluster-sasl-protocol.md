@@ -9,7 +9,7 @@ This section explains how to connect Klaw to an Apache Kafka cluster using the S
 
 ## Configure and connect using SASL_SSL protocol
 
-ollow these steps to configure and connect Klaw to an Apache Kafka cluster using SASL_SSL:
+Follow these steps to configure and connect Klaw to an Apache Kafka cluster using SASL_SSL:
 
 1. In the Klaw web interface, go to **Environments**, and click
    **Clusters**.
@@ -59,10 +59,10 @@ ollow these steps to configure and connect Klaw to an Apache Kafka cluster using
     clusterid.kafkasasl.jaasconfig.oauthbearer=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule Required clientId="klaw" clientSecret="clientSecret" unsecuredLoginStringClaim_sub="sub";
     ```
 
-12. Add the necessary access control lists (ACLs) to the Apache Kafka cluster to authorize Klaw to create topics and ACLs. 
+12. Add the necessary access control lists (ACLs) to the Apache Kafka cluster to authorize Klaw to create topics and ACLs.
     For example:
 
     `--operation All --clusterCluster:kafka-cluster --topic "*"`
 
-13. Redeploy the Klaw Cluster API with the updated configuration. This enables Klaw to connect to the 
+13. Redeploy the Klaw Cluster API with the updated configuration. This enables Klaw to connect to the
     Apache Kafka cluster using the SASL_SSL protocol.
