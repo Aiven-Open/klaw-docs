@@ -50,7 +50,7 @@ Follow these steps to configure and connect Klaw to an Apache Kafka cluster usin
     <principal=%22kafkaclient1@EXAMPLE.COM>\";
     ```
 
-11. If using the OAUTHBEARER mechanism with SASL_SSL, add the following configuration:
+11. If using the OAUTHBEARER mechanism with SASL_SSL, add the following configurations:
 
     ```java
     clusterid.kafkasasl.saslmechanism.oauthbearer=OAUTHBEARER
