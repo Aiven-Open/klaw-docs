@@ -54,7 +54,7 @@ cluster in Klaw using SASL_SSL protocol:
     <principal=%22kafkaclient1@EXAMPLE.COM>\";
     ```
 
-11. If SASL_SSL with OAUTHBEARER mechanism is configured, below here is a sample config.
+11. If SASL_SSL with OAUTHBEARER mechanism is configured, below here is a sample configuration.
 
     ```java
     clusterid.kafkasasl.saslmechanism.oauthbearer=OAUTHBEARER
