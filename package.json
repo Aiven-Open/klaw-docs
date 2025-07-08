@@ -81,5 +81,5 @@
     "yarn": "❗Please use pnpm to assure a consistent package management.",
     "npm": "❗Please use pnpm to assure a consistent package management."
   },
-  "packageManager": "pnpm@8.15.6+sha1.8105075ad0aa306138be128c017e9c41e28ecffa"
+  "packageManager": "pnpm@9.0.0"
 }
