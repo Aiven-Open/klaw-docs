@@ -38,7 +38,6 @@ Follow the steps below to configure and connect to a Confluent Cloud Apache Kafk
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
 3. On the **Add Kafka cluster** page, enter the following details:
-
    - **Cluster Type:** Select **Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster

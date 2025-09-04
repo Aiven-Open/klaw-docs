@@ -154,7 +154,6 @@ To verify the installation and access Klaw, follow the steps below:
 
 1. Access Klaw using the below default credentials for the superadmin
    account:
-
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)

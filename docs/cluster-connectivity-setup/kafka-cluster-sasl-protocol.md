@@ -15,7 +15,6 @@ Follow these steps to configure and connect Klaw to an Apache Kafka cluster usin
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
 3. On the **Add Kafka cluster** page, enter the following details:
-
    - **Cluster Type:** Select **Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SASL_SSL protocol for your cluster

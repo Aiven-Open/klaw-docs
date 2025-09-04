@@ -52,7 +52,6 @@ first install the [Aiven client](https://github.com/aiven/aiven-client) CLI tool
     configuration lines.
 
 5.  Paste the lines into the Klaw `application.properties` file, but please note that the following changes are needed:
-
     - Get the identification of cluster from user interface, in the
       clusters page, with the copy option.
     - Replace `ssl.*` with `dev1.kafkassl.*`. [dev1] is

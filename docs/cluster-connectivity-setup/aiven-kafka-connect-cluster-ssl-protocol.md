@@ -27,7 +27,6 @@ Kafka Connect service with Klaw using SSL protocol:
 2. On the **Clusters** page, click **Add Cluster**.
 
 3. On the **Add Kafka cluster** page, enter the following details:
-
    - **Cluster Type:** Select **Kafka Connect** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster\*
    - **Protocol:** Select SSL protocol for your cluster
@@ -36,7 +35,6 @@ Kafka Connect service with Klaw using SSL protocol:
    - **Bootstrap server:** Enter the Service URI for your Apache Kafka Connect service. You can find the service URI in the Connection information page of your service in Aiven Console.
 
    In the service URI, you can omit the `https://` portion of the URL and the user credentials. The Aiven for Apache Kafka Connect server details should typically start with `kafkaconnect-<servicename>-<projectname>:<port>`.
-
    - **Service Name:** Enter the name of the service as defined in the [Aiven Console](https://console.aiven.io/) for your Apache Kafka service
 
 4. Click **Save**.

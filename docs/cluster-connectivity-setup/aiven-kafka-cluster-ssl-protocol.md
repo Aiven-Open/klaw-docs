@@ -65,7 +65,6 @@ Kafka and Klaw using SSL protocol:
     ```
 
     It is possible to configure JKS, PKCS12 and PEM certificate types.
-
     - For the lines starting with `clusterid`, replace `clusterid` with the Klaw cluster ID.
     - Replace `client.keystore.p12` with the path for the keystore and `klaw1234` with the password configured for the
       keystore file.
