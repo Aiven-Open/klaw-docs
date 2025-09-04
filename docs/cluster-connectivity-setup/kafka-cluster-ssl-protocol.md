@@ -24,7 +24,6 @@ cluster in Klaw using SSL protocol:
    **Clusters**.
 2. On the **Clusters** page, click **Add Cluster**.
 3. On the **Add Kafka cluster** page, enter the following details:
-
    - **Cluster Type:** Select **Kafka** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster
@@ -60,7 +59,6 @@ cluster in Klaw using SSL protocol:
     :::note
     It is possible to configure JKS, PKCS12 and PEM certificate types.
     :::
-
     - For the lines starting with `clusterid`, replace `clusterid` with
       the Klaw Cluster ID.
     - Replace `client.keystore.p12` with the path for the keystore and

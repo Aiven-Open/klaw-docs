@@ -85,7 +85,6 @@ details within Klaw.
 
 - **Status**  
   The Status will show the current state of the request
-
   - `created`
   - `approved`
   - `declined`

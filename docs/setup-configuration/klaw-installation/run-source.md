@@ -19,12 +19,10 @@ the source.
 
    The redesigned UI is enabled by default since Release 2.4.0. If you
    want to use Klaw without the preview, for now, you can disable it:
-
    - Configure the property `klaw.coral.enabled` in the
      `application.properties` file to `false` in the module: core.
 
 3. Configure Klaw Cluster API access
-
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with a base64
      string in the module: `core`.
    - Configure the property `klaw.clusterapi.access.base64.secret` in the `application.properties` file with the above
@@ -47,20 +45,17 @@ the source.
    node, npm, and pnpm are also installed locally (required for React UI assets) through maven execution plugins.
 
    If the build runs into an error while installing node/npm/pnpm, you can
-
    - Disable the execution plugins (for node/npm/pnpm) in module `core/pom.xml`
    - Manually install node/npm/pnpm and copy assets by following the procedure
      here. [Manual installation of React](https://github.com/aiven/klaw/blob/main/coral/README.md)
 
 5. Start the API components by running its JAR files:
-
    - Run with script
 
      In the bin directory of the repository, run the script `run-klaw.sh` for Mac or Linux, which starts both Klaw Core and
      Klaw Cluster API applications.
 
    Alternatively
-
    - Run with commands
 
      `java -jar klaw-clusterapi-<version>.jar`
@@ -84,7 +79,6 @@ the source.
    ```
 
 7. Log in as the administrator user to get started.
-
    - **Username:** `superadmin`
    - **Password:** `kwsuperadmin123$$` (for Klaw releases 2.5.0 and older)
    - **Password:** `welcometoklaw` (starting from the Klaw 2.6.0 release)

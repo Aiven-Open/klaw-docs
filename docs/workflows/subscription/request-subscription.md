@@ -17,7 +17,6 @@ responsible for approving or declining subscription requests.
 2. Select the subscribe button available in the bottom right corner.
 
 3. Select the environment where the Apache Kafka topic is located and available for subscription creation.
-
    - Based on Apache Kafka flavor of the environment, the fields
      displayed will vary.
    - For Aiven for Apache Kafka environment, there are no
@@ -27,18 +26,15 @@ responsible for approving or declining subscription requests.
    Consumer (read access on the topic).
 
 5. For the ACL type: Producer
-
    - Select Pattern type LITERAL (on one topic) or PREFIXED (on
      all topics with the same prefix).
    - Provide a transaction ID(optional). This is required for <!-- vale:skip -->
      exactly-once semantics.<!-- vale:endskip -->
 
 6. For the ACL type: Consumer
-
    - A consumer group is mandatory.
 
 7. Select ACL IP (host based) or Principal based
-
    - IP: add one or more IP addresses (IPv4 / IPv6).
    - Principal: add one or more Principals (SSL DN strings or
      usernames).

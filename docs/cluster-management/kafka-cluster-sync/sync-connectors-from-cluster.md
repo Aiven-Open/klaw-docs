@@ -16,7 +16,6 @@ them to a team in Klaw.
 1. Navigate to the **Synchronize** menu and select **Connectors from Cluster**.
 
 2. Synchronize connectors with the following option:
-
    - Select one or more connectors individually, choose a team, and
      save.
    - The selected connector will now appear in the **Apache Kafka

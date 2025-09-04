@@ -14,7 +14,6 @@ topics from an existing Apache Kafka cluster and assigning them to a Klaw team.
 1. Navigate to the Synchronize menu and select **Topics from Cluster**.
 
 2. Synchronize topics with either of the following two options:
-
    - `Individual Options`: Select one or more topics
      individually, choose a team, and save. The selected topics
      will now appear in the **Topics** menu, assigned to the chosen

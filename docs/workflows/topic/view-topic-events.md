@@ -17,7 +17,6 @@ This feature may not be available in the old Klaw UI.
 2. In the **Topic overview** tab, select the right environment for your topic.
 3. Next, select the **Messages** tab.
 4. Choose a fetching mode:
-
    - **Default mode:** Select the number of messages you wish to display. This mode shows the latest messages from the topic's partitions.
      ![image](../../../static/images/topic/view-events1.png)
    - **Custom mode:** Enter a partition ID and specify the number of messages you want to display from that partition.

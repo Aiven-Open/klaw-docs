@@ -19,7 +19,6 @@ Before you begin, ensure that you are the owner of the Consumer ACL for the cons
    ![image](../../../static/images/operational/reset-offsets1.png)
 
 5. Select the button to open a form with three reset options:
-
    - LATEST: Resets to the most recent consumed message.
    - EARLIEST: Resets to the earliest available message.
    - TO_DATE_TIME: Resets to the oldest message consumed before a specific timestamp.
