@@ -20,7 +20,6 @@ process.
 Klaw data is classified into the below 3 types.
 
 - Admin configuration comprises of the below entities
-
   - Tenants
   - Clusters
   - Environments
@@ -31,7 +30,6 @@ Klaw data is classified into the below 3 types.
   - Properties
 
 - Core configuration comprises of the below
-
   - Topics
   - Subscriptions
   - Schemas

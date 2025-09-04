@@ -27,7 +27,6 @@ registry cluster with Klaw using SSL protocol:
    <!-- vale off -->
 3. On the **Add Kafka cluster** page, enter the following details:
    <!-- vale on -->
-
    - **Cluster Type:** Select **SchemaRegistry** from the drop-down list
    - **Cluster Name:** Provide a name for the cluster
    - **Protocol:** Select SSL protocol for your cluster

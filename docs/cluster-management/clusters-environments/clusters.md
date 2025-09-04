@@ -28,7 +28,6 @@ To add a new cluster in Klaw, follow these steps:
 2. Navigate to the **Environments** tab and select **Clusters**.
 3. On the **Clusters** screen, select **Add Cluster**.
 4. On the **Add Kafka Cluster** screen, provide the following information:
-
    - **Cluster type**: Choose a cluster type from the dropdown menu (Kafka, schema registry, or Kafka Connect). Based
      on the cluster type, you need to include additional information.
    - **Cluster name**: Enter a name for the cluster, for example, `Dev_cluster`.

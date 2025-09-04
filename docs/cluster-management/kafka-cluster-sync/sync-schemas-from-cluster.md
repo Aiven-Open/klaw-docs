@@ -21,7 +21,6 @@ its versions associated with the selected topics with those available on the sch
 
 1. Navigate to the **Synchronize** menu and select **Schemas from cluster**.
 2. Synchronize schemas using following option:
-
    - `Individual Options`: Select one or more topics individually
      and save. The selected schemas will now appear in the
      **Schemas** tab in the **Topic overview** menu.
