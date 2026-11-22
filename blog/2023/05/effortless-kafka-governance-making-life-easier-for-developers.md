@@ -187,8 +187,6 @@ for its capabilities.
 
 [Documentation](https://www.klaw-project.io/docs)
 
-[Community forum](https://aiven.io/community/forum/tags/c/open-source/12/klaw)
-
 [Docker Klaw Core](https://hub.docker.com/r/aivenoy/klaw-core), [Docker Klaw Cluster API](https://hub.docker.com/r/aivenoy/klaw-cluster-api)
 
 ## Conclusion

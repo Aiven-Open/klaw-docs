@@ -119,10 +119,6 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Forum",
-                href: "https://aiven.io/community/forum/tags/c/open-source/12/klaw",
-              },
-              {
                 label: "Contact us",
                 href: "mailto:info@klaw-project.io",
               },
