@@ -46,8 +46,8 @@ importers:
         specifier: ^10.1.8
         version: 10.1.8(eslint@8.57.1(supports-color@8.1.1))
       eslint-plugin-json:
-        specifier: ^4.0.1
-        version: 4.0.1
+        specifier: ^5.0.0
+        version: 5.0.0
       eslint-plugin-react:
         specifier: ^7.37.5
         version: 7.37.5(eslint@8.57.1(supports-color@8.1.1))
@@ -2673,8 +2673,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-json@4.0.1:
-    resolution: {integrity: sha512-3An5ISV5dq/kHfXdNyY5TUe2ONC3yXFSkLX2gu+W8xAhKhfvrRvkSAeKXCxZqZ0KJLX15ojBuLPyj+UikQMkOA==}
+  eslint-plugin-json@5.0.0:
+    resolution: {integrity: sha512-x7YyFjvOninRJR9rsaAGFxoGNgMMLoxpxsuoPWubg3fkbWWsjdAGRzTEUZsAVz+7Ghl7n4q83UyFmCLW/v/mzg==}
     engines: {node: '>=18.0'}
 
   eslint-plugin-react@7.37.5:
@@ -9570,7 +9570,7 @@ snapshots:
     dependencies:
       eslint: 8.57.1(supports-color@8.1.1)
 
-  eslint-plugin-json@4.0.1:
+  eslint-plugin-json@5.0.0:
     dependencies:
       lodash: 4.17.21
       vscode-json-languageservice: 4.2.1
