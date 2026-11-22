@@ -33,8 +33,9 @@
 :root {
   --ifm-font-family-base: "Inter";
   --ifm-heading-font-family: "Poppins";
-
   --ifm-link-decoration: underline;
+
+  --search-local-muted-color: #444950;
 }
 
 .footer {
@@ -123,6 +124,8 @@ html[data-theme="light"] .card:hover {
 
 /*0788d1*/
 html[data-theme="dark"] {
+  --search-local-muted-color: #c0c6d0;
+
   --ifm-color-primary: #0399e3;
 
   --ifm-link-color: #0399e3;

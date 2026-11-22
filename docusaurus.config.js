@@ -30,7 +30,10 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  clientModules: [require.resolve("./snowplow.js")],
+  clientModules: [
+    require.resolve("./snowplow.js"),
+    require.resolve("./search-tracking.js"),
+  ],
 
   // Local self-hosted search: index is built from the markdown content at
   // build time and searched client-side
