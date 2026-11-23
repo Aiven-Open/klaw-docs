@@ -54,6 +54,18 @@ pnpm start
 
 🦖 the website will now run on `http://localhost:3000/`
 
+### Search
+
+The docs site uses a local, self-hosted search (`@easyops-cn/docusaurus-search-local`, configured in `docusaurus.config.js`). The search index is generated at build time from the markdown content.
+
+Search analytics:
+
+- Search usage is tracked via the existing Snowplow tracker (`snowplow.js`) with `category: "docs-search"`: `query` (number of hits only) and `result-click` (target URL). The raw search text is never sent for privacy reasons.
+- `search-tracking.js` listens via DOM event delegation and calls `trackSearchEvent` from `src/utils/tracking.ts`. Events are only sent in production.
+- CI runs a smoke test (`.github/workflows/pull-request.yaml`, job `search_index_smoke`) that builds the site and verifies the search index was generated and is not empty.
+
+> ℹ️ Note: the search index is generated during `pnpm build`. To test the search locally with a populated index, run `pnpm build && pnpm serve`. In the plain developer server (`pnpm start`) the search will not show no results.
+
 ## Scripts used and their actions
 
 ℹ️ You can see all our scripts in the [`package.json`](package.json).

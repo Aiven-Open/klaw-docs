@@ -30,7 +30,28 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  clientModules: [require.resolve("./snowplow.js")],
+  clientModules: [
+    require.resolve("./snowplow.js"),
+    require.resolve("./search-tracking.js"),
+  ],
+
+  // Local self-hosted search: index is built from the markdown content at
+  // build time and searched client-side
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true, // cache-bust the index via content hash of all indexed md files
+        indexDocs: true,
+        indexBlog: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true, // show section path (e.g. "Setup > Kafka SSL") in results
+        fuzzyMatchingDistance: 2, // tolerate typos in search queries
+      }),
+    ],
+  ],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
